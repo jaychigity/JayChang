@@ -5,7 +5,7 @@ import RetirementAssessment from './RetirementAssessment'
 
 export const metadata: Metadata = {
  title:
- 'Am I On Track? Retirement Readiness Assessment | Jay Chang | Farther',
+ 'Am I On Track? Retirement Readiness Assessment | Advisor Jay',
  description:
  'Take our free 60-second retirement readiness assessment. Get a personalized score across savings rate, asset benchmarks, and funding projections - instant results.',
  alternates: {

@@ -181,8 +181,8 @@ export default function AssetProtectionArizonaArticle() {
               <p className="text-gray-700 mb-6">
                 Let&apos;s develop a comprehensive asset protection and wealth planning strategy for your medical practice.
               </p>
-              <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
-                Schedule a Consultation
+              <Button href="/schedule-consultation" variant="primary">
+                Schedule a Conversation
               </Button>
             </AnimateOnScroll>
           </div>

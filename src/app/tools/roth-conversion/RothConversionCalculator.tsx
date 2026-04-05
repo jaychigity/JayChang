@@ -298,16 +298,31 @@ export default function RothConversionCalculator() {
   </div>
   </div>
 
-  <SliderInput
-  label="Expected retirement tax rate"
-  tooltip="The federal tax rate you expect to pay on Traditional IRA withdrawals in retirement. If you're unsure, your current marginal rate is a reasonable starting point."
-  value={retirementRate}
-  min={0}
-  max={40}
-  step={1}
-  onChange={setRetirementRate}
-  format={(v) => v + '%'}
-  />
+  {/* Expected Retirement Tax Rate - bracket selector */}
+  <div className="mb-6">
+  <div className="flex items-center justify-between mb-2">
+   <div className="flex items-center gap-1.5">
+   <label className="font-sans text-[14px] font-semibold text-[#333333]">Expected retirement tax rate</label>
+   <TooltipButton text="The federal tax bracket you expect to be in during retirement when withdrawing from Traditional IRA. If you're unsure, your current marginal rate is a reasonable starting point." />
+   </div>
+   <span className="font-sans text-[14px] font-semibold text-[#1d7682]">{retirementRate}%</span>
+  </div>
+  <div className="grid grid-cols-7 gap-1.5">
+   {[10, 12, 22, 24, 32, 35, 37].map((rate) => (
+   <button
+    key={rate}
+    onClick={() => setRetirementRate(rate)}
+    className={`py-2.5 rounded-[8px] font-sans text-[13px] font-semibold transition-all duration-200 border-2 ${
+    retirementRate === rate
+    ? 'bg-[#1d7682] text-white border-[#1d7682]'
+    : 'bg-white text-[#333333] border-[#E2E8F0] hover:border-[#1d7682]'
+    }`}
+   >
+    {rate}%
+   </button>
+   ))}
+  </div>
+  </div>
 
   {/* Years stepper */}
   <div className="mb-6">

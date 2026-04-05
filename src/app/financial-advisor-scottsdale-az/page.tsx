@@ -27,7 +27,7 @@ export default function ScottsdaleFinancialAdvisor() {
  const localBusinessSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Jay Chang, Farther',
+ name: 'Advisor Jay, Farther',
  description: 'Fiduciary financial advisor serving physicians and executives in Scottsdale, Arizona',
  url: 'https://www.PWM-Farther.com/financial-advisor-scottsdale-az',
  areaServed: [
@@ -67,13 +67,13 @@ export default function ScottsdaleFinancialAdvisor() {
    Scottsdale Financial Advisor
    </p>
    <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#333333] mb-6 leading-tight">
-   Financial Advisor in Scottsdale, Arizona - Wealth Management for Physicians and Executives
+   Financial Advisor in Scottsdale, Arizona - For Physicians and Executives Who Want a Real Partner
    </h1>
    <p className="font-sans text-lg md:text-xl text-[#5b6a71] mb-8 max-w-3xl mx-auto leading-relaxed">
-   Home to Mayo Clinic Arizona campus, Banner Health/Honor Health facilities, and senior executives. Physicians earning $400K-$800K+ and corporate leaders need a specialist who understands their specific financial challenges.
+   Scottsdale is home to Mayo Clinic Arizona, Banner Health, Honor Health, and some of the Valley&apos;s most accomplished executives. If you&apos;re earning $400K-$800K+ and feel like your financial life should be more organized than it is, you&apos;re not alone - and we can help.
    </p>
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
    Schedule a Scottsdale Financial Planning Call
@@ -89,17 +89,17 @@ export default function ScottsdaleFinancialAdvisor() {
   <AnimateOnScroll>
   <div>
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
-   Financial Planning for Scottsdale&apos;s Highest-Income Professionals
+   You&apos;re Great at What You Do - Let Us Handle the Financial Side
    </h2>
    <div className="prose prose-lg max-w-none text-[#5b6a71] font-sans space-y-4">
    <p>
-   Scottsdale attracts some of Arizona most accomplished physicians and executives. Mayo Clinic Arizona brings world-class specialists earning $400K-$800K+. Banner Health and Honor Health create demand for physician leaders and operational executives. The city also hosts senior executives from regional and national corporations.
+   We get it. You spent years in training or climbing the corporate ladder. Now you&apos;re earning really well - Mayo Clinic specialists, Banner Health physicians, Honor Health leaders, corporate executives - but your financial plan hasn&apos;t kept up with your income. Maybe you&apos;re still using the same advisor you had when you were a resident, or maybe you don&apos;t have one at all.
    </p>
    <p>
-   These professionals face distinct challenges: managing extraordinary earned income, understanding liability and asset protection strategies, optimizing retirement savings when standard 401(k) contributions become inadequate, and planning for wealth transfer and estate succession.
+   The challenges we hear about most? Taxes taking a bigger bite than they should, not enough asset protection for someone with your liability exposure, retirement savings that feel underwhelming given what you earn, and zero clarity on how to pass wealth to the next generation.
    </p>
    <p>
-   Jay Chang works with Scottsdale physicians and executives to build comprehensive wealth strategies. From tax-efficient retirement planning and asset protection to estate planning and multi-generational wealth transfer, Farther brings specialized expertise to your situation.
+   Jay Chang and our team at Farther work alongside Scottsdale physicians and executives as trusted partners - not salespeople. We&apos;re fiduciaries, which means your interests always come first. From tax-efficient retirement planning and asset protection to estate planning and making sure your wealth actually lasts, we bring the expertise so you can focus on what you do best.
    </p>
    </div>
   </div>
@@ -113,7 +113,7 @@ export default function ScottsdaleFinancialAdvisor() {
   <AnimateOnScroll>
   <div>
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-8">
-   Financial Planning Services for Scottsdale Professionals
+   How We Help Scottsdale Professionals
    </h2>
    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
    {services.map((service, index) => (
@@ -134,13 +134,13 @@ export default function ScottsdaleFinancialAdvisor() {
   <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
   <AnimateOnScroll>
   <h3 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
-   Ready to Optimize Your Wealth Strategy?
+   Want to See What You Might Be Missing?
   </h3>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   A free strategy call gives us 30 minutes to understand your practice, your wealth goals, and the tax and asset protection opportunities you might be missing.
+   Let&apos;s spend 30 minutes together - no cost, no obligation. We&apos;ll talk about your practice or business, your goals, and whether there are tax or asset protection opportunities hiding in plain sight.
   </p>
   <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
   >
    Schedule a Scottsdale Financial Planning Call
@@ -154,13 +154,13 @@ export default function ScottsdaleFinancialAdvisor() {
   <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
   <AnimateOnScroll>
   <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
-   Build Your Comprehensive Wealth Plan Today
+   Let&apos;s Start the Conversation
   </h2>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   Jay Chang at Farther specializes in high-income physician and executive planning. Let&apos;s work together to protect, grow, and transfer your wealth.
+   Jay Chang and our team at Farther focus on high-income physicians and executives because we know your world. We&apos;re here to help you protect what you&apos;ve built, grow it wisely, and make sure it&apos;s there for the people who matter most.
   </p>
   <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
   >
    Schedule a Scottsdale Financial Planning Call

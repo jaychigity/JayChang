@@ -8,7 +8,7 @@ import { ArrowLeft, Clock, Calendar, User, ChevronRight, MessageSquare } from 'l
 
 export const metadata: Metadata = {
  title:
- 'Mega Backdoor Roth 2026: $72,000 Tax-Free 401(k) Strategy | Jay Chang | Farther',
+ 'Mega Backdoor Roth 2026: $72,000 Tax-Free 401(k) Strategy | Advisor Jay',
  description:
  'Complete guide to the mega backdoor Roth strategy for 2026. Learn how to contribute up to $72,000 annually through 401(k) after-tax contributions and in-plan conversions. Step-by-step instructions and real examples.',
  alternates: {
@@ -76,7 +76,7 @@ export default function MegaBackdoorRoth2026Page() {
   },
   publisher: {
    '@type': 'Organization',
-   name: 'Jay Chang | Farther',
+   name: 'Advisor Jay',
    url: 'https://www.PWM-Farther.com',
   },
   datePublished: '2026-03-18',
@@ -297,7 +297,7 @@ export default function MegaBackdoorRoth2026Page() {
    We can help you determine your plan&apos;s capabilities and structure the conversions correctly. Let&apos;s make sure you are not leaving tax-free savings on the table.
    </p>
    <div className="mt-6">
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
     Start a Conversation
    </Button>
    </div>
@@ -426,9 +426,7 @@ export default function MegaBackdoorRoth2026Page() {
 
    <div className="mt-8">
    <a
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
-   target="_blank"
-   rel="noopener noreferrer"
+   href="/schedule-consultation"
    className="inline-flex items-center gap-2 font-sans text-[15px] font-semibold text-[#1d7682] hover:text-[#D4B65A] transition-colors"
    >
    <span>Learn How to Implement This Strategy</span>
@@ -497,7 +495,7 @@ export default function MegaBackdoorRoth2026Page() {
   Most people do not know if their plan permits mega backdoor Roth conversions. Let us find out and structure the strategy for your situation.
   </p>
   <div className="mt-10">
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+  <Button href="/schedule-consultation" variant="primary">
    Schedule a Planning Session
   </Button>
   </div>

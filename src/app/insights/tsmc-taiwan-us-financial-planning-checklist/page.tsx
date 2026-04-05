@@ -244,10 +244,10 @@ export default function Page() {
                 We specialize in working with international relocations and understand the unique tax and financial planning needs of TSMC engineers and other tech professionals moving from Taiwan to the U.S.
               </p>
               <Button
-                href="https://meetings.hubspot.com/jay-chang1/farthercom"
+                href="/schedule-consultation"
                 variant="primary"
               >
-                Schedule a Consultation
+                Schedule a Conversation
               </Button>
             </section>
 

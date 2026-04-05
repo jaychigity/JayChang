@@ -228,11 +228,7 @@ export default function ExitScorecard() {
 
  setSubmitting(true)
  try {
- // POST to webhook (configurable)
- const WEBHOOK_URL =
-  process.env.NEXT_PUBLIC_SCORECARD_WEBHOOK_URL || ''
- if (WEBHOOK_URL) {
-  await fetch(WEBHOOK_URL, {
+ await fetch('/api/lead', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
@@ -240,13 +236,11 @@ export default function ExitScorecard() {
   scores,
   tier: getTier(scores.total).label,
   answers,
+  reportHtml: reportRef.current?.innerHTML || '',
   timestamp: new Date().toISOString(),
   source: 'business-exit-scorecard',
   }),
-  }).catch(() => {
-  // silently fail - still show report
-  })
- }
+ }).catch(() => {})
  } catch {
  // silently fail
  }

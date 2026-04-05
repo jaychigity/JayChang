@@ -49,7 +49,7 @@ export default function LasVegasFinancialAdvisorLP() {
   <AnimateOnScroll delay={300}>
    <div className="mt-8">
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
    Schedule a Confidential Consultation
@@ -247,7 +247,7 @@ export default function LasVegasFinancialAdvisorLP() {
   <AnimateOnScroll delay={100}>
   <div className="mt-8">
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
    Schedule a Confidential Consultation

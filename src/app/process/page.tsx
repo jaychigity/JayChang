@@ -4,8 +4,8 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 
 export const metadata: Metadata = {
- title: 'How Jay Chang Works With Clients | The Farther Wealth Management Process',
- description: 'Discover how Jay Chang builds financial plans for high-income professionals - from the first discovery call through long-term partnership. Powered by Farther&apos;s Intelligent Wealth Platform.',
+ title: 'How Working With Jay Chang Actually Works | Our Wealth Management Process',
+ description: 'See how Jay Chang and our team at Farther walk you through every step — from a simple intro call to an ongoing partnership that grows with you. No jargon, no pressure.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/process',
  },
@@ -14,34 +14,34 @@ export const metadata: Metadata = {
 const steps = [
  {
  number: 1,
- headline: 'A Conversation, Not a Presentation',
+ headline: 'A Conversation, Not a Sales Pitch',
  title: 'Discovery Call',
- body: '30-45 minutes. Understand your situation. Cover: compensation structure, existing accounts, top concerns, fit assessment. No obligation, no pitch deck, no pressure. If Jay can give you one useful idea regardless of becoming a client, that&apos;s a successful conversation.',
+ body: '30-45 minutes, just you and Jay. We talk about where you are right now — your compensation, your accounts, what keeps you up at night. No slide decks, no obligations. If we can give you one useful idea whether or not you become a client, that\'s a win in our book.',
  cta: 'Schedule Your Discovery Call',
  },
  {
  number: 2,
- headline: 'We Handle the Setup So You Don&apos;t Have to Think About It',
+ headline: 'We Handle the Boring Stuff So You Don\'t Have To',
  title: 'Onboarding & Data Gathering',
- body: 'Farther Concierge Team takes over. Clients provide: recent pay stubs and equity plan statements, 2 years tax returns, 401(k) and deferred comp details, current investment statements, benefits enrollment summary. Secure digital portal for uploads.',
+ body: 'Our Farther Concierge Team takes the wheel. We\'ll ask for the basics: recent pay stubs, equity plan statements, a couple years of tax returns, 401(k) and deferred comp details, current investment statements, and your benefits summary. Everything uploads through a secure portal — simple and painless.',
  },
  {
  number: 3,
- headline: 'A Financial Plan That Actually Reflects How You&apos;re Paid',
+ headline: 'A Financial Plan Built Around How You Actually Get Paid',
  title: 'Plan Design',
- body: 'Dynamic, scenario-based analysis covering: multi-year tax projections, equity vesting calendar with after-tax modeling, retirement income projections under multiple scenarios, investment portfolio design, prioritized action items ranked by financial impact. Review together in dedicated meeting.',
+ body: 'This is where things get interesting. We build a real, scenario-based plan that covers multi-year tax projections, your equity vesting calendar with after-tax modeling, retirement income under different what-if scenarios, a portfolio designed for your life, and action items ranked by what moves the needle most. Then we sit down together and walk through it.',
  },
  {
  number: 4,
- headline: 'From Decision to Done - Without the Paperwork Burden',
+ headline: 'From "Let\'s Do This" to Done — Without the Paperwork Headache',
  title: 'Implementation',
- body: 'Farther Concierge Team executes: account transfers, investment purchases, beneficiary updates, employer benefits coordination. Most clients fully onboarded in days, not weeks.',
+ body: 'Our Farther Concierge Team handles the heavy lifting: account transfers, investment purchases, beneficiary updates, and coordinating with your employer benefits. Most clients are fully up and running in days, not weeks.',
  },
  {
  number: 5,
- headline: 'Your Plan Doesn&apos;t Sit Still. Neither Do We.',
+ headline: 'Your Life Changes. Your Plan Should Too.',
  title: 'Ongoing Optimization',
- body: 'Quarterly check-ins on equity vesting, tax positioning, portfolio performance. Proactive outreach before major events (open enrollment, RSU vests, year-end deadlines). Annual plan review. On-demand access when life happens. Jay&apos;s goal: be the first call when a financial question arises.',
+ body: 'We check in quarterly to stay on top of equity vesting, tax positioning, and how your portfolio is doing. We reach out before the big moments — open enrollment, RSU vests, year-end deadlines — so nothing slips through the cracks. Annual plan review, plus you can call or text whenever life throws you a curveball. Our goal: be the first call you make when a financial question comes up.',
  },
 ];
 
@@ -66,12 +66,12 @@ export default function ProcessPage() {
    THE PROCESS
    </p>
    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F7F4EE] mb-6 leading-tight">
-   How Working With Jay Actually Works
+   Here's How We Work Together
    </h1>
    <p className="text-xl text-[#F7F4EE]/90 mb-8 max-w-2xl mx-auto">
-   Simple from your side. Sophisticated on ours.
+   Simple on your end. Really thorough on ours.
    </p>
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
    Schedule Your Discovery Call
    </Button>
   </div>
@@ -107,7 +107,7 @@ export default function ProcessPage() {
     {step.body}
     </p>
     {step.cta && (
-    <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="outline">
+    <Button href="/schedule-consultation" variant="outline">
     {step.cta}
     </Button>
     )}
@@ -124,15 +124,15 @@ export default function ProcessPage() {
   <div className="max-w-4xl mx-auto text-center">
   <AnimateOnScroll>
   <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
-   The Hardest Part Is the First Call. Everything After That Is Handled.
+   The Hardest Part? Picking Up the Phone. We Handle Everything After That.
   </h2>
   <div className="mb-6">
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
    Schedule Your Discovery Call
    </Button>
   </div>
   <p className="text-white text-lg mb-2">
-   Free &middot; Confidential &middot; No obligation
+   Free &middot; Confidential &middot; Zero obligation
   </p>
   </AnimateOnScroll>
   </div>
@@ -144,9 +144,9 @@ export default function ProcessPage() {
   Jay Chang | Farther Wealth Management | (480) 944-0880
   </p>
   <p className="text-sm mt-2">
-  Questions? Schedule a call:{' '}
-  <a href="https://meetings.hubspot.com/jay-chang1/farthercom" className="text-[#1d7682] hover:underline">
-  https://meetings.hubspot.com/jay-chang1/farthercom
+  Questions? Let's talk:{' '}
+  <a href="/schedule-consultation" className="text-[#1d7682] hover:underline">
+  /schedule-consultation
   </a>
   </p>
  </footer>

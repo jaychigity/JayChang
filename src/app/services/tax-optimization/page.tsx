@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Tax Optimization & Estate Strategy - Jay Chang | Farther',
+ name: 'Tax Optimization & Estate Strategy - Advisor Jay',
  description:
  'Proactive tax planning, Roth conversion laddering, charitable giving strategies, estate planning, and generational wealth transfer for HNW families in Scottsdale, AZ and across Arizona, California, and Nevada.',
  url: 'https://www.PWM-Farther.com/services/tax-optimization',
@@ -158,7 +158,7 @@ export default function TaxOptimizationPage() {
   <AnimateOnScroll delay={300}>
   <div className="mt-8">
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
    Let's Discuss Your Tax Strategy
@@ -542,10 +542,10 @@ export default function TaxOptimizationPage() {
   <AnimateOnScroll delay={200}>
   <div className="mt-10">
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
-   Let's Talk About What Matters to You
+   Schedule a Conversation
    </Button>
   </div>
   </AnimateOnScroll>

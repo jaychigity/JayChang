@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function FCXExecutiveWealthPage() {
- const hubspotCTA = 'https://meetings.hubspot.com/jay-chang1/farthercom';
+ const hubspotCTA = '/schedule-consultation';
  const phone = '(480) 944-0880';
 
  return (
@@ -151,7 +151,7 @@ export default function FCXExecutiveWealthPage() {
    <p className="text-slate-200 text-lg max-w-2xl mx-auto">
    Schedule a confidential strategy call with Jay Chang. We&apos;ll review your compensation structure, equity concentration, and create a plan tailored to FCX executive dynamics.
    </p>
-   <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
    <Button
    href={hubspotCTA}
    variant="primary"
@@ -257,7 +257,7 @@ export default function FCXExecutiveWealthPage() {
    Fiduciary wealth planning tailored to FCX executives. Commodity-aware diversification. Compliance-coordinated 10b5-1 plans. Confidential. Discrete. Built for commodity-industry leaders.
    </p>
 
-   <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
+   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
    <Button
    href={hubspotCTA}
    variant="primary"

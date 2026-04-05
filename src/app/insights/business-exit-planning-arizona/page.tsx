@@ -175,8 +175,8 @@ export default function BusinessExitPlanningArticle() {
               <p className="text-gray-700 mb-6">
                 Let&apos;s develop a strategic exit plan that maximizes your business value.
               </p>
-              <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
-                Schedule a Consultation
+              <Button href="/schedule-consultation" variant="primary">
+                Schedule a Conversation
               </Button>
             </AnimateOnScroll>
           </div>

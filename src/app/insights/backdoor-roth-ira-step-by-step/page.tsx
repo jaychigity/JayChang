@@ -190,8 +190,8 @@ export default function BackdoorRothArticle() {
               <p className="text-gray-700 mb-6">
                 Questions about your Roth IRA strategy or overall retirement planning?
               </p>
-              <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
-                Schedule a Consultation
+              <Button href="/schedule-consultation" variant="primary">
+                Schedule a Conversation
               </Button>
             </AnimateOnScroll>
           </div>

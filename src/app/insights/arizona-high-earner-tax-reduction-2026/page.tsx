@@ -8,7 +8,7 @@ import { ArrowLeft, Clock, Calendar, User, ChevronRight, MessageSquare } from 'l
 
 export const metadata: Metadata = {
  title:
- 'Arizona High Earner Tax Reduction 2026: Year-End Tax Planning | Jay Chang | Farther',
+ 'Arizona High Earner Tax Reduction 2026: Year-End Tax Planning | Advisor Jay',
  description:
  'Year-end tax planning strategies for high earners in Arizona earning $200K-$800K+. Reduce federal and state taxes through 401(k), backdoor Roth, HSA, charitable giving, and Arizona tax credits.',
  alternates: {
@@ -76,7 +76,7 @@ export default function ArizonaHighEarnerTaxReduction2026Page() {
   },
   publisher: {
    '@type': 'Organization',
-   name: 'Jay Chang | Farther',
+   name: 'Advisor Jay',
    url: 'https://www.PWM-Farther.com',
   },
   datePublished: '2026-03-18',
@@ -370,7 +370,7 @@ export default function ArizonaHighEarnerTaxReduction2026Page() {
    Let us run the numbers for your specific situation and identify which strategies save the most. Most families can save $15,000 to $50,000 by December 31 with proper planning.
    </p>
    <div className="mt-6">
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
     Schedule Your Year-End Tax Planning Session
    </Button>
    </div>
@@ -432,9 +432,7 @@ export default function ArizonaHighEarnerTaxReduction2026Page() {
 
    <div className="mt-8">
    <a
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
-   target="_blank"
-   rel="noopener noreferrer"
+   href="/schedule-consultation"
    className="inline-flex items-center gap-2 font-sans text-[15px] font-semibold text-[#1d7682] hover:text-[#D4B65A] transition-colors"
    >
    <span>Start Your Year-End Tax Planning</span>
@@ -503,7 +501,7 @@ export default function ArizonaHighEarnerTaxReduction2026Page() {
   Most high earners in Arizona save between $15,000 and $50,000 in taxes with proper year-end planning. Let us calculate your specific number.
   </p>
   <div className="mt-10">
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+  <Button href="/schedule-consultation" variant="primary">
    Schedule Your Planning Session
   </Button>
   </div>

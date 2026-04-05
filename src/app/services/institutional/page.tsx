@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Institutional Services - Jay Chang | Farther',
+ name: 'Institutional Services - Advisor Jay',
  description:
  'Outsourced chief investment officer (OCIO) services for nonprofits, endowments, and foundations including investment policy development, asset allocation, fiduciary oversight, and governance support in Scottsdale, AZ and across Arizona, California, and Nevada.',
  url: 'https://www.PWM-Farther.com/services/institutional',
@@ -135,9 +135,9 @@ export default function InstitutionalServicesPage() {
   <div className="mt-10">
    <Button
    variant="primary"
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    >
-   Schedule a Consultation
+   Schedule a Conversation
    </Button>
   </div>
   </AnimateOnScroll>
@@ -361,9 +361,9 @@ export default function InstitutionalServicesPage() {
   <div className="mt-10">
    <Button
    variant="primary"
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    >
-   Schedule a Consultation
+   Schedule a Conversation
    </Button>
   </div>
   </AnimateOnScroll>

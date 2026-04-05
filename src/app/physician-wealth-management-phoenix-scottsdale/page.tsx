@@ -89,7 +89,7 @@ export default function PhysicianWealthManagementPhoenixScottsdale() {
 
   <AnimateOnScroll>
   <div className="text-center">
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">Schedule a Physician Financial Strategy Call</Button>
+   <Button href="/schedule-consultation" variant="primary">Schedule a Physician Financial Strategy Call</Button>
   </div>
   </AnimateOnScroll>
   </div>
@@ -278,7 +278,7 @@ export default function PhysicianWealthManagementPhoenixScottsdale() {
   </p>
   </AnimateOnScroll>
   <AnimateOnScroll>
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">Schedule Your Strategy Call</Button>
+  <Button href="/schedule-consultation" variant="primary">Schedule Your Strategy Call</Button>
   </AnimateOnScroll>
   </div>
  </section>
@@ -420,7 +420,7 @@ export default function PhysicianWealthManagementPhoenixScottsdale() {
   </AnimateOnScroll>
 
   <AnimateOnScroll>
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">Schedule a Physician Wealth Strategy Call</Button>
+  <Button href="/schedule-consultation" variant="primary">Schedule a Physician Wealth Strategy Call</Button>
   </AnimateOnScroll>
   </div>
  </section>

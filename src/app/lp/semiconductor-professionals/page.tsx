@@ -4,7 +4,7 @@ import AnimateOnScroll from '@/components/AnimateOnScroll'
 import Button from '@/components/Button'
 
 export const metadata: Metadata = {
- title: 'Semiconductor Engineer Wealth Management | Arizona & California | Jay Chang, Farther',
+ title: 'Semiconductor Engineer Wealth Management | Arizona & California | Advisor Jay, Farther',
  description:
  'RSU vesting, concentrated stock, and equity management for semiconductor engineers at Intel, NVIDIA, Apple, and Microchip across Arizona and California. Fiduciary wealth advisor Jay Chang.',
  robots: { index: false, follow: false },
@@ -35,21 +35,21 @@ export default function SemiconductorProfessionalsLP() {
   </AnimateOnScroll>
   <AnimateOnScroll delay={100}>
    <h1 className="font-serif text-[34px] md:text-[48px] font-bold text-[#F7F4EE] mt-6 leading-tight">
-   Your Equity Is Growing Faster Than Your Plan. Let's Fix That.
+   Your Equity Is Piling Up. Let&apos;s Build a Plan Around It.
    </h1>
   </AnimateOnScroll>
   <AnimateOnScroll delay={200}>
    <p className="font-sans text-[17px] text-[#F7F4EE]/90 max-w-[620px] mx-auto mt-6 leading-relaxed">
-   Semiconductor professionals across Arizona and California are driving America's tech renaissance. Whether you're at Intel (Chandler, Arizona or Santa Clara and Folsom, California), NVIDIA (Phoenix headquarters and Santa Clara campuses), Apple (Mesa, Arizona and Cupertino, California), or Microchip (Chandler, Arizona and Roseville, San Jose, Orange County, San Diego, and Irvine, California), your compensation likely includes substantial RSU grants, stock options, and performance-based equity that can create life-changing wealth - or significant tax exposure if mismanaged.
+   Whether you&apos;re at Intel in Chandler or Santa Clara, NVIDIA in Phoenix or Santa Clara, Apple in Mesa or Cupertino, or Microchip in Chandler, Roseville, San Jose, or San Diego - your comp package probably includes a hefty chunk of RSUs, stock options, and performance equity. That&apos;s a real wealth-building opportunity. But without the right plan, it can also mean a big, unexpected tax bill. We help make sure it&apos;s the former, not the latter.
    </p>
   </AnimateOnScroll>
   <AnimateOnScroll delay={300}>
    <div className="mt-8">
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
-   Schedule a Confidential Consultation
+   Let&apos;s Look at Your Equity Together
    </Button>
    </div>
    <p className="font-sans text-[15px] text-[#F7F4EE]/70 mt-4">
@@ -85,7 +85,7 @@ export default function SemiconductorProfessionalsLP() {
    Fiduciary
   </p>
   <p className="font-sans text-[13px] text-[#5b6a71]">
-   Your interests come first
+   We&apos;re legally on your side
   </p>
   </div>
   <span className="hidden sm:inline text-[#E8E6E1]">|</span>
@@ -107,10 +107,10 @@ export default function SemiconductorProfessionalsLP() {
   <div className="max-w-[900px] mx-auto">
   <AnimateOnScroll>
   <h2 className="font-serif text-[28px] md:text-[36px] font-bold text-[#333333] text-center">
-   Equity Planning for Semiconductor Professionals
+   How We Help Semiconductor Professionals
   </h2>
   <p className="font-sans text-[16px] text-[#5b6a71] text-center max-w-[600px] mx-auto mt-4 leading-relaxed">
-   RSU vesting schedules, concentrated stock positions, and multi-state tax exposure demand expertise most advisors simply don't have.
+   RSU schedules, concentrated stock, multi-state taxes - most advisors glaze over when you bring this stuff up. We lean in. It&apos;s what we do every day.
   </p>
   </AnimateOnScroll>
 
@@ -121,7 +121,7 @@ export default function SemiconductorProfessionalsLP() {
    RSU & Equity Vesting Strategies
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   Coordinate sell-to-cover decisions, manage supplemental tax withholding gaps, and optimize the timing of equity recognition to minimize tax drag on your wealth.
+   We help you navigate sell-to-cover decisions, sort out supplemental withholding gaps, and time your equity recognition so you&apos;re not giving away more to taxes than you need to.
    </p>
    </div>
   </AnimateOnScroll>
@@ -132,7 +132,7 @@ export default function SemiconductorProfessionalsLP() {
    Concentrated Stock Risk Management
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   Systematic diversification strategies for employees with 40%+ of net worth in a single stock. Avoid the catastrophic concentration risk.
+   If 40%+ of your net worth is in one stock, that&apos;s a risk worth talking about. We build a thoughtful diversification plan together - no panic selling, just a steady approach that makes sense for your situation.
    </p>
    </div>
   </AnimateOnScroll>
@@ -143,7 +143,7 @@ export default function SemiconductorProfessionalsLP() {
    Relocation Wealth Planning
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   Multi-state tax optimization for engineers relocating from California, Oregon, or Taiwan. Capture the tax savings your move creates.
+   Moving from California, Oregon, or even Taiwan? There are real tax savings your move can create - but only if you plan for them. We make sure you capture every advantage.
    </p>
    </div>
   </AnimateOnScroll>
@@ -154,7 +154,7 @@ export default function SemiconductorProfessionalsLP() {
    Mega Backdoor Roth Conversions
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   Maximize after-tax 401(k) contributions through Intel's and TSMC's plans. Build seven-figure tax-free retirement accounts.
+   If your employer&apos;s 401(k) plan allows after-tax contributions (many do), this is one of the most powerful wealth-building tools out there. We help you set it up and keep it running smoothly.
    </p>
    </div>
   </AnimateOnScroll>
@@ -165,7 +165,7 @@ export default function SemiconductorProfessionalsLP() {
    IPO & Liquidity Event Planning
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   For pre-IPO equity holders at companies like NVIDIA and other high-growth firms. Plan the wealth event before it happens.
+   Holding pre-IPO equity? The time to plan is before the event, not after. We work with you to think through the scenarios so you&apos;re ready when the moment comes.
    </p>
    </div>
   </AnimateOnScroll>
@@ -181,7 +181,7 @@ export default function SemiconductorProfessionalsLP() {
   <AnimateOnScroll>
   <div className="border-l-4 border-[#1d7682] pl-6 text-left">
    <p className="font-serif text-[20px] md:text-[24px] text-[#333333] leading-relaxed italic">
-   &ldquo;I was vesting equity every quarter and had no idea what my actual tax liability would be. Jay mapped it all out - showed me exactly when I'd hit each tax bracket, coordinated the RSU sales, and set up a mega backdoor Roth strategy that saved me over $50K in taxes in the first year alone. Now I actually understand my compensation.&rdquo;
+   &ldquo;Every quarter I was vesting equity and had no clue what my tax bill would look like. Jay sat down with me, mapped out exactly when I&apos;d hit each bracket, coordinated my RSU sales, and set up a mega backdoor Roth that saved me over $50K in taxes the first year. I actually understand my compensation now - and that feels really good.&rdquo;
    </p>
    <p className="font-sans text-[15px] text-[#5b6a71] mt-4">
    - Semiconductor engineer, client since 2023
@@ -207,7 +207,7 @@ export default function SemiconductorProfessionalsLP() {
    VP, Wealth Advisor
   </p>
   <p className="font-sans text-[16px] text-[#5b6a71] leading-relaxed mt-6">
-   Jay specializes in working with high-earning professionals - engineers, executives, and equity holders - who need sophisticated planning around concentrated wealth, deferred compensation, and tax-efficient investment strategies. As a fiduciary, he is legally obligated to act in your best interest.
+   Jay and our team work with engineers, executives, and equity holders who want someone in their corner who actually understands concentrated wealth, deferred compensation, and the tax headaches that come with it. As a fiduciary, Jay is legally required to put your interests first - and honestly, he wouldn&apos;t have it any other way.
   </p>
   </AnimateOnScroll>
   </div>
@@ -220,19 +220,19 @@ export default function SemiconductorProfessionalsLP() {
   <div className="max-w-[700px] mx-auto text-center">
   <AnimateOnScroll>
   <h2 className="font-serif text-[28px] md:text-[40px] font-semibold text-[#F7F4EE] leading-tight">
-   Ready to Talk?
+   Let&apos;s Have a Conversation
   </h2>
   <p className="font-sans text-[17px] text-[#F7F4EE]/85 max-w-[540px] mx-auto mt-5 leading-relaxed">
-   Schedule a confidential conversation with Jay to discuss your equity strategy and tax exposure. No sales pitch, no obligation - just a focused discussion about maximizing your wealth.
+   Pick a time on Jay&apos;s calendar and we&apos;ll talk through your equity situation and tax exposure. No sales pitch, no pressure - just a straightforward conversation about where you stand and what might make sense.
   </p>
   </AnimateOnScroll>
   <AnimateOnScroll delay={100}>
   <div className="mt-8">
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
-   Schedule a Confidential Consultation
+   Grab a Time to Chat
    </Button>
   </div>
   <p className="font-sans text-[15px] text-[#F7F4EE]/70 mt-4">

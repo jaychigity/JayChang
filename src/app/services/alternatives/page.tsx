@@ -10,12 +10,12 @@ import { ChevronDown } from 'lucide-react'
 export const metadata: Metadata = {
  title: 'Alternative Investments | Farther - Arizona, California & Nevada',
  description:
- 'Access private equity, venture capital, private credit, and hedge fund strategies through institutional-quality vehicles. Jay Chang | Farther.',
+ 'Get access to private equity, venture capital, private credit, and hedge fund strategies that used to be reserved for the ultra-wealthy. Advisor Jay Chang at Farther.',
  alternates: { canonical: 'https://www.PWM-Farther.com/services/alternatives' },
  openGraph: {
- title: 'Alternative Investments | Jay Chang | Farther',
+ title: 'Alternative Investments | Advisor Jay',
  description:
- 'Private equity, venture capital, private credit, and real asset access for families with $5M+ - without prohibitive minimums. Arizona, California & Nevada.',
+ 'Private equity, venture capital, private credit, and real asset access for families with $5M+ -- without the sky-high minimums. Arizona, California & Nevada.',
  url: 'https://www.PWM-Farther.com/services/alternatives',
  },
 }
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Alternative Investments - Jay Chang | Farther',
+ name: 'Alternative Investments - Advisor Jay',
  description:
  'Access to private equity, venture capital, private credit, and hedge fund strategies via institutional-quality vehicles for families with $5M+ in investable assets.',
  url: 'https://www.PWM-Farther.com/services/alternatives',
@@ -64,7 +64,7 @@ const faqJsonLd = {
  name: 'What are alternative investments?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'Alternative investments are asset classes outside of traditional stocks and bonds. They include private equity, venture capital, private credit, hedge funds, real estate, and infrastructure. These strategies have historically been used by endowments, pension funds, and family offices to enhance portfolio diversification and risk-adjusted returns.',
+  text: 'Alternative investments are anything outside the usual stocks-and-bonds world. Think private equity, venture capital, private credit, hedge funds, real estate, and infrastructure. Big university endowments, pension funds, and family offices have used these for decades to diversify and improve their returns. Now, through Farther, you can access many of the same strategies.',
  },
  },
  {
@@ -72,7 +72,7 @@ const faqJsonLd = {
  name: 'What is the minimum investment to access alternative investments through Farther?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'We typically recommend alternative investments for families with $5 million or more in investable assets, as these strategies work best when they complement a well-diversified traditional portfolio. Through Farther\'s platform, many institutional-quality vehicles are accessible at lower minimums than direct fund investments - often starting at $25,000 to $50,000 per position.',
+  text: 'We generally suggest alternatives for families with $5 million or more in investable assets, because these strategies work best when they complement a solid traditional portfolio. The good news is that through Farther\'s platform, many high-quality vehicles are available at lower minimums than you\'d find going direct to a fund -- often starting at $25,000 to $50,000 per position.',
  },
  },
  {
@@ -80,7 +80,7 @@ const faqJsonLd = {
  name: 'Are alternative investments liquid?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'Most alternative investments are illiquid by design, with lockup periods ranging from one to ten years depending on the strategy. Interval funds and certain private BDCs offer periodic liquidity windows, typically quarterly. We carefully size alternative allocations to ensure you maintain adequate liquidity for near-term needs and opportunities.',
+  text: 'Most aren\'t -- and that\'s by design. Lockup periods typically range from one to ten years depending on the strategy. Some structures like interval funds and certain private BDCs do offer periodic liquidity windows, usually quarterly. We\'re careful about sizing these allocations so you always have enough liquid assets for anything that comes up.',
  },
  },
  {
@@ -88,7 +88,7 @@ const faqJsonLd = {
  name: 'How do you select alternative investment vehicles?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'Every alternative vehicle undergoes rigorous due diligence by Farther\'s investment committee, evaluating fund manager track record, fee structure, strategy consistency, operational infrastructure, and alignment of interests. We analyze net-of-fee performance relative to public-market equivalents to ensure clients receive genuine diversification benefit - not just complexity.',
+  text: 'Every alternative investment goes through serious due diligence by Farther\'s investment committee. We look at the fund manager\'s track record, fee structure, strategy consistency, operations, and whether their interests are aligned with yours. We compare net-of-fee performance against what you could get in public markets, because the whole point is genuine diversification -- not just added complexity.',
  },
  },
  ],
@@ -129,17 +129,16 @@ export default function AlternativesPage() {
   </AnimateOnScroll>
   <AnimateOnScroll delay={100}>
   <h1 className="font-serif text-[34px] md:text-[52px] font-bold text-[#333333] max-w-[900px] mx-auto mt-6 leading-tight">
-   Access Typically Reserved for Family Offices - Now Available to
-   You.
+   Investments That Used to Be Off-Limits -- Now They&apos;re Not.
   </h1>
   </AnimateOnScroll>
   <AnimateOnScroll delay={200}>
   <p className="font-sans text-body-lg text-[#5b6a71] max-w-[680px] mx-auto mt-6">
-   For decades, the most sophisticated investors in the world have
-   allocated meaningfully to private equity, venture capital, private
-   credit, and real assets. Through Farther&apos;s institutional
-   platform, these strategies are no longer gated behind $10 million
-   minimums and exclusive networks.
+   For a long time, the best investors in the world have been putting
+   serious money into private equity, venture capital, private
+   credit, and real assets. Through Farther&apos;s platform, those
+   same strategies are no longer locked behind $10 million minimums
+   and exclusive invite lists.
   </p>
   </AnimateOnScroll>
   </div>
@@ -156,49 +155,48 @@ export default function AlternativesPage() {
    <div>
    <SectionEyebrow text="THE INSTITUTIONAL PLAYBOOK" />
    <h2 className="font-serif text-h2-mobile md:text-h2 font-bold text-[#333333] mt-4 border-l-4 border-[#1d7682] pl-7">
-   The Yale Model - and Why It Matters for Your Portfolio.
+   The Approach Behind the Best Endowments -- and Why It Matters for You.
    </h2>
    <p className="font-sans text-body text-[#5b6a71] leading-relaxed mt-6">
-   David Swensen, the legendary chief investment officer of the
-   Yale University endowment, fundamentally changed how
-   institutions invest. His approach - now widely known as
-   the Yale Model - demonstrated that a meaningful
-   allocation to alternative investments can significantly
-   enhance risk-adjusted returns over long time horizons. Under
-   his leadership, Yale&apos;s endowment grew from $1 billion to
-   over $31 billion, consistently outperforming peers who relied
-   on traditional stock-and-bond allocations.
+   David Swensen, the legendary chief investment officer at Yale,
+   basically rewrote the rulebook on how institutions invest. His
+   approach -- now known as the Yale Model -- showed that
+   putting a meaningful chunk into alternative investments can
+   seriously improve returns over the long run. Under his watch,
+   Yale&apos;s endowment grew from $1 billion to over $31 billion,
+   consistently outperforming peers who stuck only with stocks
+   and bonds.
    </p>
    <p className="font-sans text-body text-[#5b6a71] leading-relaxed mt-4">
-   The lesson is clear: diversification beyond public markets
-   matters. Private equity captures value through operational
+   The takeaway is pretty clear: going beyond public markets
+   matters. Private equity captures value through hands-on
    improvement and longer holding periods. Private credit
-   provides income uncorrelated to equity markets. Real assets
-   offer inflation protection. And venture capital provides
-   exposure to innovation before companies reach the public
-   markets. Together, these strategies complement traditional
-   holdings and can reduce overall portfolio volatility.
+   generates income that doesn&apos;t move in lockstep with stocks.
+   Real assets give you inflation protection. And venture capital
+   lets you invest in innovation before companies go public.
+   Together, these strategies work alongside your traditional
+   holdings and can smooth out the bumps in your overall
+   portfolio.
    </p>
    <p className="font-sans text-body text-[#5b6a71] leading-relaxed mt-4">
-   Through Farther&apos;s institutional platform, our clients can
-   access these strategies via interval funds, private business
+   Through Farther&apos;s platform, our clients can tap into these
+   strategies through interval funds, private business
    development companies (BDCs), and select fund partnerships
-   - without the prohibitive minimums and lockup structures
-   that typically restrict access to ultra-high-net-worth
-   investors and endowments.
+   -- without the huge minimums and lengthy lockups that
+   traditionally kept these out of reach for most families.
    </p>
 
    <p className="font-sans text-[15px] font-semibold text-[#333333] mt-8 mb-4">
-   What this looks like in practice:
+   What this looks like for you:
    </p>
    <ul className="list-none space-y-3">
    <GoldBullet>
-    Private equity and venture capital exposure via
-    institutional-quality vehicles
+    Private equity and venture capital through quality
+    institutional vehicles
    </GoldBullet>
    <GoldBullet>
-    Private credit and direct lending strategies for income
-    generation
+    Private credit and direct lending strategies for steady
+    income generation
    </GoldBullet>
    <GoldBullet>
     Hedge fund strategies for portfolio diversification and
@@ -209,12 +207,12 @@ export default function AlternativesPage() {
     infrastructure
    </GoldBullet>
    <GoldBullet>
-    Portfolio integration ensuring alternatives complement your
-    overall allocation
+    Careful integration so alternatives complement your
+    overall portfolio rather than complicating it
    </GoldBullet>
    <GoldBullet>
-    Transparent fee analysis and due diligence on all
-    alternative vehicles
+    Transparent fee analysis and thorough due diligence on
+    every vehicle we recommend
    </GoldBullet>
    </ul>
    </div>
@@ -245,48 +243,49 @@ export default function AlternativesPage() {
   <AnimateOnScroll className="text-center mb-12">
    <SectionEyebrow text="IS THIS RIGHT FOR YOU?" />
    <h2 className="font-serif text-h2-mobile md:text-h2 font-bold text-[#333333] mt-4">
-   Who Should Consider Alternative Investments?
+   Who Should Think About Alternatives?
    </h2>
   </AnimateOnScroll>
 
   <AnimateOnScroll>
    <p className="font-sans text-body text-[#5b6a71] leading-relaxed">
-   Alternative investments are not for every portfolio. They involve
-   longer time horizons, limited liquidity, and a higher degree of
-   complexity than public market securities. We generally recommend
-   alternatives for families and individuals who meet the following
-   criteria:
+   Let&apos;s be honest -- alternatives aren&apos;t for everyone. They
+   involve longer time horizons, limited liquidity, and more
+   complexity than your typical stock or bond fund. We generally
+   recommend them for families and individuals who check these
+   boxes:
    </p>
    <ul className="list-none space-y-3 mt-6">
    <GoldBullet>
    <strong className="text-[#333333]">$5 million or more</strong>{' '}
-   in investable assets, providing sufficient scale to allocate
-   meaningfully without overconcentration
+   in investable assets, so there&apos;s enough room to invest
+   meaningfully without putting too many eggs in one basket
    </GoldBullet>
    <GoldBullet>
-   A well-diversified traditional portfolio already in place
-   - alternatives should complement, not replace, core
-   equity and fixed income holdings
+   A solid traditional portfolio already in place
+   -- alternatives should add to what you have, not replace
+   it
    </GoldBullet>
    <GoldBullet>
-   A long-term investment horizon with liquidity needs already
-   addressed through cash reserves and traditional positions
+   A long-term mindset, with your near-term cash needs already
+   covered through savings and traditional investments
    </GoldBullet>
    <GoldBullet>
-   An understanding that these strategies involve lockup periods,
-   capital calls, and limited daily pricing transparency
+   Comfort with the reality that these strategies come with
+   lockup periods, capital calls, and less day-to-day pricing
+   transparency
    </GoldBullet>
    <GoldBullet>
-   A desire to build a truly institutional-quality portfolio that
-   mirrors how the best endowments and family offices invest
+   A desire to build the kind of portfolio that the best
+   endowments and family offices have been using for years
    </GoldBullet>
    </ul>
    <p className="font-sans text-body text-[#5b6a71] leading-relaxed mt-6">
-   If you are unsure whether alternatives belong in your portfolio,
-   that is exactly the kind of question our discovery conversation
-   is designed to answer. We will review your current allocation,
-   liquidity profile, and long-term objectives before recommending
-   any specific strategy.
+   Not sure if alternatives belong in your portfolio? That&apos;s
+   exactly the kind of question we love to dig into during a
+   discovery conversation. We&apos;ll look at what you have now,
+   your liquidity picture, and your long-term goals before
+   recommending anything specific.
    </p>
   </AnimateOnScroll>
   </div>
@@ -316,12 +315,13 @@ export default function AlternativesPage() {
    <ChevronDown className="h-4 w-4 text-[#1d7682] shrink-0 transition-transform duration-200 group-open:rotate-180" />
    </summary>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed pb-6">
-   Alternative investments are asset classes outside of
-   traditional stocks and bonds. They include private equity,
-   venture capital, private credit, hedge funds, real estate, and
-   infrastructure. These strategies have historically been used by
-   endowments, pension funds, and family offices to enhance
-   portfolio diversification and risk-adjusted returns.
+   Alternative investments are anything outside the usual
+   stocks-and-bonds world. Think private equity, venture capital,
+   private credit, hedge funds, real estate, and infrastructure.
+   Big university endowments, pension funds, and family offices
+   have used these for decades to diversify and improve their
+   returns. Now, through Farther, you can access many of the same
+   strategies.
    </p>
    </details>
 
@@ -335,13 +335,13 @@ export default function AlternativesPage() {
    <ChevronDown className="h-4 w-4 text-[#1d7682] shrink-0 transition-transform duration-200 group-open:rotate-180" />
    </summary>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed pb-6">
-   We typically recommend alternative investments for families
-   with $5 million or more in investable assets, as these
-   strategies work best when they complement a well-diversified
-   traditional portfolio. Through Farther&apos;s platform, many
-   institutional-quality vehicles are accessible at lower minimums
-   than direct fund investments - often starting at $25,000
-   to $50,000 per position.
+   We generally suggest alternatives for families with $5 million
+   or more in investable assets, because these strategies work
+   best when they complement a solid traditional portfolio. The
+   good news is that through Farther&apos;s platform, many
+   high-quality vehicles are available at lower minimums than
+   you&apos;d find going direct to a fund -- often starting at
+   $25,000 to $50,000 per position.
    </p>
    </details>
 
@@ -354,12 +354,13 @@ export default function AlternativesPage() {
    <ChevronDown className="h-4 w-4 text-[#1d7682] shrink-0 transition-transform duration-200 group-open:rotate-180" />
    </summary>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed pb-6">
-   Most alternative investments are illiquid by design, with
-   lockup periods ranging from one to ten years depending on the
-   strategy. Interval funds and certain private BDCs offer
-   periodic liquidity windows, typically quarterly. We carefully
-   size alternative allocations to ensure you maintain adequate
-   liquidity for near-term needs and opportunities.
+   Most aren&apos;t -- and that&apos;s by design. Lockup periods
+   typically range from one to ten years depending on the
+   strategy. Some structures like interval funds and certain
+   private BDCs do offer periodic liquidity windows, usually
+   quarterly. We&apos;re careful about sizing these allocations so
+   you always have enough liquid assets for anything that comes
+   up.
    </p>
    </details>
 
@@ -372,13 +373,13 @@ export default function AlternativesPage() {
    <ChevronDown className="h-4 w-4 text-[#1d7682] shrink-0 transition-transform duration-200 group-open:rotate-180" />
    </summary>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed pb-6">
-   Every alternative vehicle undergoes rigorous due diligence by
-   Farther&apos;s investment committee, evaluating fund manager
-   track record, fee structure, strategy consistency, operational
-   infrastructure, and alignment of interests. We analyze
-   net-of-fee performance relative to public-market equivalents to
-   ensure clients receive genuine diversification benefit - 
-   not just complexity.
+   Every alternative investment goes through serious due diligence
+   by Farther&apos;s investment committee. We look at the fund
+   manager&apos;s track record, fee structure, strategy consistency,
+   operations, and whether their interests are aligned with yours.
+   We compare net-of-fee performance against what you could get in
+   public markets, because the whole point is genuine
+   diversification -- not just added complexity.
    </p>
    </details>
   </AnimateOnScroll>
@@ -394,7 +395,7 @@ export default function AlternativesPage() {
   <AnimateOnScroll className="text-center mb-12">
   <SectionEyebrow text="RELATED SERVICES" />
   <h2 className="font-serif text-h2-mobile md:text-h2 font-bold text-[#333333] mt-4">
-   Alternatives Work Best as Part of a Complete Strategy.
+   Alternatives Work Best as Part of a Bigger Picture.
   </h2>
   </AnimateOnScroll>
 
@@ -408,8 +409,8 @@ export default function AlternativesPage() {
    Investment Management
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   Customized portfolio strategy, tax-efficient positioning, and
-   consolidated reporting across all accounts.
+   Your full portfolio strategy -- tax-smart positioning and a
+   clear view of everything in one place.
    </p>
    <span className="inline-block font-sans text-[14px] font-semibold text-[#1d7682] mt-4">
    Learn more &rarr;
@@ -427,7 +428,7 @@ export default function AlternativesPage() {
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
    OCIO and fiduciary oversight for nonprofits, endowments, and
-   foundations with complex investment mandates.
+   foundations that need professional investment management.
    </p>
    <span className="inline-block font-sans text-[14px] font-semibold text-[#1d7682] mt-4">
    Learn more &rarr;
@@ -444,8 +445,8 @@ export default function AlternativesPage() {
    Financial Planning
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   Comprehensive planning including retirement projections, cash
-   flow analysis, and insurance audits.
+   The full picture -- retirement projections, cash flow
+   planning, insurance reviews, and more.
    </p>
    <span className="inline-block font-sans text-[14px] font-semibold text-[#1d7682] mt-4">
    Learn more &rarr;
@@ -463,20 +464,20 @@ export default function AlternativesPage() {
   <div className="max-w-[800px] mx-auto text-center">
   <AnimateOnScroll>
   <h2 className="font-serif text-[30px] md:text-[44px] font-semibold text-[#F7F4EE] leading-tight">
-   Ready to Invest Like the Institutions Do?
+   Curious What Institutional-Quality Investing Looks Like?
   </h2>
   </AnimateOnScroll>
   <AnimateOnScroll delay={100}>
   <p className="font-sans text-[17px] text-[#F7F4EE]/85 max-w-[620px] mx-auto mt-5 leading-relaxed">
-   A 30-minute discovery call will help us understand your portfolio,
-   your goals, and whether alternative investments belong in your
-   allocation. No commitment, no sales pitch.
+   A quick 30-minute call is all it takes. We&apos;ll talk about your
+   portfolio, your goals, and whether alternatives make sense for
+   you. No pressure, no sales pitch.
   </p>
   </AnimateOnScroll>
   <AnimateOnScroll delay={200}>
   <div className="mt-10">
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
    Schedule a Discovery Call

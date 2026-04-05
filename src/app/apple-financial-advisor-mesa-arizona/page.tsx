@@ -75,8 +75,8 @@ export default function AppleFinancialAdvisor() {
   <p className="text-xl text-[#5b6a71] font-sans mb-10 leading-relaxed">
   Apple&apos;s Mesa operations and Silicon Valley campuses pay their engineers extraordinarily well. But biannual RSU vesting, a systematic withholding gap, and ESPP complexity create tax and wealth problems that require specialized advisory expertise. Jay Chang provides that expertise.
   </p>
-  <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">Schedule a Free Apple Benefits Review</Button>
+  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+  <Button href="/schedule-consultation" variant="primary">Schedule a Free Apple Benefits Review</Button>
   </div>
   <div className="text-[#5b6a71] font-sans">
   or call <span className="font-semibold text-[#333333]">(480) 944-0880</span>
@@ -239,7 +239,7 @@ export default function AppleFinancialAdvisor() {
   <p className="text-xl text-white font-sans mb-8">
   Apple&apos;s compensation is built for long-term wealth creation - but only if you plan it strategically. Jay works with Apple employees every week. Schedule a free, confidential call today.
   </p>
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">Schedule Your Free Apple Strategy Call</Button>
+  <Button href="/schedule-consultation" variant="primary">Schedule Your Free Apple Strategy Call</Button>
   </div>
  </section>
 
@@ -376,7 +376,7 @@ export default function AppleFinancialAdvisor() {
    Apple&apos;s compensation is complex - but it&apos;s also an opportunity. Biannual RSU vesting, a 15% ESPP discount, a tenure-scaled 401(k) match, and possible deferred comp create a $200K-$500K+ annual wealth-building window. The question is whether you have a plan to capture it.
   </p>
   <div className="mb-6">
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">Schedule Your Apple Employee Strategy Call - Mesa, Cupertino, and Beyond</Button>
+   <Button href="/schedule-consultation" variant="primary">Schedule Your Apple Employee Strategy Call - Mesa, Cupertino, and Beyond</Button>
   </div>
   <p className="text-lg text-[#5b6a71] font-sans">
    No cost. No pressure. Just clarity.

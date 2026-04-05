@@ -8,7 +8,7 @@ import { ArrowLeft, Clock, Calendar, User, ChevronRight, ShieldCheck, Search, Me
 
 export const metadata: Metadata = {
  title:
- 'How to Choose a Certified Financial Planner (CFP®) in Scottsdale | Jay Chang | Farther',
+ 'How to Choose a Certified Financial Planner (CFP®) in Scottsdale | Advisor Jay',
  description:
  'Learn how to evaluate and choose a Certified Financial Planner (CFP®) in Scottsdale. Understand fiduciary standards, fee structures, Arizona-specific planning, and what questions to ask before hiring a CFP.',
  alternates: {
@@ -76,7 +76,7 @@ export default function HowToChooseCFPLasVegasPage() {
   },
   publisher: {
    '@type': 'Organization',
-   name: 'Jay Chang | Farther',
+   name: 'Advisor Jay',
    url: 'https://www.PWM-Farther.com',
   },
   datePublished: '2026-01-15',
@@ -295,7 +295,7 @@ export default function HowToChooseCFPLasVegasPage() {
    We are happy to discuss what to look for - even if Farther is not the right fit for your family.
    </p>
    <div className="mt-6">
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
     Start a Conversation
    </Button>
    </div>
@@ -339,9 +339,7 @@ export default function HowToChooseCFPLasVegasPage() {
 
    <div className="mt-8">
    <a
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
-   target="_blank"
-   rel="noopener noreferrer"
+   href="/schedule-consultation"
    className="inline-flex items-center gap-2 font-sans text-[15px] font-semibold text-[#1d7682] hover:text-[#D4B65A] transition-colors"
    >
    <span>Start a Conversation</span>
@@ -420,7 +418,7 @@ export default function HowToChooseCFPLasVegasPage() {
   your family.
   </p>
   <div className="mt-10">
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+  <Button href="/schedule-consultation" variant="primary">
    Wondering If This Applies to You? Let's Find Out Together.
   </Button>
   </div>

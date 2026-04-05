@@ -146,7 +146,7 @@ export default function AppleESPPPage() {
   <p className="text-lg text-[#5b6a71] mb-8 leading-relaxed">
    Want to optimize your Apple ESPP strategy? Let&apos;s make sure your holdings and dispositions are working for you, not against you.
   </p>
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+  <Button href="/schedule-consultation" variant="primary">
    Schedule a Free Review
   </Button>
   </AnimateOnScroll>

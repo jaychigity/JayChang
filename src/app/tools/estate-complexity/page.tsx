@@ -5,7 +5,7 @@ import EstateComplexityAssessment from './EstateComplexityAssessment'
 
 export const metadata: Metadata = {
  title:
- 'Estate Complexity Assessment | Jay Chang | Farther',
+ 'Estate Complexity Assessment | Advisor Jay',
  description:
  'Discover the hidden complexity of your estate in under 2 minutes. Get a personalized complexity score across 9 risk factors - multi-state property, business succession, blended families, and more.',
  alternates: {

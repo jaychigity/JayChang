@@ -227,11 +227,11 @@ export default function PSLFBannerHealth() {
                 Understanding whether PSLF is right for your situation requires careful financial analysis. Let&apos;s review your loans and employment to ensure you&apos;re capturing maximum benefit.
               </p>
               <Button
-                href="https://meetings.hubspot.com/jay-chang1/farthercom"
+                href="/schedule-consultation"
                 variant="ghost"
                 className="w-full sm:w-auto"
               >
-                Schedule a Consultation
+                Schedule a Conversation
               </Button>
             </section>
           </AnimateOnScroll>

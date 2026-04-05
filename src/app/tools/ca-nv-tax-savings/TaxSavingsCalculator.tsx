@@ -268,6 +268,7 @@ export default function TaxSavingsCalculator() {
  const [contactErrors, setContactErrors] = useState<
  Record<string, string>
  >({})
+ const reportRef = useRef<HTMLDivElement>(null)
 
  const results = calcFiveYearSavings(w2, cg, rsu, re, reYear, filingStatus)
 
@@ -322,10 +323,7 @@ export default function TaxSavingsCalculator() {
  if (Object.keys(errors).length > 0) return
 
  try {
- const WEBHOOK_URL =
-  process.env.NEXT_PUBLIC_TAX_CALC_WEBHOOK_URL || ''
- if (WEBHOOK_URL) {
-  await fetch(WEBHOOK_URL, {
+ await fetch('/api/lead', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
@@ -338,11 +336,11 @@ export default function TaxSavingsCalculator() {
   reYear,
   cumulativeSavingsNV: results.cumulative.saveVsNV,
   cumulativeSavingsAZ: results.cumulative.saveVsAZ,
+  reportHtml: reportRef.current?.innerHTML || '',
   timestamp: new Date().toISOString(),
   source: 'ca-nv-az-tax-savings',
   }),
-  }).catch(() => {})
- }
+ }).catch(() => {})
  } catch {
  // silently fail
  }
@@ -429,7 +427,7 @@ export default function TaxSavingsCalculator() {
   </div>
 
   {/* ────── RESULTS PANEL ────── */}
-  <div>
+  <div ref={reportRef}>
   {/* 3-Card Hero Comparison */}
   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
   {/* California Card */}
@@ -776,7 +774,7 @@ export default function TaxSavingsCalculator() {
    href="/schedule-consultation"
    className="inline-flex items-center gap-2 bg-gradient-to-b from-[#2a9dab] to-[#1d7682] hover:from-[#238a97] hover:to-[#155f69] text-white font-sans font-semibold text-[15px] px-6 py-3 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_8px_24px_rgba(29,118,130,0.4)] transition-all duration-200 mt-5"
    >
-   Schedule a Consultation
+   Schedule a Conversation
    </Link>
    </div>
   )}

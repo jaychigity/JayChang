@@ -210,10 +210,10 @@ export default function Page() {
                 We help tech professionals calculate the tax impact of leaving California and file multi-state returns correctly. Our team understands California source allocation and can guide your relocation strategy.
               </p>
               <Button
-                href="https://meetings.hubspot.com/jay-chang1/farthercom"
+                href="/schedule-consultation"
                 variant="primary"
               >
-                Schedule a Consultation
+                Schedule a Conversation
               </Button>
             </section>
 

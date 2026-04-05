@@ -4,8 +4,8 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 
 export const metadata: Metadata = {
- title: 'Schedule a Strategy Call With Jay Chang | Farther Wealth Advisor | Phoenix, AZ',
- description: 'Book a free, confidential financial strategy call with Jay Chang, fiduciary advisor at Farther. No obligation. No pitch. Built for engineers, physicians, and executives across Arizona, California, and Nevada.',
+ title: 'Schedule a Conversation With Jay Chang | Wealth Advisor | Phoenix, AZ',
+ description: 'Schedule a conversation with Jay Chang, fiduciary wealth advisor at Farther. No pressure, no commitment — just a simple conversation to see if it is helpful.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/schedule-call',
  },
@@ -28,10 +28,10 @@ export default function ScheduleCall() {
   <div className="relative z-10 max-w-4xl mx-auto px-6">
   <AnimateOnScroll>
   <h1 className="text-5xl font-bold text-[#F7F4EE] mb-6">
-   Schedule Your Strategy Call
+   Let&apos;s Connect
   </h1>
   <p className="text-xl text-[#F7F4EE]/90 max-w-2xl">
-   One conversation. Clarity on your financial plan, your equity, your taxes, and whether Jay is the right advisor for your situation.
+   Thanks for taking the time to be here. If you&apos;re thinking about retirement, going through a transition, or just want to talk through your financial picture with someone who understands, I&apos;d be glad to connect. No pressure, no commitment, just a simple conversation to see if it&apos;s helpful.
   </p>
   </AnimateOnScroll>
   </div>
@@ -47,72 +47,72 @@ export default function ScheduleCall() {
 
   <div className="mb-12">
    <h3 className="text-2xl font-semibold text-[#333333] mb-6">
-   30-minute, no-obligation conversation:
+   A 30-minute, no-strings-attached conversation with me:
    </h3>
    <ul className="space-y-4 text-lg text-[#5b6a71]">
    <li className="flex items-start">
    <span className="text-[#1d7682] font-bold mr-4">•</span>
-   <span>Understand current compensation, equity, financial situation</span>
+   <span>Walk me through your compensation, equity, and where things stand financially</span>
    </li>
    <li className="flex items-start">
    <span className="text-[#1d7682] font-bold mr-4">•</span>
-   <span>Identify top 1-2 financial priorities and concerns</span>
+   <span>Talk through the one or two things keeping you up at night</span>
    </li>
    <li className="flex items-start">
    <span className="text-[#1d7682] font-bold mr-4">•</span>
-   <span>Determine fit with Jay&apos;s expertise and Farther&apos;s platform</span>
+   <span>See if my experience and Farther&apos;s platform are a good match for your situation</span>
    </li>
    <li className="flex items-start">
    <span className="text-[#1d7682] font-bold mr-4">•</span>
-   <span>Give you at least one actionable idea immediately</span>
+   <span>Walk away with at least one idea you can act on right away</span>
    </li>
    </ul>
   </div>
 
   <div className="mb-12">
    <h3 className="text-2xl font-semibold text-[#333333] mb-6">
-   What This Is Not:
+   What This Isn't:
    </h3>
    <ul className="space-y-3 text-lg text-[#5b6a71]">
    <li className="flex items-start">
-   <span className="text-[#1d7682] font-bold mr-4">×</span>
-   <span>Not a sales call</span>
+   <span className="text-[#1d7682] font-bold mr-4">&times;</span>
+   <span>Not a sales pitch — we promise</span>
    </li>
    <li className="flex items-start">
-   <span className="text-[#1d7682] font-bold mr-4">×</span>
-   <span>Not a product presentation</span>
+   <span className="text-[#1d7682] font-bold mr-4">&times;</span>
+   <span>Not a product demo or presentation</span>
    </li>
    <li className="flex items-start">
-   <span className="text-[#1d7682] font-bold mr-4">×</span>
-   <span>Not a commitment of any kind</span>
+   <span className="text-[#1d7682] font-bold mr-4">&times;</span>
+   <span>Not a commitment to anything — you're just having a conversation</span>
    </li>
    </ul>
   </div>
 
   <div>
    <h3 className="text-2xl font-semibold text-[#333333] mb-6">
-   Who This Is For:
+   This Might Be a Great Fit If You:
    </h3>
    <ul className="space-y-3 text-lg text-[#5b6a71]">
    <li className="flex items-start">
-   <span className="text-[#1d7682] font-bold mr-4">✓</span>
-   <span>Significant RSUs, stock options, or ESPP at a major employer</span>
+   <span className="text-[#1d7682] font-bold mr-4">&check;</span>
+   <span>Have significant RSUs, stock options, or ESPP at a major employer</span>
    </li>
    <li className="flex items-start">
-   <span className="text-[#1d7682] font-bold mr-4">✓</span>
-   <span>Navigating NQDC (SERPLUS, RTX DCP, or similar)</span>
+   <span className="text-[#1d7682] font-bold mr-4">&check;</span>
+   <span>Are navigating deferred comp like SERPLUS, RTX DCP, or something similar</span>
    </li>
    <li className="flex items-start">
-   <span className="text-[#1d7682] font-bold mr-4">✓</span>
-   <span>Physician or executive with high income and limited time</span>
+   <span className="text-[#1d7682] font-bold mr-4">&check;</span>
+   <span>Are a physician or executive earning well but short on time to manage it all</span>
    </li>
    <li className="flex items-start">
-   <span className="text-[#1d7682] font-bold mr-4">✓</span>
-   <span>Recently relocated to Arizona from California</span>
+   <span className="text-[#1d7682] font-bold mr-4">&check;</span>
+   <span>Recently moved to Arizona from California and want to make the most of the tax savings</span>
    </li>
    <li className="flex items-start">
-   <span className="text-[#1d7682] font-bold mr-4">✓</span>
-   <span>$500K+ investable assets and current plan isn&apos;t keeping pace</span>
+   <span className="text-[#1d7682] font-bold mr-4">&check;</span>
+   <span>Have $500K+ in investable assets and feel like your current plan isn't keeping up</span>
    </li>
    </ul>
   </div>
@@ -126,16 +126,16 @@ export default function ScheduleCall() {
   <AnimateOnScroll>
   <div className="bg-white rounded-[12px] p-8 text-center shadow-sm">
    <h3 className="text-2xl font-semibold text-[#333333] mb-8">
-   Ready to Get Started?
+   Ready When You Are
    </h3>
    <Button
    href="https://meetings.hubspot.com/jay-chang1/farthercom"
    variant="primary"
    >
-   Open Jay&apos;s Calendar
+   Schedule a Conversation
    </Button>
    <p className="text-lg text-[#5b6a71] mt-6">
-   or call <a href="tel:+14809440880" className="font-semibold text-[#1d7682] hover:underline">(480) 944-0880</a>
+   or just call <a href="tel:+14809440880" className="font-semibold text-[#1d7682] hover:underline">(480) 944-0880</a>
    </p>
   </div>
   </AnimateOnScroll>
@@ -147,38 +147,38 @@ export default function ScheduleCall() {
   <div className="max-w-4xl mx-auto px-6">
   <AnimateOnScroll>
   <h2 className="text-4xl font-bold text-[#333333] mb-12">
-   Why Professionals Trust Jay
+   Why People Work With Me
   </h2>
 
   <ul className="space-y-6 text-lg text-[#5b6a71]">
    <li className="flex items-start">
    <span className="text-[#1d7682] font-bold mr-4 text-xl">•</span>
    <span>
-   <strong className="text-[#333333]">Fiduciary, always</strong> - legally required to act in your interest
+   <strong className="text-[#333333]">Fiduciary, always</strong> — I&apos;m legally required to put your interests first, and I wouldn&apos;t have it any other way
    </span>
    </li>
    <li className="flex items-start">
    <span className="text-[#1d7682] font-bold mr-4 text-xl">•</span>
    <span>
-   <strong className="text-[#333333]">Deep compensation expertise</strong> - Intel SERPLUS, NVIDIA ESPP, RTX pension, Apple DCP, Banner Health 401(k)
+   <strong className="text-[#333333]">I know how you get paid</strong> — Intel SERPLUS, NVIDIA ESPP, RTX pension, Apple DCP, Banner Health 401(k) — this is what I do every day
    </span>
    </li>
    <li className="flex items-start">
    <span className="text-[#1d7682] font-bold mr-4 text-xl">•</span>
    <span>
-   <strong className="text-[#333333]">Farther&apos;s Intelligent Wealth Platform</strong> - $15B+ AUM, automated tax-loss harvesting
+   <strong className="text-[#333333]">Farther's Intelligent Wealth Platform</strong> — $15B+ AUM with automated tax-loss harvesting working behind the scenes
    </span>
    </li>
    <li className="flex items-start">
    <span className="text-[#1d7682] font-bold mr-4 text-xl">•</span>
    <span>
-   <strong className="text-[#333333]">Named Best RIA to Work For, 2025</strong>
+   <strong className="text-[#333333]">Named Best RIA to Work For, 2025</strong> — good people doing good work
    </span>
    </li>
    <li className="flex items-start">
    <span className="text-[#1d7682] font-bold mr-4 text-xl">•</span>
    <span>
-   <strong className="text-[#333333]">Based in Tempe</strong>, serving AZ, CA, and NV
+   <strong className="text-[#333333]">Based in Tempe</strong>, proudly serving families across Arizona, California, Nevada, and nationwide
    </span>
    </li>
   </ul>

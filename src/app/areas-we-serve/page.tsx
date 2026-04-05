@@ -19,10 +19,10 @@ export default function AreasWeServe() {
   <div className="max-w-4xl mx-auto px-6">
   <AnimateOnScroll>
   <h1 className="text-5xl font-bold text-[#333333] mb-6">
-   Areas Jay Chang Serves
+   Where We Work with Clients
   </h1>
   <p className="text-xl text-[#5b6a71] max-w-2xl">
-   Based in Tempe, Arizona - serving clients across the Southwest and beyond through a modern, virtual-first advisory model.
+   Jay is based in Tempe, Arizona, but our team serves clients across the Southwest and beyond. Whether we meet in person or over video, the relationship is the same - personal, hands-on, and built around your life.
   </p>
   </AnimateOnScroll>
   </div>
@@ -108,7 +108,7 @@ export default function AreasWeServe() {
 
   <div className="bg-[#FAFAF8] rounded-[12px] p-8 mb-8">
    <p className="text-lg text-[#5b6a71]">
-   <strong className="text-[#333333]">Also serving:</strong> Gilbert, Queen Creek, Goodyear - Growing professional communities
+   <strong className="text-[#333333]">We also work with folks in:</strong> Gilbert, Queen Creek, Goodyear - growing communities with great professionals
    </p>
   </div>
   </AnimateOnScroll>
@@ -216,10 +216,10 @@ export default function AreasWeServe() {
   <div className="max-w-4xl mx-auto px-6">
   <AnimateOnScroll>
   <h2 className="text-4xl font-bold text-[#333333] mb-6">
-   Nationwide Capability
+   We Work with Clients Nationwide, Too
   </h2>
   <p className="text-xl text-[#5b6a71] mb-8">
-   Farther&apos;s platform enables Jay to serve clients anywhere Farther is registered. If your situation involves significant equity comp, high income, or complex benefits - Jay may be the right fit regardless of location.
+   Farther&apos;s platform lets us serve clients anywhere we&apos;re registered. If you&apos;re dealing with complex equity compensation, high income, or benefits that need a careful eye - Jay and our team may be the right fit no matter where you call home.
   </p>
   </AnimateOnScroll>
   </div>
@@ -230,10 +230,10 @@ export default function AreasWeServe() {
   <div className="max-w-4xl mx-auto px-6 text-center">
   <AnimateOnScroll>
   <h2 className="text-4xl font-bold text-white mb-8">
-   Whether You&apos;re in Chandler or Cupertino, Jay Can Help.
+   Whether You&apos;re in Chandler or Cupertino, We&apos;d Love to Meet You.
   </h2>
   <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
   >
    Schedule a Call to Discuss Your Situation

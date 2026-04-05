@@ -4,8 +4,8 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 
 export const metadata: Metadata = {
- title: 'Tech Executive Wealth Management | NVIDIA & Apple Equity Planning | Jay Chang, Farther',
- description: 'Wealth management for NVIDIA and Apple employees and executives. Seven-figure RSU concentration, ESPP optimization, quarterly vesting tax management, and Deferred Compensation Planning for tech professionals in Arizona and California.',
+ title: 'Tech Executive Wealth Management | NVIDIA & Apple Equity Planning | Advisor Jay, Farther',
+ description: 'Wealth management for NVIDIA and Apple employees and executives. We help with seven-figure RSU concentration, ESPP optimization, quarterly vesting tax planning, and Deferred Compensation strategy for tech professionals in Arizona and California.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/tech-executive-wealth-management',
  },
@@ -31,10 +31,10 @@ export default function TechExecutivePage() {
    Tech Executive Wealth Management
    </div>
    <h1 className="text-4xl md:text-5xl font-bold text-[#333333] leading-tight">
-   Tech Executives: Your Equity Has Created Extraordinary Wealth. Protect It With the Same Sophistication.
+   You&apos;ve Built Something Amazing at NVIDIA or Apple. Let&apos;s Make Sure You Actually Get to Keep It.
    </h1>
    <p className="text-lg text-[#5b6a71] max-w-3xl">
-   NVIDIA and Apple compensate their people extraordinarily well - and create extraordinarily complex financial situations. RSU concentration at seven-figure levels, quarterly and biannual vesting events, a 2-year ESPP lookback, and tax withholding gaps that show up as five-figure April surprises. Jay Chang builds the plan that matches the complexity.
+   Look, NVIDIA and Apple pay their people incredibly well - but that compensation comes with a level of financial complexity most advisors don&apos;t understand. Seven-figure RSU concentration, quarterly and biannual vesting events creating tax surprises, a 2-year ESPP lookback, and withholding gaps that hit you with five-figure April bills. Our team knows this world inside and out, and we build plans that actually match the reality of your paycheck.
    </p>
   </div>
   </AnimateOnScroll>
@@ -48,10 +48,10 @@ export default function TechExecutivePage() {
   <div className="space-y-8">
    <div>
    <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-6">
-   The Tech Compensation Reality
+   Your Pay Is Great. The Complexity That Comes With It? Not So Much.
    </h2>
    <p className="text-lg text-[#5b6a71] leading-relaxed mb-6">
-   You know your compensation structure: $300,000 base, plus $200,000 to $500,000 (or more) in equity. But equity isn&apos;t a single number. It&apos;s a recurring stream of taxable events.
+   You know your comp structure: maybe $300K base, plus another $200K to $500K (or more) in equity. But here&apos;s the thing - that equity isn&apos;t just a nice number on a grant letter. It&apos;s a stream of taxable events that keeps coming, quarter after quarter. Let&apos;s walk through what we see with our tech clients.
    </p>
 
    <div className="space-y-6">
@@ -60,7 +60,7 @@ export default function TechExecutivePage() {
     Vesting Events
     </h3>
     <p className="text-lg text-[#5b6a71] leading-relaxed">
-    NVIDIA RSUs vest quarterly. Apple RSUs vest biannually. That&apos;s 4 to 8 or more taxable events every year - not one. Each creates a tax liability at vesting based on the FMV that day. You&apos;re responsible for managing the tax consequences.
+    NVIDIA RSUs vest quarterly. Apple RSUs vest biannually. That&apos;s anywhere from 4 to 8+ taxable events hitting your account every single year - not just one lump. Each one creates a tax bill based on the stock price that day. And nobody at HR is helping you manage the fallout.
     </p>
    </div>
 
@@ -69,7 +69,7 @@ export default function TechExecutivePage() {
     ESPP Programs
     </h3>
     <p className="text-lg text-[#5b6a71] leading-relaxed">
-    15% discount, 2-year lookback pricing. That creates built-in gains the moment your shares settle. Decisions about when to sell, how much to hold, and how to tax-lot them require precision.
+    The 15% discount with a 2-year lookback is a fantastic benefit - seriously, it&apos;s one of the best in corporate America. But it also creates built-in gains the moment your shares settle. When to sell, how much to hold, how to handle the tax lots - these decisions matter more than most people realize.
     </p>
    </div>
 
@@ -78,7 +78,7 @@ export default function TechExecutivePage() {
     Concentration Risk
     </h3>
     <p className="text-lg text-[#5b6a71] leading-relaxed">
-    Concentration in employer stock accumulates silently. After three years, you may have $1.2 million of NVIDIA or Apple stock in your net worth. You didn&apos;t decide to make a 40% bet on a single company. The vesting schedule did it for you.
+    Here&apos;s something that sneaks up on people: after a few years, you might have $1.2 million in NVIDIA or Apple stock sitting in your net worth. You didn&apos;t wake up one morning and decide to make a 40% bet on a single company. The vesting schedule did it for you, quietly, over time. And that&apos;s a risk we need to talk about.
     </p>
    </div>
 
@@ -87,7 +87,7 @@ export default function TechExecutivePage() {
     Deferred Compensation (Apple)
     </h3>
     <p className="text-lg text-[#5b6a71] leading-relaxed">
-    Apple&apos;s DCP allows eligible executives to defer significant income. Brilliant for tax management. Requires advance planning and precise execution.
+    Apple&apos;s Deferred Compensation Plan lets eligible executives push significant income into the future - which can be brilliant for managing your tax bracket. But it only works well if you plan ahead. We help make sure the timing and elections all line up.
     </p>
    </div>
    </div>
@@ -104,40 +104,40 @@ export default function TechExecutivePage() {
   <div className="space-y-8">
    <div>
    <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-6">
-   Combining Accounts Into One Strategy
+   All Your Accounts, One Actual Plan
    </h2>
    <p className="text-lg text-[#5b6a71] leading-relaxed mb-8">
-   Most financial planning software treats accounts as isolated silos: 401(k) over here, brokerage over there, ESPP somewhere else. That&apos;s how you end up with:
+   Here&apos;s what we see all the time: most financial tools treat your accounts like they exist in separate universes. Your 401(k) is over here, your brokerage is over there, your ESPP shares are somewhere else entirely. And that&apos;s how you end up with situations like:
    </p>
 
    <ul className="space-y-4 mb-8">
    <li className="text-lg text-[#5b6a71] leading-relaxed">
-    A 401(k) that&apos;s 60% bonds and a brokerage that&apos;s 80% equities - no actual allocation.
+    A 401(k) loaded with bonds and a brokerage account that&apos;s almost all stocks - which means you don&apos;t actually have an allocation. You have two accounts doing their own thing.
    </li>
    <li className="text-lg text-[#5b6a71] leading-relaxed">
-    High-fee funds in tax-advantaged accounts and growth stocks in taxable accounts - the tax location is backwards.
+    High-fee funds sitting in your tax-advantaged accounts and growth stocks in your taxable accounts - the tax location is completely backwards.
    </li>
    <li className="text-lg text-[#5b6a71] leading-relaxed">
-    A total net worth that&apos;s 45% NVIDIA - and you didn&apos;t realize it.
+    A total net worth that&apos;s 45% in NVIDIA - and you didn&apos;t even realize it until we looked.
    </li>
    </ul>
 
    <p className="text-lg text-[#5b6a71] leading-relaxed mb-6">
-   Jay builds an integrated plan. Every account serves the larger strategy. That enables:
+   We build an integrated plan where every account plays a specific role in the bigger picture. That means:
    </p>
 
    <ul className="space-y-4">
    <li className="text-lg text-[#5b6a71] leading-relaxed">
-    <strong>True asset allocation</strong> across all accounts - you know your actual investment mix.
+    <strong>True asset allocation</strong> across all accounts - so you finally know your actual investment mix, not just what each account looks like on its own.
    </li>
    <li className="text-lg text-[#5b6a71] leading-relaxed">
-    <strong>Tax location optimization</strong> - bonds in the 401(k), growth in taxable, tax-loss harvesting where it matters.
+    <strong>Tax location done right</strong> - bonds in the 401(k) where they should be, growth in taxable, and tax-loss harvesting where it actually moves the needle.
    </li>
    <li className="text-lg text-[#5b6a71] leading-relaxed">
-    <strong>Concentration tracking</strong> - NVIDIA as a percentage of total net worth, with a rebalancing plan.
+    <strong>Concentration tracking</strong> - we watch your NVIDIA or Apple stock as a percentage of your total net worth and build a real plan to rebalance over time.
    </li>
    <li className="text-lg text-[#5b6a71] leading-relaxed">
-    <strong>Scenario planning</strong> - What happens if NVIDIA drops 30%? What if you change jobs? What if you sell $500,000 of ESPP shares this year?
+    <strong>Scenario planning</strong> - what happens if NVIDIA drops 30%? What if you change jobs? What if you sell $500K of ESPP shares this year? We run the numbers before you make the move.
    </li>
    </ul>
    </div>
@@ -152,14 +152,14 @@ export default function TechExecutivePage() {
   <AnimateOnScroll>
   <div className="space-y-8">
    <h2 className="text-3xl md:text-4xl font-bold text-[#333333]">
-   NVIDIA and Apple Built Your Wealth. Jay&apos;s Job Is to Make Sure You Keep It.
+   NVIDIA and Apple Built Your Wealth. We&apos;re Here to Help You Keep It.
    </h2>
    <p className="text-lg text-[#5b6a71] max-w-2xl mx-auto">
-   Jay Chang specializes in comprehensive wealth management for tech executives and high-earners in Arizona and California.
+   Jay Chang and our team specialize in helping tech executives and high-earners in Arizona and California make smart decisions with their equity comp. Let&apos;s sit down and look at your situation together.
    </p>
    <div className="flex justify-center pt-4">
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
-   Schedule Your Tech Executive Strategy Call
+   <Button href="/schedule-consultation" variant="primary">
+   Let&apos;s Talk About Your Tech Comp
    </Button>
    </div>
    <p className="text-sm text-[#5b6a71] pt-4">

@@ -116,7 +116,7 @@ export default function AmkorTechnologyPage() {
    Jay Chang specializes in wealth planning for Amkor Technology professionals. Schedule a consultation to discuss your unique financial situation.
    </p>
    <div className="flex justify-center pt-4">
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
    Schedule Your Amkor Strategy Call
    </Button>
    </div>

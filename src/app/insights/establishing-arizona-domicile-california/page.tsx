@@ -214,8 +214,8 @@ export default function ArizonaDomicileArticle() {
               <p className="text-gray-700 mb-6">
                 Let&apos;s ensure your domicile transition is properly documented and defensible.
               </p>
-              <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
-                Schedule a Consultation
+              <Button href="/schedule-consultation" variant="primary">
+                Schedule a Conversation
               </Button>
             </AnimateOnScroll>
           </div>

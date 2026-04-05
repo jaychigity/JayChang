@@ -3,14 +3,14 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 
 export const metadata: Metadata = {
- title: 'Financial Advisor in Tempe, AZ | Jay Chang, Farther | Fiduciary Wealth Management',
+ title: 'Financial Advisor in Tempe, AZ | Advisor Jay, Farther | Fiduciary Wealth Management',
  description: 'Jay Chang is a fiduciary financial advisor based in Tempe, Arizona at Farther. Serving engineers, physicians, and executives across the East Valley with comprehensive, technology-powered wealth management.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/financial-advisor-tempe-az',
  },
  robots: 'index, follow',
  openGraph: {
- title: 'Financial Advisor in Tempe, AZ | Jay Chang, Farther | Fiduciary Wealth Management',
+ title: 'Financial Advisor in Tempe, AZ | Advisor Jay, Farther | Fiduciary Wealth Management',
  description: 'Jay Chang is a fiduciary financial advisor based in Tempe, Arizona at Farther. Serving engineers, physicians, and executives across the East Valley.',
  type: 'website',
  url: 'https://www.PWM-Farther.com/financial-advisor-tempe-az',
@@ -27,7 +27,7 @@ export default function TempeFinancialAdvisor() {
  const localBusinessSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Jay Chang, Farther',
+ name: 'Advisor Jay, Farther',
  description: 'Fiduciary financial advisor based in Tempe, Arizona serving engineers, physicians, and executives',
  url: 'https://www.PWM-Farther.com/financial-advisor-tempe-az',
  areaServed: [
@@ -67,13 +67,13 @@ export default function TempeFinancialAdvisor() {
    Tempe Financial Advisor
    </p>
    <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#333333] mb-6 leading-tight">
-   Fiduciary Financial Advisor in Tempe, Arizona
+   Your Financial Advisor in Tempe, Arizona
    </h1>
    <p className="font-sans text-lg md:text-xl text-[#5b6a71] mb-8 max-w-3xl mx-auto leading-relaxed">
-   Jay is based in Tempe, home to the ASU tech ecosystem and Amkor Technology headquarters. As VP, Wealth Advisor at Farther, he serves clients from Chandler to Scottsdale to North Phoenix with a $15B+ technology-enabled platform.
+   This is home base. Jay lives and works in Tempe, right in the middle of the ASU tech ecosystem and just down the road from Amkor Technology&apos;s headquarters. As VP, Wealth Advisor at Farther, he and our team serve clients from Chandler to Scottsdale to North Phoenix - and we&apos;d love to meet you.
    </p>
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
    Schedule a Tempe Strategy Call
@@ -89,17 +89,17 @@ export default function TempeFinancialAdvisor() {
   <AnimateOnScroll>
   <div>
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
-   Wealth Management for Tempe and East Valley Professionals
+   A Neighbor Who Happens to Be a Financial Planner
    </h2>
    <div className="prose prose-lg max-w-none text-[#5b6a71] font-sans space-y-4">
    <p>
-   Tempe is the heart of Arizona technology and innovation ecosystem. Home to Arizona State University&apos;s engineering and computer science programs, the city has become a hub for tech talent. Amkor Technology, one of the world&apos;s leading semiconductor assembly and test companies, is headquartered here - creating demand for engineers, operations professionals, and leaders across all income levels.
+   Tempe is where Arizona&apos;s tech and innovation scene comes together. Arizona State University keeps bringing in top engineering and computer science talent. Amkor Technology, one of the world&apos;s leading semiconductor assembly and test companies, is headquartered right here - which means Tempe is full of sharp engineers, operations leaders, and professionals building serious wealth.
    </p>
    <p>
-   Jay Chang is based in Tempe and serves professionals throughout the East Valley, Phoenix, Chandler, and Scottsdale. Whether you&apos;re managing RSU concentration, optimizing equity compensation, planning multi-state tax strategy, or building a comprehensive retirement income plan, Jay brings specialized expertise and a technology-powered platform to your situation.
+   Jay Chang chose Tempe as his home base for a reason. He works with professionals throughout the East Valley, Phoenix, Chandler, and Scottsdale who are dealing with the same kinds of questions: What do I do with all these RSUs? Am I paying more in taxes than I need to? Is my retirement plan actually going to work? Should I be doing a mega backdoor Roth?
    </p>
    <p>
-   At Farther, we combine human expertise with technology to deliver comprehensive, scalable wealth management. Our $15B+ platform provides access to sophisticated investment strategies, tax optimization tools, and retirement planning models that scale to your needs.
+   At Farther, we combine real human advice with a modern technology platform. That means you get Jay and our team thinking about your situation personally, backed by tools that help us model scenarios, optimize taxes, and keep your plan on track. No dusty binders. No once-a-year check-in calls. Just a team that&apos;s genuinely in your corner.
    </p>
    </div>
   </div>
@@ -113,7 +113,7 @@ export default function TempeFinancialAdvisor() {
   <AnimateOnScroll>
   <div>
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-8">
-   Financial Planning Services for Tempe Professionals
+   How We Help Tempe Professionals
    </h2>
    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
    {services.map((service, index) => (
@@ -134,13 +134,13 @@ export default function TempeFinancialAdvisor() {
   <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
   <AnimateOnScroll>
   <h3 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
-   Ready to Build Your Tempe Wealth Strategy?
+   Let&apos;s Grab 30 Minutes and Talk About Your Goals
   </h3>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   A free strategy call gives us 30 minutes to understand your situation, goals, and the financial opportunities you might be missing.
+   No cost, no pressure. We&apos;ll walk through your situation, what you&apos;re trying to accomplish, and honestly share whether we think there are opportunities worth exploring.
   </p>
   <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
   >
    Schedule a Tempe Strategy Call
@@ -154,13 +154,13 @@ export default function TempeFinancialAdvisor() {
   <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
   <AnimateOnScroll>
   <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
-   Let&apos;s Build Your Comprehensive Wealth Plan
+   We&apos;re Right Here in Tempe - Let&apos;s Connect
   </h2>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   Working with Jay Chang at Farther means accessing a fiduciary advisor who specializes in the specific challenges Tempe and East Valley professionals face.
+   Working with Jay Chang and our team at Farther means you get a local fiduciary advisor who understands the real challenges East Valley professionals face. We&apos;re your neighbors, and we&apos;re here to help.
   </p>
   <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
   >
    Schedule a Tempe Strategy Call

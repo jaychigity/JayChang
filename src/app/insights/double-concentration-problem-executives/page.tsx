@@ -224,11 +224,11 @@ export default function DoubleConcentrationProblem() {
                 A comprehensive analysis of your human and financial capital can help you build a more resilient balance sheet. Let&apos;s map out a diversification strategy.
               </p>
               <Button
-                href="https://meetings.hubspot.com/jay-chang1/farthercom"
+                href="/schedule-consultation"
                 variant="ghost"
                 className="w-full sm:w-auto"
               >
-                Schedule a Consultation
+                Schedule a Conversation
               </Button>
             </section>
           </AnimateOnScroll>

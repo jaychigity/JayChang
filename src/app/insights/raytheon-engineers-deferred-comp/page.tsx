@@ -184,7 +184,7 @@ export default function RaytheonDeferredCompPage() {
   <p className="text-lg text-[#5b6a71] mb-8 leading-relaxed">
    Enrolling in the RTX DCP this year? Make sure your elections are optimal. Let&apos;s build a model that coordinates with your complete retirement picture.
   </p>
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+  <Button href="/schedule-consultation" variant="primary">
    Schedule a Call with Jay
   </Button>
   </AnimateOnScroll>

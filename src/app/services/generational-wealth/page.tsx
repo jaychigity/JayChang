@@ -12,7 +12,7 @@ export const metadata: Metadata = {
  'Multi-generational wealth planning for families with $2M-$20M. Family governance, dynasty trusts, succession planning, and values-based philanthropy.',
  alternates: { canonical: 'https://www.PWM-Farther.com/services/generational-wealth' },
  openGraph: {
- title: 'Generational Wealth Planning | Jay Chang | Farther',
+ title: 'Generational Wealth Planning | Advisor Jay',
  description:
  'Build wealth that endures across generations with multi-generational governance frameworks, dynasty trusts, succession planning, and values-based philanthropy strategies.',
  url: 'https://www.PWM-Farther.com/services/generational-wealth',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Generational Wealth Planning - Jay Chang | Farther',
+ name: 'Generational Wealth Planning - Advisor Jay',
  description:
  'Multi-generational wealth planning for families with $2M-$20M in investable assets in Scottsdale, AZ and across Arizona, California, and Nevada. Family governance, dynasty trusts, business succession planning, and values-based philanthropy.',
  url: 'https://www.PWM-Farther.com/services/generational-wealth',
@@ -539,7 +539,7 @@ export default function GenerationalWealthPlanningPage() {
   <div className="mt-10">
    <Button
    variant="primary"
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    >
    Schedule a Discovery Call
    </Button>

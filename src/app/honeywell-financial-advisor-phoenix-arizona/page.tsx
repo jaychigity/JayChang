@@ -38,7 +38,7 @@ export default function HoneywellAdvisorPage() {
    Honeywell&apos;s 7% employer match is among the most generous in aerospace. But it arrives as Honeywell stock - and most employees don&apos;t realize how much of their retirement is riding on one company&apos;s performance. Jay Chang helps Honeywell professionals build a complete, diversified plan.
    </p>
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    className="inline-block"
    >
@@ -149,7 +149,7 @@ export default function HoneywellAdvisorPage() {
    Let&apos;s start with a free, no-obligation benefits review. We&apos;ll map your 401(k) concentration, discuss your RSU plan, and outline a path to retirement clarity.
   </p>
   <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
   >
    Schedule Your Honeywell Benefits Review
@@ -170,7 +170,7 @@ export default function HoneywellAdvisorPage() {
    Jay Chang is a fiduciary advisor who specializes in Honeywell employee financial planning. He understands your benefits, your risks, and your opportunities for long-term wealth.
    </p>
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    className="inline-block mb-8"
    >

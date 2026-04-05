@@ -121,7 +121,7 @@ export default function IntelMegaBackdoorRothPage() {
    <p className="text-[#333333] text-lg mb-6">
    Want help implementing this strategy? Many Intel engineers defer the mega backdoor Roth because the process feels complex. But once set up, it runs on autopilot.
    </p>
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
    Schedule a Free Call
    </Button>
   </div>

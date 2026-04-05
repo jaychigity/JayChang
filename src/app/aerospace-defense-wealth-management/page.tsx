@@ -6,7 +6,7 @@ import SectionEyebrow from '@/components/SectionEyebrow';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
- title: 'Aerospace & Defense Wealth Management in Phoenix & Tucson | Honeywell & Raytheon Benefits | Jay Chang, Farther',
+ title: 'Aerospace & Defense Wealth Management in Phoenix & Tucson | Honeywell & Raytheon Benefits | Advisor Jay, Farther',
  description: 'Fiduciary financial planning for Honeywell and Raytheon/RTX professionals in Phoenix and Tucson. Jay knows your pension, your 401(k) match structure, your deferred comp plans, and what Honeywell\'s spinoff into HONA means for your equity and retirement.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/aerospace-defense-wealth-management',
@@ -52,7 +52,7 @@ export default function AerospaceDefenseWealthManagement() {
    Honeywell&apos;s spinoff into Aeronautical Systems (HONA) transforms your equity compensation. RTX&apos;s $2.5B pension transfer to Prudential affects your retirement income decision. Your 401(k) match structure compounds concentration risk. Your deferred comp plan operates under Section 409A rules that require specialized expertise to address. These aren&apos;t generic financial problems. They&apos;re aerospace-specific strategic decisions that require precision.
    </p>
    <div className="flex flex-col sm:flex-row gap-4">
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
    Schedule Your Aerospace & Defense Strategy Call
    </Button>
    </div>
@@ -603,7 +603,7 @@ export default function AerospaceDefenseWealthManagement() {
   <p className="text-lg text-gray-300 mb-8 leading-relaxed">
    You&apos;ve built a remarkable career in aerospace and defense. Your financial plan should reflect the same sophistication, precision, and forward-thinking that got you here.
   </p>
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+  <Button href="/schedule-consultation" variant="primary">
    Schedule Your Aerospace &amp; Defense Strategy Call
   </Button>
   <p className="text-sm text-gray-400 mt-8">

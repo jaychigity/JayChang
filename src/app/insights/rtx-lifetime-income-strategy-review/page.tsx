@@ -8,7 +8,7 @@ import { ArrowLeft, Clock, Calendar, User, ChevronRight, MessageSquare } from 'l
 
 export const metadata: Metadata = {
   title:
-    'RTX Lifetime Income Strategy: Is It Right for You, or Are There Better Options? | Jay Chang | Farther',
+    'RTX Lifetime Income Strategy: Is It Right for You, or Are There Better Options? | Advisor Jay',
   description:
     'RAYSIP Lifetime Income Strategy (LIS) converts 401(k) to guaranteed annuity income starting age 48. Pros: longevity protection. Cons: reduces NUA strategy, illiquidity. RTX contribution scaling 3% to 7% by age. Compare alternatives.',
   alternates: {
@@ -76,7 +76,7 @@ export default function RTXLifetimeIncomeStrategyReviewPage() {
             },
             publisher: {
               '@type': 'Organization',
-              name: 'Jay Chang | Farther',
+              name: 'Advisor Jay',
               url: 'https://www.PWM-Farther.com',
             },
             datePublished: '2026-03-18',
@@ -327,7 +327,7 @@ export default function RTXLifetimeIncomeStrategyReviewPage() {
                   Run projections for your specific situation. See which approach aligns with your goals and risk tolerance.
                 </p>
                 <div className="mt-6">
-                  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+                  <Button href="/schedule-consultation" variant="primary">
                     Analyze Your Scenario
                   </Button>
                 </div>
@@ -392,9 +392,7 @@ export default function RTXLifetimeIncomeStrategyReviewPage() {
 
               <div className="mt-8">
                 <a
-                  href="https://meetings.hubspot.com/jay-chang1/farthercom"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/schedule-consultation"
                   className="inline-flex items-center gap-2 font-sans text-[15px] font-semibold text-[#1d7682] hover:text-[#D4B65A] transition-colors"
                 >
                   <span>Schedule Your LIS Review</span>
@@ -463,7 +461,7 @@ export default function RTXLifetimeIncomeStrategyReviewPage() {
             Compare your scenarios side by side. Understand the tradeoffs and see which path aligns with your retirement vision.
           </p>
           <div className="mt-10">
-            <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+            <Button href="/schedule-consultation" variant="primary">
               Compare Your Options
             </Button>
           </div>

@@ -8,7 +8,7 @@ import { ArrowLeft, Clock, Calendar, User, ChevronRight, Check, Minus } from 'lu
 
 export const metadata: Metadata = {
  title:
- 'Do You Need a Family Office - Or a Comprehensive Wealth Advisor? | Jay Chang | Farther',
+ 'Do You Need a Family Office - Or a Comprehensive Wealth Advisor? | Advisor Jay',
  description:
  'Explore the differences between a family office and a comprehensive wealth advisor. Learn why a family office alternative may deliver the same services at a fraction of the cost for families in Arizona, California, and Nevada.',
  keywords: [
@@ -98,7 +98,7 @@ export default function FamilyOfficeVsWealthAdvisorPage() {
   },
   publisher: {
    '@type': 'Organization',
-   name: 'Jay Chang | Farther',
+   name: 'Advisor Jay',
    url: 'https://www.PWM-Farther.com',
   },
   datePublished: '2026-01-15',
@@ -415,7 +415,7 @@ export default function FamilyOfficeVsWealthAdvisorPage() {
    <p className="font-sans text-[17px] text-[#5b6a71] leading-[1.8] mb-6 max-w-[540px] mx-auto">
    Schedule a confidential conversation with our advisory team. We will review your situation, explain exactly what we can coordinate, and help you determine the right model for your family.
    </p>
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
    Wondering If This Applies to You? Let's Find Out Together.
    </Button>
    </div>
@@ -513,7 +513,7 @@ export default function FamilyOfficeVsWealthAdvisorPage() {
   model for your family.
   </p>
   <div className="mt-10">
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+  <Button href="/schedule-consultation" variant="primary">
    Wondering If This Applies to You? Let's Find Out Together.
   </Button>
   </div>

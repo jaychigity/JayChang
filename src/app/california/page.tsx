@@ -19,10 +19,10 @@ import Button from '@/components/Button'
 export const metadata: Metadata = {
  title: 'Wealth Management in California | Financial Advisor for Tech Executives & Entrepreneurs',
  description:
- 'Personalized wealth management for California families, tech executives, and entrepreneurs with $2M-$20M. Serving Los Angeles, San Francisco, Silicon Valley, and Newport Beach. Jay Chang | Farther.',
+ 'Personalized wealth management for California families, tech executives, and entrepreneurs with $2M-$20M. Serving Los Angeles, San Francisco, Silicon Valley, and Newport Beach. Advisor Jay.',
  alternates: { canonical: 'https://www.PWM-Farther.com/california' },
  openGraph: {
- title: 'California Wealth Management | Jay Chang | Farther',
+ title: 'California Wealth Management | Advisor Jay',
  description:
  'Financial planning, tax optimization, and equity compensation strategy for California tech executives, startup founders, and high-earning professionals with $2M-$20M in investable assets.',
  url: 'https://www.PWM-Farther.com/california',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const financialServiceSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Jay Chang | Farther - California',
+ name: 'Advisor Jay - California',
  description:
  'Personalized wealth management for California families and professionals with $2M-$20M in investable assets. Financial planning, investment management, tax strategy, equity compensation planning, and business exit strategy.',
  url: 'https://www.PWM-Farther.com/california',
@@ -108,7 +108,7 @@ const faqSchema = {
  },
  {
  '@type': 'Question',
- name: 'Is Jay Chang | Farther a fiduciary financial advisor in California?',
+ name: 'Is Jay Chang a fiduciary financial advisor in California?',
  acceptedAnswer: {
   '@type': 'Answer',
   text: 'We are a fiduciary, meaning we are held to a legal standard to put your interests first. Our advisory fee is based on a percentage of assets under management. For complete details on fees and compensation, please refer to our Form ADV Part 2A.',
@@ -209,7 +209,7 @@ export default function CaliforniaPage() {
   <Image
   src="/Photos/california-professional.png"
   alt="California landscape - wealth management for Los Angeles, Silicon Valley, and San Francisco families"
-  title="California - Jay Chang | Farther"
+  title="California - Advisor Jay"
   fill
   className="object-cover opacity-20"
   priority
@@ -239,7 +239,7 @@ export default function CaliforniaPage() {
 
   <AnimateOnScroll delay={300}>
    <div className="mt-8">
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
    Begin a Confidential Conversation
    </Button>
    </div>
@@ -577,7 +577,7 @@ export default function CaliforniaPage() {
   <AnimateOnScroll delay={500}>
    <details className="border-b border-[#E8E6E1] group">
    <summary className="py-6 font-sans text-[17px] font-semibold text-[#333333] cursor-pointer list-none flex items-center justify-between">
-   Is Jay Chang | Farther a fiduciary financial advisor in California?
+   Is Jay Chang a fiduciary financial advisor in California?
    <ChevronDown className="w-5 h-5 text-[#1d7682] transition-transform group-open:rotate-180" />
    </summary>
    <div className="pb-6 font-sans text-base text-[#5b6a71] leading-[1.7]">
@@ -687,8 +687,8 @@ export default function CaliforniaPage() {
    </div>
 
    <div className="mt-8">
-   <Button variant="primary" href="https://meetings.hubspot.com/jay-chang1/farthercom">
-    Schedule a Consultation
+   <Button variant="primary" href="/schedule-consultation">
+    Schedule a Conversation
    </Button>
    </div>
    </div>
@@ -718,7 +718,7 @@ export default function CaliforniaPage() {
 
   <AnimateOnScroll delay={200}>
   <div className="mt-8">
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
    Begin a Confidential Conversation
    </Button>
   </div>

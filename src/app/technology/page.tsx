@@ -378,7 +378,7 @@ export default function TechnologyPage() {
                 See the Difference Intelligent Technology Makes.
               </h3>
               <div className="mt-8">
-                <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+                <Button href="/schedule-consultation" variant="primary">
                   Begin a Confidential Conversation{' '}
                   <ArrowRight className="inline-block ml-2 w-4 h-4" />
                 </Button>
@@ -455,8 +455,8 @@ export default function TechnologyPage() {
             we&apos;ll walk you through it.
           </p>
           <div className="mt-10">
-            <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
-              Let&rsquo;s Talk About What Matters to You
+            <Button href="/schedule-consultation" variant="primary">
+              Schedule a Conversation
             </Button>
           </div>
           <p className="font-sans text-sm text-[#F7F4EE]/60 mt-5">

@@ -36,7 +36,7 @@ export function buildOpenGraph(
   const image = overrides?.image || OG_IMAGES[pathname] || DEFAULT_OG_IMAGE
   return {
     type: 'website',
-    siteName: 'Jay Chang | Farther',
+    siteName: 'Advisor Jay',
     locale: 'en_US',
     title: overrides?.title,
     description: overrides?.description,
@@ -45,7 +45,7 @@ export function buildOpenGraph(
         url: image,
         width: 1200,
         height: 630,
-        alt: overrides?.title || 'Jay Chang — Farther Wealth Management',
+        alt: overrides?.title || 'Advisor Jay — Farther Wealth Management',
       },
     ],
   }

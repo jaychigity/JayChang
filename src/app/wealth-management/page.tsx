@@ -159,9 +159,9 @@ export default function WealthManagementPage() {
   attention of a boutique firm - powered by technology that puts you in
   control.
   </p>
-  <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
-   Let's Talk About What Matters to You
+  <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+  <Button href="/schedule-consultation" variant="primary">
+   Schedule a Conversation
   </Button>
   <Button href="/services" variant="outline">
    Explore Our Services
@@ -340,8 +340,8 @@ export default function WealthManagementPage() {
   whether Farther is the right fit for your family.
   </p>
   <div className="mt-10">
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
-   Let's Talk About What Matters to You
+  <Button href="/schedule-consultation" variant="primary">
+   Schedule a Conversation
   </Button>
   </div>
   <p className="font-sans text-sm text-[#F7F4EE]/60 mt-5">

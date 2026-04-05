@@ -75,8 +75,8 @@ export default function RaytheonRTXFinancialAdvisor() {
   <p className="text-xl text-[#5b6a71] font-sans mb-10 leading-relaxed">
   Between a legacy pension, age-based 401(k) contributions reaching 11% of pay, a Lifetime Income Strategy option, and an executive deferred compensation plan, RTX&apos;s benefits are extraordinarily rich - and extraordinarily complex. Jay Chang helps you turn all of it into a retirement you&apos;ve actually designed.
   </p>
-  <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">Schedule a Raytheon Benefits Strategy Call</Button>
+  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+  <Button href="/schedule-consultation" variant="primary">Schedule a Raytheon Benefits Strategy Call</Button>
   </div>
   <div className="text-[#5b6a71] font-sans">
   or call <span className="font-semibold text-[#333333]">(480) 944-0880</span>
@@ -282,7 +282,7 @@ export default function RaytheonRTXFinancialAdvisor() {
   <p className="text-xl text-white font-sans mb-8">
   You spent a career defending America. Now defend your retirement with a plan designed specifically for RTX employees and their unique benefits.
   </p>
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">Schedule Your Free RTX Strategy Call</Button>
+  <Button href="/schedule-consultation" variant="primary">Schedule Your Free RTX Strategy Call</Button>
   </div>
  </section>
 
@@ -378,7 +378,7 @@ export default function RaytheonRTXFinancialAdvisor() {
    Your RTX benefits package is extraordinary - but only if you use it strategically. Whether you&apos;re making a pension election, deciding about the Lifetime Income Strategy, or coordinating multiple deferred compensation plans, Jay has the expertise to help you build a comprehensive, tax-efficient retirement plan aligned with your goals.
   </p>
   <div className="mb-6">
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">Schedule Your RTX / Raytheon Strategy Call - Serving Tucson and Phoenix-area professionals</Button>
+   <Button href="/schedule-consultation" variant="primary">Schedule Your RTX / Raytheon Strategy Call - Serving Tucson and Phoenix-area professionals</Button>
   </div>
   <p className="text-lg text-[#5b6a71] font-sans">
    No cost. No pressure. Just clarity.

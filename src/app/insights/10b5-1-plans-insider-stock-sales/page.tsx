@@ -221,11 +221,11 @@ export default function TenB5OnePlans() {
                 A 10b5-1 plan is one piece of your broader executive compensation strategy. Let&apos;s discuss how to integrate it with your overall financial plan.
               </p>
               <Button
-                href="https://meetings.hubspot.com/jay-chang1/farthercom"
+                href="/schedule-consultation"
                 variant="ghost"
                 className="w-full sm:w-auto"
               >
-                Schedule a Consultation
+                Schedule a Conversation
               </Button>
             </section>
           </AnimateOnScroll>

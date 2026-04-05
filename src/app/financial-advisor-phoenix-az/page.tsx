@@ -3,14 +3,14 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 
 export const metadata: Metadata = {
- title: 'Financial Advisor in Phoenix, AZ | Fiduciary Wealth Management | Jay Chang, Farther',
+ title: 'Financial Advisor in Phoenix, AZ | Fiduciary Wealth Management | Advisor Jay, Farther',
  description: 'Fiduciary financial advisor in Phoenix, Arizona. Jay Chang at Farther specializes in wealth management for semiconductor engineers, aerospace professionals, physicians, and executives across the Phoenix metro.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/financial-advisor-phoenix-az',
  },
  robots: 'index, follow',
  openGraph: {
- title: 'Financial Advisor in Phoenix, AZ | Fiduciary Wealth Management | Jay Chang, Farther',
+ title: 'Financial Advisor in Phoenix, AZ | Fiduciary Wealth Management | Advisor Jay, Farther',
  description: 'Fiduciary financial advisor in Phoenix, Arizona. Jay Chang at Farther specializes in wealth management for semiconductor engineers, aerospace professionals, physicians, and executives.',
  type: 'website',
  url: 'https://www.PWM-Farther.com/financial-advisor-phoenix-az',
@@ -27,7 +27,7 @@ export default function PhoenixFinancialAdvisor() {
  const localBusinessSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Jay Chang, Farther',
+ name: 'Advisor Jay, Farther',
  description: 'Fiduciary financial advisor serving professionals in Phoenix, Arizona',
  url: 'https://www.PWM-Farther.com/financial-advisor-phoenix-az',
  areaServed: [
@@ -67,13 +67,13 @@ export default function PhoenixFinancialAdvisor() {
    Phoenix Financial Advisor
    </p>
    <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#333333] mb-6 leading-tight">
-   Fiduciary Financial Advisor in Phoenix, Arizona
+   Your Financial Advisor in Phoenix, Arizona
    </h1>
    <p className="font-sans text-lg md:text-xl text-[#5b6a71] mb-8 max-w-3xl mx-auto leading-relaxed">
-   Phoenix is one of America&apos;s most dynamic economic centers - home to TSMC&apos;s Fab 21, Honeywell&apos;s aerospace operations, and Banner Health&apos;s flagship systems. Professionals earning $150K-$800K+ need financial guidance built for their specific situations.
+   Phoenix is booming - TSMC&apos;s Fab 21 is here, Honeywell&apos;s aerospace division is growing, and Banner Health keeps expanding. If you&apos;re a professional earning $150K-$800K+ and feeling like your finances should be working harder for you, we should talk.
    </p>
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
    Schedule a Phoenix Financial Planning Call
@@ -89,17 +89,17 @@ export default function PhoenixFinancialAdvisor() {
   <AnimateOnScroll>
   <div>
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
-   Wealth Management for Phoenix&apos;s Leading Professionals
+   We Work with Phoenix Professionals Who Have Outgrown Generic Advice
    </h2>
    <div className="prose prose-lg max-w-none text-[#5b6a71] font-sans space-y-4">
    <p>
-   Phoenix has become a haven for high-earning professionals. TSMC&apos;s massive semiconductor fab brings engineers and operations leaders. Honeywell&apos;s aerospace division employs aerospace engineers and program managers. Freeport-McMoRan&apos;s corporate headquarters attracts executives and operations specialists. Banner Health and Honor Health create demand for physician specialists earning $400K-$800K+.
+   Here&apos;s what we see a lot in Phoenix: TSMC engineers with complex equity packages, Honeywell aerospace program managers juggling stock options and relocation benefits, Freeport-McMoRan executives managing concentrated positions, and Banner Health physicians earning $400K-$800K+ who are too busy saving lives to optimize their own finances.
    </p>
    <p>
-   These professionals share a common challenge: equity compensation, multi-state tax complexity, relocation planning from California, and the need for a comprehensive wealth strategy that goes beyond generic financial advice.
+   The common thread? You&apos;ve done well - really well - but your financial life has gotten complicated. Maybe you relocated from California and aren&apos;t sure if you&apos;re taking full advantage of the tax savings. Maybe your RSUs keep vesting and you&apos;re not sure whether to hold or sell. Maybe you just have a gut feeling that you&apos;re leaving money on the table.
    </p>
    <p>
-   Jay Chang works with Phoenix professionals to build integrated financial plans. Whether you&apos;re managing RSU concentration, optimizing ESPP elections, planning tax-efficient relocations from high-tax states, or building a retirement income strategy for $150K-$800K+ earnings, Farther brings specialized expertise to your situation.
+   That&apos;s where our team comes in. Jay Chang and the team at Farther sit on the same side of the table as you. We&apos;re fiduciaries - meaning we&apos;re legally obligated to put your interests first. We&apos;ll help you build a plan that actually fits your life, whether that&apos;s managing equity compensation, planning a tax-smart relocation, or mapping out retirement income when you&apos;re earning $150K-$800K+.
    </p>
    </div>
   </div>
@@ -113,7 +113,7 @@ export default function PhoenixFinancialAdvisor() {
   <AnimateOnScroll>
   <div>
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-8">
-   Financial Planning Services for Phoenix Professionals
+   How We Help Phoenix Professionals
    </h2>
    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
    {services.map((service, index) => (
@@ -134,13 +134,13 @@ export default function PhoenixFinancialAdvisor() {
   <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
   <AnimateOnScroll>
   <h3 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
-   Ready to Build Your Phoenix Strategy?
+   Curious What a Real Plan Looks Like?
   </h3>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   A free strategy call gives us 30 minutes to understand your situation, goals, and the financial opportunities you might be missing.
+   Grab 30 minutes with us - no cost, no pressure. We&apos;ll talk through your situation, your goals, and honestly tell you if there are opportunities you might be missing.
   </p>
   <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
   >
    Schedule a Phoenix Financial Planning Call
@@ -154,13 +154,13 @@ export default function PhoenixFinancialAdvisor() {
   <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
   <AnimateOnScroll>
   <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
-   Let&apos;s Build Your Comprehensive Wealth Plan
+   Let&apos;s Figure This Out Together
   </h2>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   Working with Jay Chang at Farther means accessing a fiduciary advisor who specializes in the specific challenges Phoenix professionals face.
+   Working with Jay Chang and our team at Farther means you get a fiduciary advisor who actually understands what Phoenix professionals deal with. We&apos;re not here to sell you products - we&apos;re here to help you make smart decisions.
   </p>
   <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
   >
    Schedule a Phoenix Financial Planning Call

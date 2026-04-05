@@ -3,14 +3,14 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 
 export const metadata: Metadata = {
- title: 'Financial Advisor in Chandler, AZ | Intel & Microchip Employee Specialist | Jay Chang, Farther',
+ title: 'Financial Advisor in Chandler, AZ | Intel & Microchip Employee Specialist | Advisor Jay, Farther',
  description: 'Fiduciary financial advisor serving Intel and Microchip Technology employees in Chandler, Arizona. RSU planning, SERPLUS guidance, mega backdoor Roth, and ESPP strategy for semiconductor professionals.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/financial-advisor-chandler-az',
  },
  robots: 'index, follow',
  openGraph: {
- title: 'Financial Advisor in Chandler, AZ | Intel & Microchip Employee Specialist | Jay Chang, Farther',
+ title: 'Financial Advisor in Chandler, AZ | Intel & Microchip Employee Specialist | Advisor Jay, Farther',
  description: 'Fiduciary financial advisor serving Intel and Microchip Technology employees in Chandler, Arizona. RSU planning, SERPLUS guidance, mega backdoor Roth, and ESPP strategy.',
  type: 'website',
  url: 'https://www.PWM-Farther.com/financial-advisor-chandler-az',
@@ -27,7 +27,7 @@ export default function ChandlerFinancialAdvisor() {
  const localBusinessSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Jay Chang, Farther',
+ name: 'Advisor Jay, Farther',
  description: 'Fiduciary financial advisor serving Intel and Microchip Technology employees in Chandler, Arizona',
  url: 'https://www.PWM-Farther.com/financial-advisor-chandler-az',
  areaServed: [
@@ -67,13 +67,13 @@ export default function ChandlerFinancialAdvisor() {
    Chandler Financial Advisor
    </p>
    <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#333333] mb-6 leading-tight">
-   Financial Advisor in Chandler, Arizona - Specializing in Intel and Microchip Technology Employees
+   Financial Advisor in Chandler, Arizona - For Intel and Microchip Technology Employees
    </h1>
    <p className="font-sans text-lg md:text-xl text-[#5b6a71] mb-8 max-w-3xl mx-auto leading-relaxed">
-   Chandler is the semiconductor capital of the American Southwest. Home to Intel&apos;s massive campus and Microchip Technology&apos;s headquarters, this city has created extraordinary wealth for engineers, operations leaders, and program managers.
+   Chandler is the semiconductor heart of the Southwest - Intel&apos;s massive campus, Microchip Technology&apos;s headquarters, and thousands of engineers and leaders who&apos;ve built real wealth through equity compensation. If that&apos;s you, we&apos;d love to help you make the most of it.
    </p>
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
    Schedule a Chandler Strategy Call
@@ -89,17 +89,17 @@ export default function ChandlerFinancialAdvisor() {
   <AnimateOnScroll>
   <div>
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
-   Specialized Planning for Intel and Microchip Technology Professionals
+   We Speak Intel and Microchip - So You Don&apos;t Have to Explain Everything
    </h2>
    <div className="prose prose-lg max-w-none text-[#5b6a71] font-sans space-y-4">
    <p>
-   Chandler professionals face unique equity compensation challenges. Intel&apos;s SERPLUS (Stock Equity Recognition Plan for Long-Term US Professionals) creates multi-year vesting schedules and specific tax planning opportunities. Microchip Technology&apos;s equity plans require understanding of their specific grant structures and market conditions.
+   If you work at Intel, you know that SERPLUS isn&apos;t something most financial advisors have heard of. You&apos;ve got multi-year vesting schedules, specific tax planning windows, and a compensation structure that&apos;s genuinely different from other tech companies. Microchip Technology has its own equity plans with unique grant structures and timing considerations.
    </p>
    <p>
-   Many Chandler professionals are relocating from California, bringing capital gains complexity and state tax savings opportunities. Others are in the critical mid-career phase where strategic retirement planning decisions compound over decades.
+   And if you&apos;re one of the many Chandler professionals who relocated from California? There&apos;s a whole layer of capital gains complexity and state tax savings that most people don&apos;t fully capture. We see it all the time - smart people leaving real money on the table simply because nobody showed them what was possible.
    </p>
    <p>
-   Jay Chang works with Intel and Microchip employees to navigate RSU vesting, optimize ESPP elections, understand SERPLUS mechanics, plan tax-efficient relocations, and build comprehensive retirement income strategies. Whether you&apos;re managing equity concentration or optimizing your 401(k) and mega backdoor Roth contributions, Farther brings specialized expertise to your situation.
+   Jay Chang and our team at Farther work with Intel and Microchip employees every day. We understand RSU vesting, ESPP optimization, SERPLUS mechanics, mega backdoor Roth strategies, and how to plan tax-efficient relocations. We&apos;re not going to waste your time asking what an RSU is - we&apos;ll jump straight into what matters for your specific situation.
    </p>
    </div>
   </div>
@@ -113,7 +113,7 @@ export default function ChandlerFinancialAdvisor() {
   <AnimateOnScroll>
   <div>
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-8">
-   Financial Planning Services for Chandler Professionals
+   How We Help Chandler Professionals
    </h2>
    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
    {services.map((service, index) => (
@@ -134,13 +134,13 @@ export default function ChandlerFinancialAdvisor() {
   <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
   <AnimateOnScroll>
   <h3 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
-   Ready to Optimize Your Chandler Financial Plan?
+   Let&apos;s Look at Your Equity Picture Together
   </h3>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   A free strategy call gives us 30 minutes to understand your equity situation, relocation goals, and the tax opportunities you might be missing.
+   Book a free 30-minute call with us. We&apos;ll talk through your equity situation, any relocation tax questions, and whether there are opportunities you haven&apos;t tapped into yet. No sales pitch - just a straight conversation.
   </p>
   <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
   >
    Schedule a Chandler Strategy Call
@@ -154,13 +154,13 @@ export default function ChandlerFinancialAdvisor() {
   <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
   <AnimateOnScroll>
   <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
-   Build Your Comprehensive Wealth Strategy Today
+   Your Equity Comp Deserves a Plan That Matches
   </h2>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   Jay Chang at Farther specializes in Intel and Microchip Technology compensation structures. Let&apos;s work together to maximize your wealth and minimize taxes.
+   Jay Chang and our team at Farther know Intel and Microchip Technology compensation inside and out. We&apos;re here to help you keep more of what you&apos;ve earned and build toward the future you actually want.
   </p>
   <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
   >
    Schedule a Chandler Strategy Call

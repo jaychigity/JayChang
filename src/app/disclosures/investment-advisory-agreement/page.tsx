@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
- title: 'Investment Advisory Agreement | Jay Chang | Farther',
+ title: 'Investment Advisory Agreement | Advisor Jay',
  description:
  'Investment Advisory Agreement for Farther Finance Advisors, LLC. Terms and conditions for discretionary investment management services.',
  robots: { index: false, follow: true },

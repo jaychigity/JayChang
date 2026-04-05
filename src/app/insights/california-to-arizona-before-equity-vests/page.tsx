@@ -190,10 +190,10 @@ export default function Page() {
                 Tax planning for a state move requires precision. We help tech professionals and executives move from California to Arizona with a clear tax strategy.
               </p>
               <Button
-                href="https://meetings.hubspot.com/jay-chang1/farthercom"
+                href="/schedule-consultation"
                 variant="primary"
               >
-                Schedule a Consultation
+                Schedule a Conversation
               </Button>
             </section>
 

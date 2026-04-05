@@ -209,7 +209,7 @@ export default function ConcentratedStockRiskPage() {
               <p className="text-[#333333] text-lg mb-6">
                 A concentrated position is not a permanent state. It is a problem to be solved with planning and discipline. The sooner you start, the less painful the de-risking becomes.
               </p>
-              <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+              <Button href="/schedule-consultation" variant="primary">
                 Schedule a Free Review
               </Button>
             </div>

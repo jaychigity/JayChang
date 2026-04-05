@@ -14,7 +14,7 @@ export const metadata: Metadata = {
  'Comprehensive financial planning for families with $2M-$20M. Retirement projections, cash flow analysis, education funding, and Social Security optimization in Arizona, California, and Nevada.',
  alternates: { canonical: 'https://www.PWM-Farther.com/services/financial-planning' },
  openGraph: {
- title: 'Financial Planning | Jay Chang | Farther',
+ title: 'Financial Planning | Advisor Jay',
  description:
  'Scenario-based financial planning for high-net-worth families. Retirement, education funding, insurance, and tax-coordinated strategies.',
  url: 'https://www.PWM-Farther.com/services/financial-planning',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Jay Chang | Farther - Financial Planning',
+ name: 'Advisor Jay - Financial Planning',
  description:
  'Comprehensive financial planning services for families with $2M-$20M in investable assets, including retirement projections, cash flow analysis, education funding, and Social Security optimization.',
  url: 'https://www.PWM-Farther.com/services/financial-planning',
@@ -499,10 +499,10 @@ export default function FinancialPlanningPage() {
   <AnimateOnScroll delay={200}>
   <div className="mt-10">
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
-   Let's Talk About What Matters to You
+   Schedule a Conversation
    </Button>
   </div>
   <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">

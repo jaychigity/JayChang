@@ -3,14 +3,14 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 
 export const metadata: Metadata = {
- title: 'Financial Advisor in Mesa, AZ | Apple Employee Specialist | Jay Chang, Farther',
+ title: 'Financial Advisor in Mesa, AZ | Apple Employee Specialist | Advisor Jay, Farther',
  description: 'Fiduciary financial advisor in Mesa, Arizona specializing in Apple employees at the Mesa operations center. RSU planning, ESPP optimization, and tenure-based 401(k) strategy for Apple professionals.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/financial-advisor-mesa-az',
  },
  robots: 'index, follow',
  openGraph: {
- title: 'Financial Advisor in Mesa, AZ | Apple Employee Specialist | Jay Chang, Farther',
+ title: 'Financial Advisor in Mesa, AZ | Apple Employee Specialist | Advisor Jay, Farther',
  description: 'Fiduciary financial advisor in Mesa, Arizona specializing in Apple employees at the Mesa operations center. RSU planning, ESPP optimization, and tenure-based 401(k) strategy.',
  type: 'website',
  url: 'https://www.PWM-Farther.com/financial-advisor-mesa-az',
@@ -27,7 +27,7 @@ export default function MesaFinancialAdvisor() {
  const localBusinessSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Jay Chang, Farther',
+ name: 'Advisor Jay, Farther',
  description: 'Fiduciary financial advisor serving Apple employees in Mesa, Arizona',
  url: 'https://www.PWM-Farther.com/financial-advisor-mesa-az',
  areaServed: [
@@ -67,13 +67,13 @@ export default function MesaFinancialAdvisor() {
    Mesa Financial Advisor
    </p>
    <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-[#333333] mb-6 leading-tight">
-   Financial Advisor in Mesa, Arizona - Specializing in Apple Employees and East Valley Professionals
+   Financial Advisor in Mesa, Arizona - For Apple Employees and East Valley Professionals
    </h1>
    <p className="font-sans text-lg md:text-xl text-[#5b6a71] mb-8 max-w-3xl mx-auto leading-relaxed">
-   Mesa is home to Apple&apos;s major Arizona operations center. Apple employees navigate biannual RSU vesting, tenure-based 401(k) match, ESPP, and DCP. This unique compensation structure requires specialized financial planning expertise.
+   Mesa is home to Apple&apos;s major Arizona operations center - and if you work there, you know that Apple&apos;s compensation package is unlike anyone else&apos;s. Biannual RSU vesting, tenure-based 401(k) match, ESPP, DCP... it&apos;s a lot to keep track of. We can help you make sense of all of it.
    </p>
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
    Schedule a Mesa Strategy Call
@@ -89,17 +89,17 @@ export default function MesaFinancialAdvisor() {
   <AnimateOnScroll>
   <div>
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
-   Specialized Planning for Apple Employees in Mesa
+   We Know Apple Comp - Because We Work with Apple People Every Day
    </h2>
    <div className="prose prose-lg max-w-none text-[#5b6a71] font-sans space-y-4">
    <p>
-   Apple&apos;s Mesa operations center employs thousands of highly skilled professionals across engineering, operations, logistics, and management. Apple&apos;s compensation structure is distinct from most tech companies - featuring biannual RSU vesting (not quarterly), a tenure-based 401(k) match that accelerates with years of service, a generous ESPP program, and an optional Deferred Compensation Plan (DCP) for senior professionals.
+   Apple&apos;s Mesa operations center employs thousands of skilled professionals across engineering, operations, logistics, and management. And Apple does compensation differently. Your RSUs vest twice a year (not quarterly like most tech companies), which means bigger, less frequent taxable events. Your 401(k) match gets better the longer you stay. Your ESPP has specific tax rules depending on how long you hold. And if you&apos;re senior enough, the Deferred Compensation Plan (DCP) adds another layer of decisions.
    </p>
    <p>
-   This compensation design creates unique planning challenges. Biannual RSU vesting means larger, less frequent taxable events - but also creates specific withholding and estimated tax payment strategies. The tenure-based 401(k) match incentivizes long-term retention but requires understanding the optimal deferral and contribution strategy. ESPP elections have specific tax rules depending on holding periods. The DCP provides deferred compensation opportunities for senior managers.
+   Here&apos;s the thing - most financial advisors don&apos;t know any of this. They&apos;ll nod along when you mention ESPP and then give you the same generic advice they give everyone. That&apos;s not how we work. Jay Chang and our team at Farther actually understand how Apple compensation is structured, and we build plans around it.
    </p>
    <p>
-   Jay Chang specializes in Apple employee financial planning. Whether you&apos;re navigating RSU withholding gaps, maximizing your 401(k) and ESPP strategy, evaluating DCP elections, or planning your long-term retirement income, Farther brings specialized expertise to your situation.
+   Whether you&apos;re trying to figure out the withholding gap on your RSU vests, wondering if you should max out your ESPP, weighing a DCP election, or just want to know if you&apos;re on track for the retirement you want - we&apos;re here to walk through it with you. No jargon, no runaround. Just honest, practical guidance from people who get your situation.
    </p>
    </div>
   </div>
@@ -113,7 +113,7 @@ export default function MesaFinancialAdvisor() {
   <AnimateOnScroll>
   <div>
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-8">
-   Financial Planning Services for Apple Professionals
+   How We Help Apple Professionals
    </h2>
    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
    {services.map((service, index) => (
@@ -134,13 +134,13 @@ export default function MesaFinancialAdvisor() {
   <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
   <AnimateOnScroll>
   <h3 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
-   Ready to Optimize Your Apple Compensation Strategy?
+   Let&apos;s Look at Your Apple Compensation Together
   </h3>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   A free strategy call gives us 30 minutes to understand your Apple compensation structure, equity position, and the tax opportunities you might be missing.
+   Grab a free 30-minute call with us. We&apos;ll walk through your Apple comp package, your equity position, and point out any tax opportunities that might be hiding in plain sight. No strings attached.
   </p>
   <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
   >
    Schedule a Mesa Strategy Call
@@ -154,13 +154,13 @@ export default function MesaFinancialAdvisor() {
   <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
   <AnimateOnScroll>
   <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
-   Build Your Comprehensive Wealth Plan Today
+   You&apos;ve Built Something Great - Let&apos;s Make Sure It Works for You
   </h2>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   Jay Chang at Farther specializes in Apple employee compensation and comprehensive wealth planning. Let&apos;s work together to maximize your wealth and minimize taxes.
+   Jay Chang and our team at Farther work with Apple employees because we genuinely understand your compensation and your world. We&apos;re here to help you keep more, stress less, and build toward the life you want.
   </p>
   <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
   >
    Schedule a Mesa Strategy Call

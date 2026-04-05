@@ -8,7 +8,7 @@ import { ArrowLeft, Clock, Calendar, User, ChevronRight, MessageSquare } from 'l
 
 export const metadata: Metadata = {
  title:
- 'RSU Withholding Gap: Why 22% Is Not Enough | Tax Planning | Jay Chang | Farther',
+ 'RSU Withholding Gap: Why 22% Is Not Enough | Tax Planning | Advisor Jay',
  description:
  'Why 22% federal withholding on RSU vesting is rarely sufficient for $200K+ earners. Calculate your withholding gap and fix it with W-4 adjustments or quarterly estimated taxes.',
  alternates: {
@@ -76,7 +76,7 @@ export default function RSUWithholdingGap22PercentPage() {
   },
   publisher: {
    '@type': 'Organization',
-   name: 'Jay Chang | Farther',
+   name: 'Advisor Jay',
    url: 'https://www.PWM-Farther.com',
   },
   datePublished: '2026-03-18',
@@ -381,7 +381,7 @@ export default function RSUWithholdingGap22PercentPage() {
    We can calculate your exact withholding gap and help you adjust your W-4 or schedule estimated payments to avoid an April surprise.
    </p>
    <div className="mt-6">
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
     Schedule a Withholding Review
    </Button>
    </div>
@@ -423,9 +423,7 @@ export default function RSUWithholdingGap22PercentPage() {
 
    <div className="mt-8">
    <a
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
-   target="_blank"
-   rel="noopener noreferrer"
+   href="/schedule-consultation"
    className="inline-flex items-center gap-2 font-sans text-[15px] font-semibold text-[#1d7682] hover:text-[#D4B65A] transition-colors"
    >
    <span>Calculate Your Withholding Gap</span>
@@ -494,7 +492,7 @@ export default function RSUWithholdingGap22PercentPage() {
   Adjust your withholding today. Calculate your gap, update your W-4, and protect yourself from an unexpected tax bill when you file.
   </p>
   <div className="mt-10">
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+  <Button href="/schedule-consultation" variant="primary">
    Let&apos;s Solve This Before Year End
   </Button>
   </div>

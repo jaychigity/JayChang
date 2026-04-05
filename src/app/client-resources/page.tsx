@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
- title: "Client Resources | Jay Chang | Farther",
+ title: "Client Resources | Advisor Jay",
  description:
  "Access the latest wealth management resources, guides, and insights from Farther - your partner in intelligent wealth planning.",
  alternates: { canonical: "https://www.PWM-Farther.com/client-resources" },
  openGraph: {
- title: "Client Resources | Jay Chang | Farther",
+ title: "Client Resources | Advisor Jay",
  description:
  "Access the latest wealth management resources, guides, and insights from Farther.",
  url: "https://www.PWM-Farther.com/client-resources",

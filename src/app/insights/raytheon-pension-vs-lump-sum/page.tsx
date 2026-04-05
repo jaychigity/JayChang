@@ -149,7 +149,7 @@ export default function RaytheonPensionPage() {
   <p className="text-lg text-[#5b6a71] mb-8 leading-relaxed">
    Facing the Raytheon pension decision? Let&apos;s build your analysis together.
   </p>
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+  <Button href="/schedule-consultation" variant="primary">
    Schedule a Free Call
   </Button>
   </AnimateOnScroll>

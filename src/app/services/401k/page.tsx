@@ -10,12 +10,12 @@ import { ChevronDown } from 'lucide-react'
 export const metadata: Metadata = {
  title: '401(k) & Retirement Plans | Farther - Arizona, California & Nevada',
  description:
- 'Fiduciary 401(k) and qualified retirement plan services for business owners in Arizona, California, and Nevada. Plan design, compliance, and investment oversight.',
+ 'Hands-on 401(k) and retirement plan help for business owners in Arizona, California, and Nevada. We handle plan design, compliance, and investment oversight so you can focus on your business.',
  alternates: { canonical: 'https://www.PWM-Farther.com/services/401k' },
  openGraph: {
  title: '401(k) & Retirement Plans | Farther - Arizona, California & Nevada',
  description:
- 'Fiduciary 401(k) and qualified retirement plan services for business owners. Plan design, compliance, investment oversight, and participant education.',
+ 'Hands-on 401(k) and retirement plan help for business owners. Plan design, compliance, investment oversight, and employee education -- all in one place.',
  url: 'https://www.PWM-Farther.com/services/401k',
  type: 'website',
  },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Jay Chang | Farther - 401(k) & Qualified Retirement Plans',
+ name: 'Advisor Jay - 401(k) & Qualified Retirement Plans',
  description:
  'Institutional-quality 401(k) and qualified retirement plan services for business owners in Scottsdale, AZ and across Arizona, California, and Nevada. Plan design, fiduciary risk management, investment oversight, and participant education.',
  url: 'https://www.PWM-Farther.com/services/401k',
@@ -65,7 +65,7 @@ const faqJsonLd = {
  name: 'What is the difference between a 401(k) and a qualified retirement plan?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'A 401(k) is one type of qualified retirement plan. Qualified plans also include profit-sharing plans, cash balance plans, and defined benefit pensions. Each structure offers different contribution limits, tax advantages, and design flexibility. The right choice depends on your business size, cash flow, and personal retirement goals.',
+  text: 'A 401(k) is actually one type of qualified retirement plan. The broader category also includes profit-sharing plans, cash balance plans, and defined benefit pensions. Each one has different contribution limits, tax perks, and flexibility in how you design it. The best fit depends on your business size, how your cash flow works, and what you want your own retirement to look like.',
  },
  },
  {
@@ -73,7 +73,7 @@ const faqJsonLd = {
  name: 'What is fiduciary responsibility and why does it matter for my 401(k)?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'As a plan sponsor, you have a legal obligation to act in the best interest of plan participants. This includes selecting and monitoring investments, managing plan fees, and ensuring compliance with ERISA regulations. Failure to meet these duties can result in personal liability. Working with a fiduciary advisor helps you share and manage that responsibility.',
+  text: 'When you sponsor a retirement plan, you are legally on the hook to act in the best interest of everyone in that plan. That means picking and watching investments, keeping fees reasonable, and staying on top of ERISA rules. If something goes wrong, you could be personally liable. Working with a fiduciary advisor like our team means you have someone sharing that responsibility with you -- and making sure nothing falls through the cracks.',
  },
  },
  {
@@ -81,7 +81,7 @@ const faqJsonLd = {
  name: 'Can you help coordinate my company 401(k) with my personal wealth strategy?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'Yes - this is one of the most valuable things we do. Most business owners manage their company retirement plan and personal investments in separate silos. We integrate both into a single, coordinated strategy that optimizes contributions, tax positioning, asset allocation, and eventual rollover and distribution planning.',
+  text: 'This is honestly one of the most valuable things we do. Most business owners have their company plan over here and their personal investments over there, and the two never talk to each other. We bring them together into one coordinated game plan -- so your contributions, tax positioning, investment mix, and eventual rollover strategy all work in sync.',
  },
  },
  {
@@ -89,7 +89,7 @@ const faqJsonLd = {
  name: 'What happens to my 401(k) when I sell my business or retire?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'When you exit your business, your 401(k) assets can be rolled into an IRA, converted to a Roth IRA, or distributed - each with different tax consequences. We help you plan the transition well in advance, ensuring the rollover is timed and structured to minimize taxes and align with your broader retirement income strategy.',
+  text: 'When you step away from the business, your 401(k) money can go several directions -- rolled into an IRA, converted to a Roth IRA, or taken as a distribution. Each option has very different tax consequences. We help you think through this well ahead of time so the transition is smooth, the taxes are minimized, and everything lines up with your bigger retirement income picture.',
  },
  },
  ],
@@ -125,27 +125,27 @@ export default function RetirementPlansPage() {
   <SectionEyebrow text="401(K) & QUALIFIED RETIREMENT PLANS" />
   <h1 className="font-serif text-[52px] max-md:text-[34px] font-bold text-[#333333] leading-[1.15] mt-4">
   Your Retirement Plan Should Work
-  <br className="max-md:hidden" /> as Hard as Your Business.
+  <br className="max-md:hidden" /> as Hard as You Do.
   </h1>
   <p className="font-sans text-body-lg text-[#5b6a71] max-w-[680px] mx-auto mt-6 leading-relaxed">
-  For business owners in{' '}
+  If you own a business in{' '}
   <Link href="/scottsdale" className="text-[#1d7682] hover:underline">
    Scottsdale
   </Link>{' '}
-  and{' '}
+  or anywhere in{' '}
   <Link href="/scottsdale" className="text-[#1d7682] hover:underline">
    Arizona
   </Link>
-  , a well-designed 401(k) or qualified retirement plan is more than an
-  employee benefit - it&apos;s a strategic tool for tax
-  optimization, talent retention, and personal wealth accumulation.
+  , your 401(k) or retirement plan should be doing more than checking a box.
+  Done right, it&apos;s one of your best tools for saving on taxes,
+  keeping great employees, and building real wealth for yourself.
   </p>
   <div className="mt-10">
   <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
   >
-   Discuss Your Retirement Plan Strategy
+   Let&apos;s Talk About Your Retirement Plan
   </Button>
   </div>
   </div>
@@ -175,64 +175,64 @@ export default function RetirementPlansPage() {
    <div>
    <SectionEyebrow text="FIDUCIARY PLAN MANAGEMENT" />
    <h2 className="font-serif text-h2-mobile md:text-h2 font-bold text-[#333333] mt-4 border-l-4 border-[#1d7682] pl-7">
-   A Retirement Plan That Serves You - Not Just Your
+   A Retirement Plan That Works for You -- Not Just Your
    Employees.
    </h2>
    <p className="font-sans text-body text-[#5b6a71] leading-relaxed mt-6">
-   As a business owner, sponsoring a 401(k) or qualified
-   retirement plan carries a fiduciary obligation that many
-   underestimate. You are personally responsible for selecting
-   appropriate investments, monitoring plan fees, and ensuring
-   ERISA compliance. The regulatory landscape is complex, the
-   liability is real, and the consequences of getting it wrong can
-   be significant.
+   Here&apos;s something a lot of business owners don&apos;t realize:
+   when you sponsor a 401(k) or qualified retirement plan, you take
+   on a real fiduciary obligation. You&apos;re personally responsible
+   for picking the right investments, watching the fees, and making
+   sure everything stays on the right side of ERISA rules. It&apos;s
+   a bigger deal than most people think -- and the consequences of
+   getting it wrong can be serious.
    </p>
    <p className="font-sans text-body text-[#5b6a71] leading-relaxed mt-4">
-   We help business owners design, implement, and oversee
-   retirement plans that accomplish three things simultaneously:
-   attract and retain key talent, maximize tax-advantaged savings
-   for the owner, and minimize fiduciary risk. Every plan we
-   manage is built around your specific business structure,
-   employee demographics, and personal financial goals.
+   That&apos;s where our team comes in. We help business owners
+   design, set up, and manage retirement plans that do three things
+   at once: attract and hold onto your best people, maximize
+   tax-advantaged savings for you as the owner, and keep your
+   fiduciary risk as low as possible. Every plan we build is shaped
+   around your specific business, your team, and your personal
+   financial goals.
    </p>
    <p className="font-sans text-body text-[#5b6a71] leading-relaxed mt-4">
-   From plan design and compliance monitoring to participant
-   education and investment menu curation, we handle the full
-   lifecycle - so you can focus on running your business
-   while knowing your plan is being managed with institutional
-   rigor.
+   From picking the right plan structure to keeping up with
+   compliance, educating your employees, and curating the
+   investment menu -- we handle all of it. You focus on running
+   your business. We&apos;ll make sure the plan is running right.
    </p>
 
    <p className="font-sans text-[15px] font-semibold text-[#333333] mt-8 mb-4">
-   What we manage for you:
+   Here&apos;s what we take care of:
    </p>
    <ul className="list-none space-y-3">
    <GoldBullet>
-    Plan design optimization - 401(k), profit-sharing,
-    cash balance, and defined benefit structures tailored to your
-    goals
+    Plan design that fits your goals -- 401(k), profit-sharing,
+    cash balance, or defined benefit, tailored to what makes
+    sense for your business
    </GoldBullet>
    <GoldBullet>
-    Fiduciary risk management - ongoing compliance
-    monitoring, documentation, and ERISA oversight
+    Ongoing fiduciary oversight -- compliance monitoring,
+    documentation, and ERISA management so you can sleep at night
    </GoldBullet>
    <GoldBullet>
-    Investment menu selection - institutional-quality fund
-    lineup with regular benchmarking and review
+    A solid investment menu -- we select quality funds and
+    review them regularly to make sure they&apos;re earning their spot
    </GoldBullet>
    <GoldBullet>
-    Participant education - enrollment support,
-    contribution guidance, and financial wellness resources for
-    your team
+    Employee education -- enrollment help, contribution
+    guidance, and financial wellness resources for your team
    </GoldBullet>
    <GoldBullet>
-    Coordination between your business plan and personal wealth
-    strategy - ensuring both work together, not in silos
+    Connecting your business plan with your personal wealth
+    strategy -- so both sides work together instead of in
+    separate silos
    </GoldBullet>
    <GoldBullet>
-    Transition planning for rollovers - IRA rollovers, Roth
-    conversions, and distribution sequencing at retirement or
-    business exit
+    Rollover and transition planning -- IRA rollovers, Roth
+    conversions, and distribution sequencing when you retire or
+    sell the business
    </GoldBullet>
    </ul>
    <p className="font-sans text-caption text-[#5b6a71] italic mt-6">
@@ -255,52 +255,50 @@ export default function RetirementPlansPage() {
   <AnimateOnScroll className="text-center mb-12">
    <SectionEyebrow text="THE BIGGER PICTURE" />
    <h2 className="font-serif text-h2-mobile md:text-h2 font-bold text-[#333333] mt-4">
-   Why Business Owners Need Integrated Plan Management.
+   Why Your Business Plan and Personal Plan Need to Talk to Each Other.
    </h2>
   </AnimateOnScroll>
 
   <AnimateOnScroll>
    <p className="font-sans text-body text-[#5b6a71] leading-relaxed">
-   Most business owners manage their company retirement plan and
-   personal investments as two separate worlds. The 401(k) is
-   handled by a plan provider. Personal wealth is managed by a
-   financial advisor - or not managed at all. The result is a
-   fragmented strategy where contribution levels, asset allocation,
-   tax positioning, and retirement timing are never fully
-   coordinated.
+   Most business owners have their company retirement plan in one
+   corner and their personal investments in another. The 401(k)
+   goes through one provider. Personal wealth is managed by a
+   different advisor -- or maybe nobody at all. What you end up
+   with is a patchwork where your contributions, investment mix,
+   tax strategy, and retirement timeline never really line up.
    </p>
    <p className="font-sans text-body text-[#5b6a71] leading-relaxed mt-4">
-   We take a different approach. By linking your 401(k) or
-   qualified plan directly to your personal wealth strategy, we can
-   optimize how much you contribute, where those contributions are
-   invested, and how they interact with your taxable portfolio,
-   real estate holdings, and future liquidity events. For business
-   owners approaching a sale or transition, this coordination
-   becomes even more critical - the rollover decisions you
-   make at exit can have six- or seven-figure tax consequences.
+   We do things differently. By tying your 401(k) or qualified
+   plan directly into your personal wealth plan, we can fine-tune
+   how much you&apos;re putting in, where that money is invested, and
+   how it connects with your taxable accounts, real estate, and
+   any future liquidity events. If you&apos;re heading toward selling
+   or transitioning your business, this coordination matters even
+   more -- the rollover decisions you make at exit can have
+   six- or seven-figure tax consequences.
    </p>
    <p className="font-sans text-body text-[#5b6a71] leading-relaxed mt-4">
-   Whether you are establishing a new plan for a growing company,
-   restructuring an existing plan to maximize owner contributions,
-   or preparing for a business exit that involves rolling over
-   significant retirement assets, we provide the integrated
-   oversight that ensures every piece works together. Business
-   owners in{' '}
+   Whether you&apos;re starting a new plan for a growing company,
+   restructuring an existing one to get more into your own
+   account, or getting ready for a business exit that involves
+   rolling over significant retirement assets, we bring it all
+   together. Business owners in{' '}
    <Link
    href="/scottsdale"
    className="text-[#1d7682] hover:underline"
    >
    Scottsdale
    </Link>{' '}
-   and{' '}
+   and across{' '}
    <Link
    href="/scottsdale"
    className="text-[#1d7682] hover:underline"
    >
    Arizona
    </Link>{' '}
-   trust us to manage this complexity because we understand both
-   sides of the equation - the business and the personal.
+   trust our team with this because we understand both sides
+   of the coin -- the business and the personal.
    </p>
   </AnimateOnScroll>
   </div>
@@ -315,7 +313,7 @@ export default function RetirementPlansPage() {
   <AnimateOnScroll className="text-center mb-12">
   <SectionEyebrow text="COMMON QUESTIONS" />
   <h2 className="font-serif text-h2-mobile md:text-h2 font-bold text-[#333333] mt-4">
-   401(k) &amp; Retirement Plan FAQs.
+   Questions We Get About 401(k) &amp; Retirement Plans.
   </h2>
   </AnimateOnScroll>
 
@@ -331,12 +329,13 @@ export default function RetirementPlansPage() {
    <ChevronDown className="h-4 w-4 text-[#1d7682] shrink-0 transition-transform duration-200 group-open:rotate-180" />
    </summary>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed pb-6">
-   A 401(k) is one type of qualified retirement plan. Qualified
-   plans also include profit-sharing plans, cash balance plans,
-   and defined benefit pensions. Each structure offers different
-   contribution limits, tax advantages, and design flexibility.
-   The right choice depends on your business size, cash flow, and
-   personal retirement goals.
+   A 401(k) is actually one type of qualified retirement plan.
+   The broader category also includes profit-sharing plans, cash
+   balance plans, and defined benefit pensions. Each one has
+   different contribution limits, tax perks, and flexibility in
+   how you design it. The best fit depends on your business size,
+   how your cash flow works, and what you want your own retirement
+   to look like.
    </p>
    </details>
 
@@ -350,12 +349,14 @@ export default function RetirementPlansPage() {
    <ChevronDown className="h-4 w-4 text-[#1d7682] shrink-0 transition-transform duration-200 group-open:rotate-180" />
    </summary>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed pb-6">
-   As a plan sponsor, you have a legal obligation to act in the
-   best interest of plan participants. This includes selecting and
-   monitoring investments, managing plan fees, and ensuring
-   compliance with ERISA regulations. Failure to meet these duties
-   can result in personal liability. Working with a fiduciary
-   advisor helps you share and manage that responsibility.
+   When you sponsor a retirement plan, you&apos;re legally on the
+   hook to act in the best interest of everyone in that plan.
+   That means picking and watching investments, keeping fees
+   reasonable, and staying on top of ERISA rules. If something
+   goes wrong, you could be personally liable. Working with a
+   fiduciary advisor like our team means you have someone sharing
+   that responsibility with you -- and making sure nothing falls
+   through the cracks.
    </p>
    </details>
 
@@ -369,12 +370,12 @@ export default function RetirementPlansPage() {
    <ChevronDown className="h-4 w-4 text-[#1d7682] shrink-0 transition-transform duration-200 group-open:rotate-180" />
    </summary>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed pb-6">
-   Yes - this is one of the most valuable things we do.
-   Most business owners manage their company retirement plan and
-   personal investments in separate silos. We integrate both into
-   a single, coordinated strategy that optimizes contributions,
-   tax positioning, asset allocation, and eventual rollover and
-   distribution planning.
+   This is honestly one of the most valuable things we do. Most
+   business owners have their company plan over here and their
+   personal investments over there, and the two never talk to each
+   other. We bring them together into one coordinated game plan
+   -- so your contributions, tax positioning, investment mix,
+   and eventual rollover strategy all work in sync.
    </p>
    </details>
 
@@ -387,12 +388,12 @@ export default function RetirementPlansPage() {
    <ChevronDown className="h-4 w-4 text-[#1d7682] shrink-0 transition-transform duration-200 group-open:rotate-180" />
    </summary>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed pb-6">
-   When you exit your business, your 401(k) assets can be rolled
-   into an IRA, converted to a Roth IRA, or distributed - 
-   each with different tax consequences. We help you plan the
-   transition well in advance, ensuring the rollover is timed and
-   structured to minimize taxes and align with your broader
-   retirement income strategy.
+   When you step away from the business, your 401(k) money can go
+   several directions -- rolled into an IRA, converted to a Roth
+   IRA, or taken as a distribution. Each option has very different
+   tax consequences. We help you think through this well ahead of
+   time so the transition is smooth, the taxes are minimized, and
+   everything lines up with your bigger retirement income picture.
    </p>
    </details>
   </AnimateOnScroll>
@@ -408,7 +409,7 @@ export default function RetirementPlansPage() {
   <AnimateOnScroll className="text-center mb-12">
   <SectionEyebrow text="RELATED SERVICES" />
   <h2 className="font-serif text-h2-mobile md:text-h2 font-bold text-[#333333] mt-4">
-   Services That Work Together.
+   These Go Hand in Hand.
   </h2>
   </AnimateOnScroll>
 
@@ -422,8 +423,8 @@ export default function RetirementPlansPage() {
    Business Owner Services
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   Exit planning, succession strategy, and entity optimization
-   for owners building toward a transition.
+   Exit planning, succession strategy, and entity structuring
+   for owners who are building toward their next chapter.
    </p>
    <span className="inline-block font-sans text-[14px] font-semibold text-[#1d7682] mt-4">
    Learn more &rarr;
@@ -440,8 +441,8 @@ export default function RetirementPlansPage() {
    Retirement Planning
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   Distribution sequencing, Social Security optimization, Roth
-   conversion laddering, and income planning.
+   How to draw down your savings, when to claim Social Security,
+   Roth conversion strategies, and income planning for the long haul.
    </p>
    <span className="inline-block font-sans text-[14px] font-semibold text-[#1d7682] mt-4">
    Learn more &rarr;
@@ -458,8 +459,8 @@ export default function RetirementPlansPage() {
    Investment Management
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   Institutional-grade portfolio construction, tax-loss
-   harvesting, and access to alternatives.
+   Thoughtful portfolio construction, tax-loss
+   harvesting, and access to alternative investments.
    </p>
    <span className="inline-block font-sans text-[14px] font-semibold text-[#1d7682] mt-4">
    Learn more &rarr;
@@ -478,13 +479,13 @@ export default function RetirementPlansPage() {
   <AnimateOnScroll>
   <SectionEyebrow text="NEXT STEP" light />
   <h2 className="font-serif text-h2-mobile md:text-h2 font-semibold text-[#F7F4EE] mt-4">
-   Let's Make Sure Your Plan Is Working for You.
+   Let&apos;s Make Sure Your Plan Is Actually Working for You.
   </h2>
   <p className="font-sans text-body text-[#F7F4EE]/80 leading-relaxed mt-6 max-w-[600px] mx-auto">
-   Whether you need to establish a new retirement plan, restructure
-   an existing one, or coordinate your 401(k) with your personal
-   wealth strategy, we are here to help. Schedule a confidential
-   conversation with our team in{' '}
+   Whether you need a new retirement plan, want to fix one that&apos;s
+   not performing, or need to connect your 401(k) with your
+   personal finances, we&apos;re here to help. Grab a time for a
+   relaxed conversation with our team in{' '}
    <Link
    href="/scottsdale"
    className="text-[#1d7682] hover:underline"
@@ -502,7 +503,7 @@ export default function RetirementPlansPage() {
   </p>
   <div className="mt-10">
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
    Schedule Your Consultation

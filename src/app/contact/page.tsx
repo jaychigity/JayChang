@@ -8,27 +8,27 @@ import Button from '@/components/Button'
 import ConsultationForm from '@/components/ConsultationForm'
 
 export const metadata: Metadata = {
- title: 'Contact Us | Jay Chang | Farther - Scottsdale, Arizona',
+ title: 'Contact Us | Advisor Jay - Scottsdale, Arizona',
  description:
- 'Schedule a conversation with your wealth advisor at Jay Chang | Farther. Serving families and business owners with $2M-$20M in Scottsdale, AZ and the greater Phoenix area.',
+ 'Reach out to Jay Chang, wealth advisor at Farther. We help families and business owners in Scottsdale, Phoenix, and across Arizona make smarter financial decisions together. No pressure, just a real conversation.',
  alternates: { canonical: 'https://www.PWM-Farther.com/contact' },
 }
 
 const steps = [
  {
  number: '1',
- title: `We'll Respond Within One Business Day`,
- body: `We'll reach out by phone or email - whichever you prefer. No automated sequences, no bots. A real person who read your message.`,
+ title: `You'll Hear From a Real Person`,
+ body: `We'll get back to you within one business day — by phone or email, your pick. No automated drip campaigns, no chatbots. Just a real member of our team who actually read your message.`,
  },
  {
  number: '2',
- title: 'A 30-Minute Discovery Call',
- body: `A relaxed, focused conversation about your goals, concerns, and financial situation. No sales pitch - just a genuine exploration of how we might help.`,
+ title: 'A Relaxed 30-Minute Chat',
+ body: `We'll hop on a call and talk about what's on your mind — your goals, your concerns, what's keeping you up at night financially. Think of it as a coffee conversation, not a sales pitch.`,
  },
  {
  number: '3',
- title: `If We're a Good Fit`,
- body: `We'll outline next steps and begin gathering the information needed to build your comprehensive financial strategy.`,
+ title: `If It Feels Right for Both of Us`,
+ body: `We'll walk you through what comes next and start pulling together the info we need to build a plan that actually fits your life.`,
  },
 ]
 
@@ -45,15 +45,15 @@ export default function ContactPage() {
 
   <AnimateOnScroll delay={100}>
   <h1 className="font-serif text-[48px] max-md:text-[32px] font-bold text-[#333333] mt-5">
-   Let's Start a Conversation.
+   We'd Love to Hear From You.
   </h1>
   </AnimateOnScroll>
 
   <AnimateOnScroll delay={200}>
   <p className="font-sans text-body-lg text-[#5b6a71] max-w-[600px] mx-auto mt-5">
-   Whether you have a specific question or you'd like to explore whether
-   we're the right fit - we'd welcome the chance to learn about
-   your goals. No pressure, no commitment.
+   Got a question? Wondering if we're the right fit? Just want to
+   talk through something that's been bugging you about your finances?
+   Drop us a line. No strings attached — we're happy to chat.
   </p>
   </AnimateOnScroll>
   </div>
@@ -67,7 +67,7 @@ export default function ContactPage() {
   <AnimateOnScroll>
    <div>
    <h3 className="font-sans text-[20px] font-semibold text-[#333333] mb-8">
-   Send a Message
+   Send Us a Message
    </h3>
    <ConsultationForm />
    </div>
@@ -92,7 +92,7 @@ export default function ContactPage() {
    Jay Chang
    </p>
    <p className="font-sans text-sm text-[#5b6a71] text-center whitespace-pre-line">
-   {'VP, Wealth Advisor\nJay Chang | Farther'}
+   {'VP, Wealth Advisor\nFarther Finance Advisors, LLC'}
    </p>
 
    {/* Block 1 - Call Directly */}
@@ -135,13 +135,13 @@ export default function ContactPage() {
    <div className="flex items-center gap-2 mb-2">
     <Calendar className="w-4 h-4 text-[#1d7682]" />
     <span className="font-sans text-[11px] font-bold uppercase text-[#1d7682] tracking-[1.5px]">
-    Schedule a Specific Time
+    Pick a Time That Works for You
     </span>
    </div>
    <p className="font-sans text-sm text-[#5b6a71] mb-4">
-    Book a 30-minute introductory call directly on my calendar.
+    Grab a 30-minute slot on my calendar — pick whatever works best for your schedule.
    </p>
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="outline">
+   <Button href="/schedule-consultation" variant="outline">
     Open Calendar
    </Button>
    </div>
@@ -176,7 +176,7 @@ export default function ContactPage() {
 
   <AnimateOnScroll delay={100}>
   <h2 className="font-serif text-[36px] text-[#333333] font-bold mt-4">
-   After You Reach Out.
+   Here's What Happens Next.
   </h2>
   </AnimateOnScroll>
 

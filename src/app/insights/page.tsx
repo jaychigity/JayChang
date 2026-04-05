@@ -166,7 +166,7 @@ export default function InsightsPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'CollectionPage',
-            name: 'Insights - Jay Chang | Farther',
+            name: 'Insights - Advisor Jay',
             description: 'Expert insights on equity compensation, tax strategy, retirement planning, and wealth preservation for high-income professionals.',
             url: 'https://www.PWM-Farther.com/insights',
           }),
@@ -321,7 +321,7 @@ export default function InsightsPage() {
               We welcome conversations about the topics we write about. If something resonated, or raised a question specific to your situation, let&apos;s talk.
             </p>
             <div className="mt-10">
-              <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+              <Button href="/schedule-consultation" variant="primary">
                 Schedule a Call
               </Button>
             </div>

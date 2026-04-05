@@ -5,7 +5,7 @@ import EquityCompensationTool from './EquityCompensationTool'
 
 export const metadata: Metadata = {
  title:
- 'Equity Compensation Decision Tool | Jay Chang | Farther',
+ 'Equity Compensation Decision Tool | Advisor Jay',
  description:
  'Visualize your equity compensation timeline - vesting events, tax triggers, and optimization windows for RSUs, ISOs, NQSOs, and ESPPs. Free instant analysis.',
  alternates: {

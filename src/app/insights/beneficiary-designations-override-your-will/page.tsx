@@ -270,10 +270,10 @@ export default function Page() {
                 We help people audit their beneficiary designations and coordinate them with their overall estate plan. One conversation can prevent a $500K mistake.
               </p>
               <Button
-                href="https://meetings.hubspot.com/jay-chang1/farthercom"
+                href="/schedule-consultation"
                 variant="primary"
               >
-                Schedule a Consultation
+                Schedule a Conversation
               </Button>
             </section>
 

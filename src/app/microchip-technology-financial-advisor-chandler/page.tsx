@@ -36,9 +36,9 @@ export default function MicrochipTechnologyAdvisor() {
   <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
    Microchip Technology&apos;s broad-based equity program means quarterly vesting for engineers at all levels - not just executives. Jay Chang builds proactive RSU and tax strategies for Microchip professionals in Chandler who need their financial plan to keep pace with their equity.
   </p>
-  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
    Schedule a Microchip Benefits Strategy Call
@@ -116,9 +116,9 @@ export default function MicrochipTechnologyAdvisor() {
    </p>
   </div>
   </div>
-  <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+  <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
   <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
   >
    Schedule Your Strategy Call
@@ -143,9 +143,9 @@ export default function MicrochipTechnologyAdvisor() {
   <p className="text-lg text-gray-600 mb-8">
    Microchip Technology equity is a powerful wealth-building tool - when it&apos;s part of a deliberate strategy. Let&apos;s build one together.
   </p>
-  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
    Schedule Your Microchip Strategy Call - Free for current and former Microchip Technology employees.

@@ -260,11 +260,11 @@ export default function ExecutiveDeferredCompensation2026() {
                 A detailed financial model of your retirement income can clarify the optimal deferral amount and distribution timing. Let&apos;s work through the numbers specific to your situation.
               </p>
               <Button
-                href="https://meetings.hubspot.com/jay-chang1/farthercom"
+                href="/schedule-consultation"
                 variant="ghost"
                 className="w-full sm:w-auto"
               >
-                Schedule a Consultation
+                Schedule a Conversation
               </Button>
             </section>
           </AnimateOnScroll>

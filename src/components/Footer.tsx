@@ -35,7 +35,7 @@ export default function Footer() {
                     lineHeight: 1.3,
                   }}
                 >
-                  Jay Chang
+                  Advisor Jay
                 </div>
                 <div
                   style={{
@@ -62,9 +62,10 @@ export default function Footer() {
                 marginTop: 20,
               }}
             >
-              Fiduciary wealth management for families and business owners in
-              Arizona, California, and Nevada. Jay Chang, VP, Wealth Advisor at Farther
-              Finance, Inc., an SEC-registered investment adviser.
+              We help families, professionals, and business owners build
+              financial plans that actually make sense for their lives. Jay Chang,
+              VP, Wealth Advisor at Farther Finance, Inc., an independent,
+              SEC-registered investment adviser.
             </p>
 
             <a
@@ -269,7 +270,7 @@ export default function Footer() {
             </a>
 
             <Link
-              href="https://meetings.hubspot.com/jay-chang1/farthercom"
+              href="/schedule-consultation"
               style={{
                 display: "block",
                 width: "100%",
@@ -288,7 +289,7 @@ export default function Footer() {
               }}
               className="footer-cta"
             >
-              Reach Out Privately
+              Let&rsquo;s Talk
             </Link>
           </div>
         </div>
@@ -317,7 +318,7 @@ export default function Footer() {
                 margin: 0,
               }}
             >
-              &copy; 2026 Jay Chang | Farther. All rights
+              &copy; 2026 Advisor Jay. All rights
               reserved.
             </p>
 

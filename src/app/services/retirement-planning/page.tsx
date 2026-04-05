@@ -16,7 +16,7 @@ export const metadata: Metadata = {
  canonical: 'https://www.PWM-Farther.com/services/retirement-planning',
  },
  openGraph: {
- title: 'Retirement Planning | Jay Chang | Farther',
+ title: 'Retirement Planning | Advisor Jay',
  description:
  'Retirement income planning, distribution sequencing, Social Security optimization, and Roth conversion strategies for families with $2M-$20M.',
  url: 'https://www.PWM-Farther.com/services/retirement-planning',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Retirement Planning - Jay Chang | Farther',
+ name: 'Retirement Planning - Advisor Jay',
  description:
  'Retirement income planning, distribution sequencing, Social Security optimization, and Roth conversion strategies for families with $2M-$20M in Arizona, California, and Nevada.',
  url: 'https://www.PWM-Farther.com/services/retirement-planning',
@@ -165,7 +165,7 @@ export default function RetirementPlanningPage() {
   <AnimateOnScroll delay={300}>
   <div className="mt-10">
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
    Schedule a Retirement Planning Conversation
@@ -527,7 +527,7 @@ export default function RetirementPlanningPage() {
   <AnimateOnScroll delay={200}>
   <div className="mt-10">
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
    Let's Talk About Your Retirement

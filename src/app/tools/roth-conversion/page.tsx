@@ -5,7 +5,7 @@ import RothConversionCalculator from './RothConversionCalculator'
 
 export const metadata: Metadata = {
  title:
- 'Roth IRA Conversion Calculator | Jay Chang | Farther',
+ 'Roth IRA Conversion Calculator | Advisor Jay',
  description:
  'Compare the projected after-tax value of converting a Traditional IRA to a Roth IRA. See the upfront tax cost, net benefit, break-even rate, and projected growth over time.',
  alternates: {

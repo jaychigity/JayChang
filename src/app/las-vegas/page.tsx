@@ -23,7 +23,7 @@ export const metadata: Metadata = {
  'Personalized wealth management for Nevada families and business owners with $2M-$20M. Serving Las Vegas, Henderson, Summerlin, and greater Nevada with no state income tax advantages.',
  alternates: { canonical: 'https://www.PWM-Farther.com/las-vegas' },
  openGraph: {
- title: 'Las Vegas & Nevada Wealth Management | Jay Chang | Farther',
+ title: 'Las Vegas & Nevada Wealth Management | Advisor Jay',
  description:
  'Financial planning, investment management, and tax strategy for Nevada families - serving Las Vegas, Henderson, Summerlin, and Southern Nevada.',
  url: 'https://www.PWM-Farther.com/las-vegas',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 const financialServiceSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Jay Chang | Farther - Las Vegas & Nevada',
+ name: 'Advisor Jay - Las Vegas & Nevada',
  description:
  'Personalized wealth management for Nevada families and business owners. Serving Las Vegas, Henderson, Summerlin, and greater Nevada with no state income tax benefits.',
  url: 'https://www.PWM-Farther.com/las-vegas',
@@ -156,7 +156,7 @@ export default function LasVegasNevadaPage() {
   <Image
   src="/Photos/las-vegas-couple-sunset.avif"
   alt="Nevada desert landscape - wealth management for Las Vegas, Henderson, and Summerlin families"
-  title="Las Vegas & Nevada - Jay Chang | Farther"
+  title="Las Vegas & Nevada - Advisor Jay"
   fill
   className="object-cover opacity-15"
   priority
@@ -185,7 +185,7 @@ export default function LasVegasNevadaPage() {
 
   <AnimateOnScroll delay={300}>
   <div className="mt-lg flex flex-col sm:flex-row gap-[16px]">
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
    Begin a Confidential Conversation
    </Button>
    <a
@@ -866,8 +866,8 @@ export default function LasVegasNevadaPage() {
    </div>
 
    <div className="mt-[32px]">
-   <Button variant="primary" href="https://meetings.hubspot.com/jay-chang1/farthercom">
-    Schedule a Consultation
+   <Button variant="primary" href="/schedule-consultation">
+    Schedule a Conversation
    </Button>
    </div>
    </div>
@@ -896,7 +896,7 @@ export default function LasVegasNevadaPage() {
 
   <AnimateOnScroll delay={200}>
   <div className="mt-lg">
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
    Begin a Confidential Conversation
    </Button>
   </div>

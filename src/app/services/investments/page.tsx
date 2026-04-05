@@ -14,7 +14,7 @@ export const metadata: Metadata = {
  'Custom investment management for HNW families in Arizona, California, and Nevada. Tax-efficient portfolios, alternative investments, and institutional-grade research.',
  alternates: { canonical: 'https://www.PWM-Farther.com/services/investments' },
  openGraph: {
- title: 'Investment Management | Jay Chang | Farther',
+ title: 'Investment Management | Advisor Jay',
  description:
  'Custom investment management for high-net-worth families and business owners in Scottsdale, AZ and across Arizona, California, and Nevada. Tax-efficient strategies, alternatives access, and consolidated reporting.',
  url: 'https://www.PWM-Farther.com/services/investments',
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Investment Management - Jay Chang | Farther',
+ name: 'Investment Management - Advisor Jay',
  description:
  'Custom investment management for high-net-worth families and business owners in Scottsdale, AZ and across Arizona, California, and Nevada. Tax-efficient portfolio construction, alternative investments, and institutional-grade research.',
  url: 'https://www.PWM-Farther.com/services/investments',
@@ -165,7 +165,7 @@ export default function InvestmentsPage() {
    multi-state tax obligations, and retirement timelines that span decades.
    </p>
    <p className="font-sans text-body text-[#5b6a71] mt-4 leading-relaxed">
-   At Jay Chang | Farther, we take a different approach.
+   At Jay Chang&apos;s practice, we take a different approach.
    Every portfolio is constructed from the ground up, reflecting your goals,
    your tax situation, your liquidity needs, and the assets you already hold.
    Whether you are a business owner in{' '}
@@ -469,7 +469,7 @@ export default function InvestmentsPage() {
   <div className="mt-10">
    <Button
    variant="primary"
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    >
    Schedule a Discovery Call
    </Button>

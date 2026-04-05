@@ -8,7 +8,7 @@ import { ArrowLeft, Clock, Calendar, User, ChevronRight, MessageSquare } from 'l
 
 export const metadata: Metadata = {
   title:
-    'Honeywell HONA Spinoff 2026: What to Do With Your 401(k) Before It Closes | Jay Chang | Farther',
+    'Honeywell HONA Spinoff 2026: What to Do With Your 401(k) Before It Closes | Advisor Jay',
   description:
     'Honeywell Aerospace (HONA) spinoff Q3 2026. Your 401(k) match converts from HON to HON+HONA. Audit exposure, understand RSU conversion, rebalance before spinoff closes. Action timeline for employees.',
   alternates: {
@@ -76,7 +76,7 @@ export default function HoneywellHonaSpinoff401kGuidePage() {
             },
             publisher: {
               '@type': 'Organization',
-              name: 'Jay Chang | Farther',
+              name: 'Advisor Jay',
               url: 'https://www.PWM-Farther.com',
             },
             datePublished: '2026-03-18',
@@ -291,7 +291,7 @@ export default function HoneywellHonaSpinoff401kGuidePage() {
                   Map your total Honeywell exposure and plan your post-spinoff strategy. Most employees have far more concentration risk than they realize.
                 </p>
                 <div className="mt-6">
-                  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+                  <Button href="/schedule-consultation" variant="primary">
                     Schedule Your Spinoff Planning Session
                   </Button>
                 </div>
@@ -388,9 +388,7 @@ export default function HoneywellHonaSpinoff401kGuidePage() {
 
               <div className="mt-8">
                 <a
-                  href="https://meetings.hubspot.com/jay-chang1/farthercom"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/schedule-consultation"
                   className="inline-flex items-center gap-2 font-sans text-[15px] font-semibold text-[#1d7682] hover:text-[#D4B65A] transition-colors"
                 >
                   <span>Start Your Spinoff Planning</span>
@@ -459,7 +457,7 @@ export default function HoneywellHonaSpinoff401kGuidePage() {
             Many Honeywell employees have 25 to 40 percent of their net worth tied to a single company. The spinoff is the right time to rebalance.
           </p>
           <div className="mt-10">
-            <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+            <Button href="/schedule-consultation" variant="primary">
               Plan Your Rebalancing Strategy
             </Button>
           </div>

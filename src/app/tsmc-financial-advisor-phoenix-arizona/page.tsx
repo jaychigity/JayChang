@@ -78,7 +78,7 @@ export default function TSMCFinancialAdvisor() {
    You relocated to help build America&apos;s most advanced semiconductor campus. Now build a financial plan as sophisticated as the chips you design. Jay Chang is the fiduciary advisor for TSMC professionals navigating relocation, equity, and high income in Arizona.
   </p>
   <div className="flex flex-col sm:flex-row gap-4">
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
    Schedule a TSMC Financial Planning Call
    </Button>
    <a href="tel:(480) 944-0880" className="px-6 py-3 border-2 border-[#1d7682] text-[#1d7682] font-sans font-semibold rounded hover:bg-[#1d7682] hover:text-white transition">
@@ -181,7 +181,7 @@ export default function TSMCFinancialAdvisor() {
   <p className="text-lg md:text-xl font-sans text-white mb-6">
    Sound familiar? You don&apos;t have to figure this out alone. Jay works with TSMC employees every week. Schedule a free, confidential call today.
   </p>
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="outline">
+  <Button href="/schedule-consultation" variant="outline">
    Schedule Your Free TSMC Consultation
   </Button>
   </AnimateOnScroll>
@@ -260,7 +260,7 @@ export default function TSMCFinancialAdvisor() {
   <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#333333] mb-8">
    You Helped Build the Future of American Semiconductors. Now Build Your Future.
   </h2>
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+  <Button href="/schedule-consultation" variant="primary">
    Schedule Your TSMC Strategy Call - Free. Confidential. Built for TSMC Professionals.
   </Button>
   </AnimateOnScroll>

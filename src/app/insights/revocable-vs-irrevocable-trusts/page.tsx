@@ -308,10 +308,10 @@ export default function Page() {
                 The right trust structure depends on your estate size, your goals, and your risk profile. We help Arizona residents evaluate their options and implement the strategy that fits their circumstances.
               </p>
               <Button
-                href="https://meetings.hubspot.com/jay-chang1/farthercom"
+                href="/schedule-consultation"
                 variant="primary"
               >
-                Schedule a Consultation
+                Schedule a Conversation
               </Button>
             </section>
 

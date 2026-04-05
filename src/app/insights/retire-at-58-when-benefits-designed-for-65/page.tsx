@@ -8,7 +8,7 @@ import { ArrowLeft, Clock, Calendar, User, ChevronRight, MessageSquare } from 'l
 
 export const metadata: Metadata = {
   title:
-    'How to Retire at 58 When Your Benefits Were Designed for 65 | Jay Chang | Farther',
+    'How to Retire at 58 When Your Benefits Were Designed for 65 | Advisor Jay',
   description:
     'Early retirement gap: healthcare, pension reduction, Social Security reduction, 401(k) Rule of 55, taxable account strategy. Bridge 58 to 65 with real example and account sequence.',
   alternates: {
@@ -76,7 +76,7 @@ export default function RetireAt58WhenBenefitsDesignedFor65Page() {
             },
             publisher: {
               '@type': 'Organization',
-              name: 'Jay Chang | Farther',
+              name: 'Advisor Jay',
               url: 'https://www.PWM-Farther.com',
             },
             datePublished: '2026-03-18',
@@ -288,7 +288,7 @@ export default function RetireAt58WhenBenefitsDesignedFor65Page() {
                   We will model your specific assets, pension, Social Security, and tax situation to show the exact withdrawal sequence that minimizes taxes and maximizes your retirement flexibility.
                 </p>
                 <div className="mt-6">
-                  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+                  <Button href="/schedule-consultation" variant="primary">
                     Create Your Withdrawal Bridge
                   </Button>
                 </div>
@@ -386,9 +386,7 @@ export default function RetireAt58WhenBenefitsDesignedFor65Page() {
 
               <div className="mt-8">
                 <a
-                  href="https://meetings.hubspot.com/jay-chang1/farthercom"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/schedule-consultation"
                   className="inline-flex items-center gap-2 font-sans text-[15px] font-semibold text-[#1d7682] hover:text-[#D4B65A] transition-colors"
                 >
                   <span>Plan Your Early Retirement</span>
@@ -457,7 +455,7 @@ export default function RetireAt58WhenBenefitsDesignedFor65Page() {
             We will map healthcare, pension, Social Security, and 401(k) withdrawals to show exactly when and how much you can retire.
           </p>
           <div className="mt-10">
-            <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+            <Button href="/schedule-consultation" variant="primary">
               Schedule Your Early Retirement Plan
             </Button>
           </div>

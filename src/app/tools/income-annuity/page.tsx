@@ -5,7 +5,7 @@ import IncomeAnnuityEstimator from './IncomeAnnuityEstimator'
 
 export const metadata: Metadata = {
  title:
- 'Income Annuity Estimator | Jay Chang | Farther',
+ 'Income Annuity Estimator | Advisor Jay',
  description:
  'See how much guaranteed monthly income your savings could generate through an immediate income annuity. Adjust your lump sum, age, and payout option for instant estimates.',
  alternates: {

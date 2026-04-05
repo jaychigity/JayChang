@@ -127,7 +127,7 @@ export default function Honeywell401kPage() {
    <p className="text-[#333333] text-lg mb-6">
    How much Honeywell stock is in your 401(k), your RSU account, and your personal investments? If you don&apos;t know, that&apos;s a sign the concentration needs attention.
    </p>
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
    Schedule a Free Review
    </Button>
   </div>

@@ -6,7 +6,7 @@ import SectionEyebrow from '@/components/SectionEyebrow';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
- title: 'Physician & Executive Wealth Management in Phoenix & Scottsdale | Banner Health, Mayo Clinic & Corporate Leaders | Jay Chang, Farther',
+ title: 'Physician & Executive Wealth Management in Phoenix & Scottsdale | Banner Health, Mayo Clinic & Corporate Leaders | Advisor Jay, Farther',
  description: 'Fiduciary wealth planning for Banner Health and Mayo Clinic physicians in Phoenix and Scottsdale, and corporate executives at Freeport-McMoRan and Arizona leading companies. High-income tax strategy, asset protection, retirement acceleration, and legacy planning.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/physician-executive-wealth-management-phoenix-scottsdale',
@@ -80,7 +80,7 @@ export default function PhysicianExecutiveWealthPage() {
    </AnimateOnScroll>
 
    <AnimateOnScroll delay={300}>
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
    Schedule a Physician or Executive Wealth Strategy Call
    </Button>
    </AnimateOnScroll>
@@ -606,7 +606,7 @@ export default function PhysicianExecutiveWealthPage() {
   </AnimateOnScroll>
 
   <AnimateOnScroll delay={200}>
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
    Schedule Your Physician or Executive Wealth Strategy Call
    </Button>
   </AnimateOnScroll>

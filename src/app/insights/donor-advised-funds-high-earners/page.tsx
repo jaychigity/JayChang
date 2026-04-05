@@ -140,8 +140,8 @@ export default function DonorAdvisedFundsPage() {
           <AnimateOnScroll>
             <h2 className="text-2xl font-bold text-white mb-4">Ready to optimize your charitable giving?</h2>
             <p className="text-gray-300 mb-8">We help high earners align their taxes, investments, and giving strategy.</p>
-            <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary" className="bg-white text-gray-900 hover:bg-gray-100">
-              Schedule a Consultation
+            <Button href="/schedule-consultation" variant="primary" className="bg-white text-gray-900 hover:bg-gray-100">
+              Schedule a Conversation
             </Button>
           </AnimateOnScroll>
         </div>

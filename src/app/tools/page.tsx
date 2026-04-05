@@ -3,7 +3,7 @@ import Link from 'next/link'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
- title: 'Financial Tools & Calculators | Jay Chang | Farther',
+ title: 'Financial Tools & Calculators | Advisor Jay',
  description:
  'Free interactive financial tools and assessments - tax savings calculators, retirement readiness checks, estate complexity scoring, equity compensation timelines, and business exit scorecards.',
  alternates: {
@@ -81,6 +81,14 @@ const tools = [
  'See how compound returns, dividends, and reinvestment transform your investment over time. Map your wealth trajectory to real-world milestones and model the impact of market corrections.',
  time: '45 seconds',
  category: 'Calculator',
+ },
+ {
+ href: '/tools/att-pension',
+ title: 'AT&T Pension & Retirement Suite',
+ description:
+ 'Six calculators for AT&T employees — cash balance pension, union pension band, lump sum vs annuity, early retirement reduction, 401(k) projection, and income gap analysis.',
+ time: 'Instant analysis',
+ category: 'Calculator Suite',
  },
 ]
 
@@ -301,9 +309,7 @@ export default function ToolsPage() {
   advisor can turn the numbers into a plan.
   </p>
   <a
-  href="https://meetings.hubspot.com/jay-chang1/farthercom"
-  target="_blank"
-  rel="noopener noreferrer"
+  href="/schedule-consultation"
   className="font-sans"
   style={{
   display: 'inline-block',

@@ -35,21 +35,21 @@ export default function AerospaceDefenseLP() {
   </AnimateOnScroll>
   <AnimateOnScroll delay={100}>
    <h1 className="font-serif text-[34px] md:text-[48px] font-bold text-[#F7F4EE] mt-6 leading-tight">
-   You Engineer Precision for a Living. Your Financial Plan Should Reflect That.
+   You&apos;ve Built a Career with Precision. Your Finances Deserve the Same.
    </h1>
   </AnimateOnScroll>
   <AnimateOnScroll delay={200}>
    <p className="font-sans text-[17px] text-[#F7F4EE]/90 max-w-[620px] mx-auto mt-6 leading-relaxed">
-   Aerospace and defense professionals across Arizona and California - including those at Honeywell, Raytheon (with locations in Tucson, Arizona and El Segundo, California), and other major contractors - share a common trait: long tenures, disciplined careers, and compensation structures that reward loyalty. Deferred compensation plans, pension benefits, government security clearance considerations, and employer stock accumulation create a financial picture that demands precision planning - not generic advice.
+   If you&apos;re at Honeywell, Raytheon (whether Tucson or El Segundo), or another major contractor in Arizona or California, you&apos;ve probably spent years building something meaningful. Along the way, you&apos;ve accumulated deferred comp, pension benefits, employer stock, and maybe a security clearance that adds another layer. That&apos;s a lot of moving parts - and you deserve a financial partner who actually understands all of them.
    </p>
   </AnimateOnScroll>
   <AnimateOnScroll delay={300}>
    <div className="mt-8">
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
-   Schedule a Confidential Consultation
+   Let&apos;s Talk About Your Plan
    </Button>
    </div>
    <p className="font-sans text-[15px] text-[#F7F4EE]/70 mt-4">
@@ -85,7 +85,7 @@ export default function AerospaceDefenseLP() {
    Fiduciary
   </p>
   <p className="font-sans text-[13px] text-[#5b6a71]">
-   Your interests come first
+   We&apos;re legally on your side
   </p>
   </div>
   <span className="hidden sm:inline text-[#E8E6E1]">|</span>
@@ -107,10 +107,10 @@ export default function AerospaceDefenseLP() {
   <div className="max-w-[900px] mx-auto">
   <AnimateOnScroll>
   <h2 className="font-serif text-[28px] md:text-[36px] font-bold text-[#333333] text-center">
-   Planning Built for Aerospace & Defense Careers
+   How We Help Aerospace & Defense Professionals
   </h2>
   <p className="font-sans text-[16px] text-[#5b6a71] text-center max-w-[600px] mx-auto mt-4 leading-relaxed">
-   Your compensation structure is fundamentally different. Your plan needs to be too.
+   Your benefits package is different from most people&apos;s - and your financial plan should be, too. We take the time to understand how all the pieces fit together.
   </p>
   </AnimateOnScroll>
 
@@ -121,7 +121,7 @@ export default function AerospaceDefenseLP() {
    Deferred Compensation Optimization
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   Navigate deferral elections, distribution timing, and investment allocation within deferred comp plans to maximize retirement wealth while minimizing tax impact.
+   Deferral elections, distribution timing, investment choices within your plan - these decisions add up to a lot of money over a career. We walk through them with you so you feel confident you&apos;re making the right calls.
    </p>
    </div>
   </AnimateOnScroll>
@@ -132,7 +132,7 @@ export default function AerospaceDefenseLP() {
    Pension & Retirement Integration
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   Coordinate pension payouts, lump-sum election analysis, survivor benefits, and integration with Social Security and other retirement income sources.
+   Lump sum or annuity? When to start Social Security? How does your pension fit with everything else? We help you see the full picture and make decisions that work for your family - not just on paper, but in real life.
    </p>
    </div>
   </AnimateOnScroll>
@@ -143,7 +143,7 @@ export default function AerospaceDefenseLP() {
    Long-Tenure Wealth Accumulation
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   Strategic planning for 15-30 year veterans. Consistent salary, employer stock plans, and compounded growth require a different investment and tax strategy.
+   After 15, 20, or 30 years at one company, you&apos;ve quietly built real wealth through steady contributions and compounding. That takes a different strategy than someone who job-hops every two years. We plan accordingly.
    </p>
    </div>
   </AnimateOnScroll>
@@ -154,7 +154,7 @@ export default function AerospaceDefenseLP() {
    Security Clearance-Sensitive Planning
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   Discreet, fiduciary guidance on financial matters that may intersect with your clearance. Your privacy and discretion are paramount.
+   We understand that financial matters can intersect with your clearance, and we treat that with the seriousness it deserves. Complete discretion, always.
    </p>
    </div>
   </AnimateOnScroll>
@@ -165,7 +165,7 @@ export default function AerospaceDefenseLP() {
    Executive Compensation Review
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   For directors and VPs earning $300K+. Review total compensation, optimize benefit selections, and build a long-term wealth strategy aligned with tenure.
+   For directors and VPs earning $300K+, your total comp has a lot of levers. We review the whole picture together - benefits, equity, deferred comp - and help you build a long-term strategy that matches the career you&apos;ve built.
    </p>
    </div>
   </AnimateOnScroll>
@@ -181,7 +181,7 @@ export default function AerospaceDefenseLP() {
   <AnimateOnScroll>
   <div className="border-l-4 border-[#1d7682] pl-6 text-left">
    <p className="font-serif text-[20px] md:text-[24px] text-[#333333] leading-relaxed italic">
-   &ldquo;After 20 years with Honeywell, I had a pension, deferred comp, employer stock, and no clear picture of what it all meant at retirement. Jay's analysis showed me exactly when to elect deferred comp distributions, how to sequence my pension, and how to integrate it all with my investment portfolio. The plan I have now gives me real confidence about retirement.&rdquo;
+   &ldquo;After 20 years with Honeywell, I had a pension, deferred comp, employer stock, and honestly no clear picture of what any of it meant for retirement. Jay sat down with me and laid it all out - when to take deferred comp distributions, how to sequence my pension, how it all fits with my investments. For the first time, I actually feel confident about what&apos;s ahead.&rdquo;
    </p>
    <p className="font-sans text-[15px] text-[#5b6a71] mt-4">
    - Aerospace professional, client since 2023
@@ -207,7 +207,7 @@ export default function AerospaceDefenseLP() {
    VP, Wealth Advisor
   </p>
   <p className="font-sans text-[16px] text-[#5b6a71] leading-relaxed mt-6">
-   Jay works with long-career professionals who need careful coordination of pensions, deferred compensation, and employer equity. He understands the unique financial architecture of aerospace and defense careers - and knows how to build a retirement plan that actually aligns with your reality.
+   Jay and our team work with long-career professionals who need someone to help coordinate pensions, deferred comp, and employer equity into one coherent plan. He genuinely enjoys the puzzle of aerospace and defense benefits - and he&apos;ll make sure your retirement plan reflects the disciplined career you&apos;ve built.
   </p>
   </AnimateOnScroll>
   </div>
@@ -220,19 +220,19 @@ export default function AerospaceDefenseLP() {
   <div className="max-w-[700px] mx-auto text-center">
   <AnimateOnScroll>
   <h2 className="font-serif text-[28px] md:text-[40px] font-semibold text-[#F7F4EE] leading-tight">
-   Ready to Talk?
+   Let&apos;s Have a Conversation
   </h2>
   <p className="font-sans text-[17px] text-[#F7F4EE]/85 max-w-[540px] mx-auto mt-5 leading-relaxed">
-   Schedule a confidential conversation with Jay to discuss your deferred compensation, pension, and retirement planning. No sales pitch, no obligation - just a focused discussion about your financial picture.
+   Grab a time on Jay&apos;s calendar and we&apos;ll walk through your deferred comp, pension, and retirement picture together. No pitch, no pressure - just a straightforward conversation about your financial life.
   </p>
   </AnimateOnScroll>
   <AnimateOnScroll delay={100}>
   <div className="mt-8">
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
-   Schedule a Confidential Consultation
+   Grab a Time to Chat
    </Button>
   </div>
   <p className="font-sans text-[15px] text-[#F7F4EE]/70 mt-4">

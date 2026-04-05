@@ -1,25 +1,291 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
+import Image from "next/image";
 import { FartherIcon } from "./FartherLogo";
 
-const navLinks = [
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Investment Philosophy", href: "/investment-philosophy" },
-  { label: "Scottsdale", href: "/scottsdale" },
-  { label: "Las Vegas", href: "/las-vegas" },
-  { label: "California", href: "/california" },
-  { label: "Tools", href: "/tools" },
-  { label: "Insights", href: "/insights" },
-  { label: "Market Commentary", href: "/client-resources" },
-] as const;
+type NavItem = {
+  label: string;
+  href: string;
+  children?: { label: string; href: string }[];
+};
 
-const CTA_HREF = "https://meetings.hubspot.com/jay-chang1/farthercom";
+const navItems: NavItem[] = [
+  {
+    label: "About",
+    href: "/about",
+    children: [
+      { label: "Jay Chang", href: "/jay-chang" },
+      { label: "Our Team", href: "/about" },
+      { label: "Our Process", href: "/process" },
+      { label: "Investment Philosophy", href: "/investment-philosophy" },
+      { label: "Contact", href: "/contact" },
+    ],
+  },
+  {
+    label: "Services",
+    href: "/services",
+    children: [
+      { label: "All Services", href: "/services" },
+      { label: "Financial Planning", href: "/services/financial-planning" },
+      { label: "Investment Management", href: "/services/investments" },
+      { label: "Retirement Planning", href: "/services/retirement-planning" },
+      { label: "Tax Optimization", href: "/services/tax-optimization" },
+      { label: "Trust & Estate", href: "/services/trust-estate" },
+      { label: "401(k) & Employer Plans", href: "/services/401k" },
+      { label: "Generational Wealth", href: "/services/generational-wealth" },
+      { label: "Alternative Investments", href: "/services/alternatives" },
+      { label: "Business Owners", href: "/services/business-owners" },
+      { label: "Institutional", href: "/services/institutional" },
+    ],
+  },
+  {
+    label: "Who We Serve",
+    href: "#",
+    children: [
+      { label: "Tech & Semiconductor", href: "/semiconductor-wealth-management-arizona" },
+      { label: "Aerospace & Defense", href: "/aerospace-defense-wealth-management" },
+      { label: "Physicians & Healthcare", href: "/physician-executive-wealth-management-phoenix-scottsdale" },
+      { label: "Telecom & Utilities", href: "/telecommunications-utilities-wealth-management" },
+      { label: "Families & Life Transitions", href: "/families-life-transitions-wealth-management" },
+      { label: "Institutional & Non-Profit", href: "/institutional-non-profit-wealth-management" },
+      { label: "Tech Executives", href: "/tech-executive-wealth-management" },
+    ],
+  },
+  {
+    label: "Locations",
+    href: "#",
+    children: [
+      { label: "Scottsdale", href: "/scottsdale" },
+      { label: "Las Vegas", href: "/las-vegas" },
+      { label: "California", href: "/california" },
+      { label: "Areas We Serve", href: "/areas-we-serve" },
+    ],
+  },
+  {
+    label: "Tools",
+    href: "/tools",
+    children: [
+      { label: "All Tools", href: "/tools" },
+      { label: "Retirement Readiness", href: "/tools/retirement-readiness" },
+      { label: "Equity Compensation", href: "/tools/equity-compensation" },
+      { label: "Business Exit Scorecard", href: "/tools/business-exit-scorecard" },
+      { label: "Estate Complexity", href: "/tools/estate-complexity" },
+      { label: "CA→NV Tax Savings", href: "/tools/ca-nv-tax-savings" },
+      { label: "Roth Conversion", href: "/tools/roth-conversion" },
+      { label: "Income Annuity", href: "/tools/income-annuity" },
+      { label: "TVM Calculator", href: "/tools/tvm-calculator" },
+      { label: "Withholding Calculator", href: "/tools/withholding-calculator" },
+      { label: "AT&T Pension Suite", href: "/tools/att-pension" },
+    ],
+  },
+  {
+    label: "Insights",
+    href: "/insights",
+    children: [
+      { label: "All Insights", href: "/insights" },
+      { label: "Market Commentary", href: "/client-resources" },
+    ],
+  },
+];
+
+const CTA_HREF = "/schedule-consultation";
 const CTA_LABEL = "Start a Conversation";
+
+function DropdownItem({ item, isActive, closeDropdown }: { item: NavItem; isActive: (href: string) => boolean; closeDropdown: () => void }) {
+  const [open, setOpen] = useState(false);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => setOpen(false), 150);
+  };
+
+  const hasChildren = item.children && item.children.length > 0;
+  const isAnyChildActive = hasChildren && item.children!.some(child => isActive(child.href));
+  const active = isActive(item.href) || isAnyChildActive;
+
+  return (
+    <div
+      style={{ position: "relative" }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <Link
+        href={item.href === "#" ? (item.children?.[0]?.href || "#") : item.href}
+        style={{
+          fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif",
+          fontSize: 13,
+          fontWeight: 500,
+          whiteSpace: "nowrap",
+          color: active ? "#1d7682" : "#F7F4EE",
+          textDecoration: "none",
+          transition: "color 0.2s ease",
+          paddingBottom: 4,
+          borderBottom: active ? "2px solid #1d7682" : "2px solid transparent",
+          display: "flex",
+          alignItems: "center",
+          gap: 4,
+        }}
+        onMouseEnter={(e) => {
+          if (!active) e.currentTarget.style.color = "#1d7682";
+        }}
+        onMouseLeave={(e) => {
+          if (!active) e.currentTarget.style.color = "#F7F4EE";
+        }}
+      >
+        {item.label}
+        {hasChildren && <ChevronDown size={12} style={{ opacity: 0.6, transition: "transform 0.2s", transform: open ? "rotate(180deg)" : "rotate(0)" }} />}
+      </Link>
+
+      {hasChildren && open && (
+        <div
+          style={{
+            position: "absolute",
+            top: "100%",
+            left: "50%",
+            transform: "translateX(-50%)",
+            paddingTop: 12,
+            zIndex: 10000,
+          }}
+        >
+          <div
+            style={{
+              backgroundColor: "rgba(51, 51, 51, 0.98)",
+              backdropFilter: "blur(20px)",
+              WebkitBackdropFilter: "blur(20px)",
+              border: "1px solid rgba(29, 118, 130, 0.2)",
+              borderRadius: 8,
+              padding: "8px 0",
+              minWidth: 220,
+              boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
+            }}
+          >
+            {item.children!.map((child) => (
+              <Link
+                key={child.href}
+                href={child.href}
+                onClick={() => { setOpen(false); closeDropdown(); }}
+                style={{
+                  display: "block",
+                  padding: "10px 20px",
+                  fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif",
+                  fontSize: 13,
+                  fontWeight: 400,
+                  color: isActive(child.href) ? "#1d7682" : "#F7F4EE",
+                  textDecoration: "none",
+                  transition: "background-color 0.15s ease, color 0.15s ease",
+                  whiteSpace: "nowrap",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "rgba(29, 118, 130, 0.15)";
+                  e.currentTarget.style.color = "#1d7682";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = "transparent";
+                  e.currentTarget.style.color = isActive(child.href) ? "#1d7682" : "#F7F4EE";
+                }}
+              >
+                {child.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function MobileAccordion({ item, isActive, onNavigate }: { item: NavItem; isActive: (href: string) => boolean; onNavigate: () => void }) {
+  const [expanded, setExpanded] = useState(false);
+  const hasChildren = item.children && item.children.length > 0;
+
+  return (
+    <div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          height: 56,
+          borderBottom: "1px solid rgba(29, 118, 130, 0.1)",
+        }}
+      >
+        <Link
+          href={item.href === "#" ? (item.children?.[0]?.href || "#") : item.href}
+          onClick={onNavigate}
+          style={{
+            fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif",
+            fontSize: 17,
+            fontWeight: 500,
+            color: isActive(item.href) ? "#1d7682" : "#F7F4EE",
+            textDecoration: "none",
+            flex: 1,
+            display: "flex",
+            alignItems: "center",
+            height: "100%",
+          }}
+        >
+          {item.label}
+        </Link>
+        {hasChildren && (
+          <button
+            onClick={() => setExpanded(!expanded)}
+            style={{
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+              padding: 8,
+              display: "flex",
+              alignItems: "center",
+              WebkitTapHighlightColor: "transparent",
+            }}
+            aria-label={`Expand ${item.label}`}
+          >
+            <ChevronDown
+              size={18}
+              color="#F7F4EE"
+              style={{
+                transition: "transform 0.2s",
+                transform: expanded ? "rotate(180deg)" : "rotate(0)",
+              }}
+            />
+          </button>
+        )}
+      </div>
+      {hasChildren && expanded && (
+        <div style={{ paddingLeft: 16, paddingBottom: 8 }}>
+          {item.children!.map((child) => (
+            <Link
+              key={child.href}
+              href={child.href}
+              onClick={onNavigate}
+              style={{
+                display: "block",
+                padding: "10px 0",
+                fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif",
+                fontSize: 15,
+                fontWeight: 400,
+                color: isActive(child.href) ? "#1d7682" : "rgba(247, 244, 238, 0.7)",
+                textDecoration: "none",
+                borderBottom: "1px solid rgba(29, 118, 130, 0.05)",
+              }}
+            >
+              {child.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function Navigation() {
   const pathname = usePathname();
@@ -52,7 +318,7 @@ export default function Navigation() {
   }, [pathname]);
 
   const isActive = (href: string) => {
-    if (href === "/") return pathname === "/";
+    if (href === "/" || href === "#") return pathname === href;
     return pathname === href || pathname.startsWith(href + "/");
   };
 
@@ -88,20 +354,20 @@ export default function Navigation() {
           <Link
             href="/"
             style={{ textDecoration: "none", flexShrink: 0, display: "flex", alignItems: "center", gap: 12 }}
-            aria-label="Jay Chang | Farther - Home"
+            aria-label="Advisor Jay - Home"
           >
-            <FartherIcon variant="cream" size={32} />
+            <FartherIcon variant="cream" size={52} />
             <span
               style={{
                 fontFamily: "'Cormorant Garamond', 'Cormorant', serif",
-                fontSize: 26,
+                fontSize: 24,
                 fontWeight: 600,
                 color: "#F7F4EE",
-                letterSpacing: "0.02em",
+                letterSpacing: "0.04em",
                 lineHeight: 1,
               }}
             >
-              Jay Chang
+              Advisor Jay
             </span>
           </Link>
 
@@ -114,39 +380,8 @@ export default function Navigation() {
             }}
             className="desktop-nav"
           >
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                aria-current={isActive(link.href) ? "page" : undefined}
-                style={{
-                  fontFamily:
-                    "'Inter', 'Helvetica Neue', Arial, sans-serif",
-                  fontSize: 13,
-                  fontWeight: 500,
-                  whiteSpace: "nowrap",
-                  color: isActive(link.href) ? "#1d7682" : "#F7F4EE",
-                  textDecoration: "none",
-                  transition: "color 0.2s ease",
-                  position: "relative",
-                  paddingBottom: 4,
-                  borderBottom: isActive(link.href)
-                    ? "2px solid #1d7682"
-                    : "2px solid transparent",
-                }}
-                onMouseEnter={(e) => {
-                  if (!isActive(link.href)) {
-                    e.currentTarget.style.color = "#1d7682";
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  if (!isActive(link.href)) {
-                    e.currentTarget.style.color = "#F7F4EE";
-                  }
-                }}
-              >
-                {link.label}
-              </Link>
+            {navItems.map((item) => (
+              <DropdownItem key={item.label} item={item} isActive={isActive} closeDropdown={() => {}} />
             ))}
 
             {/* Desktop CTA */}
@@ -200,6 +435,7 @@ export default function Navigation() {
             <Menu size={28} color="#F7F4EE" strokeWidth={2} />
           </button>
         </div>
+
       </nav>
 
       {/* Spacer to prevent content from hiding behind fixed nav */}
@@ -244,20 +480,20 @@ export default function Navigation() {
             href="/"
             style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 12 }}
             onClick={() => setMobileMenuOpen(false)}
-            aria-label="Jay Chang | Farther - Home"
+            aria-label="Advisor Jay - Home"
           >
-            <FartherIcon variant="cream" size={32} />
+            <FartherIcon variant="cream" size={52} />
             <span
               style={{
                 fontFamily: "'Cormorant Garamond', 'Cormorant', serif",
-                fontSize: 26,
+                fontSize: 24,
                 fontWeight: 600,
                 color: "#F7F4EE",
-                letterSpacing: "0.02em",
+                letterSpacing: "0.04em",
                 lineHeight: 1,
               }}
             >
-              Jay Chang
+              Advisor Jay
             </span>
           </Link>
 
@@ -291,30 +527,13 @@ export default function Navigation() {
             overflowY: "auto",
           }}
         >
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              aria-current={isActive(link.href) ? "page" : undefined}
-              onClick={() => setMobileMenuOpen(false)}
-              style={{
-                fontFamily:
-                  "'Inter', 'Helvetica Neue', Arial, sans-serif",
-                fontSize: 17,
-                fontWeight: 500,
-                color: isActive(link.href) ? "#1d7682" : "#F7F4EE",
-                textDecoration: isActive(link.href) ? "underline" : "none",
-                textDecorationColor: "#1d7682",
-                textUnderlineOffset: 6,
-                height: 56,
-                display: "flex",
-                alignItems: "center",
-                borderBottom: "1px solid rgba(29, 118, 130, 0.1)",
-                transition: "color 0.2s ease",
-              }}
-            >
-              {link.label}
-            </Link>
+          {navItems.map((item) => (
+            <MobileAccordion
+              key={item.label}
+              item={item}
+              isActive={isActive}
+              onNavigate={() => setMobileMenuOpen(false)}
+            />
           ))}
         </div>
 

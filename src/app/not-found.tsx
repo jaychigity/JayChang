@@ -13,7 +13,7 @@ export default function NotFound() {
   The page you&apos;re looking for may have been moved or no longer exists.
   Here are some helpful links:
   </p>
-  <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
   <Link
   href="/"
   className="font-sans text-[15px] font-semibold text-[#333333] hover:text-[#1d7682] transition-colors"
@@ -40,7 +40,7 @@ export default function NotFound() {
   </Link>
   </div>
   <div className="mt-10">
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+  <Button href="/schedule-consultation" variant="primary">
   Start a Conversation
   </Button>
   </div>

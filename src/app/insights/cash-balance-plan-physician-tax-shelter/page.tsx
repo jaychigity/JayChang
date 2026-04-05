@@ -279,11 +279,11 @@ export default function CashBalancePlan() {
                 Whether a cash balance plan is right for your situation depends on your age, income, and practice structure. Let&apos;s analyze your specific case.
               </p>
               <Button
-                href="https://meetings.hubspot.com/jay-chang1/farthercom"
+                href="/schedule-consultation"
                 variant="ghost"
                 className="w-full sm:w-auto"
               >
-                Schedule a Consultation
+                Schedule a Conversation
               </Button>
             </section>
           </AnimateOnScroll>

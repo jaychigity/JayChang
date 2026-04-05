@@ -192,7 +192,7 @@ export default function ArizonaTaxPlanningPage() {
   <p className="text-lg text-[#5b6a71] mb-8 leading-relaxed">
    Want a custom 2026 year-end tax plan tailored to your compensation, relocation status, and federal scenario assumptions? Let&apos;s build it together.
   </p>
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+  <Button href="/schedule-consultation" variant="primary">
    Schedule a Call with Jay
   </Button>
   </AnimateOnScroll>

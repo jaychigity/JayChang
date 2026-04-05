@@ -6,7 +6,7 @@ import SectionEyebrow from '@/components/SectionEyebrow';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
- title: 'Semiconductor & Tech Wealth Management in Arizona | RSU, SERPLUS & Equity Planning | Jay Chang, Farther',
+ title: 'Semiconductor & Tech Wealth Management in Arizona | RSU, SERPLUS & Equity Planning | Advisor Jay, Farther',
  description: 'Fiduciary wealth management for semiconductor and tech professionals at TSMC, Intel, NVIDIA, Apple, Microchip, and Amkor in Arizona. Jay Chang knows your benefits, your equity plans, and the financial complexity your career creates.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/semiconductor-wealth-management-arizona',
@@ -57,7 +57,7 @@ export default function SemiconductorWealthManagementArizona() {
   <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
    From TSMC&apos;s Fab 21 in North Phoenix to Intel&apos;s Chandler campus, from NVIDIA&apos;s quarterly vesting cycle to Apple&apos;s biannual RSU tranches - Jay Chang is the fiduciary advisor who knows your benefits package by name, knows the risks hiding inside it, and knows exactly what to do about them.
   </p>
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+  <Button href="/schedule-consultation" variant="primary">
    Schedule a Free Semiconductor Strategy Call
   </Button>
   </div>
@@ -530,7 +530,7 @@ export default function SemiconductorWealthManagementArizona() {
   <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
    You&apos;ve earned the opportunity to build significant wealth at TSMC, Intel, NVIDIA, Microchip, Amkor, and other semiconductor leaders. The right financial plan ensures you actually keep it.
   </p>
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+  <Button href="/schedule-consultation" variant="primary">
    Schedule Your Free Semiconductor Strategy Call
   </Button>
   <p className="text-gray-400 text-sm mt-8">

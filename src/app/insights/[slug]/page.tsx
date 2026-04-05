@@ -237,7 +237,7 @@ export default async function ArticlePage({ params }: PageProps) {
   },
   publisher: {
    '@type': 'Organization',
-   name: 'Jay Chang | Farther',
+   name: 'Advisor Jay',
    url: 'https://www.PWM-Farther.com',
   },
   datePublished: article.date,
@@ -380,7 +380,7 @@ export default async function ArticlePage({ params }: PageProps) {
   how these strategies apply to your specific situation.
   </p>
   <div className="mt-10">
-  <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+  <Button href="/schedule-consultation" variant="primary">
    Wondering If This Applies to You? Let's Find Out Together.
   </Button>
   </div>

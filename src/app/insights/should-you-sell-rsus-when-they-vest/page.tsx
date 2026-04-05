@@ -160,8 +160,8 @@ export default function RSUVestingArticle() {
               <p className="text-gray-700 mb-6">
                 Let&apos;s discuss how to optimize your equity compensation and overall financial strategy.
               </p>
-              <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
-                Schedule a Consultation
+              <Button href="/schedule-consultation" variant="primary">
+                Schedule a Conversation
               </Button>
             </AnimateOnScroll>
           </div>

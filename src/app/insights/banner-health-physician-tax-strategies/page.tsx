@@ -160,7 +160,7 @@ export default function BannerHealthPhysicianPage() {
    <p className="text-[#333333] text-lg mb-6">
    Implementing all seven of these strategies requires coordination and expertise. But the potential savings are enormous: $50,000-$150,000+ per year for high-earning physicians.
    </p>
-   <Button href="https://meetings.hubspot.com/jay-chang1/farthercom" variant="primary">
+   <Button href="/schedule-consultation" variant="primary">
    Schedule a Free Physician Financial Review
    </Button>
   </div>

@@ -11,12 +11,12 @@ export const metadata: Metadata = {
  title:
  'Business Owner Services | PWM at Farther - Arizona, California & Nevada',
  description:
- 'Exit planning, succession strategy, entity structuring, and post-sale wealth management for business owners with $2M-$20M in Scottsdale, AZ and across Arizona, California, and Nevada.',
+ 'Exit planning, succession strategy, and post-sale wealth management for business owners in Scottsdale, AZ and across Arizona, California, and Nevada. We help you plan your next chapter.',
  alternates: { canonical: 'https://www.PWM-Farther.com/services/business-owners' },
  openGraph: {
- title: 'Business Owner Services | Jay Chang | Farther',
+ title: 'Business Owner Services | Advisor Jay',
  description:
- 'Comprehensive exit planning, succession strategy, and post-liquidity wealth management for business owners in Arizona, California, and Nevada.',
+ 'Exit planning, succession strategy, and post-sale wealth management for business owners in Arizona, California, and Nevada. Your next chapter, planned with care.',
  url: 'https://www.PWM-Farther.com/services/business-owners',
  },
 }
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Business Owner Services - Jay Chang | Farther',
+ name: 'Business Owner Services - Advisor Jay',
  description:
  'Exit planning, succession strategy, entity structuring, equity compensation planning, and post-exit wealth management for business owners with $2M-$20M in investable assets.',
  url: 'https://www.PWM-Farther.com/services/business-owners',
@@ -65,7 +65,7 @@ const faqJsonLd = {
  name: 'When should I start planning for a business exit?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'Ideally, three to five years before you plan to sell or transition. Early planning gives you time to optimize the business valuation, structure the deal tax-efficiently, and ensure your personal finances are positioned to support the next chapter. That said, if a transaction is already in motion, there are still meaningful steps we can take to protect your outcome.',
+  text: 'In a perfect world, three to five years before you plan to sell or transition. That gives you time to get the valuation where you want it, set up the deal in a tax-smart way, and make sure your personal finances are ready for whatever comes next. But if a deal is already in motion, there are still plenty of things we can do to protect your outcome.',
  },
  },
  {
@@ -73,7 +73,7 @@ const faqJsonLd = {
  name: 'How do you help with equity compensation planning?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'We analyze your stock options, RSUs, or carried interest in the context of your entire financial picture - tax brackets, AMT exposure, capital gains timing, and diversification needs. We build exercise and sale strategies that minimize taxes and concentration risk while aligning with your liquidity goals.',
+  text: 'We look at your stock options, RSUs, or carried interest in the context of your whole financial life -- tax brackets, AMT exposure, capital gains timing, and how concentrated you are in one position. Then we build an exercise and sale strategy that cuts the tax bill and lowers your risk while still meeting your liquidity goals.',
  },
  },
  {
@@ -81,7 +81,7 @@ const faqJsonLd = {
  name: 'What happens to my wealth after I sell my business?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'Post-exit is where many business owners feel most exposed. Suddenly you have a large, liquid sum that needs to replace the income, purpose, and structure your business provided. We build a comprehensive post-exit plan covering investment strategy, tax positioning, estate planning, and cash flow management - so the wealth you built continues to work for you.',
+  text: 'Post-exit is honestly where a lot of business owners feel the most vulnerable. Suddenly you have a large lump of cash that needs to replace the income, the purpose, and the structure your business gave you. We build a complete post-exit plan covering investments, taxes, estate planning, and cash flow -- so the wealth you spent years building keeps working for you.',
  },
  },
  {
@@ -89,7 +89,7 @@ const faqJsonLd = {
  name: 'Do you coordinate with my CPA and attorney during a transaction?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'Absolutely. Business exits involve legal, tax, and financial decisions that must be coordinated in lockstep. We work directly with your CPA, M&A attorney, and any other advisors to ensure every aspect of the transaction - from deal structure to post-closing wealth transfer - is aligned and optimized.',
+  text: 'Absolutely. A business exit involves legal, tax, and financial decisions that all need to happen in sync. We work directly with your CPA, your M&A attorney, and any other advisors to make sure every piece -- from the deal structure to how wealth gets transferred after closing -- is aligned and optimized. No one should be operating in a vacuum.',
  },
  },
  ],
@@ -126,17 +126,17 @@ export default function BusinessOwnerServicesPage() {
   <AnimateOnScroll>
   <SectionEyebrow text="BUSINESS OWNER SERVICES" />
   <h1 className="font-serif text-display text-[#333333] mt-4 max-w-3xl mx-auto">
-   Your Business Built Your Wealth.{' '}
-   <span className="text-[#1d7682]">Now Protect It.</span>
+   You Built This.{' '}
+   <span className="text-[#1d7682]">Let&apos;s Protect It Together.</span>
   </h1>
   <p className="font-sans text-body-lg text-[#5b6a71] mt-6 max-w-2xl mx-auto leading-relaxed">
-   Exit planning, succession strategy, and post-liquidity wealth management
-   for business owners who have spent years building something valuable - and
-   want to make sure the next chapter is just as intentional.
+   Exit planning, succession strategy, and post-sale wealth management
+   for business owners who have poured years into building something real
+   -- and want the next chapter to be just as intentional.
   </p>
   <div className="mt-10">
    <Button variant="primary" href="/schedule-consultation">
-   Schedule a Consultation
+   Schedule a Conversation
    </Button>
   </div>
   </AnimateOnScroll>
@@ -165,48 +165,49 @@ export default function BusinessOwnerServicesPage() {
   {/* Content Column */}
   <AnimateOnScroll>
    <h2 className="font-serif text-headline text-[#333333]">
-   Comprehensive Planning for Every Stage of Ownership
+   Planning for Every Stage of Your Journey
    </h2>
    <p className="font-sans text-body text-[#5b6a71] mt-4 leading-relaxed">
-   Whether you are five years from a sale, navigating a transition today, or
-   managing newly liquid wealth after an exit, we bring structure, strategy,
-   and clarity to the decisions that matter most.
+   Whether you&apos;re five years from a sale, in the thick of a transition
+   right now, or figuring out what to do with newly liquid wealth after
+   an exit -- we bring structure, strategy, and real clarity to the
+   decisions that matter most.
    </p>
    <ul className="mt-8 space-y-4">
    <GoldBullet>
-   <strong className="text-[#333333]">Exit Planning</strong> - Valuation
-   analysis, deal structure review, and pre-sale positioning to maximize
-   your after-tax proceeds.
+   <strong className="text-[#333333]">Exit Planning</strong> -- Valuation
+   analysis, deal structure review, and pre-sale positioning to help you
+   keep more of what you&apos;ve earned.
    </GoldBullet>
    <GoldBullet>
-   <strong className="text-[#333333]">Succession Planning</strong> - Family
-   transitions, management buyouts, and partnership restructuring designed
-   to preserve the business and your legacy.
+   <strong className="text-[#333333]">Succession Planning</strong> -- Family
+   transitions, management buyouts, and partnership restructuring done
+   thoughtfully to protect both the business and your legacy.
    </GoldBullet>
    <GoldBullet>
-   <strong className="text-[#333333]">Entity Structuring</strong> - S-corp,
-   C-corp, LLC, and holding company optimization for tax efficiency and
-   liability protection.
+   <strong className="text-[#333333]">Entity Structuring</strong> -- S-corp,
+   C-corp, LLC, and holding company decisions made for tax efficiency and
+   liability protection, not just convenience.
    </GoldBullet>
    <GoldBullet>
-   <strong className="text-[#333333]">Equity Compensation</strong> - ISO
-   and NSO exercise strategies, RSU planning, and concentration risk
-   management for founders and key executives.
+   <strong className="text-[#333333]">Equity Compensation</strong> -- ISO
+   and NSO exercise strategies, RSU planning, and managing concentration
+   risk for founders and key executives.
    </GoldBullet>
    <GoldBullet>
-   <strong className="text-[#333333]">Key-Person Risk</strong> - Insurance
+   <strong className="text-[#333333]">Key-Person Risk</strong> -- Insurance
    and contingency planning to protect the business, your family, and your
    partners if the unexpected happens.
    </GoldBullet>
    <GoldBullet>
-   <strong className="text-[#333333]">Pre-Liquidity Planning</strong> - Tax
-   positioning, trust funding, and charitable strategies that must be
-   executed before a transaction closes.
+   <strong className="text-[#333333]">Pre-Sale Planning</strong> -- Tax
+   positioning, trust funding, and charitable strategies that need to
+   happen before the deal closes.
    </GoldBullet>
    <GoldBullet>
    <strong className="text-[#333333]">Post-Exit Wealth Management</strong>{' '}
-   - Investment strategy, cash flow planning, and estate coordination for
-   the concentrated wealth that follows a successful sale.
+   -- Investment strategy, cash flow planning, and estate coordination for
+   the concentrated wealth that comes after a successful sale.
    </GoldBullet>
    </ul>
   </AnimateOnScroll>
@@ -222,13 +223,13 @@ export default function BusinessOwnerServicesPage() {
   <AnimateOnScroll>
   <SectionEyebrow text="INTERACTIVE TOOLS" />
   <h2 className="font-serif text-headline text-[#333333] mt-4">
-   See Where You Stand Before We Talk
+   Get a Head Start Before We Even Talk
   </h2>
   <p className="font-sans text-body text-[#5b6a71] mt-4 max-w-2xl mx-auto leading-relaxed">
-   These complimentary tools give you a head start on the planning process.
-   Answer a few questions and get an instant, personalized assessment.
+   These free tools give you a quick snapshot of where things stand.
+   Answer a few questions and get instant, personalized results.
   </p>
-  <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+  <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
    <Link
    href="/tools/business-exit-scorecard"
    className="inline-flex items-center gap-2 bg-gradient-to-b from-[#2a9dab] to-[#1d7682] hover:from-[#238a97] hover:to-[#155f69] text-white font-sans text-[14px] font-semibold px-6 py-3 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_8px_24px_rgba(29,118,130,0.4)] transition-all duration-200"
@@ -255,7 +256,7 @@ export default function BusinessOwnerServicesPage() {
   <div className="text-center">
    <SectionEyebrow text="WHY BUSINESS OWNERS CHOOSE US" />
    <h2 className="font-serif text-headline text-[#333333] mt-4 max-w-3xl mx-auto">
-   Built for Owners Who Think in Decades, Not Quarters
+   We Think in Decades, Not Quarters -- Just Like You Do
    </h2>
   </div>
   </AnimateOnScroll>
@@ -267,9 +268,9 @@ export default function BusinessOwnerServicesPage() {
    We Speak Your Language
    </h3>
    <p className="font-sans text-body text-[#5b6a71] mt-3 leading-relaxed">
-   EBITDA multiples, working capital adjustments, earnout structures - we
-   understand the mechanics of business transactions because we work with
-   owners and founders every day. You will not need to translate.
+   EBITDA multiples, working capital adjustments, earnout structures --
+   we get it because we work with owners and founders every day. You
+   won&apos;t need to translate.
    </p>
    </div>
   </AnimateOnScroll>
@@ -277,12 +278,12 @@ export default function BusinessOwnerServicesPage() {
   <AnimateOnScroll delay={100}>
    <div className="bg-white rounded-2xl p-8 shadow-sm border border-[#e8e4dc]">
    <h3 className="font-serif text-subheadline text-[#333333]">
-   Coordinated, Not Siloed
+   Everyone on the Same Page
    </h3>
    <p className="font-sans text-body text-[#5b6a71] mt-3 leading-relaxed">
-   Your CPA sees the tax picture. Your attorney sees the legal picture. We
-   see the entire picture - and we make sure every advisor on your team is
-   working from the same strategy, not in isolation.
+   Your CPA sees the tax picture. Your attorney sees the legal picture.
+   We see all of it -- and we make sure every advisor on your team is
+   rowing in the same direction, not working in silos.
    </p>
    </div>
   </AnimateOnScroll>
@@ -290,12 +291,12 @@ export default function BusinessOwnerServicesPage() {
   <AnimateOnScroll delay={200}>
    <div className="bg-white rounded-2xl p-8 shadow-sm border border-[#e8e4dc]">
    <h3 className="font-serif text-subheadline text-[#333333]">
-   Technology That Scales With You
+   Technology That Keeps Up With You
    </h3>
    <p className="font-sans text-body text-[#5b6a71] mt-3 leading-relaxed">
-   Farther&apos;s institutional-grade platform gives you real-time
-   visibility across every account, entity, and trust - consolidated
-   reporting, scenario modeling, and tax-lot analysis in one place.
+   Farther&apos;s platform gives you real-time visibility across every
+   account, entity, and trust -- consolidated reporting, scenario
+   modeling, and tax-lot analysis all in one place.
    </p>
    </div>
   </AnimateOnScroll>
@@ -312,7 +313,7 @@ export default function BusinessOwnerServicesPage() {
   <div className="text-center">
    <SectionEyebrow text="FREQUENTLY ASKED QUESTIONS" />
    <h2 className="font-serif text-headline text-[#333333] mt-4">
-   Common Questions From Business Owners
+   Questions We Hear From Business Owners
    </h2>
   </div>
   </AnimateOnScroll>
@@ -348,7 +349,7 @@ export default function BusinessOwnerServicesPage() {
   <div className="text-center">
    <SectionEyebrow text="RELATED SERVICES" />
    <h2 className="font-serif text-headline text-[#333333] mt-4">
-   Services That Work Alongside Your Exit Plan
+   Services That Go Hand in Hand With Your Exit Plan
    </h2>
   </div>
   </AnimateOnScroll>
@@ -363,9 +364,9 @@ export default function BusinessOwnerServicesPage() {
    Tax Optimization
    </h3>
    <p className="font-sans text-body text-[#5b6a71] mt-3 leading-relaxed">
-   Proactive tax strategy including Roth conversions, capital gains
-   harvesting, and charitable giving - critical before and after a
-   business sale.
+   Smart tax moves including Roth conversions, capital gains
+   planning, and charitable giving -- especially important before
+   and after a business sale.
    </p>
    </Link>
   </AnimateOnScroll>
@@ -379,8 +380,8 @@ export default function BusinessOwnerServicesPage() {
    Investment Management
    </h3>
    <p className="font-sans text-body text-[#5b6a71] mt-3 leading-relaxed">
-   Diversified, tax-efficient portfolios built to manage concentrated
-   wealth and generate sustainable income after a liquidity event.
+   Diversified, tax-smart portfolios built to manage concentrated
+   wealth and create sustainable income after a liquidity event.
    </p>
    </Link>
   </AnimateOnScroll>
@@ -394,8 +395,9 @@ export default function BusinessOwnerServicesPage() {
    Trust & Estate Planning
    </h3>
    <p className="font-sans text-body text-[#5b6a71] mt-3 leading-relaxed">
-   Revocable and irrevocable trust design, dynasty trust strategy, and
-   generational wealth transfer - essential for preserving exit proceeds.
+   Trust design, dynasty trust strategy, and generational wealth
+   transfer -- essential for making sure your exit proceeds are
+   protected for the long run.
    </p>
    </Link>
   </AnimateOnScroll>
@@ -410,16 +412,16 @@ export default function BusinessOwnerServicesPage() {
   <div className="max-w-container mx-auto text-center">
   <AnimateOnScroll>
   <h2 className="font-serif text-headline text-white max-w-2xl mx-auto">
-   Ready to Plan Your Next Chapter?
+   Ready to Plan What Comes Next?
   </h2>
   <p className="font-sans text-body-lg text-[#a3b0b6] mt-4 max-w-xl mx-auto leading-relaxed">
-   Whether you are five years out or five months out, the right time to start
-   planning is now. Let&apos;s talk about what your exit - and everything after
-   it - could look like.
+   Whether you&apos;re five years out or five months out, the right time
+   to start planning is now. Let&apos;s sit down and talk about what your
+   exit -- and everything after it -- could look like.
   </p>
   <div className="mt-10">
    <Button variant="primary" href="/schedule-consultation">
-   Schedule a Consultation
+   Schedule a Conversation
    </Button>
   </div>
   </AnimateOnScroll>
@@ -433,15 +435,15 @@ export default function BusinessOwnerServicesPage() {
   <div className="max-w-container mx-auto text-center">
   <AnimateOnScroll>
   <p className="font-sans text-body text-[#5b6a71] leading-relaxed">
-   We serve business owners and their families across{' '}
+   We work with business owners and their families across{' '}
    <Link
    href="/scottsdale"
    className="text-[#1d7682] underline underline-offset-2 hover:text-[#155f69] transition-colors"
    >
    Arizona, California, and Nevada
    </Link>
-   . If you are a business owner considering a sale, succession, or simply want
-   a second opinion on your current plan, we would welcome the conversation.
+   . If you&apos;re thinking about a sale, a succession plan, or just want a
+   second opinion on what you have in place, we&apos;d love to talk.
   </p>
   </AnimateOnScroll>
   </div>

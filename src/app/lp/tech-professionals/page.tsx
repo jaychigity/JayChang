@@ -35,21 +35,21 @@ export default function TechProfessionalsLP() {
   </AnimateOnScroll>
   <AnimateOnScroll delay={100}>
    <h1 className="font-serif text-[34px] md:text-[48px] font-bold text-[#F7F4EE] mt-6 leading-tight">
-   Your Total Comp Isn't Just a Number. It's a Wealth-Building Engine.
+   Your Comp Package Is Powerful. Let&apos;s Make Sure You&apos;re Actually Using It.
    </h1>
   </AnimateOnScroll>
   <AnimateOnScroll delay={200}>
    <p className="font-sans text-[17px] text-[#F7F4EE]/90 max-w-[620px] mx-auto mt-6 leading-relaxed">
-   Apple's Mesa operations center and NVIDIA's Phoenix engineering presence bring Silicon Valley-level compensation to the Arizona desert - $200K-$500K+ packages heavy with RSUs, ESPPs, and performance bonuses. The challenge: most advisors don't know how to optimize it.
+   If you&apos;re at Apple&apos;s Mesa campus or NVIDIA&apos;s Phoenix office, you already know your total comp is serious money - $200K-$500K+ with RSUs, ESPPs, and bonuses stacked on top. The problem? Most financial advisors don&apos;t really get how any of that works. We do. And we&apos;d love to help you turn it into real, lasting wealth.
    </p>
   </AnimateOnScroll>
   <AnimateOnScroll delay={300}>
    <div className="mt-8">
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
-   Schedule a Confidential Consultation
+   Let&apos;s Talk About Your Comp
    </Button>
    </div>
    <p className="font-sans text-[15px] text-[#F7F4EE]/70 mt-4">
@@ -85,7 +85,7 @@ export default function TechProfessionalsLP() {
    Fiduciary
   </p>
   <p className="font-sans text-[13px] text-[#5b6a71]">
-   Your interests come first
+   We&apos;re legally on your side
   </p>
   </div>
   <span className="hidden sm:inline text-[#E8E6E1]">|</span>
@@ -107,10 +107,10 @@ export default function TechProfessionalsLP() {
   <div className="max-w-[900px] mx-auto">
   <AnimateOnScroll>
   <h2 className="font-serif text-[28px] md:text-[36px] font-bold text-[#333333] text-center">
-   Equity Optimization for Tech Professionals
+   How We Help Tech Professionals Like You
   </h2>
   <p className="font-sans text-[16px] text-[#5b6a71] text-center max-w-[600px] mx-auto mt-4 leading-relaxed">
-   Turn your comp package into a clear wealth-building strategy with tax-efficient equity management and diversification.
+   We sit down with you and turn that complicated comp package into a clear, simple plan that actually builds wealth - without leaving money on the table.
   </p>
   </AnimateOnScroll>
 
@@ -121,7 +121,7 @@ export default function TechProfessionalsLP() {
    ESPP Optimization
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   Understand qualified vs. disqualifying dispositions. Maximize the payoff from Apple's or NVIDIA's ESPP programs with tax-efficient sale strategies.
+   Qualified vs. disqualifying dispositions sound confusing - until someone walks you through it. We help you figure out when to sell your ESPP shares so you keep more and pay less in taxes.
    </p>
    </div>
   </AnimateOnScroll>
@@ -132,7 +132,7 @@ export default function TechProfessionalsLP() {
    Multi-Year Equity Projection
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   Map your 3-5 year vesting schedule alongside your life goals and major purchases. Build a plan that coordinates equity with your bigger financial picture.
+   We map out your next 3-5 years of vesting alongside your real life - the house you want to buy, the kids&apos; school, the trips you want to take. Your equity becomes part of the plan, not an afterthought.
    </p>
    </div>
   </AnimateOnScroll>
@@ -143,7 +143,7 @@ export default function TechProfessionalsLP() {
    AMT & Tax Bracket Management
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   Coordinate RSU vesting, stock option exercises, bonuses, and ESPP activity to manage AMT exposure and control your tax bracket.
+   Between RSU vesting, stock option exercises, bonuses, and ESPP activity, your tax situation gets complicated fast. We coordinate all of it so you&apos;re not blindsided by AMT or a surprise tax bill.
    </p>
    </div>
   </AnimateOnScroll>
@@ -154,7 +154,7 @@ export default function TechProfessionalsLP() {
    Post-Vest Diversification
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-   Tax-efficient portfolio rebalancing after RSU vesting. Build a diversified investment strategy that aligns with your risk tolerance and goals.
+   Once your RSUs vest, having too much in one stock is a real risk. We help you diversify in a tax-smart way that fits your comfort level and your goals - no knee-jerk selling, just a thoughtful approach.
    </p>
    </div>
   </AnimateOnScroll>
@@ -170,7 +170,7 @@ export default function TechProfessionalsLP() {
   <AnimateOnScroll>
   <div className="border-l-4 border-[#1d7682] pl-6 text-left">
    <p className="font-serif text-[20px] md:text-[24px] text-[#333333] leading-relaxed italic">
-   &ldquo;I had no idea what to do with my ESPP or my vesting RSUs. Every quarter I was just getting stock deposited into my account, and I had no plan. Jay showed me exactly when to sell my ESPP shares based on tax efficiency, mapped out my next three years of vesting, and helped me coordinate it all with my overall investment plan. Now I understand my comp and I'm actually using it to build wealth.&rdquo;
+   &ldquo;Honestly, I was just watching stock pile up in my account every quarter with zero plan. Jay sat down with me, showed me exactly when to sell my ESPP shares for the best tax outcome, mapped out my next three years of vesting, and tied it all into a real investment strategy. For the first time, I feel like I&apos;m actually using my comp to build something.&rdquo;
    </p>
    <p className="font-sans text-[15px] text-[#5b6a71] mt-4">
    - Tech professional, NVIDIA, client since 2023
@@ -196,7 +196,7 @@ export default function TechProfessionalsLP() {
    VP, Wealth Advisor
   </p>
   <p className="font-sans text-[16px] text-[#5b6a71] leading-relaxed mt-6">
-   Jay specializes in tech professionals who want to convert their equity compensation into deliberate wealth-building strategies. He understands RSU taxation, ESPP optimization, and how to build an investment plan that starts with your comp package and grows from there.
+   Jay and our team work with tech professionals who know their comp is valuable but want a real partner to help them make the most of it. He genuinely enjoys digging into RSU tax timing, ESPP strategies, and building investment plans that start with your comp package. Think of him as the financially nerdy neighbor you always wished you had.
   </p>
   </AnimateOnScroll>
   </div>
@@ -209,19 +209,19 @@ export default function TechProfessionalsLP() {
   <div className="max-w-[700px] mx-auto text-center">
   <AnimateOnScroll>
   <h2 className="font-serif text-[28px] md:text-[40px] font-semibold text-[#F7F4EE] leading-tight">
-   Ready to Talk?
+   Let&apos;s Have a Conversation
   </h2>
   <p className="font-sans text-[17px] text-[#F7F4EE]/85 max-w-[540px] mx-auto mt-5 leading-relaxed">
-   Schedule a confidential conversation with Jay to discuss your equity package and build a tax-efficient strategy. No sales pitch, no obligation - just a focused discussion about maximizing your comp.
+   Grab a time on Jay&apos;s calendar and we&apos;ll walk through your equity package together. No pitch, no pressure - just an honest look at where you stand and what we might do differently.
   </p>
   </AnimateOnScroll>
   <AnimateOnScroll delay={100}>
   <div className="mt-8">
    <Button
-   href="https://meetings.hubspot.com/jay-chang1/farthercom"
+   href="/schedule-consultation"
    variant="primary"
    >
-   Schedule a Confidential Consultation
+   Grab a Time to Chat
    </Button>
   </div>
   <p className="font-sans text-[15px] text-[#F7F4EE]/70 mt-4">

@@ -227,11 +227,11 @@ export default function PhysicianFinancialRoadmap() {
                 Let&apos;s discuss your specific situation and create a strategy tailored to your goals and timeline.
               </p>
               <Button
-                href="https://meetings.hubspot.com/jay-chang1/farthercom"
+                href="/schedule-consultation"
                 variant="ghost"
                 className="w-full sm:w-auto"
               >
-                Schedule a Consultation
+                Schedule a Conversation
               </Button>
             </section>
           </AnimateOnScroll>
