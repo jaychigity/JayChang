@@ -80,13 +80,13 @@ export default function JayChangPage() {
 
   {/* Right Column - Image */}
   <AnimateOnScroll delay={0.2}>
-   <div className="md:mt-[120px] max-h-[600px] overflow-hidden rounded-lg">
+   <div className="bg-white rounded-lg">
    <Image
-   src="/Photos/Jay Chang BW.jpg"
+   src="/Photos/Jay-arms-crossed-transparent.png"
    alt="Jay Chang"
-   width={1024}
-   height={1024}
-   className="object-cover object-top mx-auto"
+   width={1558}
+   height={2540}
+   className="mx-auto"
    style={{ width: '100%', maxWidth: 520, height: 'auto' }}
    />
    </div>
