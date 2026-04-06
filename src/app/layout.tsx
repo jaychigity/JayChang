@@ -5,7 +5,7 @@ import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import RegulatoryFooter from '@/components/RegulatoryFooter'
-import { GoogleAnalytics, GoogleTagManager } from '@/components/GoogleAnalytics'
+import { GoogleAnalytics, GoogleTagManager, MicrosoftClarity } from '@/components/GoogleAnalytics'
 import UTMCapture from '@/components/UTMCapture'
 import CookieConsent from '@/components/CookieConsent'
 
@@ -172,6 +172,7 @@ export default function RootLayout({
  <body className="font-sans bg-ivory text-slate-text">
   <GoogleTagManager />
   <GoogleAnalytics />
+  <MicrosoftClarity />
   <UTMCapture />
   <a href="#main-content" className="skip-to-content">
   Skip to main content
