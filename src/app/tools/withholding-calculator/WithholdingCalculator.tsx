@@ -2,42 +2,22 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import {
+ TAX_YEAR,
+ LIMIT_401K_EMPLOYEE_DEFERRAL,
+ LIMIT_401K_CATCHUP_50,
+ LIMIT_401K_SUPER_CATCHUP_60_63,
+ LIMIT_415C_ANNUAL_ADDITIONS,
+ getMarginalRate as getMarginalRateFromBrackets,
+} from '@/lib/tax-constants-2026'
 
-// 2025 IRS Limits
+// Build local LIMITS object from centralized constants
 const LIMITS = {
- year: 2025,
- employeeDeferral: 23500,
- catchUp50: 7500,
- catchUp6063: 11250, // SECURE 2.0 enhanced catch-up for ages 60-63
- totalAnnualAdditions: 70000, // 415(c) limit
-}
-
-// 2025 Federal Tax Brackets
-const TAX_BRACKETS_SINGLE = [
- { min: 0, max: 11925, rate: 0.10 },
- { min: 11925, max: 48475, rate: 0.12 },
- { min: 48475, max: 103350, rate: 0.22 },
- { min: 103350, max: 197300, rate: 0.24 },
- { min: 197300, max: 250525, rate: 0.32 },
- { min: 250525, max: 626350, rate: 0.35 },
- { min: 626350, max: Infinity, rate: 0.37 },
-]
-
-const TAX_BRACKETS_MFJ = [
- { min: 0, max: 23850, rate: 0.10 },
- { min: 23850, max: 96950, rate: 0.12 },
- { min: 96950, max: 206700, rate: 0.22 },
- { min: 206700, max: 394600, rate: 0.24 },
- { min: 394600, max: 501050, rate: 0.32 },
- { min: 501050, max: 751600, rate: 0.35 },
- { min: 751600, max: Infinity, rate: 0.37 },
-]
-
-function getMarginalRate(income: number, brackets: typeof TAX_BRACKETS_SINGLE) {
- for (let i = brackets.length - 1; i >= 0; i--) {
-  if (income > brackets[i].min) return brackets[i].rate
- }
- return brackets[0].rate
+ year: TAX_YEAR,
+ employeeDeferral: LIMIT_401K_EMPLOYEE_DEFERRAL,
+ catchUp50: LIMIT_401K_CATCHUP_50,
+ catchUp6063: LIMIT_401K_SUPER_CATCHUP_60_63,
+ totalAnnualAdditions: LIMIT_415C_ANNUAL_ADDITIONS,
 }
 
 function formatCurrency(value: number) {
@@ -87,8 +67,7 @@ export default function WithholdingCalculator() {
  const spilloverPercent = (spilloverRoom / salary) * 100
 
  // Tax impact
- const brackets = filingStatus === 'single' ? TAX_BRACKETS_SINGLE : TAX_BRACKETS_MFJ
- const marginalRate = getMarginalRate(salary, brackets)
+ const marginalRate = getMarginalRateFromBrackets(salary, filingStatus)
  const taxSavings = maxDeferral * marginalRate
 
  // Total contributions
@@ -403,7 +382,7 @@ export default function WithholdingCalculator() {
 
     <div className="mt-4 bg-[#F7F4EE] rounded-lg p-5">
      <p className="text-[13px] text-[#5b6a71]">
-      <span className="font-semibold text-[#333333]">SECURE 2.0 Note:</span> Starting in 2025, participants ages 60-63 can make an enhanced catch-up contribution of {formatCurrency(LIMITS.catchUp6063)}, which is higher than the standard {formatCurrency(LIMITS.catchUp50)} catch-up. For those earning over $145,000, catch-up contributions must be made on a Roth (after-tax) basis.
+      <span className="font-semibold text-[#333333]">SECURE 2.0 Note:</span> Starting in 2026, participants ages 60-63 can make an enhanced catch-up contribution of {formatCurrency(LIMITS.catchUp6063)}, which is higher than the standard {formatCurrency(LIMITS.catchUp50)} catch-up. For those earning over $145,000, catch-up contributions must be made on a Roth (after-tax) basis.
      </p>
     </div>
    </div>

@@ -1,6 +1,18 @@
 'use client'
 
 import { useState, useRef, useCallback } from 'react'
+import {
+  SS_WAGE_BASE,
+  SEGMENT_RATE_1,
+  SEGMENT_RATE_2,
+  SEGMENT_RATE_3,
+  LIMIT_401K_EMPLOYEE_DEFERRAL,
+  LIMIT_401K_CATCHUP_50,
+  LIMIT_401K_SUPER_CATCHUP_60_63,
+  INTEREST_CREDIT_MINIMUM,
+  BCB2_INTEREST_RATE,
+  CURRENT_30YR_TREASURY,
+} from '@/lib/tax-constants-2026'
 
 /* ================================================================
    AT&T Pension & Retirement Calculator Suite
@@ -13,9 +25,7 @@ import { useState, useRef, useCallback } from 'react'
    6. Retirement Income Gap Analysis
    ================================================================ */
 
-// ── Constants ─────────────────────────────────────────────────────
-
-const SS_WAGE_BASE_2025 = 176_100
+// ── AT&T Plan-Specific Constants ─────────────────────────────────
 
 const CASH_BALANCE_PAY_CREDITS: { minAge: number; maxAge: number; basic: number; supplemental: number }[] = [
   { minAge: 0, maxAge: 29, basic: 0.03, supplemental: 0.06 },
@@ -55,16 +65,15 @@ const PENSION_BANDS: { band: number; amount: number }[] = [
   { band: 125, amount: 102.00 },
 ]
 
-// IRS Segment Rates (November 2024 for 2025 calculations)
+// IRS Segment Rates — imported from @/lib/tax-constants-2026
 const SEGMENT_RATES = {
-  seg1: 0.0451, // 1–5 years
-  seg2: 0.0549, // 6–20 years
-  seg3: 0.0607, // 21+ years
+  seg1: SEGMENT_RATE_1, // 1–5 years
+  seg2: SEGMENT_RATE_2, // 6–20 years
+  seg3: SEGMENT_RATE_3, // 21+ years
 }
 
-const INTEREST_CREDIT_MINIMUM = 0.04
-const BCB2_INTEREST_RATE = 0.045
-const CURRENT_30YR_TREASURY = 0.0454
+// INTEREST_CREDIT_MINIMUM, BCB2_INTEREST_RATE, CURRENT_30YR_TREASURY
+// imported from @/lib/tax-constants-2026
 
 const TABS = [
   { id: 'cashBalance', label: 'Cash Balance', shortLabel: 'Cash Bal' },
@@ -240,8 +249,8 @@ function CashBalanceCalc({ onCalculate }: { onCalculate: () => void }) {
       const age = inputs.currentAge + y
       const credits = getPayCredits(age)
 
-      const belowSSWB = Math.min(salary, SS_WAGE_BASE_2025)
-      const aboveSSWB = Math.max(0, salary - SS_WAGE_BASE_2025)
+      const belowSSWB = Math.min(salary, SS_WAGE_BASE)
+      const aboveSSWB = Math.max(0, salary - SS_WAGE_BASE)
       const payCredit = belowSSWB * credits.basic + aboveSSWB * credits.supplemental
       const interestCredit = balance * interestRate
 
@@ -409,7 +418,7 @@ function CashBalanceCalc({ onCalculate }: { onCalculate: () => void }) {
                       <td className="py-[6px] pr-[12px]">{bracket.maxAge === 99 ? `${bracket.minAge}+` : `${bracket.minAge}–${bracket.maxAge}`}</td>
                       <td className="py-[6px] pr-[12px]">{(bracket.basic * 100).toFixed(1)}%</td>
                       <td className="py-[6px] pr-[12px]">{(bracket.supplemental * 100).toFixed(1)}%</td>
-                      <td className="py-[6px] text-[#5b6a71]">{bracket === CASH_BALANCE_PAY_CREDITS[0] ? `Up to ${fmt(SS_WAGE_BASE_2025)} / above` : `Up to SSWB / above`}</td>
+                      <td className="py-[6px] text-[#5b6a71]">{bracket === CASH_BALANCE_PAY_CREDITS[0] ? `Up to ${fmt(SS_WAGE_BASE)} / above` : `Up to SSWB / above`}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -730,7 +739,7 @@ function LumpVsAnnuityCalc({ onCalculate }: { onCalculate: () => void }) {
 
           {/* Segment Rates */}
           <div className={resultCardClass}>
-            <h3 className="font-sans text-[14px] font-semibold text-[#333333] mb-[12px] uppercase tracking-[0.05em]">Current IRS Segment Rates (Nov 2024)</h3>
+            <h3 className="font-sans text-[14px] font-semibold text-[#333333] mb-[12px] uppercase tracking-[0.05em]">Current IRS Segment Rates (Feb 2026)</h3>
             <div className="grid grid-cols-3 gap-[12px]">
               <div className="text-center"><p className="text-[18px] font-bold text-[#1d7682]">{(SEGMENT_RATES.seg1 * 100).toFixed(2)}%</p><p className="text-[11px] text-[#5b6a71]">Segment 1 (1-5 yr)</p></div>
               <div className="text-center"><p className="text-[18px] font-bold text-[#1d7682]">{(SEGMENT_RATES.seg2 * 100).toFixed(2)}%</p><p className="text-[11px] text-[#5b6a71]">Segment 2 (6-20 yr)</p></div>
@@ -944,9 +953,9 @@ function FourO1kCalc({ onCalculate }: { onCalculate: () => void }) {
     const years = inputs.retireAge - inputs.currentAge
     if (years <= 0) return
 
-    const annualLimit2025 = 23500
-    const catchUpLimit = 7500
-    const superCatchUpLimit = 11250
+    const annualLimit2026 = LIMIT_401K_EMPLOYEE_DEFERRAL
+    const catchUpLimit = LIMIT_401K_CATCHUP_50
+    const superCatchUpLimit = LIMIT_401K_SUPER_CATCHUP_60_63
     const matchRate = 0.80
     const matchablePct = inputs.employeeType === 'management' ? 0.06 : 0.06
 
@@ -961,7 +970,7 @@ function FourO1kCalc({ onCalculate }: { onCalculate: () => void }) {
 
       // Calculate contribution
       let contribution = salary * (inputs.contributionPct / 100)
-      let limit = annualLimit2025
+      let limit = annualLimit2026
       if (age >= 60 && age <= 63) {
         limit += superCatchUpLimit
       } else if (age >= 50) {
@@ -1078,7 +1087,7 @@ function FourO1kCalc({ onCalculate }: { onCalculate: () => void }) {
           <div className={`${resultCardClass} bg-[#1d7682]/5`}>
             <p className="font-sans text-[14px] text-[#333333]">
               <strong>AT&amp;T Match:</strong> 80% of your basic contribution (first 6% of salary). Match is invested in AT&amp;T shares regardless of your investment selections.
-              {inputs.currentAge >= 50 && <><br /><strong>Catch-Up Eligible:</strong> Age 50+ allows an additional $7,500/year. Ages 60-63 qualify for the super catch-up of $11,250/year.</>}
+              {inputs.currentAge >= 50 && <><br /><strong>Catch-Up Eligible:</strong> Age 50+ allows an additional $8,000/year. Ages 60-63 qualify for the super catch-up of $11,250/year.</>}
             </p>
           </div>
 
