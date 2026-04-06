@@ -188,12 +188,6 @@ export default function LasVegasNevadaPage() {
    <Button href="/schedule-consultation" variant="primary">
    Begin a Confidential Conversation
    </Button>
-   <a
-   href="tel:+14809440880"
-   className="font-sans text-btn text-[#b6d0ed] hover:text-[#1d7682] transition-colors flex items-center gap-[8px]"
-   >
-   (480) 944-0880
-   </a>
   </div>
   </AnimateOnScroll>
 
@@ -840,18 +834,6 @@ export default function LasVegasNevadaPage() {
 
    <div className="space-y-[16px]">
    <div>
-    <p className="font-sans text-[13px] font-semibold uppercase tracking-[0.1em] text-[#1d7682] mb-[4px]">Phone</p>
-    <a href="tel:+14809440880" className="font-sans text-[17px] text-[#333333] hover:text-[#1d7682] transition-colors">
-    (480) 944-0880
-    </a>
-   </div>
-   <div>
-    <p className="font-sans text-[13px] font-semibold uppercase tracking-[0.1em] text-[#1d7682] mb-[4px]">Email</p>
-    <a href="mailto:jay.chang@farther.com" className="font-sans text-[17px] text-[#333333] hover:text-[#1d7682] transition-colors">
-    jay.chang@farther.com
-    </a>
-   </div>
-   <div>
     <p className="font-sans text-[13px] font-semibold uppercase tracking-[0.1em] text-[#1d7682] mb-[4px]">Service Areas</p>
     <p className="font-sans text-[15px] text-[#5b6a71] leading-[1.7]">
     Las Vegas &middot; Henderson &middot; Summerlin &middot; The Ridges &middot; MacDonald Highlands &middot; Southern Highlands &middot; Lake Las Vegas &middot; Boulder City
@@ -902,22 +884,6 @@ export default function LasVegasNevadaPage() {
   </div>
   </AnimateOnScroll>
 
-  <AnimateOnScroll delay={300}>
-  <div className="mt-lg flex flex-col sm:flex-row items-center justify-center gap-lg font-sans text-body-sm text-[#b6d0ed]">
-   <a
-   href="tel:+14809440880"
-   className="hover:text-[#1d7682] transition-colors"
-   >
-   (480) 944-0880
-   </a>
-   <a
-   href="mailto:jay.chang@farther.com"
-   className="hover:text-[#1d7682] transition-colors"
-   >
-   jay.chang@farther.com
-   </a>
-  </div>
-  </AnimateOnScroll>
   </div>
  </section>
  </>

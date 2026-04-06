@@ -176,11 +176,6 @@ export default function HoneywellAdvisorPage() {
    >
    Schedule Your Honeywell Strategy Call - Free for Honeywell Employees and Retirees
    </Button>
-   <div className="mt-12 pt-12 border-t border-gray-200">
-   <p className="font-sans text-sm text-[#5b6a71]">
-   <strong>Phone:</strong> (480) 944-0880
-   </p>
-   </div>
   </div>
   </AnimateOnScroll>
   </div>

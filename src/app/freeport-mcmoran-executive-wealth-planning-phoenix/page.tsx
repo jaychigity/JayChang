@@ -14,7 +14,6 @@ export const metadata: Metadata = {
 
 export default function FCXExecutiveWealthPage() {
  const hubspotCTA = '/schedule-consultation';
- const phone = '(480) 944-0880';
 
  return (
  <main className="w-full">
@@ -45,10 +44,6 @@ export default function FCXExecutiveWealthPage() {
    href={hubspotCTA}
    variant="primary"
    >Schedule a Freeport Executive Strategy Call</Button>
-   <Button
-   href={`tel:${phone}`}
-   variant="outline"
-   >{`Call ${phone}`}</Button>
    </div>
   </div>
   </AnimateOnScroll>
@@ -156,10 +151,6 @@ export default function FCXExecutiveWealthPage() {
    href={hubspotCTA}
    variant="primary"
    >Schedule Your FCX Strategy Call</Button>
-   <Button
-   href={`tel:${phone}`}
-   variant="outline"
-   >{`Call ${phone}`}</Button>
    </div>
   </div>
   </AnimateOnScroll>
@@ -262,10 +253,6 @@ export default function FCXExecutiveWealthPage() {
    href={hubspotCTA}
    variant="primary"
    >Schedule Your FCX Executive Strategy Call</Button>
-   <Button
-   href={`tel:${phone}`}
-   variant="outline"
-   >{`Call ${phone}`}</Button>
    </div>
   </div>
   </AnimateOnScroll>
@@ -286,9 +273,6 @@ export default function FCXExecutiveWealthPage() {
    <div className="pt-6 flex flex-col sm:flex-row gap-6 justify-center text-slate-600 text-sm">
    <a href={hubspotCTA} className="text-teal-600 hover:text-teal-700 font-semibold">
    Schedule a Call
-   </a>
-   <a href={`tel:${phone}`} className="text-teal-600 hover:text-teal-700 font-semibold">
-   {phone}
    </a>
    </div>
   </div>

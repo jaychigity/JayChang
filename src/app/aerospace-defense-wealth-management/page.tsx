@@ -606,9 +606,6 @@ export default function AerospaceDefenseWealthManagement() {
   <Button href="/schedule-consultation" variant="primary">
    Schedule Your Aerospace &amp; Defense Strategy Call
   </Button>
-  <p className="text-sm text-gray-400 mt-8">
-   Phoenix &amp; Tucson, Arizona | (480) 944-0880
-  </p>
   </AnimateOnScroll>
   </div>
  </section>

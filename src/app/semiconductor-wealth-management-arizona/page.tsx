@@ -533,9 +533,6 @@ export default function SemiconductorWealthManagementArizona() {
   <Button href="/schedule-consultation" variant="primary">
    Schedule Your Free Semiconductor Strategy Call
   </Button>
-  <p className="text-gray-400 text-sm mt-8">
-   Call (480) 944-0880 to speak with Jay directly about your equity, your options, and your wealth plan.
-  </p>
   </div>
   </AnimateOnScroll>
  </section>

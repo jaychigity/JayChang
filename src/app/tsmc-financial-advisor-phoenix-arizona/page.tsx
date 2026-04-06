@@ -81,9 +81,6 @@ export default function TSMCFinancialAdvisor() {
    <Button href="/schedule-consultation" variant="primary">
    Schedule a TSMC Financial Planning Call
    </Button>
-   <a href="tel:(480) 944-0880" className="px-6 py-3 border-2 border-[#1d7682] text-[#1d7682] font-sans font-semibold rounded hover:bg-[#1d7682] hover:text-white transition">
-   (480) 944-0880
-   </a>
   </div>
   </AnimateOnScroll>
   </div>

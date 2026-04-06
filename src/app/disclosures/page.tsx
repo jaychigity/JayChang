@@ -360,14 +360,7 @@ export default function DisclosuresPage() {
    </h3>
    <p>
    You may request access to, correction of, or deletion of your
-   personal information by contacting us at{' '}
-   <a
-   href="mailto:jay.chang@farther.com"
-   className="text-[#333333] underline hover:text-[#1d7682]"
-   >
-   jay.chang@farther.com
-   </a>
-   . For residents of California, Nevada, or other states with
+   personal information by contacting us. For residents of California, Nevada, or other states with
    specific privacy legislation, additional rights may apply.
    </p>
   </div>
@@ -423,24 +416,6 @@ export default function DisclosuresPage() {
    <p className="font-semibold">Jay Chang</p>
    <p>VP, Wealth Advisor at Farther</p>
    <p>Farther Finance Advisors, LLC</p>
-   <p className="mt-3">
-   Email:{' '}
-   <a
-    href="mailto:jay.chang@farther.com"
-    className="text-[#333333] underline hover:text-[#1d7682]"
-   >
-    jay.chang@farther.com
-   </a>
-   </p>
-   <p>
-   Phone:{' '}
-   <a
-    href="tel:+14809440880"
-    className="text-[#333333] underline hover:text-[#1d7682]"
-   >
-    (480) 944-0880
-   </a>
-   </p>
    <p className="mt-3">Scottsdale Office: Scottsdale, AZ</p>
    </div>
    <p className="text-sm text-[#5b6a71]">

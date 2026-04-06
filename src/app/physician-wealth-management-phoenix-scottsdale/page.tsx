@@ -437,9 +437,6 @@ export default function PhysicianWealthManagementPhoenixScottsdale() {
    Jay Chang is a CFP® professional and fiduciary advisor specializing in physician wealth management. Your
    financial strategy comes first.
    </p>
-   <p className="mt-4 font-sans text-sm text-[#5b6a71]">
-   Questions? Call <a href="tel:4809440880" className="font-semibold text-[#1d7682] hover:underline">(480) 944-0880</a>
-   </p>
   </div>
   </AnimateOnScroll>
   </div>

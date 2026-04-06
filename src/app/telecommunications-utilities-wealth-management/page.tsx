@@ -403,9 +403,6 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
   <Button href="/schedule-consultation" variant="primary">
    Schedule Your Telecom &amp; Utilities Strategy Call
   </Button>
-  <p className="text-sm text-gray-400 mt-8">
-   Phoenix &amp; Scottsdale, Arizona | (480) 944-0880
-  </p>
   </AnimateOnScroll>
   </div>
  </section>

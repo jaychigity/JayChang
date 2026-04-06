@@ -78,9 +78,6 @@ export default function IntelFinancialAdvisor() {
   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
   <Button href="/schedule-consultation" variant="primary">Let&apos;s Talk About Your Intel Benefits</Button>
   </div>
-  <div className="text-[#5b6a71] font-sans">
-  or call <span className="font-semibold text-[#333333]">(480) 944-0880</span>
-  </div>
   </div>
  </section>
 

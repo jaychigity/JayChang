@@ -141,7 +141,7 @@ export default function ProcessPage() {
  {/* Trust Footer Bar */}
  <footer className="bg-[#FAFAF8] px-6 py-8 text-center text-[#5b6a71]">
   <p className="text-sm">
-  Jay Chang | Farther Wealth Management | (480) 944-0880
+  Jay Chang | Farther Wealth Management
   </p>
   <p className="text-sm mt-2">
   Questions? Let's talk:{' '}

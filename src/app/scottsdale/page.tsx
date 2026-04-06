@@ -280,15 +280,6 @@ export default function ScottsdalePage() {
          Let&apos;s Have a Conversation
         </Button>
        </div>
-       <p className="font-sans text-sm text-[#F7F4EE]/70 mt-5">
-        Or call directly:{' '}
-        <a
-         href="tel:+14809440880"
-         className="underline hover:text-[#1d7682] transition-colors"
-        >
-         (480) 944-0880
-        </a>
-       </p>
       </AnimateOnScroll>
      </div>
     </div>
@@ -653,18 +644,6 @@ export default function ScottsdalePage() {
 
         <div className="space-y-4">
          <div>
-          <p className="font-sans text-[13px] font-semibold uppercase tracking-[0.1em] text-[#1d7682] mb-1">Phone</p>
-          <a href="tel:+14809440880" className="font-sans text-[17px] text-[#333333] hover:text-[#1d7682] transition-colors">
-           (480) 944-0880
-          </a>
-         </div>
-         <div>
-          <p className="font-sans text-[13px] font-semibold uppercase tracking-[0.1em] text-[#1d7682] mb-1">Email</p>
-          <a href="mailto:jay.chang@farther.com" className="font-sans text-[17px] text-[#333333] hover:text-[#1d7682] transition-colors">
-           jay.chang@farther.com
-          </a>
-         </div>
-         <div>
           <p className="font-sans text-[13px] font-semibold uppercase tracking-[0.1em] text-[#1d7682] mb-1">Hours</p>
           <p className="font-sans text-[17px] text-[#333333]">Monday - Friday: 8:00 AM - 5:00 PM</p>
           <p className="font-sans text-[15px] text-[#5b6a71]">Evenings &amp; weekends by appointment</p>
@@ -711,22 +690,6 @@ export default function ScottsdalePage() {
       </div>
      </AnimateOnScroll>
 
-     <AnimateOnScroll delay={300}>
-      <div className="flex flex-col sm:flex-row justify-center gap-[24px] sm:gap-[40px] mt-8">
-       <a
-        href="tel:+14809440880"
-        className="font-sans text-body-sm text-[#F7F4EE]/70 hover:text-[#1d7682] transition-colors"
-       >
-        (480) 944-0880
-       </a>
-       <a
-        href="mailto:jay.chang@farther.com"
-        className="font-sans text-body-sm text-[#F7F4EE]/70 hover:text-[#1d7682] transition-colors"
-       >
-        jay.chang@farther.com
-       </a>
-      </div>
-     </AnimateOnScroll>
 
      <AnimateOnScroll delay={400}>
       <div className="mt-8">

@@ -505,21 +505,6 @@ export default function FinancialPlanningPage() {
    Schedule a Conversation
    </Button>
   </div>
-  <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
-   <a
-   href="tel:+14809440880"
-   className="font-sans text-[15px] text-[#F7F4EE]/70 hover:text-[#1d7682] transition-colors duration-200"
-   >
-   (480) 944-0880
-   </a>
-   <span className="hidden sm:inline text-[#F7F4EE]/30">|</span>
-   <a
-   href="mailto:jay.chang@farther.com"
-   className="font-sans text-[15px] text-[#F7F4EE]/70 hover:text-[#1d7682] transition-colors duration-200"
-   >
-   jay.chang@farther.com
-   </a>
-  </div>
   </AnimateOnScroll>
   <p className="font-sans text-caption text-[#F7F4EE]/50 italic mt-10">
   Financial projections are based on assumptions that may not reflect

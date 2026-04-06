@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import { Phone, Mail, MapPin, Calendar, Clock, CheckCircle } from 'lucide-react'
+import { MapPin, Calendar, Clock, CheckCircle } from 'lucide-react'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 import SectionEyebrow from '@/components/SectionEyebrow'
@@ -95,40 +95,6 @@ export default function ContactPage() {
    {'VP, Wealth Advisor\nFarther Finance Advisors, LLC'}
    </p>
 
-   {/* Block 1 - Call Directly */}
-   <div className="border-b border-[#E8E6E1] py-6">
-   <div className="flex items-center gap-2 mb-2">
-    <Phone className="w-4 h-4 text-[#1d7682]" />
-    <span className="font-sans text-[11px] font-bold uppercase text-[#1d7682] tracking-[1.5px]">
-    Call Directly
-    </span>
-   </div>
-   <a
-    href="tel:+14809440880"
-    className="font-sans text-base text-[#333333] font-medium hover:text-[#1d7682] transition-colors"
-   >
-    (480) 944-0880
-   </a>
-   <p className="font-sans text-caption text-[#5b6a71] mt-1">
-    Monday-Friday, 8am-5pm CT/PT
-   </p>
-   </div>
-
-   {/* Block 2 - Email */}
-   <div className="border-b border-[#E8E6E1] py-6">
-   <div className="flex items-center gap-2 mb-2">
-    <Mail className="w-4 h-4 text-[#1d7682]" />
-    <span className="font-sans text-[11px] font-bold uppercase text-[#1d7682] tracking-[1.5px]">
-    Email
-    </span>
-   </div>
-   <a
-    href="mailto:jay.chang@farther.com"
-    className="font-sans text-base text-[#333333] font-medium hover:text-[#1d7682] transition-colors break-all"
-   >
-    jay.chang@farther.com
-   </a>
-   </div>
 
    {/* Block 3 - Schedule a Specific Time */}
    <div className="border-b border-[#E8E6E1] py-6">

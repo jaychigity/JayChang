@@ -610,12 +610,6 @@ export default function PhysicianExecutiveWealthPage() {
    Schedule Your Physician or Executive Wealth Strategy Call
    </Button>
   </AnimateOnScroll>
-
-  <AnimateOnScroll delay={300}>
-   <p className="text-gray-300 mt-12 text-lg">
-   Call <a href="tel:+14809440880" className="font-semibold text-white hover:text-gray-100 underline">(480) 944-0880</a> to speak with Jay directly.
-   </p>
-  </AnimateOnScroll>
   </div>
   </div>
  </section>

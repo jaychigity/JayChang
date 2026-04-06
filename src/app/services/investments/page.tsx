@@ -475,23 +475,6 @@ export default function InvestmentsPage() {
    </Button>
   </div>
   </AnimateOnScroll>
-  <AnimateOnScroll delay={300}>
-  <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6">
-   <a
-   href="tel:+14809440880"
-   className="font-sans text-[15px] text-[#c2c0ba] hover:text-[#F7F4EE] transition-colors"
-   >
-   (480) 944-0880
-   </a>
-   <span className="hidden sm:inline text-[#5b6a71]">|</span>
-   <a
-   href="mailto:jay.chang@farther.com"
-   className="font-sans text-[15px] text-[#c2c0ba] hover:text-[#F7F4EE] transition-colors"
-   >
-   jay.chang@farther.com
-   </a>
-  </div>
-  </AnimateOnScroll>
   <AnimateOnScroll delay={400}>
   <p className="font-sans text-[12px] text-[#5b6a71] mt-10 max-w-[500px] mx-auto">
    All investment strategies carry risk, including the potential loss of

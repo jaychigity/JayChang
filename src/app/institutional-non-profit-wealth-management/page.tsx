@@ -390,9 +390,6 @@ export default function InstitutionalNonProfitWealthManagement() {
    <Button href="/schedule-consultation" variant="primary">
     Schedule an Institutional Consultation
    </Button>
-   <p className="text-sm text-gray-400 mt-8">
-    Phoenix &amp; Scottsdale, Arizona | Nationwide | (480) 944-0880
-   </p>
    </AnimateOnScroll>
   </div>
   </section>

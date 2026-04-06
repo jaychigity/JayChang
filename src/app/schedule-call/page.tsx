@@ -134,9 +134,6 @@ export default function ScheduleCall() {
    >
    Schedule a Conversation
    </Button>
-   <p className="text-lg text-[#5b6a71] mt-6">
-   or just call <a href="tel:+14809440880" className="font-semibold text-[#1d7682] hover:underline">(480) 944-0880</a>
-   </p>
   </div>
   </AnimateOnScroll>
   </div>

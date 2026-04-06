@@ -119,10 +119,6 @@ export default function Home() {
    >
    Begin a Confidential Conversation →
    </Button>
-   <div className="text-[#F7F4EE]/70 text-sm">
-   <p>Or call directly: <a href="tel:+14809440880" className="text-[#1d7682] font-semibold hover:underline">(480) 944-0880</a></p>
-   <p>Email: <a href="mailto:jay.chang@farther.com" className="text-[#1d7682] font-semibold hover:underline">jay.chang@farther.com</a></p>
-   </div>
    </div>
   </AnimateOnScroll>
 

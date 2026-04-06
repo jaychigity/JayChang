@@ -549,24 +549,6 @@ export default function TaxOptimizationPage() {
    </Button>
   </div>
   </AnimateOnScroll>
-  <AnimateOnScroll delay={300}>
-  <p className="font-sans text-sm text-[#F7F4EE]/60 mt-5">
-   Prefer to call?{' '}
-   <a
-   href="tel:+14809440880"
-   className="hover:text-[#F7F4EE] transition-colors"
-   >
-   (480) 944-0880
-   </a>{' '}
-   &middot; Or email{' '}
-   <a
-   href="mailto:jay.chang@farther.com"
-   className="hover:text-[#F7F4EE] transition-colors"
-   >
-   jay.chang@farther.com
-   </a>
-  </p>
-  </AnimateOnScroll>
   </div>
  </section>
 

@@ -52,15 +52,6 @@ export default function HealthcarePhysiciansLP() {
    Let&apos;s Talk About Your Situation
    </Button>
    </div>
-   <p className="font-sans text-[15px] text-[#F7F4EE]/70 mt-4">
-   or call{' '}
-   <a
-   href="tel:+14809440880"
-   className="text-[#F7F4EE]/70 hover:text-[#1d7682] font-semibold transition-colors"
-   >
-   (480) 944-0880
-   </a>
-   </p>
   </AnimateOnScroll>
   </div>
   </div>
@@ -235,15 +226,6 @@ export default function HealthcarePhysiciansLP() {
    Grab a Time to Chat
    </Button>
   </div>
-  <p className="font-sans text-[15px] text-[#F7F4EE]/70 mt-4">
-   or call{' '}
-   <a
-   href="tel:+14809440880"
-   className="text-[#F7F4EE]/70 hover:text-[#1d7682] font-semibold transition-colors"
-   >
-   (480) 944-0880
-   </a>
-  </p>
   </AnimateOnScroll>
   </div>
  </section>

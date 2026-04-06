@@ -120,9 +120,6 @@ export default function AmkorTechnologyPage() {
    Schedule Your Amkor Strategy Call
    </Button>
    </div>
-   <p className="text-sm text-[#5b6a71] pt-4">
-   Phone: (480) 944-0880
-   </p>
   </div>
   </AnimateOnScroll>
   </div>

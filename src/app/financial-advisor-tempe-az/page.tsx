@@ -186,9 +186,6 @@ export default function TempeFinancialAdvisor() {
    ))}
   </div>
   <div className="mt-8 pt-8 border-t border-gray-300 text-center">
-   <p className="font-sans text-sm text-[#5b6a71] mb-2">
-   Questions? Call us at <a href="tel:+14809440880" className="font-semibold text-[#1d7682] hover:underline">(480) 944-0880</a>
-   </p>
    <p className="font-sans text-xs text-[#5b6a71]">
    Jay Chang is a Certified Financial Planner™ and registered investment advisor fiduciary. This content is educational and not investment advice.
    </p>

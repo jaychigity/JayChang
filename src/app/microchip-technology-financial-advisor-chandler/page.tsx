@@ -123,12 +123,6 @@ export default function MicrochipTechnologyAdvisor() {
   >
    Schedule Your Strategy Call
   </Button>
-  <Button
-   href="tel:(480)944-0880"
-   variant="outline"
-  >
-   Call: (480) 944-0880
-  </Button>
   </div>
   </div>
  </section>
@@ -151,9 +145,6 @@ export default function MicrochipTechnologyAdvisor() {
    Schedule Your Microchip Strategy Call - Free for current and former Microchip Technology employees.
    </Button>
   </div>
-  <p className="text-sm text-gray-500 mt-8">
-   Or call Jay directly: <a href="tel:(480)944-0880" className="text-blue-600 hover:underline">(480) 944-0880</a>
-  </p>
   </div>
   </section>
  </AnimateOnScroll>

@@ -14,8 +14,6 @@ import {
  Globe,
  Zap,
  CheckCircle,
- Phone,
- Mail,
 } from 'lucide-react'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
 import SectionEyebrow from '@/components/SectionEyebrow'
@@ -692,24 +690,6 @@ export default function InvestmentPhilosophyPage() {
        >
         Read Our 2026 Investment Outlook
        </Button>
-      </div>
-     </AnimateOnScroll>
-     <AnimateOnScroll delay={400}>
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-8 font-sans text-sm text-[#5b6a71]">
-       <a
-        href="tel:+14809440880"
-        className="hover:text-[#1d7682] transition-colors flex items-center gap-2"
-       >
-        <Phone className="w-4 h-4" />
-        (480) 944-0880
-       </a>
-       <a
-        href="mailto:jay.chang@farther.com"
-        className="hover:text-[#1d7682] transition-colors flex items-center gap-2"
-       >
-        <Mail className="w-4 h-4" />
-        jay.chang@farther.com
-       </a>
       </div>
      </AnimateOnScroll>
     </div>
