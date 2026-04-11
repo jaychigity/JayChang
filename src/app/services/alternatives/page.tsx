@@ -8,12 +8,12 @@ import Button from '@/components/Button'
 import { ChevronDown } from 'lucide-react'
 
 export const metadata: Metadata = {
- title: 'Alternative Investments | Farther - Arizona, California & Nevada',
+ title: 'Private Equity & Alternative Investments for High-Net-Worth Families | Advisor Jay',
  description:
  'Get access to private equity, venture capital, private credit, and hedge fund strategies that used to be reserved for the ultra-wealthy. Advisor Jay Chang at Farther.',
  alternates: { canonical: 'https://www.PWM-Farther.com/services/alternatives' },
  openGraph: {
- title: 'Alternative Investments | Advisor Jay',
+ title: 'Private Equity & Alternative Investments for High-Net-Worth Families | Advisor Jay',
  description:
  'Private equity, venture capital, private credit, and real asset access for families with $5M+ -- without the sky-high minimums. Arizona, California & Nevada.',
  url: 'https://www.PWM-Farther.com/services/alternatives',

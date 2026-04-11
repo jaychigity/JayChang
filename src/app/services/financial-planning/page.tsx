@@ -156,7 +156,7 @@ export default function FinancialPlanningPage() {
    <div>
    <SectionEyebrow text="WHAT WE COVER" />
    <h2 className="font-serif text-h2-mobile md:text-h2 font-bold text-[#333333] mt-4 border-l-4 border-[#1d7682] pl-7">
-   Every Dimension of Your Financial Life.
+   What Does a Financial Plan Actually Cover?
    </h2>
    <p className="font-sans text-body text-[#5b6a71] leading-relaxed mt-6">
    Most advisory firms hand you a 100-page document and call it a

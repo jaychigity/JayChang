@@ -36,6 +36,20 @@ export default function IncomeAnnuityPage() {
   <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[600px] mx-auto leading-relaxed">
   See how much guaranteed monthly income your savings could generate through an immediate income annuity.
   </p>
+  <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[600px] mx-auto leading-relaxed">
+  I built this estimator for clients exploring guaranteed income as part of their retirement plan.
+  </p>
+  <p
+  className="font-sans"
+  style={{
+   fontSize: 13,
+   color: 'rgba(247, 244, 238, 0.5)',
+   marginTop: 12,
+   letterSpacing: '0.05em',
+  }}
+  >
+  Free · No sign-up · Instant results
+  </p>
   <div className="mt-6 flex justify-center">
   <Link href="/tools" className="font-sans text-[13px] text-[#F7F4EE]/50 hover:text-[#1d7682] transition-colors">
    &larr; All Tools &amp; Calculators

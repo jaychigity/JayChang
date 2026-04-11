@@ -8,12 +8,12 @@ import Button from '@/components/Button'
 import { ChevronDown } from 'lucide-react'
 
 export const metadata: Metadata = {
- title: 'Trust & Estate Planning | Farther - Arizona, California & Nevada',
+ title: 'Estate Planning & Dynasty Trusts for Arizona & Nevada Families | Advisor Jay',
  description:
  'Dedicated trust and estate planning specialists for families with $2M-$20M. Revocable and irrevocable trusts, Nevada dynasty trusts, and wealth transfer strategies.',
  alternates: { canonical: 'https://www.PWM-Farther.com/services/trust-estate' },
  openGraph: {
- title: 'Trust & Estate Planning | Advisor Jay',
+ title: 'Estate Planning & Dynasty Trusts for Arizona & Nevada Families | Advisor Jay',
  description:
  'Dedicated trust and estate planning specialists providing revocable and irrevocable trust design, Nevada dynasty trust strategy, and coordinated wealth transfer planning.',
  url: 'https://www.PWM-Farther.com/services/trust-estate',

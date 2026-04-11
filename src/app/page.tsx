@@ -107,7 +107,7 @@ export default function Home() {
    As a fiduciary, I take a simple, transparent approach to advice. My role is to help you make thoughtful decisions with your best interests at the center, always grounded in what matters most to you.
    </p>
    <p className="text-base text-[#F7F4EE]/70 leading-relaxed mb-6">
-   Over the past 14 years, I&apos;ve had the opportunity to work with a wide range of individuals and organizations, including families, Fortune 500 professionals, business owners, and nonprofit leaders.
+   Led by Jay Chang, a fiduciary wealth advisor with over 14 years of experience, I&apos;ve had the opportunity to work with a wide range of individuals and organizations — tech professionals navigating equity compensation, aerospace employees planning for retirement, physicians balancing practice demands with personal wealth, and business owners preparing for their next chapter.
    </p>
    <p className="text-base text-[#F7F4EE]/60 leading-relaxed mb-10">
    You&apos;ll be supported by Farther&apos;s Intelligent Wealth Platform, which brings together modern technology and institutional resources, including over $15 billion in assets under management across a national network of advisors. My role is to pair those resources with a highly personal, thoughtful approach, so you have both the support and clarity you need to move forward with confidence.

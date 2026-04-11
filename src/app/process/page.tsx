@@ -48,6 +48,49 @@ const steps = [
 export default function ProcessPage() {
  return (
  <main>
+ <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Work With Jay Chang — 5-Step Wealth Planning Process",
+      "description": "From a simple intro call to an ongoing partnership. No jargon, no pressure — here is how Jay Chang and the team at Farther walk you through every step.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Discovery Call",
+          "text": "A 30-45 minute conversation with Jay about where you are right now — your compensation, your accounts, and what keeps you up at night. No slide decks, no obligations."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Onboarding & Data Gathering",
+          "text": "The Farther Concierge Team collects the basics: pay stubs, equity plan statements, tax returns, 401(k) and deferred comp details, investment statements, and benefits summary. Everything uploads through a secure portal."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Plan Design",
+          "text": "A scenario-based financial plan covering multi-year tax projections, equity vesting calendar with after-tax modeling, retirement income scenarios, a portfolio designed for your life, and prioritized action items."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Implementation",
+          "text": "The Farther Concierge Team handles account transfers, investment purchases, beneficiary updates, and coordinating with your employer benefits. Most clients are fully set up in days, not weeks."
+        },
+        {
+          "@type": "HowToStep",
+          "position": 5,
+          "name": "Ongoing Optimization",
+          "text": "Quarterly check-ins on equity vesting, tax positioning, and portfolio performance. Proactive outreach before open enrollment, RSU vests, and year-end deadlines. Annual plan review plus on-demand access whenever life changes."
+        }
+      ]
+    })
+  }}
+ />
  {/* Hero Section */}
  <section className="relative bg-[#333333] px-6 py-20 md:py-32">
   <Image
@@ -66,10 +109,10 @@ export default function ProcessPage() {
    THE PROCESS
    </p>
    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F7F4EE] mb-6 leading-tight">
-   Here's How We Work Together
+   5 Steps From First Call to Ongoing Partnership
    </h1>
    <p className="text-xl text-[#F7F4EE]/90 mb-8 max-w-2xl mx-auto">
-   Simple on your end. Really thorough on ours.
+   Simple on your end. Thorough on ours. Most clients are fully up and running in under 30 days.
    </p>
    <Button href="/schedule-consultation" variant="primary">
    Schedule Your Discovery Call

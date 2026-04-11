@@ -36,6 +36,20 @@ export default function RothConversionPage() {
   <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[600px] mx-auto leading-relaxed">
   Does converting to a Roth IRA make sense for you? Compare the long-term after-tax impact of converting versus keeping your Traditional IRA.
   </p>
+  <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[600px] mx-auto leading-relaxed">
+  Roth conversions are one of the most impactful tax strategies I recommend — this calculator helps you see why.
+  </p>
+  <p
+  className="font-sans"
+  style={{
+   fontSize: 13,
+   color: 'rgba(247, 244, 238, 0.5)',
+   marginTop: 12,
+   letterSpacing: '0.05em',
+  }}
+  >
+  Free · No sign-up · Instant results
+  </p>
   <div className="mt-6 flex justify-center">
   <Link href="/tools" className="font-sans text-[13px] text-[#F7F4EE]/50 hover:text-[#1d7682] transition-colors">
    &larr; All Tools &amp; Calculators
@@ -47,6 +61,20 @@ export default function RothConversionPage() {
  {/* Calculator */}
  <section className="bg-[#F7F4EE]">
   <RothConversionCalculator />
+ </section>
+
+ {/* Related Tools */}
+ <section style={{ backgroundColor: '#FAFAF8', padding: '48px 40px' }}>
+  <div style={{ maxWidth: 760, margin: '0 auto', textAlign: 'center' }}>
+   <h3 className="font-serif" style={{ fontSize: 24, fontWeight: 400, color: '#333333', marginBottom: 16 }}>
+    Related Tools
+   </h3>
+   <div className="font-sans" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '12px 24px', fontSize: 15 }}>
+    <a href="/tools/401k-withholding-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>401(k) Withholding Calculator</a>
+    <a href="/tools/retirement-savings-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Retirement Readiness Calculator</a>
+    <a href="/tools/ca-nv-tax-savings-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>CA to NV Tax Savings Calculator</a>
+   </div>
+  </div>
  </section>
  </>
  )

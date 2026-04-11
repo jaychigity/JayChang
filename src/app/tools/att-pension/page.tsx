@@ -35,6 +35,20 @@ export default function ATTPensionPage() {
      <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[640px] mx-auto leading-relaxed">
       Six calculators built for AT&amp;T employees — union and management. Estimate your pension, compare lump sum vs annuity, model early retirement, and project your 401(k).
      </p>
+     <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[640px] mx-auto leading-relaxed">
+      I&apos;ve worked with hundreds of AT&amp;T employees — CWA, IBEW, and management — navigating these exact decisions.
+     </p>
+     <p
+      className="font-sans"
+      style={{
+       fontSize: 13,
+       color: 'rgba(247, 244, 238, 0.5)',
+       marginTop: 12,
+       letterSpacing: '0.05em',
+      }}
+     >
+      Free · No sign-up · Instant results
+     </p>
      <div className="mt-6 flex justify-center">
       <Link href="/tools" className="font-sans text-[13px] text-[#F7F4EE]/50 hover:text-[#1d7682] transition-colors">
        &larr; All Tools &amp; Calculators

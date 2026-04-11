@@ -36,6 +36,43 @@ export default function ContactPage() {
  return (
  <>
  <BreadcrumbSchema items={[{ name: 'Contact', href: '/contact' }]} />
+ <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Advisor Jay — Farther Wealth Management",
+      "image": "https://www.PWM-Farther.com/Photos/Jay-New-Headshot.png",
+      "telephone": "(480) 944-0880",
+      "email": "jay.chang@farther.com",
+      "url": "https://www.PWM-Farther.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Scottsdale",
+        "addressRegion": "AZ",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.4942,
+        "longitude": -111.9261
+      },
+      "areaServed": [
+        { "@type": "State", "name": "Arizona" },
+        { "@type": "State", "name": "California" },
+        { "@type": "State", "name": "Nevada" }
+      ],
+      "priceRange": "$$$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    })
+  }}
+ />
  {/* ── SECTION 1: HERO ── */}
  <section className="bg-[#F7F4EE] pt-[100px] pb-[40px] text-center">
   <div className="max-w-container mx-auto px-[80px] max-md:px-[20px]">
@@ -47,6 +84,12 @@ export default function ContactPage() {
   <h1 className="font-serif text-[48px] max-md:text-[32px] font-bold text-[#333333] mt-5">
    I'd Love to Hear From You.
   </h1>
+  </AnimateOnScroll>
+
+  <AnimateOnScroll delay={150}>
+  <p className="font-sans text-[16px] md:text-[17px] text-[#5b6a71] max-w-[560px] mx-auto mt-3">
+   Schedule your free 30-minute consultation or send a message — I respond within one business day.
+  </p>
   </AnimateOnScroll>
 
   <AnimateOnScroll delay={200}>

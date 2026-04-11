@@ -35,6 +35,20 @@ export default function RetirementReadinessPage() {
   <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[600px] mx-auto leading-relaxed">
   Answer 10 quick questions to get a personalized score across savings rate, asset benchmarks, and funding projections.
   </p>
+  <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[600px] mx-auto leading-relaxed">
+  I built this assessment around the same benchmarks I use with my own clients — so you get a real answer, not a generic one.
+  </p>
+  <p
+  className="font-sans"
+  style={{
+   fontSize: 13,
+   color: 'rgba(247, 244, 238, 0.5)',
+   marginTop: 12,
+   letterSpacing: '0.05em',
+  }}
+  >
+  Free · No sign-up · Instant results
+  </p>
   <div className="mt-6 flex justify-center">
   <Link href="/tools" className="font-sans text-[13px] text-[#F7F4EE]/50 hover:text-[#1d7682] transition-colors">
    &larr; All Tools &amp; Calculators
@@ -46,6 +60,20 @@ export default function RetirementReadinessPage() {
  {/* Calculator */}
  <section className="bg-[#F7F4EE]">
   <RetirementAssessment />
+ </section>
+
+ {/* Related Tools */}
+ <section style={{ backgroundColor: '#FAFAF8', padding: '48px 40px' }}>
+  <div style={{ maxWidth: 760, margin: '0 auto', textAlign: 'center' }}>
+   <h3 className="font-serif" style={{ fontSize: 24, fontWeight: 400, color: '#333333', marginBottom: 16 }}>
+    Related Tools
+   </h3>
+   <div className="font-sans" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '12px 24px', fontSize: 15 }}>
+    <a href="/tools/roth-conversion-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Roth Conversion Calculator</a>
+    <a href="/tools/401k-withholding-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>401(k) Withholding Calculator</a>
+    <a href="/tools/income-annuity-estimator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Income Annuity Estimator</a>
+   </div>
+  </div>
  </section>
  </>
  )

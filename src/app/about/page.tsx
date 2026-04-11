@@ -132,8 +132,11 @@ export default function AboutPage() {
   <h2 className="text-3xl md:text-4xl font-bold text-[#333333] text-center mb-8">
    Meet The Team
   </h2>
-  <p className="text-lg text-[#333333] leading-relaxed max-w-4xl mb-12">
+  <p className="text-lg text-[#333333] leading-relaxed max-w-4xl mb-6">
    When you work with Jay, you don&apos;t just get Jay. You get our whole team. That&apos;s one of the most important things I can offer - real specialists in trust law, tax strategy, investment management, and planning who are all pulling in the same direction for you.
+  </p>
+  <p className="text-lg text-[#5b6a71] leading-relaxed max-w-4xl mb-12">
+   Every client situation is different — that is why I built a team with deep specializations. Here is who handles what.
   </p>
   </AnimateOnScroll>
 
@@ -176,7 +179,7 @@ export default function AboutPage() {
   <div className="max-w-4xl mx-auto px-6">
   <AnimateOnScroll>
   <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-8">
-   Here&apos;s What This Looks Like in Practice
+   Who Should You Talk to About Your Situation?
   </h3>
   <div className="space-y-8 text-[#333333]">
    <p className="text-lg leading-relaxed">

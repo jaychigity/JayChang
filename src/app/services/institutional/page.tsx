@@ -8,12 +8,12 @@ import Button from '@/components/Button'
 import { ChevronDown } from 'lucide-react'
 
 export const metadata: Metadata = {
- title: 'Institutional Services & OCIO | Farther',
+ title: 'Outsourced CIO & OCIO Services for Nonprofits & Foundations | Advisor Jay',
  description:
  'Outsourced CIO services for nonprofits, endowments, and foundations. Fiduciary investment oversight, policy development, and governance support in Arizona, California, and Nevada.',
  alternates: { canonical: 'https://www.PWM-Farther.com/services/institutional' },
  openGraph: {
- title: 'Institutional Services & OCIO | Farther',
+ title: 'Outsourced CIO & OCIO Services for Nonprofits & Foundations | Advisor Jay',
  description:
  'Outsourced CIO services for nonprofits, endowments, and foundations. Fiduciary investment oversight, policy development, and governance support.',
  url: 'https://www.PWM-Farther.com/services/institutional',

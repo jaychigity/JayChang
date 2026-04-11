@@ -9,12 +9,12 @@ import { ChevronDown } from 'lucide-react'
 
 export const metadata: Metadata = {
  title:
- 'Investment Management | PWM at Farther - Arizona, California & Nevada',
+ 'Custom Portfolio Management & Tax-Efficient Investing | Advisor Jay',
  description:
  'Custom investment management for HNW families in Arizona, California, and Nevada. Tax-efficient portfolios, alternative investments, and institutional-grade research.',
  alternates: { canonical: 'https://www.PWM-Farther.com/services/investments' },
  openGraph: {
- title: 'Investment Management | Advisor Jay',
+ title: 'Custom Portfolio Management & Tax-Efficient Investing | Advisor Jay',
  description:
  'Custom investment management for high-net-worth families and business owners in Scottsdale, AZ and across Arizona, California, and Nevada. Tax-efficient strategies, alternatives access, and consolidated reporting.',
  url: 'https://www.PWM-Farther.com/services/investments',

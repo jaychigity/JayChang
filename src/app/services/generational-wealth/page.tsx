@@ -2,17 +2,18 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 import SectionEyebrow from '@/components/SectionEyebrow'
 import Button from '@/components/Button'
 import { ChevronDown } from 'lucide-react'
 
 export const metadata: Metadata = {
- title: 'Generational Wealth Planning | Farther -- Arizona, California & Nevada',
+ title: 'Multi-Generational Wealth Planning: Dynasty Trusts & Succession Strategies | Advisor Jay',
  description:
  'Multi-generational wealth planning for families with $2M-$20M. Family governance, dynasty trusts, succession planning, and values-based philanthropy.',
  alternates: { canonical: 'https://www.PWM-Farther.com/services/generational-wealth' },
  openGraph: {
- title: 'Generational Wealth Planning | Advisor Jay',
+ title: 'Multi-Generational Wealth Planning: Dynasty Trusts & Succession Strategies | Advisor Jay',
  description:
  'Build wealth that endures across generations with multi-generational governance frameworks, dynasty trusts, succession planning, and values-based philanthropy strategies.',
  url: 'https://www.PWM-Farther.com/services/generational-wealth',
@@ -105,6 +106,12 @@ function GoldBullet({ children }: { children: React.ReactNode }) {
 export default function GenerationalWealthPlanningPage() {
  return (
  <>
+ <BreadcrumbSchema
+  items={[
+    { name: 'Services', href: '/services' },
+    { name: 'Generational Wealth Planning', href: '/services/generational-wealth' },
+  ]}
+ />
  {/* JSON-LD Structured Data */}
  <script
   type="application/ld+json"

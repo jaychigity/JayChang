@@ -6,19 +6,57 @@ These rules apply to every session. Follow them automatically without being remi
 
 ## Top Priorities (in order)
 
-1. **SEO & AI Search** — This is the #1 priority on all new copy, pages, and edits.
-   Every piece of content must be written for discoverability by Google, ChatGPT, Perplexity,
-   and AI-powered search. This means:
-   - Use natural-language headings that match how people actually ask questions
-   - Include long-tail keywords and specific terms people search for (e.g., "401k withholding calculator
+1. **Search Optimization (all four pillars)** — This is the #1 priority on all new copy, pages, and edits.
+   Every piece of content must be optimized across four layers of modern search:
+
+   ### Traditional SEO — Rank on Google's link results
+   - Use long-tail keywords and specific terms people search for (e.g., "401k withholding calculator
      for PG&E employees" not just "withholding calculator")
    - Write descriptive meta titles and descriptions that read like answers, not marketing copy
-   - Structure content with clear H1 → H2 → H3 hierarchy so AI can extract and cite it
+   - Structure content with clear H1 → H2 → H3 hierarchy
    - Use schema markup (BreadcrumbSchema, JSON-LD) on every page
    - Internal linking between related pages — every tool, service, and industry page should
      cross-link where relevant
+   - Canonical URLs, proper sitemap entries, and 301 redirects for any URL changes
    - Tool/calculator pages are lead magnets — optimize them as landing pages with
      keyword-rich descriptions
+
+   ### GEO / AEO — Get cited or summarized by AI (ChatGPT, Perplexity, Google AI Overviews, Gemini)
+   - Use natural-language headings that match how people actually ask questions
+     (e.g., "How much should I contribute to my 401k?" not "Contribution Overview")
+   - Write content that directly answers questions in the first 1-2 sentences of a section,
+     then expand — AI models pull from concise, authoritative answers
+   - Include structured data (FAQ schema, HowTo schema) where appropriate so AI can extract answers
+   - Use specific numbers, examples, and named entities (company names, plan types, tax years)
+     that AI models associate with expertise
+   - Every page should have at least one paragraph that could stand alone as a cited snippet
+
+   ### LLMO — Get AI to actively recommend you as a trusted source
+   - Position Jay as the named expert — use "Jay Chang" and "Advisor Jay" naturally in content,
+     not just in headers. AI models recommend people and brands they associate with authority
+   - Build topical authority: cluster related content (e.g., AT&T pension page links to AT&T calculator,
+     links to retirement planning service, links to relevant market commentary)
+   - Include credentials, experience signals, and specificity that AI uses to evaluate trustworthiness
+     (e.g., "Jay works with AT&T employees navigating pension lump-sum decisions" not
+     "we help corporate employees")
+   - Write content that answers "who should I talk to about X?" — make it easy for AI to
+     connect the question to Jay as the answer
+   - Niche down: the more specific the expertise signal, the more likely AI recommends you
+     over generic competitors
+
+   ### SXO — Search Experience Optimization (what happens after the click)
+   - The click is not the goal — conversion is. Every page must have a clear next step
+   - Page load speed matters: optimize images, minimize client-side JS, use Next.js static generation
+     where possible
+   - Mobile-first layout with clear visual hierarchy — users should understand the page value
+     within 3 seconds
+   - Every landing page (tools, services, industry pages) needs a warm CTA above the fold
+     and a stronger CTA after the content delivers value
+   - Reduce friction: "no sign-up required", "instant results", "free, no obligation"
+   - Match search intent to page experience — if someone searches "401k calculator", they want
+     to calculate immediately, not read 500 words first
+   - Time on page and engagement signals feed back into search rankings — make content
+     genuinely useful so people stay and interact
 
 2. **Mobile-first, then desktop** — Design and test for mobile viewports first.
    All layouts, tap targets, font sizes, and spacing must work on 375px width before

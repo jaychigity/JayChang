@@ -8,14 +8,14 @@ import Button from '@/components/Button'
 import { ChevronDown } from 'lucide-react'
 
 export const metadata: Metadata = {
- title: 'Tax Optimization & Estate Strategy | Farther',
+ title: 'Tax Optimization & Estate Strategy for Arizona, California & Nevada Families | Advisor Jay',
  description:
  'Proactive tax planning and estate strategy for high-net-worth families in Arizona, California, and Nevada. Roth conversions, charitable giving, trust design, and state tax optimization.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/services/tax-optimization',
  },
  openGraph: {
- title: 'Tax Optimization & Estate Strategy | Farther',
+ title: 'Tax Optimization & Estate Strategy for Arizona, California & Nevada Families | Advisor Jay',
  description:
  'Proactive tax planning and estate strategy for high-net-worth families in Arizona, California, and Nevada.',
  url: 'https://www.PWM-Farther.com/services/tax-optimization',
