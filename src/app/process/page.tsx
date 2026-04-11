@@ -92,7 +92,7 @@ export default function ProcessPage() {
   }}
  />
  {/* Hero Section */}
- <section className="relative bg-[#333333] px-6 py-20 md:py-32">
+ <section className="relative bg-[#333333] px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
   <Image
   src="/Photos/Jay-Office.png"
   alt="Jay Chang office"
@@ -129,7 +129,7 @@ export default function ProcessPage() {
   key={step.number}
   className={index % 2 === 0 ? 'bg-white' : 'bg-[#FAFAF8]'}
   >
-  <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
    <AnimateOnScroll>
    <div className="flex flex-col md:flex-row gap-8 md:gap-12">
    {/* Step Number */}
@@ -143,7 +143,7 @@ export default function ProcessPage() {
 
    {/* Content */}
    <div className="flex-grow">
-    <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-4">
+    <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-6">
     {step.headline}
     </h2>
     <p className="text-lg text-[#5b6a71] leading-relaxed mb-6">
@@ -163,10 +163,10 @@ export default function ProcessPage() {
  </section>
 
  {/* Final CTA Section */}
- <section className="bg-[#333333] px-6 py-20 md:py-32">
+ <section className="bg-[#333333] px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
   <div className="max-w-4xl mx-auto text-center">
   <AnimateOnScroll>
-  <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+  <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
    The Hardest Part? Picking Up the Phone. We Handle Everything After That.
   </h2>
   <div className="mb-6">
@@ -182,7 +182,7 @@ export default function ProcessPage() {
  </section>
 
  {/* Trust Footer Bar */}
- <footer className="bg-[#FAFAF8] px-6 py-8 text-center text-[#5b6a71]">
+ <footer className="bg-[#FAFAF8] px-4 sm:px-6 lg:px-8 py-8 text-center text-[#5b6a71]">
   <p className="text-sm">
   Jay Chang | Farther Wealth Management
   </p>

@@ -201,6 +201,47 @@ in a calculator component.
 - Border radius: 8-12px for cards, 9999px for buttons
 - Button style: `bg-gradient-to-b from-[#2a9dab] to-[#1d7682]` with rounded-full
 
+### Layout & spacing standards (enforced site-wide)
+
+These spacing values must be consistent across ALL pages. Never deviate without explicit approval.
+
+**Section padding:**
+- Standard section: `py-20 lg:py-32` (vertical padding)
+- Compact section (trust bars, dividers): `py-12`
+- Hero sections: `pt-[120px] pb-[48px] px-[20px] md:px-[40px] lg:px-[80px]`
+
+**Container widths:**
+- Full-width content (card grids, multi-column layouts): `max-w-7xl`
+- Text-heavy content (paragraphs, articles): `max-w-7xl` container with `max-w-3xl` on paragraph elements
+- Centered narrow content (process steps, single-column): `max-w-4xl`
+- Tool/calculator content area: `max-w-[960px]`
+- All containers: `container mx-auto px-4 sm:px-6 lg:px-8`
+
+**Section heading pattern (every section must follow this):**
+```
+<SectionEyebrow text="SECTION LABEL" />  or  light variant for dark bg
+<h2 className="font-serif text-4xl lg:text-5xl font-bold text-[#333333] mt-6 mb-6 leading-tight">
+<p className="text-lg text-[#5b6a71] leading-relaxed mb-6 max-w-3xl">  (subtitle/intro)
+```
+- Eyebrow → H2 gap: always `mt-6`
+- H2 → subtitle/content gap: always `mb-6`
+- Subtitle → cards/grid gap: `mb-16`
+- Body paragraph spacing: `mb-6` between paragraphs, last paragraph no margin
+
+**Card grid spacing:**
+- Grid gap: `gap-8` for card grids
+- Card padding: `p-8` for standard cards, `p-5 md:p-8` for calculator cards
+- Card style: `bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow`
+
+**Mobile-first rules:**
+- Base styles target 375px width — no `sm:` prefix needed for mobile defaults
+- Font sizes: body `text-base` (16px), section headers `text-4xl` (mobile) → `lg:text-5xl` (desktop)
+- Touch targets: minimum 44px height on all interactive elements
+- Horizontal padding: `px-4` base → `sm:px-6` → `lg:px-8`
+- Card grids: `grid-cols-1` base → `md:grid-cols-2` → `lg:grid-cols-3`
+- Never use fixed widths that break below 375px
+- Test every layout change at mobile size FIRST
+
 ---
 
 ## General Project Conventions

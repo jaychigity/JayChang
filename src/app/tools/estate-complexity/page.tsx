@@ -12,7 +12,7 @@ export const metadata: Metadata = {
  canonical: 'https://www.PWM-Farther.com/tools/estate-complexity',
  },
  openGraph: {
- title: 'Estate Complexity Assessment | Farther',
+ title: 'Estate Complexity Assessment | Advisor Jay',
  description:
  'How complex is your estate really? 9 questions, under 2 minutes. Uncover hidden risk factors and get a personalized estate readiness report.',
  url: 'https://www.PWM-Farther.com/tools/estate-complexity',
@@ -32,10 +32,10 @@ export default function EstateComplexityPage() {
   <h1 className="font-serif text-[32px] md:text-[48px] font-light text-[#F7F4EE] leading-tight">
   Estate Complexity Assessment
   </h1>
-  <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[600px] mx-auto leading-relaxed">
+  <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[640px] mx-auto leading-relaxed">
   Discover the hidden complexity of your estate across 9 risk factors in under 2 minutes.
   </p>
-  <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[600px] mx-auto leading-relaxed">
+  <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[640px] mx-auto leading-relaxed">
   I designed this assessment based on the estate complexity patterns I encounter across high-net-worth families.
   </p>
   <p
@@ -60,6 +60,32 @@ export default function EstateComplexityPage() {
  {/* Calculator */}
  <section className="bg-[#F7F4EE]">
   <EstateComplexityAssessment />
+ </section>
+
+ {/* Related Tools */}
+ <section style={{ backgroundColor: '#FAFAF8', padding: '48px 40px' }}>
+  <div style={{ maxWidth: 760, margin: '0 auto', textAlign: 'center' }}>
+   <h3
+    className="font-serif"
+    style={{ fontSize: 24, fontWeight: 400, color: '#333333', marginBottom: 16 }}
+   >
+    Related Tools
+   </h3>
+   <div
+    className="font-sans"
+    style={{
+     display: 'flex',
+     flexWrap: 'wrap',
+     justifyContent: 'center',
+     gap: '12px 24px',
+     fontSize: 15,
+    }}
+   >
+    <a href="/tools/inherited-ira-rmd-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Inherited IRA Calculator</a>
+    <a href="/tools/rmd-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>RMD Calculator</a>
+    <a href="/tools/retirement-savings-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Retirement Readiness Calculator</a>
+   </div>
+  </div>
  </section>
  </>
  )

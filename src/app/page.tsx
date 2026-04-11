@@ -95,7 +95,7 @@ export default function Home() {
  {/* SECTION 1: HERO */}
  <section className="relative bg-[#333333] flex items-center overflow-hidden">
   <div className="absolute inset-0 bg-gradient-to-br from-[#333333] via-[#333333]/95 to-[#333333]/80" />
-  <div className="relative z-10 w-full container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl py-16 lg:py-24">
+  <div className="relative z-10 w-full container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl pt-28 lg:pt-36 pb-16 lg:pb-24">
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
   {/* Left column: Text */}
   <AnimateOnScroll>
@@ -388,7 +388,7 @@ export default function Home() {
   <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
   <AnimateOnScroll>
   <SectionEyebrow text="HOW WE WORK TOGETHER" light />
-  <h2 className="font-serif text-4xl lg:text-5xl font-bold text-[#F7F4EE] mt-6 mb-4 leading-tight">
+  <h2 className="font-serif text-4xl lg:text-5xl font-bold text-[#F7F4EE] mt-6 mb-6 leading-tight">
    No Sales Pitch. Just a Simple Process That Puts You First.
   </h2>
   <p className="text-lg text-[#F7F4EE]/70 max-w-3xl mb-16 leading-relaxed">
@@ -575,19 +575,19 @@ export default function Home() {
 
  {/* SECTION 7: WHY FARTHER */}
  <section className="bg-[#FAFAF8] py-20 lg:py-32">
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
   <AnimateOnScroll>
   <SectionEyebrow text="WHY WE CHOSE FARTHER" />
-  <h2 className="font-serif text-4xl lg:text-5xl font-bold text-[#333333] mt-6 mb-8 leading-tight">
+  <h2 className="font-serif text-4xl lg:text-5xl font-bold text-[#333333] mt-6 mb-6 leading-tight">
    Great Technology and Great Advice Shouldn&apos;t Be an Either/Or.
   </h2>
-  <p className="text-lg text-[#5b6a71] leading-relaxed mb-12">
+  <p className="text-lg text-[#5b6a71] leading-relaxed max-w-3xl mb-16">
    We partnered with Farther because we believe you deserve both: a human who genuinely knows your situation, backed by a platform that never drops the ball. Farther&apos;s Intelligent Wealth Platform handles the heavy lifting — so we can spend our time doing what actually matters: thinking about your family, your goals, and your future.
   </p>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-0">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-0">
    {/* Feature 1 */}
-   <div className="bg-white p-6 rounded-lg flex gap-4">
+   <div className="bg-white p-8 rounded-lg flex gap-4">
    <div className="flex-shrink-0">
    <Lock className="w-6 h-6 text-[#1d7682]" />
    </div>
@@ -598,7 +598,7 @@ export default function Home() {
    </div>
 
    {/* Feature 2 */}
-   <div className="bg-white p-6 rounded-lg flex gap-4">
+   <div className="bg-white p-8 rounded-lg flex gap-4">
    <div className="flex-shrink-0">
    <BarChart3 className="w-6 h-6 text-[#1d7682]" />
    </div>
@@ -609,7 +609,7 @@ export default function Home() {
    </div>
 
    {/* Feature 3 */}
-   <div className="bg-white p-6 rounded-lg flex gap-4">
+   <div className="bg-white p-8 rounded-lg flex gap-4">
    <div className="flex-shrink-0">
    <Gauge className="w-6 h-6 text-[#1d7682]" />
    </div>
@@ -620,7 +620,7 @@ export default function Home() {
    </div>
 
    {/* Feature 4 */}
-   <div className="bg-white p-6 rounded-lg flex gap-4">
+   <div className="bg-white p-8 rounded-lg flex gap-4">
    <div className="flex-shrink-0">
    <TrendingUp className="w-6 h-6 text-[#1d7682]" />
    </div>
@@ -631,7 +631,7 @@ export default function Home() {
    </div>
 
    {/* Feature 5 */}
-   <div className="bg-white p-6 rounded-lg flex gap-4 md:col-span-2">
+   <div className="bg-white p-8 rounded-lg flex gap-4 md:col-span-2">
    <div className="flex-shrink-0">
    <Award className="w-6 h-6 text-[#1d7682]" />
    </div>
@@ -647,13 +647,13 @@ export default function Home() {
 
  {/* SECTION 8: WHAT CLIENTS SAY */}
  <section className="bg-[#F7F4EE] py-20 lg:py-32">
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
   <AnimateOnScroll>
   <SectionEyebrow text="WHAT OUR CLIENTS SAY" />
-  <h2 className="font-serif text-4xl lg:text-5xl font-bold text-[#333333] mt-6 mb-8 leading-tight">
+  <h2 className="font-serif text-4xl lg:text-5xl font-bold text-[#333333] mt-6 mb-6 leading-tight">
    The Best Compliment We Get? &ldquo;I Finally Feel Like Someone&apos;s in My Corner.&rdquo;
   </h2>
-  <p className="text-lg text-[#5b6a71] leading-relaxed">
+  <p className="text-lg text-[#5b6a71] leading-relaxed max-w-3xl">
    We work with families, professionals, and business owners who were looking for something different — an advisor who actually listens, explains things clearly, and treats their money like it matters. Because it does.
   </p>
   </AnimateOnScroll>

@@ -31,10 +31,10 @@ export default function WithholdingCalculatorPage() {
   <h1 className="font-serif text-[32px] md:text-[48px] font-light text-[#F7F4EE] leading-tight">
   401(k) Withholding Calculator
   </h1>
-  <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[600px] mx-auto leading-relaxed">
+  <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[640px] mx-auto leading-relaxed">
   Find the exact percentage to withhold from your paycheck to max out your 401(k), including catch-up and after-tax spillover contributions.
   </p>
-  <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[600px] mx-auto leading-relaxed">
+  <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[640px] mx-auto leading-relaxed">
   Built from patterns I see every day working with Fortune 500 employees at companies like AT&amp;T, PG&amp;E, Raytheon, and Honeywell.
   </p>
   <p
@@ -55,7 +55,7 @@ export default function WithholdingCalculatorPage() {
   </div>
   </div>
  </section>
-
+ <div className="h-[1px] bg-[#1d7682]/20" />
  {/* Calculator */}
  <section className="bg-[#F7F4EE] py-[48px] md:py-[64px] px-[20px] md:px-[40px] lg:px-[80px]">
   <div className="max-w-[960px] mx-auto">

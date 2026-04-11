@@ -32,10 +32,10 @@ export default function RetirementReadinessPage() {
   <h1 className="font-serif text-[32px] md:text-[48px] font-light text-[#F7F4EE] leading-tight">
   Are You On Track for Retirement?
   </h1>
-  <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[600px] mx-auto leading-relaxed">
+  <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[640px] mx-auto leading-relaxed">
   Answer 10 quick questions to get a personalized score across savings rate, asset benchmarks, and funding projections.
   </p>
-  <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[600px] mx-auto leading-relaxed">
+  <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[640px] mx-auto leading-relaxed">
   I built this assessment around the same benchmarks I use with my own clients — so you get a real answer, not a generic one.
   </p>
   <p

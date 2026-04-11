@@ -126,16 +126,16 @@ export default function AboutPage() {
  />
 
  {/* 1. THE TEAM */}
- <section className="bg-white py-16 md:py-24">
-  <div className="max-w-7xl mx-auto px-6">
+ <section className="bg-white py-20 lg:py-32">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
   <AnimateOnScroll>
-  <h2 className="text-3xl md:text-4xl font-bold text-[#333333] text-center mb-8">
+  <h2 className="text-3xl md:text-4xl font-bold text-[#333333] text-center mb-6">
    Meet The Team
   </h2>
-  <p className="text-lg text-[#333333] leading-relaxed max-w-4xl mb-6">
+  <p className="text-lg text-[#333333] leading-relaxed max-w-3xl mb-6">
    When you work with Jay, you don&apos;t just get Jay. You get our whole team. That&apos;s one of the most important things I can offer - real specialists in trust law, tax strategy, investment management, and planning who are all pulling in the same direction for you.
   </p>
-  <p className="text-lg text-[#5b6a71] leading-relaxed max-w-4xl mb-12">
+  <p className="text-lg text-[#5b6a71] leading-relaxed max-w-3xl mb-12">
    Every client situation is different — that is why I built a team with deep specializations. Here is who handles what.
   </p>
   </AnimateOnScroll>
@@ -175,10 +175,10 @@ export default function AboutPage() {
  </section>
 
  {/* 2. WHAT THIS TEAM MEANS */}
- <section className="bg-[#FAFAF8] py-16 md:py-24">
-  <div className="max-w-4xl mx-auto px-6">
+ <section className="bg-[#FAFAF8] py-20 lg:py-32">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
   <AnimateOnScroll>
-  <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-8">
+  <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-6">
    Who Should You Talk to About Your Situation?
   </h3>
   <div className="space-y-8 text-[#333333]">
@@ -219,9 +219,9 @@ export default function AboutPage() {
  </section>
 
  {/* 3. FIVE COMMITMENTS */}
- <section className="bg-white py-16 md:py-24">
-  <div className="max-w-7xl mx-auto px-6">
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+ <section className="bg-white py-20 lg:py-32">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
   <AnimateOnScroll delay={0}>
    <div className={`bg-[#FAFAF8] border border-[#E8E6E1] rounded-[12px] p-[32px] h-full flex flex-col justify-between`}>
    <div className="text-4xl font-bold text-[#1d7682] mb-4">1</div>
@@ -261,13 +261,13 @@ export default function AboutPage() {
  </section>
 
  {/* 4. WHAT JAY BELIEVES */}
- <section className="bg-white py-12 md:py-16">
-  <div className="max-w-4xl mx-auto px-6">
+ <section className="bg-white py-20 lg:py-32">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
   <div className="space-y-10">
   {/* Belief 1 */}
   <AnimateOnScroll>
    <div>
-   <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-4">
+   <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-6">
    I&apos;m a Fiduciary - That&apos;s Non-Negotiable
    </h3>
    <p className="text-lg text-[#333333] leading-relaxed">
@@ -279,7 +279,7 @@ export default function AboutPage() {
   {/* Belief 2 */}
   <AnimateOnScroll delay={0.1}>
    <div>
-   <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-4">
+   <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-6">
    Your Biggest Opportunity Probably Isn&apos;t a Better Fund
    </h3>
    <p className="text-lg text-[#333333] leading-relaxed">
@@ -291,7 +291,7 @@ export default function AboutPage() {
   {/* Belief 3 */}
   <AnimateOnScroll delay={0.2}>
    <div>
-   <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-4">
+   <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-6">
    I&apos;m the One Who Calls You First
    </h3>
    <p className="text-lg text-[#333333] leading-relaxed">
@@ -304,30 +304,30 @@ export default function AboutPage() {
  </section>
 
  {/* AREAS WE SERVE */}
- <section className="bg-[#FAFAF8] py-16 md:py-24">
-  <div className="max-w-7xl mx-auto px-6">
+ <section className="bg-[#FAFAF8] py-20 lg:py-32">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
   <AnimateOnScroll>
-  <h2 className="text-3xl md:text-4xl font-bold text-[#333333] text-center mb-4">
+  <h2 className="text-3xl md:text-4xl font-bold text-[#333333] text-center mb-6">
    Areas We Serve
   </h2>
   <p className="text-lg text-[#5b6a71] text-center max-w-3xl mx-auto mb-12">
    Based in Arizona, we work with families and professionals across the country. Here are some of the communities we serve most often.
   </p>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-   <Link href="/scottsdale" className="bg-white border border-[#E8E6E1] rounded-[12px] p-6 hover:shadow-md transition-shadow text-center">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+   <Link href="/scottsdale" className="bg-white border border-[#E8E6E1] rounded-[12px] p-8 hover:shadow-md transition-shadow text-center">
    <h3 className="text-lg font-bold text-[#333333] mb-1">Scottsdale, AZ</h3>
    <p className="text-sm text-[#5b6a71]">Our home base</p>
    </Link>
-   <Link href="/las-vegas" className="bg-white border border-[#E8E6E1] rounded-[12px] p-6 hover:shadow-md transition-shadow text-center">
+   <Link href="/las-vegas" className="bg-white border border-[#E8E6E1] rounded-[12px] p-8 hover:shadow-md transition-shadow text-center">
    <h3 className="text-lg font-bold text-[#333333] mb-1">Las Vegas, NV</h3>
    <p className="text-sm text-[#5b6a71]">Tax-friendly planning</p>
    </Link>
-   <Link href="/california" className="bg-white border border-[#E8E6E1] rounded-[12px] p-6 hover:shadow-md transition-shadow text-center">
+   <Link href="/california" className="bg-white border border-[#E8E6E1] rounded-[12px] p-8 hover:shadow-md transition-shadow text-center">
    <h3 className="text-lg font-bold text-[#333333] mb-1">California</h3>
    <p className="text-sm text-[#5b6a71]">Silicon Valley &amp; beyond</p>
    </Link>
-   <Link href="/areas-we-serve" className="bg-white border border-[#E8E6E1] rounded-[12px] p-6 hover:shadow-md transition-shadow text-center">
+   <Link href="/areas-we-serve" className="bg-white border border-[#E8E6E1] rounded-[12px] p-8 hover:shadow-md transition-shadow text-center">
    <h3 className="text-lg font-bold text-[#333333] mb-1">Nationwide</h3>
    <p className="text-sm text-[#5b6a71]">See all areas we serve</p>
    </Link>
@@ -337,10 +337,10 @@ export default function AboutPage() {
  </section>
 
  {/* 10. FINAL CTA */}
- <section className="bg-[#333333] py-16 md:py-24">
-  <div className="max-w-4xl mx-auto px-6 text-center">
+ <section className="bg-[#333333] py-20 lg:py-32">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
   <AnimateOnScroll>
-  <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+  <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
    Let&apos;s Just Talk. No Pressure.
   </h2>
   <p className="text-xl text-gray-200 mb-8">

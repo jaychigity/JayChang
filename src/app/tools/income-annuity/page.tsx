@@ -33,10 +33,10 @@ export default function IncomeAnnuityPage() {
   <h1 className="font-serif text-[32px] md:text-[48px] font-light text-[#F7F4EE] leading-tight">
   Income Annuity Estimator
   </h1>
-  <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[600px] mx-auto leading-relaxed">
+  <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[640px] mx-auto leading-relaxed">
   See how much guaranteed monthly income your savings could generate through an immediate income annuity.
   </p>
-  <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[600px] mx-auto leading-relaxed">
+  <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[640px] mx-auto leading-relaxed">
   I built this estimator for clients exploring guaranteed income as part of their retirement plan.
   </p>
   <p
@@ -61,6 +61,33 @@ export default function IncomeAnnuityPage() {
  {/* Calculator */}
  <section className="bg-[#F7F4EE]">
   <IncomeAnnuityEstimator />
+ </section>
+
+ {/* Related Tools */}
+ <section style={{ backgroundColor: '#FAFAF8', padding: '48px 40px' }}>
+  <div style={{ maxWidth: 760, margin: '0 auto', textAlign: 'center' }}>
+   <h3
+    className="font-serif"
+    style={{ fontSize: 24, fontWeight: 400, color: '#333333', marginBottom: 16 }}
+   >
+    Related Tools
+   </h3>
+   <div
+    className="font-sans"
+    style={{
+     display: 'flex',
+     flexWrap: 'wrap',
+     justifyContent: 'center',
+     gap: '12px 24px',
+     fontSize: 15,
+    }}
+   >
+    <a href="/tools/rmd-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>RMD Calculator</a>
+    <a href="/tools/social-security-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Social Security Calculator</a>
+    <a href="/tools/retirement-savings-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Retirement Readiness Calculator</a>
+    <a href="/tools/roth-conversion-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Roth Conversion Calculator</a>
+   </div>
+  </div>
  </section>
  </>
  )

@@ -74,14 +74,14 @@ export default function ContactPage() {
   }}
  />
  {/* ── SECTION 1: HERO ── */}
- <section className="bg-[#F7F4EE] pt-[100px] pb-[40px] text-center">
-  <div className="max-w-container mx-auto px-[80px] max-md:px-[20px]">
+ <section className="bg-[#F7F4EE] pt-28 lg:pt-32 pb-12 lg:pb-16 text-center">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   <AnimateOnScroll>
   <SectionEyebrow text="GET IN TOUCH" />
   </AnimateOnScroll>
 
   <AnimateOnScroll delay={100}>
-  <h1 className="font-serif text-[48px] max-md:text-[32px] font-bold text-[#333333] mt-5">
+  <h1 className="font-serif text-3xl lg:text-5xl font-bold text-[#333333] mt-5">
    I'd Love to Hear From You.
   </h1>
   </AnimateOnScroll>
@@ -103,8 +103,8 @@ export default function ContactPage() {
  </section>
 
  {/* ── SECTION 2: FORM + DIRECT CONTACT ── */}
- <section className="bg-[#FAFAF8] section-padding">
-  <div className="max-w-[1100px] mx-auto px-[80px] max-md:px-[20px]">
+ <section className="bg-[#FAFAF8] py-20 lg:py-32">
+  <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
   <div className="grid grid-cols-1 md:grid-cols-[60%_40%] gap-12">
   {/* Left Column - Form */}
   <AnimateOnScroll>
@@ -177,14 +177,14 @@ export default function ContactPage() {
  </section>
 
  {/* ── SECTION 3: WHAT TO EXPECT ── */}
- <section className="bg-[#FAFAF8] section-padding">
-  <div className="max-w-[900px] mx-auto px-[80px] max-md:px-[20px] text-center">
+ <section className="bg-[#FAFAF8] py-20 lg:py-32">
+  <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
   <AnimateOnScroll>
   <SectionEyebrow text="WHAT TO EXPECT" />
   </AnimateOnScroll>
 
   <AnimateOnScroll delay={100}>
-  <h2 className="font-serif text-[36px] text-[#333333] font-bold mt-4">
+  <h2 className="font-serif text-[36px] text-[#333333] font-bold mt-6">
    Here's What Happens Next.
   </h2>
   </AnimateOnScroll>

@@ -137,7 +137,7 @@ export default function WealthManagementPage() {
  />
 
  {/* Hero */}
- <section className="relative bg-[#333333] pt-[120px] pb-[80px] px-[80px] max-md:px-[20px] max-md:pt-[80px]">
+ <section className="relative bg-[#333333] pt-28 lg:pt-32 pb-16 lg:pb-20 px-4 sm:px-6 lg:px-8">
   <Image
   src="/Photos/couple-planning-office.png"
   alt="Wealth management planning"
@@ -147,11 +147,11 @@ export default function WealthManagementPage() {
   sizes="100vw"
   />
   <div className="absolute inset-0 bg-gradient-to-br from-[#333333] via-[#333333]/90 to-[#333333]/40" />
-  <div className="relative z-10 max-w-[900px] mx-auto text-center">
+  <div className="relative z-10 max-w-4xl mx-auto text-center">
   <SectionEyebrow text="WEALTH MANAGEMENT" />
-  <h1 className="font-serif text-[52px] max-md:text-[34px] font-bold text-[#F7F4EE] leading-[1.15] mt-4">
+  <h1 className="font-serif text-3xl md:text-5xl font-bold text-[#F7F4EE] leading-[1.15] mt-4">
   Comprehensive Wealth Management,
-  <br className="max-md:hidden" /> Redefined.
+  <br className="hidden md:inline" /> Redefined.
   </h1>
   <p className="font-sans text-body-lg text-[#b6d0ed] max-w-[680px] mx-auto mt-6 leading-relaxed">
   For families with $2M-$20M in investable assets, Farther delivers
@@ -171,12 +171,12 @@ export default function WealthManagementPage() {
  </section>
 
  {/* Philosophy */}
- <section className="bg-[#F7F4EE] bg-texture-light section-padding">
-  <div className="max-w-container mx-auto">
+ <section className="bg-[#F7F4EE] bg-texture-light py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto">
   <AnimateOnScroll>
   <div className="max-w-[720px] mx-auto text-center">
    <SectionEyebrow text="OUR PHILOSOPHY" />
-   <h2 className="font-serif text-h2 max-md:text-h2-mobile font-normal text-[#333333] mt-4">
+   <h2 className="font-serif text-h2-mobile md:text-h2 font-normal text-[#333333] mt-6">
    Your Wealth Deserves More Than a Template.
    </h2>
    <p className="font-sans text-[17px] text-[#333333] leading-relaxed mt-6">
@@ -197,16 +197,16 @@ export default function WealthManagementPage() {
  </section>
 
  {/* Services Grid */}
- <section className="bg-[#FAFAF8] section-padding">
-  <div className="max-w-container mx-auto">
+ <section className="bg-[#FAFAF8] py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto">
   <div className="text-center mb-14">
   <SectionEyebrow text="WHAT WE DO" />
-  <h2 className="font-serif text-h2 max-md:text-h2-mobile font-normal text-[#333333] mt-4">
+  <h2 className="font-serif text-h2-mobile md:text-h2 font-normal text-[#333333] mt-6">
    Six Disciplines. One Integrated Strategy.
   </h2>
   </div>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
   {services.map((service, i) => (
    <AnimateOnScroll key={service.title} delay={i * 100}>
    <Link href={service.href} className="block group">
@@ -238,12 +238,12 @@ export default function WealthManagementPage() {
  </section>
 
  {/* Differentiators */}
- <section className="bg-[#333333] bg-texture-dark section-padding">
-  <div className="max-w-container mx-auto">
+ <section className="bg-[#333333] bg-texture-dark py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto">
   <AnimateOnScroll>
   <div className="text-center mb-14">
    <SectionEyebrow text="THE FARTHER DIFFERENCE" />
-   <h2 className="font-serif text-h2 max-md:text-h2-mobile font-normal text-[#F7F4EE] mt-4">
+   <h2 className="font-serif text-h2-mobile md:text-h2 font-normal text-[#F7F4EE] mt-6">
    Why Families Choose Farther.
    </h2>
   </div>
@@ -253,7 +253,7 @@ export default function WealthManagementPage() {
   {differentiators.map((item, i) => (
    <AnimateOnScroll key={item.label} delay={i * 150}>
    <div className="text-center">
-   <p className="font-sans text-[48px] max-md:text-[36px] text-[#1d7682]">
+   <p className="font-sans text-4xl md:text-5xl text-[#1d7682]">
     <CountUp end={item.stat} />
     {item.suffix}
    </p>
@@ -271,12 +271,12 @@ export default function WealthManagementPage() {
  </section>
 
  {/* Who We Serve */}
- <section className="bg-[#F7F4EE] bg-texture-light section-padding">
-  <div className="max-w-container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+ <section className="bg-[#F7F4EE] bg-texture-light py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
   <AnimateOnScroll>
   <div>
    <SectionEyebrow text="WHO WE SERVE" />
-   <h2 className="font-serif text-h2 max-md:text-h2-mobile font-normal text-[#333333] mt-4">
+   <h2 className="font-serif text-h2-mobile md:text-h2 font-normal text-[#333333] mt-6">
    Built for Families Like Yours.
    </h2>
    <p className="font-sans text-[17px] text-[#333333] leading-relaxed mt-6">
@@ -330,9 +330,9 @@ export default function WealthManagementPage() {
  </section>
 
  {/* CTA */}
- <section className="bg-[#333333] section-padding text-center">
+ <section className="bg-[#333333] py-20 lg:py-32 px-4 sm:px-6 lg:px-8 text-center">
   <div className="max-w-[620px] mx-auto">
-  <h2 className="font-serif text-[44px] max-md:text-[30px] font-semibold text-[#F7F4EE] leading-[1.2]">
+  <h2 className="font-serif text-3xl md:text-4xl font-semibold text-[#F7F4EE] leading-[1.2]">
   Let&apos;s Build Your Strategy.
   </h2>
   <p className="font-sans text-[17px] text-[#F7F4EE]/85 leading-relaxed mt-5">

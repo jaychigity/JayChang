@@ -96,7 +96,7 @@ export default function ServicesPage() {
  return (
   <>
    {/* ─── SECTION 1: HERO ─── */}
-   <section className="relative bg-[#333333] pt-[100px] pb-[80px] px-[80px] lg:px-[80px] md:px-[40px] max-md:px-[20px]">
+   <section className="relative bg-[#333333] pt-28 lg:pt-32 pb-16 lg:pb-20 px-4 sm:px-6 lg:px-8">
     <Image
      src="/Photos/Farther-Advisor.avif"
      alt="Farther financial advisor"
@@ -106,13 +106,13 @@ export default function ServicesPage() {
      sizes="100vw"
     />
     <div className="absolute inset-0 bg-gradient-to-br from-[#333333] via-[#333333]/90 to-[#333333]/40" />
-    <div className="relative z-10 max-w-container mx-auto">
+    <div className="relative z-10 max-w-7xl mx-auto">
      <AnimateOnScroll>
       <div>
        <p className="font-sans text-xs font-bold uppercase tracking-wider text-[#1d7682] mb-4">
         HOW WE HELP
        </p>
-       <h1 className="font-serif text-[32px] md:text-[48px] font-bold text-[#F7F4EE] mt-4 mb-6">
+       <h1 className="font-serif text-3xl md:text-5xl font-bold text-[#F7F4EE] mt-4 mb-6">
         Here&apos;s What We Do Together
        </h1>
        <p className="font-sans text-[17px] text-[#F7F4EE]/90 max-w-[680px] leading-relaxed">
@@ -124,11 +124,11 @@ export default function ServicesPage() {
    </section>
 
    {/* ─── SERVICES CARDS ─── */}
-   <section className="bg-white py-[80px] px-[80px] lg:px-[80px] md:px-[40px] max-md:px-[20px]">
-    <div className="max-w-container mx-auto">
+   <section className="bg-white py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto">
      <AnimateOnScroll>
       <SectionEyebrow text="WHAT WE DO" />
-      <h2 className="font-serif text-[28px] md:text-[36px] font-semibold text-[#333333] mt-4 mb-4 max-w-[680px]">
+      <h2 className="font-serif text-[28px] md:text-[36px] font-semibold text-[#333333] mt-6 mb-6 max-w-[680px]">
        Real Help for Real Financial Questions
       </h2>
       <p className="font-sans text-[17px] text-[#5b6a71] max-w-[680px] leading-relaxed">
@@ -155,8 +155,8 @@ export default function ServicesPage() {
    </section>
 
    {/* ─── SECTION: TESTIMONIALS ─── */}
-   <section className="bg-[#F7F4EE] py-[80px] px-[80px] lg:px-[80px] md:px-[40px] max-md:px-[20px]">
-    <div className="max-w-container mx-auto">
+   <section className="bg-[#F7F4EE] py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto">
      <AnimateOnScroll className="mb-16">
       <h2 className="font-serif text-[28px] md:text-[36px] font-semibold text-[#333333]">
        Hear It From People Like You
@@ -186,8 +186,8 @@ export default function ServicesPage() {
    </section>
 
    {/* ─── SECTION: FINAL CTA ─── */}
-   <section className="bg-[#333333] py-[80px] px-[80px] lg:px-[80px] md:px-[40px] max-md:px-[20px]">
-    <div className="max-w-container mx-auto text-center">
+   <section className="bg-[#333333] py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto text-center">
      <AnimateOnScroll>
       <h2 className="font-serif text-[30px] md:text-[44px] font-semibold text-[#F7F4EE] mb-8">
        Let&apos;s Talk About What&apos;s on Your Mind

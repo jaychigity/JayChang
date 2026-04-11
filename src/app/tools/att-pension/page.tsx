@@ -35,7 +35,7 @@ export default function ATTPensionPage() {
      <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[640px] mx-auto leading-relaxed">
       Six calculators built for AT&amp;T employees — union and management. Estimate your pension, compare lump sum vs annuity, model early retirement, and project your 401(k).
      </p>
-     <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[640px] mx-auto leading-relaxed">
+     <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[600px] mx-auto leading-relaxed">
       I&apos;ve worked with hundreds of AT&amp;T employees — CWA, IBEW, and management — navigating these exact decisions.
      </p>
      <p
@@ -60,6 +60,33 @@ export default function ATTPensionPage() {
    {/* Calculator */}
    <section className="bg-[#F7F4EE]">
     <ATTPensionCalculator />
+   </section>
+
+   {/* Related Tools */}
+   <section style={{ backgroundColor: '#FAFAF8', padding: '48px 40px' }}>
+    <div style={{ maxWidth: 760, margin: '0 auto', textAlign: 'center' }}>
+     <h3
+      className="font-serif"
+      style={{ fontSize: 24, fontWeight: 400, color: '#333333', marginBottom: 16 }}
+     >
+      Related Tools
+     </h3>
+     <div
+      className="font-sans"
+      style={{
+       display: 'flex',
+       flexWrap: 'wrap',
+       justifyContent: 'center',
+       gap: '12px 24px',
+       fontSize: 15,
+      }}
+     >
+      <a href="/tools/rmd-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>RMD Calculator</a>
+      <a href="/tools/retirement-savings-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Retirement Readiness Calculator</a>
+      <a href="/tools/roth-conversion-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Roth Conversion Calculator</a>
+      <a href="/tools/social-security-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Social Security Calculator</a>
+     </div>
+    </div>
    </section>
   </>
  )

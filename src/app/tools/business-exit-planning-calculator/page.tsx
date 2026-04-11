@@ -33,10 +33,10 @@ export default function BusinessExitScorecardPage() {
   <h1 className="font-serif text-[32px] md:text-[48px] font-light text-[#F7F4EE] leading-tight">
   Are You Ready to Exit Your Business?
   </h1>
-  <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[600px] mx-auto leading-relaxed">
+  <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[640px] mx-auto leading-relaxed">
   Score your readiness across Financial, Operational, Tax, and Succession dimensions with 10 targeted questions.
   </p>
-  <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[600px] mx-auto leading-relaxed">
+  <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[640px] mx-auto leading-relaxed">
   This scorecard reflects the same framework I use with business owners planning exits — built from real patterns across dozens of engagements.
   </p>
   <p

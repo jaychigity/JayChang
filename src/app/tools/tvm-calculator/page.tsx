@@ -33,10 +33,10 @@ export default function TVMCalculatorPage() {
           <h1 className="font-serif text-[32px] md:text-[48px] font-light text-[#F7F4EE] leading-tight">
             What Your Money Becomes
           </h1>
-          <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[600px] mx-auto leading-relaxed">
+          <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[640px] mx-auto leading-relaxed">
             See the power of compound growth. Enter your investment details and watch your portfolio grow through meaningful milestones over time.
           </p>
-          <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[600px] mx-auto leading-relaxed">
+          <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[640px] mx-auto leading-relaxed">
             I use this same framework when showing clients how compound growth transforms their investments over time.
           </p>
           <p
@@ -61,6 +61,33 @@ export default function TVMCalculatorPage() {
       {/* Calculator */}
       <section className="bg-[#F7F4EE]">
         <TVMCalculator />
+      </section>
+
+      {/* Related Tools */}
+      <section style={{ backgroundColor: '#FAFAF8', padding: '48px 40px' }}>
+        <div style={{ maxWidth: 760, margin: '0 auto', textAlign: 'center' }}>
+          <h3
+            className="font-serif"
+            style={{ fontSize: 24, fontWeight: 400, color: '#333333', marginBottom: 16 }}
+          >
+            Related Tools
+          </h3>
+          <div
+            className="font-sans"
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              justifyContent: 'center',
+              gap: '12px 24px',
+              fontSize: 15,
+            }}
+          >
+            <a href="/tools/retirement-savings-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Retirement Readiness Calculator</a>
+            <a href="/tools/roth-conversion-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Roth Conversion Calculator</a>
+            <a href="/tools/401k-withholding-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>401(k) Withholding Calculator</a>
+            <a href="/tools/rmd-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>RMD Calculator</a>
+          </div>
+        </div>
       </section>
     </>
   )

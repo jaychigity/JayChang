@@ -12,7 +12,7 @@ export const metadata: Metadata = {
  canonical: 'https://www.PWM-Farther.com/tools/rsu-equity-compensation-calculator',
  },
  openGraph: {
- title: 'Equity Compensation Decision Tool | Farther',
+ title: 'Equity Compensation Decision Tool | Advisor Jay',
  description:
  'See your equity decision timeline. Understand when to act on RSUs, ISOs, NQSOs, and ESPPs - tax triggers, vesting milestones, and optimization windows.',
  url: 'https://www.PWM-Farther.com/tools/rsu-equity-compensation-calculator',
@@ -32,10 +32,10 @@ export default function EquityCompensationPage() {
   <h1 className="font-serif text-[32px] md:text-[48px] font-light text-[#F7F4EE] leading-tight">
   Equity Compensation Decision Tool
   </h1>
-  <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[600px] mx-auto leading-relaxed">
+  <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[640px] mx-auto leading-relaxed">
   Visualize your equity compensation timeline - vesting events, tax triggers, and optimization windows.
   </p>
-  <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[600px] mx-auto leading-relaxed">
+  <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[640px] mx-auto leading-relaxed">
   I built this tool for tech professionals and corporate employees managing six- and seven-figure equity positions — the same people I advise every day.
   </p>
   <p
