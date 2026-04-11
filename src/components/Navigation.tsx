@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
-import { FartherIcon } from "./FartherLogo";
+
 
 type NavItem = {
   label: string;
@@ -356,22 +356,17 @@ export default function Navigation() {
           {/* Logo */}
           <Link
             href="/"
-            style={{ textDecoration: "none", flexShrink: 0, display: "flex", alignItems: "center", gap: 12 }}
+            style={{ textDecoration: "none", flexShrink: 0, display: "flex", alignItems: "center" }}
             aria-label="Advisor Jay - Home"
           >
-            <FartherIcon variant="cream" size={52} />
-            <span
-              style={{
-                fontFamily: "'Cormorant Garamond', 'Cormorant', serif",
-                fontSize: 24,
-                fontWeight: 600,
-                color: "#F7F4EE",
-                letterSpacing: "0.04em",
-                lineHeight: 1,
-              }}
-            >
-              Advisor Jay
-            </span>
+            <Image
+              src="/Photos/Farther_Wordmark_RGB_Navy.png"
+              alt="Farther"
+              width={140}
+              height={36}
+              style={{ objectFit: "contain" }}
+              priority
+            />
           </Link>
 
           {/* Desktop Nav Links */}
@@ -480,23 +475,17 @@ export default function Navigation() {
         >
           <Link
             href="/"
-            style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 12 }}
+            style={{ textDecoration: "none", display: "flex", alignItems: "center" }}
             onClick={() => setMobileMenuOpen(false)}
             aria-label="Advisor Jay - Home"
           >
-            <FartherIcon variant="cream" size={52} />
-            <span
-              style={{
-                fontFamily: "'Cormorant Garamond', 'Cormorant', serif",
-                fontSize: 24,
-                fontWeight: 600,
-                color: "#F7F4EE",
-                letterSpacing: "0.04em",
-                lineHeight: 1,
-              }}
-            >
-              Advisor Jay
-            </span>
+            <Image
+              src="/Photos/Farther_Wordmark_RGB_Navy.png"
+              alt="Farther"
+              width={120}
+              height={32}
+              style={{ objectFit: "contain" }}
+            />
           </Link>
 
           <button
