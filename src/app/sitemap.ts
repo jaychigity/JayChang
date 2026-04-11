@@ -146,6 +146,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/tools/roth-conversion-calculator`, lastModified: '2026-04-10', changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${baseUrl}/tools/inherited-ira-calculator`, lastModified: '2026-04-11', changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${baseUrl}/tools/rmd-calculator`, lastModified: '2026-04-10', changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${baseUrl}/tools/social-security-calculator`, lastModified: '2026-04-11', changeFrequency: 'monthly' as const, priority: 0.7 },
   ]
 
   return staticPages.map((page) => ({

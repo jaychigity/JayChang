@@ -91,6 +91,14 @@ const tools = [
  category: 'Planning Tool',
  },
  {
+ href: '/tools/social-security-calculator',
+ title: 'Social Security Calculator — When Should You Claim?',
+ description:
+  'When should you start collecting? Slide through every age from 62 to 70 and see your monthly check, break-even point, and total lifetime benefits. Includes spousal strategy, earnings test, IRMAA impact, and 6 common myths debunked in plain English.\n\nEspecially useful for: anyone within 5 years of claiming, married couples coordinating strategies, and anyone wondering "will I ever get my money\'s worth?"',
+ time: 'Instant analysis',
+ category: 'Planning Tool',
+ },
+ {
  href: '/tools/rmd-calculator',
  title: 'RMD Calculator — Required Minimum Distribution',
  description:
