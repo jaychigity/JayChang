@@ -67,7 +67,7 @@ export default function WithholdingCalculatorPage() {
  <section className="bg-white py-[32px] px-[20px] md:px-[40px] lg:px-[80px]">
   <div className="max-w-[960px] mx-auto">
   <p className="font-sans text-[12px] text-[#999] leading-relaxed">
-   This calculator is for informational purposes only and does not constitute financial advice. 401(k) contribution limits are based on 2025 IRS guidelines and may change. Actual withholding may vary depending on your employer&apos;s plan rules, pay frequency, and timing of contributions. Consult with a qualified financial advisor for personalized guidance.
+   This calculator is for informational purposes only and does not constitute financial advice. 401(k) contribution limits are based on 2026 IRS guidelines and may change. Actual withholding may vary depending on your employer&apos;s plan rules, pay frequency, and timing of contributions. Consult with a qualified financial advisor for personalized guidance.
   </p>
   </div>
  </section>

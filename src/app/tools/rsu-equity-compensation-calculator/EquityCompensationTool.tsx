@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useRef, useEffect } from 'react'
 import Link from 'next/link'
+import { MEDICARE_TAX_RATE } from '@/lib/tax-constants-2026'
 
 // ─────────────────── TYPES ───────────────────
 
@@ -67,10 +68,10 @@ function getLTCGRate(fedRate: number): number {
  return 0.20
 }
 
-const AMT_RATE = 0.26
-const ESPP_DISCOUNT = 0.15
+const AMT_RATE = 0.26 // Statutory rate — update only if legislation changes
+const ESPP_DISCOUNT = 0.15 // Statutory rate — update only if legislation changes
 const STATE_TAX_ESTIMATE = 0.05
-const MEDICARE_TAX = 0.0145
+const MEDICARE_TAX = MEDICARE_TAX_RATE
 
 // ─────────────────── HELPERS ───────────────────
 

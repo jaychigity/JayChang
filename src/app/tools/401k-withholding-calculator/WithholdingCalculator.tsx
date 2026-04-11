@@ -8,6 +8,11 @@ import {
   LIMIT_401K_CATCHUP_50,
   LIMIT_401K_SUPER_CATCHUP_60_63,
   LIMIT_415C_ANNUAL_ADDITIONS,
+  FEDERAL_BRACKETS_SINGLE,
+  FEDERAL_BRACKETS_MFJ,
+  SS_WAGE_BASE,
+  SS_TAX_RATE,
+  MEDICARE_TAX_RATE,
   getMarginalRate as getMarginalRateFromBrackets,
 } from '@/lib/tax-constants-2026'
 
@@ -34,24 +39,8 @@ function formatPercent(value: number, decimals = 1) {
 function estimateFederalTax(annualTaxableIncome: number, filing: 'single' | 'mfj'): number {
   const brackets =
     filing === 'mfj'
-      ? [
-          [23200, 0.1],
-          [94300, 0.12],
-          [201050, 0.22],
-          [383900, 0.24],
-          [487450, 0.32],
-          [731200, 0.35],
-          [Infinity, 0.37],
-        ]
-      : [
-          [11600, 0.1],
-          [47150, 0.12],
-          [100525, 0.22],
-          [191950, 0.24],
-          [243725, 0.32],
-          [609350, 0.35],
-          [Infinity, 0.37],
-        ]
+      ? FEDERAL_BRACKETS_MFJ.map(b => [b.upTo, b.rate] as [number, number])
+      : FEDERAL_BRACKETS_SINGLE.map(b => [b.upTo, b.rate] as [number, number])
   let tax = 0
   let prev = 0
   for (const [top, rate] of brackets) {
@@ -293,9 +282,9 @@ export default function WithholdingCalculator() {
   const marginalRate = getMarginalRateFromBrackets(salary, filingStatus)
   const taxSavings = maxDeferral * marginalRate
 
-  // FICA per paycheck (SS capped at $168,600, Medicare uncapped)
-  const ssWages = Math.min(salary, 168600)
-  const ficaPerCheck = (ssWages / payFrequency) * 0.062 + grossPerCheck * 0.0145
+  // FICA per paycheck (SS capped at wage base, Medicare uncapped)
+  const ssWages = Math.min(salary, SS_WAGE_BASE)
+  const ficaPerCheck = (ssWages / payFrequency) * SS_TAX_RATE + grossPerCheck * MEDICARE_TAX_RATE
 
   // Paycheck comparison: current vs max
   const curContribPerCheck = grossPerCheck * (currentContribPct / 100)

@@ -157,9 +157,40 @@ and market conditions. For a personalized analysis, schedule a free conversation
 Always include both the text disclaimer AND a CTA button/link. The CTA should feel like
 a natural next step, not a sales pitch.
 
-### Tax constants
-- Use centralized 2026 tax constants — check existing calculators for the pattern
-- Note SECURE 2.0 catch-up contribution changes for 2026
+### Tax constants & annual currency (critical)
+All tax-related numbers are centralized in `src/lib/tax-constants-2026.ts`. This is the
+single source of truth for every calculator on the site.
+
+**At the start of every session**, check if the current date's tax year matches `TAX_YEAR`
+in `src/lib/tax-constants-2026.ts`. If the calendar year has advanced past the file's
+`TAX_YEAR` value:
+1. **Alert the user immediately**: "Your tax constants are set to [year] but it's now [year].
+   The IRS typically publishes updated limits in October/November. Want me to update them?"
+2. Do NOT silently use outdated numbers — this is a compliance and credibility issue.
+
+**What needs updating each year** (typically after IRS Revenue Procedure release in Oct/Nov):
+- `TAX_YEAR` — the year label
+- `FEDERAL_BRACKETS_SINGLE` and `FEDERAL_BRACKETS_MFJ` — income tax bracket thresholds
+- `STANDARD_DEDUCTION_SINGLE`, `_MFJ`, `_HOH` — standard deduction amounts
+- `LIMIT_401K_EMPLOYEE_DEFERRAL` — 401(k) elective deferral limit
+- `LIMIT_401K_CATCHUP_50` — standard catch-up contribution (ages 50+)
+- `LIMIT_401K_SUPER_CATCHUP_60_63` — SECURE 2.0 enhanced catch-up (ages 60-63)
+- `LIMIT_415C_ANNUAL_ADDITIONS` — total annual additions limit (415(c))
+- `LIMIT_IRA` — IRA contribution limit
+- `SS_WAGE_BASE` — Social Security wage base
+- Estate tax exemption amounts (in `estate-complexity/EstateComplexityAssessment.tsx`)
+- CA tax brackets (in `ca-nv-tax-savings/TaxSavingsCalculator.tsx`)
+- IRS segment rates for pension calculations (in `att-pension/ATTPensionCalculator.tsx`)
+- Annuity rate tables (in `income-annuity/IncomeAnnuityEstimator.tsx`)
+
+**After updating**, also update these references across the site:
+- `src/app/tools/page.tsx` — "updated for [year] tax law" in the hub page copy
+- Any disclosure text that mentions a specific tax year
+- Rename the constants file if desired (e.g., `tax-constants-2027.ts`) and update all imports
+
+**Cross-check rule**: When creating or editing ANY calculator, verify that all hardcoded
+tax numbers pull from the centralized constants file — never hardcode tax amounts directly
+in a calculator component.
 
 ### Design tokens (consistent across all tools)
 - Teal: `#1d7682` (primary), `#2a9dab` (gradient light)
