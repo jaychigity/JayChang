@@ -83,6 +83,14 @@ const tools = [
  category: 'Assessment',
  },
  {
+ href: '/tools/inherited-ira-calculator',
+ title: 'Inherited IRA Calculator & RMD Guide',
+ description:
+ 'Inherited an IRA? The rules changed dramatically under the SECURE Act. This tool classifies your beneficiary type, shows your required distributions, and compares withdrawal strategies side-by-side — with tax-bracket-aware projections based on your actual income.\n\nEspecially useful for: adult children who inherited a parent\'s IRA, surviving spouses weighing rollover options, and anyone navigating the 10-year rule.',
+ time: '2 minutes',
+ category: 'Planning Tool',
+ },
+ {
  href: '/tools/income-annuity',
  title: 'Income Annuity Estimator',
  description:
