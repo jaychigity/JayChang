@@ -360,7 +360,7 @@ export default function Navigation() {
             aria-label="Advisor Jay - Home"
           >
             <Image
-              src="/Photos/Farther_Wordmark_RGB_Navy.png"
+              src="/Photos/Farther_Wordmark_RGB_Cream.png"
               alt="Farther"
               width={140}
               height={36}
@@ -480,7 +480,7 @@ export default function Navigation() {
             aria-label="Advisor Jay - Home"
           >
             <Image
-              src="/Photos/Farther_Wordmark_RGB_Navy.png"
+              src="/Photos/Farther_Wordmark_RGB_Cream.png"
               alt="Farther"
               width={120}
               height={32}
