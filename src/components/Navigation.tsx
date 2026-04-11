@@ -196,6 +196,8 @@ function DropdownItem({ item, isActive, closeDropdown }: { item: NavItem; isActi
 function MobileAccordion({ item, isActive, onNavigate }: { item: NavItem; isActive: (href: string) => boolean; onNavigate: () => void }) {
   const [expanded, setExpanded] = useState(false);
   const hasChildren = item.children && item.children.length > 0;
+  const isAnyChildActive = hasChildren && item.children!.some(child => isActive(child.href));
+  const parentActive = isActive(item.href) || isAnyChildActive;
 
   return (
     <div>
@@ -215,12 +217,13 @@ function MobileAccordion({ item, isActive, onNavigate }: { item: NavItem; isActi
             fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif",
             fontSize: 17,
             fontWeight: 500,
-            color: isActive(item.href) ? "#1d7682" : "#F7F4EE",
+            color: parentActive || expanded ? "#1d7682" : "#F7F4EE",
             textDecoration: "none",
             flex: 1,
             display: "flex",
             alignItems: "center",
             height: "100%",
+            transition: "color 0.2s ease",
           }}
         >
           {item.label}
@@ -229,21 +232,24 @@ function MobileAccordion({ item, isActive, onNavigate }: { item: NavItem; isActi
           <button
             onClick={() => setExpanded(!expanded)}
             style={{
-              background: "none",
+              background: expanded ? "rgba(29, 118, 130, 0.15)" : "none",
               border: "none",
+              borderRadius: 8,
               cursor: "pointer",
-              padding: 8,
+              padding: 10,
               display: "flex",
               alignItems: "center",
+              justifyContent: "center",
               WebkitTapHighlightColor: "transparent",
+              transition: "background-color 0.2s ease",
             }}
             aria-label={`Expand ${item.label}`}
           >
             <ChevronDown
               size={18}
-              color="#F7F4EE"
+              color={expanded ? "#1d7682" : "#F7F4EE"}
               style={{
-                transition: "transform 0.2s",
+                transition: "transform 0.2s, color 0.2s",
                 transform: expanded ? "rotate(180deg)" : "rotate(0)",
               }}
             />
@@ -251,26 +257,33 @@ function MobileAccordion({ item, isActive, onNavigate }: { item: NavItem; isActi
         )}
       </div>
       {hasChildren && expanded && (
-        <div style={{ paddingLeft: 16, paddingBottom: 8 }}>
-          {item.children!.map((child) => (
-            <Link
-              key={child.href}
-              href={child.href}
-              onClick={onNavigate}
-              style={{
-                display: "block",
-                padding: "10px 0",
-                fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif",
-                fontSize: 15,
-                fontWeight: 400,
-                color: isActive(child.href) ? "#1d7682" : "rgba(247, 244, 238, 0.7)",
-                textDecoration: "none",
-                borderBottom: "1px solid rgba(29, 118, 130, 0.05)",
-              }}
-            >
-              {child.label}
-            </Link>
-          ))}
+        <div style={{ paddingLeft: 8, paddingBottom: 8 }}>
+          {item.children!.map((child) => {
+            const childActive = isActive(child.href);
+            return (
+              <Link
+                key={child.href}
+                href={child.href}
+                onClick={onNavigate}
+                className="mobile-nav-child"
+                style={{
+                  display: "block",
+                  padding: "12px 16px",
+                  fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif",
+                  fontSize: 15,
+                  fontWeight: childActive ? 500 : 400,
+                  color: childActive ? "#1d7682" : "rgba(247, 244, 238, 0.7)",
+                  textDecoration: "none",
+                  borderLeft: childActive ? "2px solid #1d7682" : "2px solid transparent",
+                  borderRadius: "0 6px 6px 0",
+                  backgroundColor: childActive ? "rgba(29, 118, 130, 0.08)" : "transparent",
+                  transition: "background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease",
+                }}
+              >
+                {child.label}
+              </Link>
+            );
+          })}
         </div>
       )}
     </div>
@@ -441,15 +454,14 @@ export default function Navigation() {
         style={{
           position: "fixed",
           top: 0,
-          right: 0,
           bottom: 0,
-          left: 0,
+          left: mobileMenuOpen ? 0 : "100%",
+          width: "100%",
           backgroundColor: "#333333",
           zIndex: 10000,
           display: "flex",
           flexDirection: "column",
-          transform: mobileMenuOpen ? "translateX(0)" : "translateX(100%)",
-          transition: "transform 0.3s ease",
+          transition: "left 0.3s ease, visibility 0.3s ease",
           visibility: mobileMenuOpen ? "visible" : "hidden",
         }}
         aria-hidden={!mobileMenuOpen}
@@ -515,6 +527,8 @@ export default function Navigation() {
             flexDirection: "column",
             padding: "0 40px",
             overflowY: "auto",
+            WebkitOverflowScrolling: "touch",
+            overscrollBehavior: "contain",
           }}
         >
           {navItems.map((item) => (
@@ -563,6 +577,10 @@ export default function Navigation() {
           .mobile-menu-button {
             display: flex !important;
           }
+        }
+        .mobile-nav-child:active {
+          background-color: rgba(29, 118, 130, 0.15) !important;
+          color: #1d7682 !important;
         }
       `}</style>
     </>
