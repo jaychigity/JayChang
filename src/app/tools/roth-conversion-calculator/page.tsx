@@ -9,21 +9,21 @@ export const metadata: Metadata = {
  description:
  'Compare the projected after-tax value of converting a Traditional IRA to a Roth IRA. See the upfront tax cost, net benefit, break-even rate, and projected growth over time.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/tools/roth-conversion',
+ canonical: 'https://www.PWM-Farther.com/tools/roth-conversion-calculator',
  },
  openGraph: {
  title:
  'Roth IRA Conversion Calculator | Does Converting Make Sense For You?',
  description:
  'Model the long-term impact of a Roth conversion - tax cost, projected growth, break-even retirement tax rate, and net benefit. Instant results.',
- url: 'https://www.PWM-Farther.com/tools/roth-conversion',
+ url: 'https://www.PWM-Farther.com/tools/roth-conversion-calculator',
  },
 }
 
 export default function RothConversionPage() {
  return (
  <>
- <BreadcrumbSchema items={[{ name: 'Tools', href: '/tools' }, { name: 'Roth IRA Conversion Calculator', href: '/tools/roth-conversion' }]} />
+ <BreadcrumbSchema items={[{ name: 'Tools', href: '/tools' }, { name: 'Roth IRA Conversion Calculator', href: '/tools/roth-conversion-calculator' }]} />
  {/* Hero Banner */}
  <section className="bg-[#333333] pt-[120px] pb-[48px] px-[20px] md:px-[40px] lg:px-[80px]">
   <div className="max-w-[960px] mx-auto text-center">

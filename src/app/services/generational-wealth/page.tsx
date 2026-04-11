@@ -158,7 +158,7 @@ export default function GenerationalWealthPlanningPage() {
    But studies consistently show that the majority of family
    wealth is lost by the third generation - not because of
    poor investment returns, but because of a lack of governance,
-   communication, and preparation. Farther takes a different
+   communication, and preparation. I take a different
    approach, working with families in{' '}
    <Link
     href="/scottsdale"
@@ -177,7 +177,7 @@ export default function GenerationalWealthPlanningPage() {
    that keep wealth intact across generational transitions.
    </p>
    <p className="font-sans text-body text-[#5b6a71] leading-relaxed mt-4">
-   We coordinate across your advisory team - financial
+   I coordinate across your advisory team - financial
    advisor, estate attorney, CPA, and insurance specialists
    - to ensure every element of your generational plan is
    aligned and working toward the same long-term objectives.

@@ -133,7 +133,7 @@ export default function AboutPage() {
    Meet The Team
   </h2>
   <p className="text-lg text-[#333333] leading-relaxed max-w-4xl mb-12">
-   When you work with Jay, you don&apos;t just get Jay. You get our whole team. That&apos;s one of the most important things we can offer - real specialists in trust law, tax strategy, investment management, and planning who are all pulling in the same direction for you.
+   When you work with Jay, you don&apos;t just get Jay. You get our whole team. That&apos;s one of the most important things I can offer - real specialists in trust law, tax strategy, investment management, and planning who are all pulling in the same direction for you.
   </p>
   </AnimateOnScroll>
 
@@ -265,10 +265,10 @@ export default function AboutPage() {
   <AnimateOnScroll>
    <div>
    <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-4">
-   We&apos;re a Fiduciary - That&apos;s Non-Negotiable
+   I&apos;m a Fiduciary - That&apos;s Non-Negotiable
    </h3>
    <p className="text-lg text-[#333333] leading-relaxed">
-   What does that actually mean for you? It means we&apos;re legally required to act in your best interest. No commissions, no sales quotas, no hidden incentives. There&apos;s a big difference between &ldquo;is this investment suitable?&rdquo; and &ldquo;is this the best decision for your family?&rdquo; We only ask the second question.
+   What does that actually mean for you? It means I&apos;m legally required to act in your best interest. No commissions, no sales quotas, no hidden incentives. There&apos;s a big difference between &ldquo;is this investment suitable?&rdquo; and &ldquo;is this the best decision for your family?&rdquo; I only ask the second question.
    </p>
    </div>
   </AnimateOnScroll>
@@ -289,10 +289,10 @@ export default function AboutPage() {
   <AnimateOnScroll delay={0.2}>
    <div>
    <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-4">
-   We&apos;re the Ones Who Call You First
+   I&apos;m the One Who Calls You First
    </h3>
    <p className="text-lg text-[#333333] leading-relaxed">
-   The most valuable thing we can do is be the team that reaches out in October about your January vest, reminds you about the August ESPP window, and flags that December 31 deadline before it sneaks up. We&apos;re proactive. We&apos;re specific. We don&apos;t wait for you to figure it out on your own - that&apos;s our job.
+   The most valuable thing I can do is reach out in October about your January vest, reminds you about the August ESPP window, and flags that December 31 deadline before it sneaks up. I&apos;m proactive. I&apos;m specific. I don&apos;t wait for you to figure it out on your own - that&apos;s my job.
    </p>
    </div>
   </AnimateOnScroll>

@@ -8,20 +8,20 @@ export const metadata: Metadata = {
  description:
  'Calculate the exact payroll withholding percentage to max out your 401(k), including catch-up contributions and after-tax spillover for mega backdoor Roth strategies.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/tools/withholding-calculator',
+ canonical: 'https://www.PWM-Farther.com/tools/401k-withholding-calculator',
  },
  openGraph: {
  title: '401(k) Withholding Calculator | Advisor Jay',
  description:
  'Find the right withholding percentage to max out your 401(k). Includes catch-up contributions and spillover calculations.',
- url: 'https://www.PWM-Farther.com/tools/withholding-calculator',
+ url: 'https://www.PWM-Farther.com/tools/401k-withholding-calculator',
  },
 }
 
 export default function WithholdingCalculatorPage() {
  return (
  <>
- <BreadcrumbSchema items={[{ name: 'Tools', href: '/tools' }, { name: 'Withholding Calculator', href: '/tools/withholding-calculator' }]} />
+ <BreadcrumbSchema items={[{ name: 'Tools', href: '/tools' }, { name: 'Withholding Calculator', href: '/tools/401k-withholding-calculator' }]} />
  {/* Hero Banner */}
  <section className="bg-[#333333] pt-[120px] pb-[48px] px-[20px] md:px-[40px] lg:px-[80px]">
   <div className="max-w-[960px] mx-auto text-center">

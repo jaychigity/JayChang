@@ -137,11 +137,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/physician-executive-wealth-management-phoenix-scottsdale`, lastModified: '2026-03-17', changeFrequency: 'monthly' as const, priority: 0.9 },
 
     // Tools / calculators
-    { url: `${baseUrl}/tools/retirement-readiness`, lastModified: '2026-02-15', changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${baseUrl}/tools/retirement-savings-calculator`, lastModified: '2026-04-10', changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${baseUrl}/tools/estate-complexity`, lastModified: '2026-02-15', changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${baseUrl}/tools/ca-nv-tax-savings`, lastModified: '2026-02-15', changeFrequency: 'monthly' as const, priority: 0.6 },
-    { url: `${baseUrl}/tools/equity-compensation`, lastModified: '2026-02-15', changeFrequency: 'monthly' as const, priority: 0.6 },
-    { url: `${baseUrl}/tools/business-exit-scorecard`, lastModified: '2026-02-15', changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${baseUrl}/tools/rsu-equity-compensation-calculator`, lastModified: '2026-04-10', changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${baseUrl}/tools/business-exit-planning-calculator`, lastModified: '2026-04-10', changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${baseUrl}/tools/401k-withholding-calculator`, lastModified: '2026-04-10', changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${baseUrl}/tools/roth-conversion-calculator`, lastModified: '2026-04-10', changeFrequency: 'monthly' as const, priority: 0.6 },
   ]
 
   return staticPages.map((page) => ({

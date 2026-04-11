@@ -1165,6 +1165,15 @@ export default function EstateComplexityAssessment() {
   Finance Advisors LLC is an SEC-registered investment adviser. Registration does not
   imply a certain level of skill or training.
   </p>
+  <p className="font-sans text-[13px] text-[#333333] mt-4">
+    For a personalized analysis of your situation, schedule a free conversation with Jay — no obligation, just clarity.
+  </p>
+  <a
+    href="/schedule-consultation"
+    className="inline-block mt-3 font-sans text-[14px] font-semibold text-[#F7F4EE] bg-gradient-to-b from-[#2a9dab] to-[#1d7682] px-6 py-3 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:from-[#238a97] hover:to-[#155f69] transition-all duration-200 no-underline"
+  >
+    Talk with Jay about your results →
+  </a>
   </div>
  </div>
  )

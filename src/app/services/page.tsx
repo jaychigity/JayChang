@@ -49,7 +49,7 @@ const services = [
   icon: Clock,
   title: 'Retirement Income Planning',
   headline: 'Will I Actually Have Enough? (Let\'s Find Out Together)',
-  body: 'Pension vs. lump sum? When to take Social Security? How to cover healthcare before Medicare kicks in? We work through all of it with you — account sequencing, RMD planning, income flooring — so you can retire with confidence, not anxiety.',
+  body: 'Pension vs. lump sum? When to take Social Security? How to cover healthcare before Medicare kicks in? I work through all of it with you — account sequencing, RMD planning, income flooring — so you can retire with confidence, not anxiety.',
  },
  {
   icon: Shield,
@@ -116,7 +116,7 @@ export default function ServicesPage() {
         Here&apos;s What We Do Together
        </h1>
        <p className="font-sans text-[17px] text-[#F7F4EE]/90 max-w-[680px] leading-relaxed">
-        You&apos;ve got a busy career and a complicated financial picture. Our team is here to help you make sense of all of it — one conversation at a time.
+        You&apos;ve got a busy career and a complicated financial picture. I'm here to help you make sense of all of it — one conversation at a time.
        </p>
       </div>
      </AnimateOnScroll>

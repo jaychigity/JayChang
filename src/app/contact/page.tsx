@@ -45,7 +45,7 @@ export default function ContactPage() {
 
   <AnimateOnScroll delay={100}>
   <h1 className="font-serif text-[48px] max-md:text-[32px] font-bold text-[#333333] mt-5">
-   We'd Love to Hear From You.
+   I'd Love to Hear From You.
   </h1>
   </AnimateOnScroll>
 
@@ -67,7 +67,7 @@ export default function ContactPage() {
   <AnimateOnScroll>
    <div>
    <h3 className="font-sans text-[20px] font-semibold text-[#333333] mb-8">
-   Send Us a Message
+   Send Jay a Message
    </h3>
    <ConsultationForm />
    </div>

@@ -136,7 +136,7 @@ export default function BusinessOwnerServicesPage() {
   </p>
   <div className="mt-10">
    <Button variant="primary" href="/schedule-consultation">
-   Schedule a Conversation
+   Schedule a Conversation with Jay
    </Button>
   </div>
   </AnimateOnScroll>
@@ -231,13 +231,13 @@ export default function BusinessOwnerServicesPage() {
   </p>
   <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
    <Link
-   href="/tools/business-exit-scorecard"
+   href="/tools/business-exit-planning-calculator"
    className="inline-flex items-center gap-2 bg-gradient-to-b from-[#2a9dab] to-[#1d7682] hover:from-[#238a97] hover:to-[#155f69] text-white font-sans text-[14px] font-semibold px-6 py-3 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_8px_24px_rgba(29,118,130,0.4)] transition-all duration-200"
    >
    Business Exit Scorecard
    </Link>
    <Link
-   href="/tools/equity-compensation"
+   href="/tools/rsu-equity-compensation-calculator"
    className="inline-flex items-center gap-2 bg-gradient-to-b from-[#2a9dab] to-[#1d7682] hover:from-[#238a97] hover:to-[#155f69] text-white font-sans text-[14px] font-semibold px-6 py-3 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_8px_24px_rgba(29,118,130,0.4)] transition-all duration-200"
    >
    Equity Compensation Planner
@@ -421,7 +421,7 @@ export default function BusinessOwnerServicesPage() {
   </p>
   <div className="mt-10">
    <Button variant="primary" href="/schedule-consultation">
-   Schedule a Conversation
+   Schedule a Conversation with Jay
    </Button>
   </div>
   </AnimateOnScroll>

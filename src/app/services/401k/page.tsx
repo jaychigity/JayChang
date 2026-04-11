@@ -188,7 +188,7 @@ export default function RetirementPlansPage() {
    getting it wrong can be serious.
    </p>
    <p className="font-sans text-body text-[#5b6a71] leading-relaxed mt-4">
-   That&apos;s where our team comes in. We help business owners
+   That&apos;s where I come in. I help business owners
    design, set up, and manage retirement plans that do three things
    at once: attract and hold onto your best people, maximize
    tax-advantaged savings for you as the owner, and keep your

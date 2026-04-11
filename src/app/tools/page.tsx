@@ -3,14 +3,14 @@ import Link from 'next/link'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
- title: 'Financial Tools & Calculators | Advisor Jay',
+ title: 'Free Financial Calculators & Planning Tools | Advisor Jay',
  description:
- 'Free interactive financial tools and assessments - tax savings calculators, retirement readiness checks, estate complexity scoring, equity compensation timelines, and business exit scorecards.',
+ 'Free interactive financial tools and assessments for corporate employees, utility professionals, physicians, business owners, and families. Tax savings calculators, retirement readiness checks, equity compensation analysis, and more.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/tools',
  },
  openGraph: {
- title: 'Financial Tools & Calculators | Farther',
+ title: 'Free Financial Calculators & Planning Tools | Advisor Jay',
  description:
  'Free interactive tools to help you make smarter wealth decisions. Calculators, assessments, and scorecards - instant results, no sign-up required.',
  url: 'https://www.PWM-Farther.com/tools',
@@ -19,18 +19,58 @@ export const metadata: Metadata = {
 
 const tools = [
  {
- href: '/tools/retirement-readiness',
- title: 'Retirement Readiness Assessment',
+ href: '/tools/401k-withholding-calculator',
+ title: '401(k) Withholding Calculator',
  description:
- 'Are you on track? Answer 10 quick questions to get a personalized score across savings rate, asset benchmarks, and funding projections.',
+ 'One of the most common mistakes we see: employees leaving thousands in employer match uncaptured, or hitting tax season with a surprise bill because their RSU withholding was set wrong. This calculator shows you exactly what percentage to set, what it does to your paycheck, and how to catch up if you\'re mid-year.\n\nEspecially useful for: AT&T, PG&E, Raytheon, Honeywell, and Fortune 500 employees with complex compensation packages.',
+ time: 'Instant estimate',
+ category: 'Calculator',
+ },
+ {
+ href: '/tools/rsu-equity-compensation-calculator',
+ title: 'Equity Compensation & RSU Tax Calculator',
+ description:
+ 'RSUs, stock options, and ESPPs are taxed differently \u2014 and your employer\'s default withholding is often not enough. This tool estimates your actual tax liability on equity compensation so you\'re not caught off guard at filing time.\n\nEspecially useful for: tech professionals, corporate employees, and anyone with vesting events this year.',
+ time: 'Instant analysis',
+ category: 'Planning Tool',
+ },
+ {
+ href: '/tools/roth-conversion-calculator',
+ title: 'Roth Conversion Calculator',
+ description:
+ 'Converting pre-tax retirement savings to Roth can save significantly on lifetime taxes \u2014 but timing and amount matter. This calculator helps you find the right conversion amount based on your current bracket, future income expectations, and retirement timeline.\n\nEspecially useful for: high earners in a transitional year, early retirees, and anyone approaching RMD age.',
+ time: 'Instant analysis',
+ category: 'Calculator',
+ },
+ {
+ href: '/tools/retirement-savings-calculator',
+ title: 'Retirement Readiness Calculator',
+ description:
+ 'Are you on track? This tool takes your current savings, income, expected retirement age, and spending needs and gives you a straight answer \u2014 along with what it would take to close any gap.\n\nEspecially useful for: anyone within 10\u201320 years of retirement who hasn\'t run the numbers recently.',
  time: '60 seconds',
  category: 'Assessment',
  },
  {
- href: '/tools/ca-nv-tax-savings',
- title: 'California vs. Nevada vs. Arizona Tax Savings Estimator',
+ href: '/tools/business-exit-planning-calculator',
+ title: 'Business Exit Scorecard',
  description:
- 'Compare your 5-year state tax bill across California, Nevada, and Arizona - covering income, capital gains, RSU vesting, and real estate gains.',
+ 'If your business is a significant part of your net worth, your exit strategy is your financial plan. This scorecard walks you through the key factors that determine business value, timing, and what you\'ll actually walk away with after taxes.\n\nEspecially useful for: business owners thinking about selling in the next 3\u201310 years.',
+ time: '60 seconds',
+ category: 'Scorecard',
+ },
+ {
+ href: '/tools/att-pension',
+ title: 'AT&T Pension Suite',
+ description:
+ 'AT&T\'s pension, deferred compensation, and benefits package is one of the most complex in the industry. This suite of calculators helps you model pension vs. lump sum decisions, deferred comp risk, and how your benefits fit into your overall retirement picture.\n\nEspecially useful for: current and former AT&T employees approaching retirement decisions.',
+ time: 'Instant analysis',
+ category: 'Calculator Suite',
+ },
+ {
+ href: '/tools/ca-nv-tax-savings',
+ title: 'CA \u2192 NV Tax Savings Calculator',
+ description:
+ 'California\'s income tax is among the highest in the country. This calculator estimates your potential annual tax savings from establishing Nevada residency \u2014 factoring in income type, asset levels, and planning opportunities.\n\nEspecially useful for: California residents with high W-2 income, RSUs, or significant investment income considering a move.',
  time: 'Instant estimate',
  category: 'Calculator',
  },
@@ -43,22 +83,6 @@ const tools = [
  category: 'Assessment',
  },
  {
- href: '/tools/equity-compensation',
- title: 'Equity Compensation Decision Tool',
- description:
- 'Visualize your equity compensation timeline - vesting events, tax triggers, and optimization windows for RSUs, ISOs, NQSOs, and ESPPs.',
- time: 'Instant analysis',
- category: 'Planning Tool',
- },
- {
- href: '/tools/business-exit-scorecard',
- title: 'Business Exit Readiness Scorecard',
- description:
- 'Score your readiness for a business exit across Financial, Operational, Tax, and Succession dimensions with 10 targeted questions.',
- time: '60 seconds',
- category: 'Scorecard',
- },
- {
  href: '/tools/income-annuity',
  title: 'Income Annuity Estimator',
  description:
@@ -67,28 +91,12 @@ const tools = [
  category: 'Calculator',
  },
  {
- href: '/tools/roth-conversion',
- title: 'Roth IRA Conversion Calculator',
- description:
- 'Compare the long-term after-tax impact of converting a Traditional IRA to a Roth IRA - factoring in upfront tax cost, projected growth, and break-even retirement tax rate.',
- time: 'Instant analysis',
- category: 'Calculator',
- },
- {
  href: '/tools/tvm-calculator',
- title: 'What Your Money Becomes — TVM Calculator',
+ title: 'What Your Money Becomes \u2014 TVM Calculator',
  description:
  'See how compound returns, dividends, and reinvestment transform your investment over time. Map your wealth trajectory to real-world milestones and model the impact of market corrections.',
  time: '45 seconds',
  category: 'Calculator',
- },
- {
- href: '/tools/att-pension',
- title: 'AT&T Pension & Retirement Suite',
- description:
- 'Six calculators for AT&T employees — cash balance pension, union pension band, lump sum vs annuity, early retirement reduction, 401(k) projection, and income gap analysis.',
- time: 'Instant analysis',
- category: 'Calculator Suite',
  },
 ]
 
@@ -130,35 +138,72 @@ export default function ToolsPage() {
   color: '#F7F4EE',
   lineHeight: 1.15,
   marginBottom: 16,
-  maxWidth: 720,
+  maxWidth: 820,
   marginLeft: 'auto',
   marginRight: 'auto',
   }}
   >
-  Make Smarter Wealth Decisions
+  Free Financial Calculators &amp; Planning Tools for Professionals and Families
   </h1>
   <p
   className="font-sans"
   style={{
   fontSize: 18,
   color: 'rgba(247, 244, 238, 0.75)',
-  maxWidth: 580,
+  maxWidth: 700,
   marginLeft: 'auto',
   marginRight: 'auto',
   lineHeight: 1.6,
   }}
   >
-  Free interactive assessments and calculators built to help you
-  understand your financial picture - instant results, no sign-up
-  required.
+  Making smart financial decisions starts with knowing your numbers. These free calculators are: no sign-up required, real answers instantly. Built for corporate employees, utility and energy professionals, aerospace and defense workers, physicians, business owners, and families navigating complex financial situations &mdash; exactly the kinds of people I work with every day.
   </p>
+ </section>
+
+ {/* How to use these tools */}
+ <section
+  style={{
+  backgroundColor: '#F7F4EE',
+  padding: '56px 40px 0',
+  }}
+ >
+  <div
+  style={{
+  maxWidth: 760,
+  margin: '0 auto',
+  textAlign: 'center',
+  }}
+  >
+  <h2
+  className="font-serif"
+  style={{
+  fontSize: 32,
+  fontWeight: 400,
+  color: '#333333',
+  lineHeight: 1.25,
+  marginBottom: 16,
+  }}
+  >
+  How to use these tools
+  </h2>
+  <p
+  className="font-sans"
+  style={{
+  fontSize: 16,
+  color: 'rgba(51, 51, 51, 0.7)',
+  lineHeight: 1.7,
+  }}
+  >
+  Each calculator is designed around a specific financial question we hear constantly from clients. Start with whichever one is most relevant to your situation right now. If you want help interpreting the results or building a plan around them, Jay offers a free, no-obligation conversation &mdash; no pitch, just clarity.
+  </p>
+  </div>
  </section>
 
  {/* Tool Cards Grid */}
  <section
   style={{
   backgroundColor: '#F7F4EE',
-  padding: '64px 40px 80px',
+  padding: '48px 40px 80px',
   }}
  >
   <div
@@ -243,6 +288,7 @@ export default function ToolsPage() {
     color: 'rgba(51, 51, 51, 0.7)',
     lineHeight: 1.6,
     flex: 1,
+    whiteSpace: 'pre-line',
    }}
    >
    {tool.description}
@@ -270,6 +316,56 @@ export default function ToolsPage() {
   </div>
  </section>
 
+ {/* Not sure where to start? */}
+ <section
+  style={{
+  backgroundColor: '#FAFAF8',
+  padding: '64px 40px',
+  }}
+ >
+  <div
+  style={{
+  maxWidth: 760,
+  margin: '0 auto',
+  textAlign: 'center',
+  }}
+  >
+  <h2
+  className="font-serif"
+  style={{
+  fontSize: 32,
+  fontWeight: 400,
+  color: '#333333',
+  lineHeight: 1.25,
+  marginBottom: 16,
+  }}
+  >
+  Not sure where to start?
+  </h2>
+  <p
+  className="font-sans"
+  style={{
+  fontSize: 16,
+  color: 'rgba(51, 51, 51, 0.7)',
+  lineHeight: 1.7,
+  marginBottom: 16,
+  }}
+  >
+  If you&rsquo;re a corporate or Fortune 500 employee trying to maximize your 401(k), start with the withholding calculator. If you have RSUs or stock options vesting this year, the equity compensation calculator is your first stop. Physicians and high-income earners often find the Roth conversion tool most valuable. Business owners planning an exit should start with the scorecard. And if you&rsquo;re an AT&amp;T or utility professional with pension decisions ahead, the AT&amp;T Pension Suite was built specifically for you.
+  </p>
+  <p
+  className="font-sans"
+  style={{
+  fontSize: 16,
+  color: 'rgba(51, 51, 51, 0.7)',
+  lineHeight: 1.7,
+  }}
+  >
+  All tools are free, require no login, and are updated for 2026 tax law including SECURE 2.0 catch-up contribution changes. Results are estimates for educational purposes &mdash; for a personalized analysis, schedule a free conversation with Jay.
+  </p>
+  </div>
+ </section>
+
  {/* Bottom CTA */}
  <section
   style={{
@@ -291,22 +387,21 @@ export default function ToolsPage() {
   marginRight: 'auto',
   }}
   >
-  Want a personalized analysis?
+  Ready to put the numbers to work?
   </h2>
   <p
   className="font-sans"
   style={{
   fontSize: 16,
   color: 'rgba(247, 244, 238, 0.7)',
-  maxWidth: 480,
+  maxWidth: 540,
   marginLeft: 'auto',
   marginRight: 'auto',
   lineHeight: 1.6,
   marginBottom: 28,
   }}
   >
-  These tools provide a starting point. A conversation with a fiduciary
-  advisor can turn the numbers into a plan.
+  These tools give you a starting point. Jay can help you build a complete plan around what they show. No obligation &mdash; just a real conversation about your situation.
   </p>
   <a
   href="/schedule-consultation"
@@ -325,7 +420,7 @@ export default function ToolsPage() {
    'inset 0 1px 1px rgba(255,255,255,0.25), 0 2px 8px rgba(29,118,130,0.3)',
   }}
   >
-  Start a Conversation
+  Schedule a free conversation with Jay &rarr;
   </a>
  </section>
 

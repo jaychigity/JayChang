@@ -160,7 +160,7 @@ export default function FinancialPlanningPage() {
    </h2>
    <p className="font-sans text-body text-[#5b6a71] leading-relaxed mt-6">
    Most advisory firms hand you a 100-page document and call it a
-   plan. We build a dynamic, scenario-based strategy that
+   plan. I build a dynamic, scenario-based strategy that
    connects your investments, tax picture, insurance, estate
    structure, and family goals into a single coordinated
    framework. Whether you are a growing family in{' '}

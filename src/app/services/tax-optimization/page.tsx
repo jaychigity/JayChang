@@ -195,8 +195,8 @@ export default function TaxOptimizationPage() {
    Tax Strategy That Goes Beyond April 15.
    </h2>
    <p className="font-sans text-body text-[#5b6a71] leading-relaxed mt-6">
-   Most advisors think about taxes once a year. We think about
-   them every time we make a decision - because for
+   Most advisors think about taxes once a year. I think about
+   them every time I make a decision - because for
    families with significant wealth, proactive tax strategy is
    one of the highest-value services we provide. When forward
    returns may moderate, the gap between pre-tax and after-tax

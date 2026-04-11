@@ -1274,6 +1274,22 @@ function IncomeGapCalc({ onCalculate }: { onCalculate: () => void }) {
           </div>
         </div>
       )}
+
+      {/* Disclosure */}
+      <div className="mt-12 pt-8 border-t border-[#E2E8F0]">
+        <p className="font-sans text-[11px] leading-relaxed text-[#5b6a71]">
+          <strong>Important Disclosure:</strong> This suite of calculators provides estimates for illustrative purposes only and does not constitute financial, tax, or investment advice. Pension calculations are based on simplified assumptions and may not reflect your actual plan terms, service credits, or benefit formulas. Lump sum estimates use hypothetical interest rates and mortality assumptions that differ from AT&T's actual plan calculations. 401(k) projections assume constant contribution rates and hypothetical returns that may not reflect actual market performance. Actual benefits, tax obligations, and retirement income will depend on your specific circumstances, plan documents, and applicable tax law. Past performance does not guarantee future results. Consult a qualified financial advisor and review your official plan documents before making any retirement decisions. Farther Finance Advisors LLC is an SEC-registered investment adviser. Registration does not imply a certain level of skill or training.
+        </p>
+        <p className="font-sans text-[13px] text-[#333333] mt-4">
+          For a personalized analysis of your AT&T benefits and retirement options, schedule a free conversation with Jay — no obligation, just clarity.
+        </p>
+        <a
+          href="/schedule-consultation"
+          className="inline-block mt-3 font-sans text-[14px] font-semibold text-[#F7F4EE] bg-gradient-to-b from-[#2a9dab] to-[#1d7682] px-6 py-3 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:from-[#238a97] hover:to-[#155f69] transition-all duration-200 no-underline"
+        >
+          Talk with Jay about your results →
+        </a>
+      </div>
     </div>
   )
 }

@@ -1,40 +1,39 @@
 import type { Metadata } from 'next'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 import Link from 'next/link'
-import ExitScorecard from './ExitScorecard'
+import RetirementAssessment from './RetirementAssessment'
 
 export const metadata: Metadata = {
  title:
- 'Business Exit Readiness Scorecard | Advisor Jay',
+ 'Am I On Track? Retirement Readiness Assessment | Advisor Jay',
  description:
- 'Answer 10 quick questions to assess your readiness for a business exit. Get your personalized score across Financial, Operational, Tax, and Succession dimensions - free and confidential.',
+ 'Take our free 60-second retirement readiness assessment. Get a personalized score across savings rate, asset benchmarks, and funding projections - instant results.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/tools/business-exit-scorecard',
+ canonical: 'https://www.PWM-Farther.com/tools/retirement-savings-calculator',
  },
  openGraph: {
- title:
- 'How Ready Are You to Exit Your Business? | Free 60-Second Assessment',
+ title: 'Am I On Track? | Free 60-Second Retirement Assessment',
  description:
- 'Take the Business Exit Readiness Scorecard - 10 questions, under 60 seconds. Get actionable insights across Financial, Operational, Tax, and Succession readiness.',
- url: 'https://www.PWM-Farther.com/tools/business-exit-scorecard',
+ 'Discover if you&apos;re on track for the retirement you want. 10 questions, under 60 seconds, personalized insights.',
+ url: 'https://www.PWM-Farther.com/tools/retirement-savings-calculator',
  },
 }
 
-export default function BusinessExitScorecardPage() {
+export default function RetirementReadinessPage() {
  return (
  <>
- <BreadcrumbSchema items={[{ name: 'Tools', href: '/tools' }, { name: 'Business Exit Scorecard', href: '/tools/business-exit-scorecard' }]} />
+ <BreadcrumbSchema items={[{ name: 'Tools', href: '/tools' }, { name: 'Retirement Readiness', href: '/tools/retirement-savings-calculator' }]} />
  {/* Hero Banner */}
  <section className="bg-[#333333] pt-[120px] pb-[48px] px-[20px] md:px-[40px] lg:px-[80px]">
   <div className="max-w-[960px] mx-auto text-center">
   <p className="font-sans text-[12px] font-semibold uppercase tracking-[0.15em] text-[#1d7682] mb-4">
-  Business Exit Scorecard
+  Retirement Assessment
   </p>
   <h1 className="font-serif text-[32px] md:text-[48px] font-light text-[#F7F4EE] leading-tight">
-  Are You Ready to Exit Your Business?
+  Are You On Track for Retirement?
   </h1>
   <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[600px] mx-auto leading-relaxed">
-  Score your readiness across Financial, Operational, Tax, and Succession dimensions with 10 targeted questions.
+  Answer 10 quick questions to get a personalized score across savings rate, asset benchmarks, and funding projections.
   </p>
   <div className="mt-6 flex justify-center">
   <Link href="/tools" className="font-sans text-[13px] text-[#F7F4EE]/50 hover:text-[#1d7682] transition-colors">
@@ -46,7 +45,7 @@ export default function BusinessExitScorecardPage() {
  <div className="h-[1px] bg-[#1d7682]/20" />
  {/* Calculator */}
  <section className="bg-[#F7F4EE]">
-  <ExitScorecard />
+  <RetirementAssessment />
  </section>
  </>
  )
