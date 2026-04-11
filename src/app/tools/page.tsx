@@ -91,6 +91,14 @@ const tools = [
  category: 'Planning Tool',
  },
  {
+ href: '/tools/rmd-calculator',
+ title: 'RMD Calculator — Required Minimum Distribution',
+ description:
+  'How much must you withdraw from your IRA this year? This calculator uses the 2026 IRS Uniform Lifetime Table to show your exact RMD, the tax hit on your bracket, QCD optimization opportunities, IRMAA Medicare surcharge warnings, and a multi-year balance projection.\n\nEspecially useful for: retirees age 73+, anyone approaching RMD age, and those considering Qualified Charitable Distributions to reduce taxable income.',
+ time: 'Instant estimate',
+ category: 'Calculator',
+ },
+ {
  href: '/tools/income-annuity',
  title: 'Income Annuity Estimator',
  description:

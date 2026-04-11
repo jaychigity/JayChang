@@ -145,6 +145,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/tools/401k-withholding-calculator`, lastModified: '2026-04-10', changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${baseUrl}/tools/roth-conversion-calculator`, lastModified: '2026-04-10', changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${baseUrl}/tools/inherited-ira-calculator`, lastModified: '2026-04-11', changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${baseUrl}/tools/rmd-calculator`, lastModified: '2026-04-10', changeFrequency: 'monthly' as const, priority: 0.6 },
   ]
 
   return staticPages.map((page) => ({
