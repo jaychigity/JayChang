@@ -9,7 +9,7 @@ const BASE_URL = 'https://www.PWM-Farther.com'
 const OG_IMAGES: Record<string, string> = {
   '/': '/Photos/Jay-Banner.png',
   '/about': '/Photos/Color-Jay-Headshot.png',
-  '/contact': '/Photos/Jay-Office.png',
+  '/contact': '/Photos/Color-Jay-Headshot.png',
   '/scottsdale': '/Photos/scottsdale-professional.png',
   '/california': '/Photos/california-professional.png',
   '/las-vegas': '/Photos/las-vegas-couple-sunset.avif',
@@ -17,7 +17,7 @@ const OG_IMAGES: Record<string, string> = {
   '/aerospace-defense-wealth-management': '/Photos/Aerospace.png',
   '/physician-wealth-management-phoenix-scottsdale': '/Photos/Medical-1.png',
   '/services': '/Photos/Jay-Planning-Couple.png',
-  '/tools': '/Photos/Jay-Office.png',
+  '/tools': '/Photos/Color-Jay-Headshot.png',
   '/insights': '/Photos/Jay-Intel.png',
   '/investment-philosophy': '/Photos/portfolio.png',
   '/process': '/Photos/Jay-B&W-Team.png',

@@ -153,28 +153,38 @@ export default function Footer() {
               Our Locations
             </h4>
 
+            <ul style={{ listStyle: "none", padding: 0, margin: "0 0 16px 0" }}>
+              {[
+                { label: "Scottsdale, AZ", href: "/scottsdale" },
+                { label: "Las Vegas, NV", href: "/las-vegas" },
+                { label: "California", href: "/california" },
+                { label: "Areas We Serve", href: "/areas-we-serve" },
+              ].map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    style={{
+                      fontFamily: "var(--font-sans), sans-serif",
+                      fontSize: 14,
+                      color: "#b6d0ed",
+                      textDecoration: "none",
+                      lineHeight: 2.2,
+                      transition: "color 0.15s",
+                    }}
+                    className="footer-link"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
             {/* Scottsdale NAP Block */}
             <div
               itemScope
               itemType="https://schema.org/FinancialService"
               style={{ marginBottom: 20 }}
             >
-              <Link
-                href="/scottsdale"
-                style={{
-                  fontFamily: "var(--font-sans), sans-serif",
-                  fontSize: 14,
-                  fontWeight: 500,
-                  color: "#F7F4EE",
-                  textDecoration: "none",
-                  display: "block",
-                  marginBottom: 4,
-                  transition: "color 0.15s",
-                }}
-                className="footer-link"
-              >
-                <span itemProp="name">Scottsdale Office</span>
-              </Link>
               <div
                 itemProp="address"
                 itemScope
@@ -187,6 +197,7 @@ export default function Footer() {
                   lineHeight: 1.7,
                 }}
               >
+                <span itemProp="name" style={{ display: "none" }}>Scottsdale Office</span>
                 <span itemProp="addressLocality">Scottsdale</span>,{" "}
                 <span itemProp="addressRegion">AZ</span>
               </div>

@@ -5,77 +5,19 @@ import { Lock, AlertCircle } from 'lucide-react'
 import { getUTMData, type UTMData } from '@/lib/utm'
 import { trackFormSubmission } from '@/lib/analytics'
 
-const TOPICS = [
-  'Retirement planning / Am I on track?',
-  'Turning savings into income',
-  'Investment strategy or portfolio review',
-  'Taxes and efficiency',
-  'Planning around my company benefits (RSUs, ESPP, pension, 401k)',
-  'Stock compensation (RSUs, ESPP, concentrated positions)',
-  'Pension review / lump sum vs income decision',
-  'Company-specific plan review',
-  'Major life change or transition',
-  'Estate planning / protecting family',
-  'Reducing risk or simplifying finances',
-  'Not sure, just want a second opinion',
-  'Something else',
-]
-
 interface FormData {
   firstName: string
-  lastName: string
   email: string
   phone: string
-  age: string
-  assets: string
-  location: string
-  topics: string[]
-  topicOther: string
-  referralSources: string[]
-  referralOther: string
+  wasReferred: boolean
+  referredBy: string
   company: string // honeypot field — hidden from real users
 }
 
 interface FormErrors {
   firstName?: string
-  lastName?: string
   email?: string
-  phone?: string
 }
-
-const ASSET_RANGES = [
-  'I prefer not to say',
-  '$500,000 – $1,000,000',
-  '$1,000,000 – $5,000,000',
-  '$5,000,000 – $10,000,000',
-  '$10,000,000 – $25,000,000',
-  '$25,000,000+',
-  'Pending liquidity event (business sale, etc.)',
-]
-
-const LOCATIONS = [
-  'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado',
-  'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho',
-  'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana',
-  'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota',
-  'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada',
-  'New Hampshire', 'New Jersey', 'New Mexico', 'New York',
-  'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon',
-  'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota',
-  'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington',
-  'West Virginia', 'Wisconsin', 'Wyoming', 'Washington D.C.', 'Other',
-]
-
-const REFERRAL_SOURCES = [
-  'Google Search',
-  'Client Referral',
-  'Referral',
-  'LinkedIn',
-  'Webinar',
-  'ERG',
-  'Event',
-  'Other',
-]
 
 function formatPhone(value: string): string {
   const digits = value.replace(/\D/g, '').slice(0, 10)
@@ -85,33 +27,19 @@ function formatPhone(value: string): string {
   return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`
 }
 
-const AGE_RANGES = [
-  '18–24', '25–34', '35–44', '45–54', '55–64', '65–74', '75+',
-]
-
-const chevronSvg = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%235b6a71' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")`
-
 const inputBase =
   'border border-[#b6d0ed] bg-[#F7F4EE] rounded-[3px] py-[14px] px-[20px] font-sans text-body text-[#333333] w-full transition-all duration-200 focus:border-[#1d7682] focus:bg-[#FAFAF8] focus:outline-none focus:shadow-[0_0_0_3px_rgba(29,118,130,0.1)]'
 
 const inputError =
   'border-[#8B2E2E] bg-[#FFFAF8]'
 
-const selectBase = `${inputBase} appearance-none bg-no-repeat bg-[length:16px_16px] bg-[position:right_20px_center]`
-
 export default function ConsultationForm() {
   const [formData, setFormData] = useState<FormData>({
     firstName: '',
-    lastName: '',
     email: '',
     phone: '',
-    age: '',
-    assets: '',
-    location: '',
-    topics: [],
-    topicOther: '',
-    referralSources: [],
-    referralOther: '',
+    wasReferred: false,
+    referredBy: '',
     company: '',
   })
 
@@ -140,10 +68,12 @@ export default function ConsultationForm() {
     const params = new URLSearchParams({
       embed: 'true',
       firstName: formData.firstName,
-      lastName: formData.lastName,
       email: formData.email,
       phone: formData.phone,
     })
+    if (formData.referredBy) {
+      params.set('referredBy', formData.referredBy)
+    }
     const embedUrl = `https://meetings.hubspot.com/jay-chang1?${params.toString()}`
 
     // Create the HubSpot meetings container
@@ -158,7 +88,6 @@ export default function ConsultationForm() {
       script.src = 'https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js'
       script.async = true
       document.body.appendChild(script)
-
     }
 
     // Listen for HubSpot booking confirmation via postMessage
@@ -172,9 +101,7 @@ export default function ConsultationForm() {
   }, [isSubmitted, submitMode, formData])
 
   function handleChange(
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
-    >
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
@@ -188,12 +115,6 @@ export default function ConsultationForm() {
 
     if (!formData.firstName.trim()) {
       newErrors.firstName = 'First name is required.'
-    }
-    if (!formData.lastName.trim()) {
-      newErrors.lastName = 'Last name is required.'
-    }
-    if (!formData.phone.trim()) {
-      newErrors.phone = 'Phone number is required.'
     }
     if (!formData.email.trim()) {
       newErrors.email = 'Email address is required.'
@@ -219,7 +140,11 @@ export default function ConsultationForm() {
 
     // Merge form data with UTM attribution for lead tracking
     const submissionPayload = {
-      ...formData,
+      firstName: formData.firstName,
+      email: formData.email,
+      phone: formData.phone,
+      referredBy: formData.referredBy || '',
+      company: formData.company,
       ...utmData,
       contactPreference: mode,
       submitted_at: new Date().toISOString(),
@@ -388,7 +313,10 @@ export default function ConsultationForm() {
                   method: 'POST',
                   headers: { 'Content-Type': 'application/json' },
                   body: JSON.stringify({
-                    ...formData,
+                    firstName: formData.firstName,
+                    email: formData.email,
+                    phone: formData.phone,
+                    referredBy: formData.referredBy || '',
                     ...utmData,
                     contactPreference: 'callback',
                     callbackTimeOfDay: callbackPrefs.timeOfDay,
@@ -412,105 +340,31 @@ export default function ConsultationForm() {
   return (
     <div className="max-w-[680px] mx-auto bg-[#FAFAF8] border border-[rgba(51,51,51,0.08)] rounded-[8px] p-[32px] md:p-[64px] shadow-form">
       <form onSubmit={(e) => e.preventDefault()} noValidate>
-        {/* What's on your mind — topic checkboxes */}
+        {/* First Name */}
         <div className="mb-[24px]">
-          <p className="font-sans text-[13px] font-medium text-[#333333] tracking-[0.05em] mb-[2px]">
-            What&apos;s on your mind? <span className="font-normal text-[#5b6a71]">(What would you like to talk through together?)</span>
-          </p>
-          <p className="font-sans text-[12px] text-[#5b6a71] mb-[12px]">Select all that apply.</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-[8px]">
-            {TOPICS.map((topic) => (
-              <label
-                key={topic}
-                className={`flex items-center gap-[10px] px-[14px] py-[10px] rounded-[6px] border cursor-pointer transition-all duration-200 ${
-                  formData.topics.includes(topic)
-                    ? 'border-[#1d7682] bg-[#1d7682]/5'
-                    : 'border-[#E2E8F0] bg-white hover:border-[#1d7682]/40'
-                }`}
-              >
-                <input
-                  type="checkbox"
-                  checked={formData.topics.includes(topic)}
-                  onChange={() => {
-                    setFormData((prev) => ({
-                      ...prev,
-                      topics: prev.topics.includes(topic)
-                        ? prev.topics.filter((t) => t !== topic)
-                        : [...prev.topics, topic],
-                    }))
-                  }}
-                  className="accent-[#1d7682] w-4 h-4 shrink-0"
-                />
-                <span className="font-sans text-[13px] text-[#333333]">{topic}</span>
-              </label>
-            ))}
-          </div>
-          {formData.topics.includes('Something else') && (
-            <input
-              type="text"
-              placeholder="Tell us more..."
-              value={formData.topicOther}
-              onChange={(e) => setFormData((prev) => ({ ...prev, topicOther: e.target.value }))}
-              className={`${inputBase} mt-[8px]`}
-            />
+          <label
+            htmlFor="firstName"
+            className="font-sans text-[13px] font-medium text-[#333333] tracking-[0.05em] block mb-[8px]"
+          >
+            First Name <span className="text-[#8B2E2E]">*</span>
+          </label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            required
+            aria-invalid={errors.firstName ? 'true' : undefined}
+            aria-describedby={errors.firstName ? 'firstName-error' : undefined}
+            value={formData.firstName}
+            onChange={handleChange}
+            className={`${inputBase} ${errors.firstName ? inputError : ''}`}
+          />
+          {errors.firstName && (
+            <p id="firstName-error" role="alert" className="font-sans text-xs text-[#8B2E2E] mt-[6px] flex items-center gap-[4px]">
+              <AlertCircle size={12} className="shrink-0" />
+              {errors.firstName}
+            </p>
           )}
-        </div>
-
-        {/* First Name / Last Name — side by side on desktop */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[24px]">
-          {/* First Name */}
-          <div className="mb-[24px]">
-            <label
-              htmlFor="firstName"
-              className="font-sans text-[13px] font-medium text-[#333333] tracking-[0.05em] block mb-[8px]"
-            >
-              First Name <span className="text-[#8B2E2E]">*</span>
-            </label>
-            <input
-              type="text"
-              id="firstName"
-              name="firstName"
-              required
-              aria-invalid={errors.firstName ? 'true' : undefined}
-              aria-describedby={errors.firstName ? 'firstName-error' : undefined}
-              value={formData.firstName}
-              onChange={handleChange}
-              className={`${inputBase} ${errors.firstName ? inputError : ''}`}
-            />
-            {errors.firstName && (
-              <p id="firstName-error" role="alert" className="font-sans text-xs text-[#8B2E2E] mt-[6px] flex items-center gap-[4px]">
-                <AlertCircle size={12} className="shrink-0" />
-                {errors.firstName}
-              </p>
-            )}
-          </div>
-
-          {/* Last Name */}
-          <div className="mb-[24px]">
-            <label
-              htmlFor="lastName"
-              className="font-sans text-[13px] font-medium text-[#333333] tracking-[0.05em] block mb-[8px]"
-            >
-              Last Name <span className="text-[#8B2E2E]">*</span>
-            </label>
-            <input
-              type="text"
-              id="lastName"
-              name="lastName"
-              required
-              aria-invalid={errors.lastName ? 'true' : undefined}
-              aria-describedby={errors.lastName ? 'lastName-error' : undefined}
-              value={formData.lastName}
-              onChange={handleChange}
-              className={`${inputBase} ${errors.lastName ? inputError : ''}`}
-            />
-            {errors.lastName && (
-              <p id="lastName-error" role="alert" className="font-sans text-xs text-[#8B2E2E] mt-[6px] flex items-center gap-[4px]">
-                <AlertCircle size={12} className="shrink-0" />
-                {errors.lastName}
-              </p>
-            )}
-          </div>
         </div>
 
         {/* Email */}
@@ -540,158 +394,82 @@ export default function ConsultationForm() {
           )}
         </div>
 
-        {/* Phone */}
+        {/* Phone (Optional) */}
         <div className="mb-[24px]">
           <label
             htmlFor="phone"
-            className="font-sans text-[13px] font-medium text-[#333333] tracking-[0.05em] block mb-[8px]"
+            className="font-sans text-[13px] font-medium text-[#333333] tracking-[0.05em] block mb-[2px]"
           >
-            Phone Number <span className="text-[#8B2E2E]">*</span>
+            Phone Number
           </label>
+          <p className="font-sans text-[11px] text-[#5b6a71] mb-[8px]">Optional</p>
           <input
             type="tel"
             id="phone"
             name="phone"
-            required
             placeholder="(480) 944-0880"
-            aria-invalid={errors.phone ? 'true' : undefined}
-            aria-describedby={errors.phone ? 'phone-error' : undefined}
             value={formData.phone}
             onChange={(e) => {
               const formatted = formatPhone(e.target.value)
               setFormData((prev) => ({ ...prev, phone: formatted }))
-              if (errors.phone) setErrors((prev) => ({ ...prev, phone: undefined }))
             }}
-            className={`${inputBase} ${errors.phone ? inputError : ''}`}
+            className={inputBase}
           />
-          {errors.phone && (
-            <p id="phone-error" role="alert" className="font-sans text-xs text-[#8B2E2E] mt-[6px] flex items-center gap-[4px]">
-              <AlertCircle size={12} className="shrink-0" />
-              {errors.phone}
-            </p>
-          )}
         </div>
 
-        {/* Age Range */}
-        <div className="mb-[24px]">
-          <label
-            htmlFor="age"
-            className="font-sans text-[13px] font-medium text-[#333333] tracking-[0.05em] block mb-[8px]"
-          >
-            Age Range <span className="font-normal text-[#5b6a71]">(only if you feel it&apos;s applicable)</span>
-          </label>
-          <select
-            id="age"
-            name="age"
-            value={formData.age}
-            onChange={handleChange}
-            className={selectBase}
-            style={{ backgroundImage: chevronSvg }}
-          >
-            <option value="">Select a range</option>
-            {AGE_RANGES.map((range) => (
-              <option key={range} value={range}>
-                {range}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        {/* Financial Snapshot */}
-        <div className="mb-[24px]">
-          <label
-            htmlFor="assets"
-            className="font-sans text-[13px] font-medium text-[#333333] tracking-[0.05em] block mb-[2px]"
-          >
-            Financial Snapshot — Approximate Investable Assets{' '}
-            <span className="font-normal text-[#5b6a71]">(Optional)</span>
-          </label>
-          <p className="font-sans text-[12px] text-[#5b6a71] mb-[8px]">
-            Helpful for context, but feel free to skip if you&apos;d prefer to discuss live.
-          </p>
-          <select
-            id="assets"
-            name="assets"
-            value={formData.assets}
-            onChange={handleChange}
-            className={selectBase}
-            style={{ backgroundImage: chevronSvg }}
-          >
-            <option value="">Select a range</option>
-            {ASSET_RANGES.map((range) => (
-              <option key={range} value={range}>
-                {range}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        {/* Location */}
-        <div className="mb-[24px]">
-          <label
-            htmlFor="location"
-            className="font-sans text-[13px] font-medium text-[#333333] tracking-[0.05em] block mb-[8px]"
-          >
-            Location
-          </label>
-          <select
-            id="location"
-            name="location"
-            value={formData.location}
-            onChange={handleChange}
-            className={selectBase}
-            style={{ backgroundImage: chevronSvg }}
-          >
-            <option value="">Select your state</option>
-            {LOCATIONS.map((loc) => (
-              <option key={loc} value={loc}>
-                {loc}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        {/* Referral Source */}
+        {/* Referral Toggle */}
         <div className="mb-[24px]">
           <p className="font-sans text-[13px] font-medium text-[#333333] tracking-[0.05em] mb-[8px]">
-            How did you hear about us? <span className="font-normal text-[#5b6a71]">(Select all that apply)</span>
+            Were you referred by someone?
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-[8px]">
-            {REFERRAL_SOURCES.map((source) => (
-              <label
-                key={source}
-                className={`flex items-center gap-[10px] px-[14px] py-[10px] rounded-[6px] border cursor-pointer transition-all duration-200 ${
-                  formData.referralSources.includes(source)
-                    ? 'border-[#1d7682] bg-[#1d7682]/5'
-                    : 'border-[#E2E8F0] bg-white hover:border-[#1d7682]/40'
-                }`}
-              >
-                <input
-                  type="checkbox"
-                  checked={formData.referralSources.includes(source)}
-                  onChange={() => {
-                    setFormData((prev) => ({
-                      ...prev,
-                      referralSources: prev.referralSources.includes(source)
-                        ? prev.referralSources.filter((s) => s !== source)
-                        : [...prev.referralSources, source],
-                    }))
-                  }}
-                  className="accent-[#1d7682] w-4 h-4 shrink-0"
-                />
-                <span className="font-sans text-[13px] text-[#333333]">{source}</span>
-              </label>
-            ))}
+          <div className="flex gap-[8px]">
+            <button
+              type="button"
+              onClick={() => setFormData((prev) => ({ ...prev, wasReferred: true }))}
+              className={`px-[24px] py-[10px] rounded-full font-sans text-[13px] font-medium border-2 transition-all duration-200 ${
+                formData.wasReferred
+                  ? 'border-[#1d7682] bg-[#1d7682]/5 text-[#1d7682]'
+                  : 'border-[#E2E8F0] bg-white text-[#5b6a71] hover:border-[#1d7682]/40'
+              }`}
+            >
+              Yes
+            </button>
+            <button
+              type="button"
+              onClick={() => setFormData((prev) => ({ ...prev, wasReferred: false, referredBy: '' }))}
+              className={`px-[24px] py-[10px] rounded-full font-sans text-[13px] font-medium border-2 transition-all duration-200 ${
+                !formData.wasReferred
+                  ? 'border-[#1d7682] bg-[#1d7682]/5 text-[#1d7682]'
+                  : 'border-[#E2E8F0] bg-white text-[#5b6a71] hover:border-[#1d7682]/40'
+              }`}
+            >
+              No
+            </button>
           </div>
-          {formData.referralSources.includes('Other') && (
-            <input
-              type="text"
-              placeholder="Tell us more..."
-              value={formData.referralOther}
-              onChange={(e) => setFormData((prev) => ({ ...prev, referralOther: e.target.value }))}
-              className={`${inputBase} mt-[8px]`}
-            />
-          )}
+
+          {/* Animated referredBy field */}
+          <div
+            className={`grid transition-all duration-300 ease-in-out ${
+              formData.wasReferred ? 'grid-rows-[1fr] opacity-100 mt-[12px]' : 'grid-rows-[0fr] opacity-0'
+            }`}
+          >
+            <div className="overflow-hidden">
+              <label
+                htmlFor="referredBy"
+                className="font-sans text-[13px] font-medium text-[#333333] tracking-[0.05em] block mb-[8px]"
+              >
+                Who should we thank?
+              </label>
+              <input
+                type="text"
+                id="referredBy"
+                name="referredBy"
+                value={formData.referredBy}
+                onChange={handleChange}
+                className={inputBase}
+              />
+            </div>
+          </div>
         </div>
 
         {/* Honeypot — hidden from real users, catches bots */}
@@ -716,7 +494,7 @@ export default function ConsultationForm() {
             onClick={() => handleSubmit('meeting')}
             className="bg-gradient-to-b from-[#2a9dab] to-[#1d7682] text-[#F7F4EE] font-sans text-[15px] font-semibold py-[18px] px-[16px] rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:from-[#238a97] hover:to-[#155f69] hover:-translate-y-[2px] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_8px_24px_rgba(29,118,130,0.4)] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0"
           >
-            {submittingMode === 'meeting' ? 'Sending...' : 'Schedule a Virtual Meeting'}
+            {submittingMode === 'meeting' ? 'Sending...' : 'Request My Free Conversation'}
           </button>
           <button
             type="button"
@@ -727,6 +505,11 @@ export default function ConsultationForm() {
             {submittingMode === 'callback' ? 'Sending...' : 'Request a Call From Jay'}
           </button>
         </div>
+
+        {/* Reassurance line */}
+        <p className="font-sans text-[12px] text-[#5b6a71] text-center mt-[16px]">
+          No obligation. No sales pitch. Just a real conversation about your goals.
+        </p>
       </form>
 
       {/* Compliance disclaimer */}

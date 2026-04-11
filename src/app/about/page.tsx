@@ -300,6 +300,39 @@ export default function AboutPage() {
   </div>
  </section>
 
+ {/* AREAS WE SERVE */}
+ <section className="bg-[#FAFAF8] py-16 md:py-24">
+  <div className="max-w-7xl mx-auto px-6">
+  <AnimateOnScroll>
+  <h2 className="text-3xl md:text-4xl font-bold text-[#333333] text-center mb-4">
+   Areas We Serve
+  </h2>
+  <p className="text-lg text-[#5b6a71] text-center max-w-3xl mx-auto mb-12">
+   Based in Arizona, we work with families and professionals across the country. Here are some of the communities we serve most often.
+  </p>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+   <Link href="/scottsdale" className="bg-white border border-[#E8E6E1] rounded-[12px] p-6 hover:shadow-md transition-shadow text-center">
+   <h3 className="text-lg font-bold text-[#333333] mb-1">Scottsdale, AZ</h3>
+   <p className="text-sm text-[#5b6a71]">Our home base</p>
+   </Link>
+   <Link href="/las-vegas" className="bg-white border border-[#E8E6E1] rounded-[12px] p-6 hover:shadow-md transition-shadow text-center">
+   <h3 className="text-lg font-bold text-[#333333] mb-1">Las Vegas, NV</h3>
+   <p className="text-sm text-[#5b6a71]">Tax-friendly planning</p>
+   </Link>
+   <Link href="/california" className="bg-white border border-[#E8E6E1] rounded-[12px] p-6 hover:shadow-md transition-shadow text-center">
+   <h3 className="text-lg font-bold text-[#333333] mb-1">California</h3>
+   <p className="text-sm text-[#5b6a71]">Silicon Valley &amp; beyond</p>
+   </Link>
+   <Link href="/areas-we-serve" className="bg-white border border-[#E8E6E1] rounded-[12px] p-6 hover:shadow-md transition-shadow text-center">
+   <h3 className="text-lg font-bold text-[#333333] mb-1">Nationwide</h3>
+   <p className="text-sm text-[#5b6a71]">See all areas we serve</p>
+   </Link>
+  </div>
+  </AnimateOnScroll>
+  </div>
+ </section>
+
  {/* 10. FINAL CTA */}
  <section className="bg-[#333333] py-16 md:py-24">
   <div className="max-w-4xl mx-auto px-6 text-center">

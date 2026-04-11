@@ -248,12 +248,9 @@ function buildTaxSavingsReport(data: LeadPayload): string {
 }
 
 function buildConsultationReport(data: LeadPayload): string {
-  const topics = data.topics as string[] | undefined
-  const topicOther = data.topicOther as string | undefined
-  const referralSources = data.referralSources as string[] | undefined
-  const referralOther = data.referralOther as string | undefined
   const callbackDays = data.callbackDays as string[] | undefined
   const callbackTimeOfDay = data.callbackTimeOfDay as string | undefined
+  const referredBy = data.referredBy as string | undefined
   const isCallback = data.source === 'callback-request' || data.contactPreference === 'callback'
 
   let html = ''
@@ -268,25 +265,10 @@ function buildConsultationReport(data: LeadPayload): string {
     </div>`
   }
 
-  // Topics
-  if (topics && topics.length > 0) {
-    const topicItems = topics.map(t =>
-      `<div style="display:inline-block;background:${S.teal}10;border:1px solid ${S.teal}30;color:${S.dark};padding:6px 12px;border-radius:16px;font-size:13px;margin:3px;">${t}</div>`
-    ).join('')
-    html += `
-    <h2 style="font-size:18px;color:${S.teal};margin:24px 0 12px;">What's on Their Mind</h2>
-    <div style="margin-bottom:16px;">${topicItems}</div>`
-    if (topicOther) {
-      html += `<div style="background:${S.bg};border-left:4px solid ${S.teal};padding:12px 16px;border-radius:0 8px 8px 0;margin-bottom:16px;font-size:14px;color:${S.dark};"><strong>Other:</strong> ${topicOther}</div>`
-    }
-  }
-
-  // Additional details table
+  // Details table
   const fields: [string, unknown][] = [
-    ['Age Range', data.age],
-    ['Investable Assets', data.assets],
-    ['Location', data.location],
     ['Contact Preference', isCallback ? 'Callback' : data.contactPreference === 'meeting' ? 'Virtual Meeting' : data.contactPreference],
+    ['Referred by', referredBy],
   ]
   const rows = fields
     .filter(([, v]) => v)
@@ -295,20 +277,8 @@ function buildConsultationReport(data: LeadPayload): string {
 
   if (rows) {
     html += `
-    <h2 style="font-size:18px;color:${S.teal};margin:24px 0 12px;">Details</h2>
-    <div style="background:${S.bg};border:1px solid ${S.lightGray};border-radius:8px;padding:16px;">
-      <table style="width:100%;font-size:14px;">${rows}</table>
-    </div>`
-  }
-
-  // Referral sources
-  if (referralSources && referralSources.length > 0) {
-    const sourceList = referralSources.join(', ') + (referralOther ? ` (${referralOther})` : '')
-    html += `
     <div style="background:${S.bg};border:1px solid ${S.lightGray};border-radius:8px;padding:16px;margin-top:16px;">
-      <table style="width:100%;font-size:14px;">
-        <tr><td style="padding:6px 0;color:${S.gray};width:140px;">How They Found Us</td><td style="padding:6px 0;color:${S.dark};font-weight:500;">${sourceList}</td></tr>
-      </table>
+      <table style="width:100%;font-size:14px;">${rows}</table>
     </div>`
   }
 
@@ -350,9 +320,10 @@ function buildEmailHtml(data: LeadPayload): string {
       <div style="background:${S.bg};border:1px solid ${S.lightGray};border-radius:8px;padding:20px;margin-bottom:20px;">
         <h2 style="font-size:14px;color:${S.teal};margin:0 0 12px;text-transform:uppercase;letter-spacing:0.05em;">Contact Information</h2>
         <table style="width:100%;font-size:15px;">
-          <tr><td style="padding:6px 0;color:${S.gray};width:80px;">Name</td><td style="padding:6px 0;font-weight:600;font-size:17px;">${data.firstName || ''} ${data.lastName || ''}</td></tr>
+          <tr><td style="padding:6px 0;color:${S.gray};width:100px;">Name</td><td style="padding:6px 0;font-weight:600;font-size:17px;">${[data.firstName, data.lastName].filter(Boolean).join(' ') || '—'}</td></tr>
           <tr><td style="padding:6px 0;color:${S.gray};">Email</td><td style="padding:6px 0;"><a href="mailto:${data.email}" style="color:${S.teal};font-weight:500;">${data.email || '—'}</a></td></tr>
-          <tr><td style="padding:6px 0;color:${S.gray};">Phone</td><td style="padding:6px 0;"><a href="tel:${data.phone}" style="color:${S.teal};font-weight:500;">${data.phone || '—'}</a></td></tr>
+          <tr><td style="padding:6px 0;color:${S.gray};">Phone</td><td style="padding:6px 0;"><a href="tel:${data.phone}" style="color:${S.teal};font-weight:500;">${data.phone || '—'}</a></td></tr>${data.referredBy ? `
+          <tr><td style="padding:6px 0;color:${S.gray};">Referred by</td><td style="padding:6px 0;font-weight:500;">${data.referredBy}</td></tr>` : ''}
         </table>
       </div>
 

@@ -43,7 +43,7 @@ const navItems: NavItem[] = [
     ],
   },
   {
-    label: "Who We Serve",
+    label: "Who I Work With",
     href: "#",
     children: [
       { label: "Tech & Semiconductor", href: "/semiconductor-wealth-management-arizona" },
@@ -56,17 +56,7 @@ const navItems: NavItem[] = [
     ],
   },
   {
-    label: "Locations",
-    href: "#",
-    children: [
-      { label: "Scottsdale", href: "/scottsdale" },
-      { label: "Las Vegas", href: "/las-vegas" },
-      { label: "California", href: "/california" },
-      { label: "Areas We Serve", href: "/areas-we-serve" },
-    ],
-  },
-  {
-    label: "Tools",
+    label: "Tools & Calculators",
     href: "/tools",
     children: [
       { label: "All Tools", href: "/tools" },
