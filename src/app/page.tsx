@@ -173,19 +173,57 @@ export default function Home() {
   </p>
 
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-   {/* Tech & Engineering Professionals */}
+   {/* Families, Individuals & Life Transitions */}
    <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
    <div className="flex items-center mb-4">
-   <Gauge className="w-6 h-6 text-[#1d7682] mr-3" />
+   <Heart className="w-6 h-6 text-[#1d7682] mr-3" />
    <h3 className="font-serif text-2xl font-bold text-[#333333]">
-    Tech &amp; Engineering
+    Families &amp; Life Transitions
    </h3>
    </div>
    <p className="text-[#5b6a71] mb-4">
-   If you work at a company like TSMC, Intel, NVIDIA, or Apple and your pay stub looks more like a spreadsheet — RSUs, ESPPs, relocation bonuses — I can help you make sense of it all.
+   Divorce, the loss of a spouse, inheritance, retirement — life&apos;s biggest transitions come with financial decisions you shouldn&apos;t have to navigate alone. I help you protect what matters and move forward with confidence.
    </p>
    <Link
-   href="/semiconductor-wealth-management-arizona"
+   href="/families-life-transitions-wealth-management"
+   className="text-[#1d7682] font-semibold hover:underline inline-flex items-center gap-2"
+   >
+   Learn more →
+   </Link>
+   </div>
+
+   {/* Telecommunications & Utilities */}
+   <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+   <div className="flex items-center mb-4">
+   <Phone className="w-6 h-6 text-[#1d7682] mr-3" />
+   <h3 className="font-serif text-2xl font-bold text-[#333333]">
+    Telecommunications &amp; Utilities
+   </h3>
+   </div>
+   <p className="text-[#5b6a71] mb-4">
+   If you&apos;ve built a career at AT&amp;T, Verizon, T-Mobile, SRP, or PG&amp;E, your benefits package is more complex than most people realize — pensions, deferred comp, employer stock, union considerations. I help you coordinate all of it.
+   </p>
+   <Link
+   href="/telecommunications-utilities-wealth-management"
+   className="text-[#1d7682] font-semibold hover:underline inline-flex items-center gap-2"
+   >
+   Learn more →
+   </Link>
+   </div>
+
+   {/* Institutional & Non-Profit */}
+   <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+   <div className="flex items-center mb-4">
+   <Building2 className="w-6 h-6 text-[#1d7682] mr-3" />
+   <h3 className="font-serif text-2xl font-bold text-[#333333]">
+    Institutional &amp; Non-Profit
+   </h3>
+   </div>
+   <p className="text-[#5b6a71] mb-4">
+   Endowments, foundation assets, and institutional portfolios deserve the same fiduciary care I give individuals. I help charitable organizations and institutions invest with purpose and accountability.
+   </p>
+   <Link
+   href="/institutional-non-profit-wealth-management"
    className="text-[#1d7682] font-semibold hover:underline inline-flex items-center gap-2"
    >
    Learn more →
@@ -230,57 +268,19 @@ export default function Home() {
    </Link>
    </div>
 
-   {/* Telecommunications & Utilities */}
+   {/* Tech & Engineering Professionals */}
    <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
    <div className="flex items-center mb-4">
-   <Phone className="w-6 h-6 text-[#1d7682] mr-3" />
+   <Gauge className="w-6 h-6 text-[#1d7682] mr-3" />
    <h3 className="font-serif text-2xl font-bold text-[#333333]">
-    Telecommunications &amp; Utilities
+    Tech &amp; Engineering
    </h3>
    </div>
    <p className="text-[#5b6a71] mb-4">
-   If you&apos;ve built a career at AT&amp;T, Verizon, T-Mobile, SRP, or PG&amp;E, your benefits package is more complex than most people realize — pensions, deferred comp, employer stock, union considerations. I help you coordinate all of it.
+   If you work at a company like TSMC, Intel, NVIDIA, or Apple and your pay stub looks more like a spreadsheet — RSUs, ESPPs, relocation bonuses — I can help you make sense of it all.
    </p>
    <Link
-   href="/telecommunications-utilities-wealth-management"
-   className="text-[#1d7682] font-semibold hover:underline inline-flex items-center gap-2"
-   >
-   Learn more →
-   </Link>
-   </div>
-
-   {/* Families, Individuals & Life Transitions */}
-   <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-   <div className="flex items-center mb-4">
-   <Heart className="w-6 h-6 text-[#1d7682] mr-3" />
-   <h3 className="font-serif text-2xl font-bold text-[#333333]">
-    Families &amp; Life Transitions
-   </h3>
-   </div>
-   <p className="text-[#5b6a71] mb-4">
-   Divorce, the loss of a spouse, inheritance, retirement — life&apos;s biggest transitions come with financial decisions you shouldn&apos;t have to navigate alone. I help you protect what matters and move forward with confidence.
-   </p>
-   <Link
-   href="/families-life-transitions-wealth-management"
-   className="text-[#1d7682] font-semibold hover:underline inline-flex items-center gap-2"
-   >
-   Learn more →
-   </Link>
-   </div>
-
-   {/* Institutional & Non-Profit */}
-   <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-   <div className="flex items-center mb-4">
-   <Building2 className="w-6 h-6 text-[#1d7682] mr-3" />
-   <h3 className="font-serif text-2xl font-bold text-[#333333]">
-    Institutional &amp; Non-Profit
-   </h3>
-   </div>
-   <p className="text-[#5b6a71] mb-4">
-   Endowments, foundation assets, and institutional portfolios deserve the same fiduciary care I give individuals. I help charitable organizations and institutions invest with purpose and accountability.
-   </p>
-   <Link
-   href="/institutional-non-profit-wealth-management"
+   href="/semiconductor-wealth-management-arizona"
    className="text-[#1d7682] font-semibold hover:underline inline-flex items-center gap-2"
    >
    Learn more →
