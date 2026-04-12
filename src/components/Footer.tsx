@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FartherIcon } from "./FartherLogo";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -23,32 +23,14 @@ export default function Footer() {
         >
           {/* Column 1: Logo + Mission */}
           <div>
-            <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "center", gap: 12 }}>
-              <FartherIcon variant="cream" size={36} />
-              <div>
-                <div
-                  style={{
-                    fontFamily: "var(--font-serif), serif",
-                    fontSize: 18,
-                    fontWeight: 600,
-                    color: "#F7F4EE",
-                    lineHeight: 1.3,
-                  }}
-                >
-                  Advisor Jay
-                </div>
-                <div
-                  style={{
-                    fontFamily: "var(--font-serif), serif",
-                    fontSize: 18,
-                    fontWeight: 400,
-                    color: "#1d7682",
-                    lineHeight: 1.3,
-                  }}
-                >
-                  at Farther
-                </div>
-              </div>
+            <Link href="/" style={{ textDecoration: "none", display: "block", marginLeft: -6 }}>
+              <Image
+                src="/Photos/Farther_Wordmark_RGB_Cream.png"
+                alt="Farther"
+                width={140}
+                height={36}
+                style={{ objectFit: "contain", display: "block" }}
+              />
             </Link>
 
             <p
