@@ -173,6 +173,26 @@ Write content that stays relevant for 12+ months. Date-specific content
 (e.g., "2026 limits") gets updated annually — see TOOLS-CONVENTION.md for
 the annual update checklist.
 
+### Inclusive language when naming employers
+On **service pages, location pages, and sector pages** — any page that describes who
+Jay serves broadly — always use "professionals" when pairing a company name with a
+role description. Never use narrow job titles like "engineers", "physicians", "executives",
+or "doctors" next to a specific employer name on these pages. This ensures we don't
+exclude anyone at that organization.
+
+- ✅ "TSMC professionals" / "Banner Health professionals" / "Honeywell professionals"
+- ❌ "TSMC engineers" / "Banner Health physicians" / "Honeywell executives"
+
+**Exception — Insight articles and guides**: Articles that target a specific audience
+with specific content (e.g., "TSMC RSU Tax Planning for Arizona Engineers" or
+"Banner Health Physician Tax Strategies") may use role-specific titles because the
+content genuinely applies to that role. The inclusive language rule is about how we
+describe Jay's *audience* on pages that position his services broadly.
+
+**Exception — Service descriptions**: Describing a type of service is fine even on
+broad pages (e.g., "equity compensation planning", "physician tax strategies").
+The rule applies to how we refer to *people*, not *services*.
+
 ### Compliance
 - Every calculator includes a disclaimer (see TOOLS-CONVENTION.md)
 - No performance promises or guarantees

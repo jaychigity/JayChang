@@ -5,7 +5,7 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
  title: 'Tech Executive Wealth Management | NVIDIA & Apple Equity Planning | Advisor Jay, Farther',
- description: 'Wealth management for NVIDIA and Apple employees and executives. We help with seven-figure RSU concentration, ESPP optimization, quarterly vesting tax planning, and Deferred Compensation strategy for tech professionals in Arizona and California.',
+ description: 'Wealth management for NVIDIA and Apple professionals. We help with seven-figure RSU concentration, ESPP optimization, quarterly vesting tax planning, and Deferred Compensation strategy for tech professionals in Arizona and California.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/tech-executive-wealth-management',
  },
@@ -18,7 +18,7 @@ export default function TechExecutivePage() {
  <section className="relative w-full bg-[#F7F4EE] py-16 md:py-24">
   <Image
   src="/Photos/Semiconductor-1.png"
-  alt="Technology executives"
+  alt="Technology professionals"
   fill
   className="object-cover opacity-20"
   priority
@@ -155,7 +155,7 @@ export default function TechExecutivePage() {
    NVIDIA and Apple Built Your Wealth. We&apos;re Here to Help You Keep It.
    </h2>
    <p className="text-lg text-[#5b6a71] max-w-2xl mx-auto">
-   Jay Chang and our team specialize in helping tech executives and high-earners in Arizona and California make smart decisions with their equity comp. Let&apos;s sit down and look at your situation together.
+   Jay Chang and our team specialize in helping tech professionals in Arizona and California make smart decisions with their equity comp. Let&apos;s sit down and look at your situation together.
    </p>
    <div className="flex justify-center pt-4">
    <Button href="/schedule-consultation" variant="primary">

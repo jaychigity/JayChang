@@ -70,7 +70,7 @@ export default function ChandlerFinancialAdvisor() {
    Financial Advisor in Chandler, Arizona - For Intel and Microchip Technology Employees
    </h1>
    <p className="font-sans text-lg md:text-xl text-[#5b6a71] mb-8 max-w-3xl mx-auto leading-relaxed">
-   Chandler is the semiconductor heart of the Southwest - Intel&apos;s massive campus, Microchip Technology&apos;s headquarters, and thousands of engineers and leaders who&apos;ve built real wealth through equity compensation. If that&apos;s you, we&apos;d love to help you make the most of it.
+   Chandler is the semiconductor heart of the Southwest - Intel&apos;s massive campus, Microchip Technology&apos;s headquarters, and thousands of professionals who&apos;ve built real wealth through equity compensation. If that&apos;s you, we&apos;d love to help you make the most of it.
    </p>
    <Button
    href="/schedule-consultation"

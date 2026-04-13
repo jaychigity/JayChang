@@ -6,7 +6,7 @@ import Button from '@/components/Button'
 export const metadata: Metadata = {
  title: 'Physician Wealth Planning & Tax Strategy | Arizona & Nevada | Banner Health Advisors',
  description:
- 'Tax planning, asset protection, and retirement strategies for physicians and surgeons earning $400K-$800K+ across Arizona and Nevada. Wealth advisor for doctors at Banner Health and Mayo Clinic.',
+ 'Tax planning, asset protection, and retirement strategies for physicians and surgeons earning $400K-$800K+ across Arizona and Nevada. Wealth advisor for Banner Health and Mayo Clinic professionals.',
  robots: { index: false, follow: false },
 }
 
@@ -40,7 +40,7 @@ export default function HealthcarePhysiciansLP() {
   </AnimateOnScroll>
   <AnimateOnScroll delay={200}>
    <p className="font-sans text-[17px] text-[#F7F4EE]/90 max-w-[620px] mx-auto mt-6 leading-relaxed">
-   If you&apos;re a physician or surgeon at Banner Health, Mayo Clinic Scottsdale, or another health system in Arizona or Nevada, you know this story: great income, zero time, and a financial life that&apos;s way more complicated than it should be. You don&apos;t need another person selling you something. You need a partner who understands doctor finances and sits on the same side of the table as you.
+   If you&apos;re a healthcare professional at Banner Health, Mayo Clinic Scottsdale, or another health system in Arizona or Nevada, you know this story: great income, zero time, and a financial life that&apos;s way more complicated than it should be. You don&apos;t need another person selling you something. You need a partner who understands doctor finances and sits on the same side of the table as you.
    </p>
   </AnimateOnScroll>
   <AnimateOnScroll delay={300}>

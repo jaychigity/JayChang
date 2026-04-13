@@ -5,7 +5,7 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
  title: 'Intel Employee Financial Planning in Chandler | RSU, SERPLUS & 401(k) Strategy | Jay Chang',
- description: 'Specialized financial planning for Intel engineers and leaders in Chandler. SERPLUS guidance, mega backdoor Roth, RSU diversification, and tax strategy from a fiduciary advisor who knows Intel&apos;s benefits inside and out.',
+ description: 'Specialized financial planning for Intel professionals in Chandler. SERPLUS guidance, mega backdoor Roth, RSU diversification, and tax strategy from a fiduciary advisor who knows Intel&apos;s benefits inside and out.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/intel-financial-advisor-chandler-arizona',
  },
@@ -73,7 +73,7 @@ export default function IntelFinancialAdvisor() {
   You Chose Intel for a Reason. Let&apos;s Make Sure Your Money Works as Hard as You Do.
   </h1>
   <p className="text-xl text-[#5b6a71] font-sans mb-10 leading-relaxed">
-  SERPLUS, mega backdoor Roth, RSU vesting schedules, concentrated stock positions - Intel hands you some of the most powerful financial tools in the semiconductor world. But powerful tools only help if you actually know how to use them together. That&apos;s where our team comes in. Jay Chang works side by side with Intel engineers and leaders in Chandler to turn all that complexity into a plan that actually makes sense.
+  SERPLUS, mega backdoor Roth, RSU vesting schedules, concentrated stock positions - Intel hands you some of the most powerful financial tools in the semiconductor world. But powerful tools only help if you actually know how to use them together. That&apos;s where our team comes in. Jay Chang works side by side with Intel professionals in Chandler to turn all that complexity into a plan that actually makes sense.
   </p>
   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
   <Button href="/schedule-consultation" variant="primary">Let&apos;s Talk About Your Intel Benefits</Button>
@@ -241,7 +241,7 @@ export default function IntelFinancialAdvisor() {
    Intel&apos;s 401(k) supports after-tax contributions and in-plan Roth conversions - that&apos;s the &ldquo;mega backdoor Roth&rdquo; strategy. For 2026, employees under 50 could put up to $72,000 total into their 401(k) and convert the after-tax piece to Roth for tax-free growth. Forever.
   </p>
   <p className="text-lg text-[#5b6a71] font-sans mb-8 leading-relaxed">
-   Think about what that means for a senior Intel engineer in their 40s earning $250,000. Over a career, this strategy can create hundreds of thousands of dollars in additional tax-free retirement savings - money that grows completely outside the reach of future tax rates. That&apos;s a big deal.
+   Think about what that means for a senior Intel professional in their 40s earning $250,000. Over a career, this strategy can create hundreds of thousands of dollars in additional tax-free retirement savings - money that grows completely outside the reach of future tax rates. That&apos;s a big deal.
   </p>
   <p className="text-lg text-[#5b6a71] font-sans">
    We&apos;ll show you exactly how to set this up, how it coordinates with your SERPLUS deferrals, and how to squeeze every drop of tax-advantaged savings out of every plan Intel offers.
@@ -336,7 +336,7 @@ export default function IntelFinancialAdvisor() {
   <section className="bg-[#F7F4EE] py-20 px-6">
   <div className="max-w-4xl mx-auto text-center">
   <h2 className="text-4xl font-serif font-bold text-[#333333] mb-6">
-   You&apos;re an Engineer. You Like Things That Work. So Do We.
+   You Build Things That Work. So Do We.
   </h2>
   <p className="text-xl text-[#5b6a71] font-sans mb-10 leading-relaxed">
    At Intel, the best outcomes go to people who plan ahead - not the ones who wing it. Same goes for your finances. Whether you&apos;re managing a SERPLUS balance, figuring out a concentrated stock position, or navigating a cross-state move, our team has the know-how and the tools to help you build a plan you can actually follow through on.

@@ -5,14 +5,14 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
  title: 'NVIDIA Employee Financial Advisor | RSU, ESPP & Equity Concentration Planning | Jay Chang',
- description: 'Fiduciary wealth planning for NVIDIA engineers in Phoenix, Santa Clara, and beyond. Manage your NVIDIA RSU concentration, 2-year ESPP lookback, quarterly vesting tax events, and seven-figure equity positions.',
+ description: 'Fiduciary wealth planning for NVIDIA professionals in Phoenix, Santa Clara, and beyond. Manage your NVIDIA RSU concentration, 2-year ESPP lookback, quarterly vesting tax events, and seven-figure equity positions.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/nvidia-financial-advisor-phoenix-santa-clara',
  },
  robots: 'index, follow',
  openGraph: {
  title: 'NVIDIA Employee Financial Advisor | RSU, ESPP & Equity Concentration Planning',
- description: 'Fiduciary wealth planning for NVIDIA engineers in Phoenix, Santa Clara, and beyond.',
+ description: 'Fiduciary wealth planning for NVIDIA professionals in Phoenix, Santa Clara, and beyond.',
  type: 'website',
  url: 'https://www.PWM-Farther.com/nvidia-financial-advisor-phoenix-santa-clara',
  },
@@ -91,7 +91,7 @@ export default function NVIDIAAdvisor() {
    NVIDIA Changed Your Life. Let&apos;s Make Sure That Wealth Lasts.
    </h1>
    <p className="font-sans text-lg md:text-xl text-[#5b6a71] mb-8 max-w-3xl mx-auto leading-relaxed">
-   If you work at NVIDIA, your equity might be the single biggest financial event of your career - maybe your life. Jay Chang and our team help NVIDIA engineers and leaders build a real strategy to diversify, protect, and grow the wealth you&apos;ve earned, without handing a fortune to the IRS along the way.
+   If you work at NVIDIA, your equity might be the single biggest financial event of your career - maybe your life. Jay Chang and our team help NVIDIA professionals build a real strategy to diversify, protect, and grow the wealth you&apos;ve earned, without handing a fortune to the IRS along the way.
    </p>
    <Button
    href="/schedule-consultation"
@@ -114,7 +114,7 @@ export default function NVIDIAAdvisor() {
    </h2>
    <div className="prose prose-lg max-w-none text-[#5b6a71] font-sans space-y-4">
    <p>
-   NVIDIA&apos;s equity compensation has been life-changing for thousands of engineers and leaders. But here&apos;s the part that keeps us up at night for our clients: that wealth comes with hidden costs - concentration risk and tax complexity that most people don&apos;t fully grasp until they&apos;re staring at a $300K+ tax bill in April.
+   NVIDIA&apos;s equity compensation has been life-changing for thousands of professionals. But here&apos;s the part that keeps us up at night for our clients: that wealth comes with hidden costs - concentration risk and tax complexity that most people don&apos;t fully grasp until they&apos;re staring at a $300K+ tax bill in April.
    </p>
    <p>
    Here&apos;s what&apos;s really going on: NVIDIA RSUs vest <strong>quarterly</strong>. That means <strong>12+ taxable events every single year</strong>. Each vesting triggers ordinary income tax on the fair market value, plus FICA taxes on supplemental income. The company withholds 22%. But if you&apos;re earning in the $300K to $500K+ range, 22% is nowhere near enough.

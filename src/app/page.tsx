@@ -258,7 +258,7 @@ export default function Home() {
    </h3>
    </div>
    <p className="text-[#5b6a71] mb-4">
-   High income is great — but it comes with complexity. Whether you&apos;re a physician at Banner Health, running your own business, or simply want a financial partner who listens, I&apos;m here.
+   High income is great — but it comes with complexity. Whether you&apos;re a healthcare professional at Banner Health, running your own business, or simply want a financial partner who listens, I&apos;m here.
    </p>
    <Link
    href="/physician-executive-wealth-management-phoenix-scottsdale"

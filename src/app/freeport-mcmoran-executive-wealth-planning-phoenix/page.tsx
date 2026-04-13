@@ -5,7 +5,7 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
  title: 'Freeport-McMoRan Executive Wealth Management in Phoenix | Equity & Commodity Planning | Jay Chang',
- description: 'Wealth management for Freeport-McMoRan executives and senior engineers in Phoenix. Manage commodity-linked equity, RSU diversification, profit sharing, and executive compensation planning with a fiduciary advisor.',
+ description: 'Wealth management for Freeport-McMoRan professionals in Phoenix. Manage commodity-linked equity, RSU diversification, profit sharing, and executive compensation planning with a fiduciary advisor.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/freeport-mcmoran-executive-wealth-planning-phoenix',
  },
@@ -34,7 +34,7 @@ export default function FCXExecutiveWealthPage() {
    Freeport-McMoRan Executive Wealth Planning
    </p>
    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-   Freeport-McMoRan Executives: Your Compensation Moves With Copper Prices. Your Wealth Strategy Shouldn&apos;t.
+   Freeport-McMoRan Professionals: Your Compensation Moves With Copper Prices. Your Wealth Strategy Shouldn&apos;t.
    </h1>
    <p className="text-lg sm:text-xl text-slate-200 leading-relaxed">
    FCX&apos;s executive pay is tied to commodity cycles - copper prices, production metrics, and global demand. Jay Chang helps Freeport professionals build a financial strategy that creates stability and diversification regardless of where copper trades next quarter.
@@ -43,7 +43,7 @@ export default function FCXExecutiveWealthPage() {
    <Button
    href={hubspotCTA}
    variant="primary"
-   >Schedule a Freeport Executive Strategy Call</Button>
+   >Schedule a Freeport Strategy Call with Jay</Button>
    </div>
   </div>
   </AnimateOnScroll>
@@ -127,7 +127,7 @@ export default function FCXExecutiveWealthPage() {
    </div>
 
    <p className="text-lg text-slate-700 leading-relaxed">
-   Jay builds systematic diversification strategies that acknowledge the reality of commodity cycles while decoupling your personal wealth from pure FCX/copper correlation. This isn&apos;t market timing. It&apos;s prudent concentration management for executives whose income is already commodity-exposed.
+   Jay builds systematic diversification strategies that acknowledge the reality of commodity cycles while decoupling your personal wealth from pure FCX/copper correlation. This isn&apos;t market timing. It&apos;s prudent concentration management for professionals whose income is already commodity-exposed.
    </p>
    </div>
   </div>
@@ -144,7 +144,7 @@ export default function FCXExecutiveWealthPage() {
    Ready to Build a Diversification Strategy Built for Commodity Cycles?
    </h3>
    <p className="text-slate-200 text-lg max-w-2xl mx-auto">
-   Schedule a confidential strategy call with Jay Chang. We&apos;ll review your compensation structure, equity concentration, and create a plan tailored to FCX executive dynamics.
+   Schedule a confidential strategy call with Jay Chang. We&apos;ll review your compensation structure, equity concentration, and create a plan tailored to FCX compensation dynamics.
    </p>
    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
    <Button
@@ -160,7 +160,7 @@ export default function FCXExecutiveWealthPage() {
   <AnimateOnScroll>
    <div className="border-t border-b border-slate-200 py-8 space-y-4">
    <p className="text-center text-sm font-semibold uppercase tracking-widest text-slate-600">
-   Why FCX Executives Choose Jay Chang
+   Why FCX Professionals Choose Jay Chang
    </p>
    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
    <div>
@@ -188,7 +188,7 @@ export default function FCXExecutiveWealthPage() {
   <AnimateOnScroll>
   <div className="space-y-8">
    <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
-   As an FCX Executive, When Can You Actually Sell? And How?
+   As an FCX Insider, When Can You Actually Sell? And How?
    </h2>
 
    <div className="space-y-6">
@@ -245,14 +245,14 @@ export default function FCXExecutiveWealthPage() {
    </h2>
 
    <p className="text-lg text-slate-200 max-w-2xl mx-auto">
-   Fiduciary wealth planning tailored to FCX executives. Commodity-aware diversification. Compliance-coordinated 10b5-1 plans. Confidential. Discrete. Built for commodity-industry leaders.
+   Fiduciary wealth planning tailored to FCX professionals. Commodity-aware diversification. Compliance-coordinated 10b5-1 plans. Confidential. Discrete. Built for Freeport-McMoRan professionals.
    </p>
 
    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
    <Button
    href={hubspotCTA}
    variant="primary"
-   >Schedule Your FCX Executive Strategy Call</Button>
+   >Schedule Your FCX Strategy Call with Jay</Button>
    </div>
   </div>
   </AnimateOnScroll>
@@ -265,10 +265,10 @@ export default function FCXExecutiveWealthPage() {
   <AnimateOnScroll>
   <div className="text-center space-y-4">
    <p className="text-sm font-semibold uppercase tracking-widest text-slate-600">
-   Trusted by Executives Across Commodity Industries
+   Trusted by Professionals Across Commodity Industries
    </p>
    <p className="text-slate-700 max-w-2xl mx-auto">
-   Jay Chang is a fiduciary advisor committed to confidential, sophisticated wealth planning for executives navigating commodity-cycle compensation. Every strategy is built with SEC compliance and corporate counsel coordination in mind.
+   Jay Chang is a fiduciary advisor committed to confidential, sophisticated wealth planning for professionals navigating commodity-cycle compensation. Every strategy is built with SEC compliance and corporate counsel coordination in mind.
    </p>
    <div className="pt-6 flex flex-col sm:flex-row gap-6 justify-center text-slate-600 text-sm">
    <a href={hubspotCTA} className="text-teal-600 hover:text-teal-700 font-semibold">

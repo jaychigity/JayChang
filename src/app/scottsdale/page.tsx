@@ -179,7 +179,7 @@ const specializedSections = [
   icon: Stethoscope,
   title: 'Healthcare & Physicians',
   headline: 'You Take Care of Everyone Else. Let Us Help Take Care of Your Finances.',
-  body: 'Banner Health and Mayo Clinic physicians earning $400K-$800K+ deal with a real contradiction: great income, but barely any time to manage it - plus complicated taxes, student loan debt, and malpractice risk on top of it all. We sit down with you and build a plan that is as thorough and thoughtful as the care you give your patients.',
+  body: 'Healthcare professionals at Banner Health and Mayo Clinic earning $400K-$800K+ deal with a real contradiction: great income, but barely any time to manage it - plus complicated taxes, benefit complexity, and career demands on top of it all. We sit down with you and build a plan that is as thorough and thoughtful as the work you do every day.',
   services: [
    'Physician Income Tax Planning',
    'Asset Protection Strategies',
@@ -205,7 +205,7 @@ const specializedSections = [
   icon: DollarSign,
   title: 'Mining & Commodities',
   headline: 'Commodity Prices Go Up and Down. Your Financial Plan Shouldn\'t.',
-  body: 'Freeport-McMoRan executives and senior engineers know what it is like to have income that swings with copper prices. When your paycheck is tied to commodity cycles, you need a financial plan that can handle the ups and downs without breaking. That is exactly what we build together.',
+  body: 'Freeport-McMoRan professionals know what it is like to have income that swings with copper prices. When your paycheck is tied to commodity cycles, you need a financial plan that can handle the ups and downs without breaking. That is exactly what we build together.',
   services: [
    'Cyclical Industry Equity Strategy',
    'Executive Benefits Audit',
@@ -304,7 +304,7 @@ export default function ScottsdalePage() {
       <AnimateOnScroll delay={200}>
        <div className="font-sans text-base text-[#333333] leading-[1.7] space-y-5">
         <p>
-         Arizona&apos;s economy is booming - semiconductors, aerospace, world-class healthcare. If you&apos;re a senior engineer at TSMC or Intel, a program director at Honeywell or Raytheon, or a physician at Banner Health, your compensation is anything but simple. Stock grants, RSU vesting schedules, deferred comp, multi-state tax issues - it adds up fast. You deserve a financial advisor who gets the nuances and won&apos;t waste your time asking what an RSU is.
+         Arizona&apos;s economy is booming - semiconductors, aerospace, world-class healthcare. If you&apos;re a professional at TSMC or Intel, at Honeywell or Raytheon, or at Banner Health, your compensation is anything but simple. Stock grants, RSU vesting schedules, deferred comp, multi-state tax issues - it adds up fast. You deserve a financial advisor who gets the nuances and won&apos;t waste your time asking what an RSU is.
         </p>
         <p>
          Jay Chang and our team work exclusively with high-income professionals earning $150K-$800K+ at Arizona&apos;s biggest employers. We sit on the same side of the table as you and figure this out together.

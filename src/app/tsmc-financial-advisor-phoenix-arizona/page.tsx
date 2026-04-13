@@ -5,7 +5,7 @@ import Button from '@/components/Button'
 
 export const metadata: Metadata = {
  title: 'TSMC Employee Financial Advisor in North Phoenix | RSU & Relocation Planning | Jay Chang',
- description: 'Wealth planning for TSMC engineers and leaders in North Phoenix. Equity planning, Arizona relocation tax strategy, RSU management, and fiduciary advice for semiconductor professionals at TSMC&apos;s Fab 21.',
+ description: 'Wealth planning for TSMC professionals in North Phoenix. Equity planning, Arizona relocation tax strategy, RSU management, and fiduciary advice for semiconductor professionals at TSMC&apos;s Fab 21.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/tsmc-financial-advisor-phoenix-arizona',
  },
@@ -72,7 +72,7 @@ export default function TSMCFinancialAdvisor() {
    </p>
   </div>
   <h1 className="text-4xl md:text-5xl font-serif font-bold text-[#333333] mb-6">
-   TSMC Engineers in Phoenix: Build the Wealth Your Career Has Earned You.
+   TSMC Professionals in Phoenix: Build the Wealth Your Career Has Earned You.
   </h1>
   <p className="text-lg font-sans text-[#5b6a71] mb-8 leading-relaxed">
    You relocated to help build America&apos;s most advanced semiconductor campus. Now build a financial plan as sophisticated as the chips you design. Jay Chang is the fiduciary advisor for TSMC professionals navigating relocation, equity, and high income in Arizona.
@@ -94,7 +94,7 @@ export default function TSMCFinancialAdvisor() {
    TSMC&apos;s $65 Billion Investment in Phoenix Created Extraordinary Career Opportunity - and Financial Complexity
   </h2>
   <p className="text-lg font-sans text-[#5b6a71] mb-10 leading-relaxed">
-   TSMC&apos;s Fab 21 campus in North Phoenix represents one of the largest foreign direct investments in American history. For the engineers, designers, managers, and technical leaders who&apos;ve built careers here - whether relocating from Taiwan, California, or other U.S. states - the financial picture is uniquely complex:
+   TSMC&apos;s Fab 21 campus in North Phoenix represents one of the largest foreign direct investments in American history. For the professionals who&apos;ve built careers here - whether relocating from Taiwan, California, or other U.S. states - the financial picture is uniquely complex:
   </p>
   </AnimateOnScroll>
 

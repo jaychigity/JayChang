@@ -4,14 +4,14 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
  title: 'Financial Advisor in Scottsdale, AZ | Physician & Executive Wealth Management | Jay Chang',
- description: 'Fiduciary financial advisor in Scottsdale, Arizona specializing in physicians at Mayo Clinic, Banner Health, and executives. High-income tax planning, asset protection, and retirement strategy.',
+ description: 'Fiduciary financial advisor in Scottsdale, Arizona serving professionals at Mayo Clinic, Banner Health, and leading Arizona companies. High-income tax planning, asset protection, and retirement strategy.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/financial-advisor-scottsdale-az',
  },
  robots: 'index, follow',
  openGraph: {
  title: 'Financial Advisor in Scottsdale, AZ | Physician & Executive Wealth Management | Jay Chang',
- description: 'Fiduciary financial advisor in Scottsdale, Arizona specializing in physicians at Mayo Clinic, Banner Health, and executives.',
+ description: 'Fiduciary financial advisor in Scottsdale, Arizona serving professionals at Mayo Clinic, Banner Health, and leading Arizona companies.',
  type: 'website',
  url: 'https://www.PWM-Farther.com/financial-advisor-scottsdale-az',
  },
@@ -93,7 +93,7 @@ export default function ScottsdaleFinancialAdvisor() {
    </h2>
    <div className="prose prose-lg max-w-none text-[#5b6a71] font-sans space-y-4">
    <p>
-   We get it. You spent years in training or climbing the corporate ladder. Now you&apos;re earning really well - Mayo Clinic specialists, Banner Health physicians, Honor Health leaders, corporate executives - but your financial plan hasn&apos;t kept up with your income. Maybe you&apos;re still using the same advisor you had when you were a resident, or maybe you don&apos;t have one at all.
+   We get it. You spent years in training or climbing the corporate ladder. Now you&apos;re earning really well - professionals at Mayo Clinic, Banner Health, Honor Health, and major Arizona corporations - but your financial plan hasn&apos;t kept up with your income. Maybe you&apos;re still using the same advisor you had when you started out, or maybe you don&apos;t have one at all.
    </p>
    <p>
    The challenges we hear about most? Taxes taking a bigger bite than they should, not enough asset protection for someone with your liability exposure, retirement savings that feel underwhelming given what you earn, and zero clarity on how to pass wealth to the next generation.

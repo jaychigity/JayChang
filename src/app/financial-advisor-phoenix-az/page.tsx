@@ -93,7 +93,7 @@ export default function PhoenixFinancialAdvisor() {
    </h2>
    <div className="prose prose-lg max-w-none text-[#5b6a71] font-sans space-y-4">
    <p>
-   Here&apos;s what we see a lot in Phoenix: TSMC engineers with complex equity packages, Honeywell aerospace program managers juggling stock options and relocation benefits, Freeport-McMoRan executives managing concentrated positions, and Banner Health physicians earning $400K-$800K+ who are too busy saving lives to optimize their own finances.
+   Here&apos;s what we see a lot in Phoenix: TSMC professionals with complex equity packages, Honeywell aerospace and defense professionals juggling stock options and relocation benefits, Freeport-McMoRan professionals managing concentrated positions, and Banner Health and Mayo Clinic professionals earning $400K-$800K+ who are too busy to optimize their own finances.
    </p>
    <p>
    The common thread? You&apos;ve done well - really well - but your financial life has gotten complicated. Maybe you relocated from California and aren&apos;t sure if you&apos;re taking full advantage of the tax savings. Maybe your RSUs keep vesting and you&apos;re not sure whether to hold or sell. Maybe you just have a gut feeling that you&apos;re leaving money on the table.

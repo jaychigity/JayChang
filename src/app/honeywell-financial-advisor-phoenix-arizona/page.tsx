@@ -5,7 +5,7 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
  title: 'Honeywell Employee Financial Advisor in Phoenix | RSU, 401(k) & Deferred Comp Planning | Jay Chang',
- description: 'Wealth planning for Honeywell engineers and executives in Phoenix. Employer-stock concentration in your 401(k) match, RSU strategy, and retirement income planning from a fiduciary who knows Honeywell\'s benefits.',
+ description: 'Wealth planning for Honeywell professionals in Phoenix. Employer-stock concentration in your 401(k) match, RSU strategy, and retirement income planning from a fiduciary who knows Honeywell\'s benefits.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/honeywell-financial-advisor-phoenix-arizona',
  },
@@ -32,7 +32,7 @@ export default function HoneywellAdvisorPage() {
    Honeywell Employee Financial Planning
    </p>
    <h1 className="font-serif text-4xl md:text-5xl text-[#333333] leading-tight mb-6">
-   Honeywell Engineers and Executives: Your 401(k) Match Comes With a Hidden Risk.
+   Honeywell Professionals: Your 401(k) Match Comes With a Hidden Risk.
    </h1>
    <p className="font-sans text-lg text-[#5b6a71] leading-relaxed mb-8 max-w-2xl mx-auto">
    Honeywell&apos;s 7% employer match is among the most generous in aerospace. But it arrives as Honeywell stock - and most employees don&apos;t realize how much of their retirement is riding on one company&apos;s performance. Jay Chang helps Honeywell professionals build a complete, diversified plan.

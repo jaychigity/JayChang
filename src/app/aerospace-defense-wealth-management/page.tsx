@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 };
 
 const aerospaceTestimonials = [
- { quote: "The pension-vs.-lump-sum decision was keeping me up at night. Jay did a full break-even analysis and helped me understand the real implications of each choice.", name: "RTX Senior Systems Engineer", location: "Tucson, AZ", detail: "Pension strategy" },
- { quote: "I had 34% of my 401(k) in Honeywell stock and didn't put it there on purpose. Jay built a reallocation plan that brought it to an intentional level without triggering any tax event.", name: "Honeywell Program Manager", location: "Phoenix, AZ", detail: "401(k) rebalancing" },
- { quote: "When I was considering early retirement at 58, Jay mapped my RTX pension, 401(k), deferred comp, and Social Security into one timeline. For the first time, I could see exactly how it all fit.", name: "RTX Engineering Fellow", location: "Tucson, AZ", detail: "Retirement orchestration" },
- { quote: "The Honeywell spinoff has me worried about my equity. Jay is already walking me through what HONA means for my RSUs, my 401(k) match fund, and my overall portfolio.", name: "Honeywell Aerospace Director", location: "Phoenix, AZ", detail: "Spinoff planning" },
- { quote: "I enrolled in RTX's Lifetime Income Strategy years ago without understanding the trade-offs. Jay reviewed what I had, showed me what NUA could have done, and adjusted my remaining 401(k) to compensate.", name: "Raytheon Retired Manager", location: "Green Valley, AZ", detail: "LIS & NUA review" },
+ { quote: "The pension-vs.-lump-sum decision was keeping me up at night. Jay did a full break-even analysis and helped me understand the real implications of each choice.", name: "RTX Professional", location: "Tucson, AZ", detail: "Pension strategy" },
+ { quote: "I had 34% of my 401(k) in Honeywell stock and didn't put it there on purpose. Jay built a reallocation plan that brought it to an intentional level without triggering any tax event.", name: "Honeywell Professional", location: "Phoenix, AZ", detail: "401(k) rebalancing" },
+ { quote: "When I was considering early retirement at 58, Jay mapped my RTX pension, 401(k), deferred comp, and Social Security into one timeline. For the first time, I could see exactly how it all fit.", name: "RTX Professional", location: "Tucson, AZ", detail: "Retirement orchestration" },
+ { quote: "The Honeywell spinoff has me worried about my equity. Jay is already walking me through what HONA means for my RSUs, my 401(k) match fund, and my overall portfolio.", name: "Honeywell Professional", location: "Phoenix, AZ", detail: "Spinoff planning" },
+ { quote: "I enrolled in RTX's Lifetime Income Strategy years ago without understanding the trade-offs. Jay reviewed what I had, showed me what NUA could have done, and adjusted my remaining 401(k) to compensate.", name: "Raytheon Professional", location: "Green Valley, AZ", detail: "LIS & NUA review" },
 ];
 
 export default function AerospaceDefenseWealthManagement() {
@@ -179,7 +179,7 @@ export default function AerospaceDefenseWealthManagement() {
    Honeywell 401(k) &amp; Equity: Built for Complexity, Often Managed Simply
    </h2>
    <p className="text-lg text-[#5b6a71] leading-relaxed">
-   Honeywell&apos;s retirement benefits are designed for aerospace engineers and executives. But too many employees treat them like a generic 401(k). They&apos;re not.
+   Honeywell&apos;s retirement benefits are designed for aerospace professionals. But too many employees treat them like a generic 401(k). They&apos;re not.
    </p>
   </div>
   </AnimateOnScroll>

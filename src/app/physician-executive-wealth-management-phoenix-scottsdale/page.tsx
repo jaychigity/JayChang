@@ -7,7 +7,7 @@ import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
  title: 'Physician & Executive Wealth Management in Phoenix & Scottsdale | Banner Health, Mayo Clinic & Corporate Leaders | Advisor Jay, Farther',
- description: 'Fiduciary wealth planning for Banner Health and Mayo Clinic physicians in Phoenix and Scottsdale, and corporate executives at Freeport-McMoRan and Arizona leading companies. High-income tax strategy, asset protection, retirement acceleration, and legacy planning.',
+ description: 'Fiduciary wealth planning for healthcare professionals at Banner Health and Mayo Clinic in Phoenix and Scottsdale, and professionals at Freeport-McMoRan and leading Arizona companies. High-income tax strategy, asset protection, retirement acceleration, and legacy planning.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/physician-executive-wealth-management-phoenix-scottsdale',
  },
@@ -75,7 +75,7 @@ export default function PhysicianExecutiveWealthPage() {
 
    <AnimateOnScroll delay={200}>
    <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
-   Banner Health and Mayo Clinic physicians earn $400K to $800K+, yet a typical 401(k) covers less than 4% of retirement. Student debt ranges from $200K to $400K+. Malpractice liability exposure, unpredictable schedules, and relentless burnout consume your attention. Freeport-McMoRan executives carry commodity-linked compensation, concentrated equity positions, and executive benefits tied to copper prices. Neither group chose finance as their expertise. But both groups face financial lives too complex to leave to chance.
+   Healthcare professionals at Banner Health and Mayo Clinic earn $400K to $800K+, yet a typical 401(k) covers less than 4% of retirement. Student debt, malpractice liability, unpredictable schedules, and relentless burnout consume your attention. Freeport-McMoRan professionals carry commodity-linked compensation, concentrated equity positions, and executive benefits tied to copper prices. Neither group chose finance as their expertise. But both groups face financial lives too complex to leave to chance.
    </p>
    </AnimateOnScroll>
 
@@ -91,7 +91,7 @@ export default function PhysicianExecutiveWealthPage() {
    <AnimateOnScroll>
    <Image
    src="/Photos/Medical-1.png"
-   alt="Physician examining patient at Banner Health or Mayo Clinic"
+   alt="Healthcare professional at Banner Health or Mayo Clinic"
    width={2624}
    height={1536}
    className="w-full h-auto rounded-lg shadow-lg"
@@ -156,7 +156,7 @@ export default function PhysicianExecutiveWealthPage() {
  <section className="bg-[#FAFAF8] py-16 lg:py-24">
   <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
   <AnimateOnScroll>
-  <SectionEyebrow text="BANNER HEALTH PHYSICIANS" />
+  <SectionEyebrow text="BANNER HEALTH PROFESSIONALS" />
   <h2 className="text-4xl md:text-5xl font-bold text-[#333333] mb-12 leading-tight">
    The 4% Problem (and Solutions Hidden in Your Compensation Package)
   </h2>
@@ -601,7 +601,7 @@ export default function PhysicianExecutiveWealthPage() {
 
   <AnimateOnScroll delay={100}>
    <p className="text-xl md:text-2xl text-gray-200 mb-8 font-light max-w-3xl mx-auto">
-   Serving Banner Health and Mayo Clinic physicians. Serving Freeport-McMoRan executives and Arizona corporate leaders.
+   Serving professionals at Banner Health, Mayo Clinic, Freeport-McMoRan, and organizations across Arizona.
    </p>
   </AnimateOnScroll>
 

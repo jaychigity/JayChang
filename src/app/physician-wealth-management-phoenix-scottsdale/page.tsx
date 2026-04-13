@@ -5,9 +5,9 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
  title:
- 'Physician Financial Advisor in Phoenix & Scottsdale | Banner Health & Mayo Clinic Doctors | Jay Chang',
+ 'Physician Financial Advisor in Phoenix & Scottsdale | Banner Health & Mayo Clinic Professionals | Jay Chang',
  description:
- 'Wealth management for physicians, surgeons, and medical specialists at Banner Health and Mayo Clinic in Phoenix and Scottsdale. Tax planning, asset protection, retirement acceleration, and practice financial strategy from a fiduciary advisor.',
+ 'Wealth management for professionals at Banner Health and Mayo Clinic in Phoenix and Scottsdale. Tax planning, asset protection, retirement acceleration, and practice financial strategy from a fiduciary advisor.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/physician-wealth-management-phoenix-scottsdale',
  },
@@ -80,7 +80,7 @@ export default function PhysicianWealthManagementPhoenixScottsdale() {
 
   <AnimateOnScroll>
   <p className="mb-8 text-center font-sans text-lg text-[#5b6a71] leading-relaxed">
-   Banner Health and Mayo Clinic physicians in Phoenix and Scottsdale earn $400,000-$800,000+ but face a
+   Banner Health and Mayo Clinic professionals in Phoenix and Scottsdale earn $400,000-$800,000+ but face a
    uniquely complex financial picture - high income, limited time, malpractice liability, late career start to
    savings, and a 401(k) match that barely scratches the surface. Jay Chang is the fiduciary advisor built for
    your situation.
