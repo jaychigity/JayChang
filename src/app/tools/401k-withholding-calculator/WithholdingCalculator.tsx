@@ -272,6 +272,38 @@ const PGE_MATCH_CONFIG = {
 
 type PGEGroup = keyof typeof PGE_MATCH_CONFIG
 
+// AT&T Retirement Savings Plan match configurations
+const ATT_MATCH_CONFIG = {
+  'management': {
+    label: 'Management (non-bargained)',
+    matchRate: 0.80,
+    matchCap: 6,
+    effectiveMatch: 4.8,   // 80% × 6% = 4.8%
+    description: 'AT&T puts in 80 cents for every dollar you save, on the first 6% of your pay. That first 6% is called your "Basic" contribution — anything above 6% is "Supplementary" and AT&T does not match it.',
+    example: (salary: number) => {
+      const contrib = Math.round(salary * 0.06)
+      const match = Math.round(salary * 0.048)
+      return `If you make ${salary.toLocaleString()} a year and save 6% (${contrib.toLocaleString()}), AT&T adds ${match.toLocaleString()} on top. That's free money — but only if you contribute at least 6%.`
+    },
+    tip: 'Contribute at least 6% to get your full match. Saving more is great for your future, but AT&T won\'t match anything above 6%.',
+  },
+  'union': {
+    label: 'Union / Bargained (CWA or IBEW)',
+    matchRate: 0.80,
+    matchCap: 6,
+    effectiveMatch: 4.8,   // 80% × Basic (typically ~6% equivalent)
+    description: 'AT&T puts in 80 cents for every dollar of your "Basic" contribution. For union employees, your Basic amount may be based on your wage scale or job title rather than a flat percentage — but the 80% match ratio is the same.',
+    example: (salary: number) => {
+      const contrib = Math.round(salary * 0.06)
+      const match = Math.round(salary * 0.048)
+      return `Using a standard 6% Basic rate: if you make ${salary.toLocaleString()} a year and save ${contrib.toLocaleString()}, AT&T adds about ${match.toLocaleString()}. Check your specific contract for your exact Basic amount.`
+    },
+    tip: 'Your "Basic" contribution amount is set by your union contract. Make sure you\'re contributing at least that much — anything less means you\'re giving up free money.',
+  },
+} as const
+
+type ATTGroup = keyof typeof ATT_MATCH_CONFIG
+
 export default function WithholdingCalculator() {
   const [salary, setSalary] = useState(150000)
   const [salaryInput, setSalaryInput] = useState('150,000')
@@ -284,18 +316,24 @@ export default function WithholdingCalculator() {
   const [otherPreTaxPerCheck, setOtherPreTaxPerCheck] = useState(200)
 
   // Company-specific state
-  const [selectedCompany, setSelectedCompany] = useState<'general' | 'pge'>('general')
+  const [selectedCompany, setSelectedCompany] = useState<'general' | 'pge' | 'att'>('general')
   const [pgeGroup, setPgeGroup] = useState<PGEGroup>('post-2013')
+  const [attGroup, setAttGroup] = useState<ATTGroup>('management')
 
-  // Auto-populate match fields when a PG&E group is selected
+  // Auto-populate match fields when a company group is selected
   useEffect(() => {
     if (selectedCompany === 'pge') {
       const config = PGE_MATCH_CONFIG[pgeGroup]
       setEmployerMatchPercent(config.effectiveMatch)
       setEmployerMatchCap(config.matchCap)
       setPayFrequency(26) // PG&E pays bi-weekly
+    } else if (selectedCompany === 'att') {
+      const config = ATT_MATCH_CONFIG[attGroup]
+      setEmployerMatchPercent(config.effectiveMatch)
+      setEmployerMatchCap(config.matchCap)
+      setPayFrequency(26) // AT&T pays bi-weekly
     }
-  }, [selectedCompany, pgeGroup])
+  }, [selectedCompany, pgeGroup, attGroup])
   const [midYearMode, setMidYearMode] = useState(false)
   const [alreadyContributed, setAlreadyContributed] = useState(5000)
   const [alreadyContributedInput, setAlreadyContributedInput] = useState('5,000')
@@ -448,6 +486,18 @@ export default function WithholdingCalculator() {
           >
             PG&E
           </button>
+          <button
+            onClick={() => {
+              setSelectedCompany('att')
+            }}
+            className={`px-5 py-3 rounded-full border text-[14px] font-semibold transition-colors ${
+              selectedCompany === 'att'
+                ? 'bg-[#1d7682] text-white border-[#1d7682]'
+                : 'bg-white text-[#333333] border-[#E8E6E1] hover:border-[#1d7682]'
+            }`}
+          >
+            AT&T
+          </button>
         </div>
 
         {/* PG&E sub-selector */}
@@ -513,6 +563,97 @@ export default function WithholdingCalculator() {
                 <p className="text-[13px] text-[#5b6a71] leading-relaxed">
                   <span className="font-semibold text-[#333333]">What's the difference between the groups?</span>{' '}
                   PG&E employees hired in 2013 or later are on the Cash Balance pension plan. The pension itself is smaller, so PG&E gives you a bigger 401(k) match to make up for it. Employees hired before 2013 have the traditional Final Pay pension (which pays more in retirement), so the 401(k) match is a little lower. Union members (IBEW/ESC) have their own match rate negotiated through their contract.
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* AT&T sub-selector */}
+        {selectedCompany === 'att' && (
+          <div className="mt-5">
+            <p className="font-sans text-[13px] font-semibold text-[#333333] mb-3">Which group are you in?</p>
+            <div className="flex flex-col gap-2">
+              {(Object.entries(ATT_MATCH_CONFIG) as [ATTGroup, typeof ATT_MATCH_CONFIG[ATTGroup]][]).map(([key, config]) => (
+                <button
+                  key={key}
+                  onClick={() => setAttGroup(key)}
+                  className={`text-left px-4 py-3 rounded-lg border text-[14px] transition-colors ${
+                    attGroup === key
+                      ? 'bg-[#1d7682]/10 border-[#1d7682] text-[#333333] font-semibold'
+                      : 'bg-white border-[#E8E6E1] text-[#5b6a71] hover:border-[#1d7682]'
+                  }`}
+                >
+                  {config.label}
+                </button>
+              ))}
+            </div>
+            <p className="text-[12px] text-[#5b6a71] mt-3">
+              Not sure? Check your offer letter or HR portal — it will say "Management" or list your union (CWA / IBEW).
+            </p>
+
+            {/* AT&T Match Education Card */}
+            <div className="mt-5 bg-[#edf7f8] rounded-lg p-5 border border-[#1d7682]/20">
+              <p className="text-[15px] font-bold text-[#1d7682] mb-2">
+                How your AT&T match works (in plain English)
+              </p>
+              <p className="text-[14px] text-[#333333] leading-relaxed mb-3">
+                {ATT_MATCH_CONFIG[attGroup].description}
+              </p>
+              <div className="bg-white rounded-lg p-4 mb-3 border border-[#1d7682]/10">
+                <p className="text-[12px] font-semibold text-[#1d7682] uppercase tracking-wider mb-1">Example with your salary</p>
+                <p className="text-[14px] text-[#333333] leading-relaxed">
+                  {ATT_MATCH_CONFIG[attGroup].example(salary)}
+                </p>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="text-[#1d7682] text-lg leading-none mt-0.5">→</span>
+                <p className="text-[14px] font-semibold text-[#1d7682] leading-relaxed">
+                  {ATT_MATCH_CONFIG[attGroup].tip}
+                </p>
+              </div>
+
+              {/* True-up warning */}
+              <div className="mt-4 bg-[#fffbf0] border border-[#d97706] rounded-lg p-4">
+                <p className="text-[14px] font-bold text-[#b45309] mb-1">
+                  ⚠ Heads up: don't max out too early in the year
+                </p>
+                <p className="text-[13px] text-[#92400e] leading-relaxed mb-2">
+                  AT&T calculates your match <span className="font-semibold">each pay period</span>. If you contribute too aggressively and hit the IRS limit by, say, August — AT&T stops matching for the rest of the year. For most AT&T employees, there is <span className="font-semibold">no "true-up"</span> to fix this. That lost match is gone forever.
+                </p>
+                <p className="text-[13px] text-[#92400e] leading-relaxed mb-2">
+                  <span className="font-semibold">Example:</span> Say you earn $150,000 and set your contribution to 30% to max out fast. You'd hit the ${LIMITS.employeeDeferral.toLocaleString()} limit around August. From September through December, your contribution drops to $0 — and so does AT&T's match. That's roughly 4 months of free money you'd never get back.
+                </p>
+                <p className="text-[13px] text-[#92400e] leading-relaxed">
+                  <span className="font-semibold">The fix:</span> Pace your contributions so you're still putting in at least 6% on your very last paycheck of December. This calculator does the math for you — the "Set withholding to" percentage below spreads your contributions evenly across all 26 paychecks.
+                </p>
+              </div>
+
+              {/* AT&T stock warning */}
+              <div className="mt-4 bg-[#fffbf0] border border-[#d97706] rounded-lg p-4">
+                <p className="text-[14px] font-bold text-[#b45309] mb-1">
+                  ⚠ Check where your match money is going
+                </p>
+                <p className="text-[13px] text-[#92400e] leading-relaxed">
+                  AT&T's matching contributions often land in <span className="font-semibold">AT&T company stock (ticker: T)</span> by default. You can move it into a diversified fund right away — but many employees don't realize this and end up with too much of their retirement in a single stock. Log in to your plan and check if your match is set to auto-sell into a target-date fund or other diversified option.
+                </p>
+              </div>
+
+              {/* Vesting & key facts */}
+              <div className="mt-4 bg-white rounded-lg p-4 border border-[#1d7682]/10">
+                <p className="text-[12px] font-semibold text-[#1d7682] uppercase tracking-wider mb-2">Quick facts about AT&T's plan</p>
+                <ul className="text-[13px] text-[#333333] leading-relaxed space-y-1.5">
+                  <li><span className="font-semibold">Vesting:</span> 100% immediate — the match is yours from day one.</li>
+                  <li><span className="font-semibold">Max effective match:</span> 4.8% of your eligible pay (80% × 6%).</li>
+                  <li><span className="font-semibold">Catch-up (age 50+):</span> Extra {formatCurrency(LIMITS.catchUp50)} — but if you earned over $145,000 last year, catch-up must go into Roth (after-tax) starting in 2026.</li>
+                  <li><span className="font-semibold">Super catch-up (ages 60–63):</span> Extra {formatCurrency(LIMITS.catchUp6063)} under SECURE 2.0.</li>
+                </ul>
+              </div>
+
+              <div className="mt-4 pt-4 border-t border-[#1d7682]/10">
+                <p className="text-[13px] text-[#5b6a71] leading-relaxed">
+                  <span className="font-semibold text-[#333333]">Management vs. Union — what's different?</span>{' '}
+                  Both groups get the same 80% match ratio. The main difference is how your "Basic" contribution is defined. For management employees, it's simply the first 6% of your salary. For union employees (CWA, IBEW), it may be a specific dollar amount tied to your wage scale or job title — check your contract or HR portal for your exact Basic amount.
                 </p>
               </div>
             </div>
@@ -632,13 +773,13 @@ export default function WithholdingCalculator() {
           </div>
 
           {/* Employer Match Rate */}
-          <div className={selectedCompany === 'pge' ? 'opacity-60 pointer-events-none' : ''}>
+          <div className={selectedCompany !== 'general' ? 'opacity-60 pointer-events-none' : ''}>
             <LabelWithTooltip
               label="Employer match rate"
               tooltip="The percentage your employer contributes for each dollar you put in. Example: a 4% match means for every $1 you contribute (up to the cap), your employer adds $0.04 per dollar — pure free money."
             />
-            {selectedCompany === 'pge' && (
-              <p className="text-[11px] text-[#1d7682] font-semibold mb-1">Auto-filled from your PG&E plan</p>
+            {selectedCompany !== 'general' && (
+              <p className="text-[11px] text-[#1d7682] font-semibold mb-1">Auto-filled from your {selectedCompany === 'pge' ? 'PG&E' : 'AT&T'} plan</p>
             )}
             <div className="text-lg font-semibold text-[#333333] mb-1">{formatPercent(employerMatchPercent)}</div>
             <input
@@ -650,13 +791,13 @@ export default function WithholdingCalculator() {
           </div>
 
           {/* Match Cap */}
-          <div className={selectedCompany === 'pge' ? 'opacity-60 pointer-events-none' : ''}>
+          <div className={selectedCompany !== 'general' ? 'opacity-60 pointer-events-none' : ''}>
             <LabelWithTooltip
               label="Match cap (% of salary you must contribute)"
               tooltip={`This is the ceiling on your contributions that your employer will match. Example: if the cap is 6% and your salary is $150,000, your employer matches on the first $9,000 you contribute — contributing more than $9,000 won't increase the match. If your employer has no cap, or you're not sure, set this to 0%. Not all employers have a match cap.`}
             />
-            {selectedCompany === 'pge' && (
-              <p className="text-[11px] text-[#1d7682] font-semibold mb-1">Auto-filled from your PG&E plan</p>
+            {selectedCompany !== 'general' && (
+              <p className="text-[11px] text-[#1d7682] font-semibold mb-1">Auto-filled from your {selectedCompany === 'pge' ? 'PG&E' : 'AT&T'} plan</p>
             )}
             <div className="text-lg font-semibold text-[#333333] mb-1">{formatPercent(employerMatchCap, 2)}</div>
             <input
