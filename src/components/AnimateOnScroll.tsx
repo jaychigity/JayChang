@@ -13,7 +13,7 @@ export default function AnimateOnScroll({
   children,
   className,
   delay = 0,
-  threshold = 0.3,
+  threshold = 0.1,
 }: AnimateOnScrollProps) {
   const ref = useRef<HTMLDivElement>(null)
 
@@ -55,8 +55,8 @@ export default function AnimateOnScroll({
       className={className}
       style={{
         opacity: 0,
-        transform: "translateY(24px)",
-        transition: "opacity 0.5s ease-out, transform 0.5s ease-out",
+        transform: "translateY(12px)",
+        transition: "opacity 0.3s ease-out, transform 0.3s ease-out",
         transitionDelay: `${delay}ms`,
       }}
     >
