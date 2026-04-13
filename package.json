@@ -1,7 +1,7 @@
 {
-  "name": "farther-pwm",
+  "name": "advisor-jay",
   "version": "1.0.0",
-  "description": "Jay Chang | Farther — HNW advisor website for Arizona, California & Nevada",
+  "description": "Advisor Jay — HNW advisor website for Arizona, California & Nevada",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,12 +12,14 @@
   "dependencies": {
     "lucide-react": "^0.577.0",
     "next": "^14.2.35",
+    "nodemailer": "^8.0.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "sharp": "^0.34.5"
   },
   "devDependencies": {
     "@types/node": "^25.5.0",
+    "@types/nodemailer": "^7.0.11",
     "@types/react": "^19.2.14",
     "autoprefixer": "^10.4.27",
     "postcss": "^8.5.8",
