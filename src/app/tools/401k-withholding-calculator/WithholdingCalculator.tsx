@@ -227,6 +227,51 @@ const payFrequencyLabel: Record<number, string> = {
   52: 'Weekly',
 }
 
+// PG&E Retirement Savings Plan (RSP) match configurations
+const PGE_MATCH_CONFIG = {
+  'post-2013': {
+    label: 'Hired 2013 or later (Cash Balance pension)',
+    matchRate: 0.75,       // $0.75 per $1
+    matchCap: 8,           // up to first 8% of pay
+    effectiveMatch: 6,     // 75% × 8% = 6%
+    description: 'PG&E puts in 75 cents for every dollar you save, up to the first 8% of your pay.',
+    example: (salary: number) => {
+      const contrib = Math.round(salary * 0.08)
+      const match = Math.round(salary * 0.06)
+      return `If you make ${salary.toLocaleString()} a year and save 8% (${contrib.toLocaleString()}), PG&E adds ${match.toLocaleString()} on top — that's free money just for saving.`
+    },
+    tip: 'To get every dollar of free money, set your contribution to at least 8%. Anything less and you leave PG&E\'s match on the table.',
+  },
+  'pre-2013-management': {
+    label: 'Hired before 2013 — Management',
+    matchRate: 0.75,
+    matchCap: 6,
+    effectiveMatch: 4.5,   // 75% × 6% = 4.5%
+    description: 'PG&E puts in 75 cents for every dollar you save, up to the first 6% of your pay.',
+    example: (salary: number) => {
+      const contrib = Math.round(salary * 0.06)
+      const match = Math.round(salary * 0.045)
+      return `If you make ${salary.toLocaleString()} a year and save 6% (${contrib.toLocaleString()}), PG&E adds ${match.toLocaleString()} on top — free money, no strings attached.`
+    },
+    tip: 'You have the traditional Final Pay pension, which is more generous — but you still want to contribute at least 6% to grab your full match.',
+  },
+  'pre-2013-union': {
+    label: 'Hired before 2013 — Union (IBEW / ESC)',
+    matchRate: 0.60,
+    matchCap: 6,
+    effectiveMatch: 3.6,   // 60% × 6% = 3.6%
+    description: 'PG&E puts in 60 cents for every dollar you save, up to the first 6% of your pay.',
+    example: (salary: number) => {
+      const contrib = Math.round(salary * 0.06)
+      const match = Math.round(salary * 0.036)
+      return `If you make ${salary.toLocaleString()} a year and save 6% (${contrib.toLocaleString()}), PG&E adds ${match.toLocaleString()} on top — that's money you only get if you contribute enough.`
+    },
+    tip: 'Your union pension is strong, but this match is extra. Make sure you\'re putting in at least 6% so you don\'t miss out.',
+  },
+} as const
+
+type PGEGroup = keyof typeof PGE_MATCH_CONFIG
+
 export default function WithholdingCalculator() {
   const [salary, setSalary] = useState(150000)
   const [salaryInput, setSalaryInput] = useState('150,000')
@@ -237,6 +282,20 @@ export default function WithholdingCalculator() {
   const [payFrequency, setPayFrequency] = useState(26)
   const [currentContribPct, setCurrentContribPct] = useState(6)
   const [otherPreTaxPerCheck, setOtherPreTaxPerCheck] = useState(200)
+
+  // Company-specific state
+  const [selectedCompany, setSelectedCompany] = useState<'general' | 'pge'>('general')
+  const [pgeGroup, setPgeGroup] = useState<PGEGroup>('post-2013')
+
+  // Auto-populate match fields when a PG&E group is selected
+  useEffect(() => {
+    if (selectedCompany === 'pge') {
+      const config = PGE_MATCH_CONFIG[pgeGroup]
+      setEmployerMatchPercent(config.effectiveMatch)
+      setEmployerMatchCap(config.matchCap)
+      setPayFrequency(26) // PG&E pays bi-weekly
+    }
+  }, [selectedCompany, pgeGroup])
   const [midYearMode, setMidYearMode] = useState(false)
   const [alreadyContributed, setAlreadyContributed] = useState(5000)
   const [alreadyContributedInput, setAlreadyContributedInput] = useState('5,000')
@@ -357,6 +416,110 @@ export default function WithholdingCalculator() {
         </button>
       </div>
 
+      {/* Company Selector */}
+      <div className="bg-white rounded-[12px] border border-[#E8E6E1] p-5 md:p-8">
+        <h2 className="font-sans text-[20px] font-bold text-[#333333] mb-2">Do you work for one of these companies?</h2>
+        <p className="text-[14px] text-[#5b6a71] mb-5">
+          Pick your employer and we'll fill in your exact match details — no guesswork needed.
+        </p>
+
+        <div className="flex flex-wrap gap-3 mb-2">
+          <button
+            onClick={() => {
+              setSelectedCompany('general')
+            }}
+            className={`px-5 py-3 rounded-full border text-[14px] font-semibold transition-colors ${
+              selectedCompany === 'general'
+                ? 'bg-[#333333] text-white border-[#333333]'
+                : 'bg-white text-[#333333] border-[#E8E6E1] hover:border-[#999]'
+            }`}
+          >
+            Other / I'll enter my own
+          </button>
+          <button
+            onClick={() => {
+              setSelectedCompany('pge')
+            }}
+            className={`px-5 py-3 rounded-full border text-[14px] font-semibold transition-colors ${
+              selectedCompany === 'pge'
+                ? 'bg-[#1d7682] text-white border-[#1d7682]'
+                : 'bg-white text-[#333333] border-[#E8E6E1] hover:border-[#1d7682]'
+            }`}
+          >
+            PG&E
+          </button>
+        </div>
+
+        {/* PG&E sub-selector */}
+        {selectedCompany === 'pge' && (
+          <div className="mt-5">
+            <p className="font-sans text-[13px] font-semibold text-[#333333] mb-3">Which group are you in?</p>
+            <div className="flex flex-col gap-2">
+              {(Object.entries(PGE_MATCH_CONFIG) as [PGEGroup, typeof PGE_MATCH_CONFIG[PGEGroup]][]).map(([key, config]) => (
+                <button
+                  key={key}
+                  onClick={() => setPgeGroup(key)}
+                  className={`text-left px-4 py-3 rounded-lg border text-[14px] transition-colors ${
+                    pgeGroup === key
+                      ? 'bg-[#1d7682]/10 border-[#1d7682] text-[#333333] font-semibold'
+                      : 'bg-white border-[#E8E6E1] text-[#5b6a71] hover:border-[#1d7682]'
+                  }`}
+                >
+                  {config.label}
+                </button>
+              ))}
+            </div>
+            <p className="text-[12px] text-[#5b6a71] mt-3">
+              Not sure? If you were hired in 2013 or later, pick the first option — that covers most current PG&E employees.
+            </p>
+
+            {/* PG&E Match Education Card */}
+            <div className="mt-5 bg-[#edf7f8] rounded-lg p-5 border border-[#1d7682]/20">
+              <p className="text-[15px] font-bold text-[#1d7682] mb-2">
+                How your PG&E match works (in plain English)
+              </p>
+              <p className="text-[14px] text-[#333333] leading-relaxed mb-3">
+                {PGE_MATCH_CONFIG[pgeGroup].description}
+              </p>
+              <div className="bg-white rounded-lg p-4 mb-3 border border-[#1d7682]/10">
+                <p className="text-[12px] font-semibold text-[#1d7682] uppercase tracking-wider mb-1">Example with your salary</p>
+                <p className="text-[14px] text-[#333333] leading-relaxed">
+                  {PGE_MATCH_CONFIG[pgeGroup].example(salary)}
+                </p>
+              </div>
+              <div className="flex items-start gap-2">
+                <span className="text-[#1d7682] text-lg leading-none mt-0.5">→</span>
+                <p className="text-[14px] font-semibold text-[#1d7682] leading-relaxed">
+                  {PGE_MATCH_CONFIG[pgeGroup].tip}
+                </p>
+              </div>
+              {/* True-up warning */}
+              <div className="mt-4 bg-[#fffbf0] border border-[#d97706] rounded-lg p-4">
+                <p className="text-[14px] font-bold text-[#b45309] mb-1">
+                  ⚠ Heads up: spread your contributions across the whole year
+                </p>
+                <p className="text-[13px] text-[#92400e] leading-relaxed mb-2">
+                  PG&E does <span className="font-semibold">not</span> offer a "true-up" match. That means PG&E only matches what you put in <span className="font-semibold">each paycheck</span> — if you stop contributing partway through the year (because you hit the IRS limit early), PG&E stops matching too. You don't get that money back later.
+                </p>
+                <p className="text-[13px] text-[#92400e] leading-relaxed mb-2">
+                  <span className="font-semibold">Example:</span> Say you earn $150,000 and contribute 30% to max out your 401(k) fast. You'd hit the limit around August. For the rest of the year — September through December — PG&E puts in $0 in match because you're no longer contributing. That could cost you thousands in free money.
+                </p>
+                <p className="text-[13px] text-[#92400e] leading-relaxed">
+                  <span className="font-semibold">The fix:</span> Set your contribution percentage so you contribute a little bit every paycheck, all year long. This calculator helps you find that number — use the "Set withholding to" percentage below, and your contributions will be spread evenly across all 26 paychecks.
+                </p>
+              </div>
+
+              <div className="mt-4 pt-4 border-t border-[#1d7682]/10">
+                <p className="text-[13px] text-[#5b6a71] leading-relaxed">
+                  <span className="font-semibold text-[#333333]">What's the difference between the groups?</span>{' '}
+                  PG&E employees hired in 2013 or later are on the Cash Balance pension plan. The pension itself is smaller, so PG&E gives you a bigger 401(k) match to make up for it. Employees hired before 2013 have the traditional Final Pay pension (which pays more in retirement), so the 401(k) match is a little lower. Union members (IBEW/ESC) have their own match rate negotiated through their contract.
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+
       {/* Input Section */}
       <div className="bg-white rounded-[12px] border border-[#E8E6E1] p-6 md:p-8">
         <h2 className="font-sans text-[20px] font-bold text-[#333333] mb-6">Your information</h2>
@@ -469,11 +632,14 @@ export default function WithholdingCalculator() {
           </div>
 
           {/* Employer Match Rate */}
-          <div>
+          <div className={selectedCompany === 'pge' ? 'opacity-60 pointer-events-none' : ''}>
             <LabelWithTooltip
               label="Employer match rate"
               tooltip="The percentage your employer contributes for each dollar you put in. Example: a 4% match means for every $1 you contribute (up to the cap), your employer adds $0.04 per dollar — pure free money."
             />
+            {selectedCompany === 'pge' && (
+              <p className="text-[11px] text-[#1d7682] font-semibold mb-1">Auto-filled from your PG&E plan</p>
+            )}
             <div className="text-lg font-semibold text-[#333333] mb-1">{formatPercent(employerMatchPercent)}</div>
             <input
               type="range" min={0} max={10} step={0.5} value={employerMatchPercent}
@@ -484,11 +650,14 @@ export default function WithholdingCalculator() {
           </div>
 
           {/* Match Cap */}
-          <div>
+          <div className={selectedCompany === 'pge' ? 'opacity-60 pointer-events-none' : ''}>
             <LabelWithTooltip
               label="Match cap (% of salary you must contribute)"
               tooltip={`This is the ceiling on your contributions that your employer will match. Example: if the cap is 6% and your salary is $150,000, your employer matches on the first $9,000 you contribute — contributing more than $9,000 won't increase the match. If your employer has no cap, or you're not sure, set this to 0%. Not all employers have a match cap.`}
             />
+            {selectedCompany === 'pge' && (
+              <p className="text-[11px] text-[#1d7682] font-semibold mb-1">Auto-filled from your PG&E plan</p>
+            )}
             <div className="text-lg font-semibold text-[#333333] mb-1">{formatPercent(employerMatchCap, 2)}</div>
             <input
               type="range" min={0} max={15} step={0.25} value={employerMatchCap}
