@@ -1,3 +1,11 @@
+// =============================================================
+// Analytics & Conversion Tracking
+// All tracking pixels are loaded via env variables. If an ID
+// is missing, that pixel simply doesn't load — no errors.
+// =============================================================
+
+// --------------- GA4 Events ---------------
+
 export function trackEvent(eventName: string, params?: Record<string, string | number>) {
   if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
     window.gtag('event', eventName, params)
@@ -21,16 +29,26 @@ export function trackEmailClick(ctaLocation: string, page: string) {
 }
 
 export function trackFormSubmission(formName: string, page: string, additionalData?: Record<string, string>) {
+  // GA4 custom event
   trackEvent('form_submission', {
     form_name: formName,
     page,
     ...additionalData,
   })
-  // Also fire as a GA4 conversion event
+  // GA4 conversion event
   trackEvent('generate_lead', {
     form_name: formName,
     page,
   })
+
+  // Google Ads conversion (fires if gtag + conversion ID are present)
+  trackGoogleAdsConversion()
+
+  // Meta Pixel lead event
+  trackMetaLead(formName)
+
+  // LinkedIn conversion
+  trackLinkedInConversion()
 }
 
 export function trackScrollDepth(depth: number, page: string) {
@@ -45,8 +63,60 @@ export function trackToolInteraction(toolName: string, action: string, page: str
   trackEvent('tool_interaction', { tool_name: toolName, action, page })
 }
 
+// --------------- Google Ads Conversions ---------------
+
+const GOOGLE_ADS_CONVERSION_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_ID
+
+export function trackGoogleAdsConversion(value?: number) {
+  if (typeof window !== 'undefined' && typeof window.gtag === 'function' && GOOGLE_ADS_CONVERSION_ID) {
+    window.gtag('event', 'conversion', {
+      send_to: GOOGLE_ADS_CONVERSION_ID,
+      ...(value !== undefined && { value, currency: 'USD' }),
+    })
+  }
+}
+
+// --------------- Meta (Facebook) Pixel ---------------
+
+export function trackMetaLead(formName?: string) {
+  if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+    window.fbq('track', 'Lead', {
+      content_name: formName || 'form_submission',
+    })
+  }
+}
+
+export function trackMetaSchedule() {
+  if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+    window.fbq('track', 'Schedule')
+  }
+}
+
+export function trackMetaCustom(eventName: string, params?: Record<string, string>) {
+  if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+    window.fbq('trackCustom', eventName, params)
+  }
+}
+
+// --------------- LinkedIn Insight Tag ---------------
+
+export function trackLinkedInConversion(conversionId?: string) {
+  if (typeof window !== 'undefined' && typeof window.lintrk === 'function') {
+    if (conversionId) {
+      window.lintrk('track', { conversion_id: conversionId })
+    } else {
+      // Default conversion — page-level tracking handled by the tag automatically
+      window.lintrk('track')
+    }
+  }
+}
+
+// --------------- Type Declarations ---------------
+
 declare global {
   interface Window {
     gtag: (...args: unknown[]) => void
+    fbq: (...args: unknown[]) => void
+    lintrk: (...args: unknown[]) => void
   }
 }

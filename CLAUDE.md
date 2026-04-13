@@ -253,7 +253,16 @@ These spacing values must be consistent across ALL pages. Never deviate without 
 - **Components**: React client components use `"use client"` directive
 - **Navigation**: `src/components/Navigation.tsx` — update navItems array when adding/renaming pages
 - **Sitemap**: `src/app/sitemap.ts` — add entries for new pages
-- **Analytics**: GA4 tracking via `trackFormSubmission()` from `@/lib/analytics`
+- **Analytics**: Multi-platform tracking via `@/lib/analytics` and `@/components/GoogleAnalytics.tsx`
+- **Tracking pixels** (all loaded via env variables — if ID is missing, pixel doesn't load):
+  - GA4 (`NEXT_PUBLIC_GA_MEASUREMENT_ID`) — page views, custom events
+  - GTM (`NEXT_PUBLIC_GTM_ID`) — tag container
+  - Google Ads (`NEXT_PUBLIC_GOOGLE_ADS_ID` + `NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_ID`) — ad conversions
+  - Meta/Facebook Pixel (`NEXT_PUBLIC_META_PIXEL_ID`) — retargeting, lead tracking
+  - LinkedIn Insight Tag (`NEXT_PUBLIC_LINKEDIN_PARTNER_ID`) — matched audiences, conversions
+  - Microsoft Clarity (`NEXT_PUBLIC_CLARITY_ID`) — heatmaps, session recordings
+  - HubSpot (`NEXT_PUBLIC_HUBSPOT_ID`) — CRM attribution, visit tracking
+- **Conversion tracking**: `trackFormSubmission()` fires events across GA4, Google Ads, Meta, and LinkedIn simultaneously. Always use this function (not raw gtag calls) for form submissions.
 - **UTM capture**: `getUTMData()` from `@/lib/utm` — include in all form submissions
 - **Honeypot**: All forms include a hidden "company" field for bot detection
 - **HubSpot**: Meetings embed URL is `https://meetings.hubspot.com/jay-chang1`
