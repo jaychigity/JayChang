@@ -48,6 +48,15 @@ When a new page goes live, add it to this file immediately using the format belo
 
 ---
 
+## LANDING PAGES
+
+| Page Title | URL | Redirect From | Purpose | Status | Published | Last Updated |
+|---|---|---|---|---|---|---|
+| Wealth Review | /wealth-review | yourwealthreview.com | Personal intake form — business cards, referrals, LinkedIn | LIVE | April 2026 | April 2026 |
+| 401(k) Review | /401k-review | 401kjay.com | Paid ads landing page — 401k calculator + CTA | LIVE | April 2026 | April 2026 |
+
+---
+
 ## WHO I WORK WITH (Sector Pages)
 
 | Page Title | URL | Target Keyword | Status | Published | Last Updated |

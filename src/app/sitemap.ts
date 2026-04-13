@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/investment-philosophy`, lastModified: '2026-02-15', changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${baseUrl}/technology`, lastModified: '2026-02-15', changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${baseUrl}/disclosures`, lastModified: '2026-01-15', changeFrequency: 'monthly' as const, priority: 0.5 },
+    { url: `${baseUrl}/wealth-review`, lastModified: '2026-04-12', changeFrequency: 'monthly' as const, priority: 0.8 },
+    { url: `${baseUrl}/401k-review`, lastModified: '2026-04-12', changeFrequency: 'monthly' as const, priority: 0.8 },
 
     // Location pages (primary — /locations/* redirects here via next.config)
     { url: `${baseUrl}/scottsdale`, lastModified: '2026-03-16', changeFrequency: 'monthly' as const, priority: 0.9 },

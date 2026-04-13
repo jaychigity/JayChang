@@ -11,11 +11,11 @@ interface ButtonProps {
 
 const variantStyles: Record<ButtonProps["variant"], string> = {
   primary:
-    "bg-gradient-to-b from-[#2a9dab] to-[#1d7682] text-[#F7F4EE] font-sans text-btn font-semibold py-[18px] px-[36px] rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:from-[#238a97] hover:to-[#155f69] hover:-translate-y-[1px] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_8px_24px_rgba(29,118,130,0.4)] transition-all duration-200",
+    "inline-block text-center bg-gradient-to-b from-[#2a9dab] to-[#1d7682] text-[#F7F4EE] font-sans text-btn font-semibold py-[18px] px-[36px] rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:from-[#238a97] hover:to-[#155f69] hover:-translate-y-[1px] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_8px_24px_rgba(29,118,130,0.4)] transition-all duration-200",
   ghost:
     "bg-transparent text-[#F7F4EE] font-sans text-btn font-normal hover:text-[#1d7682] hover:pl-1 transition-all duration-200",
   outline:
-    "bg-transparent border-[1.5px] border-[#1d7682] text-[#1d7682] font-sans text-btn font-semibold py-[14px] px-[28px] rounded-full hover:bg-gradient-to-b hover:from-[#2a9dab] hover:to-[#1d7682] hover:text-[#F7F4EE] hover:border-transparent hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_4px_16px_rgba(29,118,130,0.3)] transition-all duration-200",
+    "inline-block text-center bg-transparent border-[1.5px] border-[#1d7682] text-[#1d7682] font-sans text-btn font-semibold py-[14px] px-[28px] rounded-full hover:bg-gradient-to-b hover:from-[#2a9dab] hover:to-[#1d7682] hover:text-[#F7F4EE] hover:border-transparent hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_4px_16px_rgba(29,118,130,0.3)] transition-all duration-200",
 }
 
 export default function Button({

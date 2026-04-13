@@ -20,6 +20,7 @@ const SOURCE_LABELS: Record<string, string> = {
   'estate-complexity': 'Estate Complexity Assessment',
   'retirement-readiness': 'Retirement Readiness Assessment',
   'ca-nv-az-tax-savings': 'CA/NV/AZ Tax Savings Calculator',
+  'wealth-review': 'Wealth Review Request',
 }
 
 // ── Shared email styles ──────────────────────────────────────────────
@@ -285,6 +286,47 @@ function buildConsultationReport(data: LeadPayload): string {
   return html
 }
 
+function buildWealthReviewReport(data: LeadPayload): string {
+  const employer = String(data.employer || '—')
+  const compType = String(data.compensationType || '—')
+  const timeline = String(data.retirementTimeline || '—')
+  const question = String(data.biggestQuestion || '—')
+
+  const compLabels: Record<string, string> = {
+    'salary-bonus': 'Salary + Bonus',
+    'rsu-equity': 'RSU / Equity Compensation',
+    'pension': 'Pension',
+    'business-income': 'Business Income',
+    'retirement-income': 'Retirement Income (SS, distributions)',
+    'other': 'Other',
+  }
+
+  const timelineLabels: Record<string, string> = {
+    'already-retired': 'Already retired',
+    '1-3-years': 'Within 1–3 years',
+    '3-5-years': '3–5 years',
+    '5-10-years': '5–10 years',
+    '10-plus-years': '10+ years',
+    'not-sure': 'Not sure yet',
+  }
+
+  return `
+    <h2 style="font-size:18px;color:${S.teal};margin:24px 0 12px;">Wealth Review Details</h2>
+    <div style="background:${S.bg};border:1px solid ${S.lightGray};border-radius:8px;padding:20px;margin:16px 0;">
+      <table style="width:100%;font-size:14px;">
+        <tr><td style="padding:6px 0;color:${S.gray};width:160px;vertical-align:top;">Employer</td><td style="padding:6px 0;font-weight:500;">${employer}</td></tr>
+        <tr><td style="padding:6px 0;color:${S.gray};vertical-align:top;">Compensation Type</td><td style="padding:6px 0;font-weight:500;">${compLabels[compType] || compType}</td></tr>
+        <tr><td style="padding:6px 0;color:${S.gray};vertical-align:top;">Retirement Timeline</td><td style="padding:6px 0;font-weight:500;">${timelineLabels[timeline] || timeline}</td></tr>
+      </table>
+    </div>
+
+    ${question && question !== '—' ? `
+    <div style="background:#f0f7f4;border-left:4px solid ${S.green};padding:16px;border-radius:0 8px 8px 0;margin:16px 0;">
+      <strong style="color:${S.green};font-size:13px;text-transform:uppercase;letter-spacing:0.05em;">Biggest Financial Question</strong>
+      <p style="color:${S.dark};margin:8px 0 0;font-size:15px;line-height:1.6;">${question}</p>
+    </div>` : ''}`
+}
+
 // ── Main email builder ───────────────────────────────────────────────
 
 function buildVisualReport(data: LeadPayload): string {
@@ -296,6 +338,7 @@ function buildVisualReport(data: LeadPayload): string {
     case 'ca-nv-az-tax-savings': return buildTaxSavingsReport(data)
     case 'consultation-form': return buildConsultationReport(data)
     case 'callback-request': return buildConsultationReport(data)
+    case 'wealth-review': return buildWealthReviewReport(data)
     default: return ''
   }
 }

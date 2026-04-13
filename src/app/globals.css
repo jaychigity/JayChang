@@ -123,6 +123,21 @@
   }
 }
 
+/* Landing pages — hide site chrome (nav, footers, skip-link) */
+body.landing-page {
+  background-color: #333333;
+}
+body.landing-page > nav,
+body.landing-page > footer {
+  display: none !important;
+}
+body.landing-page > .skip-to-content {
+  display: none !important;
+}
+body.landing-page > main {
+  padding-top: 0;
+}
+
 /* Skip to content */
 .skip-to-content {
   position: absolute;
