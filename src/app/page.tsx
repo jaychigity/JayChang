@@ -97,8 +97,23 @@ export default function Home() {
   <div className="absolute inset-0 bg-gradient-to-br from-[#333333] via-[#333333]/95 to-[#333333]/80" />
   <div className="relative z-10 w-full container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl pt-28 lg:pt-36 pb-16 lg:pb-24">
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-  {/* Left column: Text */}
-  <AnimateOnScroll>
+  {/* Photo — first on mobile, right column on desktop */}
+  <AnimateOnScroll delay={200} className="order-1 lg:order-2">
+   <div className="relative w-full max-w-lg mx-auto lg:ml-auto rounded-lg overflow-hidden shadow-2xl">
+   <Image
+   src="/Photos/Jay-Office.png"
+   alt="Jay Chang at his desk"
+   width={800}
+   height={600}
+   className="w-full h-auto rounded-lg"
+   priority
+   sizes="(max-width: 1024px) 100vw, 50vw"
+   />
+   </div>
+  </AnimateOnScroll>
+
+  {/* Text — second on mobile, left column on desktop */}
+  <AnimateOnScroll className="order-2 lg:order-1">
    <SectionEyebrow text="WEALTH MANAGEMENT · TECHNOLOGY · TRUST" light />
    <h1 className="font-serif text-4xl lg:text-6xl font-bold text-[#F7F4EE] mt-6 mb-8 leading-tight">
    A Partner in the Decisions That Shape Your Financial Life
@@ -119,21 +134,6 @@ export default function Home() {
    >
    Begin a Confidential Conversation →
    </Button>
-   </div>
-  </AnimateOnScroll>
-
-  {/* Right column: Photo */}
-  <AnimateOnScroll delay={200}>
-   <div className="relative w-full max-w-lg mx-auto lg:ml-auto rounded-lg overflow-hidden shadow-2xl">
-   <Image
-   src="/Photos/Jay-Office.png"
-   alt="Jay Chang at his desk"
-   width={800}
-   height={600}
-   className="w-full h-auto rounded-lg"
-   priority
-   sizes="(max-width: 1024px) 100vw, 50vw"
-   />
    </div>
   </AnimateOnScroll>
   </div>
