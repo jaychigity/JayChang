@@ -205,7 +205,7 @@ export default function CaliforniaPage() {
  />
 
  {/* ─── SECTION 1: HERO ─── */}
- <section className="relative min-h-screen bg-[#333333] flex items-center">
+ <section className="relative bg-[#333333] flex items-center py-10 md:py-20">
   <Image
   src="/Photos/california-professional.png"
   alt="California landscape - wealth management for Los Angeles, Silicon Valley, and San Francisco families"
@@ -216,7 +216,7 @@ export default function CaliforniaPage() {
   sizes="100vw"
   />
   <div className="absolute inset-0 bg-gradient-to-br from-[#333333] via-[#333333]/90 to-[#333333]/40" />
-  <div className="relative z-10 w-full px-[20px] md:px-[80px] py-[120px]">
+  <div className="relative z-10 w-full px-[20px] md:px-[80px]">
   <div className="max-w-[620px]">
   <AnimateOnScroll>
    <SectionEyebrow text="CALIFORNIA" light />

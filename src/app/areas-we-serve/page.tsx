@@ -15,7 +15,7 @@ export default function AreasWeServe() {
  return (
  <main>
  {/* HERO SECTION */}
- <section className="bg-[#F7F4EE] py-20">
+ <section className="bg-[#F7F4EE] py-10 md:py-20">
   <div className="max-w-4xl mx-auto px-6">
   <AnimateOnScroll>
   <h1 className="text-5xl font-bold text-[#333333] mb-6">

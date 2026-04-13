@@ -15,7 +15,7 @@ export default function TechExecutivePage() {
  return (
  <div className="w-full">
  {/* HERO SECTION */}
- <section className="relative w-full bg-[#F7F4EE] py-16 md:py-24">
+ <section className="relative w-full bg-[#F7F4EE] py-10 md:py-20">
   <Image
   src="/Photos/Semiconductor-1.png"
   alt="Technology professionals"

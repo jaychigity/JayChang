@@ -137,7 +137,7 @@ export default function WealthManagementPage() {
  />
 
  {/* Hero */}
- <section className="relative bg-[#333333] pt-28 lg:pt-32 pb-16 lg:pb-20 px-4 sm:px-6 lg:px-8">
+ <section className="relative bg-[#333333] pt-10 lg:pt-20 pb-16 lg:pb-20 px-4 sm:px-6 lg:px-8">
   <Image
   src="/Photos/couple-planning-office.png"
   alt="Wealth management planning"

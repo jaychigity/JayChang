@@ -120,7 +120,7 @@ export default function RetirementPlansPage() {
  {/* ================================================================
   HERO
   ================================================================ */}
- <section className="bg-[#F7F4EE] pt-[120px] pb-[80px] px-[80px] max-md:px-[20px] max-md:pt-[80px]">
+ <section className="bg-[#F7F4EE] pt-[100px] pb-[80px] px-[80px] max-md:px-[20px] max-md:pt-[80px]">
   <div className="max-w-[900px] mx-auto text-center">
   <SectionEyebrow text="401(K) & QUALIFIED RETIREMENT PLANS" />
   <h1 className="font-serif text-[52px] max-md:text-[34px] font-bold text-[#333333] leading-[1.15] mt-4">

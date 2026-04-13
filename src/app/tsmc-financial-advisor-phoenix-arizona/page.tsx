@@ -55,7 +55,7 @@ export default function TSMCFinancialAdvisor() {
  />
 
  {/* HERO SECTION */}
- <section className="relative bg-[#F7F4EE] py-16 md:py-24">
+ <section className="relative bg-[#F7F4EE] py-10 md:py-20">
   <Image
   src="/Photos/Jay-TSMC.png"
   alt="Jay Chang TSMC financial advisor"

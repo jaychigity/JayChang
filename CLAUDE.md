@@ -208,7 +208,9 @@ These spacing values must be consistent across ALL pages. Never deviate without 
 **Section padding:**
 - Standard section: `py-20 lg:py-32` (vertical padding)
 - Compact section (trust bars, dividers): `py-12`
-- Hero sections: `pt-[120px] pb-[48px] px-[20px] md:px-[40px] lg:px-[80px]`
+- Hero sections: `pt-[100px] pb-[48px] px-[20px] md:px-[40px] lg:px-[80px]`
+- Location/sector hero sections: `py-10 md:py-20`
+- Service page hero sections: `pt-10 lg:pt-20`
 
 **Container widths:**
 - Full-width content (card grids, multi-column layouts): `max-w-7xl`

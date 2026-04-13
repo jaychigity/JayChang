@@ -74,7 +74,7 @@ export default function ContactPage() {
   }}
  />
  {/* ── SECTION 1: HERO ── */}
- <section className="bg-[#F7F4EE] pt-28 lg:pt-32 pb-12 lg:pb-16 text-center">
+ <section className="bg-[#F7F4EE] pt-10 lg:pt-20 pb-12 lg:pb-16 text-center">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   <AnimateOnScroll>
   <SectionEyebrow text="GET IN TOUCH" />

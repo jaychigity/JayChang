@@ -72,7 +72,7 @@ export default function NVIDIAAdvisor() {
  />
 
  {/* Hero Section */}
- <section className="relative bg-[#F7F4EE] py-20 md:py-32">
+ <section className="relative bg-[#F7F4EE] py-10 md:py-20">
   <Image
   src="/Photos/Semiconductor-1.png"
   alt="Semiconductor industry"

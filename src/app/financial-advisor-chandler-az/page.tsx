@@ -59,7 +59,7 @@ export default function ChandlerFinancialAdvisor() {
  />
 
  {/* Hero Section */}
- <section className="bg-[#F7F4EE] py-20 md:py-32">
+ <section className="bg-[#F7F4EE] py-10 md:py-20">
   <div className="max-w-6xl mx-auto px-4 md:px-8">
   <AnimateOnScroll>
   <div className="text-center">

@@ -18,7 +18,7 @@ export default function FCXExecutiveWealthPage() {
  return (
  <main className="w-full">
  {/* HERO SECTION */}
- <section className="relative w-full bg-gradient-to-b from-slate-900 to-slate-800 py-20 px-4 sm:px-6 lg:px-8">
+ <section className="relative w-full bg-gradient-to-b from-slate-900 to-slate-800 py-10 md:py-20 px-4 sm:px-6 lg:px-8">
   <Image
   src="/Photos/Freeport-Headquarters.jpg"
   alt="Freeport-McMoRan headquarters"

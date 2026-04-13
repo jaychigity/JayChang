@@ -58,7 +58,7 @@ export default function PhysicianExecutiveWealthPage() {
  />
 
  {/* Hero Section */}
- <section className="bg-[#333333] text-white py-20 lg:py-32">
+ <section className="bg-[#333333] text-white py-10 lg:py-20">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
   {/* Left Column */}

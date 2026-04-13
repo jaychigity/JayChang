@@ -16,7 +16,7 @@ export default function HoneywellAdvisorPage() {
  return (
  <div className="w-full">
  {/* HERO SECTION */}
- <section className="relative bg-[#F7F4EE] py-16 md:py-24">
+ <section className="relative bg-[#F7F4EE] py-10 md:py-20">
   <Image
   src="/Photos/Aerospace.png"
   alt="Aerospace technology"

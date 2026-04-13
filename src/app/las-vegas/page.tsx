@@ -152,7 +152,7 @@ export default function LasVegasNevadaPage() {
  />
 
  {/* ─── SECTION 1: HERO ─── */}
- <section className="relative min-h-screen bg-[#333333] flex items-center">
+ <section className="relative bg-[#333333] flex items-center py-10 md:py-20">
   <Image
   src="/Photos/las-vegas-couple-sunset.avif"
   alt="Nevada desert landscape - wealth management for Las Vegas, Henderson, and Summerlin families"
@@ -163,7 +163,7 @@ export default function LasVegasNevadaPage() {
   sizes="100vw"
   />
   <div className="absolute inset-0 bg-gradient-to-r from-[#333333] via-[#333333]/85 to-transparent" />
-  <div className="relative z-10 mx-auto max-w-container px-sm md:px-lg py-[96px] w-full">
+  <div className="relative z-10 mx-auto max-w-container px-sm md:px-lg w-full">
   <AnimateOnScroll>
   <SectionEyebrow text="LAS VEGAS & NEVADA" light />
   </AnimateOnScroll>

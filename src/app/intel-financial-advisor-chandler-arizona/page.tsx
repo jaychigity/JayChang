@@ -56,7 +56,7 @@ export default function IntelFinancialAdvisor() {
  />
 
  {/* HERO SECTION */}
- <section className="relative bg-[#F7F4EE] py-20 px-6">
+ <section className="relative bg-[#F7F4EE] py-10 md:py-20 px-6">
   <Image
   src="/Photos/Jay-Intel.png"
   alt="Jay Chang Intel financial advisor"

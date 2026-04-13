@@ -117,7 +117,7 @@ export default function InstitutionalServicesPage() {
  />
 
  {/* ── Hero ── */}
- <section className="bg-[#F7F4EE] px-6 pb-20 pt-32 md:pb-28 md:pt-40">
+ <section className="bg-[#F7F4EE] px-6 pb-20 pt-20 md:pb-28 md:pt-28">
   <div className="max-w-container mx-auto text-center">
   <AnimateOnScroll>
   <SectionEyebrow text="INSTITUTIONAL SERVICES" />

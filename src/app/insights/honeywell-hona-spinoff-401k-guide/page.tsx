@@ -92,7 +92,7 @@ export default function HoneywellHonaSpinoff401kGuidePage() {
       />
 
       {/* Article Header */}
-      <section className="bg-[#333333] pt-[120px] pb-[60px] px-[80px] max-md:px-[20px] max-md:pt-[80px]">
+      <section className="bg-[#333333] pt-[100px] pb-[60px] px-[80px] max-md:px-[20px] max-md:pt-[100px]">
         <div className="max-w-[760px] mx-auto">
           <Link
             href="/insights"

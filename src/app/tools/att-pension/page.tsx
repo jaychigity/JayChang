@@ -24,7 +24,7 @@ export default function ATTPensionPage() {
   <>
    <BreadcrumbSchema items={[{ name: 'Tools', href: '/tools' }, { name: 'AT&T Pension Calculator', href: '/tools/att-pension' }]} />
    {/* Hero Banner */}
-   <section className="bg-[#333333] pt-[120px] pb-[48px] px-[20px] md:px-[40px] lg:px-[80px]">
+   <section className="bg-[#333333] pt-[100px] pb-[48px] px-[20px] md:px-[40px] lg:px-[80px]">
     <div className="max-w-[960px] mx-auto text-center">
      <p className="font-sans text-[12px] font-semibold uppercase tracking-[0.15em] text-[#1d7682] mb-4">
       AT&amp;T Pension &amp; Retirement Suite
