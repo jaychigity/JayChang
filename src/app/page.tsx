@@ -384,7 +384,7 @@ export default function Home() {
  </section>
 
  {/* SECTION 6: HOW WE WORK TOGETHER */}
- <section className="bg-[#333333] py-20 lg:py-32 overflow-hidden">
+ <section className="bg-[#2a2a2a] py-20 lg:py-32 overflow-hidden">
   <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
   <AnimateOnScroll>
   <SectionEyebrow text="HOW I WORK WITH YOU" light />
