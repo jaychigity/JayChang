@@ -343,10 +343,10 @@ export default function Navigation() {
         }}
       >
         <div
+          className="px-4 lg:px-8"
           style={{
-            maxWidth: 1440,
+            maxWidth: 1280,
             margin: "0 auto",
-            padding: "0 40px",
             height: "100%",
             display: "flex",
             alignItems: "center",
