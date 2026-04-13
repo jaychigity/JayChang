@@ -74,6 +74,51 @@ if their number is right.
 
 ---
 
+## CTA Button Language Overhaul (Planned)
+
+Rethink all "Schedule" / "Strategy Call" buttons across the site.
+Current language feels generic. New direction: position the consultation
+as a professional service with real value, not a free sales call.
+
+### Jay's concept for the new CTA flow:
+
+**Headline:** Confidential Financial Review
+
+**Value framing:**
+Professional Fee: ~~$500~~ (Waived)
+We waive our initial review fee to ensure we are the right fit for
+your goals before any commitment is made.
+
+**Form fields:** Name / Email (simplified — fewer fields, less friction)
+
+**Note below form:**
+This session is a high-level briefing designed to provide you with
+immediate clarity. No preparation or prior paperwork is required on
+your part. Just bring your questions and an open mind.
+
+**Checkbox before submit (required):**
+[X] I understand this is a professional consultation and I'm ready
+to explore my options seriously.
+
+**Submit button:** REQUEST MY REVIEW
+
+### Where this applies:
+- All sector page CTAs (semiconductor, aerospace, telecom, physician, etc.)
+- Homepage final CTA
+- /wealth-review form
+- /schedule-consultation page
+- Footer CTA
+- Nav "Start a Conversation" button
+- Decide: same language everywhere, or variations per page?
+
+### Open questions to decide before building:
+- Does the $500 waived framing apply to all pages or just specific funnels?
+- Keep the checkbox on every form or just the main consultation form?
+- How does this interact with the /401k-review page (which is calculator-first)?
+- Should the button say "REQUEST MY REVIEW" everywhere or vary by context?
+
+---
+
 ## How to Recall This File
 
 Tell Claude Code: "Read TODO-NEXT-STEPS.md" at the start of any session.
