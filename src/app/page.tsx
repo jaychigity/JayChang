@@ -95,7 +95,7 @@ export default function Home() {
  {/* SECTION 1: HERO */}
  <section className="relative bg-[#333333] flex items-center overflow-hidden">
   <div className="absolute inset-0 bg-gradient-to-br from-[#333333] via-[#333333]/95 to-[#333333]/80" />
-  <div className="relative z-10 w-full container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl pt-28 lg:pt-36 pb-16 lg:pb-24">
+  <div className="relative z-10 w-full container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl pt-4 lg:pt-20 pb-16 lg:pb-24">
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
   {/* Photo — first on mobile, right column on desktop */}
   <AnimateOnScroll delay={200} className="order-1 lg:order-2">
