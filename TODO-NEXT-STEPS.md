@@ -39,14 +39,41 @@ if their number is right.
 
 **Effort:** 1-2 hours
 
-### 3. Set up ad conversion tracking BEFORE spending any ad budget
-**What's needed:**
-- GA4 conversion events for form submissions on /wealth-review
-- GA4 events for calculator completion AND CTA clicks on /401k-review
-- Meta Pixel and Google Ads conversion tags if running ads on those platforms
-- UTM capture is already built (good) — but ad platforms need conversion endpoints
+### 3. Activate tracking pixels — code is installed, just need IDs
+**Status:** All tracking code is live in the codebase. Each pixel loads automatically
+when its env variable is set. No code changes needed — just add IDs to `.env`.
 
-**Effort:** 1-2 hours
+**Add these to your `.env` file (get IDs from each platform):**
+```
+# Google Ads — get from Google Ads > Tools > Conversions
+NEXT_PUBLIC_GOOGLE_ADS_ID=AW-XXXXXXXXXX
+NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_ID=AW-XXXXXXXXXX/XXXXXXXXXXXX
+
+# Meta (Facebook) Pixel — get from Meta Business Suite > Events Manager > Data Sources
+NEXT_PUBLIC_META_PIXEL_ID=123456789012345
+
+# LinkedIn Insight Tag — get from LinkedIn Campaign Manager > Analyze > Insight Tag
+NEXT_PUBLIC_LINKEDIN_PARTNER_ID=1234567
+
+# HubSpot — get from Settings > Tracking Code (your Portal ID)
+NEXT_PUBLIC_HUBSPOT_ID=12345678
+```
+
+**Already configured (verify these are set):**
+```
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+NEXT_PUBLIC_GTM_ID=GTM-XXXXXXX
+NEXT_PUBLIC_CLARITY_ID=your_clarity_id
+```
+
+**After adding IDs, also do these in each platform:**
+- **GA4:** Mark `generate_lead` as a conversion event in GA4 > Admin > Conversions
+- **Google Ads:** Create a conversion action, link it to GA4 or use the conversion ID above
+- **Meta:** Verify domain in Meta Business Suite, set up "Lead" as a conversion event
+- **LinkedIn:** Create a conversion action in Campaign Manager tied to the Insight Tag
+- **Google Search Console:** Add and verify advisorjay.com (separate from analytics — for SEO data)
+
+**Effort:** 30 min per platform to get IDs + configure conversions
 
 ---
 
