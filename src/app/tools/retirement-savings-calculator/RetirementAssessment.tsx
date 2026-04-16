@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
 
 // ─────────────────── TYPES & DATA ───────────────────
 
@@ -1051,32 +1052,7 @@ export default function RetirementAssessment() {
   </div>
 
   {/* Disclaimer */}
-  <div className="border-t border-[#E2E8F0] pt-6">
-  <p className="font-sans text-[12px] text-[#6B7280] leading-relaxed">
-  <strong>Important Disclosure:</strong> This Retirement Readiness Assessment is
-  provided for educational and illustrative purposes only and does not constitute
-  financial, tax, investment, or legal advice. The projections and scores shown are
-  based on simplified assumptions, including a hypothetical 7% annual pre-retirement
-  return and a 4% annual withdrawal rate, which may not reflect actual market
-  conditions, your specific tax situation, or individual circumstances. Past performance
-  does not guarantee future results. All investing involves risk, including the
-  potential loss of principal. This tool does not account for all variables that affect
-  retirement planning, including taxes, healthcare costs, market volatility, or changes
-  in personal circumstances. Please consult with a qualified financial advisor before
-  making any financial decisions. Farther Finance Advisors LLC is a registered
-  investment advisor with the SEC. Registration does not imply a certain level of skill
-  or training.
-  </p>
-  <p className="font-sans text-[13px] text-[#333333] mt-4">
-    For a personalized analysis of your situation, schedule a free conversation with Jay — no obligation, just clarity.
-  </p>
-  <a
-    href="/schedule-consultation"
-    className="inline-block mt-3 font-sans text-[14px] font-semibold text-[#F7F4EE] bg-gradient-to-b from-[#2a9dab] to-[#1d7682] px-6 py-3 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:from-[#238a97] hover:to-[#155f69] transition-all duration-200 no-underline"
-  >
-    Talk with Jay about your results →
-  </a>
-  </div>
+  <CalculatorDisclaimer toolName="retirement savings" variant="default" />
  </div>
  )
  }

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import Link from 'next/link'
+import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
 
 // ─────────────────────────── TYPES ───────────────────────────
 
@@ -1009,45 +1010,12 @@ export default function TVMCalculator() {
       </div>
 
       {/* ────── DISCLAIMERS ────── */}
-      <div className="mt-10 max-w-[900px] mx-auto space-y-3">
-        <p className="font-sans text-[11px] text-[#6B7280] leading-relaxed">
-          This calculator provides estimates for illustrative purposes only and
-          does not constitute investment advice, tax advice, or a recommendation
-          to buy or sell any security. All projections are hypothetical and based
-          on the assumptions you input. Actual investment returns will vary and
-          may be negative. The historical return rates shown are based on
-          long-term market averages and are not guaranteed; past performance
-          does not predict future results. Dividends are estimated based on
-          current yield assumptions and may change over time.
-        </p>
-        <p className="font-sans text-[11px] text-[#6B7280] leading-relaxed">
-          Market correction scenarios are modeled as simplified single-event
-          declines and do not capture the complexity of actual market downturns,
-          including duration, volatility, or partial recoveries. Real market
-          corrections may have significantly different impacts on your portfolio
-          depending on asset allocation, rebalancing strategy, and timing of
-          contributions.
-        </p>
-        <p className="font-sans text-[11px] text-[#6B7280] leading-relaxed">
-          This tool does not account for taxes, inflation, investment fees,
-          advisory fees, or other costs that would reduce actual returns.
-          Farther Finance Inc. is a registered investment adviser with the SEC.
-          Registration does not imply a certain level of skill or training. For
-          more information, please review our{' '}
-          <Link href="/disclosures" className="underline hover:text-[#1d7682]">
-            Form ADV Part 2A
-          </Link>
-          .
-        </p>
-        <p className="font-sans text-[13px] text-[#333333] mt-4">
-          For a personalized analysis of your situation, schedule a free conversation with Jay — no obligation, just clarity.
-        </p>
-        <a
-          href="/schedule-consultation"
-          className="inline-block mt-3 font-sans text-[14px] font-semibold text-[#F7F4EE] bg-gradient-to-b from-[#2a9dab] to-[#1d7682] px-6 py-3 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:from-[#238a97] hover:to-[#155f69] transition-all duration-200 no-underline"
-        >
-          Talk with Jay about your results →
-        </a>
+      <div className="mt-10 max-w-[900px] mx-auto">
+        <CalculatorDisclaimer
+          toolName="time value of money"
+          variant="default"
+          additionalContext="Market correction scenarios are modeled as simplified single-event declines and do not capture duration, volatility, or partial recoveries. This tool does not account for taxes, inflation, investment fees, advisory fees, or other costs that would reduce actual returns. Farther Finance Inc. is a registered investment adviser with the SEC; registration does not imply a certain level of skill or training. See our Form ADV Part 2A on the disclosures page."
+        />
       </div>
     </div>
   )

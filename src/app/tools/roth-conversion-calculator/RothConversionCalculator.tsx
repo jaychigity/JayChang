@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { TAX_YEAR, computeTax, getMarginalBracket } from '@/lib/tax-brackets'
+import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
 
 // ─────────────────────────── CORE CALCULATION ───────────────────────────
 
@@ -591,40 +592,12 @@ export default function RothConversionCalculator() {
  </div>
 
  {/* ────── DISCLAIMERS ────── */}
- <div className="mt-10 max-w-[900px] mx-auto space-y-3">
-  <p className="font-sans text-[11px] text-[#6B7280] leading-relaxed">
-  This calculator provides estimates for illustrative purposes only and
-  does not constitute tax advice, legal advice, or a recommendation to
-  execute a Roth IRA conversion. Actual tax liability will depend on
-  your complete tax situation, including state and local taxes,
-  deductions, credits, and other income sources not modeled here. The
-  calculator uses {TAX_YEAR} federal income tax brackets; future tax law
-  changes may significantly affect results. Tax-free Roth IRA
-  withdrawals require the account to be open for at least 5 years and
-  the account holder to be age 59&frac12; or older. Early withdrawals
-  may be subject to taxes and a 10% penalty. Consult a qualified tax
-  professional before making any conversion decisions.
-  </p>
-  <p className="font-sans text-[11px] text-[#6B7280] leading-relaxed">
-  Investment returns are hypothetical and do not represent any specific
-  investment. Actual returns will vary and may be negative. Farther
-  Finance Inc. is a registered investment adviser with the SEC.
-  Registration does not imply a certain level of skill or training. For
-  more information, please review our{' '}
-  <Link href="/disclosures" className="underline hover:text-[#1d7682]">
-  Form ADV Part 2A
-  </Link>
-  .
-  </p>
-  <p className="font-sans text-[13px] text-[#333333] mt-4">
-    For a personalized analysis of your situation, schedule a free conversation with Jay — no obligation, just clarity.
-  </p>
-  <a
-    href="/schedule-consultation"
-    className="inline-block mt-3 font-sans text-[14px] font-semibold text-[#F7F4EE] bg-gradient-to-b from-[#2a9dab] to-[#1d7682] px-6 py-3 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:from-[#238a97] hover:to-[#155f69] transition-all duration-200 no-underline"
-  >
-    Talk with Jay about your results →
-  </a>
+ <div className="mt-10 max-w-[900px] mx-auto">
+  <CalculatorDisclaimer
+   toolName="Roth conversion"
+   variant="default"
+   additionalContext={`Calculations use ${TAX_YEAR} federal income tax brackets and do not account for state and local taxes, deductions, credits, or other income sources not modeled here — future tax law changes may significantly affect results. Tax-free Roth IRA withdrawals generally require the account to be open at least 5 years and the holder to be age 59½ or older; early withdrawals may be subject to taxes and a 10% penalty. Farther Finance Inc. is a registered investment adviser with the SEC; registration does not imply a certain level of skill or training. See our Form ADV Part 2A on the disclosures page.`}
+  />
  </div>
  </div>
  )

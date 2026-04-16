@@ -2,6 +2,7 @@
 
 import { useState, useRef } from 'react'
 import Link from 'next/link'
+import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
 
 // ─────────────────── TYPES ───────────────────
 
@@ -1150,31 +1151,7 @@ export default function EstateComplexityAssessment() {
   </div>
 
   {/* Disclaimer */}
-  <div className="border-t border-[#E2E8F0] pt-6">
-  <p className="font-sans text-[12px] text-[#6B7280] leading-relaxed">
-  <strong>Important Disclosure:</strong> This Estate Complexity Assessment is an
-  educational tool that provides a general indication of the potential complexity of
-  your estate situation. It does not constitute legal, tax, or financial advice, and
-  should not be relied upon as a substitute for consultation with qualified estate
-  planning attorneys, tax advisors, or financial planners. The complexity score is
-  based on general factors and does not account for all individual circumstances.
-  Federal estate tax exemption amounts referenced ($15 million individual / $30 million
-  married couple for 2026) are based on the One Big Beautiful Bill Act signed into law
-  in 2025, and are subject to future legislative changes. State estate or inheritance
-  taxes, which vary by jurisdiction, are not factored into this assessment. Farther
-  Finance Advisors LLC is an SEC-registered investment adviser. Registration does not
-  imply a certain level of skill or training.
-  </p>
-  <p className="font-sans text-[13px] text-[#333333] mt-4">
-    For a personalized analysis of your situation, schedule a free conversation with Jay — no obligation, just clarity.
-  </p>
-  <a
-    href="/schedule-consultation"
-    className="inline-block mt-3 font-sans text-[14px] font-semibold text-[#F7F4EE] bg-gradient-to-b from-[#2a9dab] to-[#1d7682] px-6 py-3 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:from-[#238a97] hover:to-[#155f69] transition-all duration-200 no-underline"
-  >
-    Talk with Jay about your results →
-  </a>
-  </div>
+  <CalculatorDisclaimer toolName="estate complexity" variant="default" />
  </div>
  )
  }

@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { SS_WAGE_BASE, SS_TAX_RATE } from '@/lib/tax-constants-2026'
+import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
 
 /* ═══════════════════════════════════════════════════════════════════════
    Social Security Constants — 2026
@@ -1101,35 +1102,11 @@ export default function SocialSecurityCalculator() {
       </div>
 
       {/* ━━━━━━━━━━━━━━━━━ DISCLOSURE ━━━━━━━━━━━━━━━━━ */}
-      <div className="bg-[#F7F4EE] rounded-xl p-5 md:p-6 mt-10">
-        <p className="font-sans text-[12px] text-[#333]/50 leading-relaxed mb-4">
-          These results are estimates for illustrative purposes only and
-          should not be considered financial or tax advice. Social
-          Security benefit calculations use SSA formulas and are
-          approximations — your actual benefit may differ based on your
-          complete earnings history. Lifetime projections assume{' '}
-          {(cola * 100).toFixed(1)}% annual cost-of-living adjustments.
-          IRMAA thresholds and earnings test limits are 2026 estimates.
-          For your official benefit estimate, visit{' '}
-          <a
-            href="https://www.ssa.gov/myaccount"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#1d7682] underline"
-          >
-            ssa.gov/myaccount
-          </a>
-          . For a personalized Social Security claiming strategy that
-          considers your full financial picture, schedule a free
-          conversation with Jay.
-        </p>
-        <Link
-          href="/schedule-consultation"
-          className="inline-block font-sans text-[14px] font-semibold text-white bg-gradient-to-b from-[#2a9dab] to-[#1d7682] rounded-full px-6 py-3 hover:opacity-90 transition-opacity"
-        >
-          Talk with Jay about your Social Security strategy →
-        </Link>
-      </div>
+      <CalculatorDisclaimer
+        toolName="Social Security"
+        variant="default"
+        additionalContext={`Social Security benefit calculations use SSA formulas and are approximations — your actual benefit may differ based on your complete earnings history. Lifetime projections assume ${(cola * 100).toFixed(1)}% annual cost-of-living adjustments. IRMAA thresholds and earnings test limits are 2026 estimates. For your official benefit estimate, visit ssa.gov/myaccount.`}
+      />
     </div>
   )
 }

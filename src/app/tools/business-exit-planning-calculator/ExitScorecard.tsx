@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react'
 import Link from 'next/link'
+import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
 import {
  questions,
  getTier,
@@ -1012,24 +1013,7 @@ export default function ExitScorecard() {
   </div>
 
   {/* Footer disclaimer */}
-  <p className="font-sans text-[12px] text-[#94A3B8] text-center leading-relaxed mb-6">
-   This Business Exit Readiness Scorecard is provided for
-   educational and illustrative purposes only. It does
-   not constitute financial, tax, legal, or investment
-   advice, and should not be relied upon as a substitute
-   for consultation with qualified professionals. Results
-   are based solely on self-reported responses and do not
-   account for the full complexity of your situation.
-  </p>
-  <p className="font-sans text-[13px] text-[#333333] mt-4">
-    For a personalized analysis of your situation, schedule a free conversation with Jay — no obligation, just clarity.
-  </p>
-  <a
-    href="/schedule-consultation"
-    className="inline-block mt-3 font-sans text-[14px] font-semibold text-[#F7F4EE] bg-gradient-to-b from-[#2a9dab] to-[#1d7682] px-6 py-3 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:from-[#238a97] hover:to-[#155f69] transition-all duration-200 no-underline"
-  >
-    Talk with Jay about your results →
-  </a>
+  <CalculatorDisclaimer toolName="business exit" variant="default" />
   </div>
   )}
  </div>

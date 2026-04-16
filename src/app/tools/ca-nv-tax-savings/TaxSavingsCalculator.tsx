@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
 
 // ─────────────────────────── CA TAX BRACKETS 2026 ───────────────────────────
 
@@ -795,34 +796,11 @@ export default function TaxSavingsCalculator() {
 
  {/* ────── DISCLAIMER ────── */}
  <div className="mt-10 max-w-[900px] mx-auto">
-  <p className="font-sans text-[11px] text-[#6B7280] leading-relaxed">
-  This calculator provides estimates for illustrative
-  purposes only and does not constitute tax, legal, or
-  financial advice. California tax calculations use 2026
-  progressive brackets (1%-13.3%). Arizona calculations
-  use the current flat rate of 2.5% with a 25% long-term
-  capital gains subtraction. Nevada figures reflect $0 state
-  income tax. Actual liability varies based on deductions,
-  credits, AMT exposure, filing nuances, and California
-  Franchise Tax Board sourcing rules - which may
-  continue to tax certain income (RSU vesting, deferred comp,
-  CA-sourced business income) even after you establish
-  out-of-state residency. Arizona has proposed a possible
-  reduction to 2.42% for TY 2026 pending legislative action
-  (SB 1318); this calculator uses the current enacted 2.5%
-  rate as the conservative figure. Consult a qualified tax
-  advisor before making relocation decisions. Farther Finance,
-  Inc. does not provide tax or legal advice.
-  </p>
-  <p className="font-sans text-[13px] text-[#333333] mt-4">
-    For a personalized analysis of your situation, schedule a free conversation with Jay — no obligation, just clarity.
-  </p>
-  <a
-    href="/schedule-consultation"
-    className="inline-block mt-3 font-sans text-[14px] font-semibold text-[#F7F4EE] bg-gradient-to-b from-[#2a9dab] to-[#1d7682] px-6 py-3 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:from-[#238a97] hover:to-[#155f69] transition-all duration-200 no-underline"
-  >
-    Talk with Jay about your results →
-  </a>
+  <CalculatorDisclaimer
+   toolName="CA-to-NV tax savings"
+   variant="default"
+   additionalContext="California tax calculations use 2026 progressive brackets (1%-13.3%); Arizona uses the current enacted 2.5% flat rate with a 25% long-term capital gains subtraction; Nevada reflects $0 state income tax. California Franchise Tax Board sourcing rules may continue to tax certain income (RSU vesting, deferred comp, CA-sourced business income) even after you establish out-of-state residency. Farther Finance, Inc. does not provide tax or legal advice."
+  />
  </div>
  </div>
  )

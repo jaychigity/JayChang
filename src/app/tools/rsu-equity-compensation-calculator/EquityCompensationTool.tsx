@@ -3,6 +3,7 @@
 import { useState, useCallback, useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { MEDICARE_TAX_RATE } from '@/lib/tax-constants-2026'
+import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
 
 // ─────────────────── TYPES ───────────────────
 
@@ -1095,34 +1096,11 @@ export default function EquityCompensationTool() {
   </div>
 
   {/* Disclaimers */}
-  <div className="border-t border-[#E2E8F0] pt-6 space-y-4">
-  <p className="font-sans text-[12px] text-[#6B7280] leading-relaxed">
-   <strong>Important Disclosure:</strong> This tool provides generalized estimates for
-   educational and illustrative purposes only. It does not constitute tax, legal, or
-   investment advice. Actual tax obligations depend on your complete financial
-   situation, applicable federal and state tax laws, specific plan terms, and other
-   factors not captured here. The Alternative Minimum Tax (AMT), state taxes, Medicare
-   surtax (NIIT), and other provisions may significantly affect your results. Consult a
-   qualified tax advisor and financial planner before making equity compensation
-   decisions. Farther Finance Advisors LLC is an SEC-registered investment adviser.
-   Registration does not imply a certain level of skill or training.
-  </p>
-  <p className="font-sans text-[11px] text-[#94A3B8] leading-relaxed">
-   Calculations assume federal tax rates only and do not account for state income
-   taxes, local taxes, or the 3.8% Net Investment Income Tax. Projected values assume
-   no change in stock price from the current price entered. Past performance is not
-   indicative of future results. This is not an offer to buy or sell securities.
-  </p>
-  <p className="font-sans text-[13px] text-[#333333] mt-4">
-    For a personalized analysis of your situation, schedule a free conversation with Jay — no obligation, just clarity.
-  </p>
-  <a
-    href="/schedule-consultation"
-    className="inline-block mt-3 font-sans text-[14px] font-semibold text-[#F7F4EE] bg-gradient-to-b from-[#2a9dab] to-[#1d7682] px-6 py-3 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:from-[#238a97] hover:to-[#155f69] transition-all duration-200 no-underline"
-  >
-    Talk with Jay about your results →
-  </a>
-  </div>
+  <CalculatorDisclaimer
+    toolName="RSU and equity"
+    variant="default"
+    additionalContext="The Alternative Minimum Tax (AMT), state taxes, Medicare surtax (NIIT), and other provisions may significantly affect your results. Calculations assume federal tax rates only and do not account for state income taxes, local taxes, or the 3.8% Net Investment Income Tax. Projected values assume no change in stock price from the current price entered. This is not an offer to buy or sell securities. Farther Finance Advisors LLC is an SEC-registered investment adviser. Registration does not imply a certain level of skill or training."
+  />
   </div>
  )}
  </div>

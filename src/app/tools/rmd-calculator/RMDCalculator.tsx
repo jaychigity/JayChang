@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
+import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
 import {
   TAX_YEAR,
   FEDERAL_BRACKETS_SINGLE,
@@ -840,22 +841,11 @@ export default function RMDCalculator() {
       </div>
 
       {/* ══════════════════ DISCLOSURE + CTA ══════════════════ */}
-      <div className="bg-[#FAFAF8] rounded-xl border border-[#E2E8F0] p-6">
-        <p className="font-sans text-[12px] text-[#94A3B8] leading-relaxed mb-4">
-          These results are estimates for illustrative purposes only and should not be considered financial or tax advice. RMD calculations use the {TAX_YEAR} IRS Uniform Lifetime Table (Table III) or Joint & Last Survivor Table (Table II). Actual RMDs depend on your December 31 prior-year account balance. Tax estimates use {TAX_YEAR} federal brackets and approximate state rates. IRMAA thresholds are estimates and may differ from actual Medicare determinations. For a personalized RMD strategy that considers your full financial picture, schedule a free conversation with Jay — no obligation, just clarity.
-        </p>
-        <div className="text-center">
-          <Link
-            href="/schedule-consultation"
-            className="inline-block font-sans text-[15px] font-semibold text-white bg-gradient-to-b from-[#2a9dab] to-[#1d7682] rounded-full px-8 py-4 shadow-md hover:shadow-lg transition-all"
-            style={{
-              boxShadow: 'inset 0 1px 1px rgba(255,255,255,0.25), 0 2px 8px rgba(29,118,130,0.3)',
-            }}
-          >
-            Talk with Jay about your RMD strategy →
-          </Link>
-        </div>
-      </div>
+      <CalculatorDisclaimer
+        toolName="RMD"
+        variant="default"
+        additionalContext={`RMD calculations use the ${TAX_YEAR} IRS Uniform Lifetime Table (Table III) or Joint & Last Survivor Table (Table II). Actual RMDs depend on your December 31 prior-year account balance. Tax estimates use ${TAX_YEAR} federal brackets and approximate state rates. IRMAA thresholds are estimates and may differ from actual Medicare determinations.`}
+      />
     </div>
   )
 }

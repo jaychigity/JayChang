@@ -1,6 +1,8 @@
 'use client'
 
 import { useState, useRef, useCallback } from 'react'
+import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
+import PlanSelector from './PlanSelector'
 import {
   SS_WAGE_BASE,
   SEGMENT_RATE_1,
@@ -174,6 +176,18 @@ export default function ATTPensionCalculator() {
 
   return (
     <div className="max-w-[960px] mx-auto px-[20px] md:px-[40px] py-[48px] md:py-[64px]">
+      {/* Plan Selector — helps users figure out which plan they're in before they start */}
+      <PlanSelector
+        onSelectTab={(tabId) => {
+          if (TABS.some((t) => t.id === tabId)) {
+            setActiveTab(tabId as TabId)
+            setTimeout(() => {
+              resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            }, 100)
+          }
+        }}
+      />
+
       {/* Tab Navigation */}
       <div className="flex overflow-x-auto gap-[4px] mb-[32px] pb-[4px] -mx-[20px] px-[20px] md:mx-0 md:px-0 scrollbar-hide">
         {TABS.map((tab) => (
@@ -202,12 +216,12 @@ export default function ATTPensionCalculator() {
         {activeTab === 'incomeGap' && <IncomeGapCalc onCalculate={scrollToResults} />}
       </div>
 
-      {/* Disclaimer */}
-      <div className="mt-[48px] bg-[#FAFAF8] border border-[#E2E8F0] rounded-[8px] p-[20px]">
-        <p className="font-sans text-[12px] text-[#5b6a71] leading-relaxed">
-          <strong>Important:</strong> These calculators provide estimates based on publicly available AT&amp;T pension plan information and IRS segment rates. Your actual benefit depends on your specific plan program, hire date, legacy company, and bargaining unit. Pension band amounts are approximate and vary by job title and contract year. Always verify with your AT&amp;T benefits portal (Fidelity NetBenefits) or HR. This tool does not constitute financial or tax advice.
-        </p>
-      </div>
+      {/* Suite-level disclaimer — applies to all 6 calculator tabs */}
+      <CalculatorDisclaimer
+        toolName="AT&T pension"
+        variant="default"
+        additionalContext="IRS segment rates and mortality assumptions update monthly. Lump sum projections are sensitive to small rate changes — a value calculated today may differ meaningfully from your actual lump sum at retirement. Pension band amounts are approximate and vary by job title and contract year. Always verify with NetBenefits or AT&T HR before making decisions."
+      />
     </div>
   )
 }
@@ -1275,21 +1289,6 @@ function IncomeGapCalc({ onCalculate }: { onCalculate: () => void }) {
         </div>
       )}
 
-      {/* Disclosure */}
-      <div className="mt-12 pt-8 border-t border-[#E2E8F0]">
-        <p className="font-sans text-[11px] leading-relaxed text-[#5b6a71]">
-          <strong>Important Disclosure:</strong> This suite of calculators provides estimates for illustrative purposes only and does not constitute financial, tax, or investment advice. Pension calculations are based on simplified assumptions and may not reflect your actual plan terms, service credits, or benefit formulas. Lump sum estimates use hypothetical interest rates and mortality assumptions that differ from AT&T's actual plan calculations. 401(k) projections assume constant contribution rates and hypothetical returns that may not reflect actual market performance. Actual benefits, tax obligations, and retirement income will depend on your specific circumstances, plan documents, and applicable tax law. Past performance does not guarantee future results. Consult a qualified financial advisor and review your official plan documents before making any retirement decisions. Farther Finance Advisors LLC is an SEC-registered investment adviser. Registration does not imply a certain level of skill or training.
-        </p>
-        <p className="font-sans text-[13px] text-[#333333] mt-4">
-          For a personalized analysis of your AT&T benefits and retirement options, schedule a free conversation with Jay — no obligation, just clarity.
-        </p>
-        <a
-          href="/schedule-consultation"
-          className="inline-block mt-3 font-sans text-[14px] font-semibold text-[#F7F4EE] bg-gradient-to-b from-[#2a9dab] to-[#1d7682] px-6 py-3 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:from-[#238a97] hover:to-[#155f69] transition-all duration-200 no-underline"
-        >
-          Talk with Jay about your results →
-        </a>
-      </div>
     </div>
   )
 }

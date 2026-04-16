@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
+import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
 import {
   TAX_YEAR,
   FEDERAL_BRACKETS_SINGLE,
@@ -977,22 +978,11 @@ export default function InheritedIRACalculator() {
           </div>
 
           {/* Disclosure + CTA */}
-          <div className="bg-[#FAFAF8] rounded-xl border border-[#E2E8F0] p-6">
-            <p className="font-sans text-[12px] text-[#94A3B8] leading-relaxed mb-4">
-              These results are estimates for illustrative purposes only and should not be considered financial or tax advice. Actual outcomes depend on your specific situation, tax circumstances, investment returns, and potential future changes in tax law. RMD calculations use the {TAX_YEAR} IRS Single Life Expectancy Table. State tax estimates are approximate. For a personalized analysis of your inherited IRA situation, schedule a free conversation with Jay — no obligation, just clarity.
-            </p>
-            <div className="text-center">
-              <Link
-                href="/schedule-consultation"
-                className="inline-block font-sans text-[15px] font-semibold text-white bg-gradient-to-b from-[#2a9dab] to-[#1d7682] rounded-full px-8 py-4 shadow-md hover:shadow-lg transition-all"
-                style={{
-                  boxShadow: 'inset 0 1px 1px rgba(255,255,255,0.25), 0 2px 8px rgba(29,118,130,0.3)',
-                }}
-              >
-                Talk with Jay about your inherited IRA →
-              </Link>
-            </div>
-          </div>
+          <CalculatorDisclaimer
+            toolName="inherited IRA"
+            variant="default"
+            additionalContext={`RMD calculations use the ${TAX_YEAR} IRS Single Life Expectancy Table. State tax estimates are approximate.`}
+          />
 
           {/* Back to inputs */}
           <div className="flex gap-4">

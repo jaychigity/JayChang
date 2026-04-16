@@ -136,26 +136,34 @@ export const metadata: Metadata = {
 - The source identifier (e.g., `'business-exit-scorecard'`) is a backend key, NOT a URL — don't rename these when renaming URLs
 - `src/app/api/lead/route.ts` has per-tool email report builders — add one for any new tool that captures leads
 
-### Calculator disclosure (required on every tool)
-Every calculator or tool that generates numbers, projections, or estimates MUST include
-a disclosure statement. This is non-negotiable — it's a compliance requirement.
+### Calculator disclosure (required on every tool — use the shared component)
+Every calculator, scorecard, or assessment that produces numbers, projections, or scores
+MUST include the standard `<CalculatorDisclaimer />` component below the results. This is
+non-negotiable — it's a compliance requirement and ensures consistent language site-wide.
 
-The disclosure should:
-- Appear below the results, clearly visible but not intrusive
-- State that results are for illustrative/educational purposes only and are not financial advice
-- State that actual results may vary and should be reviewed with a qualified financial professional
-- Lead into a warm CTA to contact Jay (not generic — use voice rules)
+**Import and use it like this:**
+```tsx
+import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
 
-Example pattern:
+// Below the results section:
+<CalculatorDisclaimer
+  toolName="401(k) withholding"           // tool-specific name for the CTA
+  variant="default"                        // or "dark" if used on a dark section
+  additionalContext="Optional plan note"   // optional — for plan-specific caveats
+/>
 ```
-These results are estimates for illustrative purposes only and should not be considered
-financial advice. Actual outcomes depend on your specific situation, tax circumstances,
-and market conditions. For a personalized analysis, schedule a free conversation with Jay.
-[Button: Talk with Jay about your results →]
-```
 
-Always include both the text disclaimer AND a CTA button/link. The CTA should feel like
-a natural next step, not a sales pitch.
+The component renders:
+- Standard heading: "This is an estimate — not a number to plan around alone."
+- 3 paragraphs explaining: educational purpose, real-world variance, past performance disclaimer
+- Optional additional context paragraph (e.g., for IRS rate-sensitive calcs)
+- CTA: "Talk through your {toolName} numbers with Jay →" linking to /schedule-consultation
+
+**Critical rules:**
+- NEVER write a custom disclaimer — always use this component for consistency and compliance
+- The CTA must always point users to **Jay specifically**, never to a generic "financial professional"
+- Calculators are educational tools to *help* users think — never positioned as decision-making sources
+- Component lives at `src/components/CalculatorDisclaimer.tsx` — update there for site-wide changes
 
 ### Tax constants & annual currency (critical)
 All tax-related numbers are centralized in `src/lib/tax-constants-2026.ts`. This is the

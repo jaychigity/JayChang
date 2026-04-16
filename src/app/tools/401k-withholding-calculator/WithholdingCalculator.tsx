@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
 import {
   TAX_YEAR,
   LIMIT_401K_EMPLOYEE_DEFERRAL,
@@ -1187,20 +1188,11 @@ export default function WithholdingCalculator() {
       </div>
 
       {/* Disclosure */}
-      <div className="mt-12 pt-8 border-t border-[#E2E8F0]">
-        <p className="font-sans text-[11px] leading-relaxed text-[#5b6a71]">
-          <strong>Important Disclosure:</strong> This calculator provides estimates for illustrative purposes only and does not constitute financial, tax, or investment advice. Actual results will depend on your specific compensation structure, employer plan rules, tax situation, and other factors not captured here. Federal tax brackets shown are based on 2026 rates and may change with future legislation. Employer match calculations are estimates and may differ from your actual plan terms. Consult a qualified financial advisor before making changes to your 401(k) withholding or contribution strategy. Farther Finance Advisors LLC is an SEC-registered investment adviser. Registration does not imply a certain level of skill or training.
-        </p>
-        <p className="font-sans text-[13px] text-[#333333] mt-4">
-          For a personalized analysis of your situation, schedule a free conversation with Jay — no obligation, just clarity.
-        </p>
-        <a
-          href="/schedule-consultation"
-          className="inline-block mt-3 font-sans text-[14px] font-semibold text-[#F7F4EE] bg-gradient-to-b from-[#2a9dab] to-[#1d7682] px-6 py-3 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:from-[#238a97] hover:to-[#155f69] transition-all duration-200 no-underline"
-        >
-          Talk with Jay about your results →
-        </a>
-      </div>
+      <CalculatorDisclaimer
+        toolName="401(k) withholding"
+        variant="default"
+        additionalContext="Federal tax brackets shown are based on 2026 rates and may change with future legislation. Employer match calculations are estimates and may differ from your actual plan terms. Farther Finance Advisors LLC is an SEC-registered investment adviser. Registration does not imply a certain level of skill or training."
+      />
 
     </div>
   )
