@@ -181,10 +181,10 @@ export default function InvestmentPhilosophyPage() {
       <AnimateOnScroll delay={200}>
        <div className="relative w-full max-w-md mx-auto lg:ml-auto rounded-lg overflow-hidden shadow-2xl">
         <Image
-         src="/Photos/B&W-Jay-Headshot.png"
+         src="/Photos/Investment Philosophy.png"
          alt="Jay Chang, Wealth Advisor at Farther"
-         width={1024}
-         height={948}
+         width={1728}
+         height={2444}
          className="w-full h-auto"
          priority
         />
