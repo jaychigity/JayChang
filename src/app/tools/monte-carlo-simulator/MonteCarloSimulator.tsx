@@ -612,7 +612,7 @@ export default function MonteCarloSimulator() {
 
           {/* ─── INPUTS ─── */}
           <div className="w-full lg:w-[296px] flex-shrink-0">
-            <div className="bg-white rounded-xl shadow-sm border border-[#e8e4dc] p-5 lg:sticky lg:top-[88px] max-h-[calc(100vh-100px)] overflow-y-auto">
+            <div className="bg-white rounded-xl shadow-sm border border-[#e8e4dc] p-5 lg:sticky lg:top-[88px]">
 
               {synced && (
                 <div className="flex items-center gap-1.5 mb-4 px-2.5 py-1.5 bg-[#e6f7ef] rounded-lg">
