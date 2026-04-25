@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Button from '@/components/Button';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
+import USClientMap from '@/components/USClientMap';
 
 export const metadata: Metadata = {
  title: 'About Jay Chang | Your Neighbor Who Happens to Be a Wealth Advisor | Farther',
@@ -223,10 +224,16 @@ export default function AboutPage() {
   <h2 className="text-3xl md:text-4xl font-bold text-[#333333] text-center mb-6">
    Areas We Serve
   </h2>
-  <p className="text-lg text-[#5b6a71] text-center max-w-3xl mx-auto mb-12">
-   Based in Arizona, we work with families and professionals across the country. Here are some of the communities we serve most often.
+  <p className="text-lg text-[#5b6a71] text-center max-w-3xl mx-auto mb-10">
+   Based in Arizona, we work with families and professionals across the country. Hover over a state to explore.
   </p>
 
+  {/* US Map */}
+  <div className="max-w-4xl mx-auto mb-12">
+   <USClientMap />
+  </div>
+
+  {/* Featured location links */}
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
    <Link href="/scottsdale" className="bg-white border border-[#E8E6E1] rounded-[12px] p-8 hover:shadow-md transition-shadow text-center">
    <h3 className="text-lg font-bold text-[#333333] mb-1">Scottsdale, AZ</h3>
