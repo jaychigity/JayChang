@@ -107,8 +107,8 @@ export default function JayChangPage() {
    </div>
   </AnimateOnScroll>
 
-  {/* Right Column - Image */}
-  <AnimateOnScroll delay={0.2}>
+  {/* Right Column - Image (sticky so it travels with the longer left column) */}
+  <AnimateOnScroll delay={0.2} className="md:sticky md:top-[100px] md:self-start">
    <div className="bg-white rounded-lg md:mt-[100px]">
    <Image
    src="/Photos/Jay-arms-crossed-transparent.png"
