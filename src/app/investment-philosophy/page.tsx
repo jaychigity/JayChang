@@ -684,12 +684,6 @@ export default function InvestmentPhilosophyPage() {
         Let's Have a Conversation{' '}
         <ArrowRight className="inline-block ml-2 w-4 h-4" />
        </Button>
-       <Button
-        href="https://www.farther.com/post/the-farther-2026-outlook-embrace-volatility"
-        variant="outline"
-       >
-        Read My 2026 Investment Outlook
-       </Button>
       </div>
      </AnimateOnScroll>
     </div>
