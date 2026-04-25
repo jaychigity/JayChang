@@ -18,6 +18,12 @@ const CLIENT_STATES: Record<string, "primary" | "active"> = {
   Washington: "active",
   Colorado: "active",
   Oregon: "active",
+  Idaho: "active",
+  Illinois: "active",
+  "New York": "active",
+  "South Carolina": "active",
+  Florida: "active",
+  Tennessee: "active",
 };
 
 const COLORS = {
