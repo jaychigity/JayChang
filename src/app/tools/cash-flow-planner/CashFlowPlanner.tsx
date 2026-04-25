@@ -287,8 +287,8 @@ export default function CashFlowPlanner() {
 
   // Table header cell style helpers
   const thGroup = "font-sans text-[10px] font-bold uppercase tracking-[0.12em] text-center py-2 px-2"
-  const th = "font-sans text-[10px] font-semibold text-[#5b6a71] text-right py-2 px-2 whitespace-nowrap align-bottom cursor-default"
-  const thLeft = "font-sans text-[10px] font-semibold text-[#5b6a71] text-center py-2 px-2 align-bottom"
+  const th = "font-sans text-[10px] font-semibold text-[#5b6a71] text-right py-2 px-2 whitespace-nowrap align-bottom cursor-default bg-[#F7F4EE]"
+  const thLeft = "font-sans text-[10px] font-semibold text-[#5b6a71] text-center py-2 px-2 align-bottom bg-[#F7F4EE]"
   const td = "font-sans text-[12px] text-right tabular-nums py-[7px] px-2 whitespace-nowrap"
   const tdCenter = "font-sans text-[12px] text-center tabular-nums py-[7px] px-2"
   const tdBold = "font-sans text-[12px] font-bold text-right tabular-nums py-[7px] px-2 whitespace-nowrap"
