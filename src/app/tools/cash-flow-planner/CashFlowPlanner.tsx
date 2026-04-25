@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo, useId } from 'react'
+import { useState, useMemo, useId, useRef, useEffect } from 'react'
 import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
 
 // ─────────────────── TYPES ───────────────────
@@ -250,6 +250,14 @@ export default function CashFlowPlanner() {
   const uid = useId()
   const [inputs, setInputs] = useState<CFInputs>(DEFAULTS)
   const [goalCounter, setGoalCounter] = useState(1)
+  const row1Ref = useRef<HTMLTableRowElement>(null)
+  const [row1H, setRow1H] = useState(33)
+
+  useEffect(() => {
+    if (row1Ref.current) {
+      setRow1H(row1Ref.current.getBoundingClientRect().height)
+    }
+  }, [])
 
   const rows = useMemo(() => buildCashFlow(inputs), [inputs])
 
@@ -287,8 +295,8 @@ export default function CashFlowPlanner() {
 
   // Table header cell style helpers
   const thGroup = "font-sans text-[10px] font-bold uppercase tracking-[0.12em] text-center py-2 px-2"
-  const th = "font-sans text-[10px] font-semibold text-[#5b6a71] text-right py-2 px-2 whitespace-nowrap align-bottom cursor-default bg-[#F7F4EE]"
-  const thLeft = "font-sans text-[10px] font-semibold text-[#5b6a71] text-center py-2 px-2 align-bottom bg-[#F7F4EE]"
+  const th = "cf-sticky-2 font-sans text-[10px] font-semibold text-[#5b6a71] text-right py-2 px-2 whitespace-nowrap align-bottom cursor-default bg-[#F7F4EE]"
+  const thLeft = "cf-sticky-2 font-sans text-[10px] font-semibold text-[#5b6a71] text-center py-2 px-2 align-bottom bg-[#F7F4EE]"
   const td = "font-sans text-[12px] text-right tabular-nums py-[7px] px-2 whitespace-nowrap"
   const tdCenter = "font-sans text-[12px] text-center tabular-nums py-[7px] px-2"
   const tdBold = "font-sans text-[12px] font-bold text-right tabular-nums py-[7px] px-2 whitespace-nowrap"
@@ -573,24 +581,27 @@ export default function CashFlowPlanner() {
               </div>
 
               <div className="overflow-x-auto" style={{ maxHeight: 520 }}>
-                <table className="text-sm" style={{ minWidth: 980, borderCollapse: 'separate', borderSpacing: 0 }}>
-                  <thead className="sticky top-0 z-10 bg-[#F7F4EE]">
+                <table
+                  className="text-sm cf-table"
+                  style={{ minWidth: 980, borderCollapse: 'separate', borderSpacing: 0, '--row2-top': `${row1H}px` } as React.CSSProperties}
+                >
+                  <thead className="bg-[#F7F4EE]">
                     {/* Group header row */}
-                    <tr>
-                      <th colSpan={2} className="bg-[#F7F4EE] border-b border-[#e8e4dc]" />
+                    <tr ref={row1Ref}>
+                      <th colSpan={2} className="cf-sticky-1 bg-[#F7F4EE] border-b border-[#e8e4dc]" />
                       <th
                         colSpan={4}
-                        className={`${thGroup} bg-[#e8f4f6] text-[#1d7682] border-b border-[#e8e4dc] border-r border-[#c5e0e4]`}
+                        className={`cf-sticky-1 ${thGroup} bg-[#e8f4f6] text-[#1d7682] border-b border-[#e8e4dc] border-r border-[#c5e0e4]`}
                       >
                         Cash Inflows
                       </th>
                       <th
                         colSpan={4}
-                        className={`${thGroup} bg-[#fef4ec] text-[#c07a30] border-b border-[#e8e4dc] border-r border-[#f0d9c0]`}
+                        className={`cf-sticky-1 ${thGroup} bg-[#fef4ec] text-[#c07a30] border-b border-[#e8e4dc] border-r border-[#f0d9c0]`}
                       >
                         Cash Outflows
                       </th>
-                      <th colSpan={2} className="bg-[#F7F4EE] border-b border-[#e8e4dc]" />
+                      <th colSpan={2} className="cf-sticky-1 bg-[#F7F4EE] border-b border-[#e8e4dc]" />
                     </tr>
                     {/* Column header row */}
                     <tr className="bg-[#F7F4EE] border-b border-[#e8e4dc]">
@@ -692,8 +703,18 @@ export default function CashFlowPlanner() {
         </div>
       </div>
 
-      {/* Slider styles */}
+      {/* Slider + sticky header styles */}
       <style jsx global>{`
+        .cf-table .cf-sticky-1 {
+          position: sticky;
+          top: 0;
+          z-index: 20;
+        }
+        .cf-table .cf-sticky-2 {
+          position: sticky;
+          top: var(--row2-top, 33px);
+          z-index: 19;
+        }
         .cf-slider {
           -webkit-appearance: none;
           appearance: none;
