@@ -105,7 +105,7 @@ export default function ContactPage() {
  {/* ── SECTION 2: FORM + DIRECT CONTACT ── */}
  <section className="bg-[#FAFAF8] py-20 lg:py-32">
   <div className="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
-  <div className="grid grid-cols-1 md:grid-cols-[60%_40%] gap-12">
+  <div className="grid grid-cols-1 md:grid-cols-[60%_40%] gap-12 items-start">
   {/* Left Column - Form */}
   <AnimateOnScroll>
    <div>
@@ -150,7 +150,7 @@ export default function ContactPage() {
    <p className="font-sans text-sm text-[#5b6a71] mb-4">
     Grab a 30-minute slot on my calendar. Pick whatever works best for your schedule.
    </p>
-   <Button href="/schedule-consultation" variant="outline">
+   <Button href="https://meetings.hubspot.com/jay-chang1" variant="outline">
     Open Calendar
    </Button>
    </div>
@@ -177,19 +177,19 @@ export default function ContactPage() {
  </section>
 
  {/* ── SECTION 3: WHAT TO EXPECT ── */}
- <section className="bg-[#FAFAF8] py-20 lg:py-32">
+ <section className="bg-[#FAFAF8] py-10 lg:py-16">
   <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
   <AnimateOnScroll>
   <SectionEyebrow text="WHAT TO EXPECT" />
   </AnimateOnScroll>
 
   <AnimateOnScroll delay={100}>
-  <h2 className="font-serif text-[36px] text-[#333333] font-bold mt-6">
+  <h2 className="font-serif text-[36px] text-[#333333] font-bold mt-4">
    Here's What Happens Next.
   </h2>
   </AnimateOnScroll>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
   {steps.map((step, i) => (
    <AnimateOnScroll key={step.number} delay={i * 150}>
    <div className="text-center">
