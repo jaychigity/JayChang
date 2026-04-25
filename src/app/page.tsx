@@ -122,7 +122,7 @@ export default function Home() {
    I work as a fiduciary, which means my advice has to be in your interest. Not close to it. Not most of the time. There&apos;s no commission structure, no product to sell. Just advice.
    </p>
    <p className="text-base text-[#F7F4EE]/70 leading-relaxed mb-6">
-   I&apos;ve worked with utility and telecom employees at companies like AT&amp;T and PG&amp;E weighing pension and pre-retirement decisions, non-profit professionals managing deferred compensation, tech employees navigating equity compensation, physicians building wealth alongside a demanding practice, and business owners thinking through what comes after. The specifics are always different. The work is the same: understand what you have, clarify what matters, and help you act.
+   I&apos;ve worked with utility and telecom employees at companies like AT&amp;T and PG&amp;E weighing pension and pre-retirement decisions, non-profits and their people navigating deferred compensation, tech employees navigating equity compensation, physicians building wealth alongside a demanding practice, and business owners thinking through what comes after. The specifics are always different. The work is the same: understand what you have, clarify what matters, and help you act.
    </p>
    <p className="text-base text-[#F7F4EE]/60 leading-relaxed mb-10">
    I&apos;m part of Farther&apos;s advisor network, which gives you access to an institutional platform: tax-lot optimization, direct indexing, estate planning resources, and over $15 billion in assets under management. You get that infrastructure alongside someone who knows your name and your situation.
