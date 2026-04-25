@@ -52,8 +52,8 @@ export default function AboutPage() {
  name: 'Ashton Hayes',
  title: 'JD, LL.M. in Taxation • Trust Services Associate, Farther',
  photo: '/Photos/Ashton-Hayes-color.png',
- photoWidth: 695,
- photoHeight: 308,
+ photoWidth: 2115,
+ photoHeight: 1848,
  bio: [
   'Ashton holds a JD and Master of Laws in Taxation from the University of Alabama. When you have questions about trusts, estates, or how to protect what you\'ve built for your family, she\'s the one who digs into the details.',
   'She handles trust structuring, complex beneficiary planning, and grantor trust strategies - the stuff that keeps your wealth where it belongs.',
