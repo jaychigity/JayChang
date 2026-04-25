@@ -577,7 +577,7 @@ export default function CashFlowPlanner() {
                   className="text-sm"
                   style={{ minWidth: 980, borderCollapse: 'separate', borderSpacing: 0 }}
                 >
-                  <thead style={{ position: 'sticky', top: 0, zIndex: 20 }}>
+                  <thead style={{ position: 'sticky', top: 0, zIndex: 20, backgroundColor: '#F7F4EE' }}>
                     {/* Group header row */}
                     <tr>
                       <th colSpan={2} className="bg-[#F7F4EE] border-b border-[#e8e4dc]" />
