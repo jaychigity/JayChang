@@ -331,9 +331,12 @@ export default function CashFlowPlanner() {
   const peakPortfolio = Math.max(...rows.map(r => r.portfolioBalance))
 
   // Table header cell style helpers
-  const thGroup = "font-sans text-[10px] font-bold uppercase tracking-[0.12em] text-center py-2 px-2"
-  const th = "font-sans text-[10px] font-semibold text-[#5b6a71] text-right py-2 px-2 whitespace-nowrap align-bottom cursor-default bg-[#F7F4EE]"
-  const thLeft = "font-sans text-[10px] font-semibold text-[#5b6a71] text-center py-2 px-2 align-bottom bg-[#F7F4EE]"
+  const th = "font-sans text-[10px] font-semibold text-[#5b6a71] text-right py-2.5 px-2 whitespace-nowrap align-bottom cursor-default"
+  const thLeft = "font-sans text-[10px] font-semibold text-[#5b6a71] text-center py-2.5 px-2 align-bottom"
+  // Per-group inline styles — single-row thead eliminates the inter-row gap bug entirely
+  const thN: React.CSSProperties = { background: '#F7F4EE', borderTop: '3px solid #F7F4EE', borderBottom: '2px solid #c5c0b8', borderRight: '1px solid #e8e4dc' }
+  const thI: React.CSSProperties = { background: '#e8f4f6', borderTop: '3px solid #1d7682',  borderBottom: '2px solid #c5c0b8', borderRight: '1px solid #e8e4dc' }
+  const thO: React.CSSProperties = { background: '#fef4ec', borderTop: '3px solid #c07a30',  borderBottom: '2px solid #c5c0b8', borderRight: '1px solid #e8e4dc' }
   const td = "font-sans text-[12px] text-right tabular-nums py-[7px] px-2 whitespace-nowrap"
   const tdCenter = "font-sans text-[12px] text-center tabular-nums py-[7px] px-2"
   const tdBold = "font-sans text-[12px] font-bold text-right tabular-nums py-[7px] px-2 whitespace-nowrap"
@@ -629,42 +632,25 @@ export default function CashFlowPlanner() {
                   className="text-sm"
                   style={{ minWidth: 980, borderCollapse: 'separate', borderSpacing: 0 }}
                 >
-                  <thead style={{ position: 'sticky', top: 0, zIndex: 20, backgroundColor: '#F7F4EE' }}>
-                    {/* Group header row */}
+                  <thead style={{ position: 'sticky', top: 0, zIndex: 20 }}>
+                    {/* Single row — no inter-row gap possible */}
                     <tr>
-                      <th colSpan={2} className="bg-[#F7F4EE] border-b border-[#e8e4dc]" />
-                      <th
-                        colSpan={4}
-                        className={`${thGroup} bg-[#e8f4f6] text-[#1d7682] border-b border-[#e8e4dc] border-r border-[#c5e0e4]`}
-                      >
-                        Cash Inflows
-                      </th>
-                      <th
-                        colSpan={4}
-                        className={`${thGroup} bg-[#fef4ec] text-[#c07a30] border-b border-[#e8e4dc] border-r border-[#f0d9c0]`}
-                      >
-                        Cash Outflows
-                      </th>
-                      <th colSpan={2} className="bg-[#F7F4EE] border-b border-[#e8e4dc]" />
-                    </tr>
-                    {/* Column header row */}
-                    <tr className="bg-[#F7F4EE] border-b border-[#e8e4dc]">
-                      <th className={`${thLeft} border-r border-[#e8e4dc] w-[52px]`}>Year</th>
-                      <th className={`${thLeft} border-r border-[#e8e4dc] w-[40px]`}>Age</th>
-                      {/* Inflows */}
-                      <th className={`${th} border-r border-[#e8e4dc]`}>Income<br />Inflows</th>
-                      <th className={`${th} border-r border-[#e8e4dc]`}>Portfolio<br />Draw</th>
-                      <th className={`${th} border-r border-[#e8e4dc]`}>SS &amp; Pension<br />/ Other</th>
-                      <th className={`${th} border-r border-[#c5e0e4] font-bold text-[#1d7682]`}>Total<br />Inflows</th>
-                      {/* Outflows */}
-                      <th className={`${th} border-r border-[#e8e4dc]`}>Living<br />Expenses</th>
-                      <th className={`${th} border-r border-[#e8e4dc]`}>Goals &amp;<br />One-time</th>
-                      <th className={`${th} border-r border-[#e8e4dc]`}>Tax<br />Payment</th>
-                      <th className={`${th} border-r border-[#f0d9c0] font-normal`}>Planned<br />Savings</th>
-                      <th className={`${th} border-r border-[#e8e4dc] font-bold text-[#c07a30]`}>Total<br />Outflows</th>
+                      <th className={thLeft} style={{ ...thN, width: 52 }}>Year</th>
+                      <th className={thLeft} style={{ ...thN, width: 40 }}>Age</th>
+                      {/* Inflows — teal accent */}
+                      <th className={th} style={thI}>Income<br />Inflows</th>
+                      <th className={th} style={thI}>Portfolio<br />Draw</th>
+                      <th className={th} style={thI}>SS &amp; Pension<br />/ Other</th>
+                      <th className={`${th} font-bold text-[#1d7682]`} style={{ ...thI, borderRight: '1px solid #c5e0e4' }}>Total<br />Inflows</th>
+                      {/* Outflows — orange accent */}
+                      <th className={th} style={thO}>Living<br />Expenses</th>
+                      <th className={th} style={thO}>Goals &amp;<br />One-time</th>
+                      <th className={th} style={thO}>Tax<br />Payment</th>
+                      <th className={th} style={{ ...thO, borderRight: '1px solid #f0d9c0' }}>Planned<br />Savings</th>
+                      <th className={`${th} font-bold text-[#c07a30]`} style={thO}>Total<br />Outflows</th>
                       {/* Summary */}
-                      <th className={`${th} border-r border-[#e8e4dc] font-bold text-[#333333] min-w-[90px]`}>Net<br />Flows</th>
-                      <th className={`${th} text-[#333333]`}>Portfolio<br />Balance</th>
+                      <th className={`${th} font-bold text-[#333333] min-w-[90px]`} style={thN}>Net<br />Flows</th>
+                      <th className={`${th} font-semibold text-[#333333]`} style={{ ...thN, borderRight: 'none' }}>Portfolio<br />Balance</th>
                     </tr>
                   </thead>
                   <tbody>
