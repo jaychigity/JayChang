@@ -138,6 +138,14 @@ const tools = [
  time: '45 seconds',
  category: 'Calculator',
  },
+ {
+ href: '/tools/monte-carlo-simulator',
+ title: 'Monte Carlo Portfolio Simulator',
+ description:
+ 'Markets don\'t move in straight lines. Run 500 simulations to see the full range of outcomes for your portfolio, from great markets to tough ones. Includes retirement drawdown mode to see what percentage of scenarios keep you funded through your full horizon.\n\nEspecially useful for: anyone stress-testing a retirement plan, evaluating withdrawal rates, or modeling sequence-of-returns risk.',
+ time: 'Instant results',
+ category: 'Simulator',
+ },
 ]
 
 export default function ToolsPage() {

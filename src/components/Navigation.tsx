@@ -56,9 +56,9 @@ const navItems: NavItem[] = [
     children: [
       { label: "AT&T Pension Suite", href: "/tools/att-pension" },
       { label: "PG&E Pension Suite", href: "/tools/pge-pension" },
+      { label: "Monte Carlo Simulator", href: "/tools/monte-carlo-simulator" },
       { label: "Withholding Calculator", href: "/tools/401k-withholding-calculator" },
       { label: "Roth Conversion", href: "/tools/roth-conversion-calculator" },
-      { label: "Retirement Readiness", href: "/tools/retirement-savings-calculator" },
       { label: "All Tools", href: "/tools" },
     ],
   },

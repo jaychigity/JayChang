@@ -156,6 +156,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/tools/att-pension`, lastModified: '2026-04-24', changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${baseUrl}/tools/pge-pension`, lastModified: '2026-04-24', changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${baseUrl}/tools/401k-projection`, lastModified: '2026-04-24', changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${baseUrl}/tools/monte-carlo-simulator`, lastModified: '2026-04-25', changeFrequency: 'monthly' as const, priority: 0.7 },
   ]
 
   return staticPages.map((page) => ({
