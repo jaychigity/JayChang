@@ -372,7 +372,7 @@ function SurvivalStat({ rate, lifeExpectancy }: { rate: number; lifeExpectancy: 
         ))}
       </div>
       <p className="font-sans text-[9px] text-[#b0bec5] text-center leading-relaxed">Min: 70% &middot; Target: 80%+ &middot; Ideal: 90%+</p>
-      <p className="font-sans text-[10px] text-[#8a9ba3] text-center leading-relaxed mt-2 border-t border-[#f0ece5] pt-2">
+      <p className="font-sans text-[10px] text-[#4a5a62] text-center leading-relaxed mt-2 border-t border-[#f0ece5] pt-2">
         <span className="font-semibold text-[#4bc49a]">Success</span> = money remaining at age {lifeExpectancy}.{' '}
         <span className="font-semibold text-[#e05252]">Failure</span> = portfolio runs out before then.
       </p>
