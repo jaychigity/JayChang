@@ -360,10 +360,10 @@ export default function Navigation() {
             aria-label="Advisor Jay - Home"
           >
             <Image
-              src="/Photos/Farther_Wordmark_RGB_Cream.png"
-              alt="Farther"
+              src="/Photos/Farther Focus light.png"
+              alt="Farther Focus Team"
               width={140}
-              height={36}
+              height={42}
               style={{ objectFit: "contain" }}
               priority
             />
@@ -480,10 +480,10 @@ export default function Navigation() {
             aria-label="Advisor Jay - Home"
           >
             <Image
-              src="/Photos/Farther_Wordmark_RGB_Cream.png"
-              alt="Farther"
+              src="/Photos/Farther Focus light.png"
+              alt="Farther Focus Team"
               width={120}
-              height={32}
+              height={36}
               style={{ objectFit: "contain" }}
             />
           </Link>
