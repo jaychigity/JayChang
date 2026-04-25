@@ -396,7 +396,7 @@ export default function Home() {
    A Simple Process That Puts You First.
   </h2>
   <p className="text-lg text-[#F7F4EE]/70 max-w-3xl mb-16 leading-relaxed">
-   Every relationship starts the same way — with a real conversation. From there, I build something that&apos;s truly yours.
+   It starts with a conversation. From there, I build a plan around your actual life.
   </p>
   </AnimateOnScroll>
 
