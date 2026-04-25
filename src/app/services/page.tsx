@@ -193,7 +193,7 @@ export default function ServicesPage() {
        Let&apos;s Talk About What&apos;s on Your Mind
       </h2>
       <p className="font-sans text-[17px] text-[#F7F4EE]/90 max-w-[620px] mx-auto mb-10 leading-relaxed">
-       No sales pitch. Just a real conversation about your situation, what&apos;s keeping you up at night, and how our team can help.
+       Confidential · Available nationwide
       </p>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
        <Button

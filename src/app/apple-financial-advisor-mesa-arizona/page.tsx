@@ -376,7 +376,7 @@ export default function AppleFinancialAdvisor() {
    <Button href="/schedule-consultation" variant="primary">Schedule Your Apple Employee Strategy Call - Mesa, Cupertino, and Beyond</Button>
   </div>
   <p className="text-lg text-[#5b6a71] font-sans">
-   No cost. No pressure. Just clarity.
+   Confidential · Available nationwide
   </p>
   </div>
   </section>

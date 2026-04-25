@@ -508,7 +508,7 @@ export default function ConsultationForm() {
 
         {/* Reassurance line */}
         <p className="font-sans text-[12px] text-[#5b6a71] text-center mt-[16px]">
-          No obligation. No sales pitch. Just a real conversation about your goals.
+          Confidential · Available nationwide
         </p>
       </form>
 

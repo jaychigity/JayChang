@@ -378,7 +378,7 @@ export default function RaytheonRTXFinancialAdvisor() {
    <Button href="/schedule-consultation" variant="primary">Schedule Your RTX / Raytheon Strategy Call - Serving Tucson and Phoenix-area professionals</Button>
   </div>
   <p className="text-lg text-[#5b6a71] font-sans">
-   No cost. No pressure. Just clarity.
+   Confidential · Available nationwide
   </p>
   </div>
   </section>

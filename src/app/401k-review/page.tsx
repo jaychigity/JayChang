@@ -108,7 +108,7 @@ export default function FourOneKReviewPage() {
             Schedule a Conversation with Jay
           </Link>
           <p className="font-sans text-[12px] text-[#b6d0ed]/60 mt-[12px]">
-            No pitch. Just a real conversation about your goals.
+            Confidential · Available nationwide
           </p>
         </div>
       </section>

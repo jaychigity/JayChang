@@ -345,7 +345,7 @@ export default function IntelFinancialAdvisor() {
    <Button href="/schedule-consultation" variant="primary">Schedule Your Intel Strategy Call</Button>
   </div>
   <p className="text-lg text-[#5b6a71] font-sans">
-   No cost. No pressure. Just a real conversation.
+   Confidential · Available nationwide
   </p>
   </div>
   </section>
