@@ -383,7 +383,8 @@ function ConfidenceMeter({ pct }: { pct: number }) {
   const endAngle = Math.PI * (1 - clamp / 100)
   const ex = cx + R * Math.cos(endAngle)
   const ey = cy - R * Math.sin(endAngle)
-  const largeArc = clamp > 50 ? 1 : 0
+  // The active arc always sweeps ≤180° over the top of the semicircle — large-arc is always 0.
+  // Setting it to 1 would send the arc the wrong way (down through the bottom).
   const needleAngle = Math.PI * (1 - Math.min(110, Math.max(0, pct)) / 100)
   const nx = cx + R * 0.68 * Math.cos(needleAngle)
   const ny = cy - R * 0.68 * Math.sin(needleAngle)
@@ -394,8 +395,9 @@ function ConfidenceMeter({ pct }: { pct: number }) {
     <div className="flex-shrink-0 text-center">
       <p className="font-sans text-[9px] font-bold uppercase tracking-[0.12em] text-[#5b6a71] mb-1">Confidence Meter</p>
       <svg width={140} height={88} viewBox="0 0 140 88">
-        {/* Background arc */}
-        <path d={`M ${cx - R} ${cy} A ${R} ${R} 0 1 1 ${cx + R} ${cy}`}
+        {/* Background arc — sweep=1 (clockwise/upward from left), large-arc=0 to avoid
+            the degenerate case of two diametrically-opposite endpoints being ambiguous */}
+        <path d={`M ${cx - R} ${cy} A ${R} ${R} 0 0 1 ${cx + R} ${cy}`}
           fill="none" stroke="#e8e4dc" strokeWidth={SW} strokeLinecap="butt" />
         {/* Colored segment overlays */}
         {([
@@ -413,8 +415,8 @@ function ConfidenceMeter({ pct }: { pct: number }) {
               fill="none" stroke={c} strokeWidth={SW} opacity={0.18} strokeLinecap="butt" />
           )
         })}
-        {/* Active arc */}
-        <path d={`M ${cx - R} ${cy} A ${R} ${R} 0 ${largeArc} 1 ${ex} ${ey}`}
+        {/* Active arc — large-arc always 0; any filled portion of the semicircle is ≤180° */}
+        <path d={`M ${cx - R} ${cy} A ${R} ${R} 0 0 1 ${ex} ${ey}`}
           fill="none" stroke={color} strokeWidth={SW} strokeLinecap="round" opacity={0.9} />
         {/* Needle */}
         <line x1={cx} y1={cy} x2={nx} y2={ny} stroke="#333333" strokeWidth={2.5} strokeLinecap="round" />
