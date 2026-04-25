@@ -132,13 +132,12 @@ export default function Footer() {
                 marginBottom: 24,
               }}
             >
-              Our Locations
+              Areas We Serve
             </h4>
 
             <ul style={{ listStyle: "none", padding: 0, margin: "0 0 16px 0" }}>
               {[
                 { label: "Scottsdale, AZ", href: "/scottsdale" },
-                { label: "Las Vegas, NV", href: "/las-vegas" },
                 { label: "California", href: "/california" },
                 { label: "Areas We Serve", href: "/areas-we-serve" },
               ].map((item) => (
@@ -192,7 +191,7 @@ export default function Footer() {
                   marginTop: 2,
                 }}
               >
-                Serving Arizona, California &amp; Nevada
+                Based in Tempe, Arizona. Serving clients nationwide.
               </div>
             </div>
 
