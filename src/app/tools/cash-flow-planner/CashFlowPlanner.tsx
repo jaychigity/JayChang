@@ -345,7 +345,7 @@ export default function CashFlowPlanner() {
 
           {/* ─── INPUTS PANEL ─── */}
           <div className="w-full lg:w-[288px] flex-shrink-0">
-            <div className="bg-white rounded-xl shadow-sm border border-[#e8e4dc] p-5 lg:sticky lg:top-[88px] max-h-[calc(100vh-100px)] overflow-y-auto">
+            <div className="bg-white rounded-xl shadow-sm border border-[#e8e4dc] p-5 lg:sticky lg:top-[88px]">
 
               {/* Sync badge */}
               {synced && (
