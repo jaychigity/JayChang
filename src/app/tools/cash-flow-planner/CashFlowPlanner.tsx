@@ -635,8 +635,8 @@ export default function CashFlowPlanner() {
                   <thead style={{ position: 'sticky', top: 0, zIndex: 20 }}>
                     {/* Single row — no inter-row gap possible */}
                     <tr>
-                      <th className={thLeft} style={{ ...thN, width: 52 }}>Year</th>
-                      <th className={thLeft} style={{ ...thN, width: 40 }}>Age</th>
+                      <th className={thLeft} style={{ ...thN, width: 52, position: 'sticky', left: 0, zIndex: 30 }}>Year</th>
+                      <th className={thLeft} style={{ ...thN, width: 40, position: 'sticky', left: 52, zIndex: 30, boxShadow: '2px 0 6px -2px rgba(0,0,0,0.10)' }}>Age</th>
                       {/* Inflows — teal accent */}
                       <th className={th} style={thI}>Income<br />Inflows</th>
                       <th className={th} style={thI}>Portfolio<br />Draw</th>
@@ -670,10 +670,12 @@ export default function CashFlowPlanner() {
                           style={{ backgroundColor: rowBg }}
                           className="border-b border-[#f0ece5] hover:brightness-[0.97] transition-all"
                         >
-                          <td className={`${tdCenter} font-semibold text-[#333333] border-r border-[#e8e4dc]`}>
+                          <td className={`${tdCenter} font-semibold text-[#333333] border-r border-[#e8e4dc]`}
+                            style={{ position: 'sticky', left: 0, zIndex: 2, background: rowBg }}>
                             {row.year}
                           </td>
-                          <td className={`${tdCenter} border-r border-[#e8e4dc] ${row.age === inputs.retirementAge ? 'font-bold text-[#1d7682]' : 'text-[#5b6a71]'}`}>
+                          <td className={`${tdCenter} border-r border-[#e8e4dc] ${row.age === inputs.retirementAge ? 'font-bold text-[#1d7682]' : 'text-[#5b6a71]'}`}
+                            style={{ position: 'sticky', left: 52, zIndex: 2, background: rowBg, boxShadow: '2px 0 6px -2px rgba(0,0,0,0.10)' }}>
                             {row.age}
                             {row.age === inputs.retirementAge && (
                               <span className="ml-0.5 text-[8px] text-[#1d7682] font-bold">RET</span>
