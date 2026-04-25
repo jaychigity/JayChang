@@ -343,10 +343,6 @@ export default function AboutPage() {
   <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
    Ready When You Are.
   </h2>
-  <p className="text-xl text-gray-200 mb-8">
-   The first conversation is complimentary - and the clarity you walk away with lasts.
-  </p>
-
   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
    <Button
    href="/schedule-consultation"
