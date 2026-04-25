@@ -672,7 +672,7 @@ export default function Home() {
    Let&apos;s Start With a Simple Conversation.
   </h2>
   <p className="text-lg text-gray-300 leading-relaxed mb-10">
-   No commitment. No product pitch. Just a real chat about where you are, where you want to go, and whether I&apos;m the right fit to help you get there. That&apos;s it.
+   A real conversation about where you are and where you want to be.
   </p>
   <div className="flex flex-col items-center gap-4">
    <Button
