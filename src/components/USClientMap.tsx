@@ -21,6 +21,7 @@ const CLIENT_STATES: Record<string, "primary" | "active"> = {
   Idaho: "active",
   Illinois: "active",
   "New York": "active",
+  "New Jersey": "active",
   "South Carolina": "active",
   Florida: "active",
   Tennessee: "active",
