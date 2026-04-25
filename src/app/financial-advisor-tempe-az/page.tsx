@@ -137,7 +137,7 @@ export default function TempeFinancialAdvisor() {
    Let&apos;s Grab 30 Minutes and Talk About Your Goals
   </h3>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   No cost, no pressure. We&apos;ll walk through your situation, what you&apos;re trying to accomplish, and honestly share whether we think there are opportunities worth exploring.
+   We&apos;ll walk through your situation, what you&apos;re trying to accomplish, and honestly share whether we think there are opportunities worth exploring.
   </p>
   <Button
    href="/schedule-consultation"

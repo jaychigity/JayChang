@@ -630,7 +630,7 @@ export default function PGEEmployeeFinancialAdvisor() {
             <Button href="/schedule-consultation" variant="primary">
               Schedule Your PG&amp;E Benefits Review
             </Button>
-            <p className="text-gray-400 text-sm mt-4">No commitment · Available nationwide</p>
+            <p className="text-gray-400 text-sm mt-4">Confidential · Available nationwide</p>
           </AnimateOnScroll>
         </div>
       </section>

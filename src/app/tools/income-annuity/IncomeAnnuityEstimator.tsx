@@ -415,7 +415,7 @@ export default function IncomeAnnuityEstimator() {
   </h3>
   <p className="font-sans text-[15px] text-[#5b6a71] mt-2 max-w-[480px] mx-auto">
    A Farther advisor can help you evaluate annuity options alongside
-   your full financial picture - at no cost or obligation.
+   your full financial picture.
   </p>
   <Link
    href="/schedule-consultation"

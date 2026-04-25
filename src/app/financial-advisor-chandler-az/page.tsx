@@ -137,7 +137,7 @@ export default function ChandlerFinancialAdvisor() {
    Let&apos;s Look at Your Equity Picture Together
   </h3>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   Book a 30-minute call with us. We&apos;ll talk through your equity situation, any relocation tax questions, and whether there are opportunities you haven&apos;t tapped into yet. No sales pitch - just a straight conversation.
+   Book a 30-minute call with us. We&apos;ll talk through your equity situation, any relocation tax questions, and whether there are opportunities you haven&apos;t tapped into yet.
   </p>
   <Button
    href="/schedule-consultation"

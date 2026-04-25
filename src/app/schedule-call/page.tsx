@@ -5,7 +5,7 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
  title: 'Schedule a Conversation With Jay Chang | Wealth Advisor | Phoenix, AZ',
- description: 'Schedule a conversation with Jay Chang, fiduciary wealth advisor at Farther. No pressure, no commitment — just a simple conversation to see if it is helpful.',
+ description: 'Schedule a conversation with Jay Chang, fiduciary wealth advisor at Farther. A focused conversation about your financial situation.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/schedule-call',
  },

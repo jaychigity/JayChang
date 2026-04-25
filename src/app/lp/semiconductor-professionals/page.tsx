@@ -214,7 +214,7 @@ export default function SemiconductorProfessionalsLP() {
    Let&apos;s Have a Conversation
   </h2>
   <p className="font-sans text-[17px] text-[#F7F4EE]/85 max-w-[540px] mx-auto mt-5 leading-relaxed">
-   Pick a time on Jay&apos;s calendar and we&apos;ll talk through your equity situation and tax exposure. No sales pitch, no pressure - just a straightforward conversation about where you stand and what might make sense.
+   Pick a time on Jay&apos;s calendar and we&apos;ll talk through your equity situation and tax exposure. A straightforward conversation about where you stand and what might make sense.
   </p>
   </AnimateOnScroll>
   <AnimateOnScroll delay={100}>

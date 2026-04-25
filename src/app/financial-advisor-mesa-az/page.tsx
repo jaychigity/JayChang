@@ -99,7 +99,7 @@ export default function MesaFinancialAdvisor() {
    Here&apos;s the thing - most financial advisors don&apos;t know any of this. They&apos;ll nod along when you mention ESPP and then give you the same generic advice they give everyone. That&apos;s not how we work. Jay Chang and our team at Farther actually understand how Apple compensation is structured, and we build plans around it.
    </p>
    <p>
-   Whether you&apos;re trying to figure out the withholding gap on your RSU vests, wondering if you should max out your ESPP, weighing a DCP election, or just want to know if you&apos;re on track for the retirement you want - we&apos;re here to walk through it with you. No jargon, no runaround. Just honest, practical guidance from people who get your situation.
+   Whether you&apos;re trying to figure out the withholding gap on your RSU vests, wondering if you should max out your ESPP, weighing a DCP election, or just want to know if you&apos;re on track for the retirement you want - we&apos;re here to walk through it with you. Unfiltered, practical guidance from people who get your situation.
    </p>
    </div>
   </div>
@@ -137,7 +137,7 @@ export default function MesaFinancialAdvisor() {
    Let&apos;s Look at Your Apple Compensation Together
   </h3>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   Connect for 30 minutes with us. We&apos;ll walk through your Apple comp package, your equity position, and point out any tax opportunities that might be hiding in plain sight. No strings attached.
+   Connect for 30 minutes with us. We&apos;ll walk through your Apple comp package, your equity position, and point out any tax opportunities that might be hiding in plain sight.
   </p>
   <Button
    href="/schedule-consultation"

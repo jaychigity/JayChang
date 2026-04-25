@@ -540,8 +540,7 @@ export default function GenerationalWealthPlanningPage() {
    A 30-minute discovery conversation to understand your
    family&apos;s goals, explore your current generational planning,
    and identify the strategies that can make the biggest difference.
-   No sales pitch - just a candid conversation about building
-   wealth that endures.
+   A candid conversation about building wealth that endures.
   </p>
   <div className="mt-10">
    <Button

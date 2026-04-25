@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Get a Free Wealth Review from Jay | Advisor Jay',
     description:
-      'Request a free, no-obligation wealth review from Jay Chang. No pitch — just an honest look at where you stand.',
+      'Request a free, no-obligation wealth review from Jay Chang. An unfiltered look at where you stand.',
     url: 'https://www.advisorjay.com/wealth-review',
   },
   robots: { index: true, follow: true },

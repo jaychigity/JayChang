@@ -5,7 +5,7 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
  title: 'How Working With Jay Chang Actually Works | Our Wealth Management Process',
- description: 'See how Jay Chang and our team at Farther walk you through every step — from a simple intro call to an ongoing partnership that grows with you. No jargon, no pressure.',
+ description: 'See how Jay Chang and our team at Farther walk you through every step — from a simple intro call to an ongoing partnership that grows with you.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/process',
  },
@@ -55,7 +55,7 @@ export default function ProcessPage() {
       "@context": "https://schema.org",
       "@type": "HowTo",
       "name": "How to Work With Jay Chang — 5-Step Wealth Planning Process",
-      "description": "From a simple intro call to an ongoing partnership. No jargon, no pressure — here is how Jay Chang and the team at Farther walk you through every step.",
+      "description": "From a simple intro call to an ongoing partnership. Here is how Jay Chang and the team at Farther walk you through every step.",
       "step": [
         {
           "@type": "HowToStep",

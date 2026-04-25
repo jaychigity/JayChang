@@ -214,7 +214,7 @@ export default function HealthcarePhysiciansLP() {
    Let&apos;s Have a Conversation
   </h2>
   <p className="font-sans text-[17px] text-[#F7F4EE]/85 max-w-[540px] mx-auto mt-5 leading-relaxed">
-   Pick a time that works for you and we&apos;ll talk through your tax situation, asset protection, and retirement goals. No pitch, no pressure - just an honest conversation about where you are and where you want to be.
+   Pick a time that works for you and we&apos;ll talk through your tax situation, asset protection, and retirement goals. An unfiltered conversation about where you are and where you want to be.
   </p>
   </AnimateOnScroll>
   <AnimateOnScroll delay={100}>

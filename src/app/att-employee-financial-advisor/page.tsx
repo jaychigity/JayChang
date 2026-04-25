@@ -530,7 +530,7 @@ export default function ATTEmployeeFinancialAdvisor() {
             <Button href="/schedule-consultation" variant="primary">
               Schedule Your AT&amp;T Benefits Review
             </Button>
-            <p className="text-gray-400 text-sm mt-4">No commitment · Available nationwide</p>
+            <p className="text-gray-400 text-sm mt-4">Confidential · Available nationwide</p>
           </AnimateOnScroll>
         </div>
       </section>

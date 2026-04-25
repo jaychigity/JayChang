@@ -137,7 +137,7 @@ export default function PhoenixFinancialAdvisor() {
    Curious What a Real Plan Looks Like?
   </h3>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   Grab 30 minutes with us - no cost, no pressure. We&apos;ll talk through your situation, your goals, and honestly tell you if there are opportunities you might be missing.
+   Grab 30 minutes with us. We&apos;ll talk through your situation, your goals, and honestly tell you if there are opportunities you might be missing.
   </p>
   <Button
    href="/schedule-consultation"

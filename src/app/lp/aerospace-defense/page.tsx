@@ -214,7 +214,7 @@ export default function AerospaceDefenseLP() {
    Let&apos;s Have a Conversation
   </h2>
   <p className="font-sans text-[17px] text-[#F7F4EE]/85 max-w-[540px] mx-auto mt-5 leading-relaxed">
-   Grab a time on Jay&apos;s calendar and we&apos;ll walk through your deferred comp, pension, and retirement picture together. No pitch, no pressure - just a straightforward conversation about your financial life.
+   Grab a time on Jay&apos;s calendar and we&apos;ll walk through your deferred comp, pension, and retirement picture together. A straightforward conversation about your financial life.
   </p>
   </AnimateOnScroll>
   <AnimateOnScroll delay={100}>

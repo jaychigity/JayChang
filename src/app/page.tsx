@@ -393,7 +393,7 @@ export default function Home() {
   <AnimateOnScroll>
   <SectionEyebrow text="HOW I WORK WITH YOU" light />
   <h2 className="font-serif text-4xl lg:text-5xl font-bold text-[#F7F4EE] mt-6 mb-6 leading-tight">
-   No Sales Pitch. Just a Simple Process That Puts You First.
+   A Simple Process That Puts You First.
   </h2>
   <p className="text-lg text-[#F7F4EE]/70 max-w-3xl mb-16 leading-relaxed">
    Every relationship starts the same way — with a real conversation. From there, I build something that&apos;s truly yours.
@@ -418,7 +418,7 @@ export default function Home() {
     <h3 className="font-serif text-2xl font-bold text-[#F7F4EE] mb-1">I Listen</h3>
     <p className="font-sans text-sm font-semibold text-[#1d7682] mb-3">A Real Conversation, Not a Pitch</p>
     <p className="font-sans text-[15px] text-[#F7F4EE]/70 leading-relaxed">
-     I start by getting to know you — your family, your career, what keeps you up at night, and what you&apos;re working toward. No questionnaires. No jargon. You&apos;ll walk away with clarity whether or not we end up working together.
+     I start by getting to know you — your family, your career, what keeps you up at night, and what you&apos;re working toward. A real conversation, not a form. You&apos;ll walk away with clarity.
     </p>
     </div>
    </AnimateOnScroll>
@@ -495,7 +495,7 @@ export default function Home() {
      <h3 className="font-serif text-2xl font-bold text-[#F7F4EE] mb-1">I Listen</h3>
      <p className="font-sans text-sm font-semibold text-[#1d7682] mb-3">A Real Conversation, Not a Pitch</p>
      <p className="font-sans text-[15px] text-[#F7F4EE]/70 leading-relaxed">
-     I start by getting to know you — your family, your career, what keeps you up at night, and what you&apos;re working toward. No questionnaires. No jargon. You&apos;ll walk away with clarity whether or not we end up working together.
+     I start by getting to know you — your family, your career, what keeps you up at night, and what you&apos;re working toward. A real conversation, not a form. You&apos;ll walk away with clarity.
      </p>
     </div>
     </div>

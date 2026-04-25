@@ -341,7 +341,7 @@ export default function AboutPage() {
   <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
   <AnimateOnScroll>
   <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-   Let&apos;s Just Talk. No Pressure.
+   Ready When You Are.
   </h2>
   <p className="text-xl text-gray-200 mb-8">
    The first conversation is complimentary - and the clarity you walk away with lasts.

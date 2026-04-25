@@ -471,7 +471,7 @@ export default function AlternativesPage() {
   <p className="font-sans text-[17px] text-[#F7F4EE]/85 max-w-[620px] mx-auto mt-5 leading-relaxed">
    A quick 30-minute call is all it takes. We&apos;ll talk about your
    portfolio, your goals, and whether alternatives make sense for
-   you. No pressure, no sales pitch.
+   you.
   </p>
   </AnimateOnScroll>
   <AnimateOnScroll delay={200}>

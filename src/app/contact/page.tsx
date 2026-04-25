@@ -10,7 +10,7 @@ import ConsultationForm from '@/components/ConsultationForm'
 export const metadata: Metadata = {
  title: 'Contact Us | Advisor Jay - Scottsdale, Arizona',
  description:
- 'Reach out to Jay Chang, wealth advisor at Farther. We help families and business owners in Scottsdale, Phoenix, and across Arizona make smarter financial decisions together. No pressure, just a real conversation.',
+ 'Reach out to Jay Chang, wealth advisor at Farther. We help families and business owners in Scottsdale, Phoenix, and across Arizona make smarter financial decisions together. A real conversation about what matters to you.',
  alternates: { canonical: 'https://www.PWM-Farther.com/contact' },
 }
 
@@ -96,7 +96,7 @@ export default function ContactPage() {
   <p className="font-sans text-body-lg text-[#5b6a71] max-w-[600px] mx-auto mt-5">
    Got a question? Wondering if we're the right fit? Just want to
    talk through something that's been bugging you about your finances?
-   Drop us a line. No strings attached — we're happy to chat.
+   Drop us a line — we'll get back to you within one business day.
   </p>
   </AnimateOnScroll>
   </div>

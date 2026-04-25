@@ -678,7 +678,7 @@ export default function ScottsdalePage() {
 
      <AnimateOnScroll delay={100}>
       <p className="font-sans text-[17px] text-[#F7F4EE]/85 max-w-[620px] mx-auto mt-5 leading-relaxed">
-       Let&apos;s sit down and talk through your equity compensation, your tax situation, and where you want to be in 10 or 20 years. No pressure, no jargon - just an honest conversation about your money.
+       Let&apos;s sit down and talk through your equity compensation, your tax situation, and where you want to be in 10 or 20 years. A direct conversation about your money.
       </p>
      </AnimateOnScroll>
 

@@ -203,7 +203,7 @@ export default function TechProfessionalsLP() {
    Let&apos;s Have a Conversation
   </h2>
   <p className="font-sans text-[17px] text-[#F7F4EE]/85 max-w-[540px] mx-auto mt-5 leading-relaxed">
-   Grab a time on Jay&apos;s calendar and we&apos;ll walk through your equity package together. No pitch, no pressure - just an honest look at where you stand and what we might do differently.
+   Grab a time on Jay&apos;s calendar and we&apos;ll walk through your equity package together. An unfiltered look at where you stand and what we might do differently.
   </p>
   </AnimateOnScroll>
   <AnimateOnScroll delay={100}>

@@ -303,7 +303,7 @@ export default function ToolsPage() {
   lineHeight: 1.7,
   }}
   >
-  Each calculator is designed around a specific financial question we hear constantly from clients. Start with whichever one is most relevant to your situation right now. If you want help interpreting the results or building a plan around them, Jay offers a conversation &mdash; no pitch, just clarity.
+  Each calculator is designed around a specific financial question we hear constantly from clients. Start with whichever one is most relevant to your situation right now. If you want help interpreting the results or building a plan around them, Jay offers a conversation &mdash; just clarity.
   </p>
   </div>
  </section>
