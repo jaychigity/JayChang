@@ -63,8 +63,8 @@ export default function AboutPage() {
  name: 'Stacey Kirkpatrick',
  title: 'CFP® • Financial Planning Specialist, Farther',
  photo: '/Photos/Stacey-Kirkpatrick-color.png',
- photoWidth: 455,
- photoHeight: 419,
+ photoWidth: 2460,
+ photoHeight: 1528,
  bio: [
   'Stacey has 15+ years of experience, holds a CFP with Series 7, 63, and 65 licenses, and is the kind of person who makes sure nothing falls through the cracks.',
   'She\'s the one making sure your plan is built right, every document is in order, and every step actually gets done. The behind-the-scenes person you\'ll be glad is on your team.',
@@ -74,8 +74,8 @@ export default function AboutPage() {
  name: 'Alex Paul',
  title: 'Farther Advisory Team',
  photo: '/Photos/Alex-Paul-color.png',
- photoWidth: 479,
- photoHeight: 438,
+ photoWidth: 2040,
+ photoHeight: 1879,
  bio: [
   `Alex is a key member of our team supporting Jay's practice day-to-day. He brings sharp analytical thinking and a genuine care for doing right by every client.`,
   'From onboarding to implementation, Alex helps make sure the whole planning process runs smoothly so nothing gets missed.',
