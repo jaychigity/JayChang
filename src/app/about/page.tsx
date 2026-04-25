@@ -174,50 +174,6 @@ export default function AboutPage() {
   </div>
  </section>
 
- {/* 2. WHAT THIS TEAM MEANS */}
- <section className="bg-[#FAFAF8] py-20 lg:py-32">
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-  <AnimateOnScroll>
-  <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-6">
-   Who Should You Talk to About Your Situation?
-  </h3>
-  <div className="space-y-8 text-[#333333]">
-   <p className="text-lg leading-relaxed">
-   <span className="font-bold">Ashton Hayes</span>: A Honeywell engineer asks about setting up a trust before the HONA spinoff. Ashton has the law degree and Master of Laws in Taxation to get it right.
-   </p>
-
-   <p className="text-lg leading-relaxed">
-   <span className="font-bold">Dr. Daniel R. Gilham</span>: An FCX VP is thinking about succession planning and alternative investments. Daniel has a CEPA credential and a decade at Wells Fargo doing exactly that.
-   </p>
-
-   <p className="text-lg leading-relaxed">
-   <span className="font-bold">Michael Lee</span>: A Kaiser retiree moving to Scottsdale needs help figuring out what changes. Michael has walked that path with families at PG&amp;E, AT&amp;T, Kaiser, Chevron, and Boeing.
-   </p>
-
-   <p className="text-lg leading-relaxed">
-   <span className="font-bold">Sutanto Widjaja</span>: A TSMC engineer needs to diversify after an RSU windfall without getting buried in taxes. Sutanto has 20+ years of institutional portfolio experience.
-   </p>
-
-   <p className="text-lg leading-relaxed">
-   <span className="font-bold">David Sargent</span>: An engineer who wants an advisor who thinks like one. David went from Lockheed Martin and Burns &amp; McDonnell to financial planning through Charles Schwab.
-   </p>
-
-   <p className="text-lg leading-relaxed">
-   <span className="font-bold">Stacey Kirkpatrick</span>: When the plan needs to be buttoned up, fully documented, and executed without a single loose end, Stacey makes sure every detail is handled.
-   </p>
-
-   <p className="text-lg leading-relaxed">
-   <span className="font-bold">Alex Paul</span>: From onboarding to implementation, Alex helps make sure the whole planning process runs smoothly so nothing gets missed.
-   </p>
-  </div>
-
-  <p className="text-lg leading-relaxed font-semibold text-[#333333] mt-10">
-   This isn&apos;t one person with a business card. It&apos;s a real team of credentialed specialists who know your industry, understand your compensation, and work together to help your family reach its goals.
-  </p>
-  </AnimateOnScroll>
-  </div>
- </section>
-
  {/* 3. FIVE COMMITMENTS */}
  <section className="bg-white py-20 lg:py-32">
   <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
