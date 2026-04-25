@@ -359,7 +359,7 @@ export default function AboutPage() {
   </div>
 
   <p className="text-gray-300 text-lg">
-   Based in Tempe, Arizona. Serving families in Phoenix, Chandler, Scottsdale, Mesa, Tucson, Silicon Valley, and nationwide.
+   Based in Tempe, Arizona. Serving families in Phoenix, Scottsdale, Tucson, Flagstaff, California, Hawaii, Texas, Utah, Washington, and nationwide.
   </p>
   </AnimateOnScroll>
   </div>
