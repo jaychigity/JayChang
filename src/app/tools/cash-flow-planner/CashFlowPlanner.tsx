@@ -1,7 +1,8 @@
 'use client'
 
-import { useState, useMemo, useId } from 'react'
+import { useState, useMemo, useId, useEffect } from 'react'
 import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
+import { loadProfile, saveProfile, hasProfile } from '@/lib/planner-store'
 
 // ─────────────────── TYPES ───────────────────
 
@@ -244,14 +245,58 @@ const DEFAULTS: CFInputs = {
   goals: [],
 }
 
+function mergeWithProfile(): CFInputs {
+  const p = loadProfile()
+  return {
+    ...DEFAULTS,
+    ...(p.currentAge != null && { currentAge: p.currentAge }),
+    ...(p.retirementAge != null && { retirementAge: p.retirementAge }),
+    ...(p.lifeExpectancy != null && { lifeExpectancy: p.lifeExpectancy }),
+    ...(p.portfolioValue != null && { portfolioValue: p.portfolioValue }),
+    ...(p.monthlyContrib != null && { savingsRate: Math.min(50, Math.round((p.monthlyContrib * 12 / DEFAULTS.annualSalary) * 100)) }),
+    ...(p.monthlyWithdrawal != null && { annualWithdrawal: p.monthlyWithdrawal * 12 }),
+    ...(p.ssMonthly != null && { ssMonthly: p.ssMonthly }),
+    ...(p.ssClaimAge != null && { ssClaimAge: p.ssClaimAge }),
+    ...(p.pensionMonthly != null && { pensionMonthly: p.pensionMonthly }),
+    ...(p.pensionStartAge != null && { pensionStartAge: p.pensionStartAge }),
+    ...(p.annualExpenses != null && { annualExpenses: p.annualExpenses }),
+    ...(p.annualSalary != null && { annualSalary: p.annualSalary }),
+    ...(p.inflationRate != null && { inflationRate: p.inflationRate }),
+    ...(p.effectiveTaxRate != null && { effectiveTaxRate: p.effectiveTaxRate }),
+  }
+}
+
 // ─────────────────── MAIN COMPONENT ───────────────────
 
 export default function CashFlowPlanner() {
   const uid = useId()
-  const [inputs, setInputs] = useState<CFInputs>(DEFAULTS)
+  const [inputs, setInputs] = useState<CFInputs>(() => mergeWithProfile())
   const [goalCounter, setGoalCounter] = useState(1)
+  const [synced] = useState(() => hasProfile())
 
   const rows = useMemo(() => buildCashFlow(inputs), [inputs])
+
+  // Sync shared fields back to session store on every change
+  useEffect(() => {
+    saveProfile({
+      currentAge: inputs.currentAge,
+      retirementAge: inputs.retirementAge,
+      lifeExpectancy: inputs.lifeExpectancy,
+      portfolioValue: inputs.portfolioValue,
+      monthlyWithdrawal: Math.round(inputs.annualWithdrawal / 12),
+      ssMonthly: inputs.ssMonthly,
+      ssClaimAge: inputs.ssClaimAge,
+      pensionMonthly: inputs.pensionMonthly,
+      pensionStartAge: inputs.pensionStartAge,
+      annualExpenses: inputs.annualExpenses,
+      annualSalary: inputs.annualSalary,
+      inflationRate: inputs.inflationRate,
+      effectiveTaxRate: inputs.effectiveTaxRate,
+    })
+  }, [inputs.currentAge, inputs.retirementAge, inputs.lifeExpectancy, inputs.portfolioValue,
+      inputs.annualWithdrawal, inputs.ssMonthly, inputs.ssClaimAge, inputs.pensionMonthly,
+      inputs.pensionStartAge, inputs.annualExpenses, inputs.annualSalary,
+      inputs.inflationRate, inputs.effectiveTaxRate])
 
   const set = (key: keyof Omit<CFInputs, 'goals' | 'filingStatus'>) =>
     (val: number) => setInputs(prev => ({ ...prev, [key]: val }))
@@ -302,6 +347,13 @@ export default function CashFlowPlanner() {
           <div className="w-full lg:w-[288px] flex-shrink-0">
             <div className="bg-white rounded-xl shadow-sm border border-[#e8e4dc] p-5 lg:sticky lg:top-[88px] max-h-[calc(100vh-100px)] overflow-y-auto">
 
+              {/* Sync badge */}
+              {synced && (
+                <div className="flex items-center gap-1.5 mb-4 px-2.5 py-1.5 bg-[#e6f7ef] rounded-lg">
+                  <span className="text-[#4bc49a] text-[11px]">↔</span>
+                  <span className="font-sans text-[10px] font-semibold text-[#4bc49a]">Profile synced from another tool</span>
+                </div>
+              )}
               {/* Personal */}
               <p className="font-sans text-[10px] font-bold uppercase tracking-[0.14em] text-[#5b6a71] mb-3">
                 Personal

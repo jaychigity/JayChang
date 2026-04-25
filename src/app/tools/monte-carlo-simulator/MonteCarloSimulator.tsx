@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
+import { loadProfile, saveProfile, hasProfile } from '@/lib/planner-store'
 
 // ─────────────────── MATH ───────────────────
 
@@ -444,10 +445,24 @@ const DEFAULTS = {
   numSims: 1000 as 200 | 500 | 1000,
 }
 
+function mergeWithProfile() {
+  const p = loadProfile()
+  return {
+    ...DEFAULTS,
+    ...(p.currentAge != null && { currentAge: p.currentAge }),
+    ...(p.retirementAge != null && { retirementAge: p.retirementAge }),
+    ...(p.lifeExpectancy != null && { lifeExpectancy: p.lifeExpectancy }),
+    ...(p.portfolioValue != null && { startBalance: p.portfolioValue }),
+    ...(p.monthlyContrib != null && { monthlyContrib: p.monthlyContrib }),
+    ...(p.monthlyWithdrawal != null && { monthlyWithdrawal: p.monthlyWithdrawal }),
+  }
+}
+
 // ─────────────────── MAIN ───────────────────
 
 export default function MonteCarloSimulator() {
-  const [v, setV] = useState(DEFAULTS)
+  const [v, setV] = useState(() => mergeWithProfile())
+  const [synced] = useState(() => hasProfile())
   const [paths, setPaths] = useState<number[][]>([])
   const [pcts, setPcts] = useState<Record<number, number[]>>({})
   const [seed, setSeed] = useState(0)
@@ -459,6 +474,18 @@ export default function MonteCarloSimulator() {
 
   const set = (key: keyof typeof DEFAULTS) => (val: number) =>
     setV(prev => ({ ...prev, [key]: val }))
+
+  // Sync shared fields back to session store on every change
+  useEffect(() => {
+    saveProfile({
+      currentAge: v.currentAge,
+      retirementAge: v.retirementAge,
+      lifeExpectancy: v.lifeExpectancy,
+      portfolioValue: v.startBalance,
+      monthlyContrib: v.monthlyContrib,
+      monthlyWithdrawal: v.monthlyWithdrawal,
+    })
+  }, [v.currentAge, v.retirementAge, v.lifeExpectancy, v.startBalance, v.monthlyContrib, v.monthlyWithdrawal])
 
   const accYears = Math.max(1, v.retirementAge - v.currentAge)
   const distYears = Math.max(1, v.lifeExpectancy - v.retirementAge)
@@ -580,6 +607,12 @@ export default function MonteCarloSimulator() {
           <div className="w-full lg:w-[296px] flex-shrink-0">
             <div className="bg-white rounded-xl shadow-sm border border-[#e8e4dc] p-5 lg:sticky lg:top-[88px] max-h-[calc(100vh-100px)] overflow-y-auto">
 
+              {synced && (
+                <div className="flex items-center gap-1.5 mb-4 px-2.5 py-1.5 bg-[#e6f7ef] rounded-lg">
+                  <span className="text-[#4bc49a] text-[11px]">↔</span>
+                  <span className="font-sans text-[10px] font-semibold text-[#4bc49a]">Profile synced from another tool</span>
+                </div>
+              )}
               <p className="font-sans text-[10px] font-bold uppercase tracking-[0.14em] text-[#5b6a71] mb-3">Ages</p>
               <div className="grid grid-cols-3 gap-2 mb-4">
                 {([
