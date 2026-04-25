@@ -19,6 +19,22 @@ export const metadata: Metadata = {
 
 const tools = [
  {
+ href: '/tools/att-pension',
+ title: 'AT&T Pension Suite',
+ description:
+ 'AT&T\'s pension, deferred compensation, and benefits package is one of the most complex in the industry. This suite of calculators helps you model pension vs. lump sum decisions, deferred comp risk, and how your benefits fit into your overall retirement picture.\n\nEspecially useful for: current and former AT&T employees approaching retirement decisions.',
+ time: 'Instant analysis',
+ category: 'Calculator Suite',
+ },
+ {
+ href: '/tools/pge-pension',
+ title: 'PG&E Pension & Benefits Suite',
+ description:
+ 'Six calculators built around the decisions PG&E employees actually face: estimate your Final Pay or Cash Balance pension, model early retirement reduction factors, project how long your RMSA will last, and find the 401(k) spillover election that captures your full match.\n\nEspecially useful for: PG&E employees in the Final Pay or Cash Balance plan navigating retirement timing and benefits elections.',
+ time: 'Instant analysis',
+ category: 'Calculator Suite',
+ },
+ {
  href: '/tools/401k-withholding-calculator',
  title: '401(k) Withholding Calculator',
  description:
@@ -65,22 +81,6 @@ const tools = [
  'If your business is a significant part of your net worth, your exit strategy is your financial plan. This scorecard walks you through the key factors that determine business value, timing, and what you\'ll actually walk away with after taxes.\n\nEspecially useful for: business owners thinking about selling in the next 3\u201310 years.',
  time: '60 seconds',
  category: 'Scorecard',
- },
- {
- href: '/tools/att-pension',
- title: 'AT&T Pension Suite',
- description:
- 'AT&T\'s pension, deferred compensation, and benefits package is one of the most complex in the industry. This suite of calculators helps you model pension vs. lump sum decisions, deferred comp risk, and how your benefits fit into your overall retirement picture.\n\nEspecially useful for: current and former AT&T employees approaching retirement decisions.',
- time: 'Instant analysis',
- category: 'Calculator Suite',
- },
- {
- href: '/tools/pge-pension',
- title: 'PG&E Pension & Benefits Suite',
- description:
- 'Six calculators built around the decisions PG&E employees actually face: estimate your Final Pay or Cash Balance pension, model early retirement reduction factors, project how long your RMSA will last, and find the 401(k) spillover election that captures your full match.\n\nEspecially useful for: PG&E employees in the Final Pay or Cash Balance plan navigating retirement timing and benefits elections.',
- time: 'Instant analysis',
- category: 'Calculator Suite',
  },
  {
  href: '/tools/ca-nv-tax-savings',
