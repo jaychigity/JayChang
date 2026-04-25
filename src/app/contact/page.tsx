@@ -120,13 +120,13 @@ export default function ContactPage() {
   <AnimateOnScroll delay={150}>
    <div className="bg-[#F7F4EE] rounded-[16px] p-10">
    {/* Advisor Photo */}
-   <div className="w-[120px] h-[120px] rounded-full border-[3px] border-[#1d7682] mx-auto overflow-hidden relative">
+   <div className="w-[220px] h-[220px] rounded-full border-[3px] border-[#1d7682] mx-auto overflow-hidden relative">
    <Image
     src="/Photos/Jay-Office.png"
     alt="Jay Chang, Senior Wealth Advisor at Farther serving Scottsdale and Arizona"
     fill
     className="object-cover object-top"
-    sizes="120px"
+    sizes="220px"
    />
    </div>
 
