@@ -113,8 +113,8 @@ export default function JayChangPage() {
    <Image
    src="/Photos/Jay-arms-crossed-transparent.png"
    alt="Jay Chang"
-   width={1558}
-   height={2540}
+   width={1567}
+   height={2555}
    className="mx-auto"
    style={{ width: '100%', maxWidth: 520, height: 'auto' }}
    />
