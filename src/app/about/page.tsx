@@ -132,10 +132,10 @@ export default function AboutPage() {
   <h2 className="text-3xl md:text-4xl font-bold text-[#333333] text-center mb-6">
    Meet The Team
   </h2>
-  <p className="text-lg text-[#333333] leading-relaxed max-w-3xl mb-6">
+  <p className="text-lg text-[#333333] leading-relaxed mb-6 text-center">
    When you work with me, you don&apos;t just get me. You get our whole team. That&apos;s one of the most important things I can offer: real specialists in trust law, tax strategy, investment management, and planning who are all pulling in the same direction for you.
   </p>
-  <p className="text-lg text-[#5b6a71] leading-relaxed max-w-3xl mb-12">
+  <p className="text-lg text-[#5b6a71] leading-relaxed mb-12 text-center">
    Every client situation is different, which is why I built a team with deep specializations. Here is who handles what.
   </p>
   </AnimateOnScroll>
