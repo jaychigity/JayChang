@@ -573,7 +573,7 @@ export default function CashFlowPlanner() {
               </div>
 
               <div className="overflow-x-auto" style={{ maxHeight: 520 }}>
-                <table className="text-sm border-collapse" style={{ minWidth: 980 }}>
+                <table className="text-sm" style={{ minWidth: 980, borderCollapse: 'separate', borderSpacing: 0 }}>
                   <thead className="sticky top-0 z-10 bg-[#F7F4EE]">
                     {/* Group header row */}
                     <tr>
