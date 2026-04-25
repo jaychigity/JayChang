@@ -31,7 +31,7 @@ export default function ScheduleCall() {
    Let&apos;s Connect
   </h1>
   <p className="text-xl text-[#F7F4EE]/90 max-w-2xl">
-   Most people just have one or two questions. That&apos;s a fine reason to reach out.
+   If something&apos;s been on your mind — a pension decision, an RSU vesting, a transition — that&apos;s a fine reason to reach out.
   </p>
   </AnimateOnScroll>
   </div>
