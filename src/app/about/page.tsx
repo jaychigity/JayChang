@@ -51,9 +51,9 @@ export default function AboutPage() {
  {
  name: 'Ashton Hayes',
  title: 'JD, LL.M. in Taxation • Trust Services Associate, Farther',
- photo: '/Photos/Ashton_Hayes.png',
- photoWidth: 1024,
- photoHeight: 1024,
+ photo: '/Photos/Ashton-Hayes-color.png',
+ photoWidth: 695,
+ photoHeight: 308,
  bio: [
   'Ashton holds a JD and Master of Laws in Taxation from the University of Alabama. When you have questions about trusts, estates, or how to protect what you\'ve built for your family, she\'s the one who digs into the details.',
   'She handles trust structuring, complex beneficiary planning, and grantor trust strategies - the stuff that keeps your wealth where it belongs.',
@@ -62,9 +62,9 @@ export default function AboutPage() {
  {
  name: 'Stacey Kirkpatrick',
  title: 'CFP® • Financial Planning Specialist, Farther',
- photo: '/Photos/Stacy-Kirkpatrick.png',
- photoWidth: 1024,
- photoHeight: 1024,
+ photo: '/Photos/Stacey-Kirkpatrick-color.png',
+ photoWidth: 455,
+ photoHeight: 419,
  bio: [
   'Stacey has 15+ years of experience, holds a CFP with Series 7, 63, and 65 licenses, and is the kind of person who makes sure nothing falls through the cracks.',
   'She\'s the one making sure your plan is built right, every document is in order, and every step actually gets done. The behind-the-scenes person you\'ll be glad is on your team.',
@@ -73,9 +73,9 @@ export default function AboutPage() {
  {
  name: 'Alex Paul',
  title: 'Farther Advisory Team',
- photo: '/Photos/Alex_Paul.png',
- photoWidth: 1024,
- photoHeight: 1024,
+ photo: '/Photos/Alex-Paul-color.png',
+ photoWidth: 479,
+ photoHeight: 438,
  bio: [
   `Alex is a key member of our team supporting Jay's practice day-to-day. He brings sharp analytical thinking and a genuine care for doing right by every client.`,
   'From onboarding to implementation, Alex helps make sure the whole planning process runs smoothly so nothing gets missed.',
