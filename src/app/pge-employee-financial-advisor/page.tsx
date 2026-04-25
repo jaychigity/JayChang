@@ -324,10 +324,7 @@ export default function PGEEmployeeFinancialAdvisor() {
                   <div>
                     <p className="font-semibold text-[#1d7682] mb-2">Mega Backdoor Roth</p>
                     <p className="text-base leading-relaxed">
-                      After-tax spillover contributions may be eligible for rollout to a Roth IRA, adding tens of
-                      thousands of dollars in tax-free retirement savings beyond the standard limits. As of January 2026,
-                      IBEW 1245 members also gained access to the Roth 401(k) option for the first time, creating
-                      additional tax-diversification opportunities.
+                      PG&amp;E&apos;s 401(k) plan allows after-tax contributions and in-service distributions, which means eligible employees can roll those contributions into a Roth IRA, adding tens of thousands of dollars in tax-free retirement savings beyond the standard limits. As of January 2026, IBEW 1245 members also gained access to the Roth 401(k) option for the first time, creating additional tax-diversification opportunities.
                     </p>
                   </div>
                 </div>

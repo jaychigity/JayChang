@@ -252,7 +252,7 @@ export default function ATTEmployeeFinancialAdvisor() {
                   <div>
                     <p className="font-semibold text-[#1d7682] mb-2">Mega Backdoor Roth Opportunity</p>
                     <p className="text-base leading-relaxed">
-                      If AT&amp;T&apos;s plan allows after-tax contributions and in-service distributions, eligible employees may be able to roll after-tax 401(k) contributions into a Roth IRA, adding tens of thousands of dollars per year in tax-free retirement savings on top of the standard limits. Plan-specific rules apply and need to be verified before implementing.
+                      AT&amp;T&apos;s 401(k) plan allows after-tax contributions and in-service distributions. That means eligible employees can roll those contributions directly into a Roth IRA, adding tens of thousands of dollars per year in tax-free retirement savings on top of the standard limits. Most employees don&apos;t know this option exists. Even fewer use it.
                     </p>
                   </div>
                 </div>
