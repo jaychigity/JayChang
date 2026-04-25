@@ -27,7 +27,7 @@ export default function ScheduleConsultationPage() {
   Let&apos;s Connect
   </h1>
   <p className="font-sans text-body-lg font-light text-[#b6d0ed] max-w-[540px] mx-auto">
-  If something&apos;s been on your mind — a pension decision, an RSU vesting, a transition — that&apos;s a fine reason to reach out.
+  If something&apos;s been on your mind — a pension decision, an RSU vesting, a transition — that&apos;s worth a conversation.
   </p>
   </div>
  </section>
