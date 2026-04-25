@@ -14,9 +14,9 @@ export const metadata: Metadata = {
 const steps = [
  {
  number: 1,
- headline: 'A Conversation, Not a Sales Pitch',
+ headline: 'A Conversation About Where You Are Right Now',
  title: 'Discovery Call',
- body: '30-45 minutes, just you and Jay. I\'ll talk about where you are right now: your compensation, your accounts, what keeps you up at night. No slide decks. If I can give you one useful idea whether or not you become a client, that\'s a win in our book.',
+ body: '30-45 minutes, just you and Jay. I\'ll talk about where you are right now: your compensation, your accounts, what keeps you up at night. No slide decks. If I can give you one useful idea whether or not you become a client, that\'s a win.',
  cta: 'Schedule Your Discovery Call',
  },
  {
@@ -29,7 +29,7 @@ const steps = [
  number: 3,
  headline: 'A Financial Plan Built Around How You Actually Get Paid',
  title: 'Plan Design',
- body: 'This is where things get interesting. We build a real, scenario-based plan that covers multi-year tax projections, your equity vesting calendar with after-tax modeling, retirement income under different what-if scenarios, a portfolio designed for your life, and action items ranked by what moves the needle most. Then we sit down together and walk through it.',
+ body: 'This is where things get interesting. We build a real, scenario-based plan that covers multi-year tax projections, your equity vesting calendar with after-tax modeling, retirement income under different what-if scenarios, a portfolio designed for your life, and action items ranked by what moves the needle most. Then I sit down with you and walk through it.',
  },
  {
  number: 4,
@@ -41,7 +41,7 @@ const steps = [
  number: 5,
  headline: 'Your Life Changes. Your Plan Should Too.',
  title: 'Ongoing Optimization',
- body: 'We check in quarterly to stay on top of equity vesting, tax positioning, and how your portfolio is doing. We reach out before the big moments, like open enrollment, RSU vests, and year-end deadlines, so nothing slips through the cracks. Annual plan review, plus you can call or text whenever life throws you a curveball. Our goal: be the first call you make when a financial question comes up.',
+ body: 'I check in quarterly to stay on top of equity vesting, tax positioning, and how your portfolio is doing. I reach out before the big moments, like open enrollment, RSU vests, and year-end deadlines, so nothing slips through the cracks. Annual plan review, plus you can call or text whenever life throws you a curveball. My goal: be the first call you make when a financial question comes up.',
  },
 ];
 
@@ -175,7 +175,7 @@ export default function ProcessPage() {
    </Button>
   </div>
   <p className="text-white text-lg mb-2">
-   Confidential &middot; Zero obligation
+   Confidential.
   </p>
   </AnimateOnScroll>
   </div>
@@ -187,9 +187,9 @@ export default function ProcessPage() {
   Jay Chang | Farther Wealth Management
   </p>
   <p className="text-sm mt-2">
-  Questions? Let's talk:{' '}
+  Questions?{' '}
   <a href="/schedule-consultation" className="text-[#1d7682] hover:underline">
-  /schedule-consultation
+  Schedule a conversation with Jay
   </a>
   </p>
  </footer>
