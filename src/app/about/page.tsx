@@ -191,25 +191,10 @@ export default function AboutPage() {
    <USClientMap />
   </div>
 
-  {/* Featured location links */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-   <Link href="/scottsdale" className="bg-white border border-[#E8E6E1] rounded-[12px] p-8 hover:shadow-md transition-shadow text-center">
-   <h3 className="text-lg font-bold text-[#333333] mb-1">Scottsdale, AZ</h3>
-   <p className="text-sm text-[#5b6a71]">Our home base</p>
-   </Link>
-   <Link href="/las-vegas" className="bg-white border border-[#E8E6E1] rounded-[12px] p-8 hover:shadow-md transition-shadow text-center">
-   <h3 className="text-lg font-bold text-[#333333] mb-1">Las Vegas, NV</h3>
-   <p className="text-sm text-[#5b6a71]">Tax-friendly planning</p>
-   </Link>
-   <Link href="/california" className="bg-white border border-[#E8E6E1] rounded-[12px] p-8 hover:shadow-md transition-shadow text-center">
-   <h3 className="text-lg font-bold text-[#333333] mb-1">California</h3>
-   <p className="text-sm text-[#5b6a71]">Silicon Valley &amp; beyond</p>
-   </Link>
-   <Link href="/areas-we-serve" className="bg-white border border-[#E8E6E1] rounded-[12px] p-8 hover:shadow-md transition-shadow text-center">
-   <h3 className="text-lg font-bold text-[#333333] mb-1">Nationwide</h3>
-   <p className="text-sm text-[#5b6a71]">See all areas we serve</p>
-   </Link>
-  </div>
+  {/* State name list */}
+  <p className="text-center text-[#5b6a71] text-base leading-relaxed max-w-3xl mx-auto">
+   Arizona · California · Nevada · Utah · Colorado · Oregon · Washington · Idaho · Hawaii · Texas · Illinois · Tennessee · Florida · South Carolina · New York · New Jersey
+  </p>
   </AnimateOnScroll>
   </div>
  </section>
@@ -221,7 +206,7 @@ export default function AboutPage() {
   <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
    Ready When You Are.
   </h2>
-  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+  <div className="flex flex-col gap-4 justify-center items-center mb-8">
    <Button
    href="/schedule-consultation"
    variant="primary"
