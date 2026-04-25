@@ -7,14 +7,14 @@ export const metadata: Metadata = {
  title:
   'AT&T Pension & Retirement Calculator | Advisor Jay',
  description:
-  'AT&T pension calculators for union and management employees. Estimate your cash balance pension, pension band benefit, lump sum vs annuity, early retirement reduction, and 401(k) projections.',
+  'Free AT&T pension calculator for union and management employees. Estimate your cash balance pension, pension band benefit, lump sum vs annuity, early retirement reduction, and 401(k) projections.',
  alternates: {
   canonical: 'https://www.PWM-Farther.com/tools/att-pension',
  },
  openGraph: {
   title: 'AT&T Pension & Retirement Calculator | Advisor Jay',
   description:
-   'Estimate your AT&T pension benefit across cash balance, pension band, lump sum vs annuity, early retirement, and 401(k) projections. Built for CWA/IBEW union and management employees.',
+   'Free AT&T pension calculator for CWA/IBEW union and management employees. Estimate cash balance, pension band, lump sum vs annuity, early retirement, and 401(k) projections.',
   url: 'https://www.PWM-Farther.com/tools/att-pension',
  },
 }

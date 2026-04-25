@@ -6,14 +6,14 @@ import PGEPensionCalculator from './PGEPensionCalculator'
 export const metadata: Metadata = {
   title: 'PG&E Pension & Benefits Calculator Suite | Advisor Jay',
   description:
-    'PG&E pension calculators for union and management employees. Estimate your Final Pay or Cash Balance pension, model early retirement, project your RMSA balance, and optimize your 401(k) match.',
+    'Free PG&E pension calculator for union and management employees. Estimate your Final Pay or Cash Balance pension, model early retirement, project RMSA balance, and optimize your 401(k) match.',
   alternates: {
     canonical: 'https://www.advisorjay.com/tools/pge-pension',
   },
   openGraph: {
     title: 'PG&E Pension & Benefits Calculator Suite | Advisor Jay',
     description:
-      'Six calculators built for PG&E employees — Final Pay pension, Cash Balance projections, early retirement eligibility, RMSA depletion estimator, and 401(k) match optimizer.',
+      'Free PG&E pension calculator suite — Final Pay pension, Cash Balance projections, early retirement eligibility, RMSA depletion estimator, and 401(k) match optimizer.',
     url: 'https://www.advisorjay.com/tools/pge-pension',
   },
 }

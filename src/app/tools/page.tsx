@@ -3,16 +3,16 @@ import Link from 'next/link'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
- title: 'Financial Calculators & Planning Tools | Advisor Jay',
+ title: 'Free Financial Calculators & Planning Tools | Advisor Jay',
  description:
- 'Interactive financial tools and assessments for corporate employees, utility professionals, physicians, business owners, and families. Tax savings calculators, retirement readiness checks, equity compensation analysis, and more.',
+ 'Free financial calculators for corporate employees, utility professionals, physicians, business owners, and families. Free AT&T pension calculator, free PG&E benefits calculator, 401(k) projections, Roth conversions, and more — no sign-up required, instant results.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/tools',
  },
  openGraph: {
- title: 'Financial Calculators & Planning Tools | Advisor Jay',
+ title: 'Free Financial Calculators & Planning Tools | Advisor Jay',
  description:
- 'Interactive tools to help you make smarter wealth decisions. Calculators, assessments, and scorecards - instant results, no sign-up required.',
+ 'Free financial calculators with instant results — no sign-up required. AT&T pension, PG&E benefits, 401(k) projections, Roth conversions, Social Security, RMDs, and more.',
  url: 'https://www.PWM-Farther.com/tools',
  },
 }
@@ -147,6 +147,75 @@ export default function ToolsPage() {
   items={[
   { name: 'Tools & Calculators', href: '/tools' },
   ]}
+ />
+
+ {/* FAQ Schema — captures "free calculator" searches via structured data */}
+ <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+  __html: JSON.stringify({
+   '@context': 'https://schema.org',
+   '@type': 'FAQPage',
+   mainEntity: [
+   {
+    '@type': 'Question',
+    name: 'Are these financial calculators free to use?',
+    acceptedAnswer: {
+    '@type': 'Answer',
+    text: 'Yes — every calculator on this page is completely free. No sign-up, no account, and no credit card required. Enter your numbers and get instant results.',
+    },
+   },
+   {
+    '@type': 'Question',
+    name: 'Is the AT&T pension calculator free?',
+    acceptedAnswer: {
+    '@type': 'Answer',
+    text: 'Yes. The AT&T Pension Suite is free to use with no login required. It includes free calculators for pension vs. lump sum decisions, Mod 75 eligibility, early retirement reduction factors, and 401(k) match optimization — all built specifically for current and former AT&T employees.',
+    },
+   },
+   {
+    '@type': 'Question',
+    name: 'Is the PG&E pension calculator free?',
+    acceptedAnswer: {
+    '@type': 'Answer',
+    text: 'Yes. The PG&E Pension & Benefits Suite is free with no sign-up needed. It covers free calculators for Final Pay and Cash Balance pension estimates, RMSA projections, early retirement reduction factors, and 401(k) spillover elections — built for PG&E employees navigating retirement decisions.',
+    },
+   },
+   {
+    '@type': 'Question',
+    name: 'Is there a free 401(k) calculator?',
+    acceptedAnswer: {
+    '@type': 'Answer',
+    text: 'Yes. This page includes two free 401(k) calculators: a Withholding Calculator that shows the exact percentage to set on your paycheck, and a Projection Calculator that shows what your 401(k) will be worth at retirement with any employer match structure. Both are free and instant — no account required.',
+    },
+   },
+   {
+    '@type': 'Question',
+    name: 'Is there a free Roth conversion calculator?',
+    acceptedAnswer: {
+    '@type': 'Answer',
+    text: 'Yes. The free Roth Conversion Calculator compares the long-term after-tax value of converting a Traditional IRA to a Roth IRA. It shows the upfront tax cost, break-even retirement tax rate, and projected growth — instantly and without any sign-up.',
+    },
+   },
+   {
+    '@type': 'Question',
+    name: 'Are there free retirement planning calculators available?',
+    acceptedAnswer: {
+    '@type': 'Answer',
+    text: 'Yes. This page includes free retirement calculators for 401(k) projections, Roth conversions, required minimum distributions (RMDs), Social Security claiming strategy, retirement readiness, and inherited IRA rules — all free with instant results and no account required.',
+    },
+   },
+   {
+    '@type': 'Question',
+    name: 'Do I need to create an account to use these tools?',
+    acceptedAnswer: {
+    '@type': 'Answer',
+    text: 'No. Every calculator on this page is free to use without creating an account or providing an email address. Results are instant and private.',
+    },
+   },
+   ],
+  }),
+  }}
  />
 
  {/* Hero */}

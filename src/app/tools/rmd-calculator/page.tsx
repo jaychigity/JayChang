@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title:
    'RMD Calculator — How Much Must You Withdraw From Your IRA in 2026?',
   description:
-   'Calculate your required minimum distribution instantly. See tax impact, QCD optimization, multi-year projections, and IRMAA warnings. Free, no sign-up.',
+   'Free RMD calculator — calculate your required minimum distribution instantly. See tax impact, QCD optimization, multi-year projections, and IRMAA warnings. No sign-up.',
   url: 'https://www.PWM-Farther.com/tools/rmd-calculator',
  },
 }

@@ -7,14 +7,14 @@ export const metadata: Metadata = {
  title:
  'Am I On Track? Retirement Readiness Assessment | Advisor Jay',
  description:
- 'Take our free 60-second retirement readiness assessment. Get a personalized score across savings rate, asset benchmarks, and funding projections - instant results.',
+ 'Free retirement calculator and 60-second readiness assessment. Get a personalized score across savings rate, asset benchmarks, and funding projections — instant results.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/tools/retirement-savings-calculator',
  },
  openGraph: {
  title: 'Am I On Track? | Free 60-Second Retirement Assessment',
  description:
- 'Discover if you&apos;re on track for the retirement you want. 10 questions, under 60 seconds, personalized insights.',
+ 'Free retirement calculator — discover if you&apos;re on track for the retirement you want. 10 questions, under 60 seconds, personalized insights.',
  url: 'https://www.PWM-Farther.com/tools/retirement-savings-calculator',
  },
 }

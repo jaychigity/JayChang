@@ -6,14 +6,14 @@ import FourOOneKProjectionCalculator from './FourOOneKProjectionCalculator'
 export const metadata: Metadata = {
   title: '401(k) Projection Calculator — See What Your Savings Will Be Worth | Advisor Jay',
   description:
-    'Project your 401(k) balance at retirement with any employer match structure. Enter your salary, contribution rate, and match formula to see year-by-year growth, total employer match captured, and whether you\'re leaving money on the table.',
+    'Free 401(k) projection calculator. Enter your salary, contribution rate, and match formula to see year-by-year growth, total employer match captured, and whether you\'re leaving money on the table.',
   alternates: {
     canonical: 'https://www.advisorjay.com/tools/401k-projection',
   },
   openGraph: {
     title: '401(k) Projection Calculator | Advisor Jay',
     description:
-      'See exactly what your 401(k) will be worth at retirement — with any employer match structure. Includes catch-up contributions, salary growth, year-by-year projections, and a full match check.',
+      'Free 401(k) projection calculator — see exactly what your balance will be at retirement with any employer match. Includes catch-up contributions, salary growth, and year-by-year projections.',
     url: 'https://www.advisorjay.com/tools/401k-projection',
   },
 }

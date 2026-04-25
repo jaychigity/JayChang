@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title:
     'What Your Money Becomes | Time Value of Money Calculator | Advisor Jay',
   description:
-    'See how your investments grow over time with compound interest, dividends, and monthly contributions. Model market corrections, explore milestones, and visualize your wealth trajectory.',
+    'Free time value of money calculator. See how investments grow with compound interest, dividends, and monthly contributions. Model corrections, explore milestones, and visualize your wealth trajectory.',
   alternates: {
     canonical: 'https://www.PWM-Farther.com/tools/tvm-calculator',
   },
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title:
       'What Your Money Becomes | Time Value of Money Calculator',
     description:
-      'Visualize compound growth on your portfolio. Enter your starting investment, monthly contributions, and investment style to see projected future value with interactive charts.',
+      'Free investment growth calculator — visualize compound growth on your portfolio. Enter your starting investment, monthly contributions, and style to see projected future value with charts.',
     url: 'https://www.PWM-Farther.com/tools/tvm-calculator',
   },
 }

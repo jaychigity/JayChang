@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title:
    'Inherited IRA Calculator — SECURE Act RMD Rules & Distribution Strategies',
   description:
-   'Inherited an IRA? Find out your required distributions, compare withdrawal strategies, and see your year-by-year tax impact. Free, instant results.',
+   'Free inherited IRA calculator — find out your required distributions, compare withdrawal strategies, and see your year-by-year tax impact. Instant results.',
   url: 'https://www.PWM-Farther.com/tools/inherited-ira-calculator',
  },
 }
