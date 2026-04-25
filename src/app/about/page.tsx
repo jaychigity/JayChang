@@ -16,10 +16,10 @@ export default function AboutPage() {
  const teamMembers = [
  {
  name: 'Michael Lee',
- title: 'Principal, Wealth Advisor, Farther',
- photo: '/Photos/Michael_Lee.png',
- photoWidth: 1024,
- photoHeight: 1024,
+ title: 'Principal, Wealth Advisor & Focus Team Lead, Farther',
+ photo: '/Photos/Michael-Lee-color.avif',
+ photoWidth: 722,
+ photoHeight: 800,
  bio: [
   'Michael got into this work translating for his mother when she retired from Kaiser Permanente. That experience shaped everything. He\'s since helped professionals at PG&E, AT&T, Kaiser, Chevron, Northrop Grumman, Boeing, and Raytheon.',
   'InvestmentNews Rising Star 2025, AdvisorHub 250 Advisors to Watch 2025, Hot List 2024, Founders Club 2025.',
@@ -27,21 +27,21 @@ export default function AboutPage() {
  },
  {
  name: 'Dr. Daniel R. Gilham',
- title: 'CFP®, CEPA® • Managing Director of Advisor Strategy, Farther',
- photo: '/Photos/Daniel-Gilham.png',
- photoWidth: 1024,
- photoHeight: 1024,
+ title: 'CFP® • Managing Director of Advisor Strategy, Farther',
+ photo: '/Photos/Daniel-Gilham-color.avif',
+ photoWidth: 722,
+ photoHeight: 800,
  bio: [
-  'Daniel is a CFP, Certified Exit Planning Advisor, and is finishing his Doctorate of Finance. He spent nearly a decade at Wells Fargo as VP, Investment Officer, and PIM Portfolio Manager before that, he was at Merrill Lynch.',
+  'Daniel is a CFP with 15 years of experience, a former systems engineer at AOL, and a doctoral candidate at the University of South Florida. He spent nearly a decade at Wells Fargo before that.',
   `He co-hosts The Horse's Mouth podcast, sits on the Advisory Board for GrowFL, was named Jacksonville 40 Under 40, and gives his time to Ho'ola Na Pua in Hawaii.`,
  ],
  },
  {
  name: 'Sutanto Widjaja',
  title: 'Chief Investment Officer, Farther Institutional',
- photo: '/Photos/Sutanto.png',
- photoWidth: 1024,
- photoHeight: 1024,
+ photo: '/Photos/Sutanto-color.avif',
+ photoWidth: 1160,
+ photoHeight: 1200,
  bio: [
   'Sutanto has 20+ years in asset management. He was Co-Portfolio Manager at TIAA-Nuveen running institutional portfolios, and co-founded IndiCo Capital.',
   'MBA from Stanford, BS from UC Berkeley. He serves on the Investment Committees of the University of Hawaii Foundation and the Honolulu Museum of Art.',
