@@ -150,7 +150,7 @@ export default function RaytheonPensionPage() {
    Facing the Raytheon pension decision? Let&apos;s build your analysis together.
   </p>
   <Button href="/schedule-consultation" variant="primary">
-   Schedule a Free Call
+   Schedule a Call
   </Button>
   </AnimateOnScroll>
   </div>

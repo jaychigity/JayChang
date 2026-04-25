@@ -189,7 +189,7 @@ export default function NvidiaESPPPage() {
                 The ESPP is a powerful tool, but only if you have a plan. Understand your purchase price, your tax treatment, and your concentration risk. Then execute a deliberate strategy rather than letting your ESPP balance grow by accident.
               </p>
               <Button href="/schedule-consultation" variant="primary">
-                Schedule a Free Review
+                Schedule a Review
               </Button>
             </div>
           </AnimateOnScroll>

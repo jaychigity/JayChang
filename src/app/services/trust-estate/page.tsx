@@ -353,7 +353,7 @@ export default function TrustEstatePlanningPage() {
    </svg>
    </Link>
    <p className="font-sans text-[12px] text-[#5b6a71] mt-2">
-   60 seconds &bull; Free &bull; Confidential
+   60 seconds &bull; Confidential
    </p>
   </div>
   </AnimateOnScroll>

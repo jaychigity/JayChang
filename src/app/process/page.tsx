@@ -175,7 +175,7 @@ export default function ProcessPage() {
    </Button>
   </div>
   <p className="text-white text-lg mb-2">
-   Free &middot; Confidential &middot; Zero obligation
+   Confidential &middot; Zero obligation
   </p>
   </AnimateOnScroll>
   </div>

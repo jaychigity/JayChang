@@ -3,16 +3,16 @@ import Link from 'next/link'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
- title: 'Free Financial Calculators & Planning Tools | Advisor Jay',
+ title: 'Financial Calculators & Planning Tools | Advisor Jay',
  description:
- 'Free interactive financial tools and assessments for corporate employees, utility professionals, physicians, business owners, and families. Tax savings calculators, retirement readiness checks, equity compensation analysis, and more.',
+ 'Interactive financial tools and assessments for corporate employees, utility professionals, physicians, business owners, and families. Tax savings calculators, retirement readiness checks, equity compensation analysis, and more.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/tools',
  },
  openGraph: {
- title: 'Free Financial Calculators & Planning Tools | Advisor Jay',
+ title: 'Financial Calculators & Planning Tools | Advisor Jay',
  description:
- 'Free interactive tools to help you make smarter wealth decisions. Calculators, assessments, and scorecards - instant results, no sign-up required.',
+ 'Interactive tools to help you make smarter wealth decisions. Calculators, assessments, and scorecards - instant results, no sign-up required.',
  url: 'https://www.PWM-Farther.com/tools',
  },
 }
@@ -33,6 +33,14 @@ const tools = [
  'RSUs, stock options, and ESPPs are taxed differently \u2014 and your employer\'s default withholding is often not enough. This tool estimates your actual tax liability on equity compensation so you\'re not caught off guard at filing time.\n\nEspecially useful for: tech professionals, corporate employees, and anyone with vesting events this year.',
  time: 'Instant analysis',
  category: 'Planning Tool',
+ },
+ {
+ href: '/tools/401k-projection',
+ title: '401(k) Projection Calculator',
+ description:
+  'See exactly what your 401(k) will be worth at retirement with any employer match structure. Enter your salary, contribution rate, and match formula — get year-by-year growth, a breakdown of your contributions vs employer match vs investment gains, and a flag if you\'re leaving match money on the table.\n\nEspecially useful for: anyone who wants to stress-test their savings rate or hasn\'t run the numbers since starting their job.',
+ time: 'Instant projection',
+ category: 'Calculator',
  },
  {
  href: '/tools/roth-conversion-calculator',
@@ -63,6 +71,14 @@ const tools = [
  title: 'AT&T Pension Suite',
  description:
  'AT&T\'s pension, deferred compensation, and benefits package is one of the most complex in the industry. This suite of calculators helps you model pension vs. lump sum decisions, deferred comp risk, and how your benefits fit into your overall retirement picture.\n\nEspecially useful for: current and former AT&T employees approaching retirement decisions.',
+ time: 'Instant analysis',
+ category: 'Calculator Suite',
+ },
+ {
+ href: '/tools/pge-pension',
+ title: 'PG&E Pension & Benefits Suite',
+ description:
+ 'Six calculators built around the decisions PG&E employees actually face: estimate your Final Pay or Cash Balance pension, model early retirement reduction factors, project how long your RMSA will last, and find the 401(k) spillover election that captures your full match.\n\nEspecially useful for: PG&E employees in the Final Pay or Cash Balance plan navigating retirement timing and benefits elections.',
  time: 'Instant analysis',
  category: 'Calculator Suite',
  },
@@ -167,7 +183,7 @@ export default function ToolsPage() {
   marginRight: 'auto',
   }}
   >
-  Free Financial Calculators &amp; Planning Tools for Professionals and Families
+  Financial Calculators &amp; Planning Tools for Professionals and Families
   </h1>
   <p
   className="font-sans"
@@ -180,7 +196,7 @@ export default function ToolsPage() {
   lineHeight: 1.6,
   }}
   >
-  Making smart financial decisions starts with knowing your numbers. These free calculators are: no sign-up required, real answers instantly. Built for corporate employees, utility and energy professionals, aerospace and defense workers, physicians, business owners, and families navigating complex financial situations &mdash; exactly the kinds of people I work with every day.
+  Making smart financial decisions starts with knowing your numbers. These calculators require no sign-up and deliver real answers instantly. Built for corporate employees, utility and energy professionals, aerospace and defense workers, physicians, business owners, and families navigating complex financial situations &mdash; exactly the kinds of people I work with every day.
   </p>
  </section>
 
@@ -218,7 +234,7 @@ export default function ToolsPage() {
   lineHeight: 1.7,
   }}
   >
-  Each calculator is designed around a specific financial question we hear constantly from clients. Start with whichever one is most relevant to your situation right now. If you want help interpreting the results or building a plan around them, Jay offers a free, no-obligation conversation &mdash; no pitch, just clarity.
+  Each calculator is designed around a specific financial question we hear constantly from clients. Start with whichever one is most relevant to your situation right now. If you want help interpreting the results or building a plan around them, Jay offers a no-obligation conversation &mdash; no pitch, just clarity.
   </p>
   </div>
  </section>
@@ -375,7 +391,7 @@ export default function ToolsPage() {
   marginBottom: 16,
   }}
   >
-  If you&rsquo;re a corporate or Fortune 500 employee trying to maximize your 401(k), start with the withholding calculator. If you have RSUs or stock options vesting this year, the equity compensation calculator is your first stop. Physicians and high-income earners often find the Roth conversion tool most valuable. Business owners planning an exit should start with the scorecard. And if you&rsquo;re an AT&amp;T or utility professional with pension decisions ahead, the AT&amp;T Pension Suite was built specifically for you.
+  If you&rsquo;re a corporate or Fortune 500 employee trying to maximize your 401(k), start with the withholding calculator. If you have RSUs or stock options vesting this year, the equity compensation calculator is your first stop. Physicians and high-income earners often find the Roth conversion tool most valuable. Business owners planning an exit should start with the scorecard. And if you&rsquo;re an AT&amp;T or PG&amp;E employee with pension decisions ahead, the AT&amp;T Pension Suite and PG&amp;E Pension Suite were built specifically for you.
   </p>
   <p
   className="font-sans"
@@ -385,7 +401,7 @@ export default function ToolsPage() {
   lineHeight: 1.7,
   }}
   >
-  All tools are free, require no login, and are updated for 2026 tax law including SECURE 2.0 catch-up contribution changes. Results are estimates for educational purposes &mdash; for a personalized analysis, schedule a free conversation with Jay.
+  All tools require no login and are updated for 2026 tax law including SECURE 2.0 catch-up contribution changes. Results are estimates for educational purposes &mdash; for a personalized analysis, schedule a conversation with Jay.
   </p>
   </div>
  </section>
@@ -444,7 +460,7 @@ export default function ToolsPage() {
    'inset 0 1px 1px rgba(255,255,255,0.25), 0 2px 8px rgba(29,118,130,0.3)',
   }}
   >
-  Schedule a free conversation with Jay &rarr;
+  Schedule a conversation with Jay &rarr;
   </a>
  </section>
 

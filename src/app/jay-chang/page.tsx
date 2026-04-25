@@ -202,7 +202,7 @@ export default function JayChangPage() {
    Let&apos;s Just Talk. No Pressure.
   </h2>
   <p className="text-xl text-gray-200 mb-8">
-   The first conversation is free - and the clarity you walk away with lasts.
+   The first conversation is complimentary - and the clarity you walk away with lasts.
   </p>
 
   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">

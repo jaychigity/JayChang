@@ -129,7 +129,7 @@ export default function TSMCRSUPage() {
    Ready to build your TSMC equity plan? The strategies above only work if they&apos;re implemented with precision and coordinated across your full financial picture.
    </p>
    <Button href="/schedule-consultation" variant="primary">
-   Schedule a Free Strategy Call
+   Schedule a Strategy Call
    </Button>
   </div>
   </AnimateOnScroll>

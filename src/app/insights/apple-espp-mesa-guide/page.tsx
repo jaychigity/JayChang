@@ -147,7 +147,7 @@ export default function AppleESPPPage() {
    Want to optimize your Apple ESPP strategy? Let&apos;s make sure your holdings and dispositions are working for you, not against you.
   </p>
   <Button href="/schedule-consultation" variant="primary">
-   Schedule a Free Review
+   Schedule a Review
   </Button>
   </AnimateOnScroll>
   </div>

@@ -185,7 +185,7 @@ export default function RSUVestStrategyPage() {
                 RSU taxation is not complicated, but it requires deliberate planning. Know your tax obligation, cover the withholding gap before vest day, and make a thoughtful decision about whether to hold or sell. This prevents costly surprises in April.
               </p>
               <Button href="/schedule-consultation" variant="primary">
-                Schedule a Free Review
+                Schedule a Review
               </Button>
             </div>
           </AnimateOnScroll>

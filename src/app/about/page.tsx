@@ -15,14 +15,14 @@ export const metadata: Metadata = {
 export default function AboutPage() {
  const teamMembers = [
  {
- name: 'Ashton Hayes',
- title: 'JD, LL.M. in Taxation • Trust Services Associate, Farther',
- photo: '/Photos/Ashton_Hayes.png',
+ name: 'Michael Lee',
+ title: 'Principal, Wealth Advisor, Farther',
+ photo: '/Photos/Michael_Lee.png',
  photoWidth: 1024,
  photoHeight: 1024,
  bio: [
-  'Ashton holds a JD and Master of Laws in Taxation from the University of Alabama. When you have questions about trusts, estates, or how to protect what you\'ve built for your family, she\'s the one who digs into the details.',
-  'She handles trust structuring, complex beneficiary planning, and grantor trust strategies - the stuff that keeps your wealth where it belongs.',
+  'Michael got into this work translating for his mother when she retired from Kaiser Permanente. That experience shaped everything. He\'s since helped professionals at PG&E, AT&T, Kaiser, Chevron, Northrop Grumman, Boeing, and Raytheon.',
+  'InvestmentNews Rising Star 2025, AdvisorHub 250 Advisors to Watch 2025, Hot List 2024, Founders Club 2025.',
  ],
  },
  {
@@ -37,28 +37,6 @@ export default function AboutPage() {
  ],
  },
  {
- name: 'David Sargent',
- title: 'CFP® • Certified Financial Planning Specialist, Farther',
- photo: '/Photos/Dvid-Sarget.png',
- photoWidth: 1024,
- photoHeight: 1024,
- bio: [
-  'David was an engineer before he became an advisor - Texas A&M grad, electronics engineer at Lockheed Martin, assistant electrical engineer at Burns & McDonnell. He gets how technical people think.',
-  'He transitioned through Charles Schwab into financial planning. If you\'re an engineer or scientist who wants someone who speaks your language, David\'s your person.',
- ],
- },
- {
- name: 'Michael Lee',
- title: 'Principal, Wealth Advisor, Farther',
- photo: '/Photos/Michael_Lee.png',
- photoWidth: 1024,
- photoHeight: 1024,
- bio: [
-  'Michael got into this work translating for his mother when she retired from Kaiser Permanente. That experience shaped everything. He\'s since helped professionals at PG&E, AT&T, Kaiser, Chevron, Northrop Grumman, Boeing, and Raytheon.',
-  'InvestmentNews Rising Star 2025, AdvisorHub 250 Advisors to Watch 2025, Hot List 2024, Founders Club 2025.',
- ],
- },
- {
  name: 'Sutanto Widjaja',
  title: 'Chief Investment Officer, Farther Institutional',
  photo: '/Photos/Sutanto.png',
@@ -68,6 +46,17 @@ export default function AboutPage() {
   'Sutanto has 20+ years in asset management. He was Co-Portfolio Manager at TIAA-Nuveen running institutional portfolios, and co-founded IndiCo Capital.',
   'MBA from Stanford, BS from UC Berkeley. He serves on the Investment Committees of the University of Hawaii Foundation and the Honolulu Museum of Art.',
   'His focus: smart asset allocation, alternatives, and building portfolios that actually manage risk instead of just talking about it.',
+ ],
+ },
+ {
+ name: 'Ashton Hayes',
+ title: 'JD, LL.M. in Taxation • Trust Services Associate, Farther',
+ photo: '/Photos/Ashton_Hayes.png',
+ photoWidth: 1024,
+ photoHeight: 1024,
+ bio: [
+  'Ashton holds a JD and Master of Laws in Taxation from the University of Alabama. When you have questions about trusts, estates, or how to protect what you\'ve built for your family, she\'s the one who digs into the details.',
+  'She handles trust structuring, complex beneficiary planning, and grantor trust strategies - the stuff that keeps your wealth where it belongs.',
  ],
  },
  {
@@ -90,6 +79,17 @@ export default function AboutPage() {
  bio: [
   `Alex is a key member of our team supporting Jay's practice day-to-day. He brings sharp analytical thinking and a genuine care for doing right by every client.`,
   'From onboarding to implementation, Alex helps make sure the whole planning process runs smoothly so nothing gets missed.',
+ ],
+ },
+ {
+ name: 'David Sargent',
+ title: 'CFP® • Certified Financial Planning Specialist, Farther',
+ photo: '/Photos/Dvid-Sarget.png',
+ photoWidth: 1024,
+ photoHeight: 1024,
+ bio: [
+  'David was an engineer before he became an advisor - Texas A&M grad, electronics engineer at Lockheed Martin, assistant electrical engineer at Burns & McDonnell. He gets how technical people think.',
+  'He transitioned through Charles Schwab into financial planning. If you\'re an engineer or scientist who wants someone who speaks your language, David\'s your person.',
  ],
  },
  ];
@@ -344,7 +344,7 @@ export default function AboutPage() {
    Let&apos;s Just Talk. No Pressure.
   </h2>
   <p className="text-xl text-gray-200 mb-8">
-   The first conversation is free - and the clarity you walk away with lasts.
+   The first conversation is complimentary - and the clarity you walk away with lasts.
   </p>
 
   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">

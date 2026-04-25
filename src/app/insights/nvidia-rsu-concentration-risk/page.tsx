@@ -138,7 +138,7 @@ export default function NVIDIAConcentrationRiskPage() {
    Does your NVIDIA equity need a diversification plan? If you&apos;re above 50% concentration, the answer is yes. Let&apos;s talk through the options and the timeline that makes sense for your situation.
    </p>
    <Button href="/schedule-consultation" variant="primary">
-   Schedule a Free Review
+   Schedule a Review
    </Button>
   </div>
   </AnimateOnScroll>

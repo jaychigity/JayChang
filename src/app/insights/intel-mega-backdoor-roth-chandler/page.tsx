@@ -122,7 +122,7 @@ export default function IntelMegaBackdoorRothPage() {
    Want help implementing this strategy? Many Intel engineers defer the mega backdoor Roth because the process feels complex. But once set up, it runs on autopilot.
    </p>
    <Button href="/schedule-consultation" variant="primary">
-   Schedule a Free Call
+   Schedule a Call
    </Button>
   </div>
   </AnimateOnScroll>

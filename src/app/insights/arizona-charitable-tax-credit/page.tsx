@@ -3,7 +3,7 @@ import AnimateOnScroll from '@/components/AnimateOnScroll'
 import Button from '@/components/Button'
 
 export const metadata: Metadata = {
-  title: 'The Arizona Charitable Tax Credit Most Residents Miss: $2,300 in Free Giving',
+  title: 'The Arizona Charitable Tax Credit Most Residents Miss: $2,300 in Dollar-for-Dollar Credits',
   description: 'Arizona offers two state tax credits worth up to $2,300 combined for charitable donations. Most residents never claim them.',
   alternates: {
     canonical: '/insights/arizona-charitable-tax-credit'
@@ -14,7 +14,7 @@ export default function ArizonaCharitableCreditPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'The Arizona Charitable Tax Credit Most Residents Miss: $2,300 in Free Giving',
+    headline: 'The Arizona Charitable Tax Credit Most Residents Miss: $2,300 in Dollar-for-Dollar Credits',
     description: 'Arizona offers two state tax credits worth up to $2,300 combined for charitable donations. Most residents never claim them.',
     author: {
       '@type': 'Organization',
@@ -30,7 +30,7 @@ export default function ArizonaCharitableCreditPage() {
       <section className="bg-[#F7F4EE] py-20 px-6">
         <div className="max-w-2xl mx-auto">
           <AnimateOnScroll>
-            <h1 className="text-4xl font-bold mb-6 text-gray-900">The Arizona Charitable Tax Credit Most Residents Miss: $2,300 in Free Giving</h1>
+            <h1 className="text-4xl font-bold mb-6 text-gray-900">The Arizona Charitable Tax Credit Most Residents Miss: $2,300 in Dollar-for-Dollar Credits</h1>
             <p className="text-xl text-gray-700 mb-4">Two state tax credits redirect up to $2,300 from your tax bill to charities and schools.</p>
           </AnimateOnScroll>
         </div>

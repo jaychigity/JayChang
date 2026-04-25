@@ -58,7 +58,7 @@ export default function SemiconductorWealthManagementArizona() {
    From TSMC&apos;s Fab 21 in North Phoenix to Intel&apos;s Chandler campus, from NVIDIA&apos;s quarterly vesting cycle to Apple&apos;s biannual RSU tranches - Jay Chang is the fiduciary advisor who knows your benefits package by name, knows the risks hiding inside it, and knows exactly what to do about them.
   </p>
   <Button href="/schedule-consultation" variant="primary">
-   Schedule a Free Semiconductor Strategy Call
+   Schedule a Semiconductor Strategy Call
   </Button>
   </div>
   <div className="relative h-96 md:h-full">
@@ -531,7 +531,7 @@ export default function SemiconductorWealthManagementArizona() {
    You&apos;ve earned the opportunity to build significant wealth at TSMC, Intel, NVIDIA, Microchip, Amkor, and other semiconductor leaders. The right financial plan ensures you actually keep it.
   </p>
   <Button href="/schedule-consultation" variant="primary">
-   Schedule Your Free Semiconductor Strategy Call
+   Schedule Your Semiconductor Strategy Call
   </Button>
   </div>
   </AnimateOnScroll>

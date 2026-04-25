@@ -49,12 +49,13 @@ export default function InheritedIRAPage() {
       className="font-sans"
       style={{
        fontSize: 13,
-       color: 'rgba(247, 244, 238, 0.5)',
+       fontWeight: 600,
+       color: '#F7F4EE',
        marginTop: 12,
        letterSpacing: '0.05em',
       }}
      >
-      Free · No sign-up · Instant results
+      No sign-up required · Instant results
      </p>
      <div className="mt-6 flex justify-center">
       <Link

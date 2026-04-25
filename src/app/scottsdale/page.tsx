@@ -685,7 +685,7 @@ export default function ScottsdalePage() {
      <AnimateOnScroll delay={200}>
       <div className="mt-8">
        <Button href="/schedule-consultation" variant="primary">
-        Book a Free Conversation
+        Book a Conversation
        </Button>
       </div>
      </AnimateOnScroll>

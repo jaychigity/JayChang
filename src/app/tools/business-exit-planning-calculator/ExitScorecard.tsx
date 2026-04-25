@@ -422,7 +422,7 @@ export default function ExitScorecard() {
 
   <p className="font-sans text-[13px] text-[#94A3B8] mt-4">
   Takes about 60 seconds &bull; No login required &bull;
-  Free and confidential
+  Confidential
   </p>
 
   <p className="font-sans text-[12px] text-[#94A3B8] mt-12 max-w-[520px] mx-auto leading-relaxed">
@@ -1007,7 +1007,7 @@ export default function ExitScorecard() {
    href="/schedule-consultation"
    className="inline-flex items-center justify-center gap-2 bg-gradient-to-b from-[#2a9dab] to-[#1d7682] hover:from-[#238a97] hover:to-[#155f69] text-white font-sans font-semibold text-[16px] px-8 py-3.5 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_8px_24px_rgba(29,118,130,0.4)] transition-all duration-200"
    >
-   Schedule Your Free Exit Planning Consultation
+   Schedule Your Exit Planning Consultation
    </Link>
    </div>
   </div>

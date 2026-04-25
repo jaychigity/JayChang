@@ -279,7 +279,7 @@ export default function RaytheonRTXFinancialAdvisor() {
   <p className="text-xl text-white font-sans mb-8">
   You spent a career defending America. Now defend your retirement with a plan designed specifically for RTX employees and their unique benefits.
   </p>
-  <Button href="/schedule-consultation" variant="primary">Schedule Your Free RTX Strategy Call</Button>
+  <Button href="/schedule-consultation" variant="primary">Schedule Your RTX Strategy Call</Button>
   </div>
  </section>
 

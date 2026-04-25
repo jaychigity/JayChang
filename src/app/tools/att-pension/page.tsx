@@ -7,7 +7,7 @@ export const metadata: Metadata = {
  title:
   'AT&T Pension & Retirement Calculator | Advisor Jay',
  description:
-  'Free AT&T pension calculators for union and management employees. Estimate your cash balance pension, pension band benefit, lump sum vs annuity, early retirement reduction, and 401(k) projections.',
+  'AT&T pension calculators for union and management employees. Estimate your cash balance pension, pension band benefit, lump sum vs annuity, early retirement reduction, and 401(k) projections.',
  alternates: {
   canonical: 'https://www.PWM-Farther.com/tools/att-pension',
  },
@@ -42,12 +42,13 @@ export default function ATTPensionPage() {
       className="font-sans"
       style={{
        fontSize: 13,
-       color: 'rgba(247, 244, 238, 0.5)',
+       fontWeight: 600,
+       color: '#F7F4EE',
        marginTop: 12,
        letterSpacing: '0.05em',
       }}
      >
-      Free · No sign-up · Instant results
+      No sign-up required · Instant results
      </p>
      <div className="mt-6 flex justify-center">
       <Link href="/tools" className="font-sans text-[13px] text-[#F7F4EE]/50 hover:text-[#1d7682] transition-colors">
@@ -60,6 +61,56 @@ export default function ATTPensionPage() {
    {/* Calculator */}
    <section className="bg-[#F7F4EE]">
     <ATTPensionCalculator />
+   </section>
+
+   {/* AT&T Planning CTA */}
+   <section style={{ backgroundColor: '#1d7682', padding: '48px 40px' }}>
+    <div style={{ maxWidth: 760, margin: '0 auto', textAlign: 'center' }}>
+     <p className="font-sans" style={{ fontSize: 13, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(247,244,238,0.6)', marginBottom: 12 }}>
+      WANT HELP MAKING SENSE OF THESE NUMBERS?
+     </p>
+     <h3 className="font-serif" style={{ fontSize: 28, fontWeight: 600, color: '#F7F4EE', marginBottom: 12, lineHeight: 1.3 }}>
+      I work with AT&amp;T employees on exactly these decisions — pension elections, DISC distributions, Rule of 75 timing, and retirement coordination.
+     </h3>
+     <p className="font-sans" style={{ fontSize: 15, color: 'rgba(247,244,238,0.75)', marginBottom: 24, lineHeight: 1.6 }}>
+      The calculator gives you the numbers. A plan gives you clarity on what to actually do with them.
+     </p>
+     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, justifyContent: 'center' }}>
+      <Link
+       href="/att-employee-financial-advisor"
+       style={{
+        display: 'inline-block',
+        backgroundColor: '#F7F4EE',
+        color: '#1d7682',
+        fontFamily: "'Inter', sans-serif",
+        fontSize: 14,
+        fontWeight: 600,
+        padding: '12px 24px',
+        borderRadius: 9999,
+        textDecoration: 'none',
+       }}
+      >
+       See how I help AT&amp;T employees →
+      </Link>
+      <Link
+       href="/schedule-consultation"
+       style={{
+        display: 'inline-block',
+        backgroundColor: 'transparent',
+        color: '#F7F4EE',
+        fontFamily: "'Inter', sans-serif",
+        fontSize: 14,
+        fontWeight: 600,
+        padding: '12px 24px',
+        borderRadius: 9999,
+        textDecoration: 'none',
+        border: '1.5px solid rgba(247,244,238,0.4)',
+       }}
+      >
+       Schedule a conversation
+      </Link>
+     </div>
+    </div>
    </section>
 
    {/* Related Tools */}

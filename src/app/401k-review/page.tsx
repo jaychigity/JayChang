@@ -7,12 +7,12 @@ import WithholdingCalculator from '../tools/401k-withholding-calculator/Withhold
 export const metadata: Metadata = {
   title: 'Is Your 401(k) Actually Working for You? | Advisor Jay',
   description:
-    'Find out if you are on track to max out your 401(k) this year. Free calculator — no sign-up required. Built by Jay Chang, wealth advisor at Farther.',
+    'Find out if you are on track to max out your 401(k) this year. No sign-up required. Built by Jay Chang, wealth advisor at Farther.',
   alternates: { canonical: 'https://www.advisorjay.com/401k-review' },
   openGraph: {
     title: 'Is Your 401(k) Actually Working for You? | Advisor Jay',
     description:
-      'Free 401(k) withholding calculator. Find the exact percentage to max out your contributions this year.',
+      '401(k) withholding calculator. Find the exact percentage to max out your contributions this year.',
     url: 'https://www.advisorjay.com/401k-review',
   },
   robots: { index: true, follow: true },
@@ -38,7 +38,7 @@ export default function FourOneKReviewPage() {
           />
 
           <p className="font-sans text-[12px] font-semibold uppercase tracking-[0.15em] text-[#1d7682] mb-4">
-            Free 401(k) Planning Tool
+            401(k) Planning Tool
           </p>
 
           <h1 className="font-serif text-[30px] md:text-[44px] font-bold text-[#F7F4EE] leading-tight mb-[16px]">
@@ -53,7 +53,7 @@ export default function FourOneKReviewPage() {
           </p>
 
           <p className="font-sans text-[13px] text-[#F7F4EE]/50 mt-[16px] tracking-[0.05em]">
-            Free &middot; No sign-up &middot; Instant results
+            No sign-up &middot; Instant results
           </p>
         </div>
       </section>
@@ -99,13 +99,13 @@ export default function FourOneKReviewPage() {
           <p className="font-sans text-[15px] font-light text-[#b6d0ed] leading-relaxed mb-[24px]">
             Your 401(k) is just one piece of the picture. I can look at the
             whole thing — taxes, investments, retirement timeline — and tell
-            you where you stand. Free, no obligation.
+            you where you stand. No obligation.
           </p>
           <Link
             href="/schedule-consultation"
             className="inline-block bg-gradient-to-b from-[#2a9dab] to-[#1d7682] text-[#F7F4EE] font-sans text-[15px] font-semibold py-[16px] px-[40px] rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:from-[#238a97] hover:to-[#155f69] hover:-translate-y-[2px] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_8px_24px_rgba(29,118,130,0.4)] transition-all duration-200"
           >
-            Schedule a Free Conversation with Jay
+            Schedule a Conversation with Jay
           </Link>
           <p className="font-sans text-[12px] text-[#b6d0ed]/60 mt-[12px]">
             No pitch. Just a real conversation about your goals.

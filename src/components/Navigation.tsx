@@ -29,56 +29,42 @@ const navItems: NavItem[] = [
     label: "Services",
     href: "/services",
     children: [
-      { label: "All Services", href: "/services" },
       { label: "Financial Planning", href: "/services/financial-planning" },
-      { label: "Investment Management", href: "/services/investments" },
       { label: "Retirement Planning", href: "/services/retirement-planning" },
       { label: "Tax Optimization", href: "/services/tax-optimization" },
+      { label: "Investment Management", href: "/services/investments" },
       { label: "Trust & Estate", href: "/services/trust-estate" },
-      { label: "401(k) & Employer Plans", href: "/services/401k" },
-      { label: "Generational Wealth", href: "/services/generational-wealth" },
-      { label: "Alternative Investments", href: "/services/alternatives" },
       { label: "Business Owners", href: "/services/business-owners" },
-      { label: "Institutional", href: "/services/institutional" },
+      { label: "All Services", href: "/services" },
     ],
   },
   {
     label: "Who I Work With",
     href: "#",
     children: [
-      { label: "Families & Life Transitions", href: "/families-life-transitions-wealth-management" },
       { label: "Telecom & Utilities", href: "/telecommunications-utilities-wealth-management" },
       { label: "Institutional & Non-Profit", href: "/institutional-non-profit-wealth-management" },
+      { label: "Families & Life Transitions", href: "/families-life-transitions-wealth-management" },
       { label: "Aerospace & Defense", href: "/aerospace-defense-wealth-management" },
       { label: "Physicians & Healthcare", href: "/physician-executive-wealth-management-phoenix-scottsdale" },
-      { label: "Tech & Semiconductor", href: "/semiconductor-wealth-management-arizona" },
-      { label: "Tech Executives", href: "/tech-executive-wealth-management" },
+      { label: "Tech Professionals", href: "/semiconductor-wealth-management-arizona" },
     ],
   },
   {
     label: "Tools & Calculators",
     href: "/tools",
     children: [
-      { label: "All Tools", href: "/tools" },
-      { label: "Retirement Readiness", href: "/tools/retirement-savings-calculator" },
-      { label: "Equity Compensation", href: "/tools/rsu-equity-compensation-calculator" },
-      { label: "Business Exit Scorecard", href: "/tools/business-exit-planning-calculator" },
-      { label: "Estate Complexity", href: "/tools/estate-complexity" },
-      { label: "CA→NV Tax Savings", href: "/tools/ca-nv-tax-savings" },
-      { label: "Roth Conversion", href: "/tools/roth-conversion-calculator" },
-      { label: "Income Annuity", href: "/tools/income-annuity" },
-      { label: "TVM Calculator", href: "/tools/tvm-calculator" },
       { label: "Withholding Calculator", href: "/tools/401k-withholding-calculator" },
       { label: "AT&T Pension Suite", href: "/tools/att-pension" },
+      { label: "PG&E Pension Suite", href: "/tools/pge-pension" },
+      { label: "Roth Conversion", href: "/tools/roth-conversion-calculator" },
+      { label: "Retirement Readiness", href: "/tools/retirement-savings-calculator" },
+      { label: "All Tools", href: "/tools" },
     ],
   },
   {
     label: "Insights",
     href: "/insights",
-    children: [
-      { label: "All Insights", href: "/insights" },
-      { label: "Market Commentary", href: "/client-resources" },
-    ],
   },
 ];
 
@@ -158,34 +144,45 @@ function DropdownItem({ item, isActive, closeDropdown }: { item: NavItem; isActi
               boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
             }}
           >
-            {item.children!.map((child) => (
-              <Link
-                key={child.href}
-                href={child.href}
-                onClick={() => { setOpen(false); closeDropdown(); }}
-                style={{
-                  display: "block",
-                  padding: "10px 20px",
-                  fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif",
-                  fontSize: 13,
-                  fontWeight: 400,
-                  color: isActive(child.href) ? "#1d7682" : "#F7F4EE",
-                  textDecoration: "none",
-                  transition: "background-color 0.15s ease, color 0.15s ease",
-                  whiteSpace: "nowrap",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = "rgba(29, 118, 130, 0.15)";
-                  e.currentTarget.style.color = "#1d7682";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = "transparent";
-                  e.currentTarget.style.color = isActive(child.href) ? "#1d7682" : "#F7F4EE";
-                }}
-              >
-                {child.label}
-              </Link>
-            ))}
+            {item.children!.map((child) => {
+              const isHubLink = child.label.startsWith("All ");
+              return (
+                <Link
+                  key={child.href}
+                  href={child.href}
+                  onClick={() => { setOpen(false); closeDropdown(); }}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    padding: "10px 20px",
+                    fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif",
+                    fontSize: 13,
+                    fontWeight: isHubLink ? 500 : 400,
+                    color: isActive(child.href) ? "#1d7682" : "#F7F4EE",
+                    textDecoration: "none",
+                    transition: "background-color 0.15s ease, color 0.15s ease",
+                    whiteSpace: "nowrap",
+                    ...(isHubLink && {
+                      borderTop: "1px solid rgba(255, 255, 255, 0.1)",
+                      marginTop: 4,
+                      paddingTop: 12,
+                    }),
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = "rgba(29, 118, 130, 0.15)";
+                    e.currentTarget.style.color = "#1d7682";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = "transparent";
+                    e.currentTarget.style.color = isActive(child.href) ? "#1d7682" : "#F7F4EE";
+                  }}
+                >
+                  {child.label}
+                  {isHubLink && <span style={{ opacity: 0.5, marginLeft: 6 }}>→</span>}
+                </Link>
+              );
+            })}
           </div>
         </div>
       )}
@@ -260,6 +257,7 @@ function MobileAccordion({ item, isActive, onNavigate }: { item: NavItem; isActi
         <div style={{ paddingLeft: 8, paddingBottom: 8 }}>
           {item.children!.map((child) => {
             const childActive = isActive(child.href);
+            const isHubLink = child.label.startsWith("All ");
             return (
               <Link
                 key={child.href}
@@ -267,20 +265,28 @@ function MobileAccordion({ item, isActive, onNavigate }: { item: NavItem; isActi
                 onClick={onNavigate}
                 className="mobile-nav-child"
                 style={{
-                  display: "block",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
                   padding: "12px 16px",
                   fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif",
                   fontSize: 15,
-                  fontWeight: childActive ? 500 : 400,
+                  fontWeight: isHubLink ? 500 : (childActive ? 500 : 400),
                   color: childActive ? "#1d7682" : "rgba(247, 244, 238, 0.7)",
                   textDecoration: "none",
                   borderLeft: childActive ? "2px solid #1d7682" : "2px solid transparent",
                   borderRadius: "0 6px 6px 0",
                   backgroundColor: childActive ? "rgba(29, 118, 130, 0.08)" : "transparent",
                   transition: "background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease",
+                  ...(isHubLink && {
+                    borderTop: "1px solid rgba(255, 255, 255, 0.08)",
+                    marginTop: 4,
+                    paddingTop: 14,
+                  }),
                 }}
               >
                 {child.label}
+                {isHubLink && <span style={{ opacity: 0.4, fontSize: 13 }}>→</span>}
               </Link>
             );
           })}

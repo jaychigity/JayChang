@@ -88,7 +88,7 @@ export default function ContactPage() {
 
   <AnimateOnScroll delay={150}>
   <p className="font-sans text-[16px] md:text-[17px] text-[#5b6a71] max-w-[560px] mx-auto mt-3">
-   Schedule your free 30-minute consultation or send a message — I respond within one business day.
+   Schedule your 30-minute consultation or send a message — I respond within one business day.
   </p>
   </AnimateOnScroll>
 

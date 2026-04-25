@@ -226,7 +226,7 @@ export default function BusinessOwnerServicesPage() {
    Get a Head Start Before We Even Talk
   </h2>
   <p className="font-sans text-body text-[#5b6a71] mt-4 max-w-2xl mx-auto leading-relaxed">
-   These free tools give you a quick snapshot of where things stand.
+   These tools give you a quick snapshot of where things stand.
    Answer a few questions and get instant, personalized results.
   </p>
   <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">

@@ -363,7 +363,7 @@ export default function ClientResourcesPage() {
    "inset 0 1px 1px rgba(255,255,255,0.25), 0 2px 8px rgba(29,118,130,0.3)",
   }}
   >
-  Schedule a free conversation with Jay &rarr;
+  Schedule a conversation with Jay &rarr;
   </Link>
  </section>
 

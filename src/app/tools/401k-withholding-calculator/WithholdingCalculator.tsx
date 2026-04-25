@@ -239,9 +239,9 @@ const PGE_MATCH_CONFIG = {
     example: (salary: number) => {
       const contrib = Math.round(salary * 0.08)
       const match = Math.round(salary * 0.06)
-      return `If you make ${salary.toLocaleString()} a year and save 8% (${contrib.toLocaleString()}), PG&E adds ${match.toLocaleString()} on top — that's free money just for saving.`
+      return `If you make ${salary.toLocaleString()} a year and save 8% (${contrib.toLocaleString()}), PG&E adds ${match.toLocaleString()} on top — that's your employer's match just for saving.`
     },
-    tip: 'To get every dollar of free money, set your contribution to at least 8%. Anything less and you leave PG&E\'s match on the table.',
+    tip: 'To capture every dollar of employer match, set your contribution to at least 8%. Anything less and you leave PG&E\'s match on the table.',
   },
   'pre-2013-management': {
     label: 'Hired before 2013 — Management',
@@ -252,7 +252,7 @@ const PGE_MATCH_CONFIG = {
     example: (salary: number) => {
       const contrib = Math.round(salary * 0.06)
       const match = Math.round(salary * 0.045)
-      return `If you make ${salary.toLocaleString()} a year and save 6% (${contrib.toLocaleString()}), PG&E adds ${match.toLocaleString()} on top — free money, no strings attached.`
+      return `If you make ${salary.toLocaleString()} a year and save 6% (${contrib.toLocaleString()}), PG&E adds ${match.toLocaleString()} on top — employer match dollars, no strings attached.`
     },
     tip: 'You have the traditional Final Pay pension, which is more generous — but you still want to contribute at least 6% to grab your full match.',
   },
@@ -284,7 +284,7 @@ const ATT_MATCH_CONFIG = {
     example: (salary: number) => {
       const contrib = Math.round(salary * 0.06)
       const match = Math.round(salary * 0.048)
-      return `If you make ${salary.toLocaleString()} a year and save 6% (${contrib.toLocaleString()}), AT&T adds ${match.toLocaleString()} on top. That's free money — but only if you contribute at least 6%.`
+      return `If you make ${salary.toLocaleString()} a year and save 6% (${contrib.toLocaleString()}), AT&T adds ${match.toLocaleString()} on top. That's your employer's match — but only if you contribute at least 6%.`
     },
     tip: 'Contribute at least 6% to get your full match. Saving more is great for your future, but AT&T won\'t match anything above 6%.',
   },
@@ -299,7 +299,7 @@ const ATT_MATCH_CONFIG = {
       const match = Math.round(salary * 0.048)
       return `Using a standard 6% Basic rate: if you make ${salary.toLocaleString()} a year and save ${contrib.toLocaleString()}, AT&T adds about ${match.toLocaleString()}. Check your specific contract for your exact Basic amount.`
     },
-    tip: 'Your "Basic" contribution amount is set by your union contract. Make sure you\'re contributing at least that much — anything less means you\'re giving up free money.',
+    tip: 'Your "Basic" contribution amount is set by your union contract. Make sure you\'re contributing at least that much — anything less means you\'re leaving match dollars on the table.',
   },
 } as const
 
@@ -553,7 +553,7 @@ export default function WithholdingCalculator() {
                   PG&E does <span className="font-semibold">not</span> offer a "true-up" match. That means PG&E only matches what you put in <span className="font-semibold">each paycheck</span> — if you stop contributing partway through the year (because you hit the IRS limit early), PG&E stops matching too. You don't get that money back later.
                 </p>
                 <p className="text-[13px] text-[#92400e] leading-relaxed mb-2">
-                  <span className="font-semibold">Example:</span> Say you earn $150,000 and contribute 30% to max out your 401(k) fast. You'd hit the limit around August. For the rest of the year — September through December — PG&E puts in $0 in match because you're no longer contributing. That could cost you thousands in free money.
+                  <span className="font-semibold">Example:</span> Say you earn $150,000 and contribute 30% to max out your 401(k) fast. You'd hit the limit around August. For the rest of the year — September through December — PG&E puts in $0 in match because you're no longer contributing. That could cost you thousands in match dollars.
                 </p>
                 <p className="text-[13px] text-[#92400e] leading-relaxed">
                   <span className="font-semibold">The fix:</span> Set your contribution percentage so you contribute a little bit every paycheck, all year long. This calculator helps you find that number — use the "Set withholding to" percentage below, and your contributions will be spread evenly across all 26 paychecks.
@@ -623,7 +623,7 @@ export default function WithholdingCalculator() {
                   AT&T calculates your match <span className="font-semibold">each pay period</span>. If you contribute too aggressively and hit the IRS limit by, say, August — AT&T stops matching for the rest of the year. For most AT&T employees, there is <span className="font-semibold">no "true-up"</span> to fix this. That lost match is gone forever.
                 </p>
                 <p className="text-[13px] text-[#92400e] leading-relaxed mb-2">
-                  <span className="font-semibold">Example:</span> Say you earn $150,000 and set your contribution to 30% to max out fast. You'd hit the ${LIMITS.employeeDeferral.toLocaleString()} limit around August. From September through December, your contribution drops to $0 — and so does AT&T's match. That's roughly 4 months of free money you'd never get back.
+                  <span className="font-semibold">Example:</span> Say you earn $150,000 and set your contribution to 30% to max out fast. You'd hit the ${LIMITS.employeeDeferral.toLocaleString()} limit around August. From September through December, your contribution drops to $0 — and so does AT&T's match. That's roughly 4 months of match dollars you'd never get back.
                 </p>
                 <p className="text-[13px] text-[#92400e] leading-relaxed">
                   <span className="font-semibold">The fix:</span> Pace your contributions so you're still putting in at least 6% on your very last paycheck of December. This calculator does the math for you — the "Set withholding to" percentage below spreads your contributions evenly across all 26 paychecks.
@@ -777,7 +777,7 @@ export default function WithholdingCalculator() {
           <div className={selectedCompany !== 'general' ? 'opacity-60 pointer-events-none' : ''}>
             <LabelWithTooltip
               label="Employer match rate"
-              tooltip="The percentage your employer contributes for each dollar you put in. Example: a 4% match means for every $1 you contribute (up to the cap), your employer adds $0.04 per dollar — pure free money."
+              tooltip="The percentage your employer contributes for each dollar you put in. Example: a 4% match means for every $1 you contribute (up to the cap), your employer adds $0.04 per dollar — pure employer match."
             />
             {selectedCompany !== 'general' && (
               <p className="text-[11px] text-[#1d7682] font-semibold mb-1">Auto-filled from your {selectedCompany === 'pge' ? 'PG&E' : 'AT&T'} plan</p>
@@ -850,7 +850,7 @@ export default function WithholdingCalculator() {
           <InfoCallout
             color="amber"
             title={`You may be leaving ${formatCurrency(missedMatchAmount)} in employer match on the table`}
-            body={`Your employer matches up to ${formatPercent(employerMatchCap)} of your salary, but you're currently only contributing ${formatPercent(currentContribPct)}. To capture your full match, you need to contribute at least ${formatPercent(employerMatchCap)} — that's ${formatCurrency((employerMatchCap / 100) * salary)} per year. The match is free money; this is the first thing to fix before worrying about maxing out.`}
+            body={`Your employer matches up to ${formatPercent(employerMatchCap)} of your salary, but you're currently only contributing ${formatPercent(currentContribPct)}. To capture your full match, you need to contribute at least ${formatPercent(employerMatchCap)} — that's ${formatCurrency((employerMatchCap / 100) * salary)} per year. Capturing that match is the first thing to fix before worrying about maxing out.`}
           />
         )}
       </div>
@@ -1061,7 +1061,7 @@ export default function WithholdingCalculator() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <StatCard label="Annual employer match" value={formatCurrency(employerMatchContribution)} sub="Free money from your employer" />
+          <StatCard label="Annual employer match" value={formatCurrency(employerMatchContribution)} sub="Employer match dollars" />
           <StatCard label="You + employer combined" value={formatCurrency(maxDeferral + employerMatchContribution)} sub="Total pre-tax + match" />
         </div>
 

@@ -142,7 +142,7 @@ export default function MicrochipTechnologyAdvisor() {
    href="/schedule-consultation"
    variant="primary"
    >
-   Schedule Your Microchip Strategy Call - Free for current and former Microchip Technology employees.
+   Schedule Your Microchip Strategy Call - for current and former Microchip Technology employees.
    </Button>
   </div>
   </div>

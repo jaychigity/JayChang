@@ -146,7 +146,7 @@ export default function HoneywellAdvisorPage() {
    Ready to Build Your Honeywell Strategy?
   </h3>
   <p className="font-sans text-lg text-[#5b6a71] leading-relaxed mb-8">
-   Let&apos;s start with a free, no-obligation benefits review. We&apos;ll map your 401(k) concentration, discuss your RSU plan, and outline a path to retirement clarity.
+   Let&apos;s start with a no-obligation benefits review. We&apos;ll map your 401(k) concentration, discuss your RSU plan, and outline a path to retirement clarity.
   </p>
   <Button
    href="/schedule-consultation"
@@ -174,7 +174,7 @@ export default function HoneywellAdvisorPage() {
    variant="primary"
    className="inline-block mb-8"
    >
-   Schedule Your Honeywell Strategy Call - Free for Honeywell Employees and Retirees
+   Schedule Your Honeywell Strategy Call - for Honeywell Employees and Retirees
    </Button>
   </div>
   </AnimateOnScroll>

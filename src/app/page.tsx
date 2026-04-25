@@ -173,25 +173,6 @@ export default function Home() {
   </p>
 
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-   {/* Families, Individuals & Life Transitions */}
-   <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-   <div className="flex items-center mb-4">
-   <Heart className="w-6 h-6 text-[#1d7682] mr-3" />
-   <h3 className="font-serif text-2xl font-bold text-[#333333]">
-    Families &amp; Life Transitions
-   </h3>
-   </div>
-   <p className="text-[#5b6a71] mb-4">
-   Divorce, the loss of a spouse, inheritance, retirement — life&apos;s biggest transitions come with financial decisions you shouldn&apos;t have to navigate alone. I help you protect what matters and move forward with confidence.
-   </p>
-   <Link
-   href="/families-life-transitions-wealth-management"
-   className="text-[#1d7682] font-semibold hover:underline inline-flex items-center gap-2"
-   >
-   Learn more →
-   </Link>
-   </div>
-
    {/* Telecommunications & Utilities */}
    <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
    <div className="flex items-center mb-4">
@@ -201,7 +182,11 @@ export default function Home() {
    </h3>
    </div>
    <p className="text-[#5b6a71] mb-4">
-   If you&apos;ve built a career at AT&amp;T, Verizon, T-Mobile, SRP, or PG&amp;E, your benefits package is more complex than most people realize — pensions, deferred comp, employer stock, union considerations. I help you coordinate all of it.
+   If you&apos;ve built a career at{' '}
+   <Link href="/att-employee-financial-advisor" className="text-[#1d7682] hover:underline font-medium">AT&amp;T</Link>
+   , Verizon, T-Mobile, SRP, or{' '}
+   <Link href="/pge-employee-financial-advisor" className="text-[#1d7682] hover:underline font-medium">PG&amp;E</Link>
+   , your benefits package is more complex than most people realize — pensions, deferred comp, employer stock, union considerations. I help you coordinate all of it.
    </p>
    <Link
    href="/telecommunications-utilities-wealth-management"
@@ -224,6 +209,25 @@ export default function Home() {
    </p>
    <Link
    href="/institutional-non-profit-wealth-management"
+   className="text-[#1d7682] font-semibold hover:underline inline-flex items-center gap-2"
+   >
+   Learn more →
+   </Link>
+   </div>
+
+   {/* Families, Individuals & Life Transitions */}
+   <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+   <div className="flex items-center mb-4">
+   <Heart className="w-6 h-6 text-[#1d7682] mr-3" />
+   <h3 className="font-serif text-2xl font-bold text-[#333333]">
+    Families &amp; Life Transitions
+   </h3>
+   </div>
+   <p className="text-[#5b6a71] mb-4">
+   Divorce, the loss of a spouse, inheritance, retirement — life&apos;s biggest transitions come with financial decisions you shouldn&apos;t have to navigate alone. I help you protect what matters and move forward with confidence.
+   </p>
+   <Link
+   href="/families-life-transitions-wealth-management"
    className="text-[#1d7682] font-semibold hover:underline inline-flex items-center gap-2"
    >
    Learn more →
@@ -675,10 +679,10 @@ export default function Home() {
    href="/schedule-consultation"
    variant="primary"
    >
-   Schedule a Free Conversation
+   Schedule a Conversation
    </Button>
    <p className="text-gray-400 text-sm">
-   Free · Confidential · No obligation · Available nationwide
+   Confidential · No obligation · Available nationwide
    </p>
   </div>
   </AnimateOnScroll>

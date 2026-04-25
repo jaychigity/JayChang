@@ -63,6 +63,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/financial-advisor-tempe-az`, lastModified: '2026-03-16', changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${baseUrl}/financial-advisor-mesa-az`, lastModified: '2026-03-16', changeFrequency: 'monthly' as const, priority: 0.8 },
 
+    // Employer-specific planning pages
+    { url: `${baseUrl}/att-employee-financial-advisor`, lastModified: '2026-04-24', changeFrequency: 'monthly' as const, priority: 0.9 },
+    { url: `${baseUrl}/pge-employee-financial-advisor`, lastModified: '2026-04-24', changeFrequency: 'monthly' as const, priority: 0.9 },
+
     // Employer niche pages
     { url: `${baseUrl}/intel-financial-advisor-chandler-arizona`, lastModified: '2026-03-16', changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${baseUrl}/tsmc-financial-advisor-phoenix-arizona`, lastModified: '2026-03-16', changeFrequency: 'monthly' as const, priority: 0.8 },
@@ -149,6 +153,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/tools/inherited-ira-calculator`, lastModified: '2026-04-11', changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${baseUrl}/tools/rmd-calculator`, lastModified: '2026-04-10', changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${baseUrl}/tools/social-security-calculator`, lastModified: '2026-04-11', changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${baseUrl}/tools/att-pension`, lastModified: '2026-04-24', changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${baseUrl}/tools/pge-pension`, lastModified: '2026-04-24', changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${baseUrl}/tools/401k-projection`, lastModified: '2026-04-24', changeFrequency: 'monthly' as const, priority: 0.7 },
   ]
 
   return staticPages.map((page) => ({

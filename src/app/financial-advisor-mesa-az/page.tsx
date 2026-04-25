@@ -137,7 +137,7 @@ export default function MesaFinancialAdvisor() {
    Let&apos;s Look at Your Apple Compensation Together
   </h3>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   Grab a free 30-minute call with us. We&apos;ll walk through your Apple comp package, your equity position, and point out any tax opportunities that might be hiding in plain sight. No strings attached.
+   Connect for 30 minutes with us. We&apos;ll walk through your Apple comp package, your equity position, and point out any tax opportunities that might be hiding in plain sight. No strings attached.
   </p>
   <Button
    href="/schedule-consultation"

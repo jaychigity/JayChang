@@ -82,6 +82,7 @@ const TABS = [
   { id: 'pensionBand', label: 'Pension Band', shortLabel: 'Pen Band' },
   { id: 'lumpVsAnnuity', label: 'Lump Sum vs Annuity', shortLabel: 'Lump/Ann' },
   { id: 'earlyRetirement', label: 'Early Retirement', shortLabel: 'Early Ret' },
+  { id: 'mod75', label: 'Mod 75 Check', shortLabel: 'Mod 75' },
   { id: 'fourO1k', label: '401(k) Projection', shortLabel: '401(k)' },
   { id: 'incomeGap', label: 'Income Gap', shortLabel: 'Inc Gap' },
 ] as const
@@ -189,12 +190,12 @@ export default function ATTPensionCalculator() {
       />
 
       {/* Tab Navigation */}
-      <div className="flex overflow-x-auto gap-[4px] mb-[32px] pb-[4px] -mx-[20px] px-[20px] md:mx-0 md:px-0 scrollbar-hide">
+      <div className="flex flex-wrap gap-[6px] mb-[32px]">
         {TABS.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
-            className={`whitespace-nowrap px-[16px] md:px-[20px] py-[10px] rounded-full font-sans text-[13px] md:text-[14px] font-medium transition-all duration-200 shrink-0 ${
+            className={`px-[14px] md:px-[18px] py-[9px] rounded-full font-sans text-[12px] md:text-[13px] font-medium transition-all duration-200 ${
               activeTab === tab.id
                 ? 'bg-[#1d7682] text-white shadow-[0_2px_8px_rgba(29,118,130,0.3)]'
                 : 'bg-white text-[#5b6a71] border border-[#E2E8F0] hover:border-[#1d7682] hover:text-[#1d7682]'
@@ -212,6 +213,7 @@ export default function ATTPensionCalculator() {
         {activeTab === 'pensionBand' && <PensionBandCalc onCalculate={scrollToResults} />}
         {activeTab === 'lumpVsAnnuity' && <LumpVsAnnuityCalc onCalculate={scrollToResults} />}
         {activeTab === 'earlyRetirement' && <EarlyRetirementCalc onCalculate={scrollToResults} />}
+        {activeTab === 'mod75' && <Mod75Calc onCalculate={scrollToResults} />}
         {activeTab === 'fourO1k' && <FourO1kCalc onCalculate={scrollToResults} />}
         {activeTab === 'incomeGap' && <IncomeGapCalc onCalculate={scrollToResults} />}
       </div>
@@ -902,6 +904,26 @@ function EarlyRetirementCalc({ onCalculate }: { onCalculate: () => void }) {
             </div>
           </div>
 
+          {/* Pre-55 Age Penalty Callout */}
+          <div className="bg-amber-50 border border-amber-200 rounded-[12px] p-[20px]">
+            <p className="font-sans text-[13px] font-semibold text-amber-900 mb-[8px] uppercase tracking-[0.04em]">
+              ⚠ Early Retirement Age Penalty — Before Age 55
+            </p>
+            <p className="font-sans text-[13px] text-amber-900 leading-relaxed mb-[8px]">
+              The Modified Rule of 75 tells you <em>if</em> you can retire early. It does not eliminate the age penalty if you&apos;re under 55. These are two separate tests — both apply.
+            </p>
+            <ul className="font-sans text-[13px] text-amber-900 space-y-[4px]">
+              <li>• <strong>Age 55 or older</strong> with Rule of 75: no reduction to your benefit.</li>
+              <li>• <strong>Under age 55</strong>: 6% per year reduction for each year before 55 — even with Rule of 75 eligibility. Retiring at 52 = 18% permanent reduction.</li>
+              {inputs.employeeType === 'union' && (
+                <li>• <strong>Union (CWA/IBEW) with 30+ years of service</strong>: exempt from the age penalty — full service pension at any age.</li>
+              )}
+            </ul>
+            <p className="font-sans text-[12px] text-amber-800 mt-[8px] italic">
+              The table below reflects these penalties. Green rows = no reduction. Red percentages = permanent.
+            </p>
+          </div>
+
           {/* Age-by-age table */}
           <div className={resultCardClass}>
             <h3 className="font-sans text-[14px] font-semibold text-[#333333] mb-[12px] uppercase tracking-[0.05em]">
@@ -935,6 +957,110 @@ function EarlyRetirementCalc({ onCalculate }: { onCalculate: () => void }) {
           </div>
         </div>
       )}
+    </div>
+  )
+}
+
+// ── 401(k) Growth Line Chart ──────────────────────────────────────
+
+function FourO1kLineChart({
+  yearByYear,
+  startingBalance,
+}: {
+  yearByYear: { age: number; balance: number; contribution: number; match: number }[]
+  startingBalance: number
+}) {
+  if (yearByYear.length < 2) return null
+
+  const PAD_L = 64, PAD_R = 16, PAD_T = 16, PAD_B = 28
+  const W = 520, H = 200
+  const VBW = PAD_L + W + PAD_R
+  const VBH = PAD_T + H + PAD_B
+
+  const maxBal = Math.max(...yearByYear.map(d => d.balance))
+  const minAge = yearByYear[0].age
+  const maxAge = yearByYear[yearByYear.length - 1].age
+  const ageRange = maxAge - minAge || 1
+
+  const toX = (age: number) => PAD_L + ((age - minAge) / ageRange) * W
+  const toY = (val: number) => PAD_T + H - (val / maxBal) * H
+
+  const balPts = yearByYear.map(d => `${toX(d.age).toFixed(1)},${toY(d.balance).toFixed(1)}`).join(' ')
+
+  let cumIn = startingBalance
+  const moneyInPts = yearByYear.map(d => {
+    cumIn += d.contribution + d.match
+    return `${toX(d.age).toFixed(1)},${toY(cumIn).toFixed(1)}`
+  }).join(' ')
+
+  const first = yearByYear[0]
+  const last = yearByYear[yearByYear.length - 1]
+  const areaPath = [
+    `M ${toX(first.age).toFixed(1)},${(PAD_T + H).toFixed(1)}`,
+    ...yearByYear.map(d => `L ${toX(d.age).toFixed(1)},${toY(d.balance).toFixed(1)}`),
+    `L ${toX(last.age).toFixed(1)},${(PAD_T + H).toFixed(1)}`,
+    'Z',
+  ].join(' ')
+
+  function fmtAx(v: number) {
+    if (v >= 1_000_000) return `$${(v / 1_000_000).toFixed(v % 1_000_000 === 0 ? 0 : 1)}M`
+    if (v >= 1_000) return `$${Math.round(v / 1_000)}K`
+    return `$${Math.round(v)}`
+  }
+
+  const xTicks = yearByYear.filter((d, i) =>
+    i === 0 || i === yearByYear.length - 1 || d.age % 5 === 0
+  )
+
+  return (
+    <div>
+      <div className="flex flex-wrap gap-x-5 gap-y-1 mb-4 font-sans text-[12px] text-[#5b6a71]">
+        <div className="flex items-center gap-1.5">
+          <svg width="24" height="8"><line x1="0" y1="4" x2="24" y2="4" stroke="#1d7682" strokeWidth="2.5" strokeLinecap="round" /></svg>
+          Projected balance
+        </div>
+        <div className="flex items-center gap-1.5">
+          <svg width="24" height="8"><line x1="0" y1="4" x2="24" y2="4" stroke="#9CA3AF" strokeWidth="1.5" strokeDasharray="4 3" /></svg>
+          Total contributed + AT&amp;T match
+        </div>
+      </div>
+
+      <svg viewBox={`0 0 ${VBW} ${VBH}`} className="w-full" style={{ overflow: 'visible' }}>
+        <defs>
+          <linearGradient id="attLineGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#1d7682" stopOpacity="0.18" />
+            <stop offset="100%" stopColor="#1d7682" stopOpacity="0.02" />
+          </linearGradient>
+        </defs>
+
+        {[0, 0.25, 0.5, 0.75, 1].map((pct, i) => {
+          const y = PAD_T + H - pct * H
+          return (
+            <g key={i}>
+              <line x1={PAD_L} y1={y} x2={PAD_L + W} y2={y} stroke="#E2E8F0" strokeWidth="1" />
+              <text x={PAD_L - 6} y={y + 4} textAnchor="end" fontSize="10" fill="#9CA3AF" fontFamily="sans-serif">
+                {fmtAx(maxBal * pct)}
+              </text>
+            </g>
+          )
+        })}
+
+        <line x1={PAD_L} y1={PAD_T + H} x2={PAD_L + W} y2={PAD_T + H} stroke="#E2E8F0" strokeWidth="1" />
+
+        {xTicks.map(d => (
+          <text key={d.age} x={toX(d.age)} y={PAD_T + H + 16} textAnchor="middle" fontSize="10" fill="#9CA3AF" fontFamily="sans-serif">
+            {d.age}
+          </text>
+        ))}
+
+        <path d={areaPath} fill="url(#attLineGrad)" />
+        <polyline points={moneyInPts} fill="none" stroke="#9CA3AF" strokeWidth="1.5" strokeDasharray="4 3" />
+        <polyline points={balPts} fill="none" stroke="#1d7682" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx={toX(last.age)} cy={toY(last.balance)} r="4" fill="#1d7682" />
+        <text x={toX(last.age) - 6} y={toY(last.balance) - 10} textAnchor="end" fontSize="11" fontWeight="600" fill="#1d7682" fontFamily="sans-serif">
+          {fmtAx(last.balance)}
+        </text>
+      </svg>
     </div>
   )
 }
@@ -1095,6 +1221,15 @@ function FourO1kCalc({ onCalculate }: { onCalculate: () => void }) {
                 <p className={metricLabel}>Investment Growth</p>
               </div>
             </div>
+          </div>
+
+          {/* Line chart */}
+          <div className={resultCardClass}>
+            <h3 className="font-sans text-[14px] font-semibold text-[#333333] mb-[4px] uppercase tracking-[0.05em]">Balance Growth Over Time</h3>
+            <p className="font-sans text-[12px] text-[#5b6a71] mb-[16px]">
+              The gap between the two lines is investment growth — money you never contributed but earned through compounding.
+            </p>
+            <FourO1kLineChart yearByYear={results.yearByYear} startingBalance={inputs.currentBalance} />
           </div>
 
           {/* Match Info */}
@@ -1289,6 +1424,334 @@ function IncomeGapCalc({ onCalculate }: { onCalculate: () => void }) {
         </div>
       )}
 
+    </div>
+  )
+}
+
+// ═══════════════════════════════════════════════════════════════════
+// 7. MODIFIED RULE OF 75 ELIGIBILITY CHECK
+// ═══════════════════════════════════════════════════════════════════
+
+const MOD75_BREAKPOINTS = [
+  { minAge: 65, minService: 10, anyAge: false },
+  { minAge: 55, minService: 20, anyAge: false },
+  { minAge: 50, minService: 25, anyAge: false },
+  { minAge: 0,  minService: 30, anyAge: true  },
+] as const
+
+const MOD75_LABELS = [
+  { ageLabel: '65+', serviceLabel: '10 years' },
+  { ageLabel: '55+', serviceLabel: '20 years' },
+  { ageLabel: '50+', serviceLabel: '25 years' },
+  { ageLabel: 'Any', serviceLabel: '30 years' },
+]
+
+// Penalty table rows: ages 50–55
+const PRE55_PENALTY_ROWS = [55, 54, 53, 52, 51, 50].map(age => ({
+  age,
+  yearsUnder55: age >= 55 ? 0 : 55 - age,
+  penaltyPct: age >= 55 ? 0 : (55 - age) * 6,
+  keepPct: age >= 55 ? 100 : 100 - (55 - age) * 6,
+}))
+
+function Mod75Calc({ onCalculate }: { onCalculate: () => void }) {
+  const [inputs, setInputs] = useState({
+    currentAge: 52,
+    yearsOfService: 20,
+    employeeType: 'union' as 'union' | 'management',
+  })
+
+  const [results, setResults] = useState<{
+    isEligible: boolean
+    metIdxs: number[]
+    nextTarget: { idx: number; yearsNeeded: number; ageAt: number; serviceAt: number } | null
+    pre55PenaltyPct: number
+    penaltyFree: boolean
+  } | null>(null)
+
+  function calculate() {
+    const { currentAge, yearsOfService, employeeType } = inputs
+
+    const metIdxs: number[] = []
+    MOD75_BREAKPOINTS.forEach((bp, i) => {
+      const ageOk = bp.anyAge || currentAge >= bp.minAge
+      const svcOk = yearsOfService >= bp.minService
+      if (ageOk && svcOk) metIdxs.push(i)
+    })
+    const isEligible = metIdxs.length > 0
+
+    // Closest unmet breakpoint (1 year of work = +1 age and +1 service)
+    let nextTarget: { idx: number; yearsNeeded: number; ageAt: number; serviceAt: number } | null = null
+    MOD75_BREAKPOINTS.forEach((bp, i) => {
+      if (metIdxs.includes(i)) return
+      const yearsToAge = bp.anyAge ? 0 : Math.max(0, bp.minAge - currentAge)
+      const yearsToSvc = Math.max(0, bp.minService - yearsOfService)
+      const yearsNeeded = Math.max(yearsToAge, yearsToSvc)
+      if (nextTarget === null || yearsNeeded < nextTarget.yearsNeeded) {
+        nextTarget = { idx: i, yearsNeeded, ageAt: currentAge + yearsNeeded, serviceAt: yearsOfService + yearsNeeded }
+      }
+    })
+
+    const pre55PenaltyPct = currentAge < 55 ? (55 - currentAge) * 6 : 0
+    const penaltyFree =
+      (employeeType === 'union' && yearsOfService >= 30) ||
+      (isEligible && currentAge >= 55)
+
+    setResults({ isEligible, metIdxs, nextTarget, pre55PenaltyPct, penaltyFree })
+    onCalculate()
+  }
+
+  return (
+    <div>
+      <div className="mb-[24px]">
+        <h2 className="font-serif text-[24px] md:text-[28px] text-[#333333] font-normal">Modified Rule of 75 — Am I Eligible?</h2>
+        <p className="font-sans text-[14px] text-[#5b6a71] mt-[4px]">
+          Enter your current age and years of credited service to find out if you qualify for an AT&amp;T service pension — and exactly how close you are to each breakpoint.
+        </p>
+      </div>
+
+      {/* "Not simple addition" warning — always visible */}
+      <div className="bg-amber-50 border border-amber-200 rounded-[10px] p-[16px] mb-[24px]">
+        <p className="font-sans text-[13px] text-amber-900 leading-relaxed">
+          <strong>Common mistake:</strong> Mod 75 is <em>not</em> age + service = 75. You can only qualify at four specific breakpoints — each row must match straight across, no mixing. Age 53 + 22 years = 75, but does <em>not</em> qualify. You must hit one of the exact combinations in the table below.
+        </p>
+      </div>
+
+      <div className="bg-white rounded-[12px] border border-[#E2E8F0] p-[24px] md:p-[32px] mb-[24px]">
+        <div className="mb-[20px]">
+          <p className={labelClass}>Employee Type</p>
+          <div className="grid grid-cols-2 gap-[8px]">
+            {(['union', 'management'] as const).map(type => (
+              <button
+                key={type}
+                onClick={() => setInputs(p => ({ ...p, employeeType: type }))}
+                className={`py-[10px] px-[12px] rounded-[8px] border-2 font-sans text-[13px] font-medium transition-all ${
+                  inputs.employeeType === type
+                    ? 'border-[#1d7682] bg-[#1d7682]/5 text-[#1d7682]'
+                    : 'border-[#E2E8F0] text-[#5b6a71] hover:border-[#1d7682]/40'
+                }`}
+              >
+                {type === 'union' ? 'Union (CWA / IBEW)' : 'Management'}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 gap-[16px] mb-[24px]">
+          <div>
+            <label className={labelClass}>Current Age</label>
+            <input
+              type="number" min={40} max={75}
+              value={inputs.currentAge}
+              onChange={e => setInputs(p => ({ ...p, currentAge: +e.target.value }))}
+              className={inputBase}
+            />
+          </div>
+          <div>
+            <label className={labelClass}>Years of Credited Service</label>
+            <input
+              type="number" min={0} max={50}
+              value={inputs.yearsOfService}
+              onChange={e => setInputs(p => ({ ...p, yearsOfService: +e.target.value }))}
+              className={inputBase}
+            />
+          </div>
+        </div>
+
+        <button
+          onClick={calculate}
+          className="w-full bg-gradient-to-b from-[#2a9dab] to-[#1d7682] text-white font-sans text-[15px] font-semibold py-[16px] rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:from-[#238a97] hover:to-[#155f69] hover:-translate-y-[1px] transition-all duration-200"
+        >
+          Check My Mod 75 Status
+        </button>
+      </div>
+
+      {results && (
+        <div className="space-y-[16px] animate-fade-in">
+
+          {/* Big eligibility status */}
+          <div className={`${resultCardClass} text-center py-[32px] ${results.isEligible ? 'bg-[#2E5D4B]/5 border-[#2E5D4B]/40' : 'bg-amber-50 border-amber-200'}`}>
+            <div className={`text-[56px] leading-none mb-[8px] ${results.isEligible ? 'text-[#2E5D4B]' : 'text-amber-500'}`}>
+              {results.isEligible ? '✓' : '✗'}
+            </div>
+            <p className={`font-serif text-[26px] font-semibold ${results.isEligible ? 'text-[#2E5D4B]' : 'text-[#333333]'}`}>
+              {results.isEligible ? 'Mod 75 Eligible' : 'Not Yet Mod 75 Eligible'}
+            </p>
+            <p className="font-sans text-[14px] text-[#5b6a71] mt-[6px]">
+              Age {inputs.currentAge} · {inputs.yearsOfService} years of service
+            </p>
+            {results.isEligible && (
+              <p className="font-sans text-[13px] text-[#2E5D4B] mt-[4px] font-medium">
+                You qualify for a service pension under the Modified Rule of 75.
+              </p>
+            )}
+          </div>
+
+          {/* Breakpoints table */}
+          <div className={resultCardClass}>
+            <h3 className="font-sans text-[14px] font-semibold text-[#333333] mb-[4px] uppercase tracking-[0.05em]">
+              The Four Breakpoints — Straight Across, No Diagonal
+            </h3>
+            <p className="font-sans text-[12px] text-[#5b6a71] mb-[14px]">
+              You must meet <strong>both</strong> the age AND service requirement in the same row. Mixing rows does not count.
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full text-[14px] font-sans">
+                <thead>
+                  <tr className="text-left text-[#5b6a71] border-b border-[#E2E8F0] text-[11px] uppercase tracking-[0.06em]">
+                    <th className="py-[10px] pr-[12px]">Min Age</th>
+                    <th className="py-[10px] pr-[12px]">Min Service</th>
+                    <th className="py-[10px] pr-[12px]">Your Age</th>
+                    <th className="py-[10px] pr-[12px]">Your Service</th>
+                    <th className="py-[10px]">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {MOD75_BREAKPOINTS.map((bp, i) => {
+                    const met = results.metIdxs.includes(i)
+                    const ageMet = bp.anyAge || inputs.currentAge >= bp.minAge
+                    const svcMet = inputs.yearsOfService >= bp.minService
+                    return (
+                      <tr key={i} className={`border-b border-[#F1F5F9] ${met ? 'bg-[#2E5D4B]/5' : ''}`}>
+                        <td className={`py-[10px] pr-[12px] font-bold text-[15px] ${ageMet ? 'text-[#2E5D4B]' : 'text-[#8B2E2E]'}`}>
+                          {MOD75_LABELS[i].ageLabel}
+                        </td>
+                        <td className={`py-[10px] pr-[12px] font-bold text-[15px] ${svcMet ? 'text-[#2E5D4B]' : 'text-[#8B2E2E]'}`}>
+                          {MOD75_LABELS[i].serviceLabel}
+                        </td>
+                        <td className={`py-[10px] pr-[12px] text-[14px] ${ageMet ? 'text-[#2E5D4B]' : 'text-[#5b6a71]'}`}>
+                          {bp.anyAge ? '—' : inputs.currentAge}
+                        </td>
+                        <td className={`py-[10px] pr-[12px] text-[14px] ${svcMet ? 'text-[#2E5D4B]' : 'text-[#5b6a71]'}`}>
+                          {inputs.yearsOfService}
+                        </td>
+                        <td className="py-[10px]">
+                          <span className={`font-semibold text-[13px] ${met ? 'text-[#2E5D4B]' : 'text-[#8B2E2E]'}`}>
+                            {met ? '✓ Qualifies' : '✗ Not yet'}
+                          </span>
+                        </td>
+                      </tr>
+                    )
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Next target */}
+          {!results.isEligible && results.nextTarget !== null && (
+            <div className={`${resultCardClass} border-l-4 border-l-[#1d7682]`}>
+              <h3 className="font-sans text-[14px] font-semibold text-[#333333] mb-[10px] uppercase tracking-[0.05em]">Closest Breakpoint</h3>
+              <p className="font-sans text-[16px] text-[#333333] leading-relaxed">
+                Work <strong>{results.nextTarget.yearsNeeded} more {results.nextTarget.yearsNeeded === 1 ? 'year' : 'years'}</strong> to reach the{' '}
+                <strong>{MOD75_LABELS[results.nextTarget.idx].ageLabel} age · {MOD75_LABELS[results.nextTarget.idx].serviceLabel}</strong> breakpoint —
+                at age <strong>{results.nextTarget.ageAt}</strong> with <strong>{results.nextTarget.serviceAt} years</strong> of service.
+              </p>
+              {results.nextTarget.yearsNeeded === 0 && (
+                <p className="font-sans text-[13px] text-[#1d7682] mt-[6px] font-medium">You are right at the threshold — verify your exact credited service date with AT&amp;T HR or NetBenefits.</p>
+              )}
+            </div>
+          )}
+
+          {/* Age Penalty Section */}
+          <div className={resultCardClass}>
+            <h3 className="font-sans text-[14px] font-semibold text-[#333333] mb-[10px] uppercase tracking-[0.05em]">Early Retirement Age Penalty</h3>
+            <p className="font-sans text-[13px] text-[#5b6a71] mb-[14px] leading-relaxed">
+              Mod 75 eligibility and the age penalty are two separate tests. Qualifying for a service pension does not automatically mean you receive the full benefit — you must also be 55 or older (or union with 30+ years) to avoid a reduction.
+            </p>
+
+            {results.penaltyFree ? (
+              <div className="bg-[#2E5D4B]/5 border border-[#2E5D4B]/30 rounded-[8px] p-[14px]">
+                <p className="font-sans text-[14px] font-semibold text-[#2E5D4B] mb-[4px]">✓ No age penalty applies to you.</p>
+                <p className="font-sans text-[13px] text-[#2E5D4B]">
+                  {inputs.currentAge >= 55 && results.isEligible
+                    ? 'You meet the Modified Rule of 75 at age 55 or older — full benefit, no reduction.'
+                    : 'Union employees with 30+ years of service receive a full service pension at any age with no age penalty.'}
+                </p>
+              </div>
+            ) : (
+              <div className="space-y-[14px]">
+                {inputs.currentAge < 55 && (
+                  <div className="bg-[#8B2E2E]/5 border border-[#8B2E2E]/20 rounded-[8px] p-[14px]">
+                    <p className="font-sans text-[14px] font-semibold text-[#8B2E2E] mb-[4px]">
+                      Age penalty: {results.pre55PenaltyPct.toFixed(0)}% reduction if you retire today
+                    </p>
+                    <p className="font-sans text-[13px] text-[#8B2E2E] leading-relaxed">
+                      Retiring at age {inputs.currentAge} — {55 - inputs.currentAge} year{55 - inputs.currentAge !== 1 ? 's' : ''} before the age-55 threshold — triggers a permanent {results.pre55PenaltyPct.toFixed(0)}% reduction.
+                      Your monthly benefit would be <strong>{(100 - results.pre55PenaltyPct).toFixed(0)}%</strong> of the unreduced amount.
+                    </p>
+                    {inputs.employeeType === 'union' && inputs.yearsOfService < 30 && (
+                      <p className="font-sans text-[13px] text-[#5b6a71] mt-[6px]">
+                        Union tip: reach 30 years of service and this penalty disappears entirely.
+                        You need <strong>{30 - inputs.yearsOfService} more {30 - inputs.yearsOfService === 1 ? 'year' : 'years'}</strong>.
+                      </p>
+                    )}
+                  </div>
+                )}
+
+                <div className="overflow-x-auto">
+                  <p className="font-sans text-[12px] font-semibold text-[#333333] mb-[8px] uppercase tracking-[0.05em]">Age Penalty Schedule (non-union / under 30 years service)</p>
+                  <table className="w-full text-[13px] font-sans">
+                    <thead>
+                      <tr className="text-left text-[#5b6a71] border-b border-[#E2E8F0] text-[11px] uppercase tracking-[0.06em]">
+                        <th className="py-[8px] pr-[12px]">Retirement Age</th>
+                        <th className="py-[8px] pr-[12px]">Yrs Under 55</th>
+                        <th className="py-[8px] pr-[12px]">Age Penalty</th>
+                        <th className="py-[8px]">Benefit You Keep</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {PRE55_PENALTY_ROWS.map(row => (
+                        <tr
+                          key={row.age}
+                          className={`border-b border-[#F1F5F9] ${row.age === inputs.currentAge ? 'bg-[#1d7682]/5 font-semibold' : ''}`}
+                        >
+                          <td className="py-[7px] pr-[12px]">Age {row.age}{row.age === inputs.currentAge ? ' ← you' : ''}</td>
+                          <td className="py-[7px] pr-[12px] text-[#5b6a71]">{row.yearsUnder55 === 0 ? '—' : row.yearsUnder55}</td>
+                          <td className={`py-[7px] pr-[12px] font-medium ${row.penaltyPct > 0 ? 'text-[#8B2E2E]' : 'text-[#2E5D4B]'}`}>
+                            {row.penaltyPct === 0 ? 'None' : `-${row.penaltyPct}%`}
+                          </td>
+                          <td className={`py-[7px] font-semibold ${row.penaltyPct > 0 ? 'text-[#8B2E2E]' : 'text-[#2E5D4B]'}`}>
+                            {row.keepPct}%
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                {inputs.employeeType === 'union' && (
+                  <p className="font-sans text-[12px] text-[#2E5D4B]">
+                    ✓ Union with 30+ years of service: all rows above become 0% penalty — full benefit at any age.
+                  </p>
+                )}
+              </div>
+            )}
+          </div>
+
+          {/* Service Pension vs Vested Pension */}
+          <div className={`${resultCardClass} bg-[#FAFAF8]`}>
+            <h3 className="font-sans text-[14px] font-semibold text-[#333333] mb-[10px] uppercase tracking-[0.05em]">Service Pension vs. Vested Pension</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-[12px] mb-[10px]">
+              <div className="bg-[#2E5D4B]/5 rounded-[8px] p-[14px]">
+                <p className="font-sans text-[13px] font-semibold text-[#2E5D4B] mb-[6px]">Service Pension</p>
+                <p className="font-sans text-[12px] text-[#333333] leading-relaxed">
+                  You are actively employed when you hit a Mod 75 breakpoint. This unlocks early retirement benefits at the reduced or unreduced rate based on your age.
+                </p>
+              </div>
+              <div className="bg-[#8B2E2E]/5 rounded-[8px] p-[14px]">
+                <p className="font-sans text-[13px] font-semibold text-[#8B2E2E] mb-[6px]">Vested Pension</p>
+                <p className="font-sans text-[12px] text-[#333333] leading-relaxed">
+                  You left AT&amp;T before hitting any Mod 75 breakpoint. Benefits are severely reduced. You cannot &ldquo;age into&rdquo; service pension eligibility after separating.
+                </p>
+              </div>
+            </div>
+            <p className="font-sans text-[12px] text-[#5b6a71] leading-relaxed">
+              <strong>Critical:</strong> Leaving AT&amp;T even one month before you hit a breakpoint locks you into the vested pension calculation permanently — regardless of how old you become afterward. This is one of the most expensive timing mistakes AT&amp;T employees make near retirement.
+            </p>
+          </div>
+
+        </div>
+      )}
     </div>
   )
 }

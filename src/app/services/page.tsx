@@ -200,7 +200,7 @@ export default function ServicesPage() {
         href="/schedule-consultation"
         variant="primary"
        >
-        Book a Free Conversation
+        Book a Conversation
        </Button>
       </div>
      </AnimateOnScroll>

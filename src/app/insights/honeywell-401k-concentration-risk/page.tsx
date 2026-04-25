@@ -128,7 +128,7 @@ export default function Honeywell401kPage() {
    How much Honeywell stock is in your 401(k), your RSU account, and your personal investments? If you don&apos;t know, that&apos;s a sign the concentration needs attention.
    </p>
    <Button href="/schedule-consultation" variant="primary">
-   Schedule a Free Review
+   Schedule a Review
    </Button>
   </div>
   </AnimateOnScroll>

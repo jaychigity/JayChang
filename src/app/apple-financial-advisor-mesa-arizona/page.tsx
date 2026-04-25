@@ -76,7 +76,7 @@ export default function AppleFinancialAdvisor() {
   Apple&apos;s Mesa operations and Silicon Valley campuses pay their engineers extraordinarily well. But biannual RSU vesting, a systematic withholding gap, and ESPP complexity create tax and wealth problems that require specialized advisory expertise. Jay Chang provides that expertise.
   </p>
   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-  <Button href="/schedule-consultation" variant="primary">Schedule a Free Apple Benefits Review</Button>
+  <Button href="/schedule-consultation" variant="primary">Schedule an Apple Benefits Review</Button>
   </div>
   </div>
  </section>
@@ -171,7 +171,7 @@ export default function AppleFinancialAdvisor() {
   </div>
 
   <p className="text-lg text-[#5b6a71] font-sans mb-8 leading-relaxed">
-   <strong>The math:</strong> A Mesa engineer earning $280,000 with 5+ years of service receives $16,800 in free Apple match annually. Add mega backdoor Roth capability (up to $72,000 in after-tax 401(k) contributions that convert to Roth tax-free), and you have one of tech&apos;s most powerful retirement savings vehicles.
+   <strong>The math:</strong> A Mesa engineer earning $280,000 with 5+ years of service receives $16,800 in Apple employer match annually. Add mega backdoor Roth capability (up to $72,000 in after-tax 401(k) contributions that convert to Roth tax-free), and you have one of tech&apos;s most powerful retirement savings vehicles.
   </p>
   <p className="text-lg text-[#5b6a71] font-sans">
    Jay will help you maximize both the company match and after-tax conversion strategy - turning Apple&apos;s match into a meaningful accelerant for tax-free lifetime wealth building.
@@ -234,9 +234,9 @@ export default function AppleFinancialAdvisor() {
  <section className="bg-[#1d7682] py-16 px-6">
   <div className="max-w-4xl mx-auto text-center">
   <p className="text-xl text-white font-sans mb-8">
-  Apple&apos;s compensation is built for long-term wealth creation - but only if you plan it strategically. Jay works with Apple employees every week. Schedule a free, confidential call today.
+  Apple&apos;s compensation is built for long-term wealth creation - but only if you plan it strategically. Jay works with Apple employees every week. Schedule a confidential call today.
   </p>
-  <Button href="/schedule-consultation" variant="primary">Schedule Your Free Apple Strategy Call</Button>
+  <Button href="/schedule-consultation" variant="primary">Schedule Your Apple Strategy Call</Button>
   </div>
  </section>
 

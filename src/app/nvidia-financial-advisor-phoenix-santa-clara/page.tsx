@@ -210,13 +210,13 @@ export default function NVIDIAAdvisor() {
    Ready to Get a Real Plan for Your NVIDIA Equity?
   </h3>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   A free strategy call gives us 30 minutes to understand your NVIDIA position, your goals, and the tax opportunities you might be missing. No sales pitch - just an honest look at your situation.
+   A strategy call gives us 30 minutes to understand your NVIDIA position, your goals, and the tax opportunities you might be missing. No sales pitch - just an honest look at your situation.
   </p>
   <Button
    href="/schedule-consultation"
    variant="primary"
   >
-   Schedule a Free Conversation
+   Schedule a Conversation
   </Button>
   </AnimateOnScroll>
   </div>
@@ -273,7 +273,7 @@ export default function NVIDIAAdvisor() {
    href="/schedule-consultation"
    variant="primary"
   >
-   Schedule Your Free NVIDIA Strategy Call
+   Schedule Your NVIDIA Strategy Call
   </Button>
   </AnimateOnScroll>
   </div>

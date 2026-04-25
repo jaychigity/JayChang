@@ -210,7 +210,7 @@ export default function ConcentratedStockRiskPage() {
                 A concentrated position is not a permanent state. It is a problem to be solved with planning and discipline. The sooner you start, the less painful the de-risking becomes.
               </p>
               <Button href="/schedule-consultation" variant="primary">
-                Schedule a Free Review
+                Schedule a Review
               </Button>
             </div>
           </AnimateOnScroll>

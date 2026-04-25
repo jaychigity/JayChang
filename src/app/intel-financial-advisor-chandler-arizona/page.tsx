@@ -224,9 +224,9 @@ export default function IntelFinancialAdvisor() {
  <section className="bg-[#1d7682] py-16 px-6">
   <div className="max-w-4xl mx-auto text-center">
   <p className="text-xl text-white font-sans mb-8">
-  If any of this sounds like your situation, you&apos;re not alone. We work with Intel employees every week - and we&apos;d love to help you get some clarity too. Grab a free call whenever it works for you.
+  If any of this sounds like your situation, you&apos;re not alone. We work with Intel employees every week - and we&apos;d love to help you get some clarity too. Reach out whenever it works for you.
   </p>
-  <Button href="/schedule-consultation" variant="primary">Let&apos;s Chat - It&apos;s Free</Button>
+  <Button href="/schedule-consultation" variant="primary">Let&apos;s Connect</Button>
   </div>
  </section>
 

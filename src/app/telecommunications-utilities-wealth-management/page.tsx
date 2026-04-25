@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import Image from 'next/image';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
@@ -18,6 +19,7 @@ const telecomTestimonials = [
  { quote: "After the T-Mobile/Sprint merger, my RSU grants got complicated. Jay walked me through the vesting schedule changes, the tax hit at each tranche, and when to sell versus hold. I finally have a plan instead of guessing.", name: "T-Mobile Senior Product Manager", location: "Scottsdale, AZ", detail: "RSU strategy" },
  { quote: "My Verizon deferred comp balance had grown to a level I didn&apos;t expect. Jay helped me structure the distribution so I wouldn&apos;t get crushed by taxes in a single year. That coordination saved me tens of thousands.", name: "Verizon Director of Operations", location: "Chandler, AZ", detail: "Deferred comp planning" },
  { quote: "As an SRP employee with a defined benefit pension, I needed someone who actually understood public utility retirement systems. Jay knew the details of the plan before I finished explaining them.", name: "SRP Senior Engineer", location: "Tempe, AZ", detail: "Public utility pension" },
+ { quote: "After PG&E came out of bankruptcy, I didn&apos;t know how to think about my deferred comp balance or whether my pension was actually safe. Jay walked me through exactly where the risks were and helped me build a plan that didn&apos;t rely on the company being perfect.", name: "PG&E Operations Manager", location: "Northern California", detail: "Post-bankruptcy planning" },
  { quote: "I was holding way too much Verizon stock across my 401(k) and personal accounts without realizing it. Jay calculated the total concentration and built a two-year diversification plan that kept my tax bill manageable.", name: "Verizon Field Operations Supervisor", location: "Mesa, AZ", detail: "Stock diversification" },
 ];
 
@@ -130,6 +132,11 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
     </p>
    </div>
    </div>
+   <div className="mt-6 pt-6 border-t border-[#E8E6E1]">
+   <Link href="/att-employee-financial-advisor" className="text-[#1d7682] font-semibold hover:underline inline-flex items-center gap-2 text-sm">
+   Full AT&amp;T employee planning guide →
+   </Link>
+   </div>
    </div>
   </AnimateOnScroll>
 
@@ -201,13 +208,13 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
    <div>
     <p className="font-semibold text-[#1d7682] mb-2">Defined Benefit Pensions</p>
     <p className="text-base leading-relaxed">
-    Salt River Project (SRP) and many regional utilities offer traditional defined benefit pension plans — increasingly rare in the private sector. SRP&apos;s retirement system calculates your benefit based on years of service and final average salary, with specific rules around early retirement eligibility, survivor benefits, and cost-of-living adjustments. PG&amp;E employees face additional complexity following the company&apos;s restructuring, with pension benefits that require careful review against the reorganization plan.
+    Salt River Project (SRP) and many regional utilities offer traditional defined benefit pension plans — increasingly rare in the private sector. SRP&apos;s retirement system calculates your benefit based on years of service and final average salary, with specific rules around early retirement eligibility, survivor benefits, and cost-of-living adjustments.
     </p>
    </div>
    <div>
     <p className="font-semibold text-[#1d7682] mb-2">457(b) &amp; 401(a) Plans</p>
     <p className="text-base leading-relaxed">
-    Public and quasi-public utilities like SRP often offer 457(b) deferred compensation plans alongside 401(a) employer contribution plans. Unlike a 401(k), a 457(b) has no 10% early withdrawal penalty before age 59-1/2 — which creates unique retirement timing opportunities. Coordinating your pension start date, 457(b) withdrawals, and Social Security filing age can meaningfully increase your total lifetime income.
+    Public and quasi-public utilities like SRP often offer 457(b) deferred compensation plans alongside 401(a) employer contribution plans. Unlike a 401(k), a 457(b) has no 10% early withdrawal penalty before age 59½ — which creates unique retirement timing opportunities. Coordinating your pension start date, 457(b) withdrawals, and Social Security filing age can meaningfully increase your total lifetime income.
     </p>
    </div>
    <div>
@@ -216,6 +223,40 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
     We model your utility pension formula with precision, including early retirement reduction factors and survivor benefit elections. We optimize the sequence of withdrawals from your 457(b), 401(a), and personal savings to minimize taxes and maximize income throughout retirement.
     </p>
    </div>
+   </div>
+   </div>
+  </AnimateOnScroll>
+
+  {/* PG&E */}
+  <AnimateOnScroll>
+   <div className="bg-[#FAFAF8] border border-[#E8E6E1] rounded-[12px] p-[32px] h-full lg:col-span-2">
+   <h3 className="text-2xl font-bold text-[#333333] mb-4">
+   PG&amp;E Pension, 401(k) Spillover &amp; Retiree Medical
+   </h3>
+   <div className="space-y-4 text-[#333333]">
+   <div>
+    <p className="font-semibold text-[#1d7682] mb-2">Two Pension Formulas — Which One You&apos;re In Changes Everything</p>
+    <p className="text-base leading-relaxed">
+    PG&amp;E employees hired before 2013 are typically in the Final Pay pension — a traditional defined benefit based on your last 30 days of pay (union) or highest 36-month average (management). Employees hired in 2013 or later are in the Cash Balance plan, which accrues annual pay credits of 5%–10% of salary based on your age-plus-service points, plus quarterly interest credits. The key difference: Final Pay offers no lump sum option and keeps you tied to an annuity for life. Cash Balance can be taken as a lump sum and rolled into an IRA. Early retirement reduction factors for both formulas are tied to a points system (age + years of service), and the difference between retiring at 57 versus 59 can mean a permanent reduction of 10–15% in your monthly benefit — a decision that can&apos;t be undone.
+    </p>
+   </div>
+   <div>
+    <p className="font-semibold text-[#1d7682] mb-2">The 401(k) Spillover Election Most Employees Miss</p>
+    <p className="text-base leading-relaxed">
+    PG&amp;E&apos;s Retirement Savings Plan has a feature almost no one sets up correctly: the after-tax spillover election. If you hit the IRS annual contribution limit early in the year without it, your employer match stops the moment your pre-tax contributions are exhausted. With the spillover in place, contributions automatically continue as after-tax and the company match keeps going — worth up to $1,185 per year in additional employer contributions for Cash Balance participants. Those after-tax contributions are also eligible for rollout to a Roth IRA under the mega backdoor Roth strategy. For IBEW 1245 members, a Roth 401(k) option was added effective January 2026, creating new planning opportunities.
+    </p>
+   </div>
+   <div>
+    <p className="font-semibold text-[#1d7682] mb-2">Retiree Medical Savings Account (RMSA)</p>
+    <p className="text-base leading-relaxed">
+    PG&amp;E funds a Retiree Medical Savings Account on your behalf starting at age 45. The balance grows with interest while you work and is used exclusively to pay PG&amp;E-sponsored retiree medical premiums after you retire. It sounds like a safety net — but it depletes as premiums are drawn, there&apos;s no way to replenish it, and it doesn&apos;t cover out-of-pocket costs or non-PG&amp;E coverage. Understanding how long your RMSA will last, how it interacts with Medicare at 65, and what happens if you retire at 55 with a 10-year bridge gap before Medicare eligibility is one of the most important — and most overlooked — parts of retirement planning for PG&amp;E employees.
+    </p>
+   </div>
+   </div>
+   <div className="mt-6 pt-6 border-t border-[#E8E6E1]">
+   <Link href="/pge-employee-financial-advisor" className="text-[#1d7682] font-semibold hover:underline inline-flex items-center gap-2 text-sm">
+   Full PG&amp;E employee planning guide →
+   </Link>
    </div>
    </div>
   </AnimateOnScroll>
