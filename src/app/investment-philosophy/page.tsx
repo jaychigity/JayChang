@@ -56,7 +56,7 @@ const principles = [
  {
   icon: Target,
   title: 'Fancy only counts if it actually helps.',
-  body: 'We only use complex strategies when they solve a real problem for you - like reducing risk from too much company stock, managing cash around a business sale, or passing assets to the next generation. If it doesn\'t serve a clear purpose, we skip it.',
+  body: 'I only use complex strategies when they solve a real problem for you - like reducing risk from too much company stock, managing cash around a business sale, or passing assets to the next generation. If it doesn\'t serve a clear purpose, I skip it.',
  },
  {
   icon: DollarSign,
@@ -66,7 +66,7 @@ const principles = [
  {
   icon: Layers,
   title: 'True diversification takes guts.',
-  body: 'We don\'t just pile into whatever worked last year. The "buy big tech and forget it" approach had a great run, but we know markets rotate. We spread across different asset types, dig deeper within each one, and stay ready to shift when real opportunities show up.',
+  body: 'I don\'t just pile into whatever worked last year. The "buy big tech and forget it" approach had a great run, but I know markets rotate. I spread across different asset types, dig deeper within each one, and stay ready to shift when real opportunities show up.',
  },
  {
   icon: Brain,
@@ -102,17 +102,17 @@ const outlookThemes = [
  {
   icon: TrendingUp,
   title: 'Buckle up for some turbulence.',
-  body: 'The second year of a presidential cycle has historically been the roughest for stocks, with sell-offs averaging close to 20%. We see potential dips as buying opportunities, not reasons to hit the panic button.',
+  body: 'The second year of a presidential cycle has historically been the roughest for stocks, with sell-offs averaging close to 20%. I see potential dips as buying opportunities, not reasons to hit the panic button.',
  },
  {
   icon: Zap,
   title: 'AI hype will separate winners from losers.',
-  body: 'Not every company throwing money at AI is going to win. We think the market is getting pickier, and we want to own the companies that are actually building something real with AI - not just talking about it.',
+  body: 'Not every company throwing money at AI is going to win. I think the market is getting pickier, and I want to own the companies that are actually building something real with AI - not just talking about it.',
  },
  {
   icon: Globe,
   title: 'There are deals overseas.',
-  body: 'Foreign stocks are still cheaper than their U.S. counterparts. We see real opportunity in Japan and South Korea, where corporate governance reforms and share buyback programs could create nice tailwinds for patient investors.',
+  body: 'Foreign stocks are still cheaper than their U.S. counterparts. I see real opportunity in Japan and South Korea, where corporate governance reforms and share buyback programs could create nice tailwinds for patient investors.',
  },
  {
   icon: LineChart,
@@ -195,12 +195,12 @@ export default function InvestmentPhilosophyPage() {
    </section>
 
    {/* ================================================================
-    SECTION 2: WHAT WE BELIEVE - Principles Before Products
+    SECTION 2: WHAT I BELIEVE - Principles Before Products
     ================================================================ */}
    <section className="bg-[#F7F4EE] section-padding">
     <div className="max-w-container mx-auto">
      <AnimateOnScroll>
-      <SectionEyebrow text="WHAT WE BELIEVE" />
+      <SectionEyebrow text="WHAT I BELIEVE" />
      </AnimateOnScroll>
      <AnimateOnScroll delay={100}>
       <h2 className="font-serif text-h2-mobile md:text-h2 font-bold text-[#333333] mt-4 heading-accent">
@@ -352,8 +352,8 @@ export default function InvestmentPhilosophyPage() {
        <AnimateOnScroll delay={200}>
         <p className="font-sans text-body text-[#b6d0ed] leading-relaxed mt-6">
          For families with $5M or more, alternatives can be a really
-         valuable part of the mix - but we're not going to add them
-         just to look impressive. We only go there when a specific
+         valuable part of the mix - but I'm not going to add them
+         just to look impressive. I only go there when a specific
          strategy solves a specific need: returns that don't move
          with stocks, protection against inflation, steady income, or
          reducing overall risk.
@@ -369,19 +369,19 @@ export default function InvestmentPhilosophyPage() {
         {[
          {
           label: 'Private Credit',
-          desc: 'We steer away from the biggest names in private credit and lean toward niche managers who are more selective. After several years of strong returns, some cracks are starting to show among certain issuers, and we want to be on the right side of that.',
+          desc: 'I steer away from the biggest names in private credit and lean toward niche managers who are more selective. After several years of strong returns, some cracks are starting to show among certain issuers, and I want to be on the right side of that.',
          },
          {
           label: 'Private Real Estate',
-          desc: 'Same philosophy here - we use specialized managers who know their markets inside and out, not giant mega-funds trying to be everything to everyone.',
+          desc: 'Same philosophy here - I use specialized managers who know their markets inside and out, not giant mega-funds trying to be everything to everyone.',
          },
          {
           label: 'Infrastructure',
-          desc: 'We like infrastructure for what it is: real assets with returns that tend to keep pace with inflation. It\'s a solid, steady piece of the puzzle.',
+          desc: 'I like infrastructure for what it is: real assets with returns that tend to keep pace with inflation. It\'s a solid, steady piece of the puzzle.',
          },
          {
           label: 'Private Equity &amp; Venture Capital',
-          desc: 'We favor managers who buy through the secondary market, which often means better entry prices and a shorter wait to get your money back.',
+          desc: 'I favor managers who buy through the secondary market, which often means better entry prices and a shorter wait to get your money back.',
          },
         ].map((item) => (
          <div
@@ -610,18 +610,18 @@ export default function InvestmentPhilosophyPage() {
    <section className="bg-[#333333] bg-texture-dark section-padding">
     <div className="max-w-container mx-auto">
      <AnimateOnScroll>
-      <SectionEyebrow text="OUR CURRENT THINKING" light />
+      <SectionEyebrow text="MY CURRENT THINKING" light />
      </AnimateOnScroll>
      <AnimateOnScroll delay={100}>
       <h2 className="font-serif text-h2-mobile md:text-h2 font-bold text-[#F7F4EE] mt-4">
-       What We're Watching in 2026.
+       What I'm Watching in 2026.
       </h2>
      </AnimateOnScroll>
      <AnimateOnScroll delay={200}>
       <p className="font-sans text-body text-[#b6d0ed] leading-relaxed mt-6 max-w-[680px]">
-       Markets never stand still, and neither does our thinking. The best
+       Markets never stand still, and neither does my thinking. The best
        strategy looks ahead instead of just reacting. Here's what's
-       on our radar heading into the rest of 2026:
+       on my radar heading into the rest of 2026:
       </p>
      </AnimateOnScroll>
 
@@ -643,7 +643,7 @@ export default function InvestmentPhilosophyPage() {
 
      <AnimateOnScroll delay={400}>
       <p className="font-sans text-[12px] text-[#b6d0ed]/60 leading-relaxed mt-10 max-w-[900px] italic">
-       This commentary reflects our views as of March 2026 and is subject
+       This commentary reflects my views as of March 2026 and is subject
        to change. It is provided for informational purposes only and does
        not constitute investment advice or a recommendation to buy, sell,
        or hold any security. Past performance is not indicative of future
@@ -671,7 +671,7 @@ export default function InvestmentPhilosophyPage() {
        The best time to get your investment strategy right is before
        the market makes the decision for you. If you're wondering
        whether your current portfolio is set up for where you're
-       going - not just where you've been - we'd love to
+       going - not just where you've been - I'd love to
        have that conversation.
       </p>
      </AnimateOnScroll>
@@ -688,7 +688,7 @@ export default function InvestmentPhilosophyPage() {
         href="https://www.farther.com/post/the-farther-2026-outlook-embrace-volatility"
         variant="outline"
        >
-        Read Our 2026 Investment Outlook
+        Read My 2026 Investment Outlook
        </Button>
       </div>
      </AnimateOnScroll>
