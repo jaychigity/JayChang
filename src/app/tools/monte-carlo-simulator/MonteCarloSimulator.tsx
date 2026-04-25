@@ -74,6 +74,23 @@ const PCT_STYLES: { p: number; color: string; width: number }[] = [
   { p: 90, color: '#4bc49a', width: 2 },
 ]
 
+// Zones drawn between percentile pairs — lower, upper, fill color
+const ZONE_FILLS: [number, number, string][] = [
+  [75, 90, 'rgba(75,196,154,0.13)'],
+  [50, 75, 'rgba(42,157,171,0.11)'],
+  [25, 50, 'rgba(29,118,130,0.09)'],
+  [10, 25, 'rgba(232,164,90,0.12)'],
+]
+
+// Right-edge labels matching each percentile line
+const RIGHT_LABELS: { p: number; color: string; label: string }[] = [
+  { p: 90, color: '#4bc49a', label: 'P90' },
+  { p: 75, color: '#2a9dab', label: 'P75' },
+  { p: 50, color: '#1d7682', label: 'Med' },
+  { p: 25, color: '#e8a45a', label: 'P25' },
+  { p: 10, color: '#e05252', label: 'P10' },
+]
+
 function drawChart(
   canvas: HTMLCanvasElement,
   paths: number[][],
@@ -92,22 +109,21 @@ function drawChart(
   canvas.height = H * dpr
   ctx.scale(dpr, dpr)
 
-  const PAD = { l: 72, r: 20, t: 22, b: 46 }
+  const PAD = { l: 72, r: 40, t: 22, b: 46 }
   const cW = W - PAD.l - PAD.r
   const cH = H - PAD.t - PAD.b
 
-  // Clip at 95th percentile so outliers don't squash the chart
   const maxVal = pctAt(paths, years, 95) * 1.1
   const minVal = 0
 
   const xS = (yr: number) => PAD.l + (yr / years) * cW
   const yS = (v: number) => PAD.t + cH - Math.min(1, Math.max(0, (v - minVal) / (maxVal - minVal))) * cH
 
-  // Background
+  // ── Background
   ctx.fillStyle = '#F7F4EE'
   ctx.fillRect(0, 0, W, H)
 
-  // Grid lines
+  // ── Grid
   const ROWS = 5
   for (let i = 0; i <= ROWS; i++) {
     const y = yS((i / ROWS) * maxVal)
@@ -128,12 +144,32 @@ function drawChart(
     ctx.stroke()
   }
 
-  // Individual background paths (sampled for performance)
+  // ── Filled zones between percentile bands
+  for (const [lower, upper, fill] of ZONE_FILLS) {
+    const upperData = pcts[upper]
+    const lowerData = pcts[lower]
+    if (!upperData || !lowerData) continue
+
+    ctx.beginPath()
+    // Trace upper line left to right
+    upperData.forEach((val, yr) => {
+      yr === 0 ? ctx.moveTo(xS(yr), yS(val)) : ctx.lineTo(xS(yr), yS(val))
+    })
+    // Trace lower line right to left to close the shape
+    for (let yr = years; yr >= 0; yr--) {
+      ctx.lineTo(xS(yr), yS(lowerData[yr]))
+    }
+    ctx.closePath()
+    ctx.fillStyle = fill
+    ctx.fill()
+  }
+
+  // ── Individual background simulation paths (sampled)
   const sample = paths.length > 300
     ? paths.filter((_, i) => i % Math.ceil(paths.length / 260) === 0)
     : paths
 
-  ctx.globalAlpha = 0.042
+  ctx.globalAlpha = 0.038
   ctx.lineWidth = 0.9
   ctx.strokeStyle = '#1d7682'
   for (const path of sample) {
@@ -145,16 +181,16 @@ function drawChart(
   }
   ctx.globalAlpha = 1
 
-  // Percentile paths
+  // ── Percentile lines (on top of fills and paths)
   for (const { p, color, width } of PCT_STYLES) {
     const data = pcts[p]
     if (!data) continue
 
-    // Soft glow behind median line
+    // Glow under median
     if (p === 50) {
       ctx.beginPath()
-      ctx.strokeStyle = `${color}28`
-      ctx.lineWidth = 12
+      ctx.strokeStyle = `${color}22`
+      ctx.lineWidth = 14
       ctx.lineJoin = 'round'
       data.forEach((v, yr) => {
         yr === 0 ? ctx.moveTo(xS(yr), yS(v)) : ctx.lineTo(xS(yr), yS(v))
@@ -172,7 +208,29 @@ function drawChart(
     ctx.stroke()
   }
 
-  // Y-axis labels
+  // ── Right-edge percentile labels
+  ctx.font = `bold 10px -apple-system, BlinkMacSystemFont, 'Inter', sans-serif`
+  ctx.textAlign = 'left'
+  ctx.textBaseline = 'middle'
+
+  const usedYPositions: number[] = []
+  for (const { p, color, label } of RIGHT_LABELS) {
+    const data = pcts[p]
+    if (!data) continue
+    let y = yS(data[years])
+    // Nudge if too close to another label
+    for (const used of usedYPositions) {
+      if (Math.abs(y - used) < 14) y = used + (y > used ? 14 : -14)
+    }
+    // Keep inside chart bounds
+    y = Math.max(PAD.t + 6, Math.min(PAD.t + cH - 6, y))
+    usedYPositions.push(y)
+
+    ctx.fillStyle = color
+    ctx.fillText(label, W - PAD.r + 5, y)
+  }
+
+  // ── Y-axis labels
   ctx.fillStyle = '#7a8d94'
   ctx.font = `11px -apple-system, BlinkMacSystemFont, 'Inter', sans-serif`
   ctx.textAlign = 'right'
@@ -182,14 +240,14 @@ function drawChart(
     ctx.fillText(fmtAxis(v), PAD.l - 7, yS(v))
   }
 
-  // X-axis labels
+  // ── X-axis labels
   ctx.textAlign = 'center'
   ctx.textBaseline = 'top'
   for (let yr = 0; yr <= years; yr += xTick) {
     ctx.fillText(yr === 0 ? 'Today' : `Yr ${yr}`, xS(yr), PAD.t + cH + 10)
   }
 
-  // Axis lines
+  // ── Axis lines
   ctx.strokeStyle = '#C5C0B8'
   ctx.lineWidth = 1
   ctx.beginPath()
@@ -259,13 +317,185 @@ function Stat({ label, value, sub, color, featured }: StatProps) {
       <p className="font-sans text-[10px] font-bold uppercase tracking-[0.12em] text-[#5b6a71] mb-2">
         {label}
       </p>
-      <p
-        className="font-serif leading-none mb-1.5 tabular-nums"
-        style={{ fontSize: 24, color }}
-      >
+      <p className="font-serif leading-none mb-1.5 tabular-nums" style={{ fontSize: 24, color }}>
         {value}
       </p>
       <p className="font-sans text-[11px] text-[#a0b0b6]">{sub}</p>
+    </div>
+  )
+}
+
+// Plan success rate card — donut ring + threshold gauge
+function SurvivalStat({ rate }: { rate: number }) {
+  const color =
+    rate >= 90 ? '#4bc49a' :
+    rate >= 80 ? '#2a9dab' :
+    rate >= 70 ? '#e8a45a' :
+    '#e05252'
+
+  const tier =
+    rate >= 90 ? 'Excellent' :
+    rate >= 80 ? 'On target' :
+    rate >= 70 ? 'Minimum range' :
+    'Below minimum'
+
+  // SVG donut math
+  const R = 54           // outer radius
+  const SW = 11          // stroke width
+  const r = R - SW / 2  // center radius of stroke
+  const circ = 2 * Math.PI * r
+  const offset = circ - (Math.min(100, rate) / 100) * circ
+
+  // Arc color: gradient for good scores, solid amber/red for low
+  const arcColor =
+    rate >= 70 ? 'url(#mc-donut-grad)' :
+    rate >= 50 ? '#e8a45a' :
+    '#e05252'
+
+  const trackGradient =
+    'linear-gradient(to right, #e05252 0%, #e05252 70%, #e8a45a 70%, #e8a45a 80%, #2a9dab 80%, #2a9dab 90%, #4bc49a 90%, #4bc49a 100%)'
+
+  return (
+    <div className="bg-white rounded-xl p-4 sm:p-5 border border-[#e8e4dc] col-span-2 lg:col-span-1">
+      <p className="font-sans text-[10px] font-bold uppercase tracking-[0.12em] text-[#5b6a71] mb-3">
+        Plan Success Rate
+      </p>
+
+      {/* Donut chart — centered */}
+      <div className="flex justify-center mb-3">
+        <svg
+          width={R * 2}
+          height={R * 2}
+          viewBox={`0 0 ${R * 2} ${R * 2}`}
+          style={{ overflow: 'visible' }}
+        >
+          <defs>
+            <linearGradient id="mc-donut-grad" x1="1" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor="#2a9dab" />
+              <stop offset="55%" stopColor="#1d7682" />
+              <stop offset="100%" stopColor="#4bc49a" />
+            </linearGradient>
+          </defs>
+
+          {/* Track ring */}
+          <circle
+            cx={R} cy={R} r={r}
+            fill="none"
+            stroke="#e8e4dc"
+            strokeWidth={SW}
+          />
+
+          {/* Progress arc */}
+          <circle
+            cx={R} cy={R} r={r}
+            fill="none"
+            stroke={arcColor}
+            strokeWidth={SW}
+            strokeLinecap="round"
+            strokeDasharray={`${circ} ${circ}`}
+            strokeDashoffset={offset}
+            transform={`rotate(-90 ${R} ${R})`}
+            style={{ transition: 'stroke-dashoffset 0.75s cubic-bezier(0.4,0,0.2,1)' }}
+          />
+
+          {/* Center: big percentage */}
+          <text
+            x={R} y={R - 7}
+            textAnchor="middle"
+            dominantBaseline="middle"
+            fontSize="22"
+            fontWeight="700"
+            fill={color}
+            fontFamily="'Georgia', 'Times New Roman', serif"
+          >
+            {rate}%
+          </text>
+
+          {/* Center: sub-label */}
+          <text
+            x={R} y={R + 10}
+            textAnchor="middle"
+            dominantBaseline="middle"
+            fontSize="9"
+            fill="#7a8d94"
+            fontFamily="system-ui, -apple-system, sans-serif"
+          >
+            Probability of
+          </text>
+          <text
+            x={R} y={R + 22}
+            textAnchor="middle"
+            dominantBaseline="middle"
+            fontSize="9"
+            fill="#7a8d94"
+            fontFamily="system-ui, -apple-system, sans-serif"
+          >
+            success
+          </text>
+        </svg>
+      </div>
+
+      {/* Tier label */}
+      <p
+        className="font-sans text-[12px] font-semibold text-center mb-3"
+        style={{ color }}
+      >
+        {tier}
+      </p>
+
+      {/* Threshold gauge bar */}
+      <div className="relative mb-1">
+        <div
+          className="h-[6px] w-full rounded-full"
+          style={{ background: trackGradient, opacity: 0.28 }}
+        />
+        <div
+          className="absolute top-0 left-0 h-[6px] rounded-full"
+          style={{
+            width: `${Math.min(100, rate)}%`,
+            background: trackGradient,
+            transition: 'width 0.6s ease',
+          }}
+        />
+        {[70, 80, 90].map(mark => (
+          <div
+            key={mark}
+            className="absolute top-0 h-[6px] w-[2px]"
+            style={{ left: `${mark}%`, backgroundColor: 'rgba(255,255,255,0.9)', zIndex: 2 }}
+          />
+        ))}
+        <div
+          className="absolute top-1/2 w-[12px] h-[12px] rounded-full border-2 border-white shadow"
+          style={{
+            left: `${Math.min(98, Math.max(2, rate))}%`,
+            transform: 'translateX(-50%) translateY(-50%)',
+            backgroundColor: color,
+            transition: 'left 0.6s ease',
+            zIndex: 3,
+          }}
+        />
+      </div>
+
+      {/* Threshold labels */}
+      <div className="relative h-4 mb-2">
+        {[
+          { pos: 70, label: '70%' },
+          { pos: 80, label: '80%' },
+          { pos: 90, label: '90%' },
+        ].map(({ pos, label }) => (
+          <span
+            key={pos}
+            className="absolute font-sans text-[9px] text-[#a0b0b6] whitespace-nowrap"
+            style={{ left: `${pos}%`, transform: 'translateX(-50%)', top: 2 }}
+          >
+            {label}
+          </span>
+        ))}
+      </div>
+
+      <p className="font-sans text-[9px] text-[#b0bec5] text-center leading-relaxed">
+        Min: 70% &middot; Target: 80%+ &middot; Ideal: 90%+
+      </p>
     </div>
   )
 }
@@ -292,7 +522,7 @@ export default function MonteCarloSimulator() {
   const set = (key: keyof typeof DEFAULTS) => (val: number) =>
     setV(prev => ({ ...prev, [key]: val }))
 
-  // Run simulations whenever inputs change
+  // Run simulations on input change
   useEffect(() => {
     const newPaths = runSimulations(
       v.startBalance,
@@ -347,7 +577,6 @@ export default function MonteCarloSimulator() {
   const netAnnual = (v.monthlyContrib - v.monthlyWithdrawal) * 12
   const totalNet = netAnnual * v.years
   const investmentGain = Math.max(0, median - v.startBalance - totalNet)
-
   const isRetirementMode = v.monthlyWithdrawal > v.monthlyContrib
 
   return (
@@ -366,30 +595,30 @@ export default function MonteCarloSimulator() {
               <Slider
                 label="Starting Balance"
                 value={v.startBalance}
-                min={0}
-                max={5000000}
-                step={25000}
+                min={0} max={5000000} step={25000}
                 display={fmtFull(v.startBalance)}
                 onChange={set('startBalance')}
               />
               <Slider
                 label="Monthly Contribution"
                 value={v.monthlyContrib}
-                min={0}
-                max={10000}
-                step={100}
+                min={0} max={10000} step={100}
                 display={`$${v.monthlyContrib.toLocaleString()}`}
                 onChange={set('monthlyContrib')}
               />
               <Slider
                 label="Monthly Withdrawal"
                 value={v.monthlyWithdrawal}
-                min={0}
-                max={20000}
-                step={100}
+                min={0} max={20000} step={100}
                 display={`$${v.monthlyWithdrawal.toLocaleString()}`}
                 onChange={set('monthlyWithdrawal')}
-                hint={v.monthlyWithdrawal === 0 ? 'Set above $0 for retirement mode' : isRetirementMode ? 'Net draw from portfolio' : undefined}
+                hint={
+                  v.monthlyWithdrawal === 0
+                    ? 'Set above $0 for retirement mode'
+                    : isRetirementMode
+                    ? 'Net draw from portfolio'
+                    : undefined
+                }
               />
 
               <div className="h-px bg-[#e8e4dc] my-4" />
@@ -401,18 +630,14 @@ export default function MonteCarloSimulator() {
               <Slider
                 label="Expected Annual Return"
                 value={v.annualReturn}
-                min={1}
-                max={15}
-                step={0.5}
+                min={1} max={15} step={0.5}
                 display={`${v.annualReturn}%`}
                 onChange={set('annualReturn')}
               />
               <Slider
                 label="Annual Volatility"
                 value={v.volatility}
-                min={3}
-                max={35}
-                step={0.5}
+                min={3} max={35} step={0.5}
                 display={`${v.volatility}%`}
                 onChange={set('volatility')}
                 hint="Diversified portfolio: 12-18%"
@@ -420,9 +645,7 @@ export default function MonteCarloSimulator() {
               <Slider
                 label="Time Horizon"
                 value={v.years}
-                min={5}
-                max={40}
-                step={1}
+                min={5} max={40} step={1}
                 display={`${v.years} years`}
                 onChange={set('years')}
               />
@@ -463,7 +686,7 @@ export default function MonteCarloSimulator() {
             {/* Chart card */}
             <div className="bg-white rounded-xl shadow-sm border border-[#e8e4dc] overflow-hidden">
 
-              {/* Chart header */}
+              {/* Header + legend */}
               <div className="px-5 pt-5 pb-3 flex flex-wrap items-start justify-between gap-3 border-b border-[#e8e4dc]">
                 <div>
                   <p className="font-sans text-[10px] font-bold uppercase tracking-[0.14em] text-[#1d7682]">
@@ -474,30 +697,29 @@ export default function MonteCarloSimulator() {
                   </h3>
                 </div>
 
-                {/* Legend */}
-                <div className="flex flex-wrap gap-x-5 gap-y-1.5 pt-0.5">
+                <div className="flex flex-wrap gap-x-4 gap-y-1.5 pt-0.5">
                   {[
-                    { color: '#4bc49a', label: '90th %ile' },
-                    { color: '#2a9dab', label: '75th %ile' },
-                    { color: '#1d7682', label: 'Median' },
-                    { color: '#e8a45a', label: '25th %ile' },
-                    { color: '#e05252', label: '10th %ile' },
-                  ].map(({ color, label }) => (
+                    { color: '#4bc49a', label: 'P90 zone', band: true },
+                    { color: '#2a9dab', label: 'P75 zone', band: true },
+                    { color: '#1d7682', label: 'Median', band: false },
+                    { color: '#e8a45a', label: 'P25 zone', band: true },
+                    { color: '#e05252', label: 'P10 zone', band: true },
+                  ].map(({ color, label, band }) => (
                     <div key={label} className="flex items-center gap-1.5">
-                      <span
-                        className="block rounded-full flex-shrink-0"
-                        style={{ width: 22, height: label === 'Median' ? 3 : 2, backgroundColor: color }}
-                      />
+                      {band ? (
+                        <span
+                          className="block rounded flex-shrink-0"
+                          style={{ width: 18, height: 10, backgroundColor: color, opacity: 0.55 }}
+                        />
+                      ) : (
+                        <span
+                          className="block rounded-full flex-shrink-0"
+                          style={{ width: 18, height: 3, backgroundColor: color }}
+                        />
+                      )}
                       <span className="font-sans text-[11px] text-[#5b6a71]">{label}</span>
                     </div>
                   ))}
-                  <div className="flex items-center gap-1.5">
-                    <span
-                      className="block rounded-full flex-shrink-0 opacity-40"
-                      style={{ width: 22, height: 2, backgroundColor: '#1d7682' }}
-                    />
-                    <span className="font-sans text-[11px] text-[#5b6a71]">Individual paths</span>
-                  </div>
                 </div>
               </div>
 
@@ -516,28 +738,18 @@ export default function MonteCarloSimulator() {
                 color="#1d7682"
                 featured
               />
-              <Stat
-                label={survivalPct !== null ? 'Survival Rate' : 'Growth Probability'}
-                value={
-                  survivalPct !== null
-                    ? `${survivalPct}%`
-                    : `${growthPct}%`
-                }
-                sub={
-                  survivalPct !== null
-                    ? 'of paths stayed funded'
-                    : 'end above starting balance'
-                }
-                color={
-                  survivalPct !== null
-                    ? survivalPct >= 80
-                      ? '#4bc49a'
-                      : survivalPct >= 60
-                      ? '#e8a45a'
-                      : '#e05252'
-                    : '#2a9dab'
-                }
-              />
+
+              {survivalPct !== null ? (
+                <SurvivalStat rate={survivalPct} />
+              ) : (
+                <Stat
+                  label="Growth Probability"
+                  value={`${growthPct}%`}
+                  sub="end above starting balance"
+                  color="#2a9dab"
+                />
+              )}
+
               <Stat
                 label="Great Scenario"
                 value={fmtFull(p90val)}
@@ -552,7 +764,7 @@ export default function MonteCarloSimulator() {
               />
             </div>
 
-            {/* Context paragraph */}
+            {/* Context */}
             <div className="mt-4 bg-white rounded-xl border border-[#e8e4dc] p-5">
               <p className="font-sans text-[13px] text-[#5b6a71] leading-relaxed">
                 {isRetirementMode ? (
@@ -565,7 +777,12 @@ export default function MonteCarloSimulator() {
                     <strong className="text-[#333333]">{fmtFull(median)}</strong> after {v.years} years.{' '}
                     {survivalPct !== null && (
                       <>
-                        {survivalPct}% of all simulations stayed fully funded through year {v.years}.{' '}
+                        {survivalPct >= 80
+                          ? `${survivalPct}% of simulations stayed fully funded — on target by most planning standards.`
+                          : survivalPct >= 70
+                          ? `${survivalPct}% of simulations stayed funded — at the lower edge of what most financial planning software considers acceptable.`
+                          : `Only ${survivalPct}% of simulations stayed funded through year ${v.years}. Most planning software flags anything below 70% as a concern worth addressing.`
+                        }{' '}
                       </>
                     )}
                   </>
