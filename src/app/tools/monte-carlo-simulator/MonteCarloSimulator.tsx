@@ -325,7 +325,7 @@ function Stat({ label, value, sub, color, featured }: StatProps) {
   )
 }
 
-function SurvivalStat({ rate }: { rate: number }) {
+function SurvivalStat({ rate, lifeExpectancy }: { rate: number; lifeExpectancy: number }) {
   const color = rate >= 90 ? '#4bc49a' : rate >= 80 ? '#2a9dab' : rate >= 70 ? '#e8a45a' : '#e05252'
   const tier = rate >= 90 ? 'Excellent' : rate >= 80 ? 'On target' : rate >= 70 ? 'Minimum range' : 'Below minimum'
   const R = 54, SW = 11, r = R - SW / 2
@@ -372,6 +372,10 @@ function SurvivalStat({ rate }: { rate: number }) {
         ))}
       </div>
       <p className="font-sans text-[9px] text-[#b0bec5] text-center leading-relaxed">Min: 70% &middot; Target: 80%+ &middot; Ideal: 90%+</p>
+      <p className="font-sans text-[10px] text-[#8a9ba3] text-center leading-relaxed mt-2 border-t border-[#f0ece5] pt-2">
+        <span className="font-semibold text-[#4bc49a]">Success</span> = money remaining at age {lifeExpectancy}.{' '}
+        <span className="font-semibold text-[#e05252]">Failure</span> = portfolio runs out before then.
+      </p>
     </div>
   )
 }
@@ -781,7 +785,7 @@ export default function MonteCarloSimulator() {
             {/* Stat cards */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-4">
               <Stat label="At Retirement" value={fmtFull(projectedAtRetirement)} sub={`median at age ${v.retirementAge}`} color="#1d7682" featured />
-              <SurvivalStat rate={survivalRate} />
+              <SurvivalStat rate={survivalRate} lifeExpectancy={v.lifeExpectancy} />
               <Stat label="Great Scenario" value={fmtFull(p90val)} sub={`90th pct, age ${v.lifeExpectancy}`} color="#4bc49a" />
               <Stat label="Tough Scenario" value={fmtFull(p10val)} sub={`10th pct, age ${v.lifeExpectancy}`} color="#e05252" />
             </div>
