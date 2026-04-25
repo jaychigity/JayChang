@@ -119,13 +119,13 @@ export default function Home() {
    A Partner in the Decisions That Shape Your Financial Life
    </h1>
    <p className="text-lg text-[#F7F4EE]/80 leading-relaxed mb-6">
-   As a fiduciary, I take a simple, transparent approach to advice. My role is to help you make thoughtful decisions with your best interests at the center, always grounded in what matters most to you.
+   I work as a fiduciary, which means my advice has to be in your interest. Not close to it. Not most of the time. There&apos;s no commission structure, no product to sell. Just advice.
    </p>
    <p className="text-base text-[#F7F4EE]/70 leading-relaxed mb-6">
-   Led by Jay Chang, a fiduciary wealth advisor with over 14 years of experience, I&apos;ve had the opportunity to work with a wide range of individuals and organizations: tech professionals navigating equity compensation, aerospace employees planning for retirement, physicians balancing practice demands with personal wealth, and business owners preparing for their next chapter.
+   I&apos;ve worked with tech professionals navigating equity compensation, aerospace and utility employees weighing pension decisions, physicians building wealth alongside a demanding practice, and business owners thinking through what comes after. The specifics are always different. The work is the same: understand what you have, clarify what matters, and help you act.
    </p>
    <p className="text-base text-[#F7F4EE]/60 leading-relaxed mb-10">
-   You&apos;ll be supported by Farther&apos;s Intelligent Wealth Platform, which brings together modern technology and institutional resources, including over $15 billion in assets under management across a national network of advisors. My role is to pair those resources with a highly personal, thoughtful approach, so you have both the support and clarity you need to move forward with confidence.
+   I&apos;m part of Farther&apos;s advisor network, which gives you access to an institutional platform: tax-lot optimization, direct indexing, estate planning resources, and over $15 billion in assets under management. You get that infrastructure alongside someone who knows your name and your situation.
    </p>
    <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
    <Button
