@@ -16,7 +16,7 @@ const steps = [
  number: 1,
  headline: 'A Conversation, Not a Sales Pitch',
  title: 'Discovery Call',
- body: '30-45 minutes, just you and Jay. I\'ll talk about where you are right now — your compensation, your accounts, what keeps you up at night. No slide decks, no obligations. If I can give you one useful idea whether or not you become a client, that\'s a win in our book.',
+ body: '30-45 minutes, just you and Jay. I\'ll talk about where you are right now — your compensation, your accounts, what keeps you up at night. No slide decks. If I can give you one useful idea whether or not you become a client, that\'s a win in our book.',
  cta: 'Schedule Your Discovery Call',
  },
  {
@@ -61,7 +61,7 @@ export default function ProcessPage() {
           "@type": "HowToStep",
           "position": 1,
           "name": "Discovery Call",
-          "text": "A 30-45 minute conversation with Jay about where you are right now — your compensation, your accounts, and what keeps you up at night. No slide decks, no obligations."
+          "text": "A 30-45 minute conversation with Jay about where you are right now — your compensation, your accounts, and what keeps you up at night. No slide decks."
         },
         {
           "@type": "HowToStep",

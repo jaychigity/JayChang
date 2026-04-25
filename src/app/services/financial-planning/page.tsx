@@ -491,9 +491,8 @@ export default function FinancialPlanningPage() {
   <AnimateOnScroll delay={100}>
   <p className="font-sans text-[17px] text-[#F7F4EE]/85 max-w-[620px] mx-auto mt-5 leading-relaxed">
    Schedule a private conversation to discuss your goals and explore
-   whether Farther is the right fit for your family. No sales pitch,
-   no obligation - just a focused conversation about what
-   matters most to you.
+   whether Farther is the right fit for your family. Just a focused
+   conversation about what matters most to you.
   </p>
   </AnimateOnScroll>
   <AnimateOnScroll delay={200}>

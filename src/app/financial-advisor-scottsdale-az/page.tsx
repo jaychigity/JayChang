@@ -137,7 +137,7 @@ export default function ScottsdaleFinancialAdvisor() {
    Want to See What You Might Be Missing?
   </h3>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   Let&apos;s spend 30 minutes together - no cost, no obligation. We&apos;ll talk about your practice or business, your goals, and whether there are tax or asset protection opportunities hiding in plain sight.
+   Let&apos;s spend 30 minutes together. We&apos;ll talk about your practice or business, your goals, and whether there are tax or asset protection opportunities hiding in plain sight.
   </p>
   <Button
    href="/schedule-consultation"

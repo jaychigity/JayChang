@@ -72,8 +72,7 @@ export default function FourOneKReviewPage() {
           <p className="font-sans text-[14px] text-[#5b6a71] leading-relaxed text-center sm:text-left">
             I built this calculator from patterns I see every day working with
             Fortune 500 employees. If your results raise questions,
-            I&rsquo;m happy to walk through them with you — no cost, no
-            obligation.
+            I&rsquo;m happy to walk through them with you.
             <span className="block mt-[4px] text-[#333333] font-medium">
               — Jay Chang, VP &amp; Wealth Advisor at Farther
             </span>
@@ -99,7 +98,7 @@ export default function FourOneKReviewPage() {
           <p className="font-sans text-[15px] font-light text-[#b6d0ed] leading-relaxed mb-[24px]">
             Your 401(k) is just one piece of the picture. I can look at the
             whole thing — taxes, investments, retirement timeline — and tell
-            you where you stand. No obligation.
+            you where you stand.
           </p>
           <Link
             href="/schedule-consultation"

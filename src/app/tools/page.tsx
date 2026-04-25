@@ -303,7 +303,7 @@ export default function ToolsPage() {
   lineHeight: 1.7,
   }}
   >
-  Each calculator is designed around a specific financial question we hear constantly from clients. Start with whichever one is most relevant to your situation right now. If you want help interpreting the results or building a plan around them, Jay offers a no-obligation conversation &mdash; no pitch, just clarity.
+  Each calculator is designed around a specific financial question we hear constantly from clients. Start with whichever one is most relevant to your situation right now. If you want help interpreting the results or building a plan around them, Jay offers a conversation &mdash; no pitch, just clarity.
   </p>
   </div>
  </section>
@@ -510,7 +510,7 @@ export default function ToolsPage() {
   marginBottom: 28,
   }}
   >
-  These tools give you a starting point. Jay can help you build a complete plan around what they show. No obligation &mdash; just a real conversation about your situation.
+  These tools give you a starting point. Jay can help you build a complete plan around what they show. Just a real conversation about your situation.
   </p>
   <a
   href="/schedule-consultation"

@@ -231,8 +231,7 @@ export default function LasVegasFinancialAdvisorLP() {
   </h2>
   <p className="font-sans text-[17px] text-[#F7F4EE]/85 max-w-[540px] mx-auto mt-5 leading-relaxed">
    Schedule a confidential conversation with Jay to discuss your
-   goals. No sales pitch, no obligation - just a focused
-   discussion about what matters most to your family.
+   goals. Just a focused discussion about what matters most to your family.
   </p>
   </AnimateOnScroll>
   <AnimateOnScroll delay={100}>

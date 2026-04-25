@@ -334,7 +334,7 @@ export default function HowToChooseCFPLasVegasPage() {
    </p>
 
    <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
-   If you are evaluating CFP&reg; professionals in Scottsdale, we welcome the opportunity to demonstrate how our approach compares. There is no cost and no obligation - just a straightforward conversation about your goals and whether we are the right fit.
+   If you are evaluating CFP&reg; professionals in Scottsdale, we welcome the opportunity to demonstrate how our approach compares. Just a straightforward conversation about your goals and whether we are the right fit.
    </p>
 
    <div className="mt-8">

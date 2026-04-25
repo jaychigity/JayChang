@@ -151,7 +151,7 @@ export default function ATTEmployeeFinancialAdvisor() {
                 </Button>
               </div>
               <p className="text-sm text-gray-400 mt-4">
-                No obligation · Available nationwide
+                Confidential · Available nationwide
               </p>
             </div>
             <div className="relative">

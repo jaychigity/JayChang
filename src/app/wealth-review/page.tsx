@@ -40,7 +40,7 @@ export default function WealthReviewPage() {
             Get a Free Wealth Review from Jay
           </h1>
           <p className="font-sans text-[17px] font-light text-[#b6d0ed] leading-relaxed max-w-[480px] mx-auto">
-            No pitch. No obligation. Just an honest look at where you stand.
+            Just an honest look at where you stand.
           </p>
         </div>
       </section>

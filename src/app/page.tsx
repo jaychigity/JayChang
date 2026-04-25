@@ -567,7 +567,7 @@ export default function Home() {
     It Starts With a Conversation
    </h3>
    <p className="font-sans text-[17px] text-[#F7F4EE]/70 mb-8 max-w-xl mx-auto">
-    No pressure. No obligation. Just a genuine chat to see if I&apos;m the right fit for you.
+    Confidential · Available nationwide
    </p>
    <Button href="/schedule-consultation" variant="primary">
     Let&apos;s Talk
@@ -682,7 +682,7 @@ export default function Home() {
    Schedule a Conversation
    </Button>
    <p className="text-gray-400 text-sm">
-   Confidential · No obligation · Available nationwide
+   Confidential · Available nationwide
    </p>
   </div>
   </AnimateOnScroll>

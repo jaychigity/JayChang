@@ -399,7 +399,7 @@ export default function WealthReviewForm() {
 
         {/* Reassurance */}
         <p className="font-sans text-[12px] text-[#5b6a71] text-center mt-[16px]">
-          Confidential &middot; No obligation &middot; Jay will be in touch within one business day
+          Confidential &middot; Jay will be in touch within one business day
         </p>
       </form>
 

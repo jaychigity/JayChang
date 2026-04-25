@@ -520,8 +520,7 @@ export default function RetirementPlanningPage() {
   <AnimateOnScroll delay={100}>
   <p className="font-sans text-[17px] text-[#F7F4EE]/85 max-w-[620px] mx-auto mt-5 leading-relaxed">
    A 30-minute conversation is all it takes to see if our approach to
-   retirement income planning is the right fit for your family. No
-   sales pitch, no obligation.
+   retirement income planning is the right fit for your family.
   </p>
   </AnimateOnScroll>
   <AnimateOnScroll delay={200}>

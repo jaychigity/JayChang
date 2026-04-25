@@ -159,7 +159,7 @@ export default function PGEEmployeeFinancialAdvisor() {
                   Try the Pension Calculator →
                 </Button>
               </div>
-              <p className="text-sm text-gray-400 mt-4">No obligation · Available nationwide</p>
+              <p className="text-sm text-gray-400 mt-4">Confidential · Available nationwide</p>
             </div>
             <div className="relative">
               <Image

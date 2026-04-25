@@ -689,9 +689,8 @@ export default function CaliforniaPage() {
   <p className="font-sans text-[17px] text-[#F7F4EE]/85 max-w-[620px] mx-auto mt-5 leading-relaxed">
    Whether you're a tech executive navigating equity compensation, a startup founder
    planning for liquidity, or an established family managing California real estate and high
-   income taxes, we'd welcome the conversation. No obligation, no sales pitch - just a
-   thoughtful discussion about what your financial life could look like with real expertise
-   behind it.
+   income taxes, we'd welcome the conversation. Just a thoughtful discussion about what your
+   financial life could look like with real expertise behind it.
   </p>
   </AnimateOnScroll>
 
