@@ -124,7 +124,47 @@ export default function JayChangPage() {
   </div>
  </section>
 
- {/* 2. THE FARTHER ADVANTAGE */}
+ {/* 2. HOW JAY WORKS */}
+ <section className="bg-[#FAFAF8] py-16 md:py-24">
+  <div className="max-w-4xl mx-auto px-6">
+  <div className="space-y-10">
+   <AnimateOnScroll>
+   <div>
+    <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-6">
+    I&apos;m a Fiduciary. That&apos;s Non-Negotiable.
+    </h3>
+    <p className="text-lg text-[#333333] leading-relaxed">
+    What does that actually mean for you? It means I&apos;m legally required to act in your best interest. No commissions, no sales quotas, no hidden incentives. There&apos;s a big difference between &ldquo;is this investment suitable?&rdquo; and &ldquo;is this the best decision for your family?&rdquo; I only ask the second question.
+    </p>
+   </div>
+   </AnimateOnScroll>
+
+   <AnimateOnScroll delay={0.1}>
+   <div>
+    <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-6">
+    Your Biggest Opportunity Probably Isn&apos;t a Better Fund
+    </h3>
+    <p className="text-lg text-[#333333] leading-relaxed">
+    The biggest wins I see aren&apos;t about picking the right investment. They&apos;re about managing your compensation smarter. Take an NVIDIA engineer: setting up a mega backdoor Roth, running quarterly tax projections, building a rules-based plan for when to sell equity tied to your vesting schedule. That&apos;s where real wealth compounds over time. Index funds alone won&apos;t find you an extra $2M over ten years. But an intelligent plan around how you get paid? That can.
+    </p>
+   </div>
+   </AnimateOnScroll>
+
+   <AnimateOnScroll delay={0.2}>
+   <div>
+    <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-6">
+    I&apos;m the One Who Calls You First
+    </h3>
+    <p className="text-lg text-[#333333] leading-relaxed">
+    The most valuable thing I can do is reach out in October about your January vest, remind you about the August ESPP window, and flag that December 31 deadline before it sneaks up. I&apos;m proactive. I&apos;m specific. I don&apos;t wait for you to figure it out on your own. That&apos;s my job.
+    </p>
+   </div>
+   </AnimateOnScroll>
+  </div>
+  </div>
+ </section>
+
+ {/* 4. THE FARTHER ADVANTAGE */}
  <section className="bg-[#FAFAF8] py-16 md:py-24">
   <div className="max-w-7xl mx-auto px-6">
   <AnimateOnScroll>
