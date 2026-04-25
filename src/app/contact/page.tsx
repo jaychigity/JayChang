@@ -96,7 +96,7 @@ export default function ContactPage() {
   <p className="font-sans text-body-lg text-[#5b6a71] max-w-[600px] mx-auto mt-5">
    Got a question? Wondering if we're the right fit? Just want to
    talk through something that's been bugging you about your finances?
-   Drop us a line. We'll get back to you within one business day.
+   Drop me a line. I'll get back to you within one business day.
   </p>
   </AnimateOnScroll>
   </div>
