@@ -31,7 +31,7 @@ export default function ScheduleCall() {
    Let&apos;s Connect
   </h1>
   <p className="text-xl text-[#F7F4EE]/90 max-w-2xl">
-   Thanks for taking the time to be here. If you&apos;re thinking about retirement, going through a transition, or just want to talk through your financial picture with someone who understands, I&apos;d be glad to connect. No pressure, no commitment, just a simple conversation to see if it&apos;s helpful.
+   Most people just have one or two questions. That&apos;s a fine reason to reach out.
   </p>
   </AnimateOnScroll>
   </div>
