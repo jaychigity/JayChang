@@ -139,6 +139,14 @@ const tools = [
  category: 'Calculator',
  },
  {
+ href: '/tools/cash-flow-planner',
+ title: 'Cash Flow Planner',
+ description:
+ 'See your income, expenses, taxes, Social Security, portfolio withdrawals, and one-time goals laid out year by year, from today through the end of your plan. Every row is a year. Every column tells you something important.\n\nEspecially useful for: anyone within 10-20 years of retirement who wants to understand where their money is coming from and going, and whether the numbers actually work.',
+ time: 'Instant results',
+ category: 'Planning Tool',
+ },
+ {
  href: '/tools/monte-carlo-simulator',
  title: 'Monte Carlo Portfolio Simulator',
  description:

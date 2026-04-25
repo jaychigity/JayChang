@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
 
 // ─────────────────── MATH ───────────────────
@@ -96,14 +96,14 @@ function drawChart(
   paths: number[][],
   pcts: Record<number, number[]>,
   years: number
-) {
+): number {
   const ctx = canvas.getContext('2d')
-  if (!ctx || paths.length === 0) return
+  if (!ctx || paths.length === 0) return 0
 
   const dpr = window.devicePixelRatio || 1
   const W = canvas.offsetWidth
   const H = canvas.offsetHeight
-  if (W === 0 || H === 0) return
+  if (W === 0 || H === 0) return 0
 
   canvas.width = W * dpr
   canvas.height = H * dpr
@@ -255,6 +255,8 @@ function drawChart(
   ctx.lineTo(PAD.l, PAD.t + cH)
   ctx.lineTo(W - PAD.r, PAD.t + cH)
   ctx.stroke()
+
+  return maxVal
 }
 
 // ─────────────────── SUB-COMPONENTS ───────────────────
@@ -509,7 +511,7 @@ const DEFAULTS = {
   annualReturn: 7,
   volatility: 15,
   years: 25,
-  numSims: 500 as 200 | 500 | 1000,
+  numSims: 1000 as 200 | 500 | 1000,
 }
 
 export default function MonteCarloSimulator() {
@@ -518,6 +520,10 @@ export default function MonteCarloSimulator() {
   const [pcts, setPcts] = useState<Record<number, number[]>>({})
   const [seed, setSeed] = useState(0)
   const canvasRef = useRef<HTMLCanvasElement>(null)
+  const maxValRef = useRef(0)
+  const chartImageRef = useRef<ImageData | null>(null)
+  const [hoverYear, setHoverYear] = useState<number | null>(null)
+  const [hoverX, setHoverX] = useState(0)  // CSS px from left of canvas wrapper
 
   const set = (key: keyof typeof DEFAULTS) => (val: number) =>
     setV(prev => ({ ...prev, [key]: val }))
@@ -537,14 +543,119 @@ export default function MonteCarloSimulator() {
     setPcts(buildPercentiles(newPaths, v.years))
   }, [v, seed])
 
-  // Draw canvas
+  // Draw canvas and snapshot ImageData for hover overlay
   const draw = useCallback(() => {
-    if (canvasRef.current && paths.length > 0) {
-      drawChart(canvasRef.current, paths, pcts, v.years)
+    const canvas = canvasRef.current
+    if (!canvas || paths.length === 0) return
+    const maxVal = drawChart(canvas, paths, pcts, v.years)
+    maxValRef.current = maxVal
+    setHoverYear(null)
+    // Save snapshot for crosshair restoration
+    const ctx = canvas.getContext('2d')
+    if (ctx) {
+      const dpr = window.devicePixelRatio || 1
+      chartImageRef.current = ctx.getImageData(
+        0, 0,
+        Math.floor(canvas.offsetWidth * dpr),
+        Math.floor(canvas.offsetHeight * dpr)
+      )
     }
   }, [paths, pcts, v.years])
 
   useEffect(() => { draw() }, [draw])
+
+  // ── Hover crosshair
+  const CPAD = useMemo(() => ({ l: 72, r: 40, t: 22, b: 46 }), [])
+
+  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    const canvas = canvasRef.current
+    if (!canvas || !chartImageRef.current || paths.length === 0) return
+
+    const rect = e.currentTarget.getBoundingClientRect()
+    const x = e.clientX - rect.left
+    const W = canvas.offsetWidth
+    const H = canvas.offsetHeight
+    const cW = W - CPAD.l - CPAD.r
+
+    if (x < CPAD.l - 4 || x > W - CPAD.r + 4) {
+      setHoverYear(null)
+      return
+    }
+
+    const frac = Math.min(1, Math.max(0, (x - CPAD.l) / cW))
+    const yr = Math.round(frac * v.years)
+    const snappedX = CPAD.l + (yr / v.years) * cW
+
+    setHoverYear(yr)
+    setHoverX(snappedX)
+
+    // Restore base chart then draw crosshair on canvas
+    const ctx = canvas.getContext('2d')
+    if (!ctx || !chartImageRef.current) return
+    const dpr = window.devicePixelRatio || 1
+    ctx.putImageData(chartImageRef.current, 0, 0)
+
+    ctx.save()
+    ctx.scale(dpr, dpr)
+
+    // Vertical dashed crosshair line
+    ctx.strokeStyle = 'rgba(29,118,130,0.55)'
+    ctx.lineWidth = 1
+    ctx.setLineDash([4, 3])
+    ctx.beginPath()
+    ctx.moveTo(snappedX, CPAD.t)
+    ctx.lineTo(snappedX, H - CPAD.b)
+    ctx.stroke()
+    ctx.setLineDash([])
+
+    // Dots on each percentile at this year
+    const dotColors: Record<number, string> = {
+      10: '#e05252', 25: '#e8a45a', 50: '#1d7682', 75: '#2a9dab', 90: '#4bc49a',
+    }
+    const maxVal = maxValRef.current
+    const cH = H - CPAD.t - CPAD.b
+    const yS = (val: number) =>
+      CPAD.t + cH - Math.min(1, Math.max(0, val / maxVal)) * cH;
+
+    [10, 25, 50, 75, 90].forEach(p => {
+      const val = pcts[p]?.[yr]
+      if (val == null) return
+      const cy = yS(val)
+      ctx.beginPath()
+      ctx.arc(snappedX, cy, p === 50 ? 6 : 4.5, 0, 2 * Math.PI)
+      ctx.fillStyle = dotColors[p]
+      ctx.fill()
+      ctx.strokeStyle = 'white'
+      ctx.lineWidth = 2
+      ctx.stroke()
+    })
+
+    ctx.restore()
+  }, [paths, pcts, v.years, CPAD])
+
+  const handleMouseLeave = useCallback(() => {
+    setHoverYear(null)
+    // Restore clean chart
+    const canvas = canvasRef.current
+    const ctx = canvas?.getContext('2d')
+    if (ctx && chartImageRef.current) {
+      ctx.putImageData(chartImageRef.current, 0, 0)
+    }
+  }, [])
+
+  // Hover tooltip data
+  const hoverData = useMemo(() => {
+    if (hoverYear === null) return null
+    return {
+      year: hoverYear,
+      calYear: new Date().getFullYear() + hoverYear,
+      p90: pcts[90]?.[hoverYear] ?? 0,
+      p75: pcts[75]?.[hoverYear] ?? 0,
+      p50: pcts[50]?.[hoverYear] ?? 0,
+      p25: pcts[25]?.[hoverYear] ?? 0,
+      p10: pcts[10]?.[hoverYear] ?? 0,
+    }
+  }, [hoverYear, pcts])
 
   // Redraw on resize
   useEffect(() => {
@@ -723,9 +834,54 @@ export default function MonteCarloSimulator() {
                 </div>
               </div>
 
-              {/* Canvas */}
-              <div className="w-full" style={{ height: 420 }}>
+              {/* Canvas + hover overlay */}
+              <div
+                className="relative w-full select-none"
+                style={{ height: 420, cursor: 'crosshair' }}
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
+              >
                 <canvas ref={canvasRef} className="w-full h-full block" />
+
+                {/* Tooltip */}
+                {hoverData && (
+                  <div
+                    className="absolute pointer-events-none z-20 bg-white/96 border border-[#e8e4dc] rounded-xl shadow-lg overflow-hidden"
+                    style={{
+                      top: CPAD.t + 8,
+                      left: hoverX < 320 ? hoverX + 14 : undefined,
+                      right: hoverX >= 320 ? `calc(100% - ${hoverX}px + 14px)` : undefined,
+                      minWidth: 168,
+                    }}
+                  >
+                    {/* Tooltip header */}
+                    <div className="bg-[#333333] px-3 py-2">
+                      <p className="font-sans text-[11px] font-bold text-[#F7F4EE]">
+                        Year {hoverData.year} &middot; {hoverData.calYear}
+                      </p>
+                    </div>
+                    {/* Percentile rows */}
+                    <div className="px-3 py-2 space-y-[5px]">
+                      {[
+                        { label: '90th %ile', val: hoverData.p90, color: '#4bc49a' },
+                        { label: '75th %ile', val: hoverData.p75, color: '#2a9dab' },
+                        { label: 'Median',    val: hoverData.p50, color: '#1d7682' },
+                        { label: '25th %ile', val: hoverData.p25, color: '#e8a45a' },
+                        { label: '10th %ile', val: hoverData.p10, color: '#e05252' },
+                      ].map(({ label, val, color }) => (
+                        <div key={label} className="flex items-center justify-between gap-4">
+                          <div className="flex items-center gap-1.5">
+                            <span className="w-2 h-2 rounded-full flex-shrink-0" style={{ backgroundColor: color }} />
+                            <span className="font-sans text-[10px] text-[#5b6a71] whitespace-nowrap">{label}</span>
+                          </div>
+                          <span className="font-sans text-[12px] font-bold tabular-nums" style={{ color }}>
+                            {fmtFull(val)}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
 
