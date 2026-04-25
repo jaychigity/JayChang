@@ -82,14 +82,14 @@ export default function AboutPage() {
  ],
  },
  {
- name: 'David Sargent',
- title: 'CFP® • Certified Financial Planning Specialist, Farther',
- photo: '/Photos/Dvid-Sarget.png',
- photoWidth: 1024,
- photoHeight: 1024,
+ name: 'Aaron Sheklin',
+ title: 'JD • Director of Institutional Sales, Farther',
+ photo: '/Photos/Aaron-Sheklin.avif',
+ photoWidth: 1160,
+ photoHeight: 1200,
  bio: [
-  'David was an engineer before he became an advisor - Texas A&M grad, electronics engineer at Lockheed Martin, assistant electrical engineer at Burns & McDonnell. He gets how technical people think.',
-  'He transitioned through Charles Schwab into financial planning. If you\'re an engineer or scientist who wants someone who speaks your language, David\'s your person.',
+  'Aaron is a licensed attorney (Florida and New York Bar) with a JD from Florida State and over 15 years advising organizations on strategic financial planning, investment guidance, and fiduciary stewardship.',
+  'He co-founded ClickPay, which became the largest payment processor in real estate before its 2019 acquisition by RealPage. He also serves on the board of the Planned Giving Council of Northeast Florida.',
  ],
  },
  ];
