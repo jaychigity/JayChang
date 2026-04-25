@@ -348,7 +348,7 @@ export default function AboutPage() {
    href="/schedule-consultation"
    variant="primary"
    >
-   Schedule a Conversation With Jay
+   Schedule a Conversation With Me
    </Button>
    <Button
    href="/process"

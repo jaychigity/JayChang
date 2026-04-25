@@ -206,13 +206,7 @@ export default function JayChangPage() {
    href="/schedule-consultation"
    variant="primary"
    >
-   Schedule a Conversation With Jay
-   </Button>
-   <Button
-   href="/about"
-   variant="ghost"
-   >
-   Meet The Team
+   Schedule a Conversation With Me
    </Button>
   </div>
 

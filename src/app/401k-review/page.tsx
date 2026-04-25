@@ -104,7 +104,7 @@ export default function FourOneKReviewPage() {
             href="/schedule-consultation"
             className="inline-block bg-gradient-to-b from-[#2a9dab] to-[#1d7682] text-[#F7F4EE] font-sans text-[15px] font-semibold py-[16px] px-[40px] rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_2px_8px_rgba(29,118,130,0.3)] hover:from-[#238a97] hover:to-[#155f69] hover:-translate-y-[2px] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.25),0_8px_24px_rgba(29,118,130,0.4)] transition-all duration-200"
           >
-            Schedule a Conversation with Jay
+            Schedule a Conversation With Me
           </Link>
           <p className="font-sans text-[12px] text-[#b6d0ed]/60 mt-[12px]">
             Confidential · Available nationwide

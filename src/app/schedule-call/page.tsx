@@ -4,7 +4,7 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 
 export const metadata: Metadata = {
- title: 'Schedule a Conversation With Jay Chang | Wealth Advisor | Phoenix, AZ',
+ title: 'Schedule a Conversation | Wealth Advisor | Phoenix, AZ',
  description: 'Schedule a conversation with Jay Chang, fiduciary wealth advisor at Farther. A focused conversation about your financial situation.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/schedule-call',

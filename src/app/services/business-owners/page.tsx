@@ -136,7 +136,7 @@ export default function BusinessOwnerServicesPage() {
   </p>
   <div className="mt-10">
    <Button variant="primary" href="/schedule-consultation">
-   Schedule a Conversation with Jay
+   Schedule a Conversation With Me
    </Button>
   </div>
   </AnimateOnScroll>
@@ -421,7 +421,7 @@ export default function BusinessOwnerServicesPage() {
   </p>
   <div className="mt-10">
    <Button variant="primary" href="/schedule-consultation">
-   Schedule a Conversation with Jay
+   Schedule a Conversation With Me
    </Button>
   </div>
   </AnimateOnScroll>
