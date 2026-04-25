@@ -16,7 +16,7 @@ const steps = [
  number: 1,
  headline: 'A Conversation About Where You Are Right Now',
  title: 'Discovery Call',
- body: '30-45 minutes, just you and Jay. I\'ll talk about where you are right now: your compensation, your accounts, what keeps you up at night. No slide decks. If I can give you one useful idea whether or not you become a client, that\'s a win.',
+ body: '30-45 minutes, just you and me. I\'ll talk about where you are right now: your compensation, your accounts, what keeps you up at night. No slide decks. If I can give you one useful idea whether or not you become a client, that\'s a win.',
  cta: 'Schedule Your Discovery Call',
  },
  {
