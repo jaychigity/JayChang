@@ -580,6 +580,7 @@ export default function MonteCarloSimulator() {
   const survivalRate = paths.length > 0
     ? Math.round((paths.filter(p => p[totalYears] > 0).length / paths.length) * 100)
     : 0
+  const planStatus = survivalRate >= 80 ? 'on-track' : survivalRate >= 70 ? 'caution' : 'critical'
   const p90val = pcts[90]?.[totalYears] ?? 0
   const p10val = pcts[10]?.[totalYears] ?? 0
 
@@ -789,17 +790,19 @@ export default function MonteCarloSimulator() {
                 <div className="flex items-start gap-6 flex-wrap">
                   <div className="flex-1 min-w-0">
                     <div className="mb-3">
-                      <span className={`font-sans text-[10px] font-bold uppercase tracking-[0.12em] px-2.5 py-1 rounded-full ${isFunded ? 'bg-[#e6f7ef] text-[#4bc49a]' : 'bg-[#fff4ee] text-[#c07a30]'}`}>
-                        {isFunded ? 'On Track' : 'Adjustments Needed'}
+                      <span className={`font-sans text-[10px] font-bold uppercase tracking-[0.12em] px-2.5 py-1 rounded-full ${planStatus === 'on-track' ? 'bg-[#e6f7ef] text-[#4bc49a]' : planStatus === 'caution' ? 'bg-[#fff4ee] text-[#c07a30]' : 'bg-[#fff0f0] text-[#e05252]'}`}>
+                        {planStatus === 'on-track' ? 'On Track' : planStatus === 'caution' ? 'Adjustments Needed' : 'Course Correction Needed'}
                       </span>
                     </div>
                     <h3 className="font-serif text-[22px] text-[#333333] leading-tight mb-2">
-                      {isFunded ? 'Plan Appears Funded' : 'Funding Gap Detected'}
+                      {planStatus === 'on-track' ? 'Plan on Track' : planStatus === 'caution' ? 'Funding Gap Detected' : 'Significant Shortfall'}
                     </h3>
                     <p className="font-sans text-[13px] text-[#5b6a71] leading-relaxed mb-4 max-w-sm">
-                      {isFunded
-                        ? `The median projection reaches ${fmtFull(projectedAtRetirement)} at retirement — above the ${fmtFull(goalRequired)} needed to sustain withdrawals to age ${v.lifeExpectancy}.`
-                        : `At $${v.monthlyWithdrawal.toLocaleString()}/month, you need ${fmtFull(goalRequired)} at retirement. The median projection is ${fmtFull(projectedAtRetirement)} — a gap of ${fmtFull(Math.abs(fundingGap))}.`}
+                      {planStatus === 'on-track'
+                        ? `${survivalRate}% of simulations end with money remaining at age ${v.lifeExpectancy}. The median projection reaches ${fmtFull(projectedAtRetirement)} at retirement, above the ${fmtFull(goalRequired)} target.`
+                        : planStatus === 'caution'
+                        ? `${survivalRate}% of simulations survive to age ${v.lifeExpectancy}. Close, but some adjustments could meaningfully improve your odds. The median projection is ${fmtFull(projectedAtRetirement)} against a ${fmtFull(goalRequired)} goal.`
+                        : `Only ${survivalRate}% of simulations survive to age ${v.lifeExpectancy}. At $${v.monthlyWithdrawal.toLocaleString()}/month, you need ${fmtFull(goalRequired)} at retirement. The median projection is ${fmtFull(projectedAtRetirement)}, a gap of ${fmtFull(Math.abs(fundingGap))}.`}
                     </p>
                     <div className="border border-[#f0ece5] rounded-xl overflow-hidden">
                       {[
