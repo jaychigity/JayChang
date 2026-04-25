@@ -47,7 +47,7 @@ export default function ScheduleCall() {
 
   <div className="mb-12">
    <h3 className="text-2xl font-semibold text-[#333333] mb-6">
-   A 30-minute, no-strings-attached conversation with me:
+   A 30-minute conversation with me:
    </h3>
    <ul className="space-y-4 text-lg text-[#5b6a71]">
    <li className="flex items-start">
@@ -69,25 +69,6 @@ export default function ScheduleCall() {
    </ul>
   </div>
 
-  <div className="mb-12">
-   <h3 className="text-2xl font-semibold text-[#333333] mb-6">
-   What This Isn't:
-   </h3>
-   <ul className="space-y-3 text-lg text-[#5b6a71]">
-   <li className="flex items-start">
-   <span className="text-[#1d7682] font-bold mr-4">&times;</span>
-   <span>Not a sales pitch — we promise</span>
-   </li>
-   <li className="flex items-start">
-   <span className="text-[#1d7682] font-bold mr-4">&times;</span>
-   <span>Not a product demo or presentation</span>
-   </li>
-   <li className="flex items-start">
-   <span className="text-[#1d7682] font-bold mr-4">&times;</span>
-   <span>Not a commitment to anything — you're just having a conversation</span>
-   </li>
-   </ul>
-  </div>
 
   <div>
    <h3 className="text-2xl font-semibold text-[#333333] mb-6">
