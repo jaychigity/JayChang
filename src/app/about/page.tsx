@@ -175,48 +175,6 @@ export default function AboutPage() {
   </div>
  </section>
 
- {/* 3. FIVE COMMITMENTS */}
- <section className="bg-white py-20 lg:py-32">
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-  <AnimateOnScroll delay={0}>
-   <div className={`bg-[#FAFAF8] border border-[#E8E6E1] rounded-[12px] p-[32px] h-full flex flex-col justify-between`}>
-   <div className="text-4xl font-bold text-[#1d7682] mb-4">1</div>
-   <p className="text-lg font-bold text-[#333333]">No Cookie-Cutter Plans</p>
-   </div>
-  </AnimateOnScroll>
-
-  <AnimateOnScroll delay={0.08}>
-   <div className={`bg-[#FAFAF8] border border-[#E8E6E1] rounded-[12px] p-[32px] h-full flex flex-col justify-between`}>
-   <div className="text-4xl font-bold text-[#1d7682] mb-4">2</div>
-   <p className="text-lg font-bold text-[#333333]">We Reach Out First</p>
-   </div>
-  </AnimateOnScroll>
-
-  <AnimateOnScroll delay={0.16}>
-   <div className={`bg-[#FAFAF8] border border-[#E8E6E1] rounded-[12px] p-[32px] h-full flex flex-col justify-between`}>
-   <div className="text-4xl font-bold text-[#1d7682] mb-4">3</div>
-   <p className="text-lg font-bold text-[#333333]">We Work with Your Other Advisors</p>
-   </div>
-  </AnimateOnScroll>
-
-  <AnimateOnScroll delay={0.24}>
-   <div className={`bg-[#FAFAF8] border border-[#E8E6E1] rounded-[12px] p-[32px] h-full flex flex-col justify-between`}>
-   <div className="text-4xl font-bold text-[#1d7682] mb-4">4</div>
-   <p className="text-lg font-bold text-[#333333]">A Plan You Actually Understand</p>
-   </div>
-  </AnimateOnScroll>
-
-  <AnimateOnScroll delay={0.32}>
-   <div className={`bg-[#FAFAF8] border border-[#E8E6E1] rounded-[12px] p-[32px] h-full flex flex-col justify-between`}>
-   <div className="text-4xl font-bold text-[#1d7682] mb-4">5</div>
-   <p className="text-lg font-bold text-[#333333]">Fiduciary, Every Single Time</p>
-   </div>
-  </AnimateOnScroll>
-  </div>
-  </div>
- </section>
-
  {/* AREAS WE SERVE */}
  <section className="bg-[#FAFAF8] py-20 lg:py-32">
   <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
