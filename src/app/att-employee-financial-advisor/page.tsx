@@ -344,7 +344,7 @@ export default function ATTEmployeeFinancialAdvisor() {
           <AnimateOnScroll>
             <SectionEyebrow text="COMMON QUESTIONS" />
             <h2 className="text-4xl sm:text-5xl font-bold text-[#333333] mt-4 mb-12">
-              Questions I Hear From AT&amp;T Employees Every Week
+              Questions I Get Most Often
             </h2>
           </AnimateOnScroll>
 

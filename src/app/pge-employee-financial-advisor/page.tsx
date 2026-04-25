@@ -399,7 +399,7 @@ export default function PGEEmployeeFinancialAdvisor() {
           <AnimateOnScroll>
             <SectionEyebrow text="COMMON QUESTIONS" />
             <h2 className="text-4xl sm:text-5xl font-bold text-[#333333] mt-4 mb-12">
-              Questions I Hear From PG&amp;E Employees Every Week
+              Questions I Get Most Often
             </h2>
           </AnimateOnScroll>
 
