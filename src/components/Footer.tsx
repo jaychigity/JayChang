@@ -193,6 +193,19 @@ export default function Footer() {
               >
                 Based in Tempe, Arizona. Serving clients nationwide.
               </div>
+              <div
+                style={{
+                  fontFamily: "var(--font-sans), sans-serif",
+                  fontSize: 11,
+                  fontWeight: 300,
+                  color: "#b6d0ed",
+                  marginTop: 6,
+                  lineHeight: 1.6,
+                  opacity: 0.75,
+                }}
+              >
+                Serving Phoenix, Scottsdale, Tempe, Chandler, Gilbert, Mesa, Paradise Valley, Flagstaff, Tucson, and the greater Phoenix metro.
+              </div>
             </div>
 
             {/* Hours */}
