@@ -89,6 +89,8 @@ descriptions, tool descriptions, section text, button labels — follow the rule
   or any generic filler opener on a schedule/contact page.
 - **Never say**: "genuinely", "straightforward", "honest" (filler), "comprehensive", "powerful" (generic),
   "solutions" (corporate), "leverage" as a verb
+- **Never use em dashes** (— or &mdash;) in any copy. Use commas, colons, periods, or hyphens instead
+  depending on context. Rewrite the sentence if needed.
 - **Prefer**: active voice, short sentences (under 25 words), "plans" or "advice" over "solutions"
 - **No pronoun mixing** within a paragraph without clear reason
 
