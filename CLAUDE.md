@@ -80,8 +80,13 @@ descriptions, tool descriptions, section text, button labels — follow the rule
 - **"We"** for Farther's platform, team, or institutional resources:
   technology, AUM, account management, transfers, tax-lot optimization, specialist network
 - **CTAs** must use "Jay" or first person. Never "Contact us", "Get started", or generic corporate phrasing.
-  Good: "Schedule a free conversation with Jay", "Let's talk", "Request my free conversation"
+  Good: "Schedule a conversation with Jay", "Let's talk", "Request a conversation"
   Bad: "Contact us", "Get started", "Learn more"
+- **Scheduling page intro line** — Every page with a scheduling hero or consultation intro section
+  must use this exact line as the subheading/intro paragraph:
+  > "If something's been on your mind — a pension decision, an RSU vesting, a transition, retirement — that's worth a conversation."
+  Never use: "Thanks for taking the time to be here", "No pressure, no commitment", "Let's connect" as body copy,
+  or any generic filler opener on a schedule/contact page.
 - **Never say**: "genuinely", "straightforward", "honest" (filler), "comprehensive", "powerful" (generic),
   "solutions" (corporate), "leverage" as a verb
 - **Prefer**: active voice, short sentences (under 25 words), "plans" or "advice" over "solutions"
