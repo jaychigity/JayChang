@@ -31,7 +31,7 @@ export default function ScheduleCall() {
    Let&apos;s Connect
   </h1>
   <p className="text-xl text-[#F7F4EE]/90 max-w-2xl">
-   If something&apos;s been on your mind — a pension decision, an RSU vesting, a transition — that&apos;s worth a conversation.
+   If something&apos;s been on your mind — a pension decision, an RSU vesting, a transition, retirement — that&apos;s worth a conversation.
   </p>
   </AnimateOnScroll>
   </div>
