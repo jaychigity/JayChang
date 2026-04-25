@@ -5,16 +5,16 @@ import SocialSecurityCalculator from './SocialSecurityCalculator'
 
 export const metadata: Metadata = {
  title:
-  'Social Security Calculator — When Should You Claim? (62–70) | Advisor Jay',
+  'Social Security Calculator: When Should You Claim? (62–70) | Advisor Jay',
  description:
   "Free Social Security calculator with break-even analysis, spousal benefits, lifetime comparison, and claiming strategy for ages 62-70. See how much you'd collect monthly, annually, and over your lifetime. Myths debunked. Updated for 2026.",
  alternates: {
   canonical: 'https://www.PWM-Farther.com/tools/social-security-calculator',
  },
  openGraph: {
-  title: 'Social Security Calculator — When Should You Start Collecting?',
+  title: 'Social Security Calculator: When Should You Start Collecting?',
   description:
-   'See your monthly benefit at every claiming age from 62 to 70. Break-even analysis, lifetime comparison, spousal strategy, and myth-busting — free, instant, no sign-up.',
+   'See your monthly benefit at every claiming age from 62 to 70. Break-even analysis, lifetime comparison, spousal strategy, and myth-busting. Free, instant, no sign-up.',
   url: 'https://www.PWM-Farther.com/tools/social-security-calculator',
  },
 }

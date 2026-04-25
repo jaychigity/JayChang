@@ -18,12 +18,12 @@ const steps = [
  {
  number: '1',
  title: `You'll Hear From a Real Person`,
- body: `We'll get back to you within one business day — by phone or email, your pick. No automated drip campaigns, no chatbots. Just a real member of our team who actually read your message.`,
+ body: `We'll get back to you within one business day, by phone or email, your pick. No automated drip campaigns, no chatbots. Just a real member of our team who actually read your message.`,
  },
  {
  number: '2',
  title: 'A Relaxed 30-Minute Chat',
- body: `We'll hop on a call and talk about what's on your mind — your goals, your concerns, what's keeping you up at night financially. Think of it as a coffee conversation, not a sales pitch.`,
+ body: `We'll hop on a call and talk about what's on your mind: your goals, your concerns, what's keeping you up at night financially. Think of it as a coffee conversation, not a sales pitch.`,
  },
  {
  number: '3',
@@ -42,7 +42,7 @@ export default function ContactPage() {
     __html: JSON.stringify({
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Advisor Jay — Farther Wealth Management",
+      "name": "Advisor Jay | Farther Wealth Management",
       "image": "https://www.PWM-Farther.com/Photos/Jay-New-Headshot.png",
       "telephone": "(480) 944-0880",
       "email": "jay.chang@farther.com",
@@ -88,7 +88,7 @@ export default function ContactPage() {
 
   <AnimateOnScroll delay={150}>
   <p className="font-sans text-[16px] md:text-[17px] text-[#5b6a71] max-w-[560px] mx-auto mt-3">
-   Schedule your 30-minute consultation or send a message — I respond within one business day.
+   Schedule your 30-minute consultation or send a message. I respond within one business day.
   </p>
   </AnimateOnScroll>
 
@@ -96,7 +96,7 @@ export default function ContactPage() {
   <p className="font-sans text-body-lg text-[#5b6a71] max-w-[600px] mx-auto mt-5">
    Got a question? Wondering if we're the right fit? Just want to
    talk through something that's been bugging you about your finances?
-   Drop us a line — we'll get back to you within one business day.
+   Drop us a line. We'll get back to you within one business day.
   </p>
   </AnimateOnScroll>
   </div>
@@ -148,7 +148,7 @@ export default function ContactPage() {
     </span>
    </div>
    <p className="font-sans text-sm text-[#5b6a71] mb-4">
-    Grab a 30-minute slot on my calendar — pick whatever works best for your schedule.
+    Grab a 30-minute slot on my calendar. Pick whatever works best for your schedule.
    </p>
    <Button href="/schedule-consultation" variant="outline">
     Open Calendar

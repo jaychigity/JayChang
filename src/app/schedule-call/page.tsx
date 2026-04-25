@@ -31,7 +31,7 @@ export default function ScheduleCall() {
    Let&apos;s Connect
   </h1>
   <p className="text-xl text-[#F7F4EE]/90 max-w-2xl">
-   If something&apos;s been on your mind — a pension decision, an RSU vesting, a transition, retirement — that&apos;s worth a conversation.
+   If something&apos;s been on your mind, like a pension decision, an RSU vesting, a transition, or retirement, that&apos;s worth a conversation.
   </p>
   </AnimateOnScroll>
   </div>
@@ -132,25 +132,25 @@ export default function ScheduleCall() {
    <li className="flex items-start">
    <span className="text-[#1d7682] font-bold mr-4 text-xl">•</span>
    <span>
-   <strong className="text-[#333333]">Fiduciary, always</strong> — I&apos;m legally required to put your interests first, and I wouldn&apos;t have it any other way
+   <strong className="text-[#333333]">Fiduciary, always</strong>: I&apos;m legally required to put your interests first, and I wouldn&apos;t have it any other way
    </span>
    </li>
    <li className="flex items-start">
    <span className="text-[#1d7682] font-bold mr-4 text-xl">•</span>
    <span>
-   <strong className="text-[#333333]">I know how you get paid</strong> — Intel SERPLUS, NVIDIA ESPP, RTX pension, Apple DCP, Banner Health 401(k) — this is what I do every day
+   <strong className="text-[#333333]">I know how you get paid</strong>: Intel SERPLUS, NVIDIA ESPP, RTX pension, Apple DCP, Banner Health 401(k). This is what I do every day.
    </span>
    </li>
    <li className="flex items-start">
    <span className="text-[#1d7682] font-bold mr-4 text-xl">•</span>
    <span>
-   <strong className="text-[#333333]">Farther's Intelligent Wealth Platform</strong> — $15B+ AUM with automated tax-loss harvesting working behind the scenes
+   <strong className="text-[#333333]">Farther's Intelligent Wealth Platform</strong>: $15B+ AUM with automated tax-loss harvesting working behind the scenes
    </span>
    </li>
    <li className="flex items-start">
    <span className="text-[#1d7682] font-bold mr-4 text-xl">•</span>
    <span>
-   <strong className="text-[#333333]">Named Best RIA to Work For, 2025</strong> — good people doing good work
+   <strong className="text-[#333333]">Named Best RIA to Work For, 2025</strong>. Good people doing good work.
    </span>
    </li>
    <li className="flex items-start">

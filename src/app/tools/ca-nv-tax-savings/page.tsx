@@ -7,7 +7,7 @@ export const metadata: Metadata = {
  title:
  'California vs. Nevada vs. Arizona Tax Savings Estimator | Advisor Jay',
  description:
- 'Free California to Nevada tax savings calculator. Compare your 5-year state tax bill across CA, NV, and AZ — income, capital gains, RSU vesting, and real estate gains.',
+ 'Free California to Nevada tax savings calculator. Compare your 5-year state tax bill across CA, NV, and AZ, including income, capital gains, RSU vesting, and real estate gains.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/tools/ca-nv-tax-savings',
  },
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
  title:
  'California vs. Nevada vs. Arizona Tax Savings Estimator | How Much Could You Save?',
  description:
- 'Free California vs. Nevada tax savings calculator — compare your 5-year state tax burden across CA, NV, and AZ. Instant estimates for income, capital gains, RSUs, and real estate gains.',
+ 'Free California vs. Nevada tax savings calculator. Compare your 5-year state tax burden across CA, NV, and AZ. Instant estimates for income, capital gains, RSUs, and real estate gains.',
  url: 'https://www.PWM-Farther.com/tools/ca-nv-tax-savings',
  },
 }
@@ -37,7 +37,7 @@ export default function CANVTaxSavingsPage() {
   See how much you could save by relocating from California. Compare Nevada&apos;s zero-tax advantage with Arizona 2.5% flat rate.
   </p>
   <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[640px] mx-auto leading-relaxed">
-  I work with California professionals relocating to Arizona and Nevada every month — this calculator reflects the real savings I see in practice.
+  I work with California professionals relocating to Arizona and Nevada every month, and this calculator reflects the real savings I see in practice.
   </p>
   <p
   className="font-sans"

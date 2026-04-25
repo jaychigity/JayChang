@@ -37,7 +37,7 @@ export default function BusinessExitScorecardPage() {
   Score your readiness across Financial, Operational, Tax, and Succession dimensions with 10 targeted questions.
   </p>
   <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[640px] mx-auto leading-relaxed">
-  This scorecard reflects the same framework I use with business owners planning exits — built from real patterns across dozens of engagements.
+  This scorecard reflects the same framework I use with business owners planning exits, built from real patterns across dozens of engagements.
   </p>
   <p
   className="font-sans"

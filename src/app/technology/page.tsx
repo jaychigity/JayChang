@@ -34,7 +34,7 @@ const features = [
     icon: BarChart3,
     title: 'Real-Time Portfolio Visibility',
     description:
-      'Every account, every asset, every liability — visible in one place. See your complete financial picture across custodians, updated in real time.',
+      'Every account, every asset, every liability, visible in one place. See your complete financial picture across custodians, updated in real time.',
   },
   {
     icon: Zap,
@@ -46,7 +46,7 @@ const features = [
     icon: Shield,
     title: 'Automated Tax Optimization',
     description:
-      'Tax-loss harvesting runs continuously — not just in December. The platform identifies and captures tax-saving opportunities year-round across your entire portfolio.',
+      'Tax-loss harvesting runs continuously, not just in December. The platform identifies and captures tax-saving opportunities year-round across your entire portfolio.',
   },
   {
     icon: Eye,
@@ -58,7 +58,7 @@ const features = [
     icon: FileText,
     title: 'Secure Document Vault',
     description:
-      'Estate plans, tax returns, insurance policies, and financial documents — securely stored and accessible whenever you need them.',
+      'Estate plans, tax returns, insurance policies, and financial documents, securely stored and accessible whenever you need them.',
   },
   {
     icon: MessageSquare,
@@ -78,7 +78,7 @@ export default function TechnologyPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'WebPage',
-            name: 'The Farther Platform — Technology-Powered Wealth Management',
+            name: 'The Farther Platform: Technology-Powered Wealth Management',
             description:
               `Farther's technology platform combines technology-powered planning with institutional-grade investment strategies.`,
             url: 'https://www.PWM-Farther.com/technology',
@@ -96,7 +96,7 @@ export default function TechnologyPage() {
           </h1>
           <p className="font-sans text-body-lg text-[#5b6a71] max-w-[680px] mx-auto mt-6 leading-relaxed">
             Most wealth management technology was built for advisors. Ours was
-            built for you — giving you complete transparency into your wealth
+            built for you, giving you complete transparency into your wealth
             while freeing your advisor to focus on strategy, not administration.
           </p>
         </div>
@@ -112,9 +112,9 @@ export default function TechnologyPage() {
                 Until Now, You Had to Choose.
               </h2>
               <p className="font-sans text-[17px] text-[#b6d0ed] leading-relaxed mt-6">
-                A boutique advisor who knows your name — but lacks the
+                A boutique advisor who knows your name, but lacking the
                 technology to truly optimize your portfolio. Or a mega
-                institution with powerful tools — where you&apos;re one of
+                institution with powerful tools, where you&apos;re one of
                 hundreds and your advisor is stretched thin across too many clients.
               </p>
               <p className="font-sans text-[17px] text-[#b6d0ed] leading-relaxed mt-4">
@@ -170,7 +170,7 @@ export default function TechnologyPage() {
               </h2>
               <p className="font-sans text-[17px] text-[#333333] leading-relaxed mt-6">
                 At a traditional firm, your advisor spends the majority of their
-                day on operations &mdash; paperwork, compliance reporting, manual
+                day on operations: paperwork, compliance reporting, manual
                 rebalancing, account administration. The time left for
                 you is often a fraction of their workday.
               </p>
@@ -186,7 +186,7 @@ export default function TechnologyPage() {
                   'More proactive outreach and strategy discussions',
                   'Faster response times when life throws a curveball',
                   'Deeper knowledge of your family, goals, and concerns',
-                  'Regular plan reviews — not annual check-ins',
+                  'Regular plan reviews, not annual check-ins',
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <CheckCircle
@@ -254,7 +254,7 @@ export default function TechnologyPage() {
               <AnimateOnScroll delay={200}>
                 <p className="font-sans text-body text-[#b6d0ed] leading-relaxed mt-6">
                   Farther&rsquo;s proprietary AI engine transforms how your advisor
-                  analyzes and constructs your portfolio &mdash; combining
+                  analyzes and constructs your portfolio, combining
                   machine-learning precision with fiduciary judgment to deliver a
                   level of personalization that legacy platforms cannot match.
                 </p>
@@ -263,11 +263,11 @@ export default function TechnologyPage() {
                   statements. Our AI extracts and categorizes every holding, maps
                   your current allocation, and generates a detailed comparison
                   against a recommended portfolio designed around your specific
-                  goals, risk profile, and tax situation &mdash; typically in under
+                  goals, risk profile, and tax situation, typically in under
                   ten minutes.*
                 </p>
                 <p className="font-sans text-body text-[#b6d0ed] leading-relaxed mt-4">
-                  Your advisor then takes the lead &mdash; refining allocations,
+                  Your advisor then takes the lead: refining allocations,
                   stress-testing assumptions against multiple market scenarios, and
                   tailoring every element to your family&rsquo;s unique
                   circumstances. The technology accelerates analysis. Your advisor
@@ -284,7 +284,7 @@ export default function TechnologyPage() {
                 </p>
                 <p className="font-sans text-body text-[#b6d0ed] leading-relaxed mt-4">
                   The result: a clear, personalized investment proposal you can
-                  evaluate with confidence &mdash; produced faster than traditional
+                  evaluate with confidence, produced faster than traditional
                   methods, but grounded in the same rigorous thinking you would
                   expect from a dedicated fiduciary.
                 </p>
@@ -319,7 +319,7 @@ export default function TechnologyPage() {
                     {
                       icon: Zap,
                       title: 'Seamless Onboarding',
-                      body: 'Once you approve your proposal, custodian details and tax allocations carry forward automatically \u2014 no redundant paperwork, no re-entering information.',
+                      body: 'Once you approve your proposal, custodian details and tax allocations carry forward automatically, with no redundant paperwork, no re-entering information.',
                     },
                   ].map((feature) => (
                     <div key={feature.title} className="flex items-start gap-4">

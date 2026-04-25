@@ -13,7 +13,7 @@ export const metadata: Metadata = {
  openGraph: {
  title: '401(k) Withholding Calculator | Advisor Jay',
  description:
- 'Free 401(k) withholding calculator — find the right percentage to max out your 401(k). Includes catch-up contributions and spillover calculations.',
+ 'Free 401(k) withholding calculator. Find the right percentage to max out your 401(k). Includes catch-up contributions and spillover calculations.',
  url: 'https://www.PWM-Farther.com/tools/401k-withholding-calculator',
  },
 }

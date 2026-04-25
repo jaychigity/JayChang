@@ -45,7 +45,7 @@ export function buildOpenGraph(
         url: image,
         width: 1200,
         height: 630,
-        alt: overrides?.title || 'Advisor Jay — Farther Wealth Management',
+        alt: overrides?.title || 'Advisor Jay | Farther Wealth Management',
       },
     ],
   }

@@ -291,7 +291,7 @@ const BENEFICIARY_INFO: Record<BeneficiaryType, { label: string; icon: string; d
     label: 'Minor Child of the Owner',
     icon: '👶',
     description: 'You are under 21 and are the biological or legally adopted child of the deceased owner.',
-    rule: 'Minor children can stretch distributions using life expectancy until they reach the age of majority (21). After that, the 10-year rule kicks in — the remaining balance must be distributed within 10 years of turning 21.',
+    rule: 'Minor children can stretch distributions using life expectancy until they reach the age of majority (21). After that, the 10-year rule kicks in. The remaining balance must be distributed within 10 years of turning 21.',
   },
   'disabled': {
     label: 'Disabled or Chronically Ill',
@@ -499,8 +499,8 @@ export default function InheritedIRACalculator() {
                 </p>
                 <p className="font-sans text-[12px] text-[#94A3B8] mt-1">
                   {pastRBD
-                    ? '⚠️ Owner was 73+ — they had reached their Required Beginning Date (RBD). This means annual RMDs are required for most non-spouse beneficiaries.'
-                    : '✓ Owner was under 73 — they had NOT started Required Minimum Distributions. Non-EDB beneficiaries may have more flexibility in distribution timing.'}
+                    ? '⚠️ Owner was 73+: they had reached their Required Beginning Date (RBD). This means annual RMDs are required for most non-spouse beneficiaries.'
+                    : '✓ Owner was under 73: they had NOT started Required Minimum Distributions. Non-EDB beneficiaries may have more flexibility in distribution timing.'}
                 </p>
               </div>
             </div>
@@ -512,7 +512,7 @@ export default function InheritedIRACalculator() {
               Why does the owner&apos;s age matter?
             </h3>
             <p className="font-sans text-[13px] text-[#5b6a71] leading-relaxed">
-              Under SECURE 2.0, IRA owners must begin taking Required Minimum Distributions (RMDs) at age 73. If the owner died <strong>after</strong> reaching this age, most non-spouse beneficiaries must take annual RMDs during the 10-year window. If the owner died <strong>before</strong> age 73, non-spouse beneficiaries can choose when to withdraw — as long as the account is emptied by year 10.
+              Under SECURE 2.0, IRA owners must begin taking Required Minimum Distributions (RMDs) at age 73. If the owner died <strong>after</strong> reaching this age, most non-spouse beneficiaries must take annual RMDs during the 10-year window. If the owner died <strong>before</strong> age 73, non-spouse beneficiaries can choose when to withdraw, as long as the account is emptied by year 10.
             </p>
           </div>
 
@@ -592,7 +592,7 @@ export default function InheritedIRACalculator() {
             </p>
             {beneficiaryType === 'minor-child' && beneficiaryAge >= 21 && (
               <p className="font-sans text-[12px] text-[#8B2E2E] mt-1 font-semibold">
-                You&apos;re 21 or older — the 10-year rule applies now. You may want to select &ldquo;Non-Eligible Designated Beneficiary&rdquo; instead.
+                You&apos;re 21 or older, the 10-year rule applies now. You may want to select &ldquo;Non-Eligible Designated Beneficiary&rdquo; instead.
               </p>
             )}
           </div>
@@ -658,7 +658,7 @@ export default function InheritedIRACalculator() {
                     setOtherIncome(isNaN(v) ? 0 : v)
                   }}
                 />
-                <p className="font-sans text-[12px] text-[#94A3B8] mt-1">W-2, Social Security, pensions, other retirement income — before IRA distributions</p>
+                <p className="font-sans text-[12px] text-[#94A3B8] mt-1">W-2, Social Security, pensions, other retirement income, before IRA distributions</p>
               </div>
 
               {/* State Tax */}
@@ -762,7 +762,7 @@ export default function InheritedIRACalculator() {
               )}
               {!pastRBD && beneficiaryType === 'non-edb' && (
                 <p className="font-sans text-[13px] text-[#2E5D4B] mt-2 font-semibold">
-                  ✓ Because the owner was under 73, you have flexibility in when you take distributions — as long as the account is fully distributed by the end of year 10.
+                  ✓ Because the owner was under 73, you have flexibility in when you take distributions, as long as the account is fully distributed by the end of year 10.
                 </p>
               )}
             </div>
@@ -964,7 +964,7 @@ export default function InheritedIRACalculator() {
               </div>
               <div>
                 <h4 className="font-semibold text-[#333] text-[14px] mb-1">Roth Inherited IRAs</h4>
-                <p>The same distribution timeline rules apply — but distributions from an inherited Roth IRA are tax-free. This makes the back-loading strategy especially attractive for Roth accounts, as you maximize years of tax-free growth.</p>
+                <p>The same distribution timeline rules apply, but distributions from an inherited Roth IRA are tax-free. This makes the back-loading strategy especially attractive for Roth accounts, as you maximize years of tax-free growth.</p>
               </div>
               <div>
                 <h4 className="font-semibold text-[#333] text-[14px] mb-1">Penalties for Missing RMDs</h4>

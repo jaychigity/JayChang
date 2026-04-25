@@ -119,12 +119,12 @@ const fmt = (n: number) => n.toLocaleString('en-US')
    ═══════════════════════════════════════════════════════════════════════ */
 const MYTHS = [
   {
-    myth: 'Take it early — you\'ll collect more overall',
+    myth: 'Take it early, you\'ll collect more overall',
     reality:
-      'Only true if you don\'t live long. If you make it past your late 70s — and most people do — the bigger monthly check from waiting adds up to significantly more over your lifetime.',
+      'Only true if you don\'t live long. If you make it past your late 70s, and most people do, the bigger monthly check from waiting adds up to significantly more over your lifetime.',
   },
   {
-    myth: 'Social Security is going broke — grab it now',
+    myth: 'Social Security is going broke, grab it now',
     reality:
       'The trust fund may run low around 2033, but payroll taxes still fund about 80% of benefits. Congress has never cut benefits for people already collecting, and there\'s enormous political pressure to find a fix.',
   },
@@ -383,7 +383,7 @@ export default function SocialSecurityCalculator() {
                   <strong className="text-[#1d7682]">
                     ${fmt(estimatePIA(estIncome))}/mo
                   </strong>{' '}
-                  — rough estimate based on 35 years at this income
+                  , rough estimate based on 35 years at this income
                 </p>
               </>
             )}
@@ -543,7 +543,7 @@ export default function SocialSecurityCalculator() {
                 </span>
               </div>
               <p className="font-sans text-[11px] text-[#94A3B8] mt-1">
-                Historical average: ~2.5% — your checks grow by this
+                Historical average: ~2.5%, your checks grow by this
                 each year
               </p>
             </div>
@@ -677,7 +677,7 @@ export default function SocialSecurityCalculator() {
         </div>
 
         <p className="font-sans text-[11px] text-white/25 mt-4">
-          Click any age or drag the slider — everything below updates
+          Click any age or drag the slider, everything below updates
           instantly
         </p>
       </div>
@@ -696,7 +696,7 @@ export default function SocialSecurityCalculator() {
           <div className="bg-[#F7F4EE] rounded-lg p-5">
             <p className="font-sans text-[15px] text-[#333]/70">
               You&rsquo;ve selected the earliest age. Move the slider to
-              see what waiting could do — even a few years can make a big
+              see what waiting could do, even a few years can make a big
               difference.
             </p>
           </div>
@@ -722,7 +722,7 @@ export default function SocialSecurityCalculator() {
                     Monthly difference:
                   </span>{' '}
                   Waiting adds $
-                  {fmt(monthly - allAges[0].monthly)}/month — that&rsquo;s
+                  {fmt(monthly - allAges[0].monthly)}/month. That&rsquo;s
                   ${fmt((monthly - allAges[0].monthly) * 12)}/year more,
                   every year for the rest of your life.
                 </p>
@@ -770,7 +770,7 @@ export default function SocialSecurityCalculator() {
           Total Lifetime Benefits
         </h2>
         <p className="font-sans text-[14px] text-[#333]/60 mb-6">
-          How much you&rsquo;d collect in total — comparing three claiming
+          How much you&rsquo;d collect in total, comparing three claiming
           ages with {(cola * 100).toFixed(1)}% annual cost-of-living
           increases.
         </p>
@@ -830,7 +830,7 @@ export default function SocialSecurityCalculator() {
           <p className="font-sans text-[13px] text-[#333]/70">
             <strong>Key takeaway:</strong> Claiming early wins if you
             don&rsquo;t live long. Waiting wins if you do. Most people
-            underestimate how long they&rsquo;ll live — the average
+            underestimate how long they&rsquo;ll live. The average
             65-year-old today lives to{' '}
             {filing === 'mfj' ? '87 (women) or 84 (men)' : '85'}.
           </p>
@@ -845,7 +845,7 @@ export default function SocialSecurityCalculator() {
         <p className="font-sans text-[14px] text-[#333]/60 mb-6">
           You&rsquo;ve been paying Social Security taxes your entire
           career. Think of it like paying premiums on a guaranteed income
-          stream — here&rsquo;s when you get it all back.
+          stream: here&rsquo;s when you get it all back.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -893,7 +893,7 @@ export default function SocialSecurityCalculator() {
             {fmt(taxes)}) and tried to create ${fmt(monthly)}/month of
             income on your own, that money would run out in about{' '}
             {Math.ceil(recoupYrs)} years. Social Security keeps paying
-            for the rest of your life — and it grows with inflation.
+            for the rest of your life, and it grows with inflation.
             Every check after age {recoupAge} is money you never would
             have had.
           </p>
@@ -1037,7 +1037,7 @@ export default function SocialSecurityCalculator() {
                 <strong>Working longer can increase your benefit.</strong>{' '}
                 Each year you work, SSA recalculates your benefit using
                 your highest 35 years. If this year&rsquo;s earnings
-                replace a lower year, your monthly check goes up — even
+                replace a lower year, your monthly check goes up, even
                 if you&rsquo;re already collecting.
               </p>
             </div>
@@ -1105,7 +1105,7 @@ export default function SocialSecurityCalculator() {
       <CalculatorDisclaimer
         toolName="Social Security"
         variant="default"
-        additionalContext={`Social Security benefit calculations use SSA formulas and are approximations — your actual benefit may differ based on your complete earnings history. Lifetime projections assume ${(cola * 100).toFixed(1)}% annual cost-of-living adjustments. IRMAA thresholds and earnings test limits are 2026 estimates. For your official benefit estimate, visit ssa.gov/myaccount.`}
+        additionalContext={`Social Security benefit calculations use SSA formulas and are approximations, and your actual benefit may differ based on your complete earnings history. Lifetime projections assume ${(cola * 100).toFixed(1)}% annual cost-of-living adjustments. IRMAA thresholds and earnings test limits are 2026 estimates. For your official benefit estimate, visit ssa.gov/myaccount.`}
       />
     </div>
   )

@@ -4,7 +4,7 @@ import ConsultationForm from '@/components/ConsultationForm'
 export const metadata: Metadata = {
  title: 'Schedule a Conversation',
  description:
- "Set up a time to talk with Jay Chang, wealth advisor at Farther. We work with families and business owners across Arizona, California, and Nevada — and we'd love to hear what's on your mind.",
+ "Set up a time to talk with Jay Chang, wealth advisor at Farther. We work with families and business owners across Arizona, California, and Nevada, and we'd love to hear what's on your mind.",
  alternates: { canonical: 'https://www.PWM-Farther.com/schedule-consultation' },
  openGraph: {
  title: 'Schedule a Conversation | Advisor Jay',
@@ -27,7 +27,7 @@ export default function ScheduleConsultationPage() {
   Let&apos;s Connect
   </h1>
   <p className="font-sans text-body-lg font-light text-[#b6d0ed] max-w-[540px] mx-auto">
-  If something&apos;s been on your mind — a pension decision, an RSU vesting, a transition, retirement — that&apos;s worth a conversation.
+  If something&apos;s been on your mind, like a pension decision, an RSU vesting, a transition, or retirement, that&apos;s worth a conversation.
   </p>
   </div>
  </section>

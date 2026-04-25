@@ -78,10 +78,10 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
   <AnimateOnScroll>
   <div className="border-l-4 border-[#1d7682] pl-8 py-8">
    <p className="text-lg leading-relaxed text-[#333333] mb-4">
-   I&apos;ve worked with telecom and utility professionals across Arizona and beyond — from AT&amp;T network engineers with 30-year pensions to T-Mobile managers navigating post-merger RSU grants. I understand the difference between a union-negotiated pension formula and a management deferred comp plan. I know why SRP&apos;s defined benefit system requires different planning than Verizon&apos;s 401(k) match structure. And I know that when you&apos;ve spent decades at one company, your financial picture is deeply intertwined with your employer&apos;s benefits in ways most advisors don&apos;t take the time to understand.
+   I&apos;ve worked with telecom and utility professionals across Arizona and beyond, from AT&amp;T network engineers with 30-year pensions to T-Mobile managers navigating post-merger RSU grants. I understand the difference between a union-negotiated pension formula and a management deferred comp plan. I know why SRP&apos;s defined benefit system requires different planning than Verizon&apos;s 401(k) match structure. And I know that when you&apos;ve spent decades at one company, your financial picture is deeply intertwined with your employer&apos;s benefits in ways most advisors don&apos;t take the time to understand.
    </p>
    <p className="text-lg leading-relaxed text-[#333333] mb-4">
-   Telecom and utility careers come with something rare in today&apos;s economy: real pensions, real deferred comp, and real long-term tenure. But that stability creates its own risks — employer stock concentration, pension election decisions that are irrevocable, and retirement timing choices that interact with Social Security, Medicare, and union contract provisions in complex ways.
+   Telecom and utility careers come with something rare in today&apos;s economy: real pensions, real deferred comp, and real long-term tenure. But that stability creates its own risks: employer stock concentration, pension election decisions that are irrevocable, and retirement timing choices that interact with Social Security, Medicare, and union contract provisions in complex ways.
    </p>
    <p className="text-lg leading-relaxed text-[#333333]">
    Your financial plan should reflect the same reliability you&apos;ve built into the systems you maintain. That&apos;s what we build together.
@@ -101,7 +101,7 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
    Your Benefits Are Complex. Your Plan Should Match.
   </h2>
   <p className="text-lg text-[#5b6a71] leading-relaxed mb-12">
-   Telecom and utility companies offer some of the most layered retirement benefit structures in the private and public sector. Here&apos;s what we see — and how we help.
+   Telecom and utility companies offer some of the most layered retirement benefit structures in the private and public sector. Here's what we see, and how we help.
   </p>
   </AnimateOnScroll>
 
@@ -122,7 +122,7 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
    <div>
     <p className="font-semibold text-[#1d7682] mb-2">Surplus Savings &amp; 401(k)</p>
     <p className="text-base leading-relaxed">
-    AT&amp;T&apos;s 401(k) includes a company match that varies by bargaining unit and management tier. Many participants also have access to the Surplus Savings Plan, which allows additional pre-tax deferrals beyond the standard 401(k) limits for eligible employees. Coordinating these two accounts — plus the pension — into a single retirement income strategy is where most AT&amp;T employees leave money on the table.
+    AT&amp;T&apos;s 401(k) includes a company match that varies by bargaining unit and management tier. Many participants also have access to the Surplus Savings Plan, which allows additional pre-tax deferrals beyond the standard 401(k) limits for eligible employees. Coordinating these two accounts, plus the pension, into a single retirement income strategy is where most AT&amp;T employees leave money on the table.
     </p>
    </div>
    <div>
@@ -150,7 +150,7 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
    <div>
     <p className="font-semibold text-[#1d7682] mb-2">Deferred Compensation</p>
     <p className="text-base leading-relaxed">
-    Verizon&apos;s Management Incentive Plan and Supplemental Executive Retirement Plan (SERP) provide significant deferred compensation opportunities for directors and above. These plans operate under Section 409A, which means distribution elections must be locked in well before the deferral year. If you&apos;ve been deferring for 15+ years, the accumulated balance can represent a substantial portion of your net worth — and it all distributes as ordinary income.
+    Verizon&apos;s Management Incentive Plan and Supplemental Executive Retirement Plan (SERP) provide significant deferred compensation opportunities for directors and above. These plans operate under Section 409A, which means distribution elections must be locked in well before the deferral year. If you&apos;ve been deferring for 15+ years, the accumulated balance can represent a substantial portion of your net worth, and it all distributes as ordinary income.
     </p>
    </div>
    <div>
@@ -191,7 +191,7 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
    <div>
     <p className="font-semibold text-[#1d7682] mb-2">Our Approach</p>
     <p className="text-base leading-relaxed">
-    We track every RSU tranche — pre-merger Sprint conversions and post-merger T-Mobile grants — with their individual vesting dates, cost bases, and tax treatments. We coordinate vesting events with your annual tax bracket to determine whether to sell at vesting or hold for long-term capital gains treatment.
+    We track every RSU tranche, pre-merger Sprint conversions and post-merger T-Mobile grants, with their individual vesting dates, cost bases, and tax treatments. We coordinate vesting events with your annual tax bracket to determine whether to sell at vesting or hold for long-term capital gains treatment.
     </p>
    </div>
    </div>
@@ -208,13 +208,13 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
    <div>
     <p className="font-semibold text-[#1d7682] mb-2">Defined Benefit Pensions</p>
     <p className="text-base leading-relaxed">
-    Salt River Project (SRP) and many regional utilities offer traditional defined benefit pension plans — increasingly rare in the private sector. SRP&apos;s retirement system calculates your benefit based on years of service and final average salary, with specific rules around early retirement eligibility, survivor benefits, and cost-of-living adjustments.
+    Salt River Project (SRP) and many regional utilities offer traditional defined benefit pension plans, increasingly rare in the private sector. SRP&apos;s retirement system calculates your benefit based on years of service and final average salary, with specific rules around early retirement eligibility, survivor benefits, and cost-of-living adjustments.
     </p>
    </div>
    <div>
     <p className="font-semibold text-[#1d7682] mb-2">457(b) &amp; 401(a) Plans</p>
     <p className="text-base leading-relaxed">
-    Public and quasi-public utilities like SRP often offer 457(b) deferred compensation plans alongside 401(a) employer contribution plans. Unlike a 401(k), a 457(b) has no 10% early withdrawal penalty before age 59½ — which creates unique retirement timing opportunities. Coordinating your pension start date, 457(b) withdrawals, and Social Security filing age can meaningfully increase your total lifetime income.
+    Public and quasi-public utilities like SRP often offer 457(b) deferred compensation plans alongside 401(a) employer contribution plans. Unlike a 401(k), a 457(b) has no 10% early withdrawal penalty before age 59½, which creates unique retirement timing opportunities. Coordinating your pension start date, 457(b) withdrawals, and Social Security filing age can meaningfully increase your total lifetime income.
     </p>
    </div>
    <div>
@@ -235,21 +235,21 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
    </h3>
    <div className="space-y-4 text-[#333333]">
    <div>
-    <p className="font-semibold text-[#1d7682] mb-2">Two Pension Formulas — Which One You&apos;re In Changes Everything</p>
+    <p className="font-semibold text-[#1d7682] mb-2">Two Pension Formulas: Which One You&apos;re In Changes Everything</p>
     <p className="text-base leading-relaxed">
-    PG&amp;E employees hired before 2013 are typically in the Final Pay pension — a traditional defined benefit based on your last 30 days of pay (union) or highest 36-month average (management). Employees hired in 2013 or later are in the Cash Balance plan, which accrues annual pay credits of 5%–10% of salary based on your age-plus-service points, plus quarterly interest credits. The key difference: Final Pay offers no lump sum option and keeps you tied to an annuity for life. Cash Balance can be taken as a lump sum and rolled into an IRA. Early retirement reduction factors for both formulas are tied to a points system (age + years of service), and the difference between retiring at 57 versus 59 can mean a permanent reduction of 10–15% in your monthly benefit — a decision that can&apos;t be undone.
+    PG&amp;E employees hired before 2013 are typically in the Final Pay pension: a traditional defined benefit based on your last 30 days of pay (union) or highest 36-month average (management). Employees hired in 2013 or later are in the Cash Balance plan, which accrues annual pay credits of 5%–10% of salary based on your age-plus-service points, plus quarterly interest credits. The key difference: Final Pay offers no lump sum option and keeps you tied to an annuity for life. Cash Balance can be taken as a lump sum and rolled into an IRA. Early retirement reduction factors for both formulas are tied to a points system (age + years of service), and the difference between retiring at 57 versus 59 can mean a permanent reduction of 10–15% in your monthly benefit, a decision that can&apos;t be undone.
     </p>
    </div>
    <div>
     <p className="font-semibold text-[#1d7682] mb-2">The 401(k) Spillover Election Most Employees Miss</p>
     <p className="text-base leading-relaxed">
-    PG&amp;E&apos;s Retirement Savings Plan has a feature almost no one sets up correctly: the after-tax spillover election. If you hit the IRS annual contribution limit early in the year without it, your employer match stops the moment your pre-tax contributions are exhausted. With the spillover in place, contributions automatically continue as after-tax and the company match keeps going — worth up to $1,185 per year in additional employer contributions for Cash Balance participants. Those after-tax contributions are also eligible for rollout to a Roth IRA under the mega backdoor Roth strategy. For IBEW 1245 members, a Roth 401(k) option was added effective January 2026, creating new planning opportunities.
+    PG&amp;E&apos;s Retirement Savings Plan has a feature almost no one sets up correctly: the after-tax spillover election. If you hit the IRS annual contribution limit early in the year without it, your employer match stops the moment your pre-tax contributions are exhausted. With the spillover in place, contributions automatically continue as after-tax and the company match keeps going, worth up to $1,185 per year in additional employer contributions for Cash Balance participants. Those after-tax contributions are also eligible for rollout to a Roth IRA under the mega backdoor Roth strategy. For IBEW 1245 members, a Roth 401(k) option was added effective January 2026, creating new planning opportunities.
     </p>
    </div>
    <div>
     <p className="font-semibold text-[#1d7682] mb-2">Retiree Medical Savings Account (RMSA)</p>
     <p className="text-base leading-relaxed">
-    PG&amp;E funds a Retiree Medical Savings Account on your behalf starting at age 45. The balance grows with interest while you work and is used exclusively to pay PG&amp;E-sponsored retiree medical premiums after you retire. It sounds like a safety net — but it depletes as premiums are drawn, there&apos;s no way to replenish it, and it doesn&apos;t cover out-of-pocket costs or non-PG&amp;E coverage. Understanding how long your RMSA will last, how it interacts with Medicare at 65, and what happens if you retire at 55 with a 10-year bridge gap before Medicare eligibility is one of the most important — and most overlooked — parts of retirement planning for PG&amp;E employees.
+    PG&amp;E funds a Retiree Medical Savings Account on your behalf starting at age 45. The balance grows with interest while you work and is used exclusively to pay PG&amp;E-sponsored retiree medical premiums after you retire. It sounds like a safety net, but it depletes as premiums are drawn, there&apos;s no way to replenish it, and it doesn&apos;t cover out-of-pocket costs or non-PG&amp;E coverage. Understanding how long your RMSA will last, how it interacts with Medicare at 65, and what happens if you retire at 55 with a 10-year bridge gap before Medicare eligibility is one of the most important, and most overlooked, parts of retirement planning for PG&amp;E employees.
     </p>
    </div>
    </div>
@@ -303,7 +303,7 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
    <div className="text-4xl font-bold text-[#1d7682] mb-4">3</div>
    <h3 className="text-2xl font-bold text-[#333333] mb-4">Employer Stock Diversification</h3>
    <p className="text-[#333333] text-base leading-relaxed">
-   We calculate your true concentration across every account — 401(k) match shares, RSU holdings, ESPP purchases, and personal brokerage. Then we build a multi-year diversification strategy that reduces risk systematically without creating a large tax bill in any single year.
+   We calculate your true concentration across every account: 401(k) match shares, RSU holdings, ESPP purchases, and personal brokerage. Then we build a multi-year diversification strategy that reduces risk systematically without creating a large tax bill in any single year.
    </p>
    </div>
   </AnimateOnScroll>
@@ -362,7 +362,7 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
    Should I Take My AT&amp;T Pension as a Lump Sum or Monthly Annuity?
    </h3>
    <p className="text-[#333333] text-base leading-relaxed">
-   We calculate your break-even age using current IRS discount rates, then model both options alongside your 401(k) balance, Social Security timing, and expected spending in retirement. For many AT&amp;T employees in their late 50s, today&apos;s interest rate environment makes the lump sum worth serious consideration — but only if you have a disciplined plan for investing the proceeds.
+   We calculate your break-even age using current IRS discount rates, then model both options alongside your 401(k) balance, Social Security timing, and expected spending in retirement. For many AT&amp;T employees in their late 50s, today&apos;s interest rate environment makes the lump sum worth serious consideration, but only if you have a disciplined plan for investing the proceeds.
    </p>
    </div>
   </AnimateOnScroll>
@@ -374,7 +374,7 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
    How Do I Manage My Verizon Deferred Comp Distribution to Minimize Taxes?
    </h3>
    <p className="text-[#333333] text-base leading-relaxed">
-   A large deferred comp balance distributing in a single year can push you into the top federal bracket. We structure installment distributions across multiple years, coordinate with your pension start date, and time Roth conversions in low-income years to smooth out your overall tax burden. The goal is to avoid spikes — not just minimize taxes in any one year, but across your entire retirement.
+   A large deferred comp balance distributing in a single year can push you into the top federal bracket. We structure installment distributions across multiple years, coordinate with your pension start date, and time Roth conversions in low-income years to smooth out your overall tax burden. The goal is to avoid spikes: not just minimize taxes in any one year, but across your entire retirement.
    </p>
    </div>
   </AnimateOnScroll>
@@ -383,10 +383,10 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
   <AnimateOnScroll>
    <div className="bg-white border border-[#E8E6E1] rounded-[12px] p-[32px] h-full">
    <h3 className="text-xl font-bold text-[#1d7682] mb-3">
-   I&apos;m Concentrated in Employer Stock — How Do I Diversify Without a Huge Tax Bill?
+   I&apos;m Concentrated in Employer Stock: How Do I Diversify Without a Huge Tax Bill?
    </h3>
    <p className="text-[#333333] text-base leading-relaxed">
-   Inside your 401(k), rebalancing is tax-free — that&apos;s where we start. For shares held outside the 401(k), we use specific lot identification to sell high-basis shares first, harvest capital losses in down markets, and spread sales across tax years. If you qualify for Net Unrealized Appreciation (NUA) treatment on employer stock in your 401(k), we model whether the long-term capital gains savings justify the strategy.
+   Inside your 401(k), rebalancing is tax-free. That&apos;s where we start. For shares held outside the 401(k), we use specific lot identification to sell high-basis shares first, harvest capital losses in down markets, and spread sales across tax years. If you qualify for Net Unrealized Appreciation (NUA) treatment on employer stock in your 401(k), we model whether the long-term capital gains savings justify the strategy.
    </p>
    </div>
   </AnimateOnScroll>
@@ -407,7 +407,7 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
   <AnimateOnScroll>
    <div className="bg-white border border-[#E8E6E1] rounded-[12px] p-[32px] h-full">
    <h3 className="text-xl font-bold text-[#1d7682] mb-3">
-   My T-Mobile RSUs Are Vesting — Should I Sell or Hold?
+   My T-Mobile RSUs Are Vesting: Should I Sell or Hold?
    </h3>
    <p className="text-[#333333] text-base leading-relaxed">
    At vesting, RSUs are taxed as ordinary income regardless of what you do with the shares. The real question is what happens next. If you&apos;re already concentrated in TMUS, selling at vesting and rebalancing makes sense. If your income is unusually low this year, holding for long-term capital gains treatment on future appreciation may save taxes. We model this for every vesting event, every year.

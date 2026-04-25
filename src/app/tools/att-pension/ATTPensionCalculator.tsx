@@ -546,7 +546,7 @@ function PensionBandCalc({ onCalculate }: { onCalculate: () => void }) {
                 style={{ backgroundImage: chevronSvg }}
               >
                 {PENSION_BANDS.map(b => (
-                  <option key={b.band} value={b.band}>Band {b.band} — {fmt(b.amount)}/yr of service</option>
+                  <option key={b.band} value={b.band}>Band {b.band}: {fmt(b.amount)}/yr of service</option>
                 ))}
               </select>
             </div>
@@ -907,16 +907,16 @@ function EarlyRetirementCalc({ onCalculate }: { onCalculate: () => void }) {
           {/* Pre-55 Age Penalty Callout */}
           <div className="bg-amber-50 border border-amber-200 rounded-[12px] p-[20px]">
             <p className="font-sans text-[13px] font-semibold text-amber-900 mb-[8px] uppercase tracking-[0.04em]">
-              ⚠ Early Retirement Age Penalty — Before Age 55
+              ⚠ Early Retirement Age Penalty: Before Age 55
             </p>
             <p className="font-sans text-[13px] text-amber-900 leading-relaxed mb-[8px]">
-              The Modified Rule of 75 tells you <em>if</em> you can retire early. It does not eliminate the age penalty if you&apos;re under 55. These are two separate tests — both apply.
+              The Modified Rule of 75 tells you <em>if</em> you can retire early. It does not eliminate the age penalty if you&apos;re under 55. These are two separate tests. Both apply.
             </p>
             <ul className="font-sans text-[13px] text-amber-900 space-y-[4px]">
               <li>• <strong>Age 55 or older</strong> with Rule of 75: no reduction to your benefit.</li>
-              <li>• <strong>Under age 55</strong>: 6% per year reduction for each year before 55 — even with Rule of 75 eligibility. Retiring at 52 = 18% permanent reduction.</li>
+              <li>• <strong>Under age 55</strong>: 6% per year reduction for each year before 55, even with Rule of 75 eligibility. Retiring at 52 = 18% permanent reduction.</li>
               {inputs.employeeType === 'union' && (
-                <li>• <strong>Union (CWA/IBEW) with 30+ years of service</strong>: exempt from the age penalty — full service pension at any age.</li>
+                <li>• <strong>Union (CWA/IBEW) with 30+ years of service</strong>: exempt from the age penalty, full service pension at any age.</li>
               )}
             </ul>
             <p className="font-sans text-[12px] text-amber-800 mt-[8px] italic">
@@ -1227,7 +1227,7 @@ function FourO1kCalc({ onCalculate }: { onCalculate: () => void }) {
           <div className={resultCardClass}>
             <h3 className="font-sans text-[14px] font-semibold text-[#333333] mb-[4px] uppercase tracking-[0.05em]">Balance Growth Over Time</h3>
             <p className="font-sans text-[12px] text-[#5b6a71] mb-[16px]">
-              The gap between the two lines is investment growth — money you never contributed but earned through compounding.
+              The gap between the two lines is investment growth: money you never contributed but earned through compounding.
             </p>
             <FourO1kLineChart yearByYear={results.yearByYear} startingBalance={inputs.currentBalance} />
           </div>
@@ -1504,16 +1504,16 @@ function Mod75Calc({ onCalculate }: { onCalculate: () => void }) {
   return (
     <div>
       <div className="mb-[24px]">
-        <h2 className="font-serif text-[24px] md:text-[28px] text-[#333333] font-normal">Modified Rule of 75 — Am I Eligible?</h2>
+        <h2 className="font-serif text-[24px] md:text-[28px] text-[#333333] font-normal">Modified Rule of 75: Am I Eligible?</h2>
         <p className="font-sans text-[14px] text-[#5b6a71] mt-[4px]">
-          Enter your current age and years of credited service to find out if you qualify for an AT&amp;T service pension — and exactly how close you are to each breakpoint.
+          Enter your current age and years of credited service to find out if you qualify for an AT&amp;T service pension, and exactly how close you are to each breakpoint.
         </p>
       </div>
 
       {/* "Not simple addition" warning — always visible */}
       <div className="bg-amber-50 border border-amber-200 rounded-[10px] p-[16px] mb-[24px]">
         <p className="font-sans text-[13px] text-amber-900 leading-relaxed">
-          <strong>Common mistake:</strong> Mod 75 is <em>not</em> age + service = 75. You can only qualify at four specific breakpoints — each row must match straight across, no mixing. Age 53 + 22 years = 75, but does <em>not</em> qualify. You must hit one of the exact combinations in the table below.
+          <strong>Common mistake:</strong> Mod 75 is <em>not</em> age + service = 75. You can only qualify at four specific breakpoints. Each row must match straight across, no mixing. Age 53 + 22 years = 75, but does <em>not</em> qualify. You must hit one of the exact combinations in the table below.
         </p>
       </div>
 
@@ -1590,7 +1590,7 @@ function Mod75Calc({ onCalculate }: { onCalculate: () => void }) {
           {/* Breakpoints table */}
           <div className={resultCardClass}>
             <h3 className="font-sans text-[14px] font-semibold text-[#333333] mb-[4px] uppercase tracking-[0.05em]">
-              The Four Breakpoints — Straight Across, No Diagonal
+              The Four Breakpoints: Straight Across, No Diagonal
             </h3>
             <p className="font-sans text-[12px] text-[#5b6a71] mb-[14px]">
               You must meet <strong>both</strong> the age AND service requirement in the same row. Mixing rows does not count.
@@ -1644,11 +1644,11 @@ function Mod75Calc({ onCalculate }: { onCalculate: () => void }) {
               <h3 className="font-sans text-[14px] font-semibold text-[#333333] mb-[10px] uppercase tracking-[0.05em]">Closest Breakpoint</h3>
               <p className="font-sans text-[16px] text-[#333333] leading-relaxed">
                 Work <strong>{results.nextTarget.yearsNeeded} more {results.nextTarget.yearsNeeded === 1 ? 'year' : 'years'}</strong> to reach the{' '}
-                <strong>{MOD75_LABELS[results.nextTarget.idx].ageLabel} age · {MOD75_LABELS[results.nextTarget.idx].serviceLabel}</strong> breakpoint —
+                <strong>{MOD75_LABELS[results.nextTarget.idx].ageLabel} age · {MOD75_LABELS[results.nextTarget.idx].serviceLabel}</strong> breakpoint,
                 at age <strong>{results.nextTarget.ageAt}</strong> with <strong>{results.nextTarget.serviceAt} years</strong> of service.
               </p>
               {results.nextTarget.yearsNeeded === 0 && (
-                <p className="font-sans text-[13px] text-[#1d7682] mt-[6px] font-medium">You are right at the threshold — verify your exact credited service date with AT&amp;T HR or NetBenefits.</p>
+                <p className="font-sans text-[13px] text-[#1d7682] mt-[6px] font-medium">You are right at the threshold. Verify your exact credited service date with AT&amp;T HR or NetBenefits.</p>
               )}
             </div>
           )}
@@ -1657,7 +1657,7 @@ function Mod75Calc({ onCalculate }: { onCalculate: () => void }) {
           <div className={resultCardClass}>
             <h3 className="font-sans text-[14px] font-semibold text-[#333333] mb-[10px] uppercase tracking-[0.05em]">Early Retirement Age Penalty</h3>
             <p className="font-sans text-[13px] text-[#5b6a71] mb-[14px] leading-relaxed">
-              Mod 75 eligibility and the age penalty are two separate tests. Qualifying for a service pension does not automatically mean you receive the full benefit — you must also be 55 or older (or union with 30+ years) to avoid a reduction.
+              Mod 75 eligibility and the age penalty are two separate tests. Qualifying for a service pension does not automatically mean you receive the full benefit. You must also be 55 or older (or union with 30+ years) to avoid a reduction.
             </p>
 
             {results.penaltyFree ? (
@@ -1665,7 +1665,7 @@ function Mod75Calc({ onCalculate }: { onCalculate: () => void }) {
                 <p className="font-sans text-[14px] font-semibold text-[#2E5D4B] mb-[4px]">✓ No age penalty applies to you.</p>
                 <p className="font-sans text-[13px] text-[#2E5D4B]">
                   {inputs.currentAge >= 55 && results.isEligible
-                    ? 'You meet the Modified Rule of 75 at age 55 or older — full benefit, no reduction.'
+                    ? 'You meet the Modified Rule of 75 at age 55 or older. Full benefit, no reduction.'
                     : 'Union employees with 30+ years of service receive a full service pension at any age with no age penalty.'}
                 </p>
               </div>
@@ -1677,7 +1677,7 @@ function Mod75Calc({ onCalculate }: { onCalculate: () => void }) {
                       Age penalty: {results.pre55PenaltyPct.toFixed(0)}% reduction if you retire today
                     </p>
                     <p className="font-sans text-[13px] text-[#8B2E2E] leading-relaxed">
-                      Retiring at age {inputs.currentAge} — {55 - inputs.currentAge} year{55 - inputs.currentAge !== 1 ? 's' : ''} before the age-55 threshold — triggers a permanent {results.pre55PenaltyPct.toFixed(0)}% reduction.
+                      Retiring at age {inputs.currentAge}, {55 - inputs.currentAge} year{55 - inputs.currentAge !== 1 ? 's' : ''} before the age-55 threshold, triggering a permanent {results.pre55PenaltyPct.toFixed(0)}% reduction.
                       Your monthly benefit would be <strong>{(100 - results.pre55PenaltyPct).toFixed(0)}%</strong> of the unreduced amount.
                     </p>
                     {inputs.employeeType === 'union' && inputs.yearsOfService < 30 && (
@@ -1721,7 +1721,7 @@ function Mod75Calc({ onCalculate }: { onCalculate: () => void }) {
                 </div>
                 {inputs.employeeType === 'union' && (
                   <p className="font-sans text-[12px] text-[#2E5D4B]">
-                    ✓ Union with 30+ years of service: all rows above become 0% penalty — full benefit at any age.
+                    ✓ Union with 30+ years of service: all rows above become 0% penalty, full benefit at any age.
                   </p>
                 )}
               </div>
@@ -1746,7 +1746,7 @@ function Mod75Calc({ onCalculate }: { onCalculate: () => void }) {
               </div>
             </div>
             <p className="font-sans text-[12px] text-[#5b6a71] leading-relaxed">
-              <strong>Critical:</strong> Leaving AT&amp;T even one month before you hit a breakpoint locks you into the vested pension calculation permanently — regardless of how old you become afterward. This is one of the most expensive timing mistakes AT&amp;T employees make near retirement.
+              <strong>Critical:</strong> Leaving AT&amp;T even one month before you hit a breakpoint locks you into the vested pension calculation permanently, regardless of how old you become afterward. This is one of the most expensive timing mistakes AT&amp;T employees make near retirement.
             </p>
           </div>
 

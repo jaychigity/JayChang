@@ -76,13 +76,13 @@ export default function InstitutionalNonProfitWealthManagement() {
    <AnimateOnScroll>
    <div className="border-l-4 border-[#1d7682] pl-8 py-8">
     <p className="text-lg leading-relaxed text-[#333333] mb-4">
-    Here&apos;s what most institutional investment firms won&apos;t tell you: you&apos;re a portfolio number to them. You get assigned to a team, shuffled between associates, and sit through quarterly calls with someone who barely remembers your organization&apos;s name. That&apos;s not how this should work &mdash; especially when the stakes go beyond any single person. When a foundation&apos;s portfolio underperforms, it&apos;s fewer grants awarded, fewer programs funded, and fewer lives touched.
+    Here&apos;s what most institutional investment firms won&apos;t tell you: you&apos;re a portfolio number to them. You get assigned to a team, shuffled between associates, and sit through quarterly calls with someone who barely remembers your organization&apos;s name. That&apos;s not how this should work, especially when the stakes go beyond any single person. When a foundation&apos;s portfolio underperforms, it&apos;s fewer grants awarded, fewer programs funded, and fewer lives touched.
     </p>
     <p className="text-lg leading-relaxed text-[#333333] mb-4">
-    With me and my dedicated institutional team, you get a real relationship with real people. I&apos;m your advisor &mdash; not a firm and their rotating staff. I know your board members by name. I understand your spending policy, your mission, and the values your stakeholders expect you to uphold. I&apos;m local, I show up in person, and my team and I are available when your board needs us. We serve organizations across most states, and when we&apos;re not local, we travel to maintain those relationships. That&apos;s how seriously we take this.
+    With me and my dedicated institutional team, you get a real relationship with real people. I&apos;m your advisor, not a firm and their rotating staff. I know your board members by name. I understand your spending policy, your mission, and the values your stakeholders expect you to uphold. I&apos;m local, I show up in person, and my team and I are available when your board needs us. We serve organizations across most states, and when we&apos;re not local, we travel to maintain those relationships. That&apos;s how seriously we take this.
     </p>
     <p className="text-lg leading-relaxed text-[#333333]">
-    Most non-profits are underserved by their investment advisor. They receive a model portfolio that wasn&apos;t built for their spending policy, their time horizon, or their values. They sit through reviews that focus on market commentary instead of whether the portfolio is actually supporting the mission. I do it differently &mdash; transparent reporting, clear governance documentation, and a fiduciary who answers to your board, not to a product company.
+    Most non-profits are underserved by their investment advisor. They receive a model portfolio that wasn&apos;t built for their spending policy, their time horizon, or their values. They sit through reviews that focus on market commentary instead of whether the portfolio is actually supporting the mission. I do it differently: transparent reporting, clear governance documentation, and a fiduciary who answers to your board, not to a product company.
     </p>
     <p className="mt-6 font-semibold text-[#1d7682]"> &mdash; Jay Chang, Farther</p>
    </div>
@@ -129,7 +129,7 @@ export default function InstitutionalNonProfitWealthManagement() {
      Foundation Asset Oversight
     </h3>
     <p className="text-[#333333] text-base leading-relaxed mb-4">
-     Private foundations face the IRS 5% minimum distribution requirement. We manage your portfolio to meet that obligation while preserving and growing the corpus &mdash; so your foundation can continue its work for generations.
+     Private foundations face the IRS 5% minimum distribution requirement. We manage your portfolio to meet that obligation while preserving and growing the corpus, so your foundation can continue its work for generations.
     </p>
     <ul className="text-base text-[#333333] leading-relaxed space-y-2">
      <li>&bull; 5% distribution planning &amp; cash flow management</li>
@@ -165,7 +165,7 @@ export default function InstitutionalNonProfitWealthManagement() {
      Institutional Portfolio Construction
     </h3>
     <p className="text-[#333333] text-base leading-relaxed mb-4">
-     We build diversified portfolios using institutional-quality vehicles &mdash; low-cost index funds, ETFs, and where appropriate, alternative investments. Every allocation decision is documented and tied to your organization&apos;s objectives.
+     We build diversified portfolios using institutional-quality vehicles, including low-cost index funds, ETFs, and where appropriate, alternative investments. Every allocation decision is documented and tied to your organization&apos;s objectives.
     </p>
     <ul className="text-base text-[#333333] leading-relaxed space-y-2">
      <li>&bull; Multi-asset class diversification</li>
@@ -183,7 +183,7 @@ export default function InstitutionalNonProfitWealthManagement() {
      Charitable Gift Planning
     </h3>
     <p className="text-[#333333] text-base leading-relaxed mb-4">
-     For organizations that receive significant gifts &mdash; appreciated stock, real estate, or planned bequests &mdash; we help you invest those assets thoughtfully. We also advise donors on how to maximize the impact of their giving.
+     For organizations that receive significant gifts, including appreciated stock, real estate, or planned bequests, we help you invest those assets thoughtfully. We also advise donors on how to maximize the impact of their giving.
     </p>
     <ul className="text-base text-[#333333] leading-relaxed space-y-2">
      <li>&bull; Appreciated asset donation strategies</li>
@@ -201,7 +201,7 @@ export default function InstitutionalNonProfitWealthManagement() {
      Donor Education &amp; Support
     </h3>
     <p className="text-[#333333] text-base leading-relaxed mb-4">
-     Your donors want to give wisely &mdash; and they look to your organization for guidance. We help you build donor education programs that empower supporters to maximize the tax efficiency and long-term impact of their contributions, strengthening relationships and increasing giving over time.
+     Your donors want to give wisely, and they look to your organization for guidance. We help you build donor education programs that empower supporters to maximize the tax efficiency and long-term impact of their contributions, strengthening relationships and increasing giving over time.
     </p>
     <ul className="text-base text-[#333333] leading-relaxed space-y-2">
      <li>&bull; Donor workshops on tax-efficient giving strategies</li>
@@ -326,7 +326,7 @@ export default function InstitutionalNonProfitWealthManagement() {
     <div className="text-4xl font-bold text-[#1d7682] mb-4">2</div>
     <h3 className="text-2xl font-bold text-[#333333] mb-4">Community Organizations</h3>
     <p className="text-[#333333] text-base leading-relaxed">
-     Non-profit organizations serving their communities &mdash; from human services agencies to arts organizations to advocacy groups. You need an investment partner who understands operating reserves, capital campaign proceeds, and the balance between liquidity and growth. We build portfolios that keep your programs funded while growing your long-term reserves.
+     Non-profit organizations serving their communities, from human services agencies to arts organizations to advocacy groups. You need an investment partner who understands operating reserves, capital campaign proceeds, and the balance between liquidity and growth. We build portfolios that keep your programs funded while growing your long-term reserves.
     </p>
     </div>
    </AnimateOnScroll>
@@ -336,7 +336,7 @@ export default function InstitutionalNonProfitWealthManagement() {
     <div className="text-4xl font-bold text-[#1d7682] mb-4">3</div>
     <h3 className="text-2xl font-bold text-[#333333] mb-4">Religious Institutions</h3>
     <p className="text-[#333333] text-base leading-relaxed">
-     Churches, synagogues, mosques, and faith-based organizations often hold significant endowments and operating reserves. We respect the values-based investment requirements your congregation expects and build portfolios that reflect your institution&apos;s principles &mdash; whether that means ESG screening, faith-based exclusions, or impact investing aligned with your mission.
+     Churches, synagogues, mosques, and faith-based organizations often hold significant endowments and operating reserves. We respect the values-based investment requirements your congregation expects and build portfolios that reflect your institution&apos;s principles, whether that means ESG screening, faith-based exclusions, or impact investing aligned with your mission.
     </p>
     </div>
    </AnimateOnScroll>

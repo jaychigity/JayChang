@@ -546,7 +546,7 @@ export default function FourOOneKProjectionCalculator() {
           <div className={resultCardClass}>
             <h3 className="font-sans text-[14px] font-semibold text-[#333333] mb-[4px] uppercase tracking-[0.05em]">Balance Growth Over Time</h3>
             <p className="font-sans text-[12px] text-[#5b6a71] mb-[16px]">
-              The gap between the two lines is investment growth — money you never contributed but earned through compounding.
+              The gap between the two lines is investment growth: money you never contributed but earned through compounding.
             </p>
             <GrowthLineChart
               yearByYear={results.yearByYear}
@@ -591,7 +591,7 @@ export default function FourOOneKProjectionCalculator() {
               <p className="font-sans text-[14px] text-amber-900 leading-relaxed mb-[10px]">
                 At your current contribution rate of <strong>{inputs.contributionPct}%</strong>, you&apos;re not capturing the full employer match.
                 Bumping to <strong>{results.fullMatchContribution}%</strong> would capture an additional{' '}
-                <strong>{fmt(results.missedMatch)}</strong> in employer contributions over your career —
+                <strong>{fmt(results.missedMatch)}</strong> in employer contributions over your career,
                 which compounds to a projected balance of <strong>{fmt(results.balanceIfFullMatch)}</strong> instead of <strong>{fmt(results.projectedBalance)}</strong>.
               </p>
               <p className="font-sans text-[13px] text-amber-800">
@@ -659,7 +659,7 @@ export default function FourOOneKProjectionCalculator() {
       <CalculatorDisclaimer
         toolName="401(k) projection"
         variant="default"
-        additionalContext="Projections assume a constant annual return and do not account for market volatility, fees, or changes in tax law. IRS contribution limits are updated annually — always verify current limits at irs.gov before making contribution decisions."
+        additionalContext="Projections assume a constant annual return and do not account for market volatility, fees, or changes in tax law. IRS contribution limits are updated annually. Always verify current limits at irs.gov before making contribution decisions."
       />
     </div>
   )

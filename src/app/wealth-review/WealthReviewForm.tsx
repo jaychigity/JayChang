@@ -316,7 +316,7 @@ export default function WealthReviewForm() {
             value={formData.biggestQuestion}
             onChange={handleChange}
             className={`${inputBase} resize-none`}
-            placeholder="Anything on your mind — no wrong answer here."
+            placeholder="Anything on your mind, no wrong answer here."
           />
         </div>
 

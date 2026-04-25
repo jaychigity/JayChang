@@ -76,7 +76,7 @@ export default function AerospaceDefenseWealthManagement() {
   <AnimateOnScroll>
   <div className="border-l-4 border-[#1d7682] pl-8 py-8">
    <p className="text-lg leading-relaxed text-[#333333] mb-4">
-   I&apos;ve worked with dozens of Honeywell and RTX professionals in Phoenix and Tucson. I know the difference between Honeywell&apos;s Match-as-HON-Stock structure and the HONA conversion ahead. I understand why RTX&apos;s CDP (Cash Deferral Plan) and PSU Deferral Plan require careful coordination with your pension lump-sum election. I know that your 401(k) match arrives as company stock — and that concentration risk is real when you&apos;ve also received RSU grants and accumulated shares through your career.
+   I&apos;ve worked with dozens of Honeywell and RTX professionals in Phoenix and Tucson. I know the difference between Honeywell&apos;s Match-as-HON-Stock structure and the HONA conversion ahead. I understand why RTX&apos;s CDP (Cash Deferral Plan) and PSU Deferral Plan require careful coordination with your pension lump-sum election. I know that your 401(k) match arrives as company stock, and that concentration risk is real when you&apos;ve also received RSU grants and accumulated shares through your career.
    </p>
    <p className="text-lg leading-relaxed text-[#333333] mb-4">
    The spinoff isn&apos;t an abstract corporate event. It means your Honeywell equity automatically converts to two stocks. Your tax basis matters. The timing of the ex-date matters. Whether you reinvest dividends matters. And whether your deferred comp plan treats the spinoff as a taxable event (it doesn&apos;t, under Section 409A, but your current advisor might not be certain) matters enormously.
@@ -159,7 +159,7 @@ export default function AerospaceDefenseWealthManagement() {
     <li>• <span className="font-semibold">Lump Sum vs. Annuity:</span> Higher IRS discount rates make lump sums mathematically more attractive. Breakeven age on the annuity is rising.</li>
     <li>• <span className="font-semibold">Rule of 85 Consideration:</span> If you&apos;re within 5 years of eligibility, a lump sum election locks in today&apos;s favorable discount rates before they potentially decline.</li>
     <li>• <span className="font-semibold">Prudential Platform Migration:</span> Your statements, beneficiary options, and claim procedures move to Prudential. Confirm your beneficiary elections transfer correctly.</li>
-    <li>• <span className="font-semibold">Net Unrealized Appreciation (NUA):</span> If your lump sum lands in an RTX holding in your rollover IRA, NUA treatment preserves long-term capital gains rates on the stock portion — worth modeling.</li>
+    <li>• <span className="font-semibold">Net Unrealized Appreciation (NUA):</span> If your lump sum lands in an RTX holding in your rollover IRA, NUA treatment preserves long-term capital gains rates on the stock portion. Worth modeling.</li>
     <li>• <span className="font-semibold">Action Now:</span> Model both scenarios (lump vs. annuity) under current IRS rates. Coordinate with your 401(k), deferred comp, and Social Security timing.</li>
     </ul>
    </div>
@@ -195,19 +195,19 @@ export default function AerospaceDefenseWealthManagement() {
    <div>
     <p className="font-semibold text-[#1d7682] mb-2">How It Works</p>
     <p className="text-base leading-relaxed">
-    Honeywell matches 87.5% of the first 8% of salary you defer. If you earn $100,000 and defer $8,000 (8%), Honeywell deposits $7,000 (87.5% × $8,000) into your 401(k) — delivered as Honeywell stock, not cash. This match lands in a dedicated brokerage window. You own it immediately (fully vested), but it arrives as shares of HON, not as cash to diversify.
+    Honeywell matches 87.5% of the first 8% of salary you defer. If you earn $100,000 and defer $8,000 (8%), Honeywell deposits $7,000 (87.5% × $8,000) into your 401(k), delivered as Honeywell stock, not cash. This match lands in a dedicated brokerage window. You own it immediately (fully vested), but it arrives as shares of HON, not as cash to diversify.
     </p>
    </div>
    <div>
     <p className="font-semibold text-[#1d7682] mb-2">The Concentration Problem</p>
     <p className="text-base leading-relaxed">
-    Most Honeywell employees don&apos;t realize the consequences. Over 10 years, the match compounds. You&apos;ve also received RSU grants (if you&apos;re a manager), purchased employee stock at discount (if you&apos;ve participated in ESPP), and held unvested restricted stock. Now you own 40%, 50%, sometimes 60% of your 401(k) in Honeywell stock. The rest of your portfolio is diversified, but your largest financial asset — your balance — is concentrated in one stock.
+    Most Honeywell employees don&apos;t realize the consequences. Over 10 years, the match compounds. You&apos;ve also received RSU grants (if you&apos;re a manager), purchased employee stock at discount (if you&apos;ve participated in ESPP), and held unvested restricted stock. Now you own 40%, 50%, sometimes 60% of your 401(k) in Honeywell stock. The rest of your portfolio is diversified, but your largest financial asset, your balance, is concentrated in one stock.
     </p>
    </div>
    <div>
     <p className="font-semibold text-[#1d7682] mb-2">The Spinoff Multiplier</p>
     <p className="text-base leading-relaxed">
-    When HONA spins off, your HON 401(k) balance splits. You now own two aerospace/defense stocks in the same account. The concentration is still there — but it&apos;s now split between two highly correlated holdings. This is not diversification. Your plan requires explicit action: selling a portion of both HON and HONA positions and reallocating to fixed income, international equities, or broad-market index funds. Delaying this action means accepting concentrated risk in a slow-growing, highly-regulated sector.
+    When HONA spins off, your HON 401(k) balance splits. You now own two aerospace/defense stocks in the same account. The concentration is still there, but it&apos;s now split between two highly correlated holdings. This is not diversification. Your plan requires explicit action: selling a portion of both HON and HONA positions and reallocating to fixed income, international equities, or broad-market index funds. Delaying this action means accepting concentrated risk in a slow-growing, highly-regulated sector.
     </p>
    </div>
    <div>
@@ -230,7 +230,7 @@ export default function AerospaceDefenseWealthManagement() {
    <div>
     <p className="font-semibold text-[#1d7682] mb-2">What You Receive</p>
     <p className="text-base leading-relaxed">
-    Honeywell grants Restricted Stock Units (RSUs) to managers and above. Units vest on a 3-year schedule (typically 1/3 per year, or 25% at grant, 25% at year 1, 25% at year 2, 25% at year 3, depending on grant level). At vesting, each unit converts to one share of Honeywell stock. You cannot sell before the vesting date — the shares are restricted until maturity.
+    Honeywell grants Restricted Stock Units (RSUs) to managers and above. Units vest on a 3-year schedule (typically 1/3 per year, or 25% at grant, 25% at year 1, 25% at year 2, 25% at year 3, depending on grant level). At vesting, each unit converts to one share of Honeywell stock. You cannot sell before the vesting date. The shares are restricted until maturity.
     </p>
    </div>
    <div>
@@ -242,7 +242,7 @@ export default function AerospaceDefenseWealthManagement() {
    <div>
     <p className="font-semibold text-[#1d7682] mb-2">Planning Opportunity</p>
     <p className="text-base leading-relaxed">
-    Coordinate your RSU vesting with your tax bracket. High-income years (promotions, bonuses, spouse&apos;s income events) may push you into a higher tax bracket — making that vesting year expensive. In low-income years, the same vesting amount triggers lower tax rates. We also monitor whether a portion of your RSU shares should be held long-term or sold immediately for rebalancing. After vesting, HON shares become part of your overall equity allocation decision. Holding them automatically because they vested is not a strategy.
+    Coordinate your RSU vesting with your tax bracket. High-income years (promotions, bonuses, spouse&apos;s income events) may push you into a higher tax bracket, making that vesting year expensive. In low-income years, the same vesting amount triggers lower tax rates. We also monitor whether a portion of your RSU shares should be held long-term or sold immediately for rebalancing. After vesting, HON shares become part of your overall equity allocation decision. Holding them automatically because they vested is not a strategy.
     </p>
    </div>
    </div>
@@ -369,7 +369,7 @@ export default function AerospaceDefenseWealthManagement() {
    <div>
     <p className="font-semibold text-[#1d7682] mb-2">Our Approach</p>
     <p className="text-base leading-relaxed">
-    We calculate your break-even age under current IRS rates. We model both the lump sum and annuity scenarios under multiple investment returns. We layer in your Social Security timing, your 401(k) balance, and your deferred comp to determine whether the lump sum makes sense within your total retirement income picture. For most RTX employees in their mid-50s, today&apos;s elevated IRS rates favor lump sums — but only if you have a disciplined plan to invest the balance and avoid spending it on discretionary needs.
+    We calculate your break-even age under current IRS rates. We model both the lump sum and annuity scenarios under multiple investment returns. We layer in your Social Security timing, your 401(k) balance, and your deferred comp to determine whether the lump sum makes sense within your total retirement income picture. For most RTX employees in their mid-50s, today&apos;s elevated IRS rates favor lump sums, but only if you have a disciplined plan to invest the balance and avoid spending it on discretionary needs.
     </p>
    </div>
    </div>
@@ -479,7 +479,7 @@ export default function AerospaceDefenseWealthManagement() {
    RTX Pension Freeze: Should I Take the Lump Sum or the Annuity?
    </h3>
    <p className="text-[#333333] text-base leading-relaxed">
-   We calculate your break-even age using current IRS rates. We then layer in your 401(k) balance, your Social Security timing, and your longevity expectations. If you&apos;re 57, healthy, and expect to live past 85, today&apos;s elevated IRS rates make the lump sum highly attractive. If you&apos;re 62 and plan to spend heavily in your early retirement years, the annuity&apos;s certainty and simplicity might be preferable. There&apos;s no universal answer — it depends on your full financial picture.
+   We calculate your break-even age using current IRS rates. We then layer in your 401(k) balance, your Social Security timing, and your longevity expectations. If you&apos;re 57, healthy, and expect to live past 85, today&apos;s elevated IRS rates make the lump sum highly attractive. If you&apos;re 62 and plan to spend heavily in your early retirement years, the annuity&apos;s certainty and simplicity might be preferable. There&apos;s no universal answer: it depends on your full financial picture.
    </p>
    </div>
   </AnimateOnScroll>

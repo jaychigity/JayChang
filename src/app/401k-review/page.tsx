@@ -48,7 +48,7 @@ export default function FourOneKReviewPage() {
           <p className="font-sans text-[16px] md:text-[17px] font-light text-[#b6d0ed] leading-relaxed max-w-[560px] mx-auto">
             Most people set their 401(k) contribution once and forget about it.
             Use this calculator to find the exact withholding percentage to max
-            out your contributions this year — including catch-up and after-tax
+            out your contributions this year, including catch-up and after-tax
             spillover.
           </p>
 
@@ -97,7 +97,7 @@ export default function FourOneKReviewPage() {
           </h2>
           <p className="font-sans text-[15px] font-light text-[#b6d0ed] leading-relaxed mb-[24px]">
             Your 401(k) is just one piece of the picture. I can look at the
-            whole thing — taxes, investments, retirement timeline — and tell
+            whole thing: taxes, investments, retirement timeline, and tell
             you where you stand.
           </p>
           <Link

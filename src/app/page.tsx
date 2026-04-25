@@ -122,7 +122,7 @@ export default function Home() {
    As a fiduciary, I take a simple, transparent approach to advice. My role is to help you make thoughtful decisions with your best interests at the center, always grounded in what matters most to you.
    </p>
    <p className="text-base text-[#F7F4EE]/70 leading-relaxed mb-6">
-   Led by Jay Chang, a fiduciary wealth advisor with over 14 years of experience, I&apos;ve had the opportunity to work with a wide range of individuals and organizations — tech professionals navigating equity compensation, aerospace employees planning for retirement, physicians balancing practice demands with personal wealth, and business owners preparing for their next chapter.
+   Led by Jay Chang, a fiduciary wealth advisor with over 14 years of experience, I&apos;ve had the opportunity to work with a wide range of individuals and organizations: tech professionals navigating equity compensation, aerospace employees planning for retirement, physicians balancing practice demands with personal wealth, and business owners preparing for their next chapter.
    </p>
    <p className="text-base text-[#F7F4EE]/60 leading-relaxed mb-10">
    You&apos;ll be supported by Farther&apos;s Intelligent Wealth Platform, which brings together modern technology and institutional resources, including over $15 billion in assets under management across a national network of advisors. My role is to pair those resources with a highly personal, thoughtful approach, so you have both the support and clarity you need to move forward with confidence.
@@ -169,7 +169,7 @@ export default function Home() {
    I Help People Who&apos;ve Worked Hard Get the Most Out of What They&apos;ve Built.
   </h2>
   <p className="text-lg text-[#5b6a71] leading-relaxed mb-16 max-w-3xl">
-   Whether you&apos;re navigating stock options, planning for retirement, growing a business, or just trying to make smart decisions for your family — I&apos;ve been there. Here are some of the people I work with every day:
+   Whether you&apos;re navigating stock options, planning for retirement, growing a business, or just trying to make smart decisions for your family, I&apos;ve been there. Here are some of the people I work with every day:
   </p>
 
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -186,7 +186,7 @@ export default function Home() {
    <Link href="/att-employee-financial-advisor" className="text-[#1d7682] hover:underline font-medium">AT&amp;T</Link>
    , Verizon, T-Mobile, SRP, or{' '}
    <Link href="/pge-employee-financial-advisor" className="text-[#1d7682] hover:underline font-medium">PG&amp;E</Link>
-   , your benefits package is more complex than most people realize — pensions, deferred comp, employer stock, union considerations. I help you coordinate all of it.
+   , your benefits package is more complex than most people realize: pensions, deferred comp, employer stock, union considerations. I help you coordinate all of it.
    </p>
    <Link
    href="/telecommunications-utilities-wealth-management"
@@ -224,7 +224,7 @@ export default function Home() {
    </h3>
    </div>
    <p className="text-[#5b6a71] mb-4">
-   Divorce, the loss of a spouse, inheritance, retirement — life&apos;s biggest transitions come with financial decisions you shouldn&apos;t have to navigate alone. I help you protect what matters and move forward with confidence.
+   Divorce, the loss of a spouse, inheritance, retirement: life&apos;s biggest transitions come with financial decisions you shouldn&apos;t have to navigate alone. I help you protect what matters and move forward with confidence.
    </p>
    <Link
    href="/families-life-transitions-wealth-management"
@@ -243,7 +243,7 @@ export default function Home() {
    </h3>
    </div>
    <p className="text-[#5b6a71] mb-4">
-   Long careers at places like Honeywell and Raytheon come with real benefits — pensions, deferred comp, employer stock. I help you build a plan that actually uses all of them wisely.
+   Long careers at places like Honeywell and Raytheon come with real benefits: pensions, deferred comp, employer stock. I help you build a plan that actually uses all of them wisely.
    </p>
    <Link
    href="/aerospace-defense-wealth-management"
@@ -262,7 +262,7 @@ export default function Home() {
    </h3>
    </div>
    <p className="text-[#5b6a71] mb-4">
-   High income is great — but it comes with complexity. Whether you&apos;re a healthcare professional at Banner Health, running your own business, or simply want a financial partner who listens, I&apos;m here.
+   High income is great, but it comes with complexity. Whether you&apos;re a healthcare professional at Banner Health, running your own business, or simply want a financial partner who listens, I&apos;m here.
    </p>
    <Link
    href="/physician-executive-wealth-management-phoenix-scottsdale"
@@ -281,7 +281,7 @@ export default function Home() {
    </h3>
    </div>
    <p className="text-[#5b6a71] mb-4">
-   If you work at a company like TSMC, Intel, NVIDIA, or Apple and your pay stub looks more like a spreadsheet — RSUs, ESPPs, relocation bonuses — I can help you make sense of it all.
+   If you work at a company like TSMC, Intel, NVIDIA, or Apple and your pay stub looks more like a spreadsheet, with RSUs, ESPPs, and relocation bonuses, I can help you make sense of it all.
    </p>
    <Link
    href="/semiconductor-wealth-management-arizona"
@@ -304,13 +304,13 @@ export default function Home() {
    You Shouldn&apos;t Have to Figure All of This Out Alone.
   </h2>
   <p className="text-lg text-[#5b6a71] leading-relaxed mb-6 max-w-3xl">
-   Here&apos;s what I see all the time: smart, hardworking people who are great at what they do — but feel overwhelmed by the financial side of it. And honestly, who wouldn&apos;t be?
+   Here&apos;s what I see all the time: smart, hardworking people who are great at what they do, but feel overwhelmed by the financial side of it. And honestly, who wouldn&apos;t be?
   </p>
   <p className="text-lg text-[#5b6a71] leading-relaxed mb-6 max-w-3xl">
-   RSU vesting schedules, withholding shortfalls, deferred compensation decisions, employer stock concentration, Roth conversions, state tax implications when you relocate — it adds up fast. Most advisors don&apos;t dig into this stuff. I do. Every single day.
+   RSU vesting schedules, withholding shortfalls, deferred compensation decisions, employer stock concentration, Roth conversions, state tax implications when you relocate: it adds up fast. Most advisors don&apos;t dig into this stuff. I do. Every single day.
   </p>
   <p className="text-lg text-[#5b6a71] leading-relaxed max-w-3xl">
-   I use Farther&apos;s technology platform to build plans that actually reflect your life — not some cookie-cutter model. Because your finances are personal, and I believe your advisor should treat them that way.
+   I use Farther&apos;s technology platform to build plans that actually reflect your life, not some cookie-cutter model. Because your finances are personal, and I believe your advisor should treat them that way.
   </p>
   </AnimateOnScroll>
   </div>
@@ -325,7 +325,7 @@ export default function Home() {
    A Few Numbers That Show Why This Stuff Matters.
   </h2>
   <p className="text-lg text-white/60 leading-relaxed mb-16 max-w-3xl">
-   These are real situations I see with my clients — and real opportunities most people miss.
+   These are real situations I see with my clients, and real opportunities most people miss.
   </p>
 
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -334,7 +334,7 @@ export default function Home() {
    <CountUp end="22%" />
    </p>
    <p className="text-white text-sm leading-relaxed">
-   Flat withholding on RSUs and bonuses — but many people actually owe 37%. That gap catches a lot of folks off guard at tax time.
+   Flat withholding on RSUs and bonuses, but many people actually owe 37%. That gap catches a lot of folks off guard at tax time.
    </p>
    </div>
 
@@ -343,7 +343,7 @@ export default function Home() {
    <CountUp end="$72,000" />
    </p>
    <p className="text-white text-sm leading-relaxed">
-   The maximum you can put away each year through a mega backdoor Roth — and most people don&apos;t even know it exists.
+   The maximum you can put away each year through a mega backdoor Roth, and most people don&apos;t even know it exists.
    </p>
    </div>
 
@@ -361,7 +361,7 @@ export default function Home() {
    <CountUp end="$3.3B" />
    </p>
    <p className="text-white text-sm leading-relaxed">
-   In deferred compensation balances at just one company — unsecured and unfunded. That&apos;s a risk worth understanding.
+   In deferred compensation balances at just one company, unsecured and unfunded. That&apos;s a risk worth understanding.
    </p>
    </div>
 
@@ -370,7 +370,7 @@ export default function Home() {
    <CountUp end="$15B+" />
    </p>
    <p className="text-white text-sm leading-relaxed">
-   Total assets managed across the Farther platform — giving my clients institutional pricing with personal, hands-on relationships.
+   Total assets managed across the Farther platform, giving my clients institutional pricing with personal, hands-on relationships.
    </p>
    </div>
 
@@ -418,7 +418,7 @@ export default function Home() {
     <h3 className="font-serif text-2xl font-bold text-[#F7F4EE] mb-1">I Listen</h3>
     <p className="font-sans text-sm font-semibold text-[#1d7682] mb-3">A Real Conversation, Not a Pitch</p>
     <p className="font-sans text-[15px] text-[#F7F4EE]/70 leading-relaxed">
-     I start by getting to know you — your family, your career, what keeps you up at night, and what you&apos;re working toward. A real conversation, not a form. You&apos;ll walk away with clarity.
+     I start by getting to know you: your family, your career, what keeps you up at night, and what you&apos;re working toward. A real conversation, not a form. You&apos;ll walk away with clarity.
     </p>
     </div>
    </AnimateOnScroll>
@@ -435,7 +435,7 @@ export default function Home() {
     <h3 className="font-serif text-2xl font-bold text-[#F7F4EE] mb-1">I Build Your Plan</h3>
     <p className="font-sans text-sm font-semibold text-[#1d7682] mb-3">Built Around Your Life, Not a Template</p>
     <p className="font-sans text-[15px] text-[#F7F4EE]/70 leading-relaxed">
-     Using Farther&apos;s platform, I put together a financial plan that actually reflects your situation — your goals, your tax picture, your benefits, your timeline. I walk through every piece of it with you.
+     Using Farther&apos;s platform, I put together a financial plan that actually reflects your situation: your goals, your tax picture, your benefits, your timeline. I walk through every piece of it with you.
     </p>
     </div>
    </AnimateOnScroll>
@@ -452,7 +452,7 @@ export default function Home() {
     <h3 className="font-serif text-2xl font-bold text-[#F7F4EE] mb-1">I Handle the Details</h3>
     <p className="font-sans text-sm font-semibold text-[#1d7682] mb-3">So You Don&apos;t Have To</p>
     <p className="font-sans text-[15px] text-[#F7F4EE]/70 leading-relaxed">
-     Account transfers, beneficiary updates, tax-lot optimization — I take care of all of it. Farther&apos;s platform keeps everything organized so nothing slips through the cracks.
+     Account transfers, beneficiary updates, tax-lot optimization: I take care of all of it. Farther&apos;s platform keeps everything organized so nothing slips through the cracks.
     </p>
     </div>
    </AnimateOnScroll>
@@ -469,7 +469,7 @@ export default function Home() {
     <h3 className="font-serif text-2xl font-bold text-[#F7F4EE] mb-1">I Stay in Your Corner</h3>
     <p className="font-sans text-sm font-semibold text-[#1d7682] mb-3">Life Changes. Your Plan Should Too.</p>
     <p className="font-sans text-[15px] text-[#F7F4EE]/70 leading-relaxed">
-     Regular check-ins, proactive tax planning, real-time monitoring. When something changes — a new job, a big purchase, a market swing — I&apos;m already thinking about what it means for you.
+     Regular check-ins, proactive tax planning, real-time monitoring. When something changes, like a new job, a big purchase, or a market swing, I&apos;m already thinking about what it means for you.
     </p>
     </div>
    </AnimateOnScroll>
@@ -495,7 +495,7 @@ export default function Home() {
      <h3 className="font-serif text-2xl font-bold text-[#F7F4EE] mb-1">I Listen</h3>
      <p className="font-sans text-sm font-semibold text-[#1d7682] mb-3">A Real Conversation, Not a Pitch</p>
      <p className="font-sans text-[15px] text-[#F7F4EE]/70 leading-relaxed">
-     I start by getting to know you — your family, your career, what keeps you up at night, and what you&apos;re working toward. A real conversation, not a form. You&apos;ll walk away with clarity.
+     I start by getting to know you: your family, your career, what keeps you up at night, and what you&apos;re working toward. A real conversation, not a form. You&apos;ll walk away with clarity.
      </p>
     </div>
     </div>
@@ -514,7 +514,7 @@ export default function Home() {
      <h3 className="font-serif text-2xl font-bold text-[#F7F4EE] mb-1">I Build Your Plan</h3>
      <p className="font-sans text-sm font-semibold text-[#1d7682] mb-3">Built Around Your Life, Not a Template</p>
      <p className="font-sans text-[15px] text-[#F7F4EE]/70 leading-relaxed">
-     Using Farther&apos;s platform, I put together a financial plan that actually reflects your situation — your goals, your tax picture, your benefits, your timeline. I walk through every piece of it with you.
+     Using Farther&apos;s platform, I put together a financial plan that actually reflects your situation: your goals, your tax picture, your benefits, your timeline. I walk through every piece of it with you.
      </p>
     </div>
     </div>
@@ -533,7 +533,7 @@ export default function Home() {
      <h3 className="font-serif text-2xl font-bold text-[#F7F4EE] mb-1">I Handle the Details</h3>
      <p className="font-sans text-sm font-semibold text-[#1d7682] mb-3">So You Don&apos;t Have To</p>
      <p className="font-sans text-[15px] text-[#F7F4EE]/70 leading-relaxed">
-     Account transfers, beneficiary updates, tax-lot optimization — I take care of all of it. Farther&apos;s platform keeps everything organized so nothing slips through the cracks.
+     Account transfers, beneficiary updates, tax-lot optimization: I take care of all of it. Farther&apos;s platform keeps everything organized so nothing slips through the cracks.
      </p>
     </div>
     </div>
@@ -552,7 +552,7 @@ export default function Home() {
      <h3 className="font-serif text-2xl font-bold text-[#F7F4EE] mb-1">I Stay in Your Corner</h3>
      <p className="font-sans text-sm font-semibold text-[#1d7682] mb-3">Life Changes. Your Plan Should Too.</p>
      <p className="font-sans text-[15px] text-[#F7F4EE]/70 leading-relaxed">
-     Regular check-ins, proactive tax planning, real-time monitoring. When something changes — a new job, a big purchase, a market swing — I&apos;m already thinking about what it means for you.
+     Regular check-ins, proactive tax planning, real-time monitoring. When something changes, like a new job, a big purchase, or a market swing, I&apos;m already thinking about what it means for you.
      </p>
     </div>
     </div>
@@ -586,7 +586,7 @@ export default function Home() {
    Great Technology and Great Advice Shouldn&apos;t Be an Either/Or.
   </h2>
   <p className="text-lg text-[#5b6a71] leading-relaxed max-w-3xl mb-16">
-   I partnered with Farther because I believe you deserve both: an advisor who knows your situation, backed by a platform that never drops the ball. Farther&apos;s Intelligent Wealth Platform handles the heavy lifting — so I can spend my time doing what actually matters: thinking about your family, your goals, and your future.
+   I partnered with Farther because I believe you deserve both: an advisor who knows your situation, backed by a platform that never drops the ball. Farther&apos;s Intelligent Wealth Platform handles the heavy lifting, so I can spend my time doing what actually matters: thinking about your family, your goals, and your future.
   </p>
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-0">
@@ -597,7 +597,7 @@ export default function Home() {
    </div>
    <div>
    <h3 className="font-serif font-bold text-[#333333] mb-2">Everything in One Place</h3>
-   <p className="text-[#5b6a71] text-sm">All your accounts on a single dashboard — so you always know where you stand.</p>
+   <p className="text-[#5b6a71] text-sm">All your accounts on a single dashboard, so you always know where you stand.</p>
    </div>
    </div>
 
@@ -608,7 +608,7 @@ export default function Home() {
    </div>
    <div>
    <h3 className="font-serif font-bold text-[#333333] mb-2">Automatic Tax Savings</h3>
-   <p className="text-[#5b6a71] text-sm">The platform scans daily for tax-loss harvesting opportunities — so you keep more of what you earn.</p>
+   <p className="text-[#5b6a71] text-sm">The platform scans daily for tax-loss harvesting opportunities, so you keep more of what you earn.</p>
    </div>
    </div>
 
@@ -619,7 +619,7 @@ export default function Home() {
    </div>
    <div>
    <h3 className="font-serif font-bold text-[#333333] mb-2">Smart Account Placement</h3>
-   <p className="text-[#5b6a71] text-sm">The platform puts the right investments in the right accounts — taxable, deferred, and Roth — to maximize your after-tax returns.</p>
+   <p className="text-[#5b6a71] text-sm">The platform puts the right investments in the right accounts, taxable, deferred, and Roth, to maximize your after-tax returns.</p>
    </div>
    </div>
 
@@ -641,7 +641,7 @@ export default function Home() {
    </div>
    <div>
    <h3 className="font-serif font-bold text-[#333333] mb-2">$15B+ in Client Assets</h3>
-   <p className="text-[#5b6a71] text-sm">That scale means better pricing for you — and a team of specialists behind every recommendation I make.</p>
+   <p className="text-[#5b6a71] text-sm">That scale means better pricing for you, and a team of specialists behind every recommendation I make.</p>
    </div>
    </div>
   </div>
@@ -658,7 +658,7 @@ export default function Home() {
    The Best Compliment I Get? &ldquo;I Finally Feel Like Someone&apos;s in My Corner.&rdquo;
   </h2>
   <p className="text-lg text-[#5b6a71] leading-relaxed max-w-3xl">
-   I work with families, professionals, and business owners who were looking for something different — an advisor who actually listens, explains things clearly, and treats their money like it matters. Because it does.
+   I work with families, professionals, and business owners who were looking for something different: an advisor who actually listens, explains things clearly, and treats their money like it matters. Because it does.
   </p>
   </AnimateOnScroll>
   </div>

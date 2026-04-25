@@ -136,7 +136,7 @@ export default function AboutPage() {
    When you work with Jay, you don&apos;t just get Jay. You get our whole team. That&apos;s one of the most important things I can offer - real specialists in trust law, tax strategy, investment management, and planning who are all pulling in the same direction for you.
   </p>
   <p className="text-lg text-[#5b6a71] leading-relaxed max-w-3xl mb-12">
-   Every client situation is different — that is why I built a team with deep specializations. Here is who handles what.
+   Every client situation is different, which is why I built a team with deep specializations. Here is who handles what.
   </p>
   </AnimateOnScroll>
 
@@ -183,31 +183,31 @@ export default function AboutPage() {
   </h3>
   <div className="space-y-8 text-[#333333]">
    <p className="text-lg leading-relaxed">
-   <span className="font-bold">Ashton Hayes</span> &mdash; A Honeywell engineer asks about setting up a trust before the HONA spinoff. Ashton has the law degree and Master of Laws in Taxation to get it right.
+   <span className="font-bold">Ashton Hayes</span>: A Honeywell engineer asks about setting up a trust before the HONA spinoff. Ashton has the law degree and Master of Laws in Taxation to get it right.
    </p>
 
    <p className="text-lg leading-relaxed">
-   <span className="font-bold">Dr. Daniel R. Gilham</span> &mdash; An FCX VP is thinking about succession planning and alternative investments. Daniel has a CEPA credential and a decade at Wells Fargo doing exactly that.
+   <span className="font-bold">Dr. Daniel R. Gilham</span>: An FCX VP is thinking about succession planning and alternative investments. Daniel has a CEPA credential and a decade at Wells Fargo doing exactly that.
    </p>
 
    <p className="text-lg leading-relaxed">
-   <span className="font-bold">Michael Lee</span> &mdash; A Kaiser retiree moving to Scottsdale needs help figuring out what changes. Michael has walked that path with families at PG&amp;E, AT&amp;T, Kaiser, Chevron, and Boeing.
+   <span className="font-bold">Michael Lee</span>: A Kaiser retiree moving to Scottsdale needs help figuring out what changes. Michael has walked that path with families at PG&amp;E, AT&amp;T, Kaiser, Chevron, and Boeing.
    </p>
 
    <p className="text-lg leading-relaxed">
-   <span className="font-bold">Sutanto Widjaja</span> &mdash; A TSMC engineer needs to diversify after an RSU windfall without getting buried in taxes. Sutanto has 20+ years of institutional portfolio experience.
+   <span className="font-bold">Sutanto Widjaja</span>: A TSMC engineer needs to diversify after an RSU windfall without getting buried in taxes. Sutanto has 20+ years of institutional portfolio experience.
    </p>
 
    <p className="text-lg leading-relaxed">
-   <span className="font-bold">David Sargent</span> &mdash; An engineer who wants an advisor who thinks like one. David went from Lockheed Martin and Burns &amp; McDonnell to financial planning through Charles Schwab.
+   <span className="font-bold">David Sargent</span>: An engineer who wants an advisor who thinks like one. David went from Lockheed Martin and Burns &amp; McDonnell to financial planning through Charles Schwab.
    </p>
 
    <p className="text-lg leading-relaxed">
-   <span className="font-bold">Stacey Kirkpatrick</span> &mdash; When the plan needs to be buttoned up, fully documented, and executed without a single loose end, Stacey makes sure every detail is handled.
+   <span className="font-bold">Stacey Kirkpatrick</span>: When the plan needs to be buttoned up, fully documented, and executed without a single loose end, Stacey makes sure every detail is handled.
    </p>
 
    <p className="text-lg leading-relaxed">
-   <span className="font-bold">Alex Paul</span> &mdash; From onboarding to implementation, Alex helps make sure the whole planning process runs smoothly so nothing gets missed.
+   <span className="font-bold">Alex Paul</span>: From onboarding to implementation, Alex helps make sure the whole planning process runs smoothly so nothing gets missed.
    </p>
   </div>
 

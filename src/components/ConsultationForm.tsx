@@ -203,7 +203,7 @@ export default function ConsultationForm() {
             </svg>
           </div>
           <h2 className="font-serif text-h3 md:text-h2 text-[#333333] mb-[16px]">
-            {isBooked ? 'Thanks for scheduling a time.' : 'Got it — I\u2019ll give you a call.'}
+            {isBooked ? 'Thanks for scheduling a time.' : 'Got it. I\u2019ll give you a call.'}
           </h2>
           <p className="font-sans text-body-lg font-light text-[#5b6a71]">
             {isBooked

@@ -444,7 +444,7 @@ export default function IncomeAnnuityEstimator() {
   <CalculatorDisclaimer
    toolName="annuity income"
    variant="default"
-   additionalContext="Payout rates shown are hypothetical and based on industry averages as of Q1 2026 — they do not represent any specific annuity product, are not guaranteed, and are not an offer to sell or solicitation to purchase any annuity. Actual quotes will vary based on the insurance carrier, current interest rates, product features, and underwriting. Annuities are insurance products and may involve surrender charges, fees, and other limitations. Farther Finance Inc. is a registered investment adviser with the SEC; registration does not imply a certain level of skill or training. See our Form ADV Part 2A on the disclosures page."
+   additionalContext="Payout rates shown are hypothetical and based on industry averages as of Q1 2026. They do not represent any specific annuity product, are not guaranteed, and are not an offer to sell or solicitation to purchase any annuity. Actual quotes will vary based on the insurance carrier, current interest rates, product features, and underwriting. Annuities are insurance products and may involve surrender charges, fees, and other limitations. Farther Finance Inc. is a registered investment adviser with the SEC; registration does not imply a certain level of skill or training. See our Form ADV Part 2A on the disclosures page."
   />
  </div>
  </div>

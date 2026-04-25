@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'PG&E Pension & Benefits Calculator Suite | Advisor Jay',
     description:
-      'Free PG&E pension calculator suite — Final Pay pension, Cash Balance projections, early retirement eligibility, RMSA depletion estimator, and 401(k) match optimizer.',
+      'Free PG&E pension calculator suite: Final Pay pension, Cash Balance projections, early retirement eligibility, RMSA depletion estimator, and 401(k) match optimizer.',
     url: 'https://www.advisorjay.com/tools/pge-pension',
   },
 }
@@ -38,7 +38,7 @@ export default function PGEPensionPage() {
             Know What Your PG&amp;E Benefits Are Worth
           </h1>
           <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[640px] mx-auto leading-relaxed">
-            Six calculators built for PG&amp;E employees — union and management. Estimate your Final Pay or Cash Balance pension,
+            Six calculators built for PG&amp;E employees, union and management. Estimate your Final Pay or Cash Balance pension,
             model early retirement eligibility, project your RMSA, and optimize your 401(k) match.
           </p>
           <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[600px] mx-auto leading-relaxed">
@@ -102,7 +102,7 @@ export default function PGEPensionPage() {
             style={{ fontSize: 15, color: 'rgba(247,244,238,0.75)', marginBottom: 24, lineHeight: 1.6 }}
           >
             I work with PG&amp;E employees on pension elections, RMSA planning, the 401(k) spillover election, and
-            retirement timing — all the decisions that interact in ways a single calculator can&apos;t fully capture.
+            retirement timing, all the decisions that interact in ways a single calculator can&apos;t fully capture.
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, justifyContent: 'center' }}>
             <Link

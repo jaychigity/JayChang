@@ -27,7 +27,7 @@ const articles: Article[] = [
  {
  title: "March Market Commentary: Navigating the Rotation",
  description:
- "What Q1 2026 means for your portfolio — and where the Farther investment team sees opportunity ahead as markets shift from concentration to broader participation.",
+ "What Q1 2026 means for your portfolio, and where the Farther investment team sees opportunity ahead as markets shift from concentration to broader participation.",
  url: "https://www.farther.com/post/navigating-the-rotation",
  date: "March 31, 2026",
  category: "Market Commentary",
@@ -36,7 +36,7 @@ const articles: Article[] = [
  {
  title: "From Uncertainty to Ownership",
  description:
- "Real stories of financial leadership — how women are taking control of their financial futures and what that looks like in practice.",
+ "Real stories of financial leadership: how women are taking control of their financial futures and what that looks like in practice.",
  url: "https://www.farther.com/post/from-uncertainty-to-ownership",
  date: "March 23, 2026",
  category: "Financial Planning",
@@ -61,7 +61,7 @@ const articles: Article[] = [
  {
  title: "Running to Stand Still: Volatility Surged, Returns Stalled, and Discipline Paid Off",
  description:
- "The first half of 2025 delivered dramatic swings — a 20% correction followed by a 25% rebound — yet the S&P 500 finished just +5% YTD. Why disciplined investors who stayed the course came out ahead.",
+ "The first half of 2025 delivered dramatic swings, a 20% correction followed by a 25% rebound, yet the S&P 500 finished just +5% YTD. Why disciplined investors who stayed the course came out ahead.",
  url: "https://www.farther.com/post/running-to-stand-still-volatility-surged-returns-stalled-and-discipline-paid-off",
  date: "July 2025",
  category: "Market Commentary",
@@ -77,7 +77,7 @@ const articles: Article[] = [
  {
  title: "The 2025 Farther Market Outlook: A Delicate Equilibrium",
  description:
- "Farther's annual market outlook examining the balanced forces shaping 2025 — tariff impacts, Federal Reserve policy, geopolitical risks, and where the investment team sees opportunity across asset classes.",
+ "Farther's annual market outlook examining the balanced forces shaping 2025, including tariff impacts, Federal Reserve policy, geopolitical risks, and where the investment team sees opportunity across asset classes.",
  url: "https://www.farther.com/post/the-2025-farther-market-outlook-a-delicate-equilibrium",
  date: "January 2025",
  category: "Outlook",
@@ -141,7 +141,7 @@ export default function ClientResourcesPage() {
   lineHeight: 1.6,
   }}
   >
-  Research and analysis from Farther&rsquo;s investment team — the same
+  Research and analysis from Farther&rsquo;s investment team, the same
   insights I use to inform the advice I give my clients every day.
   </p>
  </section>

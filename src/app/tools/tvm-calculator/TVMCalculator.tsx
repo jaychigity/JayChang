@@ -971,7 +971,7 @@ export default function TVMCalculator() {
             {(() => {
               const finalValue = results.futureValue
               const finalMilestone = getMilestone(finalValue)
-              return `Starting with ${formatCurrencyFull(startingInvestment)} and contributing ${formatCurrencyFull(monthlyContribution)} monthly, your portfolio grows to ${formatCurrencyFull(finalValue)} over ${timeHorizon} years — enough for ${finalMilestone.name.toLowerCase()}. Your money works ${(results.growthMultiple).toFixed(1)}x harder than you do.`
+              return `Starting with ${formatCurrencyFull(startingInvestment)} and contributing ${formatCurrencyFull(monthlyContribution)} monthly, your portfolio grows to ${formatCurrencyFull(finalValue)} over ${timeHorizon} years, enough for ${finalMilestone.name.toLowerCase()}. Your money works ${(results.growthMultiple).toFixed(1)}x harder than you do.`
             })()}
           </p>
         </div>

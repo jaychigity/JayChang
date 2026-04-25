@@ -239,12 +239,12 @@ const PGE_MATCH_CONFIG = {
     example: (salary: number) => {
       const contrib = Math.round(salary * 0.08)
       const match = Math.round(salary * 0.06)
-      return `If you make ${salary.toLocaleString()} a year and save 8% (${contrib.toLocaleString()}), PG&E adds ${match.toLocaleString()} on top — that's your employer's match just for saving.`
+      return `If you make ${salary.toLocaleString()} a year and save 8% (${contrib.toLocaleString()}), PG&E adds ${match.toLocaleString()} on top, that's your employer's match just for saving.`
     },
     tip: 'To capture every dollar of employer match, set your contribution to at least 8%. Anything less and you leave PG&E\'s match on the table.',
   },
   'pre-2013-management': {
-    label: 'Hired before 2013 — Management',
+    label: 'Hired before 2013: Management',
     matchRate: 0.75,
     matchCap: 6,
     effectiveMatch: 4.5,   // 75% × 6% = 4.5%
@@ -252,12 +252,12 @@ const PGE_MATCH_CONFIG = {
     example: (salary: number) => {
       const contrib = Math.round(salary * 0.06)
       const match = Math.round(salary * 0.045)
-      return `If you make ${salary.toLocaleString()} a year and save 6% (${contrib.toLocaleString()}), PG&E adds ${match.toLocaleString()} on top — employer match dollars, no strings attached.`
+      return `If you make ${salary.toLocaleString()} a year and save 6% (${contrib.toLocaleString()}), PG&E adds ${match.toLocaleString()} on top, employer match dollars, no strings attached.`
     },
-    tip: 'You have the traditional Final Pay pension, which is more generous — but you still want to contribute at least 6% to grab your full match.',
+    tip: 'You have the traditional Final Pay pension, which is more generous, but you still want to contribute at least 6% to grab your full match.',
   },
   'pre-2013-union': {
-    label: 'Hired before 2013 — Union (IBEW / ESC)',
+    label: 'Hired before 2013: Union (IBEW / ESC)',
     matchRate: 0.60,
     matchCap: 6,
     effectiveMatch: 3.6,   // 60% × 6% = 3.6%
@@ -265,7 +265,7 @@ const PGE_MATCH_CONFIG = {
     example: (salary: number) => {
       const contrib = Math.round(salary * 0.06)
       const match = Math.round(salary * 0.036)
-      return `If you make ${salary.toLocaleString()} a year and save 6% (${contrib.toLocaleString()}), PG&E adds ${match.toLocaleString()} on top — that's money you only get if you contribute enough.`
+      return `If you make ${salary.toLocaleString()} a year and save 6% (${contrib.toLocaleString()}), PG&E adds ${match.toLocaleString()} on top, that's money you only get if you contribute enough.`
     },
     tip: 'Your union pension is strong, but this match is extra. Make sure you\'re putting in at least 6% so you don\'t miss out.',
   },
@@ -280,11 +280,11 @@ const ATT_MATCH_CONFIG = {
     matchRate: 0.80,
     matchCap: 6,
     effectiveMatch: 4.8,   // 80% × 6% = 4.8%
-    description: 'AT&T puts in 80 cents for every dollar you save, on the first 6% of your pay. That first 6% is called your "Basic" contribution — anything above 6% is "Supplementary" and AT&T does not match it.',
+    description: 'AT&T puts in 80 cents for every dollar you save, on the first 6% of your pay. That first 6% is called your "Basic" contribution, and anything above 6% is "Supplementary" and AT&T does not match it.',
     example: (salary: number) => {
       const contrib = Math.round(salary * 0.06)
       const match = Math.round(salary * 0.048)
-      return `If you make ${salary.toLocaleString()} a year and save 6% (${contrib.toLocaleString()}), AT&T adds ${match.toLocaleString()} on top. That's your employer's match — but only if you contribute at least 6%.`
+      return `If you make ${salary.toLocaleString()} a year and save 6% (${contrib.toLocaleString()}), AT&T adds ${match.toLocaleString()} on top. That's your employer's match, but only if you contribute at least 6%.`
     },
     tip: 'Contribute at least 6% to get your full match. Saving more is great for your future, but AT&T won\'t match anything above 6%.',
   },
@@ -293,13 +293,13 @@ const ATT_MATCH_CONFIG = {
     matchRate: 0.80,
     matchCap: 6,
     effectiveMatch: 4.8,   // 80% × Basic (typically ~6% equivalent)
-    description: 'AT&T puts in 80 cents for every dollar of your "Basic" contribution. For union employees, your Basic amount may be based on your wage scale or job title rather than a flat percentage — but the 80% match ratio is the same.',
+    description: 'AT&T puts in 80 cents for every dollar of your "Basic" contribution. For union employees, your Basic amount may be based on your wage scale or job title rather than a flat percentage, but the 80% match ratio is the same.',
     example: (salary: number) => {
       const contrib = Math.round(salary * 0.06)
       const match = Math.round(salary * 0.048)
       return `Using a standard 6% Basic rate: if you make ${salary.toLocaleString()} a year and save ${contrib.toLocaleString()}, AT&T adds about ${match.toLocaleString()}. Check your specific contract for your exact Basic amount.`
     },
-    tip: 'Your "Basic" contribution amount is set by your union contract. Make sure you\'re contributing at least that much — anything less means you\'re leaving match dollars on the table.',
+    tip: 'Your "Basic" contribution amount is set by your union contract. Make sure you\'re contributing at least that much, and anything less means you\'re leaving match dollars on the table.',
   },
 } as const
 
@@ -451,7 +451,7 @@ export default function WithholdingCalculator() {
             border: '1.5px solid #1d7682',
           }}
         >
-          {midYearMode ? 'Switch to full year' : "I'm mid-year — what do I need to set?"}
+          {midYearMode ? 'Switch to full year' : "I'm mid-year, what do I need to set?"}
         </button>
       </div>
 
@@ -459,7 +459,7 @@ export default function WithholdingCalculator() {
       <div className="bg-white rounded-[12px] border border-[#E8E6E1] p-5 md:p-8">
         <h2 className="font-sans text-[20px] font-bold text-[#333333] mb-2">Do you work for one of these companies?</h2>
         <p className="text-[14px] text-[#5b6a71] mb-5">
-          Pick your employer and we'll fill in your exact match details — no guesswork needed.
+          Pick your employer and we'll fill in your exact match details, no guesswork needed.
         </p>
 
         <div className="flex flex-wrap gap-3 mb-2">
@@ -521,7 +521,7 @@ export default function WithholdingCalculator() {
               ))}
             </div>
             <p className="text-[12px] text-[#5b6a71] mt-3">
-              Not sure? If you were hired in 2013 or later, pick the first option — that covers most current PG&E employees.
+              Not sure? If you were hired in 2013 or later, pick the first option, that covers most current PG&E employees.
             </p>
 
             {/* PG&E Match Education Card */}
@@ -550,13 +550,13 @@ export default function WithholdingCalculator() {
                   ⚠ Heads up: spread your contributions across the whole year
                 </p>
                 <p className="text-[13px] text-[#92400e] leading-relaxed mb-2">
-                  PG&E does <span className="font-semibold">not</span> offer a "true-up" match. That means PG&E only matches what you put in <span className="font-semibold">each paycheck</span> — if you stop contributing partway through the year (because you hit the IRS limit early), PG&E stops matching too. You don't get that money back later.
+                  PG&E does <span className="font-semibold">not</span> offer a "true-up" match. That means PG&E only matches what you put in <span className="font-semibold">each paycheck</span>. If you stop contributing partway through the year (because you hit the IRS limit early), PG&E stops matching too. You don't get that money back later.
                 </p>
                 <p className="text-[13px] text-[#92400e] leading-relaxed mb-2">
-                  <span className="font-semibold">Example:</span> Say you earn $150,000 and contribute 30% to max out your 401(k) fast. You'd hit the limit around August. For the rest of the year — September through December — PG&E puts in $0 in match because you're no longer contributing. That could cost you thousands in match dollars.
+                  <span className="font-semibold">Example:</span> Say you earn $150,000 and contribute 30% to max out your 401(k) fast. You'd hit the limit around August. For the rest of the year, September through December, PG&E puts in $0 in match because you're no longer contributing. That could cost you thousands in match dollars.
                 </p>
                 <p className="text-[13px] text-[#92400e] leading-relaxed">
-                  <span className="font-semibold">The fix:</span> Set your contribution percentage so you contribute a little bit every paycheck, all year long. This calculator helps you find that number — use the "Set withholding to" percentage below, and your contributions will be spread evenly across all 26 paychecks.
+                  <span className="font-semibold">The fix:</span> Set your contribution percentage so you contribute a little bit every paycheck, all year long. This calculator helps you find that number. Use the "Set withholding to" percentage below, and your contributions will be spread evenly across all 26 paychecks.
                 </p>
               </div>
 
@@ -590,7 +590,7 @@ export default function WithholdingCalculator() {
               ))}
             </div>
             <p className="text-[12px] text-[#5b6a71] mt-3">
-              Not sure? Check your offer letter or HR portal — it will say "Management" or list your union (CWA / IBEW).
+              Not sure? Check your offer letter or HR portal, it will say "Management" or list your union (CWA / IBEW).
             </p>
 
             {/* AT&T Match Education Card */}
@@ -620,13 +620,13 @@ export default function WithholdingCalculator() {
                   ⚠ Heads up: don't max out too early in the year
                 </p>
                 <p className="text-[13px] text-[#92400e] leading-relaxed mb-2">
-                  AT&T calculates your match <span className="font-semibold">each pay period</span>. If you contribute too aggressively and hit the IRS limit by, say, August — AT&T stops matching for the rest of the year. For most AT&T employees, there is <span className="font-semibold">no "true-up"</span> to fix this. That lost match is gone forever.
+                  AT&T calculates your match <span className="font-semibold">each pay period</span>. If you contribute too aggressively and hit the IRS limit by, say, August, AT&T stops matching for the rest of the year. For most AT&T employees, there is <span className="font-semibold">no "true-up"</span> to fix this. That lost match is gone forever.
                 </p>
                 <p className="text-[13px] text-[#92400e] leading-relaxed mb-2">
-                  <span className="font-semibold">Example:</span> Say you earn $150,000 and set your contribution to 30% to max out fast. You'd hit the ${LIMITS.employeeDeferral.toLocaleString()} limit around August. From September through December, your contribution drops to $0 — and so does AT&T's match. That's roughly 4 months of match dollars you'd never get back.
+                  <span className="font-semibold">Example:</span> Say you earn $150,000 and set your contribution to 30% to max out fast. You'd hit the ${LIMITS.employeeDeferral.toLocaleString()} limit around August. From September through December, your contribution drops to $0, and so does AT&T's match. That's roughly 4 months of match dollars you'd never get back.
                 </p>
                 <p className="text-[13px] text-[#92400e] leading-relaxed">
-                  <span className="font-semibold">The fix:</span> Pace your contributions so you're still putting in at least 6% on your very last paycheck of December. This calculator does the math for you — the "Set withholding to" percentage below spreads your contributions evenly across all 26 paychecks.
+                  <span className="font-semibold">The fix:</span> Pace your contributions so you're still putting in at least 6% on your very last paycheck of December. This calculator does the math for you. The "Set withholding to" percentage below spreads your contributions evenly across all 26 paychecks.
                 </p>
               </div>
 
@@ -636,7 +636,7 @@ export default function WithholdingCalculator() {
                   ⚠ Check where your match money is going
                 </p>
                 <p className="text-[13px] text-[#92400e] leading-relaxed">
-                  AT&T's matching contributions often land in <span className="font-semibold">AT&T company stock (ticker: T)</span> by default. You can move it into a diversified fund right away — but many employees don't realize this and end up with too much of their retirement in a single stock. Log in to your plan and check if your match is set to auto-sell into a target-date fund or other diversified option.
+                  AT&T's matching contributions often land in <span className="font-semibold">AT&T company stock (ticker: T)</span> by default. You can move it into a diversified fund right away, but many employees don't realize this and end up with too much of their retirement in a single stock. Log in to your plan and check if your match is set to auto-sell into a target-date fund or other diversified option.
                 </p>
               </div>
 
@@ -644,17 +644,17 @@ export default function WithholdingCalculator() {
               <div className="mt-4 bg-white rounded-lg p-4 border border-[#1d7682]/10">
                 <p className="text-[12px] font-semibold text-[#1d7682] uppercase tracking-wider mb-2">Quick facts about AT&T's plan</p>
                 <ul className="text-[13px] text-[#333333] leading-relaxed space-y-1.5">
-                  <li><span className="font-semibold">Vesting:</span> 100% immediate — the match is yours from day one.</li>
+                  <li><span className="font-semibold">Vesting:</span> 100% immediate. The match is yours from day one.</li>
                   <li><span className="font-semibold">Max effective match:</span> 4.8% of your eligible pay (80% × 6%).</li>
-                  <li><span className="font-semibold">Catch-up (age 50+):</span> Extra {formatCurrency(LIMITS.catchUp50)} — but if you earned over $145,000 last year, catch-up must go into Roth (after-tax) starting in 2026.</li>
+                  <li><span className="font-semibold">Catch-up (age 50+):</span> Extra {formatCurrency(LIMITS.catchUp50)}. If you earned over $145,000 last year, catch-up must go into Roth (after-tax) starting in 2026.</li>
                   <li><span className="font-semibold">Super catch-up (ages 60–63):</span> Extra {formatCurrency(LIMITS.catchUp6063)} under SECURE 2.0.</li>
                 </ul>
               </div>
 
               <div className="mt-4 pt-4 border-t border-[#1d7682]/10">
                 <p className="text-[13px] text-[#5b6a71] leading-relaxed">
-                  <span className="font-semibold text-[#333333]">Management vs. Union — what's different?</span>{' '}
-                  Both groups get the same 80% match ratio. The main difference is how your "Basic" contribution is defined. For management employees, it's simply the first 6% of your salary. For union employees (CWA, IBEW), it may be a specific dollar amount tied to your wage scale or job title — check your contract or HR portal for your exact Basic amount.
+                  <span className="font-semibold text-[#333333]">Management vs. Union: what's different?</span>{' '}
+                  Both groups get the same 80% match ratio. The main difference is how your "Basic" contribution is defined. For management employees, it's simply the first 6% of your salary. For union employees (CWA, IBEW), it may be a specific dollar amount tied to your wage scale or job title. Check your contract or HR portal for your exact Basic amount.
                 </p>
               </div>
             </div>
@@ -723,14 +723,14 @@ export default function WithholdingCalculator() {
               <InfoCallout
                 color="teal"
                 title={`You qualify for the SECURE 2.0 enhanced catch-up (+${formatCurrency(LIMITS.catchUp6063)})`}
-                body={`Ages 60–63 can contribute an extra ${formatCurrency(LIMITS.catchUp6063)} in ${LIMITS.year} — more than the standard 50+ catch-up. Log in to your plan admin site and look for "catch-up contribution" or "additional deferral" to activate it. Note: if you earn over $145,000, this must go into a Roth account.`}
+                body={`Ages 60–63 can contribute an extra ${formatCurrency(LIMITS.catchUp6063)} in ${LIMITS.year}, more than the standard 50+ catch-up. Log in to your plan admin site and look for "catch-up contribution" or "additional deferral" to activate it. Note: if you earn over $145,000, this must go into a Roth account.`}
               />
             )}
             {isCatchUpEligible && !isEnhancedCatchUp && (
               <InfoCallout
                 color="teal"
                 title={`You qualify for catch-up contributions (+${formatCurrency(LIMITS.catchUp50)})`}
-                body={`At 50+ you can contribute an extra ${formatCurrency(LIMITS.catchUp50)} above the standard limit in ${LIMITS.year}. To activate it, log into your plan admin site (Fidelity, Vanguard, Empower, etc.) and update your deferral election. Look for "catch-up" or "additional contribution" — it may be a separate field from your regular deferral.`}
+                body={`At 50+ you can contribute an extra ${formatCurrency(LIMITS.catchUp50)} above the standard limit in ${LIMITS.year}. To activate it, log into your plan admin site (Fidelity, Vanguard, Empower, etc.) and update your deferral election. Look for "catch-up" or "additional contribution": it may be a separate field from your regular deferral.`}
               />
             )}
           </div>
@@ -777,7 +777,7 @@ export default function WithholdingCalculator() {
           <div className={selectedCompany !== 'general' ? 'opacity-60 pointer-events-none' : ''}>
             <LabelWithTooltip
               label="Employer match rate"
-              tooltip="The percentage your employer contributes for each dollar you put in. Example: a 4% match means for every $1 you contribute (up to the cap), your employer adds $0.04 per dollar — pure employer match."
+              tooltip="The percentage your employer contributes for each dollar you put in. Example: a 4% match means for every $1 you contribute (up to the cap), your employer adds $0.04 per dollar. Pure employer match."
             />
             {selectedCompany !== 'general' && (
               <p className="text-[11px] text-[#1d7682] font-semibold mb-1">Auto-filled from your {selectedCompany === 'pge' ? 'PG&E' : 'AT&T'} plan</p>
@@ -795,7 +795,7 @@ export default function WithholdingCalculator() {
           <div className={selectedCompany !== 'general' ? 'opacity-60 pointer-events-none' : ''}>
             <LabelWithTooltip
               label="Match cap (% of salary you must contribute)"
-              tooltip={`This is the ceiling on your contributions that your employer will match. Example: if the cap is 6% and your salary is $150,000, your employer matches on the first $9,000 you contribute — contributing more than $9,000 won't increase the match. If your employer has no cap, or you're not sure, set this to 0%. Not all employers have a match cap.`}
+              tooltip={`This is the ceiling on your contributions that your employer will match. Example: if the cap is 6% and your salary is $150,000, your employer matches on the first $9,000 you contribute. Contributing more than $9,000 won't increase the match. If your employer has no cap, or you're not sure, set this to 0%. Not all employers have a match cap.`}
             />
             {selectedCompany !== 'general' && (
               <p className="text-[11px] text-[#1d7682] font-semibold mb-1">Auto-filled from your {selectedCompany === 'pge' ? 'PG&E' : 'AT&T'} plan</p>
@@ -815,7 +815,7 @@ export default function WithholdingCalculator() {
           <div>
             <LabelWithTooltip
               label="Your current 401(k) contribution %"
-              tooltip="What you're currently electing on your plan admin site. This lets us show the paycheck impact of maxing out vs. staying where you are — and whether you're capturing your full employer match."
+              tooltip="What you're currently electing on your plan admin site. This lets us show the paycheck impact of maxing out vs. staying where you are, and whether you're capturing your full employer match."
             />
             <div className="text-lg font-semibold text-[#333333] mb-1">{formatPercent(currentContribPct)}</div>
             <input
@@ -830,7 +830,7 @@ export default function WithholdingCalculator() {
           <div>
             <LabelWithTooltip
               label="Other pre-tax deductions per paycheck"
-              tooltip="Health insurance premiums, HSA, FSA, dental — these are also deducted pre-tax and reduce your taxable income just like your 401(k). Include them for a more accurate take-home estimate. Find this on your pay stub under 'pre-tax deductions.'"
+              tooltip="Health insurance premiums, HSA, FSA, dental: these are also deducted pre-tax and reduce your taxable income just like your 401(k). Include them for a more accurate take-home estimate. Find this on your pay stub under 'pre-tax deductions.'"
             />
             <div className="text-lg font-semibold text-[#333333] mb-1">{formatCurrency(otherPreTaxPerCheck)}</div>
             <input
@@ -850,7 +850,7 @@ export default function WithholdingCalculator() {
           <InfoCallout
             color="amber"
             title={`You may be leaving ${formatCurrency(missedMatchAmount)} in employer match on the table`}
-            body={`Your employer matches up to ${formatPercent(employerMatchCap)} of your salary, but you're currently only contributing ${formatPercent(currentContribPct)}. To capture your full match, you need to contribute at least ${formatPercent(employerMatchCap)} — that's ${formatCurrency((employerMatchCap / 100) * salary)} per year. Capturing that match is the first thing to fix before worrying about maxing out.`}
+            body={`Your employer matches up to ${formatPercent(employerMatchCap)} of your salary, but you're currently only contributing ${formatPercent(currentContribPct)}. To capture your full match, you need to contribute at least ${formatPercent(employerMatchCap)}, that's ${formatCurrency((employerMatchCap / 100) * salary)} per year. Capturing that match is the first thing to fix before worrying about maxing out.`}
           />
         )}
       </div>
@@ -863,7 +863,7 @@ export default function WithholdingCalculator() {
             <span className="text-[11px] font-semibold uppercase tracking-wider bg-[#1d7682] text-white px-3 py-1 rounded-full">Optional</span>
           </div>
           <p className="text-[14px] text-[#5b6a71] mb-6">
-            Tell us how much you've already contributed this year and how many paychecks you have left — we'll calculate exactly what % to set starting today.
+            Tell us how much you've already contributed this year and how many paychecks you have left. We'll calculate exactly what % to set starting today.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -871,7 +871,7 @@ export default function WithholdingCalculator() {
             <div>
               <LabelWithTooltip
                 label="Amount already contributed this year"
-                tooltip="Find this in your plan admin portal (Fidelity, Vanguard, Empower, etc.) under 'YTD contributions' or 'year-to-date deferrals.' This is your employee contribution only — not your employer match."
+                tooltip="Find this in your plan admin portal (Fidelity, Vanguard, Empower, etc.) under 'YTD contributions' or 'year-to-date deferrals.' This is your employee contribution only, not your employer match."
               />
               <div className="relative">
                 <span className="absolute left-3 top-1/2 -translate-y-1/2 text-[#999] text-lg">$</span>
@@ -901,7 +901,7 @@ export default function WithholdingCalculator() {
             <div>
               <LabelWithTooltip
                 label="Paychecks remaining this year"
-                tooltip="We've estimated this based on today's date and your pay frequency — but you can adjust it if your employer's pay periods don't align perfectly with the calendar year."
+                tooltip="We've estimated this based on today's date and your pay frequency, but you can adjust it if your employer's pay periods don't align perfectly with the calendar year."
               />
               <div className="text-lg font-semibold text-[#333333] mb-1">{paychecksRemaining}</div>
               <input
@@ -912,7 +912,7 @@ export default function WithholdingCalculator() {
               <div className="flex justify-between text-[11px] text-[#999] mt-1">
                 <span>1</span><span>{payFrequency} (full year)</span>
               </div>
-              <p className="text-[11px] text-[#999] mt-1">Auto-estimated from today's date — adjust if needed</p>
+              <p className="text-[11px] text-[#999] mt-1">Auto-estimated from today's date, adjust if needed</p>
             </div>
           </div>
 
@@ -940,7 +940,7 @@ export default function WithholdingCalculator() {
             <InfoCallout
               color="teal"
               title="You've already hit your limit for the year"
-              body={`You've contributed ${formatCurrency(alreadyContributed)}, which meets or exceeds the ${LIMITS.year} limit of ${formatCurrency(maxDeferral)}. Your plan should automatically stop deductions — but double-check your plan admin site to confirm.`}
+              body={`You've contributed ${formatCurrency(alreadyContributed)}, which meets or exceeds the ${LIMITS.year} limit of ${formatCurrency(maxDeferral)}. Your plan should automatically stop deductions, but double-check your plan admin site to confirm.`}
             />
           )}
 
@@ -965,7 +965,7 @@ export default function WithholdingCalculator() {
           {/* Current */}
           <div>
             <p className="text-[13px] font-semibold text-[#5b6a71] mb-3">
-              Current contribution — {formatPercent(currentContribPct)}
+              Current contribution: {formatPercent(currentContribPct)}
             </p>
             <div className="rounded-lg overflow-hidden border border-[#E8E6E1]">
               <div className="bg-[#F7F4EE] px-4 py-2 text-[12px] font-semibold text-[#5b6a71] uppercase tracking-wider">
@@ -983,7 +983,7 @@ export default function WithholdingCalculator() {
           {/* Maxed */}
           <div>
             <p className="text-[13px] font-semibold text-[#1d7682] mb-3">
-              Maxed out — {formatPercent(maxWithholdingPct)}
+              Maxed out: {formatPercent(maxWithholdingPct)}
             </p>
             <div className="rounded-lg overflow-hidden border border-[#1d7682]">
               <div className="px-4 py-2 text-[12px] font-semibold uppercase tracking-wider" style={{ background: '#1d7682', color: '#fff' }}>
@@ -1021,7 +1021,7 @@ export default function WithholdingCalculator() {
         <div className="mt-4 bg-[#F7F4EE] rounded-lg p-4">
           <p className="text-[13px] text-[#5b6a71]">
             <span className="font-semibold text-[#333333]">Why is the take-home hit smaller than the contribution increase?</span>{' '}
-            Because pre-tax 401(k) contributions reduce your taxable income — so your federal tax bill goes down at the same time your contribution goes up. The real cost of maxing out is always less than it looks.
+            Because pre-tax 401(k) contributions reduce your taxable income, your federal tax bill goes down at the same time your contribution goes up. The real cost of maxing out is always less than it looks.
           </p>
         </div>
       </div>
@@ -1057,7 +1057,7 @@ export default function WithholdingCalculator() {
         <h2 className="font-sans text-[20px] font-bold text-[#333333] mb-2">Employer match</h2>
         <p className="text-[14px] text-[#5b6a71] mb-6">
           {formatPercent(employerMatchPercent)} match on the first {formatPercent(employerMatchCap)} of your salary
-          {employerMatchCap > 0 && ` — contribute at least ${formatPercent(employerMatchCap)} to capture it all`}
+          {employerMatchCap > 0 && `. Contribute at least ${formatPercent(employerMatchCap)} to capture it all`}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -1070,7 +1070,7 @@ export default function WithholdingCalculator() {
             <p className="text-[13px] text-[#5b6a71]">
               <span className="font-semibold text-[#333333]">How the match works: </span>
               Your employer contributes {formatPercent(employerMatchPercent)} for every 1% you put in, up to {formatPercent(employerMatchCap)} of your ${salary.toLocaleString()} salary.
-              That means the most they'll ever match is {formatCurrency(employerMatchContribution)} — but only if you contribute at least {formatCurrency((employerMatchCap / 100) * salary)} yourself.
+              That means the most they'll ever match is {formatCurrency(employerMatchContribution)}, but only if you contribute at least {formatCurrency((employerMatchCap / 100) * salary)} yourself.
             </p>
           </div>
         )}

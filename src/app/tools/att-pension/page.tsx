@@ -33,10 +33,10 @@ export default function ATTPensionPage() {
       Know What Your AT&amp;T Benefits Are Worth
      </h1>
      <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[640px] mx-auto leading-relaxed">
-      Six calculators built for AT&amp;T employees — union and management. Estimate your pension, compare lump sum vs annuity, model early retirement, and project your 401(k).
+      Six calculators built for AT&amp;T employees, union and management. Estimate your pension, compare lump sum vs annuity, model early retirement, and project your 401(k).
      </p>
      <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[600px] mx-auto leading-relaxed">
-      I&apos;ve worked with hundreds of AT&amp;T employees — CWA, IBEW, and management — navigating these exact decisions.
+      I&apos;ve worked with hundreds of AT&amp;T employees, CWA, IBEW, and management, navigating these exact decisions.
      </p>
      <p
       className="font-sans"
@@ -70,7 +70,7 @@ export default function ATTPensionPage() {
       WANT HELP MAKING SENSE OF THESE NUMBERS?
      </p>
      <h3 className="font-serif" style={{ fontSize: 28, fontWeight: 600, color: '#F7F4EE', marginBottom: 12, lineHeight: 1.3 }}>
-      I work with AT&amp;T employees on exactly these decisions — pension elections, DISC distributions, Rule of 75 timing, and retirement coordination.
+      I work with AT&amp;T employees on exactly these decisions: pension elections, DISC distributions, Rule of 75 timing, and retirement coordination.
      </h3>
      <p className="font-sans" style={{ fontSize: 15, color: 'rgba(247,244,238,0.75)', marginBottom: 24, lineHeight: 1.6 }}>
       The calculator gives you the numbers. A plan gives you clarity on what to actually do with them.

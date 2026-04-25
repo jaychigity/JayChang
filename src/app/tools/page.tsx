@@ -5,14 +5,14 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 export const metadata: Metadata = {
  title: 'Free Financial Calculators & Planning Tools | Advisor Jay',
  description:
- 'Free financial calculators for corporate employees, utility professionals, physicians, business owners, and families. Free AT&T pension calculator, free PG&E benefits calculator, 401(k) projections, Roth conversions, and more — no sign-up required, instant results.',
+ 'Free financial calculators for corporate employees, utility professionals, physicians, business owners, and families. Free AT&T pension calculator, free PG&E benefits calculator, 401(k) projections, Roth conversions, and more. No sign-up required, instant results.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/tools',
  },
  openGraph: {
  title: 'Free Financial Calculators & Planning Tools | Advisor Jay',
  description:
- 'Free financial calculators with instant results — no sign-up required. AT&T pension, PG&E benefits, 401(k) projections, Roth conversions, Social Security, RMDs, and more.',
+ 'Free financial calculators with instant results. No sign-up required. AT&T pension, PG&E benefits, 401(k) projections, Roth conversions, Social Security, RMDs, and more.',
  url: 'https://www.PWM-Farther.com/tools',
  },
 }
@@ -46,7 +46,7 @@ const tools = [
  href: '/tools/rsu-equity-compensation-calculator',
  title: 'Equity Compensation & RSU Tax Calculator',
  description:
- 'RSUs, stock options, and ESPPs are taxed differently \u2014 and your employer\'s default withholding is often not enough. This tool estimates your actual tax liability on equity compensation so you\'re not caught off guard at filing time.\n\nEspecially useful for: tech professionals, corporate employees, and anyone with vesting events this year.',
+ 'RSUs, stock options, and ESPPs are taxed differently, and your employer\'s default withholding is often not enough. This tool estimates your actual tax liability on equity compensation so you\'re not caught off guard at filing time.\n\nEspecially useful for: tech professionals, corporate employees, and anyone with vesting events this year.',
  time: 'Instant analysis',
  category: 'Planning Tool',
  },
@@ -54,7 +54,7 @@ const tools = [
  href: '/tools/401k-projection',
  title: '401(k) Projection Calculator',
  description:
-  'See exactly what your 401(k) will be worth at retirement with any employer match structure. Enter your salary, contribution rate, and match formula — get year-by-year growth, a breakdown of your contributions vs employer match vs investment gains, and a flag if you\'re leaving match money on the table.\n\nEspecially useful for: anyone who wants to stress-test their savings rate or hasn\'t run the numbers since starting their job.',
+  'See exactly what your 401(k) will be worth at retirement with any employer match structure. Enter your salary, contribution rate, and match formula and get year-by-year growth, a breakdown of your contributions vs employer match vs investment gains, and a flag if you\'re leaving match money on the table.\n\nEspecially useful for: anyone who wants to stress-test their savings rate or hasn\'t run the numbers since starting their job.',
  time: 'Instant projection',
  category: 'Calculator',
  },
@@ -62,7 +62,7 @@ const tools = [
  href: '/tools/roth-conversion-calculator',
  title: 'Roth Conversion Calculator',
  description:
- 'Converting pre-tax retirement savings to Roth can save significantly on lifetime taxes \u2014 but timing and amount matter. This calculator helps you find the right conversion amount based on your current bracket, future income expectations, and retirement timeline.\n\nEspecially useful for: high earners in a transitional year, early retirees, and anyone approaching RMD age.',
+ 'Converting pre-tax retirement savings to Roth can save significantly on lifetime taxes, but timing and amount matter. This calculator helps you find the right conversion amount based on your current bracket, future income expectations, and retirement timeline.\n\nEspecially useful for: high earners in a transitional year, early retirees, and anyone approaching RMD age.',
  time: 'Instant analysis',
  category: 'Calculator',
  },
@@ -70,7 +70,7 @@ const tools = [
  href: '/tools/retirement-savings-calculator',
  title: 'Retirement Readiness Calculator',
  description:
- 'Are you on track? This tool takes your current savings, income, expected retirement age, and spending needs and gives you a straight answer \u2014 along with what it would take to close any gap.\n\nEspecially useful for: anyone within 10\u201320 years of retirement who hasn\'t run the numbers recently.',
+ 'Are you on track? This tool takes your current savings, income, expected retirement age, and spending needs and gives you a straight answer, along with what it would take to close any gap.\n\nEspecially useful for: anyone within 10\u201320 years of retirement who hasn\'t run the numbers recently.',
  time: '60 seconds',
  category: 'Assessment',
  },
@@ -78,7 +78,7 @@ const tools = [
  href: '/tools/business-exit-planning-calculator',
  title: 'Business Exit Scorecard',
  description:
- 'If your business is a significant part of your net worth, your exit strategy is your financial plan. This scorecard walks you through the key factors that determine business value, timing, and what you\'ll actually walk away with after taxes.\n\nEspecially useful for: business owners thinking about selling in the next 3\u201310 years.',
+ 'If your business is a significant part of your net worth, your exit strategy is your financial plan. This scorecard walks you through the key factors that determine business value, timing, and what you\'ll actually walk away with after taxes.\n\nEspecially useful for: business owners thinking about selling in the next 3 to 10 years.',
  time: '60 seconds',
  category: 'Scorecard',
  },
@@ -102,13 +102,13 @@ const tools = [
  href: '/tools/inherited-ira-calculator',
  title: 'Inherited IRA Calculator & RMD Guide',
  description:
- 'Inherited an IRA? The rules changed dramatically under the SECURE Act. This tool classifies your beneficiary type, shows your required distributions, and compares withdrawal strategies side-by-side — with tax-bracket-aware projections based on your actual income.\n\nEspecially useful for: adult children who inherited a parent\'s IRA, surviving spouses weighing rollover options, and anyone navigating the 10-year rule.',
+ 'Inherited an IRA? The rules changed dramatically under the SECURE Act. This tool classifies your beneficiary type, shows your required distributions, and compares withdrawal strategies side-by-side, with tax-bracket-aware projections based on your actual income.\n\nEspecially useful for: adult children who inherited a parent\'s IRA, surviving spouses weighing rollover options, and anyone navigating the 10-year rule.',
  time: '2 minutes',
  category: 'Planning Tool',
  },
  {
  href: '/tools/social-security-calculator',
- title: 'Social Security Calculator — When Should You Claim?',
+ title: 'Social Security Calculator: When Should You Claim?',
  description:
   'When should you start collecting? Slide through every age from 62 to 70 and see your monthly check, break-even point, and total lifetime benefits. Includes spousal strategy, earnings test, IRMAA impact, and 6 common myths debunked in plain English.\n\nEspecially useful for: anyone within 5 years of claiming, married couples coordinating strategies, and anyone wondering "will I ever get my money\'s worth?"',
  time: 'Instant analysis',
@@ -116,7 +116,7 @@ const tools = [
  },
  {
  href: '/tools/rmd-calculator',
- title: 'RMD Calculator — Required Minimum Distribution',
+ title: 'RMD Calculator: Required Minimum Distribution',
  description:
   'How much must you withdraw from your IRA this year? This calculator uses the 2026 IRS Uniform Lifetime Table to show your exact RMD, the tax hit on your bracket, QCD optimization opportunities, IRMAA Medicare surcharge warnings, and a multi-year balance projection.\n\nEspecially useful for: retirees age 73+, anyone approaching RMD age, and those considering Qualified Charitable Distributions to reduce taxable income.',
  time: 'Instant estimate',
@@ -132,7 +132,7 @@ const tools = [
  },
  {
  href: '/tools/tvm-calculator',
- title: 'What Your Money Becomes \u2014 TVM Calculator',
+ title: 'What Your Money Becomes: TVM Calculator',
  description:
  'See how compound returns, dividends, and reinvestment transform your investment over time. Map your wealth trajectory to real-world milestones and model the impact of market corrections.',
  time: '45 seconds',
@@ -162,7 +162,7 @@ export default function ToolsPage() {
     name: 'Are these financial calculators free to use?',
     acceptedAnswer: {
     '@type': 'Answer',
-    text: 'Yes — every calculator on this page is completely free. No sign-up, no account, and no credit card required. Enter your numbers and get instant results.',
+    text: 'Yes. Every calculator on this page is completely free. No sign-up, no account, and no credit card required. Enter your numbers and get instant results.',
     },
    },
    {
@@ -170,7 +170,7 @@ export default function ToolsPage() {
     name: 'Is the AT&T pension calculator free?',
     acceptedAnswer: {
     '@type': 'Answer',
-    text: 'Yes. The AT&T Pension Suite is free to use with no login required. It includes free calculators for pension vs. lump sum decisions, Mod 75 eligibility, early retirement reduction factors, and 401(k) match optimization — all built specifically for current and former AT&T employees.',
+    text: 'Yes. The AT&T Pension Suite is free to use with no login required. It includes free calculators for pension vs. lump sum decisions, Mod 75 eligibility, early retirement reduction factors, and 401(k) match optimization, all built specifically for current and former AT&T employees.',
     },
    },
    {
@@ -178,7 +178,7 @@ export default function ToolsPage() {
     name: 'Is the PG&E pension calculator free?',
     acceptedAnswer: {
     '@type': 'Answer',
-    text: 'Yes. The PG&E Pension & Benefits Suite is free with no sign-up needed. It covers free calculators for Final Pay and Cash Balance pension estimates, RMSA projections, early retirement reduction factors, and 401(k) spillover elections — built for PG&E employees navigating retirement decisions.',
+    text: 'Yes. The PG&E Pension & Benefits Suite is free with no sign-up needed. It covers free calculators for Final Pay and Cash Balance pension estimates, RMSA projections, early retirement reduction factors, and 401(k) spillover elections, built for PG&E employees navigating retirement decisions.',
     },
    },
    {
@@ -186,7 +186,7 @@ export default function ToolsPage() {
     name: 'Is there a free 401(k) calculator?',
     acceptedAnswer: {
     '@type': 'Answer',
-    text: 'Yes. This page includes two free 401(k) calculators: a Withholding Calculator that shows the exact percentage to set on your paycheck, and a Projection Calculator that shows what your 401(k) will be worth at retirement with any employer match structure. Both are free and instant — no account required.',
+    text: 'Yes. This page includes two free 401(k) calculators: a Withholding Calculator that shows the exact percentage to set on your paycheck, and a Projection Calculator that shows what your 401(k) will be worth at retirement with any employer match structure. Both are free and instant, no account required.',
     },
    },
    {
@@ -194,7 +194,7 @@ export default function ToolsPage() {
     name: 'Is there a free Roth conversion calculator?',
     acceptedAnswer: {
     '@type': 'Answer',
-    text: 'Yes. The free Roth Conversion Calculator compares the long-term after-tax value of converting a Traditional IRA to a Roth IRA. It shows the upfront tax cost, break-even retirement tax rate, and projected growth — instantly and without any sign-up.',
+    text: 'Yes. The free Roth Conversion Calculator compares the long-term after-tax value of converting a Traditional IRA to a Roth IRA. It shows the upfront tax cost, break-even retirement tax rate, and projected growth, instantly and without any sign-up.',
     },
    },
    {
@@ -202,7 +202,7 @@ export default function ToolsPage() {
     name: 'Are there free retirement planning calculators available?',
     acceptedAnswer: {
     '@type': 'Answer',
-    text: 'Yes. This page includes free retirement calculators for 401(k) projections, Roth conversions, required minimum distributions (RMDs), Social Security claiming strategy, retirement readiness, and inherited IRA rules — all free with instant results and no account required.',
+    text: 'Yes. This page includes free retirement calculators for 401(k) projections, Roth conversions, required minimum distributions (RMDs), Social Security claiming strategy, retirement readiness, and inherited IRA rules, all free with instant results and no account required.',
     },
    },
    {
@@ -265,7 +265,7 @@ export default function ToolsPage() {
   lineHeight: 1.6,
   }}
   >
-  Making smart financial decisions starts with knowing your numbers. These calculators require no sign-up and deliver real answers instantly. Built for corporate employees, utility and energy professionals, aerospace and defense workers, physicians, business owners, and families navigating complex financial situations &mdash; exactly the kinds of people I work with every day.
+  Making smart financial decisions starts with knowing your numbers. These calculators require no sign-up and deliver real answers instantly. Built for corporate employees, utility and energy professionals, aerospace and defense workers, physicians, business owners, and families navigating complex financial situations, exactly the kinds of people I work with every day.
   </p>
  </section>
 
@@ -303,7 +303,7 @@ export default function ToolsPage() {
   lineHeight: 1.7,
   }}
   >
-  Each calculator is designed around a specific financial question we hear constantly from clients. Start with whichever one is most relevant to your situation right now. If you want help interpreting the results or building a plan around them, Jay offers a conversation &mdash; just clarity.
+  Each calculator is designed around a specific financial question we hear constantly from clients. Start with whichever one is most relevant to your situation right now. If you want help interpreting the results or building a plan around them, Jay offers a conversation, just clarity.
   </p>
   </div>
  </section>
@@ -470,7 +470,7 @@ export default function ToolsPage() {
   lineHeight: 1.7,
   }}
   >
-  All tools require no login and are updated for 2026 tax law including SECURE 2.0 catch-up contribution changes. Results are estimates for educational purposes &mdash; for a personalized analysis, schedule a conversation with Jay.
+  All tools require no login and are updated for 2026 tax law including SECURE 2.0 catch-up contribution changes. Results are estimates for educational purposes. For a personalized analysis, schedule a conversation with Jay.
   </p>
   </div>
  </section>

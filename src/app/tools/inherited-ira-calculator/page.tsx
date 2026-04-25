@@ -7,15 +7,15 @@ export const metadata: Metadata = {
  title:
   'Inherited IRA Calculator & RMD Rules Guide | Advisor Jay',
  description:
-  'Free inherited IRA calculator with 2026 SECURE Act rules. Determine your beneficiary type, required distributions, optimal withdrawal strategy, and tax impact — with year-by-year schedule. Built for spouses, children, and non-spouse beneficiaries.',
+  'Free inherited IRA calculator with 2026 SECURE Act rules. Determine your beneficiary type, required distributions, optimal withdrawal strategy, and tax impact, with year-by-year schedule. Built for spouses, children, and non-spouse beneficiaries.',
  alternates: {
   canonical: 'https://www.PWM-Farther.com/tools/inherited-ira-calculator',
  },
  openGraph: {
   title:
-   'Inherited IRA Calculator — SECURE Act RMD Rules & Distribution Strategies',
+   'Inherited IRA Calculator: SECURE Act RMD Rules & Distribution Strategies',
   description:
-   'Free inherited IRA calculator — find out your required distributions, compare withdrawal strategies, and see your year-by-year tax impact. Instant results.',
+   'Free inherited IRA calculator. Find out your required distributions, compare withdrawal strategies, and see your year-by-year tax impact. Instant results.',
   url: 'https://www.PWM-Farther.com/tools/inherited-ira-calculator',
  },
 }
@@ -40,10 +40,10 @@ export default function InheritedIRAPage() {
       Inherited IRA Calculator &amp; RMD Guide
      </h1>
      <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[640px] mx-auto leading-relaxed">
-      Inherited an IRA? The rules are complicated — especially after the SECURE Act. This tool tells you exactly what you need to do: your beneficiary classification, required distributions, and the withdrawal strategy that saves you the most in taxes.
+      Inherited an IRA? The rules are complicated, especially after the SECURE Act. This tool tells you exactly what you need to do: your beneficiary classification, required distributions, and the withdrawal strategy that saves you the most in taxes.
      </p>
      <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[600px] mx-auto leading-relaxed">
-      I built this tool because inherited IRA mistakes are some of the most expensive — and most preventable — errors I see. The rules are confusing, but the math doesn&apos;t have to be.
+      I built this tool because inherited IRA mistakes are some of the most expensive, and most preventable, errors I see. The rules are confusing, but the math doesn&apos;t have to be.
      </p>
      <p
       className="font-sans"

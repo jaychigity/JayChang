@@ -37,7 +37,7 @@ export default function PSLFBannerHealth() {
               PSLF at Banner Health: Are You Qualifying for Loan Forgiveness Without Knowing It?
             </h1>
             <p className="text-xl text-gray-700 mb-8">
-              Banner Health is a 501(c)(3) nonprofit. If you work there, you may be earning loan forgiveness with every payment—but only if you file correctly.
+              Banner Health is a 501(c)(3) nonprofit. If you work there, you may be earning loan forgiveness with every payment, but only if you file correctly.
             </p>
             <p className="text-gray-600">Published March 18, 2026</p>
           </div>
@@ -51,7 +51,7 @@ export default function PSLFBannerHealth() {
             </p>
 
             <p className="text-gray-800 mb-6">
-              What you may not realize: each of those payments is edging you toward complete forgiveness of your remaining balance—tax-free—without ever paying it off manually. This is the power of the Public Service Loan Forgiveness program, and you may be qualifying without tracking it.
+              What you may not realize: each of those payments is edging you toward complete forgiveness of your remaining balance, tax-free, without ever paying it off manually. This is the power of the Public Service Loan Forgiveness program, and you may be qualifying without tracking it.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">What PSLF Actually Is</h2>

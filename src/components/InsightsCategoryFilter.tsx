@@ -69,7 +69,7 @@ export default function InsightsCategoryFilter({ articles, categories }: Insight
                     <div className="h-[200px] max-md:h-[180px] relative overflow-hidden">
                       <Image
                         src={article.image}
-                        alt={`${article.title} — wealth management insights for Arizona, California, and Nevada families`}
+                        alt={`${article.title} | wealth management insights for Arizona, California, and Nevada families`}
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                         sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"

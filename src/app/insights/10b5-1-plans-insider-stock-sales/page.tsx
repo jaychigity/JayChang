@@ -37,7 +37,7 @@ export default function TenB5OnePlans() {
               10b5-1 Plans: How Corporate Insiders Can Sell Stock Legally During Blackout Periods
             </h1>
             <p className="text-xl text-gray-700 mb-8">
-              SEC Rule 10b5-1 allows you to diversify your company stock systematically and legally—even during trading blackouts. Here&apos;s what changed in 2023 and how to use it.
+              SEC Rule 10b5-1 allows you to diversify your company stock systematically and legally, even during trading blackouts. Here&apos;s what changed in 2023 and how to use it.
             </p>
             <p className="text-gray-600">Published March 18, 2026</p>
           </div>

@@ -430,8 +430,8 @@ export default function RMDCalculator() {
               )}
               <p className="font-sans text-[12px] text-[#94A3B8] mt-1">
                 {useJointTable
-                  ? 'Using the Joint & Last Survivor Table (Table II) — this produces smaller RMDs.'
-                  : 'Using the Uniform Lifetime Table (Table III) — standard for most IRA owners.'}
+                  ? 'Using the Joint & Last Survivor Table (Table II), this produces smaller RMDs.'
+                  : 'Using the Uniform Lifetime Table (Table III), standard for most IRA owners.'}
               </p>
             </div>
 
@@ -490,7 +490,7 @@ export default function RMDCalculator() {
                 }}
               />
               <p className="font-sans text-[12px] text-[#94A3B8] mt-1">
-                Social Security, pensions, part-time work — before IRA distributions
+                Social Security, pensions, part-time work, before IRA distributions
               </p>
             </div>
 
@@ -795,7 +795,7 @@ export default function RMDCalculator() {
         <div className="space-y-4 font-sans text-[13px] text-[#5b6a71] leading-relaxed">
           <div>
             <h4 className="font-semibold text-[#333] text-[14px] mb-1">When Do RMDs Start?</h4>
-            <p>Under SECURE 2.0, your RMD starting age depends on when you were born. Born 1950 or earlier: age 72. Born 1951-1959: age 73. Born 1960 or later: age 75. Your first RMD is due by April 1 of the year after you reach your starting age — but every subsequent RMD is due by December 31.</p>
+            <p>Under SECURE 2.0, your RMD starting age depends on when you were born. Born 1950 or earlier: age 72. Born 1951-1959: age 73. Born 1960 or later: age 75. Your first RMD is due by April 1 of the year after you reach your starting age, but every subsequent RMD is due by December 31.</p>
           </div>
           <div>
             <h4 className="font-semibold text-[#333] text-[14px] mb-1">How Is the RMD Calculated?</h4>
@@ -803,11 +803,11 @@ export default function RMDCalculator() {
           </div>
           <div>
             <h4 className="font-semibold text-[#333] text-[14px] mb-1">Multiple IRAs?</h4>
-            <p>If you own multiple Traditional IRAs, you must calculate the RMD for each one separately using each account&apos;s December 31 balance. However, you can take the total combined RMD from any one or more of your IRAs — you don&apos;t have to withdraw from each one individually.</p>
+            <p>If you own multiple Traditional IRAs, you must calculate the RMD for each one separately using each account&apos;s December 31 balance. However, you can take the total combined RMD from any one or more of your IRAs. You don&apos;t have to withdraw from each one individually.</p>
           </div>
           <div>
             <h4 className="font-semibold text-[#333] text-[14px] mb-1">Qualified Charitable Distributions (QCDs)</h4>
-            <p>If you&apos;re 70½ or older, you can direct up to $108,000 (2026, indexed annually) from your IRA directly to a qualified charity. QCDs count toward satisfying your RMD but are excluded from taxable income — a powerful strategy for reducing your tax bracket and avoiding IRMAA surcharges.</p>
+            <p>If you&apos;re 70½ or older, you can direct up to $108,000 (2026, indexed annually) from your IRA directly to a qualified charity. QCDs count toward satisfying your RMD but are excluded from taxable income: a powerful strategy for reducing your tax bracket and avoiding IRMAA surcharges.</p>
           </div>
           <div>
             <h4 className="font-semibold text-[#333] text-[14px] mb-1">What If You Miss an RMD?</h4>
@@ -815,11 +815,11 @@ export default function RMDCalculator() {
           </div>
           <div>
             <h4 className="font-semibold text-[#333] text-[14px] mb-1">Roth IRAs and RMDs</h4>
-            <p>Original Roth IRA owners are never subject to RMDs during their lifetime. Roth 401(k) accounts were previously subject to RMDs, but starting in 2024, SECURE 2.0 eliminated that requirement. Inherited Roth IRAs are still subject to distribution rules — see our Inherited IRA Calculator for details.</p>
+            <p>Original Roth IRA owners are never subject to RMDs during their lifetime. Roth 401(k) accounts were previously subject to RMDs, but starting in 2024, SECURE 2.0 eliminated that requirement. Inherited Roth IRAs are still subject to distribution rules. See our Inherited IRA Calculator for details.</p>
           </div>
           <div>
             <h4 className="font-semibold text-[#333] text-[14px] mb-1">IRMAA and Your RMD</h4>
-            <p>Medicare Part B and Part D premiums increase when your Modified Adjusted Gross Income exceeds certain thresholds. Your RMD counts as income for IRMAA purposes. Planning your distributions — and using QCDs — can help you stay below IRMAA thresholds and avoid paying hundreds or thousands more per year in Medicare premiums.</p>
+            <p>Medicare Part B and Part D premiums increase when your Modified Adjusted Gross Income exceeds certain thresholds. Your RMD counts as income for IRMAA purposes. Planning your distributions, and using QCDs, can help you stay below IRMAA thresholds and avoid paying hundreds or thousands more per year in Medicare premiums.</p>
           </div>
         </div>
       </div>

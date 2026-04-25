@@ -5,7 +5,7 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
  title: 'How Working With Jay Chang Actually Works | Our Wealth Management Process',
- description: 'See how Jay Chang and our team at Farther walk you through every step — from a simple intro call to an ongoing partnership that grows with you.',
+ description: 'See how Jay Chang and our team at Farther walk you through every step, from a simple intro call to an ongoing partnership that grows with you.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/process',
  },
@@ -16,14 +16,14 @@ const steps = [
  number: 1,
  headline: 'A Conversation, Not a Sales Pitch',
  title: 'Discovery Call',
- body: '30-45 minutes, just you and Jay. I\'ll talk about where you are right now — your compensation, your accounts, what keeps you up at night. No slide decks. If I can give you one useful idea whether or not you become a client, that\'s a win in our book.',
+ body: '30-45 minutes, just you and Jay. I\'ll talk about where you are right now: your compensation, your accounts, what keeps you up at night. No slide decks. If I can give you one useful idea whether or not you become a client, that\'s a win in our book.',
  cta: 'Schedule Your Discovery Call',
  },
  {
  number: 2,
  headline: 'We Handle the Boring Stuff So You Don\'t Have To',
  title: 'Onboarding & Data Gathering',
- body: 'Our Farther Concierge Team takes the wheel. We\'ll ask for the basics: recent pay stubs, equity plan statements, a couple years of tax returns, 401(k) and deferred comp details, current investment statements, and your benefits summary. Everything uploads through a secure portal — simple and painless.',
+ body: 'Our Farther Concierge Team takes the wheel. We\'ll ask for the basics: recent pay stubs, equity plan statements, a couple years of tax returns, 401(k) and deferred comp details, current investment statements, and your benefits summary. Everything uploads through a secure portal, simple and painless.',
  },
  {
  number: 3,
@@ -33,7 +33,7 @@ const steps = [
  },
  {
  number: 4,
- headline: 'From "Let\'s Do This" to Done — Without the Paperwork Headache',
+ headline: 'From "Let\'s Do This" to Done: Without the Paperwork Headache',
  title: 'Implementation',
  body: 'Our Farther Concierge Team handles the heavy lifting: account transfers, investment purchases, beneficiary updates, and coordinating with your employer benefits. Most clients are fully up and running in days, not weeks.',
  },
@@ -41,7 +41,7 @@ const steps = [
  number: 5,
  headline: 'Your Life Changes. Your Plan Should Too.',
  title: 'Ongoing Optimization',
- body: 'We check in quarterly to stay on top of equity vesting, tax positioning, and how your portfolio is doing. We reach out before the big moments — open enrollment, RSU vests, year-end deadlines — so nothing slips through the cracks. Annual plan review, plus you can call or text whenever life throws you a curveball. Our goal: be the first call you make when a financial question comes up.',
+ body: 'We check in quarterly to stay on top of equity vesting, tax positioning, and how your portfolio is doing. We reach out before the big moments, like open enrollment, RSU vests, and year-end deadlines, so nothing slips through the cracks. Annual plan review, plus you can call or text whenever life throws you a curveball. Our goal: be the first call you make when a financial question comes up.',
  },
 ];
 
@@ -54,14 +54,14 @@ export default function ProcessPage() {
     __html: JSON.stringify({
       "@context": "https://schema.org",
       "@type": "HowTo",
-      "name": "How to Work With Jay Chang — 5-Step Wealth Planning Process",
+      "name": "How to Work With Jay Chang: 5-Step Wealth Planning Process",
       "description": "From a simple intro call to an ongoing partnership. Here is how Jay Chang and the team at Farther walk you through every step.",
       "step": [
         {
           "@type": "HowToStep",
           "position": 1,
           "name": "Discovery Call",
-          "text": "A 30-45 minute conversation with Jay about where you are right now — your compensation, your accounts, and what keeps you up at night. No slide decks."
+          "text": "A 30-45 minute conversation with Jay about where you are right now: your compensation, your accounts, and what keeps you up at night. No slide decks."
         },
         {
           "@type": "HowToStep",

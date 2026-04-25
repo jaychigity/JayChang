@@ -60,24 +60,24 @@ export default function JayChangPage() {
    I help individuals and families navigate their financial lives with clarity and confidence. My focus is on retirement income planning, investment strategy, tax planning, estate planning, and long-term wealth building.
    </p>
    <p>
-   Over the past 13+ years, I&apos;ve had the opportunity to work with professionals, families, and business owners across many different stages of life — largely through introductions and referrals. Today, that work has grown to serving clients nationwide.
+   Over the past 13+ years, I&apos;ve had the opportunity to work with professionals, families, and business owners across many different stages of life, largely through introductions and referrals. Today, that work has grown to serving clients nationwide.
    </p>
    <hr className="border-[#C5C0B8] my-6" />
    <p>
-   My background includes formative years at Vanguard and Charles Schwab, where I worked with clients over many years — often across decades. That experience shaped how I approach this work today.
+   My background includes formative years at Vanguard and Charles Schwab, where I worked with clients over many years, often across decades. That experience shaped how I approach this work today.
    </p>
    <p>
-   I believe the best planning starts with understanding you — your values, your priorities, and where you want to go. My role is to help you prepare proactively, so you can move through life&apos;s transitions with clarity and confidence.
+   I believe the best planning starts with understanding you: your values, your priorities, and where you want to go. My role is to help you prepare proactively, so you can move through life&apos;s transitions with clarity and confidence.
    </p>
    <p>
    I work with entire families, not just one decision-maker. That often means coordinating investment strategy, retirement planning, and trust and estate planning into one cohesive plan.
    </p>
    <hr className="border-[#C5C0B8] my-6" />
    <p>
-   In many cases, I&apos;m initially brought in by one spouse or partner. From there, the focus expands to making sure both individuals — and often the broader family — are aligned, informed, and confident, without surprises along the way.
+   In many cases, I&apos;m initially brought in by one spouse or partner. From there, the focus expands to making sure both individuals, and often the broader family, are aligned, informed, and confident, without surprises along the way.
    </p>
    <p>
-   To support that level of coordination, I&apos;ve built a robust team and network around me — so you&apos;re not relying on one perspective, but a coordinated approach that brings together investment, tax, and estate expertise under one strategy.
+   To support that level of coordination, I&apos;ve built a robust team and network around me, so you&apos;re not relying on one perspective, but a coordinated approach that brings together investment, tax, and estate expertise under one strategy.
    </p>
    <hr className="border-[#C5C0B8] my-6" />
    <p>
@@ -101,7 +101,7 @@ export default function JayChangPage() {
    My wife is an accomplished potter, and together we share a deep appreciation for craftsmanship and creativity. At home, life is full with our two children, two dogs, a leopard gecko, and a Mexican black kingsnake.
    </p>
    <p>
-   I&apos;m passionate about food — I live to eat, not eat to live — and I&apos;m always seeking experiences that bring perspective to both life and work.
+   I&apos;m passionate about food, I live to eat, not eat to live, and I&apos;m always seeking experiences that bring perspective to both life and work.
    </p>
    </div>
    </div>

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
  title:
  'Roth IRA Conversion Calculator | Advisor Jay',
  description:
- 'Free Roth conversion calculator. Compare the after-tax value of converting a Traditional IRA to Roth — see the upfront tax cost, net benefit, break-even rate, and projected growth.',
+ 'Free Roth conversion calculator. Compare the after-tax value of converting a Traditional IRA to Roth, and see the upfront tax cost, net benefit, break-even rate, and projected growth.',
  alternates: {
  canonical: 'https://www.PWM-Farther.com/tools/roth-conversion-calculator',
  },
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
  title:
  'Roth IRA Conversion Calculator | Does Converting Make Sense For You?',
  description:
- 'Free Roth conversion calculator — model the tax cost, projected growth, break-even rate, and net benefit of converting a Traditional IRA to Roth. Instant results.',
+ 'Free Roth conversion calculator. Model the tax cost, projected growth, break-even rate, and net benefit of converting a Traditional IRA to Roth. Instant results.',
  url: 'https://www.PWM-Farther.com/tools/roth-conversion-calculator',
  },
 }
@@ -37,7 +37,7 @@ export default function RothConversionPage() {
   Does converting to a Roth IRA make sense for you? Compare the long-term after-tax impact of converting versus keeping your Traditional IRA.
   </p>
   <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[640px] mx-auto leading-relaxed">
-  Roth conversions are one of the most impactful tax strategies I recommend — this calculator helps you see why.
+  Roth conversions are one of the most impactful tax strategies I recommend, and this calculator helps you see why.
   </p>
   <p
   className="font-sans"

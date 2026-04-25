@@ -46,7 +46,7 @@ function PlanSelectorPanel({ onSelectTab }: { onSelectTab: (t: Tab) => void }) {
             tab: 'finalPay',
             label: 'Final Pay Pension',
             description:
-              'Employees hired before January 1, 2013 are typically in the Final Pay plan — a traditional defined benefit formula based on your years of service and final pay. If you made an irrevocable election in 2013 to switch to Cash Balance, use the Cash Balance tab instead. You can verify your plan at mypgebenefits.com or by calling 1-800-700-0057.',
+              'Employees hired before January 1, 2013 are typically in the Final Pay plan: a traditional defined benefit formula based on your years of service and final pay. If you made an irrevocable election in 2013 to switch to Cash Balance, use the Cash Balance tab instead. You can verify your plan at mypgebenefits.com or by calling 1-800-700-0057.',
           }
         : {
             tab: 'cashBalance',
@@ -132,7 +132,7 @@ function PlanSelectorPanel({ onSelectTab }: { onSelectTab: (t: Tab) => void }) {
           onClick={() => { setEmpType('unsure'); setHireEra('unsure') }}
           className="font-sans text-[13px] text-[#1d7682] underline hover:opacity-70"
         >
-          Skip — use Cash Balance as default →
+          Skip: use Cash Balance as default →
         </button>
       )}
 
@@ -191,7 +191,7 @@ function FinalPayCalculator() {
       <div className={noteBoxCls}>
         <p className="font-sans text-[13px] text-[#5b6a71] leading-relaxed">
           <strong className="text-[#333333]">Important:</strong> PG&amp;E does not publicly disclose the exact pension multiplier.
-          This calculator uses an estimated default of 1.6% per year of service — typical for large utility DB plans.{' '}
+          This calculator uses an estimated default of 1.6% per year of service, typical for large utility DB plans.{' '}
           <strong className="text-[#333333]">Verify your actual rate</strong> by reviewing your Benefits Statement at{' '}
           <span className="text-[#1d7682]">mypgebenefits.com</span> or calling PG&amp;E&apos;s pension center at{' '}
           <span className="text-[#1d7682]">1-800-700-0057</span>.
@@ -223,7 +223,7 @@ function FinalPayCalculator() {
               onChange={e => setMultiplier(parseFloat(e.target.value) || 1.6)}
               className={inputCls}
             />
-            <p className="font-sans text-[11px] text-[#5b6a71] mt-1">Default 1.6% — adjust once you confirm your actual rate</p>
+            <p className="font-sans text-[11px] text-[#5b6a71] mt-1">Default 1.6%, adjust once you confirm your actual rate</p>
           </div>
           <div>
             <label className={labelCls}>Years of Credited Service</label>
@@ -436,7 +436,7 @@ function CashBalanceCalculator() {
               onChange={e => setRetirementAge(parseInt(e.target.value) || 62)} className={inputCls} />
           </div>
           <div>
-            <label className={labelCls}>Interest Credit Rate (%) — 30-yr Treasury estimate</label>
+            <label className={labelCls}>Interest Credit Rate (%), 30-yr Treasury estimate</label>
             <input type="number" value={interestRate} min={1} max={10} step={0.25}
               onChange={e => setInterestRate(parseFloat(e.target.value) || 4.5)} className={inputCls} />
           </div>
@@ -559,7 +559,7 @@ function EarlyRetirementCalculator() {
       <div className={noteBoxCls}>
         <p className="font-sans text-[13px] text-[#5b6a71] leading-relaxed">
           PG&amp;E&apos;s minimum early retirement age is <strong className="text-[#333333]">55</strong>.
-          The reduction for retiring before age 62 phases down linearly — reaching 0% at age 62 or when you complete{' '}
+          The reduction for retiring before age 62 phases down linearly, reaching 0% at age 62 or when you complete{' '}
           <strong className="text-[#333333]">30 years of credited service</strong>, whichever comes first.
         </p>
       </div>
@@ -647,7 +647,7 @@ function EarlyRetirementCalculator() {
         </div>
         <p className="font-sans text-[11px] text-[#5b6a71] mt-2">
           {pensionType === 'cashBalance'
-            ? 'Cash Balance accounts continue earning pay and interest credits even if you leave — so retiring early costs you less than with Final Pay.'
+            ? 'Cash Balance accounts continue earning pay and interest credits even if you leave, so retiring early costs you less than with Final Pay.'
             : 'Final Pay accruals stop when you leave. Retiring early both reduces your years of service and applies the early retirement factor.'}
         </p>
       </div>
@@ -789,7 +789,7 @@ function RMSAEstimator() {
           <p>• Annual contributions increase once you reach <strong className="text-[#333333]">20 years of service</strong>.</p>
           <p>• The account earns interest while you work (estimated at ~8%).</p>
           <p>• You can access it at retirement at age 55+ with 10+ years of service.</p>
-          <p>• It can only be used for <strong className="text-[#333333]">PG&amp;E-sponsored retiree medical premiums</strong> — not out-of-pocket costs or non-PG&amp;E coverage.</p>
+          <p>• It can only be used for <strong className="text-[#333333]">PG&amp;E-sponsored retiree medical premiums</strong>, not out-of-pocket costs or non-PG&amp;E coverage.</p>
           <p>• Once depleted, it&apos;s gone. There&apos;s no way to add more.</p>
         </div>
       </div>
@@ -923,7 +923,7 @@ function Match401kCalculator() {
         </p>
         <p className="font-sans text-[13px] text-[#5b6a71] leading-relaxed">
           After-tax spillover contributions may also be eligible for rollout to a Roth IRA under the{' '}
-          <strong className="text-[#333333]">mega backdoor Roth strategy</strong> — one of the most powerful but underused
+          <strong className="text-[#333333]">mega backdoor Roth strategy</strong>, one of the most powerful but underused
           savings tools available to PG&amp;E employees.
         </p>
       </div>
@@ -978,7 +978,7 @@ export default function PGEPensionCalculator() {
       <div className="mt-10">
         <CalculatorDisclaimer
           toolName="PG&E pension and benefits"
-          additionalContext="The Final Pay pension multiplier is not publicly disclosed by PG&E. This calculator defaults to an estimated 1.6% per year of service — verify your actual rate at mypgebenefits.com or by calling 1-800-700-0057. RMSA contribution amounts and crediting rates are estimated from publicly available sources; actual plan terms may differ."
+          additionalContext="The Final Pay pension multiplier is not publicly disclosed by PG&E. This calculator defaults to an estimated 1.6% per year of service. Verify your actual rate at mypgebenefits.com or by calling 1-800-700-0057. RMSA contribution amounts and crediting rates are estimated from publicly available sources; actual plan terms may differ."
         />
       </div>
     </div>

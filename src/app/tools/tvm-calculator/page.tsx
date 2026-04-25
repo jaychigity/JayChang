@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title:
       'What Your Money Becomes | Time Value of Money Calculator',
     description:
-      'Free investment growth calculator — visualize compound growth on your portfolio. Enter your starting investment, monthly contributions, and style to see projected future value with charts.',
+      'Free investment growth calculator. Visualize compound growth on your portfolio. Enter your starting investment, monthly contributions, and style to see projected future value with charts.',
     url: 'https://www.PWM-Farther.com/tools/tvm-calculator',
   },
 }

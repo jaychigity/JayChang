@@ -39,7 +39,7 @@ function getRecommendation(employeeType: EmployeeType, hireEra: HireEra): PlanRe
     planName: 'Cash Balance (default)',
     tabId: 'cashBalance',
     description:
-      "Cash Balance is the most common AT&T pension plan. We'll start here — it works as a reasonable estimate while you confirm your specific plan with NetBenefits.",
+      "Cash Balance is the most common AT&T pension plan. We'll start here. It works as a reasonable estimate while you confirm your specific plan with NetBenefits.",
     confidence: 'low',
   }
 
@@ -63,7 +63,7 @@ function getRecommendation(employeeType: EmployeeType, hireEra: HireEra): PlanRe
         planName: 'Bargained Cash Balance #1 (BCB1)',
         tabId: 'cashBalance',
         description:
-          "BCB1 uses pay credits + interest credits. We'll use the Cash Balance tab — your interest credit rate follows the 30-year Treasury floor.",
+          "BCB1 uses pay credits + interest credits. We'll use the Cash Balance tab. Your interest credit rate follows the 30-year Treasury floor.",
         confidence: 'high',
       }
     }
@@ -71,7 +71,7 @@ function getRecommendation(employeeType: EmployeeType, hireEra: HireEra): PlanRe
       planName: 'Bargained Cash Balance #2 (BCB2)',
       tabId: 'cashBalance',
       description:
-        "BCB2 (post-2014 union hires) uses a fixed interest credit rate. We'll use the Cash Balance tab — make sure to check the BCB2 box on the form.",
+        "BCB2 (post-2014 union hires) uses a fixed interest credit rate. We'll use the Cash Balance tab. Make sure to check the BCB2 box on the form.",
       confidence: 'high',
     }
   }
@@ -82,7 +82,7 @@ function getRecommendation(employeeType: EmployeeType, hireEra: HireEra): PlanRe
       planName: 'Modified Cash Balance (MCB) + Frozen Account',
       tabId: 'cashBalance',
       description:
-        "Pre-2002 management has a frozen MCB account plus the post-2002 Cash Balance program. Check both — and look up your Modified Rule of 75 status in the Early Retirement tab.",
+        "Pre-2002 management has a frozen MCB account plus the post-2002 Cash Balance program. Check both, and look up your Modified Rule of 75 status in the Early Retirement tab.",
       confidence: 'high',
     }
   }

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
  title:
  'Income Annuity Estimator | How Much Monthly Income Could You Generate?',
  description:
- 'Free income annuity calculator — enter your savings and see estimated guaranteed monthly income from an immediate annuity. Compare payout options instantly.',
+ 'Free income annuity calculator. Enter your savings and see estimated guaranteed monthly income from an immediate annuity. Compare payout options instantly.',
  url: 'https://www.PWM-Farther.com/tools/income-annuity',
  },
 }

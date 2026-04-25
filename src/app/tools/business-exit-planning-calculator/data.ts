@@ -43,7 +43,7 @@ export const questions: QuizQuestion[] = [
       'Owners who depend entirely on sale proceeds often accept suboptimal deals under pressure.',
     options: [
       {
-        label: "No — I haven't thought about post-exit finances",
+        label: "No, I haven't thought about post-exit finances",
         points: 2,
       },
       { label: 'I have a rough idea but nothing formal', points: 4 },
@@ -111,7 +111,7 @@ export const questions: QuizQuestion[] = [
       },
       {
         label:
-          'I can step away for a month — my team handles operations',
+          'I can step away for a month, my team handles operations',
         points: 8,
       },
       {
@@ -301,7 +301,7 @@ export const questions: QuizQuestion[] = [
       'Buyers acquire teams, not just businesses. A strong bench signals lower transition risk.',
     options: [
       {
-        label: 'There is no real management team — it\'s mostly me',
+        label: 'There is no real management team, it\'s mostly me',
         points: 2,
       },
       {
@@ -339,7 +339,7 @@ export function getTier(total: number): TierInfo {
     return {
       label: 'Exit Ready',
       color: '#10B981',
-      headline: "You're Well Positioned — Let's Optimize",
+      headline: "You're Well Positioned. Let's Optimize",
       subtext:
         'Your business shows strong exit readiness. A targeted strategy could maximize your proceeds and minimize tax exposure.',
     }
@@ -347,7 +347,7 @@ export function getTier(total: number): TierInfo {
     return {
       label: 'Approaching Ready',
       color: '#3B82F6',
-      headline: 'Solid Foundation — Key Gaps to Address',
+      headline: 'Solid Foundation: Key Gaps to Address',
       subtext:
         "You've made progress, but specific areas need attention to protect your valuation and timeline.",
     }
@@ -357,7 +357,7 @@ export function getTier(total: number): TierInfo {
       color: '#F59E0B',
       headline: 'Significant Gaps Could Cost You',
       subtext:
-        'Without addressing these readiness gaps, you risk leaving substantial value on the table — or delaying your exit.',
+        'Without addressing these readiness gaps, you risk leaving substantial value on the table, or delaying your exit.',
     }
   return {
     label: 'Early Stage',
@@ -389,7 +389,7 @@ export const categoryTeasers: Record<string, string> = {
     "High owner dependency or unclear buyer targets may reduce your business's transferable value.",
   tax: 'Without proactive tax planning, you could lose 20–40% of your sale proceeds to avoidable taxes.',
   succession:
-    'Buyers see weak succession plans as transition risk — this can significantly discount your price.',
+    'Buyers see weak succession plans as transition risk, which can significantly discount your price.',
 }
 
 export const recommendations: Record<
@@ -408,7 +408,7 @@ export const recommendations: Record<
       'Benchmark revenue growth against industry comps to strengthen your negotiating position.',
     ],
     C: [
-      'Revenue volatility or stagnation will suppress multiples — prioritize growth initiatives.',
+      'Revenue volatility or stagnation will suppress multiples. Prioritize growth initiatives.',
       'Build a personal financial plan independent of sale proceeds.',
       'Get a professional valuation to establish a realistic baseline.',
     ],
@@ -430,12 +430,12 @@ export const recommendations: Record<
       'Document all key processes and customer relationship management protocols.',
     ],
     C: [
-      'Owner dependency is a significant value destroyer — begin delegating critical functions immediately.',
+      'Owner dependency is a significant value destroyer. Begin delegating critical functions immediately.',
       'Map out 3–5 categories of likely buyers and research recent comparable transactions.',
       'Reduce customer concentration risk (no single client > 15% of revenue).',
     ],
     D: [
-      'Your business appears heavily owner-dependent — this is the #1 barrier to a successful exit.',
+      'Your business appears heavily owner-dependent. This is the #1 barrier to a successful exit.',
       'Hire or promote at least one senior operator who can run day-to-day without you.',
       'Start by identifying whether your exit is most likely internal (management buyout), strategic (competitor/partner), or financial (PE/investor).',
     ],
@@ -447,13 +447,13 @@ export const recommendations: Record<
       'Confirm estate plan integration captures the latest tax law provisions.',
     ],
     B: [
-      'Begin entity structure review now — restructuring for tax efficiency can take 1–3 years.',
+      'Begin entity structure review now, as restructuring for tax efficiency can take 1–3 years.',
       'Explore Qualified Small Business Stock (QSBS) exclusion if applicable.',
       'Model 3+ deal structures (asset sale, stock sale, installment) to compare after-tax proceeds.',
     ],
     C: [
       'You may be leaving 20–40% of proceeds on the table without proactive tax planning.',
-      'Engage a tax attorney or CPA with M&A exit experience — general practitioners often miss exit-specific strategies.',
+      'Engage a tax attorney or CPA with M&A exit experience, as general practitioners often miss exit-specific strategies.',
       'Review state residency implications; some founders save millions by planning relocation timing.',
     ],
     D: [
@@ -474,12 +474,12 @@ export const recommendations: Record<
       'Identify and address any single-point-of-failure roles on your team.',
     ],
     C: [
-      'A written succession plan is table stakes for serious buyers — prioritize documentation.',
+      'A written succession plan is table stakes for serious buyers. Prioritize documentation.',
       'Begin cross-training team members to eliminate key-person risk.',
       'Consider engaging an executive coach or interim COO to accelerate team readiness.',
     ],
     D: [
-      'Without a succession plan, your business has a significant vulnerability — to both planned exits and unexpected events.',
+      'Without a succession plan, your business has a significant vulnerability to both planned exits and unexpected events.',
       'Immediately identify 1–2 internal candidates or begin an external search for successor-caliber talent.',
       'Document every process, relationship, and institutional knowledge that currently lives only in your head.',
     ],
@@ -499,19 +499,19 @@ export const categoryMeanings: Record<
   operational: {
     A: 'Your business demonstrates strong operational independence and buyer awareness. This positions you well for a premium valuation and smooth transition.',
     B: 'Operations are solid but there\'s room to reduce owner dependency and sharpen your buyer strategy. These improvements can meaningfully increase your exit price.',
-    C: 'Operational gaps — particularly owner dependency — could significantly reduce what buyers are willing to pay. Addressing these now protects your valuation.',
+    C: 'Operational gaps, particularly owner dependency, could significantly reduce what buyers are willing to pay. Addressing these now protects your valuation.',
     D: 'High owner dependency and limited buyer identification are critical risks. These are often the most value-destructive gaps in an exit process.',
   },
   tax: {
     A: 'Your tax and estate planning is well integrated with your exit strategy. Continue monitoring for legislative changes that could affect your timeline.',
     B: 'You\'ve made progress on tax planning but there are optimization opportunities remaining. Entity structure and estate integration deserve focused attention.',
     C: 'Without more proactive tax planning, you could lose a significant portion of your sale proceeds to avoidable taxes. Time is your most valuable asset here.',
-    D: 'Tax planning is a critical gap. Entity structure, pre-exit strategies, and estate integration all need immediate attention — many strategies require years to implement.',
+    D: 'Tax planning is a critical gap. Entity structure, pre-exit strategies, and estate integration all need immediate attention, as many strategies require years to implement.',
   },
   succession: {
     A: 'Your succession planning is strong. A clear plan and capable leadership team signal low transition risk to buyers, supporting a premium valuation.',
     B: 'You have succession foundations in place but formalization and team development will strengthen buyer confidence and reduce transition risk.',
-    C: 'Succession gaps create real risk — both for your planned exit and for unexpected events. Documentation and team development should be immediate priorities.',
+    C: 'Succession gaps create real risk, both for your planned exit and for unexpected events. Documentation and team development should be immediate priorities.',
     D: 'The absence of a succession plan is a significant vulnerability. Buyers will see this as high transition risk, which directly impacts the price they\'re willing to pay.',
   },
 }

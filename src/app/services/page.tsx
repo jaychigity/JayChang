@@ -16,12 +16,12 @@ import {
 export const metadata: Metadata = {
  title: 'How We Help You With Money, Taxes & Retirement | Jay Chang, Farther',
  description:
-  'We help engineers, doctors, and executives in Arizona figure out the big financial questions — how to handle stock options, lower your tax bill, plan for retirement, protect your family, and actually enjoy the money you work so hard for. Jay Chang and team at Farther.',
+  'We help engineers, doctors, and executives in Arizona figure out the big financial questions: how to handle stock options, lower your tax bill, plan for retirement, protect your family, and actually enjoy the money you work so hard for. Jay Chang and team at Farther.',
  alternates: { canonical: 'https://www.PWM-Farther.com/services' },
  openGraph: {
   title: 'How We Help You With Money, Taxes & Retirement | Jay Chang, Farther',
   description:
-   'We help engineers, doctors, and executives in Arizona figure out the big financial questions — how to handle stock options, lower your tax bill, plan for retirement, protect your family, and actually enjoy the money you work so hard for. Jay Chang and team at Farther.',
+   'We help engineers, doctors, and executives in Arizona figure out the big financial questions, including how to handle stock options, lower your tax bill, plan for retirement, protect your family, and actually enjoy the money you work so hard for. Jay Chang and team at Farther.',
   url: 'https://www.PWM-Farther.com/services',
  },
 }
@@ -31,7 +31,7 @@ const services = [
   icon: BarChart3,
   title: 'Equity Compensation Planning',
   headline: 'Making Sense of Your RSUs, Stock Options & Company Stock',
-  body: 'Got RSUs vesting, stock options you\'re not sure when to exercise, or a deferred comp plan you barely understand? We map out your full vesting schedule, model the real after-tax numbers, and help you decide what to sell, hold, or diversify — so you\'re not just guessing.',
+  body: 'Got RSUs vesting, stock options you\'re not sure when to exercise, or a deferred comp plan you barely understand? We map out your full vesting schedule, model the real after-tax numbers, and help you decide what to sell, hold, or diversify. No more guessing.',
  },
  {
   icon: TrendingUp,
@@ -49,7 +49,7 @@ const services = [
   icon: Clock,
   title: 'Retirement Income Planning',
   headline: 'Will I Actually Have Enough? (Let\'s Find Out Together)',
-  body: 'Pension vs. lump sum? When to take Social Security? How to cover healthcare before Medicare kicks in? I work through all of it with you — account sequencing, RMD planning, income flooring — so you can retire with confidence, not anxiety.',
+  body: 'Pension vs. lump sum? When to take Social Security? How to cover healthcare before Medicare kicks in? I work through all of it with you: account sequencing, RMD planning, income flooring, so you can retire with confidence, not anxiety.',
  },
  {
   icon: Shield,
@@ -61,13 +61,13 @@ const services = [
   icon: ScrollText,
   title: 'Estate & Legacy Planning',
   headline: 'Making Sure Your Family Is Taken Care Of',
-  body: 'Nobody likes thinking about this stuff, but it matters. We\'ll help you get your beneficiary designations right, review your wills, trusts, and powers of attorney, plan for estate taxes, and make sure your wishes — including charitable goals — are clearly set up.',
+  body: 'Nobody likes thinking about this stuff, but it matters. We\'ll help you get your beneficiary designations right, review your wills, trusts, and powers of attorney, plan for estate taxes, and make sure your wishes, including charitable goals, are clearly set up.',
  },
  {
   icon: RefreshCw,
   title: 'Planning for Life\'s Big Changes',
   headline: 'New Job, Big Move, Marriage, or Windfall? We\'ve Got You.',
-  body: 'Life doesn\'t wait for a convenient time. Whether you\'re changing jobs with unvested equity, moving from California to Arizona, dealing with a sudden income spike, or navigating a divorce — we\'ll help you make smart decisions when the stakes are high.',
+  body: 'Life doesn\'t wait for a convenient time. Whether you\'re changing jobs with unvested equity, moving from California to Arizona, dealing with a sudden income spike, or navigating a divorce, we\'ll help you make smart decisions when the stakes are high.',
  },
 ]
 
@@ -116,7 +116,7 @@ export default function ServicesPage() {
         Here&apos;s What We Do Together
        </h1>
        <p className="font-sans text-[17px] text-[#F7F4EE]/90 max-w-[680px] leading-relaxed">
-        You&apos;ve got a busy career and a complicated financial picture. I'm here to help you make sense of all of it — one conversation at a time.
+        You&apos;ve got a busy career and a complicated financial picture. I'm here to help you make sense of all of it, one conversation at a time.
        </p>
       </div>
      </AnimateOnScroll>
@@ -132,7 +132,7 @@ export default function ServicesPage() {
        Real Help for Real Financial Questions
       </h2>
       <p className="font-sans text-[17px] text-[#5b6a71] max-w-[680px] leading-relaxed">
-       From &ldquo;how do I handle these stock options?&rdquo; to &ldquo;how do I plan for my family&apos;s future?&rdquo; — we sit on the same side of the table and work through it with you.
+       From &ldquo;how do I handle these stock options?&rdquo; to &ldquo;how do I plan for my family&apos;s future?&rdquo; We sit on the same side of the table and work through it with you.
       </p>
      </AnimateOnScroll>
 

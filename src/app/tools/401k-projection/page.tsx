@@ -4,7 +4,7 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 import FourOOneKProjectionCalculator from './FourOOneKProjectionCalculator'
 
 export const metadata: Metadata = {
-  title: '401(k) Projection Calculator — See What Your Savings Will Be Worth | Advisor Jay',
+  title: '401(k) Projection Calculator: See What Your Savings Will Be Worth | Advisor Jay',
   description:
     'Free 401(k) projection calculator. Enter your salary, contribution rate, and match formula to see year-by-year growth, total employer match captured, and whether you\'re leaving money on the table.',
   alternates: {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: '401(k) Projection Calculator | Advisor Jay',
     description:
-      'Free 401(k) projection calculator — see exactly what your balance will be at retirement with any employer match. Includes catch-up contributions, salary growth, and year-by-year projections.',
+      'Free 401(k) projection calculator. See exactly what your balance will be at retirement with any employer match. Includes catch-up contributions, salary growth, and year-by-year projections.',
     url: 'https://www.advisorjay.com/tools/401k-projection',
   },
 }
@@ -38,12 +38,12 @@ export default function FourOOneKProjectionPage() {
             401(k) Projection Calculator
           </h1>
           <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[640px] mx-auto leading-relaxed">
-            See what your 401(k) will actually be worth at retirement — with your employer&apos;s specific match
+            See what your 401(k) will actually be worth at retirement, with your employer&apos;s specific match
             structure, catch-up contributions, and year-by-year growth.
           </p>
           <p className="font-sans text-[14px] text-[#F7F4EE]/50 mt-3 max-w-[560px] mx-auto leading-relaxed">
             Works for any company. Enter your match formula and contribution rate to see if you&apos;re capturing
-            every dollar of employer match — and what the gap costs you over time.
+            every dollar of employer match, and what the gap costs you over time.
           </p>
           <p className="font-sans text-[13px] font-semibold text-[#F7F4EE] mt-3" style={{ letterSpacing: '0.05em' }}>
             No sign-up required · Instant results

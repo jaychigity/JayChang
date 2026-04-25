@@ -57,7 +57,7 @@ export default function CalculatorDisclaimer({
       <div className="flex items-start gap-3 mb-4">
         <Info className="w-5 h-5 mt-1 flex-shrink-0 text-[#1d7682]" aria-hidden="true" />
         <h3 className={`font-serif text-lg font-semibold ${headingClasses}`}>
-          This is an estimate — not a number to plan around alone.
+          This is an estimate, not a number to plan around alone.
         </h3>
       </div>
 
@@ -65,7 +65,7 @@ export default function CalculatorDisclaimer({
         <p>
           This calculator is an educational tool to help you think through scenarios.
           The results are illustrative estimates based on the inputs you provided and
-          general assumptions — they are <strong>not financial advice</strong>, and the
+          general assumptions. They are <strong>not financial advice</strong>, and the
           numbers shown should not be relied on as exact to your situation.
         </p>
 
@@ -83,7 +83,7 @@ export default function CalculatorDisclaimer({
         <p>
           Before making any decision based on these numbers, let&apos;s talk. I&apos;ll
           look at your full picture, pressure-test the assumptions, and help you
-          understand what these numbers actually mean for you — at no cost.
+          understand what these numbers actually mean for you, at no cost.
         </p>
       </div>
 
