@@ -17,6 +17,25 @@ export default function FCXExecutiveWealthPage() {
 
  return (
  <main className="w-full">
+ <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+  __html: JSON.stringify({
+   '@context': 'https://schema.org',
+   '@type': 'FinancialService',
+   name: 'Advisor Jay - Freeport-McMoRan Executive Wealth Planning',
+   description: 'Fiduciary wealth management for Freeport-McMoRan professionals in Phoenix. Commodity-linked equity, RSU diversification, profit sharing, and executive compensation planning.',
+   areaServed: ['Phoenix, Arizona', 'Scottsdale, Arizona'],
+   serviceType: ['Wealth Management', 'Executive Compensation Planning', 'Concentrated Stock Strategy'],
+   url: 'https://www.advisorjay.com/freeport-mcmoran-executive-wealth-planning-phoenix',
+   provider: {
+   '@type': 'Organization',
+   name: 'Farther',
+   url: 'https://www.advisorjay.com',
+   },
+  }),
+  }}
+ />
  {/* HERO SECTION */}
  <section className="relative w-full bg-gradient-to-b from-slate-900 to-slate-800 py-10 md:py-20 px-4 sm:px-6 lg:px-8">
   <Image

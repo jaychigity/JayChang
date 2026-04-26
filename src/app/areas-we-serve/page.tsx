@@ -14,6 +14,35 @@ export const metadata: Metadata = {
 export default function AreasWeServe() {
  return (
  <main>
+ <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+  __html: JSON.stringify({
+   '@context': 'https://schema.org',
+   '@type': 'FinancialService',
+   name: 'Advisor Jay - Areas Served',
+   description: 'Jay Chang serves high-income professionals and families across Phoenix, Chandler, Scottsdale, Tempe, Mesa, Tucson, the Bay Area, and Nevada. Fiduciary wealth management through Farther.',
+   url: 'https://www.advisorjay.com/areas-we-serve',
+   areaServed: [
+   { '@type': 'State', name: 'Arizona' },
+   { '@type': 'State', name: 'California' },
+   { '@type': 'State', name: 'Nevada' },
+   { '@type': 'City', name: 'Phoenix' },
+   { '@type': 'City', name: 'Chandler' },
+   { '@type': 'City', name: 'Scottsdale' },
+   { '@type': 'City', name: 'Tempe' },
+   { '@type': 'City', name: 'Mesa' },
+   { '@type': 'City', name: 'Tucson' },
+   { '@type': 'City', name: 'Las Vegas' },
+   ],
+   provider: {
+   '@type': 'Organization',
+   name: 'Farther',
+   url: 'https://www.advisorjay.com',
+   },
+  }),
+  }}
+ />
  {/* HERO SECTION */}
  <section className="bg-[#F7F4EE] py-10 md:py-20">
   <div className="max-w-4xl mx-auto px-6">

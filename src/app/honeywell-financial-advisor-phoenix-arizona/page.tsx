@@ -15,6 +15,25 @@ export const metadata: Metadata = {
 export default function HoneywellAdvisorPage() {
  return (
  <div className="w-full">
+ <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+  __html: JSON.stringify({
+   '@context': 'https://schema.org',
+   '@type': 'FinancialService',
+   name: 'Advisor Jay - Honeywell Employee Financial Planning',
+   description: 'Fiduciary wealth planning for Honeywell professionals in Phoenix, Arizona. 401(k) match concentration, RSU strategy, deferred comp coordination, and retirement income planning.',
+   areaServed: ['Phoenix, Arizona', 'Tempe, Arizona', 'Scottsdale, Arizona'],
+   serviceType: ['Wealth Management', 'Equity Compensation Planning', 'Retirement Planning'],
+   url: 'https://www.advisorjay.com/honeywell-financial-advisor-phoenix-arizona',
+   provider: {
+   '@type': 'Organization',
+   name: 'Farther',
+   url: 'https://www.advisorjay.com',
+   },
+  }),
+  }}
+ />
  {/* HERO SECTION */}
  <section className="relative bg-[#F7F4EE] py-10 md:py-20">
   <Image

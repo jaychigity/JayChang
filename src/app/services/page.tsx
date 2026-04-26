@@ -95,6 +95,29 @@ const testimonialsList = [
 export default function ServicesPage() {
  return (
   <>
+   <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+     __html: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: 'Wealth Management Services - Advisor Jay',
+      description: 'Equity compensation planning, investment management, income tax planning, retirement income planning, asset protection, estate and legacy planning, and life-transition planning for high-income professionals, business owners, and families.',
+      url: 'https://www.advisorjay.com/services',
+      provider: {
+       '@type': 'Organization',
+       name: 'Farther',
+       url: 'https://www.advisorjay.com',
+      },
+      hasPart: services.map((s) => ({
+       '@type': 'Service',
+       name: s.title,
+       description: s.body,
+       provider: { '@type': 'Organization', name: 'Farther' },
+      })),
+     }),
+    }}
+   />
    {/* ─── SECTION 1: HERO ─── */}
    <section className="relative bg-[#333333] pt-10 lg:pt-20 pb-16 lg:pb-20 px-4 sm:px-6 lg:px-8">
     <Image

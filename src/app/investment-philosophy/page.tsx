@@ -124,6 +124,32 @@ const outlookThemes = [
 export default function InvestmentPhilosophyPage() {
  return (
   <>
+   <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+     __html: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: 'Investment Philosophy - Advisor Jay',
+      description: 'A straightforward, tax-smart approach to growing and protecting wealth for families and business owners with $2M-$20M+ in investable assets. Direct indexing, tax-loss harvesting, asset location, and institutional-quality strategies through Farther Asset Management.',
+      url: 'https://www.advisorjay.com/investment-philosophy',
+      author: {
+       '@type': 'Person',
+       name: 'Jay Chang',
+       jobTitle: 'VP, Wealth Advisor',
+       worksFor: {
+        '@type': 'Organization',
+        name: 'Farther Finance Advisors LLC',
+       },
+      },
+      publisher: {
+       '@type': 'Organization',
+       name: 'Advisor Jay',
+       url: 'https://www.advisorjay.com',
+      },
+     }),
+    }}
+   />
    {/* ================================================================
     SECTION 1: HERO
     ================================================================ */}

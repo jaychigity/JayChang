@@ -14,6 +14,25 @@ export const metadata: Metadata = {
 export default function TechExecutivePage() {
  return (
  <div className="w-full">
+ <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+  __html: JSON.stringify({
+   '@context': 'https://schema.org',
+   '@type': 'FinancialService',
+   name: 'Advisor Jay - Tech Executive Wealth Management',
+   description: 'Fiduciary wealth management for NVIDIA, Apple, and tech executives. Seven-figure RSU concentration, ESPP optimization, quarterly vesting tax planning, and deferred compensation strategy.',
+   areaServed: ['Arizona', 'California', 'Silicon Valley, California'],
+   serviceType: ['Wealth Management', 'Executive Compensation Planning', 'Equity Compensation Planning'],
+   url: 'https://www.advisorjay.com/tech-executive-wealth-management',
+   provider: {
+   '@type': 'Organization',
+   name: 'Farther',
+   url: 'https://www.advisorjay.com',
+   },
+  }),
+  }}
+ />
  {/* HERO SECTION */}
  <section className="relative w-full bg-[#F7F4EE] py-10 md:py-20">
   <Image

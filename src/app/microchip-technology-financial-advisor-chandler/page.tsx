@@ -15,6 +15,25 @@ export const metadata: Metadata = {
 export default function MicrochipTechnologyAdvisor() {
  return (
  <div className="min-h-screen bg-white">
+ <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+  __html: JSON.stringify({
+   '@context': 'https://schema.org',
+   '@type': 'FinancialService',
+   name: 'Advisor Jay - Microchip Technology Financial Planning',
+   description: 'Fiduciary financial planning for Microchip Technology engineers and executives in Chandler. Quarterly RSU vesting, ESPP strategy, and concentration risk management for semiconductor professionals.',
+   areaServed: ['Chandler, Arizona', 'Tempe, Arizona', 'Phoenix, Arizona'],
+   serviceType: ['Wealth Management', 'Equity Compensation Planning', 'Retirement Planning'],
+   url: 'https://www.advisorjay.com/microchip-technology-financial-advisor-chandler',
+   provider: {
+   '@type': 'Organization',
+   name: 'Farther',
+   url: 'https://www.advisorjay.com',
+   },
+  }),
+  }}
+ />
  {/* HERO SECTION */}
  <section className="relative px-4 py-20 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
   <Image

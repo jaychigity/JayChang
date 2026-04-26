@@ -14,6 +14,25 @@ export const metadata: Metadata = {
 export default function AmkorTechnologyPage() {
  return (
  <div className="w-full">
+ <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+  __html: JSON.stringify({
+   '@context': 'https://schema.org',
+   '@type': 'FinancialService',
+   name: 'Advisor Jay - Amkor Technology Financial Planning',
+   description: 'Fiduciary wealth planning for Amkor Technology engineers and leaders in Tempe and Chandler. RSU planning, international relocation strategy, and equity compensation guidance.',
+   areaServed: ['Tempe, Arizona', 'Chandler, Arizona', 'Phoenix, Arizona'],
+   serviceType: ['Wealth Management', 'Equity Compensation Planning', 'Relocation Tax Planning'],
+   url: 'https://www.advisorjay.com/amkor-technology-financial-advisor-tempe',
+   provider: {
+   '@type': 'Organization',
+   name: 'Farther',
+   url: 'https://www.advisorjay.com',
+   },
+  }),
+  }}
+ />
  {/* HERO SECTION */}
  <section className="relative w-full bg-[#F7F4EE] py-16 md:py-24">
   <Image
