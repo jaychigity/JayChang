@@ -581,13 +581,15 @@ export default function Home() {
  <section className="bg-[#FAFAF8] py-20 lg:py-32">
   <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
   <AnimateOnScroll>
+  <div className="text-center max-w-4xl mx-auto mb-16">
   <SectionEyebrow text="WHY I CHOSE FARTHER" />
   <h2 className="font-serif text-4xl lg:text-5xl font-bold text-[#333333] mt-6 mb-6 leading-tight">
    Great Technology and Great Advice Shouldn&apos;t Be an Either/Or.
   </h2>
-  <p className="text-lg text-[#5b6a71] leading-relaxed max-w-3xl mb-16">
+  <p className="text-lg text-[#5b6a71] leading-relaxed">
    I partnered with Farther because I believe you deserve both: an advisor who knows your situation, backed by a platform that never drops the ball. Farther&apos;s Intelligent Wealth Platform handles the heavy lifting, so I can spend my time doing what actually matters: thinking about your family, your goals, and your future.
   </p>
+  </div>
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-0">
    {/* Feature 1 */}
