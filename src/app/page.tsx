@@ -10,9 +10,6 @@ import {
  Shield,
  TrendingUp,
  Zap,
- Award,
- BarChart3,
- Lock,
  Gauge,
  Users,
  Handshake,
@@ -573,80 +570,6 @@ export default function Home() {
     Let&apos;s Talk
    </Button>
    </div>
-  </AnimateOnScroll>
-  </div>
- </section>
-
- {/* SECTION 7: WHY FARTHER */}
- <section className="bg-[#FAFAF8] py-20 lg:py-32">
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-  <AnimateOnScroll>
-  <div className="text-center max-w-4xl mx-auto mb-16">
-  <SectionEyebrow text="WHY I CHOSE FARTHER" />
-  <h2 className="font-serif text-4xl lg:text-5xl font-bold text-[#333333] mt-6 mb-6 leading-tight">
-   Great Technology and Great Advice Shouldn&apos;t Be an Either/Or.
-  </h2>
-  <p className="text-lg text-[#5b6a71] leading-relaxed">
-   I partnered with Farther because I believe you deserve both: an advisor who knows your situation, backed by a platform that never drops the ball. Farther&apos;s Intelligent Wealth Platform handles the heavy lifting, so I can spend my time doing what actually matters: thinking about your family, your goals, and your future.
-  </p>
-  </div>
-
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-0">
-   {/* Feature 1 */}
-   <div className="bg-white p-8 rounded-lg flex gap-4">
-   <div className="flex-shrink-0">
-   <Lock className="w-6 h-6 text-[#1d7682]" />
-   </div>
-   <div>
-   <h3 className="font-serif font-bold text-[#333333] mb-2">Everything in One Place</h3>
-   <p className="text-[#5b6a71] text-sm">All your accounts on a single dashboard, so you always know where you stand.</p>
-   </div>
-   </div>
-
-   {/* Feature 2 */}
-   <div className="bg-white p-8 rounded-lg flex gap-4">
-   <div className="flex-shrink-0">
-   <BarChart3 className="w-6 h-6 text-[#1d7682]" />
-   </div>
-   <div>
-   <h3 className="font-serif font-bold text-[#333333] mb-2">Automatic Tax Savings</h3>
-   <p className="text-[#5b6a71] text-sm">The platform scans daily for tax-loss harvesting opportunities, so you keep more of what you earn.</p>
-   </div>
-   </div>
-
-   {/* Feature 3 */}
-   <div className="bg-white p-8 rounded-lg flex gap-4">
-   <div className="flex-shrink-0">
-   <Gauge className="w-6 h-6 text-[#1d7682]" />
-   </div>
-   <div>
-   <h3 className="font-serif font-bold text-[#333333] mb-2">Smart Account Placement</h3>
-   <p className="text-[#5b6a71] text-sm">The platform puts the right investments in the right accounts, taxable, deferred, and Roth, to maximize your after-tax returns.</p>
-   </div>
-   </div>
-
-   {/* Feature 4 */}
-   <div className="bg-white p-8 rounded-lg flex gap-4">
-   <div className="flex-shrink-0">
-   <TrendingUp className="w-6 h-6 text-[#1d7682]" />
-   </div>
-   <div>
-   <h3 className="font-serif font-bold text-[#333333] mb-2">Institutional-Quality Investments</h3>
-   <p className="text-[#5b6a71] text-sm">Through Farther Asset Management, you get access to strategies built for tax efficiency, transparency, and long-term growth.</p>
-   </div>
-   </div>
-
-   {/* Feature 5 */}
-   <div className="bg-white p-8 rounded-lg flex gap-4 md:col-span-2">
-   <div className="flex-shrink-0">
-   <Award className="w-6 h-6 text-[#1d7682]" />
-   </div>
-   <div>
-   <h3 className="font-serif font-bold text-[#333333] mb-2">$15B+ in Client Assets</h3>
-   <p className="text-[#5b6a71] text-sm">That scale means better pricing for you, and a team of specialists behind every recommendation I make.</p>
-   </div>
-   </div>
-  </div>
   </AnimateOnScroll>
   </div>
  </section>

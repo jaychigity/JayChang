@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Button from '@/components/Button';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import SectionEyebrow from '@/components/SectionEyebrow';
+import { Lock, BarChart3, Gauge, Target, Layers, TrendingUp, Clock, Award } from 'lucide-react';
 
 export const metadata: Metadata = {
  title: 'Jay Chang | Vice President, Wealth Advisor | Farther',
@@ -164,64 +165,111 @@ export default function JayChangPage() {
   </div>
  </section>
 
- {/* 4. THE FARTHER ADVANTAGE */}
- <section className="bg-[#FAFAF8] py-16 md:py-24">
-  <div className="max-w-7xl mx-auto px-6">
+ {/* 4. WHY I CHOSE FARTHER */}
+ <section className="bg-[#FAFAF8] py-20 lg:py-32">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
   <AnimateOnScroll>
-  <div className="mb-12">
-   <p className="text-lg text-[#333333] leading-relaxed max-w-4xl">
-   I chose Farther because it allows me to give you the level of attention and coordination you deserve, supported by technology that actually enhances your experience. After years at large institutions, I saw firsthand how difficult it can be to deliver truly seamless, detailed planning. Farther changed that, giving me the ability to focus fully on you while bringing everything together in a more thoughtful, efficient way.
+  <div className="text-center max-w-4xl mx-auto mb-16">
+   <SectionEyebrow text="WHY I CHOSE FARTHER" />
+   <h2 className="font-serif text-4xl lg:text-5xl font-bold text-[#333333] mt-6 mb-6 leading-tight">
+   Great Technology and Great Advice Shouldn&apos;t Be an Either/Or.
+   </h2>
+   <p className="text-lg text-[#5b6a71] leading-relaxed">
+   I partnered with Farther because I believe you deserve both: an advisor who knows your situation, backed by a platform that never drops the ball. After years at large institutions, I saw firsthand how difficult it is to deliver truly seamless, detailed planning. Farther changed that. The Intelligent Wealth Platform handles the heavy lifting, so I can spend my time doing what actually matters: thinking about your family, your goals, and your future.
    </p>
   </div>
-  </AnimateOnScroll>
 
-  {/* Platform Features Grid */}
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-  <AnimateOnScroll delay={0.1}>
-   <div className={`bg-[#FAFAF8] border border-[#C5C0B8] rounded-[12px] p-[32px] h-full`}>
-   <h4 className="text-lg font-bold text-[#333333] mb-2">Everything in One Place</h4>
-   <p className="text-[#5b6a71]">See all your accounts, updated in real time, on a single dashboard</p>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+   {/* Feature 1 */}
+   <div className="bg-white p-8 rounded-lg flex gap-4">
+   <div className="flex-shrink-0">
+   <Lock className="w-6 h-6 text-[#1d7682]" />
    </div>
-  </AnimateOnScroll>
+   <div>
+   <h3 className="font-serif font-bold text-[#333333] mb-2">Everything in One Place</h3>
+   <p className="text-[#5b6a71] text-sm">All your accounts on a single dashboard, so you always know where you stand.</p>
+   </div>
+   </div>
 
-  <AnimateOnScroll delay={0.15}>
-   <div className={`bg-[#FAFAF8] border border-[#C5C0B8] rounded-[12px] p-[32px] h-full`}>
-   <h4 className="text-lg font-bold text-[#333333] mb-2">Daily Tax-Loss Harvesting</h4>
-   <p className="text-[#5b6a71]">We look for ways to save you on taxes every single day - not just in December</p>
+   {/* Feature 2 */}
+   <div className="bg-white p-8 rounded-lg flex gap-4">
+   <div className="flex-shrink-0">
+   <BarChart3 className="w-6 h-6 text-[#1d7682]" />
    </div>
-  </AnimateOnScroll>
+   <div>
+   <h3 className="font-serif font-bold text-[#333333] mb-2">Automatic Tax Savings</h3>
+   <p className="text-[#5b6a71] text-sm">The platform scans daily for tax-loss harvesting opportunities, so you keep more of what you earn.</p>
+   </div>
+   </div>
 
-  <AnimateOnScroll delay={0.2}>
-   <div className={`bg-[#FAFAF8] border border-[#C5C0B8] rounded-[12px] p-[32px] h-full`}>
-   <h4 className="text-lg font-bold text-[#333333] mb-2">Smart Account Placement</h4>
-   <p className="text-[#5b6a71]">We put the right investments in the right accounts so you keep more of what you earn</p>
+   {/* Feature 3 */}
+   <div className="bg-white p-8 rounded-lg flex gap-4">
+   <div className="flex-shrink-0">
+   <Gauge className="w-6 h-6 text-[#1d7682]" />
    </div>
-  </AnimateOnScroll>
+   <div>
+   <h3 className="font-serif font-bold text-[#333333] mb-2">Smart Account Placement</h3>
+   <p className="text-[#5b6a71] text-sm">The platform puts the right investments in the right accounts, taxable, deferred, and Roth, to maximize your after-tax returns.</p>
+   </div>
+   </div>
 
-  <AnimateOnScroll delay={0.25}>
-   <div className={`bg-[#FAFAF8] border border-[#C5C0B8] rounded-[12px] p-[32px] h-full`}>
-   <h4 className="text-lg font-bold text-[#333333] mb-2">Direct Indexing and Institutional SMAs</h4>
-   <p className="text-[#5b6a71]">Investment portfolios built around your specific situation - not a one-size-fits-all model</p>
+   {/* Feature 4 */}
+   <div className="bg-white p-8 rounded-lg flex gap-4">
+   <div className="flex-shrink-0">
+   <Target className="w-6 h-6 text-[#1d7682]" />
    </div>
-  </AnimateOnScroll>
+   <div>
+   <h3 className="font-serif font-bold text-[#333333] mb-2">Direct Indexing and Institutional SMAs</h3>
+   <p className="text-[#5b6a71] text-sm">Investment portfolios built around your specific situation, not a one-size-fits-all model.</p>
+   </div>
+   </div>
 
-  <AnimateOnScroll delay={0.3}>
-   <div className={`bg-[#FAFAF8] border border-[#C5C0B8] rounded-[12px] p-[32px] h-full`}>
-   <h4 className="text-lg font-bold text-[#333333] mb-2">Alternative Investments</h4>
-   <p className="text-[#5b6a71]">Access to the kinds of investments usually reserved for big institutions</p>
+   {/* Feature 5 */}
+   <div className="bg-white p-8 rounded-lg flex gap-4">
+   <div className="flex-shrink-0">
+   <Layers className="w-6 h-6 text-[#1d7682]" />
    </div>
-  </AnimateOnScroll>
+   <div>
+   <h3 className="font-serif font-bold text-[#333333] mb-2">Alternative Investments</h3>
+   <p className="text-[#5b6a71] text-sm">Access to the kinds of investments usually reserved for big institutions.</p>
+   </div>
+   </div>
 
-  <AnimateOnScroll delay={0.35}>
-   <div className={`bg-[#FAFAF8] border border-[#C5C0B8] rounded-[12px] p-[32px] h-full`}>
-   <h4 className="text-lg font-bold text-[#333333] mb-2">90% of Our Time on You</h4>
-   <p className="text-[#5b6a71]">Technology handles the paperwork so we can focus on what matters - your plan</p>
+   {/* Feature 6 */}
+   <div className="bg-white p-8 rounded-lg flex gap-4">
+   <div className="flex-shrink-0">
+   <TrendingUp className="w-6 h-6 text-[#1d7682]" />
    </div>
-  </AnimateOnScroll>
+   <div>
+   <h3 className="font-serif font-bold text-[#333333] mb-2">Institutional-Quality Investments</h3>
+   <p className="text-[#5b6a71] text-sm">Through Farther Asset Management, you get access to strategies built for tax efficiency, transparency, and long-term growth.</p>
+   </div>
+   </div>
+
+   {/* Feature 7 */}
+   <div className="bg-white p-8 rounded-lg flex gap-4">
+   <div className="flex-shrink-0">
+   <Clock className="w-6 h-6 text-[#1d7682]" />
+   </div>
+   <div>
+   <h3 className="font-serif font-bold text-[#333333] mb-2">90% of My Time on You</h3>
+   <p className="text-[#5b6a71] text-sm">Technology handles the paperwork, so I can focus on what matters: your plan.</p>
+   </div>
+   </div>
+
+   {/* Feature 8 */}
+   <div className="bg-white p-8 rounded-lg flex gap-4">
+   <div className="flex-shrink-0">
+   <Award className="w-6 h-6 text-[#1d7682]" />
+   </div>
+   <div>
+   <h3 className="font-serif font-bold text-[#333333] mb-2">$15B+ in Client Assets</h3>
+   <p className="text-[#5b6a71] text-sm">That scale means better pricing for you, and a team of specialists behind every recommendation I make.</p>
+   </div>
+   </div>
   </div>
 
   {/* Stats */}
-  <AnimateOnScroll>
   <div className="text-center text-[#333333]">
    <p className="text-lg mb-4">
    Farther surpassed <span className="font-bold">$13B in recruited assets</span> in 2025, growing <span className="font-bold">4x the industry rate</span>.
