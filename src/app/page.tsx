@@ -182,11 +182,11 @@ export default function Home() {
    </h3>
    </div>
    <p className="text-[#5b6a71] mb-4">
-   If you&apos;ve built a career at{' '}
+   Long careers at{' '}
    <Link href="/att-employee-financial-advisor" className="text-[#1d7682] hover:underline font-medium">AT&amp;T</Link>
    , Verizon, T-Mobile, SRP, or{' '}
    <Link href="/pge-employee-financial-advisor" className="text-[#1d7682] hover:underline font-medium">PG&amp;E</Link>
-   , your benefits package is more complex than most people realize: pensions, deferred comp, employer stock, union considerations. I help you coordinate all of it.
+   {' '}come with pieces that don&apos;t fit together neatly: pensions, deferred comp, employer stock, union rules. The work is figuring out how each piece interacts with the rest.
    </p>
    <Link
    href="/telecommunications-utilities-wealth-management"
@@ -205,7 +205,7 @@ export default function Home() {
    </h3>
    </div>
    <p className="text-[#5b6a71] mb-4">
-   Endowments, foundation assets, and institutional portfolios deserve the same fiduciary care I give individuals. I help charitable organizations and institutions invest with purpose and accountability.
+   Endowments, foundation assets, and operating reserves come with their own constraints: spending policy, board oversight, donor restrictions. The portfolio has to fit the mandate, not the other way around.
    </p>
    <Link
    href="/institutional-non-profit-wealth-management"
@@ -224,7 +224,7 @@ export default function Home() {
    </h3>
    </div>
    <p className="text-[#5b6a71] mb-4">
-   Divorce, the loss of a spouse, inheritance, retirement: life&apos;s biggest transitions come with financial decisions you shouldn&apos;t have to navigate alone. I help you protect what matters and move forward with confidence.
+   Divorce, the loss of a spouse, an inheritance, retirement. The financial decisions tend to land all at once, on top of everything else. I help you slow them down and take them in order.
    </p>
    <Link
    href="/families-life-transitions-wealth-management"
@@ -243,7 +243,7 @@ export default function Home() {
    </h3>
    </div>
    <p className="text-[#5b6a71] mb-4">
-   Long careers at places like Honeywell and Raytheon come with real benefits: pensions, deferred comp, employer stock. I help you build a plan that actually uses all of them wisely.
+   Honeywell and Raytheon careers come with pieces that interact in ways most people don&apos;t see until it&apos;s too late: pension elections, deferred comp under 409A, employer stock from the match. The work is sequencing decisions so they don&apos;t undo each other.
    </p>
    <Link
    href="/aerospace-defense-wealth-management"
@@ -262,7 +262,7 @@ export default function Home() {
    </h3>
    </div>
    <p className="text-[#5b6a71] mb-4">
-   High income is great, but it comes with complexity. Whether you&apos;re a healthcare professional at Banner Health, running your own business, or simply want a financial partner who listens, I&apos;m here.
+   Physicians at Banner Health, owners running a practice, families with concentrated wealth. Different situations, common thread: high income that hasn&apos;t translated into a coherent plan. The work is closing that gap.
    </p>
    <Link
    href="/physician-executive-wealth-management-phoenix-scottsdale"
@@ -281,7 +281,7 @@ export default function Home() {
    </h3>
    </div>
    <p className="text-[#5b6a71] mb-4">
-   If you work at a company like TSMC, Intel, NVIDIA, or Apple and your pay stub looks more like a spreadsheet, with RSUs, ESPPs, and relocation bonuses, I can help you make sense of it all.
+   TSMC, Intel, NVIDIA, Apple. RSUs, ESPP, performance bonuses, sometimes options on top of all that. The work is deciding what to sell, what to hold, and what the tax bill looks like when each piece vests.
    </p>
    <Link
    href="/semiconductor-wealth-management-arizona"
