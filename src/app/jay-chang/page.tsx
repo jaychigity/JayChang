@@ -126,8 +126,8 @@ export default function JayChangPage() {
 
  {/* 2. HOW JAY WORKS */}
  <section className="bg-[#FAFAF8] py-16 md:py-24">
-  <div className="max-w-7xl mx-auto px-6">
-  <div className="max-w-2xl space-y-10">
+  <div className="max-w-4xl mx-auto px-6">
+  <div className="space-y-10">
    <AnimateOnScroll>
    <div>
     <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-6">
