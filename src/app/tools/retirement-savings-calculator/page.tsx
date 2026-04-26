@@ -72,7 +72,7 @@ export default function RetirementReadinessPage() {
    <div className="font-sans" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '12px 24px', fontSize: 15 }}>
     <a href="/tools/roth-conversion-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Roth Conversion Calculator</a>
     <a href="/tools/401k-withholding-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>401(k) Withholding Calculator</a>
-    <a href="/tools/income-annuity-estimator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Income Annuity Estimator</a>
+    <a href="/tools/income-annuity" style={{ color: '#1d7682', textDecoration: 'underline' }}>Income Annuity Estimator</a>
    </div>
   </div>
  </section>

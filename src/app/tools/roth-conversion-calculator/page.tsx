@@ -73,7 +73,7 @@ export default function RothConversionPage() {
    <div className="font-sans" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '12px 24px', fontSize: 15 }}>
     <a href="/tools/401k-withholding-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>401(k) Withholding Calculator</a>
     <a href="/tools/retirement-savings-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Retirement Readiness Calculator</a>
-    <a href="/tools/ca-nv-tax-savings-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>CA to NV Tax Savings Calculator</a>
+    <a href="/tools/ca-nv-tax-savings" style={{ color: '#1d7682', textDecoration: 'underline' }}>CA to NV Tax Savings Calculator</a>
    </div>
   </div>
  </section>

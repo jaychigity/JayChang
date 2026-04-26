@@ -82,7 +82,7 @@ export default function EstateComplexityPage() {
      fontSize: 15,
     }}
    >
-    <a href="/tools/inherited-ira-rmd-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Inherited IRA Calculator</a>
+    <a href="/tools/inherited-ira-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Inherited IRA Calculator</a>
     <a href="/tools/rmd-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>RMD Calculator</a>
     <a href="/tools/retirement-savings-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Retirement Readiness Calculator</a>
    </div>

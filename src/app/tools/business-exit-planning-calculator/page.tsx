@@ -71,7 +71,7 @@ export default function BusinessExitScorecardPage() {
     Related Tools
    </h3>
    <div className="font-sans" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '12px 24px', fontSize: 15 }}>
-    <a href="/tools/estate-complexity-assessment" style={{ color: '#1d7682', textDecoration: 'underline' }}>Estate Complexity Assessment</a>
+    <a href="/tools/estate-complexity" style={{ color: '#1d7682', textDecoration: 'underline' }}>Estate Complexity Assessment</a>
     <a href="/tools/retirement-savings-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Retirement Readiness Calculator</a>
     <a href="/tools/roth-conversion-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>Roth Conversion Calculator</a>
    </div>
