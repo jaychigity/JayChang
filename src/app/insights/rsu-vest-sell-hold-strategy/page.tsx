@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'RSUs Vest Next Month. Here is What to Do Before, During, and After.',
@@ -41,9 +42,9 @@ export default function RSUVestStrategyPage() {
               RSUs Vest Next Month. Here is What to Do Before, During, and After.
             </h1>
           </AnimateOnScroll>
-          <div className="flex flex-col md:flex-row md:items-center md:gap-6 text-[#5b6a71]">
-            <span className="text-lg">March 18, 2026</span>
-            <span className="text-lg">12 min read</span>
+          <div className="flex flex-col md:flex-row md:items-center md:gap-6">
+            <ArticleByline updatedDate="2026-03-18" variant="light" />
+            <span className="text-lg text-[#5b6a71]">12 min read</span>
           </div>
         </div>
       </section>

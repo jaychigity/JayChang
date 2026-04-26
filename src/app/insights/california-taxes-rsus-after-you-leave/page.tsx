@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'How California Taxes Your RSUs Even After You Leave the State',
@@ -43,6 +44,9 @@ export default function Page() {
             <p className="text-lg text-gray-600 mb-8">
               California claims income sourced to California work periods. For RSUs, that means the state allocates your gain based on how long you worked in California before vesting.
             </p>
+            <div className="mt-6">
+              <ArticleByline updatedDate="2026-03-18" variant="light" />
+            </div>
           </AnimateOnScroll>
         </div>
       </div>

@@ -4,7 +4,8 @@ import AnimateOnScroll from '@/components/AnimateOnScroll'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 import SectionEyebrow from '@/components/SectionEyebrow'
 import Button from '@/components/Button'
-import { ArrowLeft, Clock, Calendar, User, ChevronRight, Check, Minus } from 'lucide-react'
+import ArticleByline from '@/components/ArticleByline'
+import { ArrowLeft, Clock, ChevronRight, Check, Minus } from 'lucide-react'
 
 export const metadata: Metadata = {
  title:
@@ -154,16 +155,9 @@ export default function FamilyOfficeVsWealthAdvisorPage() {
   Do You Need a Family Office - Or a Comprehensive Wealth Advisor?
   </h1>
 
-  <div className="flex flex-wrap items-center gap-6 mt-6 text-[#b6d0ed]">
-  <div className="flex items-center gap-2">
-   <User size={14} strokeWidth={1.5} />
-   <span className="font-sans text-sm">Farther Advisory Team</span>
-  </div>
-  <div className="flex items-center gap-2">
-   <Calendar size={14} strokeWidth={1.5} />
-   <span className="font-sans text-sm">March 2026</span>
-  </div>
-  <div className="flex items-center gap-2">
+  <div className="flex flex-wrap items-center gap-6 mt-6">
+  <ArticleByline updatedDate="2026-03-01" publishedDate="2026-01-15" variant="dark" />
+  <div className="flex items-center gap-2 text-[#b6d0ed]">
    <Clock size={14} strokeWidth={1.5} />
    <span className="font-sans text-sm">8 min read</span>
   </div>

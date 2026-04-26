@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
 import Button from '@/components/Button'
+import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'Qualified Charitable Distributions: How Retirees Can Give Tax-Free Directly From Their IRA',
@@ -32,6 +33,9 @@ export default function QualifiedCharitableDistributionsPage() {
           <AnimateOnScroll>
             <h1 className="text-4xl font-bold mb-6 text-gray-900">Qualified Charitable Distributions: How Retirees Can Give Tax-Free Directly From Their IRA</h1>
             <p className="text-xl text-gray-700 mb-4">At 70.5+, give directly from your IRA to charity, reduce your taxable income, and avoid Medicare surcharges.</p>
+            <div className="mt-6">
+              <ArticleByline updatedDate="2026-03-18" variant="light" />
+            </div>
           </AnimateOnScroll>
         </div>
       </section>

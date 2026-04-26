@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
  title: 'Honeywell 401(k) Employer Stock Concentration: What Phoenix Engineers Need to Know',
@@ -41,9 +42,9 @@ export default function Honeywell401kPage() {
    Honeywell&apos;s 401(k) Match Arrives as HON Stock. Here&apos;s Why That&apos;s a Problem - and How to Fix It.
   </h1>
   </AnimateOnScroll>
-  <div className="flex flex-col md:flex-row md:items-center md:gap-6 text-[#5b6a71]">
-  <span className="text-lg">March 16, 2026</span>
-  <span className="text-lg">9 min read</span>
+  <div className="flex flex-col md:flex-row md:items-center md:gap-6">
+  <ArticleByline updatedDate="2026-03-16" variant="light" />
+  <span className="text-lg text-[#5b6a71]">9 min read</span>
   </div>
   </div>
  </section>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
 import Button from '@/components/Button'
+import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'The Arizona Charitable Tax Credit Most Residents Miss: $2,300 in Dollar-for-Dollar Credits',
@@ -32,6 +33,9 @@ export default function ArizonaCharitableCreditPage() {
           <AnimateOnScroll>
             <h1 className="text-4xl font-bold mb-6 text-gray-900">The Arizona Charitable Tax Credit Most Residents Miss: $2,300 in Dollar-for-Dollar Credits</h1>
             <p className="text-xl text-gray-700 mb-4">Two state tax credits redirect up to $2,300 from your tax bill to charities and schools.</p>
+            <div className="mt-6">
+              <ArticleByline updatedDate="2026-03-18" variant="light" />
+            </div>
           </AnimateOnScroll>
         </div>
       </section>

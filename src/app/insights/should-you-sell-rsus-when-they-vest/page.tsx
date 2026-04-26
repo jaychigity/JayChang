@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'Should You Always Sell RSUs When They Vest? The Answer Is Usually Yes',
@@ -38,9 +39,9 @@ export default function RSUVestingArticle() {
             <p className="text-xl text-gray-700 mb-4">
               Here is Why
             </p>
-            <p className="text-gray-600 mb-8">
-              March 18, 2026 - Financial Planning Insights
-            </p>
+            <div className="mb-8">
+              <ArticleByline updatedDate="2026-03-18" variant="light" />
+            </div>
           </AnimateOnScroll>
         </div>
       </section>

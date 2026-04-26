@@ -4,7 +4,8 @@ import AnimateOnScroll from '@/components/AnimateOnScroll'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 import SectionEyebrow from '@/components/SectionEyebrow'
 import Button from '@/components/Button'
-import { ArrowLeft, Clock, Calendar, User, ChevronRight, MessageSquare } from 'lucide-react'
+import ArticleByline from '@/components/ArticleByline'
+import { ArrowLeft, Clock, ChevronRight, MessageSquare } from 'lucide-react'
 
 export const metadata: Metadata = {
   title:
@@ -112,16 +113,9 @@ export default function RTXLifetimeIncomeStrategyReviewPage() {
             RTX Lifetime Income Strategy: Is It Right for You, or Are There Better Options?
           </h1>
 
-          <div className="flex flex-wrap items-center gap-6 mt-6 text-[#b6d0ed]">
-            <div className="flex items-center gap-2">
-              <User size={14} strokeWidth={1.5} />
-              <span className="font-sans text-sm">Jay Chang</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Calendar size={14} strokeWidth={1.5} />
-              <span className="font-sans text-sm">March 2026</span>
-            </div>
-            <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-6 mt-6">
+            <ArticleByline updatedDate="2026-03-18" variant="dark" />
+            <div className="flex items-center gap-2 text-[#b6d0ed]">
               <Clock size={14} strokeWidth={1.5} />
               <span className="font-sans text-sm">11 min read</span>
             </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'Business Exit Planning for Arizona Owners: Start Planning 3-5 Years Before You Sell',
@@ -38,9 +39,9 @@ export default function BusinessExitPlanningArticle() {
             <p className="text-2xl text-gray-800 mb-4">
               Start Planning 3 - 5 Years Before You Sell
             </p>
-            <p className="text-gray-600 mb-8">
-              March 18, 2026 - Business Exit Strategy
-            </p>
+            <div className="mb-8">
+              <ArticleByline updatedDate="2026-03-18" variant="light" />
+            </div>
           </AnimateOnScroll>
         </div>
       </section>

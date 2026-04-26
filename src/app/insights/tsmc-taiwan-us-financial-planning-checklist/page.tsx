@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'TSMC Engineers From Taiwan: A U.S. Financial Planning Checklist',
@@ -43,6 +44,9 @@ export default function Page() {
             <p className="text-lg text-gray-600 mb-8">
               About half of TSMC Fab 21&apos;s workforce has relocated from Taiwan. This guide covers the financial and tax obligations you need to manage from day one.
             </p>
+            <div className="mt-6">
+              <ArticleByline updatedDate="2026-03-18" variant="light" />
+            </div>
           </AnimateOnScroll>
         </div>
       </div>

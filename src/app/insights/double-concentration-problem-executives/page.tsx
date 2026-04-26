@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'The Double Concentration Problem: When Your Job and Your Portfolio Depend on the Same Company',
@@ -39,7 +40,7 @@ export default function DoubleConcentrationProblem() {
             <p className="text-xl text-gray-700 mb-8">
               Most executives have two forms of capital tied to the same company. When that company struggles, everything falls apart simultaneously.
             </p>
-            <p className="text-gray-600">Published March 18, 2026</p>
+            <ArticleByline updatedDate="2026-03-18" variant="light" />
           </div>
         </section>
 

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
 import Button from '@/components/Button'
+import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'Why You Should Never Donate Cash to Charity If You Own Appreciated Stock',
@@ -32,6 +33,9 @@ export default function NeverDonateCashPage() {
           <AnimateOnScroll>
             <h1 className="text-4xl font-bold mb-6 text-gray-900">Why You Should (Almost) Never Donate Cash to Charity If You Own Appreciated Stock</h1>
             <p className="text-xl text-gray-700 mb-4">The capital gains tax you avoid pays for the donation. Use it.</p>
+            <div className="mt-6">
+              <ArticleByline updatedDate="2026-03-18" variant="light" />
+            </div>
           </AnimateOnScroll>
         </div>
       </section>

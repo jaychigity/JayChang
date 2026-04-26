@@ -2,6 +2,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
  title: 'Apple ESPP Guide for Mesa Employees: 15% Discount, Lookback, and Share Strategy',
@@ -20,7 +21,6 @@ export const metadata: Metadata = {
 
 export default function AppleESPPPage() {
  const readingTime = '7 min read';
- const publishDate = 'March 16, 2026';
 
  return (
  <main>
@@ -31,9 +31,9 @@ export default function AppleESPPPage() {
   <h1 className="text-4xl md:text-5xl font-bold text-[#333333] mb-6">
    Apple ESPP: The Complete Guide for Mesa and Arizona Employees
   </h1>
-  <div className="flex flex-col md:flex-row md:items-center md:gap-6 text-[#5b6a71]">
-   <time dateTime="2026-03-16">{publishDate}</time>
-   <span>{readingTime}</span>
+  <div className="flex flex-col md:flex-row md:items-center md:gap-6">
+   <ArticleByline updatedDate="2026-03-16" variant="light" />
+   <span className="text-[#5b6a71]">{readingTime}</span>
   </div>
   </AnimateOnScroll>
   </div>

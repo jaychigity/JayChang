@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
  title: 'Banner Health Physicians: 7 Tax Strategies for High-Income Doctors in Arizona | 2026',
@@ -41,9 +42,9 @@ export default function BannerHealthPhysicianPage() {
    7 Tax Strategies Every Banner Health Physician in Arizona Should Be Using in 2026
   </h1>
   </AnimateOnScroll>
-  <div className="flex flex-col md:flex-row md:items-center md:gap-6 text-[#5b6a71]">
-  <span className="text-lg">March 16, 2026</span>
-  <span className="text-lg">14 min read</span>
+  <div className="flex flex-col md:flex-row md:items-center md:gap-6">
+  <ArticleByline updatedDate="2026-03-16" variant="light" />
+  <span className="text-lg text-[#5b6a71]">14 min read</span>
   </div>
   </div>
  </section>

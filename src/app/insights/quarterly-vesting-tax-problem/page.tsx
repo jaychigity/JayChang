@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
 import Button from '@/components/Button'
+import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'How Quarterly RSU Vesting Creates a Year-Round Tax Problem Most Engineers Ignore',
@@ -32,6 +33,9 @@ export default function QuarterlyVestingTaxPage() {
           <AnimateOnScroll>
             <h1 className="text-4xl font-bold mb-6 text-gray-900">How Quarterly RSU Vesting Creates a Year-Round Tax Problem Most Engineers Ignore</h1>
             <p className="text-xl text-gray-700 mb-4">Eight to twelve vesting events per year, each underwitheld at 22%. This becomes a $30K-$50K problem by April.</p>
+            <div className="mt-6">
+              <ArticleByline updatedDate="2026-03-18" variant="light" />
+            </div>
           </AnimateOnScroll>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'Revocable vs. Irrevocable Trusts: Which One Do You Actually Need?',
@@ -43,6 +44,9 @@ export default function Page() {
             <p className="text-lg text-gray-600 mb-8">
               A revocable trust gives you control. An irrevocable trust gives you tax benefits. The right choice depends on your goals, your assets, and how much control you are willing to give up.
             </p>
+            <div className="mt-6">
+              <ArticleByline updatedDate="2026-03-18" variant="light" />
+            </div>
           </AnimateOnScroll>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
  title: `Intel's Mega Backdoor Roth: How Chandler Engineers Can Save $72,000 Per Year Tax-Free`,
@@ -41,9 +42,9 @@ export default function IntelMegaBackdoorRothPage() {
    Intel&apos;s Mega Backdoor Roth: The Retirement Strategy Most Chandler Engineers Are Missing
   </h1>
   </AnimateOnScroll>
-  <div className="flex flex-col md:flex-row md:items-center md:gap-6 text-[#5b6a71]">
-  <span className="text-lg">March 16, 2026</span>
-  <span className="text-lg">11 min read</span>
+  <div className="flex flex-col md:flex-row md:items-center md:gap-6">
+  <ArticleByline updatedDate="2026-03-16" variant="light" />
+  <span className="text-lg text-[#5b6a71]">11 min read</span>
   </div>
   </div>
  </section>

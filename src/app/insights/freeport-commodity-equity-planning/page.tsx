@@ -2,6 +2,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
  title: 'Freeport-McMoRan Executives: Managing Commodity-Linked Equity in a Volatile Copper Market',
@@ -20,7 +21,6 @@ export const metadata: Metadata = {
 
 export default function FreeportCommodityPage() {
  const readingTime = '8 min read';
- const publishDate = 'March 16, 2026';
 
  return (
  <main>
@@ -31,9 +31,9 @@ export default function FreeportCommodityPage() {
   <h1 className="text-4xl md:text-5xl font-bold text-[#333333] mb-6">
    Your Freeport-McMoRan Equity Tracks Copper Prices. Here&apos;s How to Protect What You&apos;ve Built.
   </h1>
-  <div className="flex flex-col md:flex-row md:items-center md:gap-6 text-[#5b6a71]">
-   <time dateTime="2026-03-16">{publishDate}</time>
-   <span>{readingTime}</span>
+  <div className="flex flex-col md:flex-row md:items-center md:gap-6">
+   <ArticleByline updatedDate="2026-03-16" variant="light" />
+   <span className="text-[#5b6a71]">{readingTime}</span>
   </div>
   </AnimateOnScroll>
   </div>

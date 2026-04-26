@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'The SLAT Strategy: How Married Couples Can Use the Estate Tax Exemption Before It Drops',
@@ -38,9 +39,9 @@ export default function SLATStrategyArticle() {
             <p className="text-2xl text-gray-800 mb-4">
               How Married Couples Can Use the Estate Tax Exemption Before It Drops
             </p>
-            <p className="text-gray-600 mb-8">
-              March 18, 2026 - Estate Planning Strategy
-            </p>
+            <div className="mb-8">
+              <ArticleByline updatedDate="2026-03-18" variant="light" />
+            </div>
           </AnimateOnScroll>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
 import Button from '@/components/Button'
+import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'Intel SERPLUS in 2026: How Much Is Too Much to Defer Into an Unsecured Plan?',
@@ -32,6 +33,9 @@ export default function IntelSERPLUSPage() {
           <AnimateOnScroll>
             <h1 className="text-4xl font-bold mb-6 text-gray-900">Intel SERPLUS in 2026: How Much Is Too Much to Defer Into an Unsecured Plan?</h1>
             <p className="text-xl text-gray-700 mb-4">The risk-reward calculus for nonqualified deferred comp has shifted. Here&apos;s how to decide.</p>
+            <div className="mt-6">
+              <ArticleByline updatedDate="2026-03-18" variant="light" />
+            </div>
           </AnimateOnScroll>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'Asset Protection for Arizona Physicians: What the State Protects and What It Does Not',
@@ -38,9 +39,9 @@ export default function AssetProtectionArizonaArticle() {
             <p className="text-2xl text-gray-800 mb-4">
               What the State Protects and What It Does Not
             </p>
-            <p className="text-gray-600 mb-8">
-              March 18, 2026 - Physician Wealth Planning
-            </p>
+            <div className="mb-8">
+              <ArticleByline updatedDate="2026-03-18" variant="light" />
+            </div>
           </AnimateOnScroll>
         </div>
       </section>

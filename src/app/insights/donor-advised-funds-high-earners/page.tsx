@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
 import Button from '@/components/Button'
+import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'Donor-Advised Funds: The Smartest Way High Earners Give to Charity',
@@ -32,6 +33,9 @@ export default function DonorAdvisedFundsPage() {
           <AnimateOnScroll>
             <h1 className="text-4xl font-bold mb-6 text-gray-900">Donor-Advised Funds: The Smartest Way High Earners Give to Charity</h1>
             <p className="text-xl text-gray-700 mb-4">Take your tax deduction immediately while giving to charities on your timeline.</p>
+            <div className="mt-6">
+              <ArticleByline updatedDate="2026-03-18" variant="light" />
+            </div>
           </AnimateOnScroll>
         </div>
       </section>

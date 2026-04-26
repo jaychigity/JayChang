@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'Beneficiary Designations: The One Document That Overrides Everything Else in Your Estate Plan',
@@ -43,6 +44,9 @@ export default function Page() {
             <p className="text-lg text-gray-600 mb-8">
               Your will says one thing, but your beneficiary designation says another. The beneficiary designation wins. Here is what you need to know to avoid a $500K mistake.
             </p>
+            <div className="mt-6">
+              <ArticleByline updatedDate="2026-03-18" variant="light" />
+            </div>
           </AnimateOnScroll>
         </div>
       </div>

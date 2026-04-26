@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'The Physician Financial Roadmap: What to Do in Your First 5 Years as an Attending',
@@ -39,7 +40,7 @@ export default function PhysicianFinancialRoadmap() {
             <p className="text-xl text-gray-700 mb-8">
               You&apos;ve completed training. Now comes the most powerful wealth-building window of your career. A strategic roadmap for your first five attending years.
             </p>
-            <p className="text-gray-600">Published March 18, 2026</p>
+            <ArticleByline updatedDate="2026-03-18" variant="light" />
           </div>
         </section>
 

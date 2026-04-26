@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'The NVIDIA ESPP 2-Year Lookback: What It is Worth and How to Maximize It',
@@ -41,9 +42,9 @@ export default function NvidiaESPPPage() {
               The NVIDIA ESPP 2-Year Lookback: What It is Worth and How to Maximize It
             </h1>
           </AnimateOnScroll>
-          <div className="flex flex-col md:flex-row md:items-center md:gap-6 text-[#5b6a71]">
-            <span className="text-lg">March 18, 2026</span>
-            <span className="text-lg">11 min read</span>
+          <div className="flex flex-col md:flex-row md:items-center md:gap-6">
+            <ArticleByline updatedDate="2026-03-18" variant="light" />
+            <span className="text-lg text-[#5b6a71]">11 min read</span>
           </div>
         </div>
       </section>

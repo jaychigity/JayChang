@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'The Cash Balance Plan: How Practice-Owning Physicians Can Shelter $200,000+ Per Year in Pre-Tax Savings',
@@ -39,7 +40,7 @@ export default function CashBalancePlan() {
             <p className="text-xl text-gray-700 mb-8">
               A 401(k) caps your retirement savings at $23,500 annually. A cash balance plan can shelter 10 times that amount. Here&apos;s how it works and whether your practice qualifies.
             </p>
-            <p className="text-gray-600">Published March 18, 2026</p>
+            <ArticleByline updatedDate="2026-03-18" variant="light" />
           </div>
         </section>
 

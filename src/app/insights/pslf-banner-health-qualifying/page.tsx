@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'PSLF at Banner Health: Are You Qualifying for Loan Forgiveness Without Knowing It?',
@@ -39,7 +40,7 @@ export default function PSLFBannerHealth() {
             <p className="text-xl text-gray-700 mb-8">
               Banner Health is a 501(c)(3) nonprofit. If you work there, you may be earning loan forgiveness with every payment, but only if you file correctly.
             </p>
-            <p className="text-gray-600">Published March 18, 2026</p>
+            <ArticleByline updatedDate="2026-03-18" variant="light" />
           </div>
         </section>
 

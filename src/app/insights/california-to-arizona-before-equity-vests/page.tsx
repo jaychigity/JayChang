@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'Moving From California to Arizona? Here is What to Do Before Your Equity Vests',
@@ -43,6 +44,9 @@ export default function Page() {
             <p className="text-lg text-gray-600 mb-8">
               Relocating to Arizona? Don&apos;t assume your California tax obligation ends with your move. The state follows you on your equity compensation.
             </p>
+            <div className="mt-6">
+              <ArticleByline updatedDate="2026-03-18" variant="light" />
+            </div>
           </AnimateOnScroll>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'Backdoor Roth IRA: A Step-by-Step Guide for High Earners in 2026',
@@ -35,9 +36,9 @@ export default function BackdoorRothArticle() {
             <h1 className="text-5xl font-bold mb-6 text-gray-900">
               Backdoor Roth IRA: A Step-by-Step Guide for High Earners in 2026
             </h1>
-            <p className="text-gray-600 mb-8">
-              March 18, 2026 - Tax Planning Insights
-            </p>
+            <div className="mb-8">
+              <ArticleByline updatedDate="2026-03-18" variant="light" />
+            </div>
           </AnimateOnScroll>
         </div>
       </section>

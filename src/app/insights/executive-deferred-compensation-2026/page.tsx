@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'Executive Deferred Compensation in 2026: How to Make the Election You Cannot Take Back',
@@ -39,7 +40,7 @@ export default function ExecutiveDeferredCompensation2026() {
             <p className="text-xl text-gray-700 mb-8">
               Your deferred compensation election window is open. You have until June to decide. The choice carries massive tax and credit implications, and reversing it later is nearly impossible.
             </p>
-            <p className="text-gray-600">Published March 18, 2026</p>
+            <ArticleByline updatedDate="2026-03-18" variant="light" />
           </div>
         </section>
 

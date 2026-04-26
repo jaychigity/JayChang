@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
+import ArticleByline from '@/components/ArticleByline';
 
 export const metadata: Metadata = {
   title: 'The Federal Estate Tax Exemption Is Set to Drop by Half. Here is What to Do Before It Does.',
@@ -43,6 +44,9 @@ export default function Page() {
             <p className="text-lg text-gray-600 mb-8">
               The Tax Cuts and Jobs Act doubled the estate tax exemption. That doubled amount expires December 31, 2025. Families with estates between $7M and $14M need a plan before the clock runs out.
             </p>
+            <div className="mt-6">
+              <ArticleByline updatedDate="2026-03-18" variant="light" />
+            </div>
           </AnimateOnScroll>
         </div>
       </div>
