@@ -47,21 +47,22 @@ export default function SemiconductorWealthManagementArizona() {
  />
 
  {/* Hero Section */}
- <section className="bg-[#333333] text-white py-10 md:py-20 px-4 md:px-12">
-  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+ <section className="bg-[#333333] text-white py-10 lg:py-20">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
   <div>
   <SectionEyebrow text="SEMICONDUCTOR & TECHNOLOGY" light />
-  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mt-6 mb-6">
-   You Build the Chips That Power the World. Jay Builds the Financial Plan That Protects the Wealth You&apos;ve Earned Doing It.
+  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mt-6 mb-6">
+   Wealth Planning for Equity-Heavy Comp at Arizona&apos;s Fabs and Design Centers.
   </h1>
-  <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-   From TSMC&apos;s Fab 21 in North Phoenix to Intel&apos;s Chandler campus, from NVIDIA&apos;s quarterly vesting cycle to Apple&apos;s biannual RSU tranches - Jay Chang is the fiduciary advisor who knows your benefits package by name, knows the risks hiding inside it, and knows exactly what to do about them.
+  <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+   TSMC, Intel, NVIDIA, Microchip, Apple, Amkor. Each company&apos;s equity plan reads differently, and so do the decisions: when to sell, when to defer, what the tax bill looks like at each vest. The work is mapping yours and taking the decisions in the right order.
   </p>
   <Button href="/schedule-consultation" variant="primary">
    Schedule a Semiconductor Strategy Call
   </Button>
   </div>
-  <div className="relative h-96 md:h-full">
+  <div className="relative">
   <Image
    src="/Photos/Semiconductor-1.png"
    alt="Semiconductor facilities and technology"
@@ -72,6 +73,7 @@ export default function SemiconductorWealthManagementArizona() {
   />
   </div>
   </div>
+  </div>
  </section>
 
  {/* Personal Note Section */}
@@ -80,13 +82,13 @@ export default function SemiconductorWealthManagementArizona() {
   <div className="max-w-3xl mx-auto">
   <blockquote className="border-l-4 border-[#1d7682] pl-8 py-8 italic text-lg leading-relaxed text-[#333333]">
    <p className="mb-6">
-   I know Intel&apos;s SERPLUS by heart. I know why NVIDIA insiders hate restricted blackout periods. I know the tax structure hiding inside TSMC&apos;s relocation packages. I know Microchip&apos;s equity grant schedule. I know Amkor&apos;s Form 4 filing patterns and what they mean for your wealth.
+   Intel&apos;s SERPLUS deferral, NVIDIA&apos;s blackout windows, the tax mechanics inside TSMC&apos;s relocation packages, Microchip&apos;s grant schedule, Amkor&apos;s Form 4 filings. These come up constantly in the work, and each one behaves differently.
    </p>
    <p className="mb-6">
-   I&apos;ve built wealth plans for semiconductor engineers, finance professionals, operations leaders, and executives across every major fab and design center in Arizona. I know your compensation isn&apos;t just salary and bonus. I know your wealth is built in tranches, vesting schedules, and equity windows that require specialized expertise to recognize.
+   I&apos;ve worked with engineers, finance professionals, operations leaders, and executives across the Arizona fabs and design centers. The pattern is consistent: salary and bonus are a small share of total comp. Most of what shows up over a career arrives in tranches, vesting events, and equity windows.
    </p>
    <p>
-   More importantly: I know what happens when you don&apos;t plan for concentration risk, tax-deferred growth limits, and the financial complexity that comes with stock-heavy compensation in a volatile sector. Let&apos;s make sure that doesn&apos;t happen to you.
+   The questions that come up most are concentration risk, deferred-comp limits, and the cash-flow reality of holding a single name through a volatile sector. The right answer is different for each person and each balance sheet, and that&apos;s where the work happens.
    </p>
    <footer className="text-base not-italic font-semibold text-[#333333] mt-6">
    - Jay Chang, Farther
@@ -303,7 +305,7 @@ export default function SemiconductorWealthManagementArizona() {
   <div className="max-w-6xl mx-auto">
   <SectionEyebrow text="FINANCIAL PLANNING FOR YOUR FUTURE" />
   <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mt-6 mb-12">
-   The Problems Jay Solves
+   The Problems I Help You Solve
   </h2>
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -315,7 +317,7 @@ export default function SemiconductorWealthManagementArizona() {
     Your net worth is held disproportionately in a single company stock - TSMC, Intel, NVIDIA, or Amkor. One bad product cycle or market dislocation vaporizes wealth.
    </p>
    <p className="font-semibold text-[#1d7682] text-sm">
-    Jay&apos;s solution: Systematic diversification plan coordinated with tax optimization and insider trading blackout windows.
+    My approach: Systematic diversification plan coordinated with tax optimization and insider trading blackout windows.
    </p>
    </div>
    </AnimateOnScroll>
@@ -328,7 +330,7 @@ export default function SemiconductorWealthManagementArizona() {
     Intel SERPLUS, TSMC relocation bonuses, and other deferred compensation create tax deferral opportunities - but also constraints and risks you don&apos;t fully understand.
    </p>
    <p className="font-semibold text-[#1d7682] text-sm">
-    Jay&apos;s solution: Detailed modeling of your deferred compensation accounts, withdrawal sequencing, and 409A compliance strategy.
+    My approach: Detailed modeling of your deferred compensation accounts, withdrawal sequencing, and 409A compliance strategy.
    </p>
    </div>
    </AnimateOnScroll>
@@ -341,7 +343,7 @@ export default function SemiconductorWealthManagementArizona() {
     You&apos;re selling RSUs in the wrong tax year, missing tax-loss harvesting opportunities, and paying more in taxes than you need to on your diversification.
    </p>
    <p className="font-semibold text-[#1d7682] text-sm">
-    Jay&apos;s solution: Year-round tax planning that coordinates vesting, selling, and diversification with your overall tax picture.
+    My approach: Year-round tax planning that coordinates vesting, selling, and diversification with your overall tax picture.
    </p>
    </div>
    </AnimateOnScroll>
@@ -354,7 +356,7 @@ export default function SemiconductorWealthManagementArizona() {
     Insider trading blackout windows constrain when you can execute your wealth plan, and you&apos;re not planning around them strategically.
    </p>
    <p className="font-semibold text-[#1d7682] text-sm">
-    Jay&apos;s solution: Strategic execution calendar that maps your selling and hedging around known and probable blackout windows.
+    My approach: Strategic execution calendar that maps your selling and hedging around known and probable blackout windows.
    </p>
    </div>
    </AnimateOnScroll>
@@ -367,7 +369,7 @@ export default function SemiconductorWealthManagementArizona() {
     Your income is too high to use backdoor Roths efficiently, you&apos;re hitting 401(k) contribution limits, and you don&apos;t have a plan to shelter your full savings.
    </p>
    <p className="font-semibold text-[#1d7682] text-sm">
-    Jay&apos;s solution: Mega backdoor Roth optimization, mega backdoor strategies, and beyond-401(k) wealth building plans.
+    My approach: Mega backdoor Roth optimization, mega backdoor strategies, and beyond-401(k) wealth building plans.
    </p>
    </div>
    </AnimateOnScroll>
@@ -380,7 +382,7 @@ export default function SemiconductorWealthManagementArizona() {
     You have wealth scattered across equity, retirement accounts, and cash - but no cohesive strategy that ties it all together around your life goals.
    </p>
    <p className="font-semibold text-[#1d7682] text-sm">
-    Jay&apos;s solution: Comprehensive financial planning that integrates your equity, retirement, tax, and goal planning into a single coherent strategy.
+    My approach: Comprehensive financial planning that integrates your equity, retirement, tax, and goal planning into a single coherent strategy.
    </p>
    </div>
    </AnimateOnScroll>
@@ -395,7 +397,7 @@ export default function SemiconductorWealthManagementArizona() {
   <div className="max-w-6xl mx-auto">
   <SectionEyebrow text="THE FIVE PILLARS OF SEMICONDUCTOR WEALTH" />
   <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mt-6 mb-12">
-   How Jay Builds Your Wealth Plan
+   How I Build Your Wealth Plan
   </h2>
 
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -464,7 +466,7 @@ export default function SemiconductorWealthManagementArizona() {
   <div className="max-w-4xl mx-auto">
   <SectionEyebrow text="THE PROCESS" />
   <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mt-6 mb-12">
-   What Working With Jay Looks Like
+   What Working With Me Looks Like
   </h2>
 
   <div className="space-y-8">
@@ -513,7 +515,7 @@ export default function SemiconductorWealthManagementArizona() {
   <AnimateOnScroll>
   <SectionEyebrow text="CLIENT TESTIMONIALS" />
   <h2 className="font-serif text-[28px] md:text-[36px] font-semibold text-[#333333] mt-4 mb-8">
-   What Clients Say About Working With Jay
+   What Clients Say About Working With Me
   </h2>
   </AnimateOnScroll>
   <TestimonialCarousel testimonials={semiconductorTestimonials} />

@@ -46,10 +46,10 @@ export default function FamiliesLifeTransitionsWealthManagement() {
   <div>
    <SectionEyebrow text="FAMILIES & LIFE TRANSITIONS" light />
    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mt-6 mb-6">
-   When Life Changes Everything, Your Financial Plan Should Be the One Thing That Holds Steady.
+   Financial Decisions That Land All at Once: Divorce, Loss, Inheritance, Retirement.
    </h1>
    <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-   Divorce. The loss of a spouse. An unexpected inheritance. The leap into retirement. These aren&apos;t just financial events. They&apos;re deeply personal turning points. In these moments, you deserve more than a spreadsheet. You deserve a guide who understands what you&apos;re going through, who will protect what matters most, and who will help you build a path forward with clarity and care.
+   Each of these moments brings a stack of financial decisions that don&apos;t wait. Account titling, beneficiary changes, insurance, tax filings, distribution elections, sometimes a settlement or insurance payout to deploy. The work is slowing them down enough to take them in the right order.
    </p>
    <div className="flex flex-col sm:flex-row gap-4">
    <Button href="/schedule-consultation" variant="primary">
@@ -82,9 +82,9 @@ export default function FamiliesLifeTransitionsWealthManagement() {
    These moments are not the time for a sales pitch or a complicated product recommendation. They&apos;re the time for someone to listen, to take things one step at a time, and to make sure nothing falls through the cracks while you&apos;re dealing with everything else in your life.
    </p>
    <p className="text-lg leading-relaxed text-[#333333]">
-   That&apos;s what I do. I help families find their footing when the ground shifts. And I stay with you long after the dust settles, making sure your plan grows with you.
+   My job in these moments is to take the financial pieces off your plate where I can, and to walk through the ones you have to make yourself.
    </p>
-   <p className="mt-6 font-semibold text-[#1d7682]"> — Jay Chang, Farther</p>
+   <p className="mt-6 font-semibold text-[#1d7682]"> - Jay Chang, Farther</p>
   </div>
   </AnimateOnScroll>
   </div>

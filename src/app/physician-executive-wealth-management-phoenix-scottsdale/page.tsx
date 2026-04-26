@@ -69,13 +69,13 @@ export default function PhysicianExecutiveWealthPage() {
 
    <AnimateOnScroll delay={100}>
    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-   You Earn More Than Almost Anyone in Arizona. Why Does Your Financial Life Still Feel Unmanaged?
+   Wealth Planning for Physicians and Executives at Banner Health, Mayo Clinic, and Freeport-McMoRan.
    </h1>
    </AnimateOnScroll>
 
    <AnimateOnScroll delay={200}>
    <p className="text-lg md:text-xl text-gray-200 mb-8 leading-relaxed">
-   Healthcare professionals at Banner Health and Mayo Clinic earn $400K to $800K+, yet a typical 401(k) covers less than 4% of retirement. Student debt, malpractice liability, unpredictable schedules, and relentless burnout consume your attention. Freeport-McMoRan professionals carry commodity-linked compensation, concentrated equity positions, and executive benefits tied to copper prices. Neither group chose finance as their expertise. But both groups face financial lives too complex to leave to chance.
+   Physicians at Banner Health and Mayo Clinic earn $400K to $800K+, yet a typical 401(k) covers less than 4% of retirement. Student debt, malpractice liability, unpredictable schedules. Freeport-McMoRan executives carry commodity-linked compensation, concentrated equity, and benefits tied to copper prices. Different situations, common thread: high income that hasn&apos;t translated into a coherent plan.
    </p>
    </AnimateOnScroll>
 
@@ -146,7 +146,7 @@ export default function PhysicianExecutiveWealthPage() {
 
   <AnimateOnScroll>
   <p className="text-xl text-[#5b6a71] leading-relaxed max-w-3xl">
-   Financial stress doesn't exist in a vacuum. It compounds burnout, delays career decisions, and prevents the very wealth accumulation that could create the flexibility physicians desperately need. Your financial life should simplify your medical life, not add to the burden.
+   The financial side compounds the rest. Loan timing affects when a partner buyout makes sense. Disability and malpractice cover affect what risks you can actually take. Equity vesting affects when reducing clinical hours becomes feasible. The decisions are connected, and treating them separately is part of why they don&apos;t get made.
   </p>
   </AnimateOnScroll>
   </div>

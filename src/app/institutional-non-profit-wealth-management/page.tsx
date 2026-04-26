@@ -46,10 +46,10 @@ export default function InstitutionalNonProfitWealthManagement() {
    <div>
     <SectionEyebrow text="INSTITUTIONAL &amp; NON-PROFIT" light />
     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mt-6 mb-6">
-    Your Organization Exists to Serve a Mission. Your Investments Should Too.
+    Investment Management for Endowments, Foundations, and Operating Reserves.
     </h1>
     <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-    Endowments, foundation assets, institutional portfolios, and charitable organizations deserve the same fiduciary rigor that high-net-worth individuals receive. We help non-profits and institutions build investment strategies that protect capital, generate sustainable income, and align with the values your organization was founded to uphold. Every dollar you steward has a purpose. Your portfolio should reflect that.
+    Spending policy, board oversight, donor restrictions, IPS documentation. Institutional portfolios have constraints that individual portfolios don&apos;t, and the construction has to start from those constraints, not from a model allocation.
     </p>
     <div className="flex flex-col sm:flex-row gap-4">
     <Button href="/schedule-consultation" variant="primary">
@@ -76,15 +76,15 @@ export default function InstitutionalNonProfitWealthManagement() {
    <AnimateOnScroll>
    <div className="border-l-4 border-[#1d7682] pl-8 py-8">
     <p className="text-lg leading-relaxed text-[#333333] mb-4">
-    Here&apos;s what most institutional investment firms won&apos;t tell you: you&apos;re a portfolio number to them. You get assigned to a team, shuffled between associates, and sit through quarterly calls with someone who barely remembers your organization&apos;s name. That&apos;s not how this should work, especially when the stakes go beyond any single person. When a foundation&apos;s portfolio underperforms, it&apos;s fewer grants awarded, fewer programs funded, and fewer lives touched.
+    Most institutional relationships run through a rotating bench: you talk to a different associate each quarter and review a model portfolio that wasn&apos;t built around your spending policy. When a foundation&apos;s portfolio underperforms, it&apos;s fewer grants awarded and fewer programs funded. The stakes deserve a single point of accountability.
     </p>
     <p className="text-lg leading-relaxed text-[#333333] mb-4">
-    With me and my dedicated institutional team, you get a real relationship with real people. I&apos;m your advisor, not a firm and their rotating staff. I know your board members by name. I understand your spending policy, your mission, and the values your stakeholders expect you to uphold. I&apos;m local, I show up in person, and my team and I are available when your board needs us. We serve organizations across most states, and when we&apos;re not local, we travel to maintain those relationships. That&apos;s how seriously we take this.
+    I&apos;m the advisor on the relationship, not a rotating staff. I read the IPS, attend board meetings in person where I can, and answer to the board, not to a product company. The portfolio is built around the spending policy and time horizon of the organization, with reporting and governance documentation a board can actually use.
     </p>
     <p className="text-lg leading-relaxed text-[#333333]">
-    Most non-profits are underserved by their investment advisor. They receive a model portfolio that wasn&apos;t built for their spending policy, their time horizon, or their values. They sit through reviews that focus on market commentary instead of whether the portfolio is actually supporting the mission. I do it differently: transparent reporting, clear governance documentation, and a fiduciary who answers to your board, not to a product company.
+    Behind the relationship sits Farther&apos;s institutional infrastructure: research, manager access, and operational support. The combination is meant to look more like an outsourced CIO than a model-portfolio account.
     </p>
-    <p className="mt-6 font-semibold text-[#1d7682]"> &mdash; Jay Chang, Farther</p>
+    <p className="mt-6 font-semibold text-[#1d7682]"> - Jay Chang, Farther</p>
    </div>
    </AnimateOnScroll>
   </div>

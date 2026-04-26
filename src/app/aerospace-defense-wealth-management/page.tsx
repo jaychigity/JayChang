@@ -46,10 +46,10 @@ export default function AerospaceDefenseWealthManagement() {
   <div>
    <SectionEyebrow text="AEROSPACE & DEFENSE" light />
    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mt-6 mb-6">
-   You&apos;ve Spent a Career Building Incredibly Complex Systems. Your Financial Plan Should Be Built With the Same Precision.
+   Pension Elections, Deferred Comp, and the Honeywell HONA Spinoff at Arizona&apos;s Aerospace Employers.
    </h1>
    <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-   Honeywell&apos;s spinoff into Aeronautical Systems (HONA) transforms your equity compensation. RTX&apos;s $2.5B pension transfer to Prudential affects your retirement income decision. Your 401(k) match structure compounds concentration risk. Your deferred comp plan operates under Section 409A rules that require specialized expertise to address. These aren&apos;t generic financial problems. They&apos;re aerospace-specific strategic decisions that require precision.
+   Honeywell&apos;s spinoff into Aeronautical Systems (HONA) reshapes your equity compensation. RTX&apos;s $2.5B pension transfer to Prudential changes the retirement income decision. The 401(k) match arrives as company stock and compounds concentration. Deferred comp sits under Section 409A and has to be coordinated with the rest.
    </p>
    <div className="flex flex-col sm:flex-row gap-4">
    <Button href="/schedule-consultation" variant="primary">
@@ -76,15 +76,15 @@ export default function AerospaceDefenseWealthManagement() {
   <AnimateOnScroll>
   <div className="border-l-4 border-[#1d7682] pl-8 py-8">
    <p className="text-lg leading-relaxed text-[#333333] mb-4">
-   I&apos;ve worked with dozens of Honeywell and RTX professionals in Phoenix and Tucson. I know the difference between Honeywell&apos;s Match-as-HON-Stock structure and the HONA conversion ahead. I understand why RTX&apos;s CDP (Cash Deferral Plan) and PSU Deferral Plan require careful coordination with your pension lump-sum election. I know that your 401(k) match arrives as company stock, and that concentration risk is real when you&apos;ve also received RSU grants and accumulated shares through your career.
+   Honeywell&apos;s Match-as-HON-Stock structure, the upcoming HONA spinoff conversion, RTX&apos;s CDP and PSU Deferral Plan, the pension lump-sum election, the 401(k) match arriving as company stock. These come up constantly in the work, and they each interact with the others in ways the documents don&apos;t make obvious.
    </p>
    <p className="text-lg leading-relaxed text-[#333333] mb-4">
-   The spinoff isn&apos;t an abstract corporate event. It means your Honeywell equity automatically converts to two stocks. Your tax basis matters. The timing of the ex-date matters. Whether you reinvest dividends matters. And whether your deferred comp plan treats the spinoff as a taxable event (it doesn&apos;t, under Section 409A, but your current advisor might not be certain) matters enormously.
+   The spinoff isn&apos;t an abstract corporate event. Your Honeywell equity automatically converts to two stocks. Tax basis, the timing of the ex-date, dividend reinvestment, whether your deferred comp plan treats the spinoff as a taxable event (it doesn&apos;t, under Section 409A). Each piece feeds into the next.
    </p>
    <p className="text-lg leading-relaxed text-[#333333]">
-   Your financial plan should reflect the same precision you&apos;ve brought to your career. That&apos;s what we build together.
+   The work is mapping all of that and walking through the decisions in the order they need to be made.
    </p>
-   <p className="mt-6 font-semibold text-[#1d7682]"> — Jay Chang, Farther</p>
+   <p className="mt-6 font-semibold text-[#1d7682]"> - Jay Chang, Farther</p>
   </div>
   </AnimateOnScroll>
   </div>

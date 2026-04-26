@@ -48,10 +48,10 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
   <div>
    <SectionEyebrow text="TELECOMMUNICATIONS & UTILITIES" light />
    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mt-6 mb-6">
-   You Keep the Networks Running and the Lights On. We Make Sure Your Financial Plan Works Just as Hard.
+   Pension Elections, Deferred Comp, and Employer Stock at AT&amp;T, Verizon, T-Mobile, SRP, and PG&amp;E.
    </h1>
    <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-   AT&amp;T&apos;s pension and surplus savings plan. Verizon&apos;s deferred compensation and employer stock match. T-Mobile&apos;s RSU program and post-merger equity grants. SRP&apos;s defined benefit retirement system. PG&amp;E&apos;s restructured benefits after bankruptcy. These aren&apos;t generic financial problems. They&apos;re industry-specific decisions that require someone who understands the structures, the union contracts, and the retirement timing rules unique to telecom and utility professionals.
+   AT&amp;T&apos;s Pension Choice election. Verizon&apos;s Savings Plan match in employer stock. T-Mobile RSU grants from the Sprint merger. SRP&apos;s defined-benefit formulas. PG&amp;E&apos;s restructured benefits after the bankruptcy. The work is mapping what you have, sorting through the irrevocable decisions, and walking through them in the order they need to be made.
    </p>
    <div className="flex flex-col sm:flex-row gap-4">
    <Button href="/schedule-consultation" variant="primary">
@@ -78,15 +78,15 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
   <AnimateOnScroll>
   <div className="border-l-4 border-[#1d7682] pl-8 py-8">
    <p className="text-lg leading-relaxed text-[#333333] mb-4">
-   I&apos;ve worked with telecom and utility professionals across Arizona and beyond, from AT&amp;T network engineers with 30-year pensions to T-Mobile managers navigating post-merger RSU grants. I understand the difference between a union-negotiated pension formula and a management deferred comp plan. I know why SRP&apos;s defined benefit system requires different planning than Verizon&apos;s 401(k) match structure. And I know that when you&apos;ve spent decades at one company, your financial picture is deeply intertwined with your employer&apos;s benefits in ways most advisors don&apos;t take the time to understand.
+   AT&amp;T&apos;s Pension Choice election, Verizon&apos;s Savings Plan match in employer stock, T-Mobile RSU grants from the Sprint merger, SRP&apos;s defined-benefit formulas, PG&amp;E&apos;s restructured benefits post-bankruptcy. These come up constantly in the work, and the right answer for one isn&apos;t the right answer for the next.
    </p>
    <p className="text-lg leading-relaxed text-[#333333] mb-4">
-   Telecom and utility careers come with something rare in today&apos;s economy: real pensions, real deferred comp, and real long-term tenure. But that stability creates its own risks: employer stock concentration, pension election decisions that are irrevocable, and retirement timing choices that interact with Social Security, Medicare, and union contract provisions in complex ways.
+   Telecom and utility careers come with something rare: real pensions, real deferred comp, and long tenure. The stability brings its own risks though: employer stock concentration, pension elections that can&apos;t be reversed, and retirement timing that interacts with Social Security, Medicare, and union contract provisions in ways the documents don&apos;t make obvious.
    </p>
    <p className="text-lg leading-relaxed text-[#333333]">
-   Your financial plan should reflect the same reliability you&apos;ve built into the systems you maintain. That&apos;s what we build together.
+   The work is mapping all of that and walking through the decisions in the order they need to be made.
    </p>
-   <p className="mt-6 font-semibold text-[#1d7682]"> — Jay Chang, Farther</p>
+   <p className="mt-6 font-semibold text-[#1d7682]"> - Jay Chang, Farther</p>
   </div>
   </AnimateOnScroll>
   </div>
