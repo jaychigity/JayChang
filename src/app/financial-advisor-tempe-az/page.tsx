@@ -6,14 +6,14 @@ export const metadata: Metadata = {
  title: 'Financial Advisor in Tempe, AZ | Advisor Jay, Farther | Fiduciary Wealth Management',
  description: 'Jay Chang is a fiduciary financial advisor based in Tempe, Arizona at Farther. Serving engineers, physicians, and executives across the East Valley with comprehensive, technology-powered wealth management.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/financial-advisor-tempe-az',
+ canonical: 'https://www.advisorjay.com/financial-advisor-tempe-az',
  },
  robots: 'index, follow',
  openGraph: {
  title: 'Financial Advisor in Tempe, AZ | Advisor Jay, Farther | Fiduciary Wealth Management',
  description: 'Jay Chang is a fiduciary financial advisor based in Tempe, Arizona at Farther. Serving engineers, physicians, and executives across the East Valley.',
  type: 'website',
- url: 'https://www.PWM-Farther.com/financial-advisor-tempe-az',
+ url: 'https://www.advisorjay.com/financial-advisor-tempe-az',
  },
 };
 
@@ -29,7 +29,7 @@ export default function TempeFinancialAdvisor() {
  '@type': 'FinancialService',
  name: 'Advisor Jay, Farther',
  description: 'Fiduciary financial advisor based in Tempe, Arizona serving engineers, physicians, and executives',
- url: 'https://www.PWM-Farther.com/financial-advisor-tempe-az',
+ url: 'https://www.advisorjay.com/financial-advisor-tempe-az',
  areaServed: [
  { '@type': 'City', name: 'Tempe' },
  { '@type': 'State', name: 'Arizona' },

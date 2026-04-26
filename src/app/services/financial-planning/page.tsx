@@ -12,12 +12,12 @@ export const metadata: Metadata = {
  'Financial Planning | Arizona, California & Nevada Wealth Advisor',
  description:
  'Comprehensive financial planning for families with $2M-$20M. Retirement projections, cash flow analysis, education funding, and Social Security optimization in Arizona, California, and Nevada.',
- alternates: { canonical: 'https://www.PWM-Farther.com/services/financial-planning' },
+ alternates: { canonical: 'https://www.advisorjay.com/services/financial-planning' },
  openGraph: {
  title: 'Financial Planning | Advisor Jay',
  description:
  'Scenario-based financial planning for high-net-worth families. Retirement, education funding, insurance, and tax-coordinated strategies.',
- url: 'https://www.PWM-Farther.com/services/financial-planning',
+ url: 'https://www.advisorjay.com/services/financial-planning',
  type: 'website',
  },
 }
@@ -28,7 +28,7 @@ const serviceJsonLd = {
  name: 'Advisor Jay - Financial Planning',
  description:
  'Comprehensive financial planning services for families with $2M-$20M in investable assets, including retirement projections, cash flow analysis, education funding, and Social Security optimization.',
- url: 'https://www.PWM-Farther.com/services/financial-planning',
+ url: 'https://www.advisorjay.com/services/financial-planning',
  telephone: '+1-480-944-0880',
  areaServed: [
  {

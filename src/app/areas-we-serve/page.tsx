@@ -7,7 +7,7 @@ export const metadata: Metadata = {
  title: 'Areas Jay Chang Serves | Arizona, California & Nevada Wealth Management | Farther',
  description: 'Jay Chang serves high-income professionals across Phoenix, Chandler, Scottsdale, Tempe, Mesa, Tucson, the Bay Area, and Nevada. Fiduciary wealth management powered by Farther&apos;s $15B+ platform.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/areas-we-serve',
+ canonical: 'https://www.advisorjay.com/areas-we-serve',
  },
 };
 

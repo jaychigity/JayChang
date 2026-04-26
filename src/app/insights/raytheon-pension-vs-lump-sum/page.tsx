@@ -7,12 +7,12 @@ export const metadata: Metadata = {
  title: 'Raytheon Pension vs. Lump Sum: How to Make the Right Decision for Your Retirement',
  description: 'A detailed analysis of the pension vs. lump-sum decision for RTX and legacy Raytheon employees - including break-even analysis, survivor benefit math, and portfolio integration considerations.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/insights/raytheon-pension-vs-lump-sum',
+ canonical: 'https://www.advisorjay.com/insights/raytheon-pension-vs-lump-sum',
  },
  openGraph: {
  title: 'Raytheon Pension vs. Lump Sum: How to Make the Right Decision for Your Retirement',
  description: 'A detailed analysis of the pension vs. lump-sum decision for RTX and legacy Raytheon employees - including break-even analysis, survivor benefit math, and portfolio integration considerations.',
- url: 'https://www.PWM-Farther.com/insights/raytheon-pension-vs-lump-sum',
+ url: 'https://www.advisorjay.com/insights/raytheon-pension-vs-lump-sum',
  type: 'article',
  authors: ['Jay Chang'],
  },
@@ -165,7 +165,7 @@ export default function RaytheonPensionPage() {
   '@type': 'Article',
   headline: 'Raytheon Pension vs. Lump Sum: The Most Important Decision You&apos;ll Make at RTX',
   description: 'A detailed analysis of the pension vs. lump-sum decision for RTX and legacy Raytheon employees - including break-even analysis, survivor benefit math, and portfolio integration considerations.',
-  image: 'https://www.PWM-Farther.com/og-image.jpg',
+  image: 'https://www.advisorjay.com/og-image.jpg',
   datePublished: '2026-03-16',
   dateModified: '2026-03-16',
   author: {
@@ -177,7 +177,7 @@ export default function RaytheonPensionPage() {
    name: 'Farther',
    logo: {
    '@type': 'ImageObject',
-   url: 'https://www.PWM-Farther.com/logo.jpg',
+   url: 'https://www.advisorjay.com/logo.jpg',
    },
   },
   }),

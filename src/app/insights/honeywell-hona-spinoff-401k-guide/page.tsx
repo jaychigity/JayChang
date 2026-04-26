@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'Honeywell Aerospace (HONA) spinoff Q3 2026. Your 401(k) match converts from HON to HON+HONA. Audit exposure, understand RSU conversion, rebalance before spinoff closes. Action timeline for employees.',
   alternates: {
     canonical:
-      'https://www.PWM-Farther.com/insights/honeywell-hona-spinoff-401k-guide',
+      'https://www.advisorjay.com/insights/honeywell-hona-spinoff-401k-guide',
   },
   openGraph: {
     title:
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description:
       'Honeywell Aerospace (HONA) spinoff Q3 2026. Your 401(k) match converts from HON to HON+HONA. Audit exposure, understand RSU conversion, rebalance before spinoff closes.',
     type: 'article',
-    url: 'https://www.PWM-Farther.com/insights/honeywell-hona-spinoff-401k-guide',
+    url: 'https://www.advisorjay.com/insights/honeywell-hona-spinoff-401k-guide',
   },
 }
 
@@ -77,13 +77,13 @@ export default function HoneywellHonaSpinoff401kGuidePage() {
             publisher: {
               '@type': 'Organization',
               name: 'Advisor Jay',
-              url: 'https://www.PWM-Farther.com',
+              url: 'https://www.advisorjay.com',
             },
             datePublished: '2026-03-18',
             dateModified: '2026-03-18',
             mainEntityOfPage: {
               '@type': 'WebPage',
-              '@id': 'https://www.PWM-Farther.com/insights/honeywell-hona-spinoff-401k-guide',
+              '@id': 'https://www.advisorjay.com/insights/honeywell-hona-spinoff-401k-guide',
             },
             description:
               'Honeywell Aerospace spinoff as HONA expected Q3 2026. Form 10 filed March 2026. $17.4B standalone revenue. Employees: HON shares convert to HON+HONA. 401(k) match arrives as HON stock. Audit total exposure, understand RSU conversion, review investment elections, attend June 3 Investor Day, plan rebalancing.',

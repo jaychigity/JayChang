@@ -7,7 +7,7 @@ export const metadata: Metadata = {
  title: 'How Working With Jay Chang Actually Works | Our Wealth Management Process',
  description: 'See how Jay Chang and our team at Farther walk you through every step, from a simple intro call to an ongoing partnership that grows with you.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/process',
+ canonical: 'https://www.advisorjay.com/process',
  },
 };
 

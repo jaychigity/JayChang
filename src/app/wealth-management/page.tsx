@@ -23,13 +23,13 @@ export const metadata: Metadata = {
  description:
  'Comprehensive wealth management for families with $2M-$20M in investable assets. Investment management, financial planning, tax optimization, estate planning, and more.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/wealth-management',
+ canonical: 'https://www.advisorjay.com/wealth-management',
  },
  openGraph: {
  title: 'Wealth Management Services | Farther Personal Wealth',
  description:
  'Comprehensive wealth management for families with $2M-$20M in investable assets.',
- url: 'https://www.PWM-Farther.com/wealth-management',
+ url: 'https://www.advisorjay.com/wealth-management',
  type: 'website',
  },
 }
@@ -116,7 +116,7 @@ export default function WealthManagementPage() {
   name: 'Farther - Jay Chang',
   description:
    'Comprehensive wealth management services for high-net-worth families with $2M-$20M in investable assets.',
-  url: 'https://www.PWM-Farther.com/wealth-management',
+  url: 'https://www.advisorjay.com/wealth-management',
   areaServed: [
    { '@type': 'City', name: 'Scottsdale', addressRegion: 'AZ' },
    { '@type': 'City', name: 'Tempe', addressRegion: 'AZ' },

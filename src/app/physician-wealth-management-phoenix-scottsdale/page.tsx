@@ -9,7 +9,7 @@ export const metadata: Metadata = {
  description:
  'Wealth management for professionals at Banner Health and Mayo Clinic in Phoenix and Scottsdale. Tax planning, asset protection, retirement acceleration, and practice financial strategy from a fiduciary advisor.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/physician-wealth-management-phoenix-scottsdale',
+ canonical: 'https://www.advisorjay.com/physician-wealth-management-phoenix-scottsdale',
  },
  robots: 'index, follow',
 };

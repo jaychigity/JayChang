@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title: 'Free Cash Flow Planner | Year-by-Year Retirement Projection | Advisor Jay',
   description:
     'Free year-by-year cash flow projection. Model income, Social Security, portfolio withdrawals, expenses, taxes, and one-time goals from now through retirement. See net flows and portfolio balance for every year. No sign-up required.',
-  alternates: { canonical: 'https://www.PWM-Farther.com/tools/cash-flow-planner' },
+  alternates: { canonical: 'https://www.advisorjay.com/tools/cash-flow-planner' },
   openGraph: {
     title: 'Free Cash Flow Planner | Advisor Jay',
     description:
       'See your year-by-year income, expenses, and portfolio balance from today through retirement. Model salary, Social Security, pension, withdrawals, taxes, and major goals.',
-    url: 'https://www.PWM-Farther.com/tools/cash-flow-planner',
+    url: 'https://www.advisorjay.com/tools/cash-flow-planner',
   },
 }
 

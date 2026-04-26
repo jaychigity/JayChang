@@ -9,13 +9,13 @@ export const metadata: Metadata = {
  description:
  'Free retirement calculator and 60-second readiness assessment. Get a personalized score across savings rate, asset benchmarks, and funding projections. Instant results.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/tools/retirement-savings-calculator',
+ canonical: 'https://www.advisorjay.com/tools/retirement-savings-calculator',
  },
  openGraph: {
  title: 'Am I On Track? | Free 60-Second Retirement Assessment',
  description:
  'Free retirement calculator. Discover if you&apos;re on track for the retirement you want. 10 questions, under 60 seconds, personalized insights.',
- url: 'https://www.PWM-Farther.com/tools/retirement-savings-calculator',
+ url: 'https://www.advisorjay.com/tools/retirement-savings-calculator',
  },
 }
 

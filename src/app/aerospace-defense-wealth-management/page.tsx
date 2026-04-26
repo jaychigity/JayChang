@@ -9,7 +9,7 @@ export const metadata: Metadata = {
  title: 'Aerospace & Defense Wealth Management in Phoenix & Tucson | Honeywell & Raytheon Benefits | Advisor Jay, Farther',
  description: 'Fiduciary financial planning for Honeywell and Raytheon/RTX professionals in Phoenix and Tucson. Jay knows your pension, your 401(k) match structure, your deferred comp plans, and what Honeywell\'s spinoff into HONA means for your equity and retirement.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/aerospace-defense-wealth-management',
+ canonical: 'https://www.advisorjay.com/aerospace-defense-wealth-management',
  },
 };
 
@@ -34,7 +34,7 @@ export default function AerospaceDefenseWealthManagement() {
   description: 'Fiduciary financial planning for Honeywell and Raytheon/RTX professionals',
   areaServed: ['Phoenix, Arizona', 'Tucson, Arizona'],
   serviceType: ['Wealth Management', 'Retirement Planning', 'Investment Management'],
-  url: 'https://www.PWM-Farther.com/aerospace-defense-wealth-management',
+  url: 'https://www.advisorjay.com/aerospace-defense-wealth-management',
   }),
   }}
  />

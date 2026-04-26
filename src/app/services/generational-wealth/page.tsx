@@ -11,12 +11,12 @@ export const metadata: Metadata = {
  title: 'Multi-Generational Wealth Planning: Dynasty Trusts & Succession Strategies | Advisor Jay',
  description:
  'Multi-generational wealth planning for families with $2M-$20M. Family governance, dynasty trusts, succession planning, and values-based philanthropy.',
- alternates: { canonical: 'https://www.PWM-Farther.com/services/generational-wealth' },
+ alternates: { canonical: 'https://www.advisorjay.com/services/generational-wealth' },
  openGraph: {
  title: 'Multi-Generational Wealth Planning: Dynasty Trusts & Succession Strategies | Advisor Jay',
  description:
  'Build wealth that endures across generations with multi-generational governance frameworks, dynasty trusts, succession planning, and values-based philanthropy strategies.',
- url: 'https://www.PWM-Farther.com/services/generational-wealth',
+ url: 'https://www.advisorjay.com/services/generational-wealth',
  },
 }
 
@@ -26,7 +26,7 @@ const serviceJsonLd = {
  name: 'Generational Wealth Planning - Advisor Jay',
  description:
  'Multi-generational wealth planning for families with $2M-$20M in investable assets in Scottsdale, AZ and across Arizona, California, and Nevada. Family governance, dynasty trusts, business succession planning, and values-based philanthropy.',
- url: 'https://www.PWM-Farther.com/services/generational-wealth',
+ url: 'https://www.advisorjay.com/services/generational-wealth',
  telephone: '+1-480-944-0880',
  areaServed: [
  {

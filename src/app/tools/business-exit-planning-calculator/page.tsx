@@ -9,14 +9,14 @@ export const metadata: Metadata = {
  description:
  'Answer 10 quick questions to assess your readiness for a business exit. Get your personalized score across Financial, Operational, Tax, and Succession dimensions - free and confidential.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/tools/business-exit-planning-calculator',
+ canonical: 'https://www.advisorjay.com/tools/business-exit-planning-calculator',
  },
  openGraph: {
  title:
  'How Ready Are You to Exit Your Business? | Free 60-Second Assessment',
  description:
  'Take the Business Exit Readiness Scorecard - 10 questions, under 60 seconds. Get actionable insights across Financial, Operational, Tax, and Succession readiness.',
- url: 'https://www.PWM-Farther.com/tools/business-exit-planning-calculator',
+ url: 'https://www.advisorjay.com/tools/business-exit-planning-calculator',
  },
 }
 

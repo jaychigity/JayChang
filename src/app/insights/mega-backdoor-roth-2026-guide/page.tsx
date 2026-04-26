@@ -13,7 +13,7 @@ export const metadata: Metadata = {
  'Complete guide to the mega backdoor Roth strategy for 2026. Learn how to contribute up to $72,000 annually through 401(k) after-tax contributions and in-plan conversions. Step-by-step instructions and real examples.',
  alternates: {
  canonical:
- 'https://www.PWM-Farther.com/insights/mega-backdoor-roth-2026-guide',
+ 'https://www.advisorjay.com/insights/mega-backdoor-roth-2026-guide',
  },
  openGraph: {
  title:
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
  description:
  'Complete guide to the mega backdoor Roth strategy for 2026. Learn how to contribute up to $72,000 annually through 401(k) after-tax contributions and in-plan conversions.',
  type: 'article',
- url: 'https://www.PWM-Farther.com/insights/mega-backdoor-roth-2026-guide',
+ url: 'https://www.advisorjay.com/insights/mega-backdoor-roth-2026-guide',
  },
 }
 
@@ -77,13 +77,13 @@ export default function MegaBackdoorRoth2026Page() {
   publisher: {
    '@type': 'Organization',
    name: 'Advisor Jay',
-   url: 'https://www.PWM-Farther.com',
+   url: 'https://www.advisorjay.com',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-18',
   mainEntityOfPage: {
    '@type': 'WebPage',
-   '@id': 'https://www.PWM-Farther.com/insights/mega-backdoor-roth-2026-guide',
+   '@id': 'https://www.advisorjay.com/insights/mega-backdoor-roth-2026-guide',
   },
   description:
    'Complete guide to mega backdoor Roth strategy: $72,000 annual tax-free 401(k) contributions through after-tax conversions. Requirements, step-by-step process, and real examples.',

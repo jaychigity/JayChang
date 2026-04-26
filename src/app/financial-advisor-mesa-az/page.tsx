@@ -6,14 +6,14 @@ export const metadata: Metadata = {
  title: 'Financial Advisor in Mesa, AZ | Apple Employee Specialist | Advisor Jay, Farther',
  description: 'Fiduciary financial advisor in Mesa, Arizona specializing in Apple employees at the Mesa operations center. RSU planning, ESPP optimization, and tenure-based 401(k) strategy for Apple professionals.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/financial-advisor-mesa-az',
+ canonical: 'https://www.advisorjay.com/financial-advisor-mesa-az',
  },
  robots: 'index, follow',
  openGraph: {
  title: 'Financial Advisor in Mesa, AZ | Apple Employee Specialist | Advisor Jay, Farther',
  description: 'Fiduciary financial advisor in Mesa, Arizona specializing in Apple employees at the Mesa operations center. RSU planning, ESPP optimization, and tenure-based 401(k) strategy.',
  type: 'website',
- url: 'https://www.PWM-Farther.com/financial-advisor-mesa-az',
+ url: 'https://www.advisorjay.com/financial-advisor-mesa-az',
  },
 };
 
@@ -29,7 +29,7 @@ export default function MesaFinancialAdvisor() {
  '@type': 'FinancialService',
  name: 'Advisor Jay, Farther',
  description: 'Fiduciary financial advisor serving Apple employees in Mesa, Arizona',
- url: 'https://www.PWM-Farther.com/financial-advisor-mesa-az',
+ url: 'https://www.advisorjay.com/financial-advisor-mesa-az',
  areaServed: [
  { '@type': 'City', name: 'Mesa' },
  { '@type': 'State', name: 'Arizona' },

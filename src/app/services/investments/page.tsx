@@ -12,12 +12,12 @@ export const metadata: Metadata = {
  'Custom Portfolio Management & Tax-Efficient Investing | Advisor Jay',
  description:
  'Custom investment management for HNW families in Arizona, California, and Nevada. Tax-efficient portfolios, alternative investments, and institutional-grade research.',
- alternates: { canonical: 'https://www.PWM-Farther.com/services/investments' },
+ alternates: { canonical: 'https://www.advisorjay.com/services/investments' },
  openGraph: {
  title: 'Custom Portfolio Management & Tax-Efficient Investing | Advisor Jay',
  description:
  'Custom investment management for high-net-worth families and business owners in Scottsdale, AZ and across Arizona, California, and Nevada. Tax-efficient strategies, alternatives access, and consolidated reporting.',
- url: 'https://www.PWM-Farther.com/services/investments',
+ url: 'https://www.advisorjay.com/services/investments',
  },
 }
 
@@ -27,7 +27,7 @@ const serviceJsonLd = {
  name: 'Investment Management - Advisor Jay',
  description:
  'Custom investment management for high-net-worth families and business owners in Scottsdale, AZ and across Arizona, California, and Nevada. Tax-efficient portfolio construction, alternative investments, and institutional-grade research.',
- url: 'https://www.PWM-Farther.com/services/investments',
+ url: 'https://www.advisorjay.com/services/investments',
  telephone: '+1-480-944-0880',
  areaServed: [
  {

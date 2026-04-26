@@ -25,14 +25,14 @@ export const metadata: Metadata = {
  description:
   'A straightforward, tax-smart approach to growing and protecting wealth for families and business owners with $2M-$20M+ in investable assets. Real human advice, backed by great technology.',
  alternates: {
-  canonical: 'https://www.PWM-Farther.com/investment-philosophy',
+  canonical: 'https://www.advisorjay.com/investment-philosophy',
  },
  openGraph: {
   title:
    'How We Invest Your Money | Advisor Jay',
   description:
    'A straightforward, tax-smart approach to growing and protecting wealth for families and business owners with $2M-$20M+ in investable assets.',
-  url: 'https://www.PWM-Farther.com/investment-philosophy',
+  url: 'https://www.advisorjay.com/investment-philosophy',
  },
 }
 

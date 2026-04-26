@@ -9,7 +9,7 @@ export const metadata: Metadata = {
  title: 'Semiconductor & Tech Wealth Management in Arizona | RSU, SERPLUS & Equity Planning | Advisor Jay, Farther',
  description: 'Fiduciary wealth management for semiconductor and tech professionals at TSMC, Intel, NVIDIA, Apple, Microchip, and Amkor in Arizona. Jay Chang knows your benefits, your equity plans, and the financial complexity your career creates.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/semiconductor-wealth-management-arizona',
+ canonical: 'https://www.advisorjay.com/semiconductor-wealth-management-arizona',
  },
 };
 
@@ -33,7 +33,7 @@ export default function SemiconductorWealthManagementArizona() {
  name: 'Phoenix',
  addressCountry: 'US',
  },
- url: 'https://www.PWM-Farther.com/semiconductor-wealth-management-arizona',
+ url: 'https://www.advisorjay.com/semiconductor-wealth-management-arizona',
  telephone: '(480) 944-0880',
  priceRange: '$$',
  serviceType: ['Wealth Management', 'Financial Planning', 'Equity Planning'],

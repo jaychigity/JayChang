@@ -13,7 +13,7 @@ export const metadata: Metadata = {
  'Why 22% federal withholding on RSU vesting is rarely sufficient for $200K+ earners. Calculate your withholding gap and fix it with W-4 adjustments or quarterly estimated taxes.',
  alternates: {
  canonical:
- 'https://www.PWM-Farther.com/insights/rsu-withholding-gap-22-percent',
+ 'https://www.advisorjay.com/insights/rsu-withholding-gap-22-percent',
  },
  openGraph: {
  title:
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
  description:
  'Why 22% federal withholding on RSU vesting is rarely sufficient for $200K+ earners. Calculate your withholding gap and fix it with W-4 adjustments or quarterly estimated taxes.',
  type: 'article',
- url: 'https://www.PWM-Farther.com/insights/rsu-withholding-gap-22-percent',
+ url: 'https://www.advisorjay.com/insights/rsu-withholding-gap-22-percent',
  },
 }
 
@@ -77,13 +77,13 @@ export default function RSUWithholdingGap22PercentPage() {
   publisher: {
    '@type': 'Organization',
    name: 'Advisor Jay',
-   url: 'https://www.PWM-Farther.com',
+   url: 'https://www.advisorjay.com',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-18',
   mainEntityOfPage: {
    '@type': 'WebPage',
-   '@id': 'https://www.PWM-Farther.com/insights/rsu-withholding-gap-22-percent',
+   '@id': 'https://www.advisorjay.com/insights/rsu-withholding-gap-22-percent',
   },
   description:
    'RSU vesting withholding at 22% is insufficient for high earners. Learn why your actual marginal rate is 32-37% federal, plus state and Medicare taxes. Calculate your gap and fix it.',

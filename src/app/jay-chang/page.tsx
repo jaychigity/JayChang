@@ -9,7 +9,7 @@ export const metadata: Metadata = {
  title: 'Jay Chang | Vice President, Wealth Advisor | Farther',
  description: 'Meet Jay Chang, a fiduciary wealth advisor at Farther in Tempe, Arizona. Jay specializes in retirement income planning, investment strategy, tax planning, and wealth building for professionals, business owners, and families across all wealth stages.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/jay-chang',
+ canonical: 'https://www.advisorjay.com/jay-chang',
  },
 };
 
@@ -28,7 +28,7 @@ export default function JayChangPage() {
   worksFor: {
    '@type': 'Organization',
    name: 'Farther',
-   url: 'https://www.PWM-Farther.com',
+   url: 'https://www.advisorjay.com',
   },
   areaServed: [
    'Tempe, Arizona',
@@ -39,7 +39,7 @@ export default function JayChangPage() {
    'Tucson, Arizona',
    'Silicon Valley, California',
   ],
-  url: 'https://www.PWM-Farther.com/jay-chang',
+  url: 'https://www.advisorjay.com/jay-chang',
   telephone: '(480) 944-0880',
   }),
   }}

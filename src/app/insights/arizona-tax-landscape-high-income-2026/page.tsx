@@ -7,12 +7,12 @@ export const metadata: Metadata = {
  title: 'Arizona Tax Planning for High-Income Professionals in 2026: What Changed and What Matters',
  description: `A 2026 guide to Arizona tax landscape for engineers, physicians, and executives earning $150K-$800K+. State income tax rates, federal changes, relocation from California, and year-end planning opportunities.`,
  alternates: {
- canonical: 'https://www.PWM-Farther.com/insights/arizona-tax-landscape-high-income-2026',
+ canonical: 'https://www.advisorjay.com/insights/arizona-tax-landscape-high-income-2026',
  },
  openGraph: {
  title: 'Arizona Tax Planning for High-Income Professionals in 2026: What Changed and What Matters',
  description: `A 2026 guide to Arizona tax landscape for engineers, physicians, and executives earning $150K-$800K+. State income tax rates, federal changes, relocation from California, and year-end planning opportunities.`,
- url: 'https://www.PWM-Farther.com/insights/arizona-tax-landscape-high-income-2026',
+ url: 'https://www.advisorjay.com/insights/arizona-tax-landscape-high-income-2026',
  type: 'article',
  authors: ['Jay Chang'],
  },
@@ -208,7 +208,7 @@ export default function ArizonaTaxPlanningPage() {
   '@type': 'Article',
   headline: 'Arizona Tax Planning for High-Income Professionals: What Matters Most in 2026',
   description: `A 2026 guide to Arizona tax landscape for engineers, physicians, and executives earning $150K-$800K+. State income tax rates, federal changes, relocation from California, and year-end planning opportunities.`,
-  image: 'https://www.PWM-Farther.com/og-image.jpg',
+  image: 'https://www.advisorjay.com/og-image.jpg',
   datePublished: '2026-03-16',
   dateModified: '2026-03-16',
   author: {
@@ -220,7 +220,7 @@ export default function ArizonaTaxPlanningPage() {
    name: 'Farther',
    logo: {
    '@type': 'ImageObject',
-   url: 'https://www.PWM-Farther.com/logo.jpg',
+   url: 'https://www.advisorjay.com/logo.jpg',
    },
   },
   }),

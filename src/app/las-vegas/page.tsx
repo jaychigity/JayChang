@@ -21,12 +21,12 @@ export const metadata: Metadata = {
  title: 'Wealth Management in Las Vegas & Nevada | Financial Advisor for Families & Business Owners',
  description:
  'Personalized wealth management for Nevada families and business owners with $2M-$20M. Serving Las Vegas, Henderson, Summerlin, and greater Nevada with no state income tax advantages.',
- alternates: { canonical: 'https://www.PWM-Farther.com/las-vegas' },
+ alternates: { canonical: 'https://www.advisorjay.com/las-vegas' },
  openGraph: {
  title: 'Las Vegas & Nevada Wealth Management | Advisor Jay',
  description:
  'Financial planning, investment management, and tax strategy for Nevada families - serving Las Vegas, Henderson, Summerlin, and Southern Nevada.',
- url: 'https://www.PWM-Farther.com/las-vegas',
+ url: 'https://www.advisorjay.com/las-vegas',
  },
  other: {
  'geo.region': 'US-NV',
@@ -40,7 +40,7 @@ const financialServiceSchema = {
  name: 'Advisor Jay - Las Vegas & Nevada',
  description:
  'Personalized wealth management for Nevada families and business owners. Serving Las Vegas, Henderson, Summerlin, and greater Nevada with no state income tax benefits.',
- url: 'https://www.PWM-Farther.com/las-vegas',
+ url: 'https://www.advisorjay.com/las-vegas',
  telephone: '+1-480-944-0880',
  address: {
  '@type': 'PostalAddress',

@@ -9,14 +9,14 @@ export const metadata: Metadata = {
  description:
  'Free income annuity calculator. See how much guaranteed monthly income your savings could generate. Adjust your lump sum, age, and payout option for instant estimates.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/tools/income-annuity',
+ canonical: 'https://www.advisorjay.com/tools/income-annuity',
  },
  openGraph: {
  title:
  'Income Annuity Estimator | How Much Monthly Income Could You Generate?',
  description:
  'Free income annuity calculator. Enter your savings and see estimated guaranteed monthly income from an immediate annuity. Compare payout options instantly.',
- url: 'https://www.PWM-Farther.com/tools/income-annuity',
+ url: 'https://www.advisorjay.com/tools/income-annuity',
  },
 }
 

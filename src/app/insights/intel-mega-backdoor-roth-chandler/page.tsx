@@ -6,7 +6,7 @@ export const metadata: Metadata = {
  title: `Intel's Mega Backdoor Roth: How Chandler Engineers Can Save $72,000 Per Year Tax-Free`,
  description: `A step-by-step guide to using Intel's 401(k) after-tax contribution feature for the mega backdoor Roth strategy - and why it's one of the most powerful wealth-building tools available to Intel employees.`,
  alternates: {
- canonical: 'https://www.PWM-Farther.com/insights/intel-mega-backdoor-roth-chandler',
+ canonical: 'https://www.advisorjay.com/insights/intel-mega-backdoor-roth-chandler',
  },
 };
 

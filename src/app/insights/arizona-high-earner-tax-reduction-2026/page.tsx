@@ -13,7 +13,7 @@ export const metadata: Metadata = {
  'Year-end tax planning strategies for high earners in Arizona earning $200K-$800K+. Reduce federal and state taxes through 401(k), backdoor Roth, HSA, charitable giving, and Arizona tax credits.',
  alternates: {
  canonical:
- 'https://www.PWM-Farther.com/insights/arizona-high-earner-tax-reduction-2026',
+ 'https://www.advisorjay.com/insights/arizona-high-earner-tax-reduction-2026',
  },
  openGraph: {
  title:
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
  description:
  'Year-end tax planning strategies for high earners in Arizona earning $200K-$800K+. Reduce federal and state taxes through 401(k), backdoor Roth, HSA, charitable giving, and Arizona tax credits.',
  type: 'article',
- url: 'https://www.PWM-Farther.com/insights/arizona-high-earner-tax-reduction-2026',
+ url: 'https://www.advisorjay.com/insights/arizona-high-earner-tax-reduction-2026',
  },
 }
 
@@ -77,13 +77,13 @@ export default function ArizonaHighEarnerTaxReduction2026Page() {
   publisher: {
    '@type': 'Organization',
    name: 'Advisor Jay',
-   url: 'https://www.PWM-Farther.com',
+   url: 'https://www.advisorjay.com',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-18',
   mainEntityOfPage: {
    '@type': 'WebPage',
-   '@id': 'https://www.PWM-Farther.com/insights/arizona-high-earner-tax-reduction-2026',
+   '@id': 'https://www.advisorjay.com/insights/arizona-high-earner-tax-reduction-2026',
   },
   description:
    'Year-end tax planning for $200K-$800K+ earners in Arizona. Federal strategies: 401(k), mega backdoor Roth, backdoor Roth, HSA, charitable bunching, appreciated stock donation. Arizona-specific: qualified charitable tax credit, school tax credit.',

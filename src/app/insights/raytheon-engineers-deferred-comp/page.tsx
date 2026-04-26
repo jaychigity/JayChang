@@ -7,12 +7,12 @@ export const metadata: Metadata = {
  title: 'RTX Deferred Compensation for Raytheon Executives: A Complete Guide to the RTX DCP',
  description: 'How RTX and Raytheon M7+ executives can use the RTX Compensation Deferral Plan to reduce taxes, plan retirement income, and coordinate with pension, 401(k), and ESPP benefits.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/insights/raytheon-engineers-deferred-comp',
+ canonical: 'https://www.advisorjay.com/insights/raytheon-engineers-deferred-comp',
  },
  openGraph: {
  title: 'RTX Deferred Compensation for Raytheon Executives: A Complete Guide to the RTX DCP',
  description: 'How RTX and Raytheon M7+ executives can use the RTX Compensation Deferral Plan to reduce taxes, plan retirement income, and coordinate with pension, 401(k), and ESPP benefits.',
- url: 'https://www.PWM-Farther.com/insights/raytheon-engineers-deferred-comp',
+ url: 'https://www.advisorjay.com/insights/raytheon-engineers-deferred-comp',
  type: 'article',
  authors: ['Jay Chang'],
  },
@@ -200,7 +200,7 @@ export default function RaytheonDeferredCompPage() {
   '@type': 'Article',
   headline: 'RTX Executive Deferred Compensation: The Complete Guide to the RTX Compensation Deferral Plan',
   description: 'How RTX and Raytheon M7+ executives can use the RTX Compensation Deferral Plan to reduce taxes, plan retirement income, and coordinate with pension, 401(k), and ESPP benefits.',
-  image: 'https://www.PWM-Farther.com/og-image.jpg',
+  image: 'https://www.advisorjay.com/og-image.jpg',
   datePublished: '2026-03-16',
   dateModified: '2026-03-16',
   author: {
@@ -212,7 +212,7 @@ export default function RaytheonDeferredCompPage() {
    name: 'Farther',
    logo: {
    '@type': 'ImageObject',
-   url: 'https://www.PWM-Farther.com/logo.jpg',
+   url: 'https://www.advisorjay.com/logo.jpg',
    },
   },
   }),

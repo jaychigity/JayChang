@@ -74,7 +74,7 @@ const fakt = localFont({
 })
 
 export const metadata: Metadata = {
- metadataBase: new URL('https://www.PWM-Farther.com'),
+ metadataBase: new URL('https://www.advisorjay.com'),
  title: {
  default: 'Advisor Jay | Farther | Scottsdale, Arizona Financial Advisor',
  template: '%s | Advisor Jay',
@@ -108,8 +108,8 @@ const organizationJsonLd = {
  '@type': 'Organization',
  name: 'Farther Finance Advisors LLC',
  alternateName: 'Advisor Jay',
- url: 'https://www.PWM-Farther.com',
- logo: 'https://www.PWM-Farther.com/farther-logo.png',
+ url: 'https://www.advisorjay.com',
+ logo: 'https://www.advisorjay.com/farther-logo.png',
  description:
  'SEC-registered investment adviser providing fiduciary wealth management for families and business owners with $2M-$20M in investable assets. Serving Scottsdale, AZ and clients across Arizona, California, and Nevada.',
  contactPoint: [

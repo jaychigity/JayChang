@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'RAYSIP Lifetime Income Strategy (LIS) converts 401(k) to guaranteed annuity income starting age 48. Pros: longevity protection. Cons: reduces NUA strategy, illiquidity. RTX contribution scaling 3% to 7% by age. Compare alternatives.',
   alternates: {
     canonical:
-      'https://www.PWM-Farther.com/insights/rtx-lifetime-income-strategy-review',
+      'https://www.advisorjay.com/insights/rtx-lifetime-income-strategy-review',
   },
   openGraph: {
     title:
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description:
       'RAYSIP Lifetime Income Strategy converts 401(k) to guaranteed income annuity starting age 48. Understand tradeoffs, RTX age-based contributions, and whether diversified approach might be better.',
     type: 'article',
-    url: 'https://www.PWM-Farther.com/insights/rtx-lifetime-income-strategy-review',
+    url: 'https://www.advisorjay.com/insights/rtx-lifetime-income-strategy-review',
   },
 }
 
@@ -77,13 +77,13 @@ export default function RTXLifetimeIncomeStrategyReviewPage() {
             publisher: {
               '@type': 'Organization',
               name: 'Advisor Jay',
-              url: 'https://www.PWM-Farther.com',
+              url: 'https://www.advisorjay.com',
             },
             datePublished: '2026-03-18',
             dateModified: '2026-03-18',
             mainEntityOfPage: {
               '@type': 'WebPage',
-              '@id': 'https://www.PWM-Farther.com/insights/rtx-lifetime-income-strategy-review',
+              '@id': 'https://www.advisorjay.com/insights/rtx-lifetime-income-strategy-review',
             },
             description:
               'RAYSIP Lifetime Income Strategy gradually converts 401(k) to guaranteed income annuity starting age 48, full conversion by 62. Examine tradeoffs: guaranteed income vs investment control loss, longevity protection vs liquidity constraints, impact on Net Unrealized Appreciation strategy.',

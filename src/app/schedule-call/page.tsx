@@ -7,7 +7,7 @@ export const metadata: Metadata = {
  title: 'Schedule a Conversation | Wealth Advisor | Phoenix, AZ',
  description: 'Schedule a conversation with Jay Chang, fiduciary wealth advisor at Farther. A focused conversation about your financial situation.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/schedule-call',
+ canonical: 'https://www.advisorjay.com/schedule-call',
  },
 };
 

@@ -9,13 +9,13 @@ export const metadata: Metadata = {
  description:
  'Free RSU and equity compensation calculator. Visualize your vesting timeline, tax triggers, and optimization windows for RSUs, ISOs, NQSOs, and ESPPs. Instant analysis.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/tools/rsu-equity-compensation-calculator',
+ canonical: 'https://www.advisorjay.com/tools/rsu-equity-compensation-calculator',
  },
  openGraph: {
  title: 'Equity Compensation Decision Tool | Advisor Jay',
  description:
  'Free equity compensation calculator. See your RSU, ISO, NQSO, and ESPP decision timeline with tax triggers, vesting milestones, and optimization windows.',
- url: 'https://www.PWM-Farther.com/tools/rsu-equity-compensation-calculator',
+ url: 'https://www.advisorjay.com/tools/rsu-equity-compensation-calculator',
  },
 }
 

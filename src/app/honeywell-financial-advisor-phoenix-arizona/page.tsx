@@ -7,7 +7,7 @@ export const metadata: Metadata = {
  title: 'Honeywell Employee Financial Advisor in Phoenix | RSU, 401(k) & Deferred Comp Planning | Jay Chang',
  description: 'Wealth planning for Honeywell professionals in Phoenix. Employer-stock concentration in your 401(k) match, RSU strategy, and retirement income planning from a fiduciary who knows Honeywell\'s benefits.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/honeywell-financial-advisor-phoenix-arizona',
+ canonical: 'https://www.advisorjay.com/honeywell-financial-advisor-phoenix-arizona',
  },
  robots: 'index, follow',
 };

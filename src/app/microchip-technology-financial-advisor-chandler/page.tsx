@@ -7,7 +7,7 @@ export const metadata: Metadata = {
  title: 'Microchip Technology Financial Advisor in Chandler | RSU & Equity Planning | Jay Chang',
  description: 'Financial planning for Microchip Technology engineers and executives in Chandler. Quarterly RSU vesting, ESPP strategy, and concentration risk management for semiconductor professionals navigating a down-cycle equity environment.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/microchip-technology-financial-advisor-chandler',
+ canonical: 'https://www.advisorjay.com/microchip-technology-financial-advisor-chandler',
  },
  robots: 'index, follow',
 };

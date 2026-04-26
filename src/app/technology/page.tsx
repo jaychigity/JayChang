@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   description:
     `Farther's Intelligent Wealth Platform combines advanced financial planning, real-time portfolio visibility, and institutional-grade investment strategies for families with $2M–$20M.`,
   alternates: {
-    canonical: 'https://www.PWM-Farther.com/technology',
+    canonical: 'https://www.advisorjay.com/technology',
   },
 }
 
@@ -81,7 +81,7 @@ export default function TechnologyPage() {
             name: 'The Farther Platform: Technology-Powered Wealth Management',
             description:
               `Farther's technology platform combines technology-powered planning with institutional-grade investment strategies.`,
-            url: 'https://www.PWM-Farther.com/technology',
+            url: 'https://www.advisorjay.com/technology',
           }),
         }}
       />

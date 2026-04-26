@@ -21,12 +21,12 @@ export const metadata: Metadata = {
  title: 'Financial Advisor for Arizona Engineers, Executives & Doctors | Jay Chang',
  description:
   `Financial planning and wealth management for high-income professionals at TSMC, Intel, Honeywell, Banner Health, and other top Arizona employers. We help people earning $150K-$800K+ keep more of what they earn. Jay Chang at Farther.`,
- alternates: { canonical: 'https://www.PWM-Farther.com/scottsdale' },
+ alternates: { canonical: 'https://www.advisorjay.com/scottsdale' },
  openGraph: {
   title: `Financial Advisor for Arizona's Top Earners | Jay Chang`,
   description:
    `Hands-on financial planning, RSU strategies, and wealth management for engineers, executives, and physicians earning $150K-$800K+ at Arizona's biggest employers.`,
-  url: 'https://www.PWM-Farther.com/scottsdale',
+  url: 'https://www.advisorjay.com/scottsdale',
  },
  other: {
   'geo.region': 'US-AZ',
@@ -40,7 +40,7 @@ const financialServiceSchema = {
  name: 'Advisor Jay - Scottsdale',
  description:
   `Wealth management and equity compensation planning for high-income professionals earning $150K-$800K+ at Arizona top employers including TSMC, Intel, Honeywell, Raytheon, Banner Health, Mayo Clinic, and Freeport-McMoRan.`,
- url: 'https://www.PWM-Farther.com/scottsdale',
+ url: 'https://www.advisorjay.com/scottsdale',
  telephone: '+1-480-944-0880',
  geo: {
   '@type': 'GeoCoordinates',
@@ -67,7 +67,7 @@ const financialServiceSchema = {
  provider: {
   '@type': 'Organization',
   name: 'Farther',
-  url: 'https://www.PWM-Farther.com',
+  url: 'https://www.advisorjay.com',
  },
 }
 

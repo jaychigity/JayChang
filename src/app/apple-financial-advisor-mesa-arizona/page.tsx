@@ -7,7 +7,7 @@ export const metadata: Metadata = {
  title: 'Apple Employee Financial Advisor in Mesa, AZ | RSU, ESPP & Tax Planning | Jay Chang',
  description: 'Wealth management for Apple employees in Mesa and Cupertino. Manage biannual RSU vesting, the Apple ESPP, withholding shortfalls, and your Deferred Compensation Plan with a fiduciary advisor who knows Apple&apos;s benefits.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/apple-financial-advisor-mesa-arizona',
+ canonical: 'https://www.advisorjay.com/apple-financial-advisor-mesa-arizona',
  },
  robots: {
  index: true,

@@ -9,14 +9,14 @@ export const metadata: Metadata = {
  description:
  'Free California to Nevada tax savings calculator. Compare your 5-year state tax bill across CA, NV, and AZ, including income, capital gains, RSU vesting, and real estate gains.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/tools/ca-nv-tax-savings',
+ canonical: 'https://www.advisorjay.com/tools/ca-nv-tax-savings',
  },
  openGraph: {
  title:
  'California vs. Nevada vs. Arizona Tax Savings Estimator | How Much Could You Save?',
  description:
  'Free California vs. Nevada tax savings calculator. Compare your 5-year state tax burden across CA, NV, and AZ. Instant estimates for income, capital gains, RSUs, and real estate gains.',
- url: 'https://www.PWM-Farther.com/tools/ca-nv-tax-savings',
+ url: 'https://www.advisorjay.com/tools/ca-nv-tax-savings',
  },
 }
 

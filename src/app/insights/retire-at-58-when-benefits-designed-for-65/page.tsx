@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'Early retirement gap: healthcare, pension reduction, Social Security reduction, 401(k) Rule of 55, taxable account strategy. Bridge 58 to 65 with real example and account sequence.',
   alternates: {
     canonical:
-      'https://www.PWM-Farther.com/insights/retire-at-58-when-benefits-designed-for-65',
+      'https://www.advisorjay.com/insights/retire-at-58-when-benefits-designed-for-65',
   },
   openGraph: {
     title:
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description:
       'Early retirement gap strategy: healthcare via ACA, pension reduction (Rule of 85), Social Security optimization, Rule of 55 access. Account withdrawal sequencing with real example.',
     type: 'article',
-    url: 'https://www.PWM-Farther.com/insights/retire-at-58-when-benefits-designed-for-65',
+    url: 'https://www.advisorjay.com/insights/retire-at-58-when-benefits-designed-for-65',
   },
 }
 
@@ -77,13 +77,13 @@ export default function RetireAt58WhenBenefitsDesignedFor65Page() {
             publisher: {
               '@type': 'Organization',
               name: 'Advisor Jay',
-              url: 'https://www.PWM-Farther.com',
+              url: 'https://www.advisorjay.com',
             },
             datePublished: '2026-03-18',
             dateModified: '2026-03-18',
             mainEntityOfPage: {
               '@type': 'WebPage',
-              '@id': 'https://www.PWM-Farther.com/insights/retire-at-58-when-benefits-designed-for-65',
+              '@id': 'https://www.advisorjay.com/insights/retire-at-58-when-benefits-designed-for-65',
             },
             description:
               'Bridge gap from 58 to 65: healthcare, pension early reduction, Social Security break-even analysis, Rule of 55 for 401(k) access without penalty, withdrawal sequencing from taxable and tax-deferred accounts. Real example: 58-year-old RTX engineer.',

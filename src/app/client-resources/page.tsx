@@ -5,12 +5,12 @@ export const metadata: Metadata = {
  title: "Market Commentary & Insights | Advisor Jay",
  description:
  "Stay informed with the latest market commentary, economic outlooks, and financial planning insights from Farther's research team. Updated regularly with analysis relevant to families, professionals, and business owners.",
- alternates: { canonical: "https://www.PWM-Farther.com/client-resources" },
+ alternates: { canonical: "https://www.advisorjay.com/client-resources" },
  openGraph: {
  title: "Market Commentary & Insights | Advisor Jay",
  description:
  "Latest market commentary and financial planning insights from Farther's research team.",
- url: "https://www.PWM-Farther.com/client-resources",
+ url: "https://www.advisorjay.com/client-resources",
  },
 };
 

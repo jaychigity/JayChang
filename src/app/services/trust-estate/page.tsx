@@ -11,12 +11,12 @@ export const metadata: Metadata = {
  title: 'Estate Planning & Dynasty Trusts for Arizona & Nevada Families | Advisor Jay',
  description:
  'Dedicated trust and estate planning specialists for families with $2M-$20M. Revocable and irrevocable trusts, Nevada dynasty trusts, and wealth transfer strategies.',
- alternates: { canonical: 'https://www.PWM-Farther.com/services/trust-estate' },
+ alternates: { canonical: 'https://www.advisorjay.com/services/trust-estate' },
  openGraph: {
  title: 'Estate Planning & Dynasty Trusts for Arizona & Nevada Families | Advisor Jay',
  description:
  'Dedicated trust and estate planning specialists providing revocable and irrevocable trust design, Nevada dynasty trust strategy, and coordinated wealth transfer planning.',
- url: 'https://www.PWM-Farther.com/services/trust-estate',
+ url: 'https://www.advisorjay.com/services/trust-estate',
  },
 }
 
@@ -26,7 +26,7 @@ const serviceJsonLd = {
  name: 'Trust & Estate Planning - Advisor Jay',
  description:
  'Dedicated trust and estate planning specialists for families with $2M-$20M in investable assets in Scottsdale, AZ and across Arizona, California, and Nevada. Revocable and irrevocable trust design, Nevada dynasty trusts, and wealth transfer strategies.',
- url: 'https://www.PWM-Farther.com/services/trust-estate',
+ url: 'https://www.advisorjay.com/services/trust-estate',
  telephone: '+1-480-944-0880',
  areaServed: [
  {

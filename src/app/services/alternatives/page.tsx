@@ -11,12 +11,12 @@ export const metadata: Metadata = {
  title: 'Private Equity & Alternative Investments for High-Net-Worth Families | Advisor Jay',
  description:
  'Get access to private equity, venture capital, private credit, and hedge fund strategies that used to be reserved for the ultra-wealthy. Advisor Jay Chang at Farther.',
- alternates: { canonical: 'https://www.PWM-Farther.com/services/alternatives' },
+ alternates: { canonical: 'https://www.advisorjay.com/services/alternatives' },
  openGraph: {
  title: 'Private Equity & Alternative Investments for High-Net-Worth Families | Advisor Jay',
  description:
  'Private equity, venture capital, private credit, and real asset access for families with $5M+ -- without the sky-high minimums. Arizona, California & Nevada.',
- url: 'https://www.PWM-Farther.com/services/alternatives',
+ url: 'https://www.advisorjay.com/services/alternatives',
  },
 }
 
@@ -26,7 +26,7 @@ const serviceJsonLd = {
  name: 'Alternative Investments - Advisor Jay',
  description:
  'Access to private equity, venture capital, private credit, and hedge fund strategies via institutional-quality vehicles for families with $5M+ in investable assets.',
- url: 'https://www.PWM-Farther.com/services/alternatives',
+ url: 'https://www.advisorjay.com/services/alternatives',
  telephone: '+1-480-944-0880',
  areaServed: [
  {

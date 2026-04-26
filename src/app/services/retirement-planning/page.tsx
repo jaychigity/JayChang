@@ -13,13 +13,13 @@ export const metadata: Metadata = {
  description:
  'Retirement income planning, distribution sequencing, Social Security optimization, and Roth conversion strategies for families in Arizona, California, and Nevada.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/services/retirement-planning',
+ canonical: 'https://www.advisorjay.com/services/retirement-planning',
  },
  openGraph: {
  title: 'Retirement Income Planning: Social Security Optimization & Tax-Smart Distributions | Advisor Jay',
  description:
  'Retirement income planning, distribution sequencing, Social Security optimization, and Roth conversion strategies for families with $2M-$20M.',
- url: 'https://www.PWM-Farther.com/services/retirement-planning',
+ url: 'https://www.advisorjay.com/services/retirement-planning',
  },
 }
 
@@ -29,7 +29,7 @@ const serviceJsonLd = {
  name: 'Retirement Planning - Advisor Jay',
  description:
  'Retirement income planning, distribution sequencing, Social Security optimization, and Roth conversion strategies for families with $2M-$20M in Arizona, California, and Nevada.',
- url: 'https://www.PWM-Farther.com/services/retirement-planning',
+ url: 'https://www.advisorjay.com/services/retirement-planning',
  telephone: '+1-480-944-0880',
  areaServed: [
  {

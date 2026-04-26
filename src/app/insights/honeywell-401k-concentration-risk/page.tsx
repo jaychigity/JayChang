@@ -6,7 +6,7 @@ export const metadata: Metadata = {
  title: 'Honeywell 401(k) Employer Stock Concentration: What Phoenix Engineers Need to Know',
  description: `Honeywell's employer match arrives as HON stock - and stays there until you act. Here's how Phoenix-area Honeywell professionals can identify and fix 401(k) concentration before retirement.`,
  alternates: {
- canonical: 'https://www.PWM-Farther.com/insights/honeywell-401k-concentration-risk',
+ canonical: 'https://www.advisorjay.com/insights/honeywell-401k-concentration-risk',
  },
 };
 

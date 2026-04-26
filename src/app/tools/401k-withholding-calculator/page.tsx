@@ -8,13 +8,13 @@ export const metadata: Metadata = {
  description:
  'Free 401(k) withholding calculator. Find the exact payroll percentage to max out your 401(k), including catch-up contributions and after-tax spillover for mega backdoor Roth strategies.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/tools/401k-withholding-calculator',
+ canonical: 'https://www.advisorjay.com/tools/401k-withholding-calculator',
  },
  openGraph: {
  title: '401(k) Withholding Calculator | Advisor Jay',
  description:
  'Free 401(k) withholding calculator. Find the right percentage to max out your 401(k). Includes catch-up contributions and spillover calculations.',
- url: 'https://www.PWM-Farther.com/tools/401k-withholding-calculator',
+ url: 'https://www.advisorjay.com/tools/401k-withholding-calculator',
  },
 }
 

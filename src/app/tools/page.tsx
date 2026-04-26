@@ -7,13 +7,13 @@ export const metadata: Metadata = {
  description:
  'Free financial calculators for corporate employees, utility professionals, physicians, business owners, and families. Free AT&T pension calculator, free PG&E benefits calculator, 401(k) projections, Roth conversions, and more. No sign-up required, instant results.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/tools',
+ canonical: 'https://www.advisorjay.com/tools',
  },
  openGraph: {
  title: 'Free Financial Calculators & Planning Tools | Advisor Jay',
  description:
  'Free financial calculators with instant results. No sign-up required. AT&T pension, PG&E benefits, 401(k) projections, Roth conversions, Social Security, RMDs, and more.',
- url: 'https://www.PWM-Farther.com/tools',
+ url: 'https://www.advisorjay.com/tools',
  },
 }
 

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
  title: 'Intel Employee Financial Planning in Chandler | RSU, SERPLUS & 401(k) Strategy | Jay Chang',
  description: 'Specialized financial planning for Intel professionals in Chandler. SERPLUS guidance, mega backdoor Roth, RSU diversification, and tax strategy from a fiduciary advisor who knows Intel&apos;s benefits inside and out.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/intel-financial-advisor-chandler-arizona',
+ canonical: 'https://www.advisorjay.com/intel-financial-advisor-chandler-arizona',
  },
  robots: {
  index: true,

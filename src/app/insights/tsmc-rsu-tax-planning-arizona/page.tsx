@@ -6,7 +6,7 @@ export const metadata: Metadata = {
  title: 'TSMC RSU Tax Planning for Phoenix Engineers: What You Need to Know in 2026 | Jay Chang',
  description: 'How TSMC engineers in North Phoenix should plan for RSU vesting tax events in 2026 - including withholding gaps, Arizona residency strategy, and a rules-based selling framework.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/insights/tsmc-rsu-tax-planning-arizona',
+ canonical: 'https://www.advisorjay.com/insights/tsmc-rsu-tax-planning-arizona',
  },
 };
 

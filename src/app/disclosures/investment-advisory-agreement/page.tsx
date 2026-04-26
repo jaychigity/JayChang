@@ -7,7 +7,7 @@ export const metadata: Metadata = {
  'Investment Advisory Agreement for Farther Finance Advisors, LLC. Terms and conditions for discretionary investment management services.',
  robots: { index: false, follow: true },
  alternates: {
- canonical: 'https://www.PWM-Farther.com/disclosures/investment-advisory-agreement',
+ canonical: 'https://www.advisorjay.com/disclosures/investment-advisory-agreement',
  },
 }
 

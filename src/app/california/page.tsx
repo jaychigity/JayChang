@@ -20,12 +20,12 @@ export const metadata: Metadata = {
  title: 'Wealth Management in California | Financial Advisor for Tech Executives & Entrepreneurs',
  description:
  'Personalized wealth management for California families, tech executives, and entrepreneurs with $2M-$20M. Serving Los Angeles, San Francisco, Silicon Valley, and Newport Beach. Advisor Jay.',
- alternates: { canonical: 'https://www.PWM-Farther.com/california' },
+ alternates: { canonical: 'https://www.advisorjay.com/california' },
  openGraph: {
  title: 'California Wealth Management | Advisor Jay',
  description:
  'Financial planning, tax optimization, and equity compensation strategy for California tech executives, startup founders, and high-earning professionals with $2M-$20M in investable assets.',
- url: 'https://www.PWM-Farther.com/california',
+ url: 'https://www.advisorjay.com/california',
  },
  other: {
  'geo.region': 'US-CA',
@@ -39,7 +39,7 @@ const financialServiceSchema = {
  name: 'Advisor Jay - California',
  description:
  'Personalized wealth management for California families and professionals with $2M-$20M in investable assets. Financial planning, investment management, tax strategy, equity compensation planning, and business exit strategy.',
- url: 'https://www.PWM-Farther.com/california',
+ url: 'https://www.advisorjay.com/california',
  telephone: '+1-480-944-0880',
  geo: {
  '@type': 'GeoCoordinates',
@@ -66,7 +66,7 @@ const financialServiceSchema = {
  provider: {
  '@type': 'Organization',
  name: 'Farther',
- url: 'https://www.PWM-Farther.com',
+ url: 'https://www.advisorjay.com',
  },
 }
 

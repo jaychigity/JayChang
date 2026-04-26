@@ -6,7 +6,7 @@ export const metadata: Metadata = {
  title: 'Banner Health Physicians: 7 Tax Strategies for High-Income Doctors in Arizona | 2026',
  description: 'Tax planning strategies specifically for Banner Health physicians and surgeons in Phoenix and Scottsdale earning $400K-$800K+. From backdoor Roth to cash balance plans and asset protection.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/insights/banner-health-physician-tax-strategies',
+ canonical: 'https://www.advisorjay.com/insights/banner-health-physician-tax-strategies',
  },
 };
 

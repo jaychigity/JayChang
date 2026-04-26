@@ -7,7 +7,7 @@ export const metadata: Metadata = {
  title: 'Amkor Technology Financial Advisor in Tempe & Chandler | RSU & Relocation Planning | Jay Chang',
  description: 'Wealth planning for Amkor Technology engineers and leaders in Tempe and Chandler. RSU planning, international relocation financial strategy, and equity compensation guidance from a fiduciary advisor.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/amkor-technology-financial-advisor-tempe',
+ canonical: 'https://www.advisorjay.com/amkor-technology-financial-advisor-tempe',
  },
 };
 

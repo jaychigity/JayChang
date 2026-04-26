@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.PWM-Farther.com'
+  const baseUrl = 'https://www.advisorjay.com'
 
   const staticPages = [
     // Core pages

@@ -6,14 +6,14 @@ export const metadata: Metadata = {
  title: 'Financial Advisor in Phoenix, AZ | Fiduciary Wealth Management | Advisor Jay, Farther',
  description: 'Fiduciary financial advisor in Phoenix, Arizona. Jay Chang at Farther specializes in wealth management for semiconductor engineers, aerospace professionals, physicians, and executives across the Phoenix metro.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/financial-advisor-phoenix-az',
+ canonical: 'https://www.advisorjay.com/financial-advisor-phoenix-az',
  },
  robots: 'index, follow',
  openGraph: {
  title: 'Financial Advisor in Phoenix, AZ | Fiduciary Wealth Management | Advisor Jay, Farther',
  description: 'Fiduciary financial advisor in Phoenix, Arizona. Jay Chang at Farther specializes in wealth management for semiconductor engineers, aerospace professionals, physicians, and executives.',
  type: 'website',
- url: 'https://www.PWM-Farther.com/financial-advisor-phoenix-az',
+ url: 'https://www.advisorjay.com/financial-advisor-phoenix-az',
  },
 };
 
@@ -29,7 +29,7 @@ export default function PhoenixFinancialAdvisor() {
  '@type': 'FinancialService',
  name: 'Advisor Jay, Farther',
  description: 'Fiduciary financial advisor serving professionals in Phoenix, Arizona',
- url: 'https://www.PWM-Farther.com/financial-advisor-phoenix-az',
+ url: 'https://www.advisorjay.com/financial-advisor-phoenix-az',
  areaServed: [
  { '@type': 'City', name: 'Phoenix' },
  { '@type': 'State', name: 'Arizona' },

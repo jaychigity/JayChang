@@ -7,7 +7,7 @@ export const metadata: Metadata = {
  title: 'Raytheon RTX Financial Advisor in Tucson & Phoenix | Pension, 401(k) & Deferred Comp | Jay Chang',
  description: 'Specialized financial planning for Raytheon and RTX professionals in Tucson and Phoenix. Pension vs. lump sum, age-based 401(k) contributions, Lifetime Income Strategy guidance, and deferred comp planning from a fiduciary advisor.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/raytheon-rtx-financial-advisor-tucson-phoenix',
+ canonical: 'https://www.advisorjay.com/raytheon-rtx-financial-advisor-tucson-phoenix',
  },
  robots: {
  index: true,

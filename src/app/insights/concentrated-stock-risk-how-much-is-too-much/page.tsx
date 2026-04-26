@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Concentrated Stock Risk: How Much NVDA, TSMC, or Intel Is Too Much in Your Portfolio?',
   description: `40% of Russell 3000 stocks have suffered 70%+ declines from peak. Learn whether your concentrated position is defensible and how to systematically reduce it without triggering massive capital gains taxes.`,
   alternates: {
-    canonical: 'https://www.PWM-Farther.com/insights/concentrated-stock-risk-how-much-is-too-much',
+    canonical: 'https://www.advisorjay.com/insights/concentrated-stock-risk-how-much-is-too-much',
   },
 };
 

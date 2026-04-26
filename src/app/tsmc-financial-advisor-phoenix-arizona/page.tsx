@@ -7,7 +7,7 @@ export const metadata: Metadata = {
  title: 'TSMC Employee Financial Advisor in North Phoenix | RSU & Relocation Planning | Jay Chang',
  description: 'Wealth planning for TSMC professionals in North Phoenix. Equity planning, Arizona relocation tax strategy, RSU management, and fiduciary advice for semiconductor professionals at TSMC&apos;s Fab 21.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/tsmc-financial-advisor-phoenix-arizona',
+ canonical: 'https://www.advisorjay.com/tsmc-financial-advisor-phoenix-arizona',
  },
  robots: {
  index: true,

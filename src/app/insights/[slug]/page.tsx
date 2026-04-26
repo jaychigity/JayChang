@@ -173,13 +173,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
  title: `${article.title} | Farther Insights`,
  description: article.excerpt,
  alternates: {
- canonical: `https://www.PWM-Farther.com/insights/${slug}`,
+ canonical: `https://www.advisorjay.com/insights/${slug}`,
  },
  openGraph: {
  title: article.title,
  description: article.excerpt,
  type: 'article',
- url: `https://www.PWM-Farther.com/insights/${slug}`,
+ url: `https://www.advisorjay.com/insights/${slug}`,
  },
  }
 }
@@ -238,13 +238,13 @@ export default async function ArticlePage({ params }: PageProps) {
   publisher: {
    '@type': 'Organization',
    name: 'Advisor Jay',
-   url: 'https://www.PWM-Farther.com',
+   url: 'https://www.advisorjay.com',
   },
   datePublished: article.date,
   dateModified: article.date,
   mainEntityOfPage: {
    '@type': 'WebPage',
-   '@id': `https://www.PWM-Farther.com/insights/${slug}`,
+   '@id': `https://www.advisorjay.com/insights/${slug}`,
   },
   description: article.excerpt,
   }),

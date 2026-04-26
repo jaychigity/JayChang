@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'The NVIDIA ESPP 2-Year Lookback: What It is Worth and How to Maximize It',
   description: `NVIDIA's 15% discount with 2-year lookback can deliver 30-50% total returns before you sell a single share. Understand how it works, the tax treatment, and when to sell for maximum value.`,
   alternates: {
-    canonical: 'https://www.PWM-Farther.com/insights/nvidia-espp-2-year-lookback',
+    canonical: 'https://www.advisorjay.com/insights/nvidia-espp-2-year-lookback',
   },
 };
 

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
  title: 'NVIDIA Stock Concentration Risk: When Does Your Equity Become Your Biggest Liability?',
  description: 'How NVIDIA engineers can evaluate and manage concentrated stock positions - without paying a massive tax bill or missing the upside.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/insights/nvidia-rsu-concentration-risk',
+ canonical: 'https://www.advisorjay.com/insights/nvidia-rsu-concentration-risk',
  },
 };
 

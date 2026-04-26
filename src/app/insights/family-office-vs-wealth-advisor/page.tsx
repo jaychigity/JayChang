@@ -23,7 +23,7 @@ export const metadata: Metadata = {
  ],
  alternates: {
  canonical:
- 'https://www.PWM-Farther.com/insights/family-office-vs-wealth-advisor',
+ 'https://www.advisorjay.com/insights/family-office-vs-wealth-advisor',
  },
  openGraph: {
  title:
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
  description:
  'A family office is the gold standard for ultra-high-net-worth families - but for most affluent households, a comprehensive wealth advisor delivers the same outcomes at a fraction of the cost. Learn how to decide.',
  type: 'article',
- url: 'https://www.PWM-Farther.com/insights/family-office-vs-wealth-advisor',
+ url: 'https://www.advisorjay.com/insights/family-office-vs-wealth-advisor',
  siteName: 'Farther Personal Wealth',
  },
 }
@@ -99,14 +99,14 @@ export default function FamilyOfficeVsWealthAdvisorPage() {
   publisher: {
    '@type': 'Organization',
    name: 'Advisor Jay',
-   url: 'https://www.PWM-Farther.com',
+   url: 'https://www.advisorjay.com',
   },
   datePublished: '2026-01-15',
   dateModified: '2026-03-01',
   mainEntityOfPage: {
    '@type': 'WebPage',
    '@id':
-   'https://www.PWM-Farther.com/insights/family-office-vs-wealth-advisor',
+   'https://www.advisorjay.com/insights/family-office-vs-wealth-advisor',
   },
   description:
    'Explore the differences between a family office and a comprehensive wealth advisor. Learn why a family office alternative may deliver the same services at a fraction of the cost.',

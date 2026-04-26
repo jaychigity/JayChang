@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: 'Insights | Expert Wealth Planning, Tax Strategy & Financial Guidance',
   description: 'Expert insights on equity compensation, tax strategy, retirement planning, physician finance, executive wealth, relocation planning, estate strategy, and charitable giving for high-income professionals in Arizona.',
   alternates: {
-    canonical: 'https://www.PWM-Farther.com/insights',
+    canonical: 'https://www.advisorjay.com/insights',
   },
 }
 
@@ -168,7 +168,7 @@ export default function InsightsPage() {
             '@type': 'CollectionPage',
             name: 'Insights - Advisor Jay',
             description: 'Expert insights on equity compensation, tax strategy, retirement planning, and wealth preservation for high-income professionals.',
-            url: 'https://www.PWM-Farther.com/insights',
+            url: 'https://www.advisorjay.com/insights',
           }),
         }}
       />

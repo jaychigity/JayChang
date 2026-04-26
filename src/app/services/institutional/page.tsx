@@ -11,12 +11,12 @@ export const metadata: Metadata = {
  title: 'Outsourced CIO & OCIO Services for Nonprofits & Foundations | Advisor Jay',
  description:
  'Outsourced CIO services for nonprofits, endowments, and foundations. Fiduciary investment oversight, policy development, and governance support in Arizona, California, and Nevada.',
- alternates: { canonical: 'https://www.PWM-Farther.com/services/institutional' },
+ alternates: { canonical: 'https://www.advisorjay.com/services/institutional' },
  openGraph: {
  title: 'Outsourced CIO & OCIO Services for Nonprofits & Foundations | Advisor Jay',
  description:
  'Outsourced CIO services for nonprofits, endowments, and foundations. Fiduciary investment oversight, policy development, and governance support.',
- url: 'https://www.PWM-Farther.com/services/institutional',
+ url: 'https://www.advisorjay.com/services/institutional',
  },
 }
 
@@ -26,7 +26,7 @@ const serviceJsonLd = {
  name: 'Institutional Services - Advisor Jay',
  description:
  'Outsourced chief investment officer (OCIO) services for nonprofits, endowments, and foundations including investment policy development, asset allocation, fiduciary oversight, and governance support in Scottsdale, AZ and across Arizona, California, and Nevada.',
- url: 'https://www.PWM-Farther.com/services/institutional',
+ url: 'https://www.advisorjay.com/services/institutional',
  telephone: '+1-480-944-0880',
  areaServed: [
  {

@@ -9,14 +9,14 @@ export const metadata: Metadata = {
  description:
   'Free RMD calculator with 2026 IRS Uniform Lifetime Table. Calculate your required minimum distribution, see the tax impact on your bracket, model QCD savings, and project your IRA balance over 10+ years. Updated for SECURE 2.0.',
  alternates: {
-  canonical: 'https://www.PWM-Farther.com/tools/rmd-calculator',
+  canonical: 'https://www.advisorjay.com/tools/rmd-calculator',
  },
  openGraph: {
   title:
    'RMD Calculator: How Much Must You Withdraw From Your IRA in 2026?',
   description:
    'Free RMD calculator. Calculate your required minimum distribution instantly. See tax impact, QCD optimization, multi-year projections, and IRMAA warnings. No sign-up.',
-  url: 'https://www.PWM-Farther.com/tools/rmd-calculator',
+  url: 'https://www.advisorjay.com/tools/rmd-calculator',
  },
 }
 

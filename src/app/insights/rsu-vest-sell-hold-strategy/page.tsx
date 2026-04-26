@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'RSUs Vest Next Month. Here is What to Do Before, During, and After.',
   description: `RSU vesting triggers an immediate tax obligation - even if you don't sell. Learn how to estimate tax impact, coordinate withholding, and decide whether to hold or sell your vested shares.`,
   alternates: {
-    canonical: 'https://www.PWM-Farther.com/insights/rsu-vest-sell-hold-strategy',
+    canonical: 'https://www.advisorjay.com/insights/rsu-vest-sell-hold-strategy',
   },
 };
 

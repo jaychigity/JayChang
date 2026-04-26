@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 
-const BASE_URL = 'https://www.PWM-Farther.com'
+const BASE_URL = 'https://www.advisorjay.com'
 
 /**
  * Page-specific OpenGraph image mapping.

@@ -7,12 +7,12 @@ export const metadata: Metadata = {
  title: 'Freeport-McMoRan Executives: Managing Commodity-Linked Equity in a Volatile Copper Market',
  description: 'How FCX executives and senior engineers can manage concentrated Freeport-McMoRan stock positions tied to copper price cycles - including 10b5-1 plans, diversification strategies, and profit-sharing coordination.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/insights/freeport-commodity-equity-planning',
+ canonical: 'https://www.advisorjay.com/insights/freeport-commodity-equity-planning',
  },
  openGraph: {
  title: 'Freeport-McMoRan Executives: Managing Commodity-Linked Equity in a Volatile Copper Market',
  description: 'How FCX executives and senior engineers can manage concentrated Freeport-McMoRan stock positions tied to copper price cycles - including 10b5-1 plans, diversification strategies, and profit-sharing coordination.',
- url: 'https://www.PWM-Farther.com/insights/freeport-commodity-equity-planning',
+ url: 'https://www.advisorjay.com/insights/freeport-commodity-equity-planning',
  type: 'article',
  authors: ['Jay Chang'],
  },
@@ -166,7 +166,7 @@ export default function FreeportCommodityPage() {
   '@type': 'Article',
   headline: 'Your Freeport-McMoRan Equity Tracks Copper Prices. Here&apos;s How to Protect What You&apos;ve Built.',
   description: 'How FCX executives and senior engineers can manage concentrated Freeport-McMoRan stock positions tied to copper price cycles - including 10b5-1 plans, diversification strategies, and profit-sharing coordination.',
-  image: 'https://www.PWM-Farther.com/og-image.jpg',
+  image: 'https://www.advisorjay.com/og-image.jpg',
   datePublished: '2026-03-16',
   dateModified: '2026-03-16',
   author: {
@@ -178,7 +178,7 @@ export default function FreeportCommodityPage() {
    name: 'Farther',
    logo: {
    '@type': 'ImageObject',
-   url: 'https://www.PWM-Farther.com/logo.jpg',
+   url: 'https://www.advisorjay.com/logo.jpg',
    },
   },
   }),

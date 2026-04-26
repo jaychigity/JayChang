@@ -7,14 +7,14 @@ export const metadata: Metadata = {
  title: 'NVIDIA Employee Financial Advisor | RSU, ESPP & Equity Concentration Planning | Jay Chang',
  description: 'Fiduciary wealth planning for NVIDIA professionals in Phoenix, Santa Clara, and beyond. Manage your NVIDIA RSU concentration, 2-year ESPP lookback, quarterly vesting tax events, and seven-figure equity positions.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/nvidia-financial-advisor-phoenix-santa-clara',
+ canonical: 'https://www.advisorjay.com/nvidia-financial-advisor-phoenix-santa-clara',
  },
  robots: 'index, follow',
  openGraph: {
  title: 'NVIDIA Employee Financial Advisor | RSU, ESPP & Equity Concentration Planning',
  description: 'Fiduciary wealth planning for NVIDIA professionals in Phoenix, Santa Clara, and beyond.',
  type: 'website',
- url: 'https://www.PWM-Farther.com/nvidia-financial-advisor-phoenix-santa-clara',
+ url: 'https://www.advisorjay.com/nvidia-financial-advisor-phoenix-santa-clara',
  },
 };
 

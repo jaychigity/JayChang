@@ -17,12 +17,12 @@ export const metadata: Metadata = {
  title: 'How We Help You With Money, Taxes & Retirement | Jay Chang, Farther',
  description:
   'We help engineers, doctors, and executives in Arizona figure out the big financial questions: how to handle stock options, lower your tax bill, plan for retirement, protect your family, and actually enjoy the money you work so hard for. Jay Chang and team at Farther.',
- alternates: { canonical: 'https://www.PWM-Farther.com/services' },
+ alternates: { canonical: 'https://www.advisorjay.com/services' },
  openGraph: {
   title: 'How We Help You With Money, Taxes & Retirement | Jay Chang, Farther',
   description:
    'We help engineers, doctors, and executives in Arizona figure out the big financial questions, including how to handle stock options, lower your tax bill, plan for retirement, protect your family, and actually enjoy the money you work so hard for. Jay Chang and team at Farther.',
-  url: 'https://www.PWM-Farther.com/services',
+  url: 'https://www.advisorjay.com/services',
  },
 }
 

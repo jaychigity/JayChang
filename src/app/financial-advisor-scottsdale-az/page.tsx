@@ -6,14 +6,14 @@ export const metadata: Metadata = {
  title: 'Financial Advisor in Scottsdale, AZ | Physician & Executive Wealth Management | Jay Chang',
  description: 'Fiduciary financial advisor in Scottsdale, Arizona serving professionals at Mayo Clinic, Banner Health, and leading Arizona companies. High-income tax planning, asset protection, and retirement strategy.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/financial-advisor-scottsdale-az',
+ canonical: 'https://www.advisorjay.com/financial-advisor-scottsdale-az',
  },
  robots: 'index, follow',
  openGraph: {
  title: 'Financial Advisor in Scottsdale, AZ | Physician & Executive Wealth Management | Jay Chang',
  description: 'Fiduciary financial advisor in Scottsdale, Arizona serving professionals at Mayo Clinic, Banner Health, and leading Arizona companies.',
  type: 'website',
- url: 'https://www.PWM-Farther.com/financial-advisor-scottsdale-az',
+ url: 'https://www.advisorjay.com/financial-advisor-scottsdale-az',
  },
 };
 
@@ -29,7 +29,7 @@ export default function ScottsdaleFinancialAdvisor() {
  '@type': 'FinancialService',
  name: 'Advisor Jay, Farther',
  description: 'Fiduciary financial advisor serving physicians and executives in Scottsdale, Arizona',
- url: 'https://www.PWM-Farther.com/financial-advisor-scottsdale-az',
+ url: 'https://www.advisorjay.com/financial-advisor-scottsdale-az',
  areaServed: [
  { '@type': 'City', name: 'Scottsdale' },
  { '@type': 'State', name: 'Arizona' },

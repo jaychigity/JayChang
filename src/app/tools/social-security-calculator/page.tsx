@@ -9,13 +9,13 @@ export const metadata: Metadata = {
  description:
   "Free Social Security calculator with break-even analysis, spousal benefits, lifetime comparison, and claiming strategy for ages 62-70. See how much you'd collect monthly, annually, and over your lifetime. Myths debunked. Updated for 2026.",
  alternates: {
-  canonical: 'https://www.PWM-Farther.com/tools/social-security-calculator',
+  canonical: 'https://www.advisorjay.com/tools/social-security-calculator',
  },
  openGraph: {
   title: 'Social Security Calculator: When Should You Start Collecting?',
   description:
    'See your monthly benefit at every claiming age from 62 to 70. Break-even analysis, lifetime comparison, spousal strategy, and myth-busting. Free, instant, no sign-up.',
-  url: 'https://www.PWM-Farther.com/tools/social-security-calculator',
+  url: 'https://www.advisorjay.com/tools/social-security-calculator',
  },
 }
 

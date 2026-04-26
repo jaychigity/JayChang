@@ -11,12 +11,12 @@ export const metadata: Metadata = {
  title: '401(k) Plan Design & Fiduciary Oversight for Business Owners | Advisor Jay',
  description:
  'Hands-on 401(k) and retirement plan help for business owners in Arizona, California, and Nevada. We handle plan design, compliance, and investment oversight so you can focus on your business.',
- alternates: { canonical: 'https://www.PWM-Farther.com/services/401k' },
+ alternates: { canonical: 'https://www.advisorjay.com/services/401k' },
  openGraph: {
  title: '401(k) Plan Design & Fiduciary Oversight for Business Owners | Advisor Jay',
  description:
  'Hands-on 401(k) and retirement plan help for business owners. Plan design, compliance, investment oversight, and employee education -- all in one place.',
- url: 'https://www.PWM-Farther.com/services/401k',
+ url: 'https://www.advisorjay.com/services/401k',
  type: 'website',
  },
 }
@@ -27,7 +27,7 @@ const serviceJsonLd = {
  name: 'Advisor Jay - 401(k) & Qualified Retirement Plans',
  description:
  'Institutional-quality 401(k) and qualified retirement plan services for business owners in Scottsdale, AZ and across Arizona, California, and Nevada. Plan design, fiduciary risk management, investment oversight, and participant education.',
- url: 'https://www.PWM-Farther.com/services/401k',
+ url: 'https://www.advisorjay.com/services/401k',
  telephone: '+1-480-944-0880',
  areaServed: [
  {

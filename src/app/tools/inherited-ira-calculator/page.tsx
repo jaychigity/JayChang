@@ -9,14 +9,14 @@ export const metadata: Metadata = {
  description:
   'Free inherited IRA calculator with 2026 SECURE Act rules. Determine your beneficiary type, required distributions, optimal withdrawal strategy, and tax impact, with year-by-year schedule. Built for spouses, children, and non-spouse beneficiaries.',
  alternates: {
-  canonical: 'https://www.PWM-Farther.com/tools/inherited-ira-calculator',
+  canonical: 'https://www.advisorjay.com/tools/inherited-ira-calculator',
  },
  openGraph: {
   title:
    'Inherited IRA Calculator: SECURE Act RMD Rules & Distribution Strategies',
   description:
    'Free inherited IRA calculator. Find out your required distributions, compare withdrawal strategies, and see your year-by-year tax impact. Instant results.',
-  url: 'https://www.PWM-Farther.com/tools/inherited-ira-calculator',
+  url: 'https://www.advisorjay.com/tools/inherited-ira-calculator',
  },
 }
 

@@ -5,12 +5,12 @@ export const metadata: Metadata = {
  title: 'Schedule a Conversation',
  description:
  "Set up a time to talk with Jay Chang, wealth advisor at Farther. We work with families and business owners across Arizona, California, and Nevada, and we'd love to hear what's on your mind.",
- alternates: { canonical: 'https://www.PWM-Farther.com/schedule-consultation' },
+ alternates: { canonical: 'https://www.advisorjay.com/schedule-consultation' },
  openGraph: {
  title: 'Schedule a Conversation | Advisor Jay',
  description:
  'Set up a time to talk with Jay Chang, wealth advisor at Farther. Serving families and business owners across Arizona, California, and Nevada.',
- url: 'https://www.PWM-Farther.com/schedule-consultation',
+ url: 'https://www.advisorjay.com/schedule-consultation',
  },
 }
 

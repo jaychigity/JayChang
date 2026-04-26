@@ -7,7 +7,7 @@ export const metadata: Metadata = {
  title: 'Freeport-McMoRan Executive Wealth Management in Phoenix | Equity & Commodity Planning | Jay Chang',
  description: 'Wealth management for Freeport-McMoRan professionals in Phoenix. Manage commodity-linked equity, RSU diversification, profit sharing, and executive compensation planning with a fiduciary advisor.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/freeport-mcmoran-executive-wealth-planning-phoenix',
+ canonical: 'https://www.advisorjay.com/freeport-mcmoran-executive-wealth-planning-phoenix',
  },
  robots: 'index, follow',
 };

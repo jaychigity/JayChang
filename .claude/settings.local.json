@@ -143,7 +143,30 @@
       "Bash(grep -rn \"free\\\\|Free\\\\|FREE\" /Users/jay/Claude/JayChang-main/src/app --include=\"*.tsx\" --include=\"*.ts\")",
       "Read(//tmp/**)",
       "Bash(awk -F'|' '{print $1 \" | \" $3}')",
-      "Bash(awk -F: '{print $1 \":\" $2 \" \" $0}')"
+      "Bash(awk -F: '{print $1 \":\" $2 \" \" $0}')",
+      "Bash(pdftoppm -v)",
+      "Bash(pdftoppm -r 150 -png \"/Users/jay/Desktop/retirement-projection-2026-04-25.pdf\" /tmp/mc-pdf-page)",
+      "Bash(pdftoppm -r 120 -png -l 21 \"/Users/jay/Desktop/retirement-projection-2026-04-25.pdf\" /tmp/mc-pg)",
+      "Bash(pdfinfo \"/Users/jay/Desktop/retirement-projection-2026-04-25.pdf\")",
+      "Bash(pdftoppm -r 250 -png \"/Users/jay/Desktop/retirement-projection-2026-04-25.pdf\" /tmp/mc-hires)",
+      "Bash(identify /tmp/mc-hires-1.png)",
+      "Bash(sips -g pixelWidth -g pixelHeight /tmp/mc-hires-1.png)",
+      "Bash(convert --version)",
+      "Bash(xargs ls *)",
+      "Bash(sort -k6,7)",
+      "Bash(awk '{print $5, $6, $7, $9}')",
+      "Bash(sort -k2,3)",
+      "Bash(wait)",
+      "Bash(npm info *)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__browser_batch",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__mcp-registry__search_mcp_registry",
+      "Bash(dig +short pwm-farther.com)",
+      "Bash(dig +short www.pwm-farther.com)",
+      "Bash(dig +short NS pwm-farther.com)",
+      "Bash(dig +short advisorjay.com)",
+      "Bash(dig +short NS advisorjay.com)"
     ]
   }
 }

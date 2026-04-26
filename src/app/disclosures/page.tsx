@@ -7,7 +7,7 @@ export const metadata: Metadata = {
  'Important disclosures, regulatory information, and legal notices for Advisor Jay. SEC-registered investment adviser.',
  robots: { index: false, follow: true },
  alternates: {
- canonical: 'https://www.PWM-Farther.com/disclosures',
+ canonical: 'https://www.advisorjay.com/disclosures',
  },
 }
 
@@ -375,7 +375,7 @@ export default function DisclosuresPage() {
   <div className="font-sans text-[15px] text-[#333333] leading-[1.7] space-y-4">
    <p>
    By accessing and using this website
-   (PWM-Farther.com), you agree to the following terms:
+   (advisorjay.com), you agree to the following terms:
    </p>
    <p>
    This website is for informational purposes only. Nothing on this

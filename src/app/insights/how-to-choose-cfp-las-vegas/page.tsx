@@ -13,7 +13,7 @@ export const metadata: Metadata = {
  'Learn how to evaluate and choose a Certified Financial Planner (CFP®) in Scottsdale. Understand fiduciary standards, fee structures, Arizona-specific planning, and what questions to ask before hiring a CFP.',
  alternates: {
  canonical:
- 'https://www.PWM-Farther.com/insights/how-to-choose-cfp-las-vegas',
+ 'https://www.advisorjay.com/insights/how-to-choose-cfp-las-vegas',
  },
  openGraph: {
  title:
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
  description:
  'Learn how to evaluate and choose a Certified Financial Planner (CFP®) in Scottsdale. Understand fiduciary standards, fee structures, Arizona-specific planning, and what questions to ask before hiring a CFP.',
  type: 'article',
- url: 'https://www.PWM-Farther.com/insights/how-to-choose-cfp-las-vegas',
+ url: 'https://www.advisorjay.com/insights/how-to-choose-cfp-las-vegas',
  },
 }
 
@@ -77,13 +77,13 @@ export default function HowToChooseCFPLasVegasPage() {
   publisher: {
    '@type': 'Organization',
    name: 'Advisor Jay',
-   url: 'https://www.PWM-Farther.com',
+   url: 'https://www.advisorjay.com',
   },
   datePublished: '2026-01-15',
   dateModified: '2026-03-01',
   mainEntityOfPage: {
    '@type': 'WebPage',
-   '@id': 'https://www.PWM-Farther.com/insights/how-to-choose-cfp-las-vegas',
+   '@id': 'https://www.advisorjay.com/insights/how-to-choose-cfp-las-vegas',
   },
   description:
    'Learn how to evaluate and choose a Certified Financial Planner (CFP®) in Scottsdale. Understand fiduciary standards, fee structures, Arizona-specific planning, and what questions to ask before hiring a CFP.',

@@ -9,14 +9,14 @@ export const metadata: Metadata = {
  description:
  'Free Roth conversion calculator. Compare the after-tax value of converting a Traditional IRA to Roth, and see the upfront tax cost, net benefit, break-even rate, and projected growth.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/tools/roth-conversion-calculator',
+ canonical: 'https://www.advisorjay.com/tools/roth-conversion-calculator',
  },
  openGraph: {
  title:
  'Roth IRA Conversion Calculator | Does Converting Make Sense For You?',
  description:
  'Free Roth conversion calculator. Model the tax cost, projected growth, break-even rate, and net benefit of converting a Traditional IRA to Roth. Instant results.',
- url: 'https://www.PWM-Farther.com/tools/roth-conversion-calculator',
+ url: 'https://www.advisorjay.com/tools/roth-conversion-calculator',
  },
 }
 

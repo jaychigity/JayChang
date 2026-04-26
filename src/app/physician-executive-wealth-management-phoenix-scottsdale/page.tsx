@@ -9,7 +9,7 @@ export const metadata: Metadata = {
  title: 'Physician & Executive Wealth Management in Phoenix & Scottsdale | Banner Health, Mayo Clinic & Corporate Leaders | Advisor Jay, Farther',
  description: 'Fiduciary wealth planning for healthcare professionals at Banner Health and Mayo Clinic in Phoenix and Scottsdale, and professionals at Freeport-McMoRan and leading Arizona companies. High-income tax strategy, asset protection, retirement acceleration, and legacy planning.',
  alternates: {
- canonical: 'https://www.PWM-Farther.com/physician-executive-wealth-management-phoenix-scottsdale',
+ canonical: 'https://www.advisorjay.com/physician-executive-wealth-management-phoenix-scottsdale',
  },
 };
 
@@ -44,7 +44,7 @@ export default function PhysicianExecutiveWealthPage() {
    },
   ],
   telephone: '(480) 944-0880',
-  url: 'https://www.PWM-Farther.com',
+  url: 'https://www.advisorjay.com',
   knowsAbout: [
    'Wealth Management',
    'Fiduciary Financial Planning',

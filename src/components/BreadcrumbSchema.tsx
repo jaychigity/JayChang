@@ -4,7 +4,7 @@ interface BreadcrumbItem {
 }
 
 export default function BreadcrumbSchema({ items }: { items: BreadcrumbItem[] }) {
-  const baseUrl = 'https://www.PWM-Farther.com'
+  const baseUrl = 'https://www.advisorjay.com'
 
   const jsonLd = {
     '@context': 'https://schema.org',

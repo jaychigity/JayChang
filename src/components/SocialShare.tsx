@@ -11,7 +11,7 @@ interface SocialShareProps {
 
 export default function SocialShare({ url, title, description }: SocialShareProps) {
   const [copied, setCopied] = useState(false)
-  const fullUrl = `https://www.PWM-Farther.com${url}`
+  const fullUrl = `https://www.advisorjay.com${url}`
   const encodedUrl = encodeURIComponent(fullUrl)
   const encodedTitle = encodeURIComponent(title)
   const encodedDesc = encodeURIComponent(description || '')

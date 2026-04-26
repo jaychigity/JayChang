@@ -9,14 +9,14 @@ export const metadata: Metadata = {
   description:
     'Free time value of money calculator. See how investments grow with compound interest, dividends, and monthly contributions. Model corrections, explore milestones, and visualize your wealth trajectory.',
   alternates: {
-    canonical: 'https://www.PWM-Farther.com/tools/tvm-calculator',
+    canonical: 'https://www.advisorjay.com/tools/tvm-calculator',
   },
   openGraph: {
     title:
       'What Your Money Becomes | Time Value of Money Calculator',
     description:
       'Free investment growth calculator. Visualize compound growth on your portfolio. Enter your starting investment, monthly contributions, and style to see projected future value with charts.',
-    url: 'https://www.PWM-Farther.com/tools/tvm-calculator',
+    url: 'https://www.advisorjay.com/tools/tvm-calculator',
   },
 }
 

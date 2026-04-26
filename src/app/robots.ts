@@ -14,6 +14,6 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'Bingbot', allow: '/', disallow: SHARED_DISALLOW },
       { userAgent: '*', allow: '/', disallow: SHARED_DISALLOW },
     ],
-    sitemap: 'https://www.PWM-Farther.com/sitemap.xml',
+    sitemap: 'https://www.advisorjay.com/sitemap.xml',
   }
 }

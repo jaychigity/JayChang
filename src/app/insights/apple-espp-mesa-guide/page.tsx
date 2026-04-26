@@ -7,12 +7,12 @@ export const metadata: Metadata = {
  title: 'Apple ESPP Guide for Mesa Employees: 15% Discount, Lookback, and Share Strategy',
  description: `A complete guide to Apple's ESPP for Mesa operations employees - including how the 15% discount and 6-month lookback work, qualifying vs. disqualifying dispositions, and how to coordinate ESPP with your RSU strategy.`,
  alternates: {
- canonical: 'https://www.PWM-Farther.com/insights/apple-espp-mesa-guide',
+ canonical: 'https://www.advisorjay.com/insights/apple-espp-mesa-guide',
  },
  openGraph: {
  title: 'Apple ESPP Guide for Mesa Employees: 15% Discount, Lookback, and Share Strategy',
  description: `A complete guide to Apple's ESPP for Mesa operations employees - including how the 15% discount and 6-month lookback work, qualifying vs. disqualifying dispositions, and how to coordinate ESPP with your RSU strategy.`,
- url: 'https://www.PWM-Farther.com/insights/apple-espp-mesa-guide',
+ url: 'https://www.advisorjay.com/insights/apple-espp-mesa-guide',
  type: 'article',
  authors: ['Jay Chang'],
  },
@@ -162,7 +162,7 @@ export default function AppleESPPPage() {
   '@type': 'Article',
   headline: 'Apple ESPP: The Complete Guide for Mesa and Arizona Employees',
   description: `A complete guide to Apple's ESPP for Mesa operations employees - including how the 15% discount and 6-month lookback work, qualifying vs. disqualifying dispositions, and how to coordinate ESPP with your RSU strategy.`,
-  image: 'https://www.PWM-Farther.com/og-image.jpg',
+  image: 'https://www.advisorjay.com/og-image.jpg',
   datePublished: '2026-03-16',
   dateModified: '2026-03-16',
   author: {
@@ -174,7 +174,7 @@ export default function AppleESPPPage() {
    name: 'Farther',
    logo: {
    '@type': 'ImageObject',
-   url: 'https://www.PWM-Farther.com/logo.jpg',
+   url: 'https://www.advisorjay.com/logo.jpg',
    },
   },
   }),

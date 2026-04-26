@@ -11,7 +11,7 @@ export const metadata: Metadata = {
  title: 'Contact Us | Advisor Jay - Scottsdale, Arizona',
  description:
  'Reach out to Jay Chang, wealth advisor at Farther. We help families and business owners in Scottsdale, Phoenix, and across Arizona make smarter financial decisions together. A real conversation about what matters to you.',
- alternates: { canonical: 'https://www.PWM-Farther.com/contact' },
+ alternates: { canonical: 'https://www.advisorjay.com/contact' },
 }
 
 const steps = [
@@ -43,10 +43,10 @@ export default function ContactPage() {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Advisor Jay | Farther Wealth Management",
-      "image": "https://www.PWM-Farther.com/Photos/Jay-New-Headshot.png",
+      "image": "https://www.advisorjay.com/Photos/Jay-New-Headshot.png",
       "telephone": "(480) 944-0880",
       "email": "jay.chang@farther.com",
-      "url": "https://www.PWM-Farther.com",
+      "url": "https://www.advisorjay.com",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Scottsdale",
