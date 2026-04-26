@@ -58,12 +58,79 @@ These rules apply to every session. Follow them automatically without being remi
    - Time on page and engagement signals feed back into search rankings — make content
      genuinely useful so people stay and interact
 
-2. **Mobile-first, then desktop** — Design and test for mobile viewports first.
+2. **AI Crawler Access & Content Extraction (technical execution of #1)** —
+   The strategy in #1 only works if AI crawlers can actually reach the site, fully
+   render the content, and extract it cleanly. This is the infrastructure layer
+   beneath the four pillars. Bake these in on every new page; do not retrofit later.
+
+   ### Crawler access
+   - `src/app/robots.ts` must explicitly allow the major AI bots: `GPTBot` (OpenAI),
+     `ClaudeBot` and `anthropic-ai` (Anthropic), `PerplexityBot`, `Google-Extended`,
+     `CCBot` (Common Crawl, which feeds many models), and `Bingbot`. A wildcard `*`
+     covers them in theory; explicit allow rules signal intent and pass third-party
+     audits cleanly.
+   - `public/llms.txt` is the canonical AI-readable site map (an emerging convention,
+     similar to robots.txt). Keep it updated whenever a major page is added or
+     restructured.
+   - The site is on Vercel, which does not block AI bots by default. If hosting ever
+     moves to Cloudflare or another CDN, audit the firewall — Cloudflare blocks AI
+     bots by default and must be reconfigured.
+
+   ### Server-side rendering (non-negotiable)
+   - All `page.tsx` files must be server components. Never put `"use client"` at the
+     page level. Client interactivity (forms, calculators, charts) goes in child
+     components imported by the page.
+   - Most AI crawlers fetch JS files but do not execute them. Client-rendered
+     content is invisible to them. The meaningful content has to arrive in the
+     initial HTML response, not be hydrated by the browser.
+
+   ### Content structure for extraction
+   AI models lift answers in chunks. Write so each chunk stands alone:
+   - **Lead with the answer.** The first 1-3 sentences of every page and every
+     section should directly answer the question the heading implies, in plain
+     language. Save storytelling, lead-up, and context for later in the piece.
+   - **Use real semantic HTML** — actual `<h1>`/`<h2>`/`<h3>` hierarchy, real `<ul>`
+     lists, real `<table>` tables. Do not fake structure with styled `<div>`s.
+   - **Keep paragraphs short.** Each H2/H3 section should make sense if quoted
+     in isolation by an AI model.
+   - **JSON-LD schema markup is required on every substantive page**: `Article` for
+     insights and guides, `FAQPage` where there are FAQs, `HowTo` for step-by-step
+     content, `Service` or `Product` for services and tools, plus `Organization`
+     and `BreadcrumbList` (use the existing `BreadcrumbSchema` component) sitewide.
+
+   ### Credibility & freshness signals
+   AI models are picky about who they cite. Every substantive page must signal a
+   real, named, current author:
+   - **Visible author byline on every substantive page** — photo + name + role
+     (e.g., "By Jay Chang, VP, Wealth Advisor at Farther"). Not just metadata —
+     visible to the rendered HTML, since that is what AI scrapers read.
+   - **Visible "Last updated [date]"** on every substantive page, mirrored in
+     the schema's `dateModified`. Content older than three months sees significantly
+     fewer AI citations.
+   - **Link out to authoritative sources** when making factual claims (IRS docs,
+     SEC filings, plan documents, primary research). Outbound links to credible
+     sources signal that you are sourced and current, not making it up.
+   - **Original data, examples, and named entities** beat vague claims. Specific
+     dollar amounts, tax years, plan names, and company specifics give AI models
+     something to associate with your expertise.
+   - **Quarterly refresh discipline** on substantive pages. Re-verify the numbers,
+     bump `dateModified`, update the visible date. Keeps the freshness signal warm.
+
+   ### Off-site presence
+   AI models do not learn about you only from your own site:
+   - Submit `sitemap.xml` to **both** Google Search Console **and** Bing Webmaster
+     Tools. Copilot and Meta AI lean on Bing's index, so Google-only optimization
+     leaves real coverage on the table.
+   - Brand mentions on Reddit, Quora, GitHub, niche forums, and reputable
+     publications all feed into what AI models "know" about Jay. The on-site work
+     in #1 and #2 matters; the off-site signals matter too.
+
+3. **Mobile-first, then desktop** — Design and test for mobile viewports first.
    All layouts, tap targets, font sizes, and spacing must work on 375px width before
    checking desktop. Use Tailwind responsive prefixes (`sm:`, `md:`, `lg:`) with
    mobile as the base. Always verify with the preview tool at mobile size first.
 
-3. **Voice & style consistency** — Follow the rules below on every piece of copy.
+4. **Voice & style consistency** — Follow the rules below on every piece of copy.
 
 ---
 
