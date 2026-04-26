@@ -153,7 +153,7 @@ export default function BusinessOwnerServicesPage() {
   <AnimateOnScroll>
    <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
    <Image
-   src="/Photos/business-owner.png"
+   src="/Photos/Business owner.png"
    alt="Farther wealth advisor meeting with an Arizona business owner to discuss exit planning and succession strategy"
    fill
    className="object-cover"
