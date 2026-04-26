@@ -125,7 +125,7 @@ export default function ContactPage() {
     src="/Photos/Jay-Office.png"
     alt="Jay Chang, Senior Wealth Advisor at Farther serving Scottsdale and Arizona"
     fill
-    className="object-cover object-top"
+    className="object-cover object-top scale-125"
     sizes="220px"
    />
    </div>
