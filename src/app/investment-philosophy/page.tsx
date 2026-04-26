@@ -183,8 +183,8 @@ export default function InvestmentPhilosophyPage() {
         <Image
          src="/Photos/Investment Philosophy.png"
          alt="Jay Chang, Wealth Advisor at Farther"
-         width={1728}
-         height={2444}
+         width={1721}
+         height={1721}
          className="w-full h-auto"
          priority
         />
