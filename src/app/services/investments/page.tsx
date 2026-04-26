@@ -218,7 +218,7 @@ export default function InvestmentsPage() {
   <AnimateOnScroll delay={200}>
    <div className="relative rounded-[12px] overflow-hidden">
    <Image
-   src="/Photos/portfolio.png"
+   src="/Photos/Investment Mangement.png"
    alt="Farther advisor reviewing a tax-optimized investment portfolio with a high-net-worth client"
    width={800}
    height={600}
