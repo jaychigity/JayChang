@@ -379,7 +379,7 @@ export default function TechnologyPage() {
               </h3>
               <div className="mt-8">
                 <Button href="/schedule-consultation" variant="primary">
-                  Begin a Confidential Conversation{' '}
+                  Schedule a Virtual Meeting{' '}
                   <ArrowRight className="inline-block ml-2 w-4 h-4" />
                 </Button>
               </div>

@@ -132,7 +132,7 @@ export default function Home() {
    href="/schedule-consultation"
    variant="primary"
    >
-   Begin a Confidential Conversation →
+   Schedule a Virtual Meeting →
    </Button>
    </div>
   </AnimateOnScroll>

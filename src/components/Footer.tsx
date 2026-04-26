@@ -229,7 +229,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 4: Start a Conversation */}
+          {/* Column 4: Schedule a Virtual Meeting */}
           <div>
             <h4
               style={{
@@ -242,7 +242,7 @@ export default function Footer() {
                 marginBottom: 24,
               }}
             >
-              Start a Conversation
+              Schedule a Virtual Meeting
             </h4>
 
             <a

@@ -41,7 +41,7 @@ export default function NotFound() {
   </div>
   <div className="mt-10">
   <Button href="/schedule-consultation" variant="primary">
-  Start a Conversation
+  Schedule a Virtual Meeting
   </Button>
   </div>
  </div>

@@ -17,18 +17,18 @@ export const metadata: Metadata = {
 const steps = [
  {
  number: '1',
- title: `You'll Hear From a Real Person`,
- body: `We'll get back to you within one business day, by phone or email, your pick. No automated drip campaigns, no chatbots. Just a real member of our team who actually read your message.`,
+ title: `You'll Hear From Me Directly`,
+ body: `I respond to every message myself, within one business day, by phone or email. No drip campaigns, no chatbots, no junior associate.`,
  },
  {
  number: '2',
- title: 'A Relaxed 30-Minute Chat',
- body: `We'll hop on a call and talk about what's on your mind: your goals, your concerns, what's keeping you up at night financially. Think of it as a coffee conversation, not a sales pitch.`,
+ title: 'A 30-Minute Call',
+ body: `I want to understand what's on your mind: your goals, your concerns, the decisions you've been putting off. No prep needed on your end, and no obligation on the other side of it.`,
  },
  {
  number: '3',
  title: `If It Feels Right for Both of Us`,
- body: `We'll walk you through what comes next and start pulling together the info we need to build a plan that actually fits your life.`,
+ body: `I walk you through what comes next and start pulling together what's needed to build the plan.`,
  },
 ]
 

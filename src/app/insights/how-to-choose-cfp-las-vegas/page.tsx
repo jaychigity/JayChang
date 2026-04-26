@@ -296,7 +296,7 @@ export default function HowToChooseCFPLasVegasPage() {
    </p>
    <div className="mt-6">
    <Button href="/schedule-consultation" variant="primary">
-    Start a Conversation
+    Schedule a Virtual Meeting
    </Button>
    </div>
    </div>
@@ -342,7 +342,7 @@ export default function HowToChooseCFPLasVegasPage() {
    href="/schedule-consultation"
    className="inline-flex items-center gap-2 font-sans text-[15px] font-semibold text-[#1d7682] hover:text-[#D4B65A] transition-colors"
    >
-   <span>Start a Conversation</span>
+   <span>Schedule a Virtual Meeting</span>
    <ChevronRight size={16} strokeWidth={1.5} />
    </a>
    </div>

@@ -240,7 +240,7 @@ export default function CaliforniaPage() {
   <AnimateOnScroll delay={300}>
    <div className="mt-8">
    <Button href="/schedule-consultation" variant="primary">
-   Begin a Confidential Conversation
+   Schedule a Virtual Meeting
    </Button>
    </div>
   </AnimateOnScroll>
@@ -697,7 +697,7 @@ export default function CaliforniaPage() {
   <AnimateOnScroll delay={200}>
   <div className="mt-8">
    <Button href="/schedule-consultation" variant="primary">
-   Begin a Confidential Conversation
+   Schedule a Virtual Meeting
    </Button>
   </div>
   </AnimateOnScroll>

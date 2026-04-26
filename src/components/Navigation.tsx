@@ -69,7 +69,7 @@ const navItems: NavItem[] = [
 ];
 
 const CTA_HREF = "/schedule-consultation";
-const CTA_LABEL = "Start a Conversation";
+const CTA_LABEL = "Schedule a Virtual Meeting";
 
 function DropdownItem({ item, isActive, closeDropdown }: { item: NavItem; isActive: (href: string) => boolean; closeDropdown: () => void }) {
   const [open, setOpen] = useState(false);

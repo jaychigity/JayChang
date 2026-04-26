@@ -186,7 +186,7 @@ export default function LasVegasNevadaPage() {
   <AnimateOnScroll delay={300}>
   <div className="mt-lg flex flex-col sm:flex-row gap-[16px]">
    <Button href="/schedule-consultation" variant="primary">
-   Begin a Confidential Conversation
+   Schedule a Virtual Meeting
    </Button>
   </div>
   </AnimateOnScroll>
@@ -879,7 +879,7 @@ export default function LasVegasNevadaPage() {
   <AnimateOnScroll delay={200}>
   <div className="mt-lg">
    <Button href="/schedule-consultation" variant="primary">
-   Begin a Confidential Conversation
+   Schedule a Virtual Meeting
    </Button>
   </div>
   </AnimateOnScroll>
