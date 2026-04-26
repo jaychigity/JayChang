@@ -297,19 +297,19 @@ export default function Home() {
 
  {/* SECTION 4: THE REAL CHALLENGE */}
  <section className="bg-white py-20 lg:py-32">
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
   <AnimateOnScroll>
   <SectionEyebrow text="WHY IT MATTERS" />
   <h2 className="font-serif text-4xl lg:text-5xl font-bold text-[#333333] mt-6 mb-6 leading-tight">
    You Shouldn&apos;t Have to Figure All of This Out Alone.
   </h2>
-  <p className="text-lg text-[#5b6a71] leading-relaxed mb-6 max-w-3xl">
+  <p className="text-lg text-[#5b6a71] leading-relaxed mb-6">
    Here&apos;s what I see all the time: smart, hardworking people who are great at what they do, but feel overwhelmed by the financial side of it. And honestly, who wouldn&apos;t be?
   </p>
-  <p className="text-lg text-[#5b6a71] leading-relaxed mb-6 max-w-3xl">
+  <p className="text-lg text-[#5b6a71] leading-relaxed mb-6">
    RSU vesting schedules, withholding shortfalls, deferred compensation decisions, employer stock concentration, Roth conversions, state tax implications when you relocate: it adds up fast. Most advisors don&apos;t dig into this stuff. I do. Every single day.
   </p>
-  <p className="text-lg text-[#5b6a71] leading-relaxed max-w-3xl">
+  <p className="text-lg text-[#5b6a71] leading-relaxed">
    I use Farther&apos;s technology platform to build plans that actually reflect your life, not some cookie-cutter model. Because your finances are personal, and I believe your advisor should treat them that way.
   </p>
   </AnimateOnScroll>
