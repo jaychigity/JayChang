@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 import ArticleByline from '@/components/ArticleByline';
+import CalculatorPreviewCard from '@/components/CalculatorPreviewCard';
 
 export const metadata: Metadata = {
   title: 'Backdoor Roth IRA: A Step-by-Step Guide for High Earners in 2026',
@@ -106,6 +107,17 @@ export default function BackdoorRothArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
+            <CalculatorPreviewCard
+              slug="roth-conversion-calculator"
+              eyebrow="CALCULATOR · ROTH STRATEGY"
+              title="Roth Conversion Calculator"
+              description="Run your conversion math: tax cost now, net benefit over your time horizon, and the break-even tax rate. Useful when you have larger pre-tax IRA balances and need to size annual conversions across your bracket window."
+              preview={{ value: "$186,420", label: "net benefit over 15 years" }}
+              ctaLabel="Run your conversion math"
+            />
+          </AnimateOnScroll>
+
+                    <AnimateOnScroll>
             <h2 className="text-3xl font-bold mb-6 mt-12 text-gray-900">
               Step 4: Convert the Full Balance to a Roth IRA
             </h2>

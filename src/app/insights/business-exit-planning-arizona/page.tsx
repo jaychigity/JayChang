@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 import ArticleByline from '@/components/ArticleByline';
+import CalculatorPreviewCard from '@/components/CalculatorPreviewCard';
 
 export const metadata: Metadata = {
   title: 'Business Exit Planning for Arizona Owners: Start Planning 3-5 Years Before You Sell',
@@ -94,6 +95,17 @@ export default function BusinessExitPlanningArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
+            <CalculatorPreviewCard
+              slug="business-exit-planning-calculator"
+              eyebrow="ASSESSMENT · EXIT READINESS"
+              title="Business Exit Readiness Scorecard"
+              description="Get a readiness score across operations, tax, legal, and financial categories. Returns a 90-day priority list and a dollar-impact estimate of the decisions sitting in front of you right now."
+              preview={{ value: "73 / 100", label: "exit readiness score" }}
+              ctaLabel="Score your exit readiness"
+            />
+          </AnimateOnScroll>
+
+                    <AnimateOnScroll>
             <h2 className="text-3xl font-bold mb-6 mt-12 text-gray-900">
               Tax at Sale: Stock vs. Asset Sale Matters
             </h2>

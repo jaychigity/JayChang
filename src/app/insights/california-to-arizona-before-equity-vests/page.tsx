@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 import ArticleByline from '@/components/ArticleByline';
+import CalculatorPreviewCard from '@/components/CalculatorPreviewCard';
 
 export const metadata: Metadata = {
   title: 'Moving From California to Arizona? Here is What to Do Before Your Equity Vests',
@@ -54,6 +55,17 @@ export default function Page() {
       <div className="min-h-screen bg-white">
         <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
           <AnimateOnScroll>
+            <CalculatorPreviewCard
+              slug="ca-nv-tax-savings"
+              eyebrow="CALCULATOR · RELOCATION TAX SAVINGS"
+              title="CA / NV Tax Savings Calculator"
+              description="Quantify your five-year tax savings versus California, broken out by income source: W-2, RSU vesting, capital gains, and rental income. See whether Arizona or Nevada better fits your tax picture."
+              preview={{ value: "$320,000+", label: "5-year savings vs. CA" }}
+              ctaLabel="Run your numbers"
+            />
+          </AnimateOnScroll>
+
+                    <AnimateOnScroll>
             <section className="mb-12">
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 California tax law operates on a simple principle: it taxes income from sources within California regardless of where you live when the income arrives. For tech workers and startup employees holding restricted stock units, this creates a specific problem. If your RSUs were granted while you worked in California, California will claim a portion of that income even after you establish residency in Arizona.

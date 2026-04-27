@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 import ArticleByline from '@/components/ArticleByline';
+import CalculatorPreviewCard from '@/components/CalculatorPreviewCard';
 
 export const metadata: Metadata = {
   title: 'Should You Always Sell RSUs When They Vest? The Answer Is Usually Yes',
@@ -64,6 +65,17 @@ export default function RSUVestingArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
+            <CalculatorPreviewCard
+              slug="rsu-equity-compensation-calculator"
+              eyebrow="CALCULATOR · EQUITY TAX MODEL"
+              title="RSU Equity Compensation Calculator"
+              description="Plug in your grant schedule, vesting cadence, and tax bracket. See exactly what each vest is worth after withholding, where the tax-optimization windows sit, and how concentration changes over time."
+              preview={{ value: "$84,200", label: "after-tax value of next vest" }}
+              ctaLabel="Model your equity"
+            />
+          </AnimateOnScroll>
+
+                    <AnimateOnScroll>
             <h2 className="text-3xl font-bold mb-6 mt-12 text-gray-900">
               Why Selling at Vesting Makes Financial Sense
             </h2>

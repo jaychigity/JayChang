@@ -5,6 +5,7 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 import SectionEyebrow from '@/components/SectionEyebrow'
 import Button from '@/components/Button'
 import ArticleByline from '@/components/ArticleByline'
+import CalculatorPreviewCard from '@/components/CalculatorPreviewCard'
 import { ArrowLeft, Clock, ChevronRight, MessageSquare } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -127,6 +128,17 @@ export default function RetireAt58WhenBenefitsDesignedFor65Page() {
       <section className="bg-[#F7F4EE] section-padding">
         <div className="max-w-[760px] mx-auto">
           <AnimateOnScroll>
+            <CalculatorPreviewCard
+              slug="retirement-savings-calculator"
+              eyebrow="CALCULATOR · EARLY RETIREMENT"
+              title="Retirement Readiness Calculator"
+              description="See your funded ratio, projected vs. required assets, and the annual savings gap. Know exactly what closing the gap looks like before you commit to retiring at 58."
+              preview={{ value: "87%", label: "funded ratio at age 58" }}
+              ctaLabel="Check your readiness"
+            />
+          </AnimateOnScroll>
+
+                    <AnimateOnScroll>
             <div className="prose-farther">
               <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
                 Many aerospace and tech professionals dream of retiring in their late 50s while their energy and health are strongest. But benefits systems - pensions, Social Security, healthcare - were designed for retirement at 65. Leave the workforce at 58, and you face four major gaps: access to health insurance before Medicare (age 65), reduced pension benefits, reduced Social Security, and managing 401(k) withdrawals before age 59.5. This article walks through each gap, explains the available solutions, and shows a real example of how to bridge the seven years from 58 to 65 using withdrawal strategies and tax optimization.
