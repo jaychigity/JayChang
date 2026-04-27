@@ -831,7 +831,13 @@ export default function MonteCarloSimulator() {
               </div>
             )}
 
-            <CalculatorDisclaimer toolName="Monte Carlo simulation" />
+            <CalculatorDisclaimer
+              toolName="Monte Carlo simulation"
+              resultSummary={depletionData.medianAge
+                ? `Across ${v.numSims.toLocaleString()} simulations, the median run depletes at age ${depletionData.medianAge}, ${depletionData.shortfallYrs} years short of age ${v.lifeExpectancy}. Closing that gap is what allocation, withdrawal, and timing decisions are for.`
+                : `Across ${v.numSims.toLocaleString()} simulations, the median run sustains your portfolio through age ${v.lifeExpectancy}. The next question is whether you can spend more, give more, or retire earlier without breaking the plan.`}
+              ctaLabel="Pressure-test your retirement plan with Jay →"
+            />
           </div>
         </div>
       </div>

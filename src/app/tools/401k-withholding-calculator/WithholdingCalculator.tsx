@@ -1191,6 +1191,10 @@ export default function WithholdingCalculator() {
       <CalculatorDisclaimer
         toolName="401(k) withholding"
         variant="default"
+        resultSummary={spilloverRoom > 0
+          ? `On a ${formatCurrency(salary)} salary, you could be missing ${formatCurrency(spilloverRoom)} of mega backdoor Roth room this year. The actual answer depends on whether your plan allows after-tax contributions and in-plan Roth conversions.`
+          : `On a ${formatCurrency(salary)} salary, your max elective deferral is ${formatCurrency(maxDeferral)}. The harder question is how this fits with RSU withholding gaps, deferred comp, and your full tax picture.`}
+        ctaLabel="Pressure-test your contribution strategy with Jay →"
         additionalContext="Federal tax brackets shown are based on 2026 rates and may change with future legislation. Employer match calculations are estimates and may differ from your actual plan terms. Farther Finance Advisors LLC is an SEC-registered investment adviser. Registration does not imply a certain level of skill or training."
       />
 

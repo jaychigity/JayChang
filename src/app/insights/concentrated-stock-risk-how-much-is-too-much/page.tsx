@@ -29,21 +29,21 @@ const jsonLd = {
 
 export default function ConcentratedStockRiskPage() {
   return (
-    <>
+    <main>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
       {/* Hero Section */}
-      <section className="bg-[#F7F4EE] py-20 px-6">
-        <div className="max-w-4xl mx-auto">
+      <section className="bg-[#F7F4EE] py-24">
+        <div className="max-w-4xl mx-auto px-6">
           <AnimateOnScroll>
             <h1 className="text-5xl font-bold text-[#333333] mb-6">
               Concentrated Stock Risk: How Much NVDA, TSMC, or Intel Is Too Much in Your Portfolio?
             </h1>
           </AnimateOnScroll>
-          <div className="flex flex-col md:flex-row md:items-center md:gap-6">
+          <div className="mb-8 flex flex-col md:flex-row md:items-center md:gap-6">
             <ArticleByline updatedDate="2026-03-18" variant="light" />
             <span className="text-lg text-[#5b6a71]">13 min read</span>
           </div>
@@ -51,8 +51,8 @@ export default function ConcentratedStockRiskPage() {
       </section>
 
       {/* Article Body */}
-      <section className="bg-white py-16 px-6">
-        <div className="max-w-4xl mx-auto prose prose-lg max-w-none">
+      <section className="bg-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
 
           <AnimateOnScroll>
             <p className="text-[#5b6a71] text-xl leading-relaxed mb-8">
@@ -227,6 +227,6 @@ export default function ConcentratedStockRiskPage() {
 
         </div>
       </section>
-    </>
+    </main>
   );
 }
