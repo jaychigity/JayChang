@@ -53,7 +53,7 @@ export default function AmkorTechnologyPage() {
    Amkor Technology Professionals: Your Career Spans the Globe. Your Financial Plan Should Too.
    </h1>
    <p className="text-lg text-[#5b6a71] max-w-3xl">
-   Amkor&apos;s semiconductor packaging operations attract engineering talent from around the world to its Tempe and Chandler campuses. Jay Chang helps Amkor professionals manage equity compensation, international relocation wealth, and complex tax situations with clarity and confidence.
+   Amkor&apos;s semiconductor packaging operations attract engineering talent from around the world to its Tempe and Chandler campuses. I help Amkor professionals manage equity compensation, international relocation wealth, and complex tax situations with clarity and confidence.
    </p>
   </div>
   </AnimateOnScroll>
@@ -73,7 +73,7 @@ export default function AmkorTechnologyPage() {
    Amkor&apos;s workforce is distinctly global. You may have relocated to Tempe or Chandler from Korea, Japan, Taiwan, or elsewhere - or you&apos;re managing family and financial ties across multiple countries. Your income reflects that reality: RSUs in AMKR stock, relocation packages, international retirement assets like Korean National Pension contributions or Japanese pension accounts, and the need to navigate two (or more) tax systems simultaneously.
    </p>
    <p className="text-lg text-[#5b6a71] leading-relaxed">
-   That&apos;s not a standard financial planning problem. Most advisors are built for domestic-only situations. Jay specializes in exactly this: the engineering professional whose career is genuinely global.
+   That&apos;s not a standard financial planning problem. Most advisors are built for domestic-only situations. I specialize in exactly this: the engineering professional whose career is genuinely global.
    </p>
    </div>
   </div>
@@ -94,7 +94,7 @@ export default function AmkorTechnologyPage() {
    Amkor&apos;s equity program creates specific planning opportunities and risks. You have overlapping grant cycles, vesting events that create sell-to-cover withholding requirements, and - for many - a large concentration of net worth in AMKR stock. The question isn&apos;t whether you should diversify. The question is how and when.
    </p>
    <p className="text-lg text-[#5b6a71] leading-relaxed">
-   Jay builds a framework: What percentage of net worth should be in AMKR? When do vesting events occur? What&apos;s your post-vesting hold strategy? How do you manage the tax consequences of selling? And how does equity fit into the larger picture of your international financial situation?
+   I build a framework: What percentage of net worth should be in AMKR? When do vesting events occur? What&apos;s your post-vesting hold strategy? How do you manage the tax consequences of selling? And how does equity fit into the larger picture of your international financial situation?
    </p>
    </div>
   </div>
@@ -115,7 +115,7 @@ export default function AmkorTechnologyPage() {
    Whether you&apos;re relocating to the U.S. or managing your affairs while maintaining ties abroad, the complexity compounds quickly. FBAR and FATCA filing requirements for foreign accounts. U.S. tax residency rules that determine how you&apos;re taxed. The portability of retirement assets - or the loss of them if you don&apos;t plan. Currency exposure on international income and savings.
    </p>
    <p className="text-lg text-[#5b6a71] leading-relaxed">
-   And Arizona-specific benefits: no state income tax, favorable treatment of retirement income, and strategic opportunities for wealth accumulation that most states don&apos;t offer. Jay integrates all of it into a comprehensive plan.
+   And Arizona-specific benefits: no state income tax, favorable treatment of retirement income, and strategic opportunities for wealth accumulation that most states don&apos;t offer. I integrate all of it into a comprehensive plan.
    </p>
    </div>
   </div>

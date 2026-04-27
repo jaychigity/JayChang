@@ -73,7 +73,7 @@ export default function IntelFinancialAdvisor() {
   You Chose Intel for a Reason. Let&apos;s Make Sure Your Money Works as Hard as You Do.
   </h1>
   <p className="text-xl text-[#5b6a71] font-sans mb-10 leading-relaxed">
-  SERPLUS, mega backdoor Roth, RSU vesting schedules, concentrated stock positions - Intel hands you some of the most powerful financial tools in the semiconductor world. But powerful tools only help if you actually know how to use them together. That&apos;s where our team comes in. Jay Chang works side by side with Intel professionals in Chandler to turn all that complexity into a plan that actually makes sense.
+  SERPLUS, mega backdoor Roth, RSU vesting schedules, concentrated stock positions - Intel hands you some of the most powerful financial tools in the semiconductor world. But powerful tools only help if you actually know how to use them together. That&apos;s where I come in. I work side by side with Intel professionals in Chandler to turn all that complexity into a plan that actually makes sense.
   </p>
   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
   <Button href="/schedule-consultation" variant="primary">Let&apos;s Talk About Your Intel Benefits</Button>
@@ -356,7 +356,7 @@ export default function IntelFinancialAdvisor() {
   <div className="max-w-6xl mx-auto">
   <div className="space-y-4 text-center text-sm font-sans text-gray-300">
   <p>
-   <strong className="text-white">Fiduciary advisor</strong> - Jay is legally required to act in your interest, not earn commissions
+   <strong className="text-white">Fiduciary advisor</strong> - I&apos;m legally required to act in your interest, not earn commissions
   </p>
   <p>
    <strong className="text-white">Farther:</strong> $15B+ in assets under management, named Best RIA to Work For 2025

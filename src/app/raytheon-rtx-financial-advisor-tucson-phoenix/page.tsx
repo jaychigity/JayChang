@@ -31,7 +31,7 @@ export default function RaytheonRTXFinancialAdvisor() {
    name: 'Should I take the RTX pension as a monthly payment or lump sum?',
    acceptedAnswer: {
    '@type': 'Answer',
-   text: 'This is an irreversible decision that can cost or save you hundreds of thousands of dollars depending on your break-even age, survivor needs, and total financial picture. Jay builds a comprehensive analysis including break-even age, portfolio integration, tax sequencing, and estate implications to help you decide with confidence.',
+   text: 'This is an irreversible decision that can cost or save you hundreds of thousands of dollars depending on your break-even age, survivor needs, and total financial picture. I build a comprehensive analysis including break-even age, portfolio integration, tax sequencing, and estate implications to help you decide with confidence.',
    },
    },
    {
@@ -47,7 +47,7 @@ export default function RaytheonRTXFinancialAdvisor() {
    name: 'How should I coordinate my RTX 401(k), pension, and executive deferred comp?',
    acceptedAnswer: {
    '@type': 'Answer',
-   text: 'RTX employees at manager level and above have access to the Compensation Deferral Plan and PSU Deferral Plan in addition to the pension and 401(k). Proper coordination requires understanding vesting schedules, distribution timing, tax consequences, and how they interact with your overall wealth plan. Jay specializes in multi-plan strategy for defense contractors.',
+   text: 'RTX employees at manager level and above have access to the Compensation Deferral Plan and PSU Deferral Plan in addition to the pension and 401(k). Proper coordination requires understanding vesting schedules, distribution timing, tax consequences, and how they interact with your overall wealth plan. I specialize in multi-plan strategy for defense contractors.',
    },
    },
   ],
@@ -73,7 +73,7 @@ export default function RaytheonRTXFinancialAdvisor() {
   Raytheon Engineers: Your Benefits Package Is One of the Best in Defense. Are You Using All of It?
   </h1>
   <p className="text-xl text-[#5b6a71] font-sans mb-10 leading-relaxed">
-  Between a legacy pension, age-based 401(k) contributions reaching 11% of pay, a Lifetime Income Strategy option, and an executive deferred compensation plan, RTX&apos;s benefits are extraordinarily rich - and extraordinarily complex. Jay Chang helps you turn all of it into a retirement you&apos;ve actually designed.
+  Between a legacy pension, age-based 401(k) contributions reaching 11% of pay, a Lifetime Income Strategy option, and an executive deferred compensation plan, RTX&apos;s benefits are extraordinarily rich - and extraordinarily complex. I help you turn all of it into a retirement you&apos;ve actually designed.
   </p>
   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
   <Button href="/schedule-consultation" variant="primary">Schedule a Raytheon Benefits Strategy Call</Button>
@@ -200,7 +200,7 @@ export default function RaytheonRTXFinancialAdvisor() {
    Most employees don&apos;t truly understand the break-even age - the point at which the lump sum or monthly payments come out even. They also don&apos;t account for survivor benefits, portfolio integration, tax sequencing across time horizons, or how a pension decision affects the rest of your financial plan.
   </p>
   <p className="text-lg text-[#5b6a71] font-sans mb-8 leading-relaxed">
-   As your fiduciary advisor, Jay will help you:
+   As your fiduciary advisor, I will help you:
   </p>
   <ul className="space-y-4 text-lg text-[#5b6a71] font-sans">
    <li className="flex gap-4">
@@ -267,7 +267,7 @@ export default function RaytheonRTXFinancialAdvisor() {
    </li>
   </ul>
   <p className="text-lg text-[#5b6a71] font-sans mt-8">
-   Jay specializes in helping defense contractors navigate these nuanced choices. The LIS may be right for you - or it may not be. Either way, the decision should be made proactively with full information, not by default.
+   I specialize in helping defense contractors navigate these nuanced choices. The LIS may be right for you - or it may not be. Either way, the decision should be made proactively with full information, not by default.
   </p>
   </div>
   </section>
@@ -336,7 +336,7 @@ export default function RaytheonRTXFinancialAdvisor() {
    Should I take the RTX pension as a monthly payment or lump sum?
    </h3>
    <p className="text-lg text-[#5b6a71] font-sans leading-relaxed">
-   This is an irreversible decision that can cost or save you hundreds of thousands of dollars depending on your break-even age, survivor needs, and total financial picture. Jay builds a comprehensive analysis including break-even age, portfolio integration, tax sequencing, and estate implications to help you decide with confidence.
+   This is an irreversible decision that can cost or save you hundreds of thousands of dollars depending on your break-even age, survivor needs, and total financial picture. I build a comprehensive analysis including break-even age, portfolio integration, tax sequencing, and estate implications to help you decide with confidence.
    </p>
    </div>
 
@@ -356,7 +356,7 @@ export default function RaytheonRTXFinancialAdvisor() {
    How should I coordinate my RTX 401(k), pension, and executive deferred comp?
    </h3>
    <p className="text-lg text-[#5b6a71] font-sans leading-relaxed">
-   RTX employees at manager level and above have access to the Compensation Deferral Plan and PSU Deferral Plan in addition to the pension and 401(k). Proper coordination requires understanding vesting schedules, distribution timing, tax consequences, and how they interact with your overall wealth plan. Jay specializes in multi-plan strategy for defense contractors.
+   RTX employees at manager level and above have access to the Compensation Deferral Plan and PSU Deferral Plan in addition to the pension and 401(k). Proper coordination requires understanding vesting schedules, distribution timing, tax consequences, and how they interact with your overall wealth plan. I specialize in multi-plan strategy for defense contractors.
    </p>
    </div>
   </div>
@@ -372,7 +372,7 @@ export default function RaytheonRTXFinancialAdvisor() {
    You Spent a Career Defending America. Now Defend Your Retirement.
   </h2>
   <p className="text-xl text-[#5b6a71] font-sans mb-10 leading-relaxed">
-   Your RTX benefits package is extraordinary - but only if you use it strategically. Whether you&apos;re making a pension election, deciding about the Lifetime Income Strategy, or coordinating multiple deferred compensation plans, Jay has the expertise to help you build a comprehensive, tax-efficient retirement plan aligned with your goals.
+   Your RTX benefits package is extraordinary - but only if you use it strategically. Whether you&apos;re making a pension election, deciding about the Lifetime Income Strategy, or coordinating multiple deferred compensation plans, I have the expertise to help you build a comprehensive, tax-efficient retirement plan aligned with your goals.
   </p>
   <div className="mb-6">
    <Button href="/schedule-consultation" variant="primary">Schedule Your RTX / Raytheon Strategy Call - Serving Tucson and Phoenix-area professionals</Button>
@@ -389,7 +389,7 @@ export default function RaytheonRTXFinancialAdvisor() {
   <div className="max-w-6xl mx-auto">
   <div className="space-y-4 text-center text-sm font-sans text-gray-300">
   <p>
-   <strong className="text-white">Fiduciary advisor</strong> - Jay is legally required to act in your interest, not earn commissions
+   <strong className="text-white">Fiduciary advisor</strong> - I&apos;m legally required to act in your interest, not earn commissions
   </p>
   <p>
    <strong className="text-white">Farther:</strong> $15B+ in assets under management, named Best RIA to Work For 2025

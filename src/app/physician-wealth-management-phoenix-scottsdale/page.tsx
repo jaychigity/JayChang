@@ -23,7 +23,7 @@ const jsonLd = {
  name: "I'm a Banner Health employed physician. Can I still do a backdoor Roth?",
  acceptedAnswer: {
   '@type': 'Answer',
-  text: "Yes. Even though Banner's 401(k) uses pre-tax contributions, you can make a non-deductible Traditional IRA contribution and convert it to Roth annually. Jay coordinates this as part of your complete annual tax and retirement plan.",
+  text: "Yes. Even though Banner's 401(k) uses pre-tax contributions, you can make a non-deductible Traditional IRA contribution and convert it to Roth annually. I coordinate this as part of your complete annual tax and retirement plan.",
  },
  },
  {
@@ -31,7 +31,7 @@ const jsonLd = {
  name: 'I have $350,000 in student loans. Should I pay them off before investing?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'This is one of the most common and highest-stakes questions physicians face. The right answer depends on your loan interest rates, expected investment returns, income path, and whether you qualify for any forgiveness programs. Jay builds a detailed model comparing both paths for your specific situation.',
+  text: 'This is one of the most common and highest-stakes questions physicians face. The right answer depends on your loan interest rates, expected investment returns, income path, and whether you qualify for any forgiveness programs. I build a detailed model comparing both paths for your specific situation.',
  },
  },
  {
@@ -39,7 +39,7 @@ const jsonLd = {
  name: 'Do you work with physicians who own their own practice?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'Yes. Practice-owning physicians have additional planning opportunities - including defined benefit pension plans, S-Corp election, equipment and facility depreciation, and business succession planning - that Jay integrates into your overall wealth strategy.',
+  text: 'Yes. Practice-owning physicians have additional planning opportunities - including defined benefit pension plans, S-Corp election, equipment and facility depreciation, and business succession planning - that I integrate into your overall wealth strategy.',
  },
  },
  ],
@@ -262,7 +262,7 @@ export default function PhysicianWealthManagementPhoenixScottsdale() {
 
   <AnimateOnScroll>
   <p className="font-sans text-lg text-[#5b6a71] leading-relaxed">
-   Jay works closely with trusted Arizona healthcare attorneys to ensure your asset protection strategy integrates
+   I work closely with trusted Arizona healthcare attorneys to ensure your asset protection strategy integrates
    seamlessly with your overall wealth plan and stays current with Arizona law changes.
   </p>
   </AnimateOnScroll>
@@ -344,7 +344,7 @@ export default function PhysicianWealthManagementPhoenixScottsdale() {
 
   <AnimateOnScroll>
   <p className="font-sans text-lg text-[#5b6a71] leading-relaxed">
-   Jay builds a comprehensive multi-year tax map for every physician client, coordinating with your CPA to ensure
+   I build a comprehensive multi-year tax map for every physician client, coordinating with your CPA to ensure
    every deduction is captured and every strategy is implemented correctly.
   </p>
   </AnimateOnScroll>
@@ -368,7 +368,7 @@ export default function PhysicianWealthManagementPhoenixScottsdale() {
    </h3>
    <p className="font-sans text-[#5b6a71] leading-relaxed">
    Yes. Even though Banner&apos;s 401(k) uses pre-tax contributions, you can make a non-deductible Traditional IRA
-   contribution and convert it to Roth annually. Jay coordinates this as part of your complete annual tax and
+   contribution and convert it to Roth annually. I coordinate this as part of your complete annual tax and
    retirement plan.
    </p>
    </div>
@@ -382,7 +382,7 @@ export default function PhysicianWealthManagementPhoenixScottsdale() {
    <p className="font-sans text-[#5b6a71] leading-relaxed">
    This is one of the most common and highest-stakes questions physicians face. The right answer depends on
    your loan interest rates, expected investment returns, income path, and whether you qualify for any
-   forgiveness programs. Jay builds a detailed model comparing both paths for your specific situation.
+   forgiveness programs. I build a detailed model comparing both paths for your specific situation.
    </p>
    </div>
   </AnimateOnScroll>

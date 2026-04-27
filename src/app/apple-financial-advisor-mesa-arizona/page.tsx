@@ -31,7 +31,7 @@ export default function AppleFinancialAdvisor() {
    name: 'What happens to my Apple RSUs if I leave the company?',
    acceptedAnswer: {
    '@type': 'Answer',
-   text: 'Unvested RSUs are forfeited when you separate from Apple. Only vested shares transfer to you. Jay can help you model your vesting schedule, plan sale timing for vested RSUs, and understand the tax impact of your departure.',
+   text: 'Unvested RSUs are forfeited when you separate from Apple. Only vested shares transfer to you. I can help you model your vesting schedule, plan sale timing for vested RSUs, and understand the tax impact of your departure.',
    },
    },
    {
@@ -39,7 +39,7 @@ export default function AppleFinancialAdvisor() {
    name: 'Why does Apple withhold only 22% when my tax rate is higher?',
    acceptedAnswer: {
    '@type': 'Answer',
-   text: 'Apple&apos;s 22% withholding is the federal statutory minimum for supplemental income. If your total marginal rate is 32-37%, you have a withholding gap that creates an April tax surprise. Jay builds a full-year income projection and recommends estimated tax payments to cover the gap.',
+   text: 'Apple&apos;s 22% withholding is the federal statutory minimum for supplemental income. If your total marginal rate is 32-37%, you have a withholding gap that creates an April tax surprise. I build a full-year income projection and recommend estimated tax payments to cover the gap.',
    },
    },
    {
@@ -47,7 +47,7 @@ export default function AppleFinancialAdvisor() {
    name: 'How much of the Apple ESPP discount should I contribute?',
    acceptedAnswer: {
    '@type': 'Answer',
-   text: 'The 15% discount with a 6-month lookback makes Apple&apos;s ESPP one of the best in tech. But contribution levels, holding periods, and tax treatment (qualifying vs. disqualifying dispositions) depend on your total compensation, risk tolerance, and stock concentration. Jay can optimize your contribution strategy.',
+   text: 'The 15% discount with a 6-month lookback makes Apple&apos;s ESPP one of the best in tech. But contribution levels, holding periods, and tax treatment (qualifying vs. disqualifying dispositions) depend on your total compensation, risk tolerance, and stock concentration. I can optimize your contribution strategy.',
    },
    },
   ],
@@ -73,7 +73,7 @@ export default function AppleFinancialAdvisor() {
   Apple Employees: Your RSUs Are Vesting. Is Your Tax Strategy Ready?
   </h1>
   <p className="text-xl text-[#5b6a71] font-sans mb-10 leading-relaxed">
-  Apple&apos;s Mesa operations and Silicon Valley campuses pay their engineers extraordinarily well. But biannual RSU vesting, a systematic withholding gap, and ESPP complexity create tax and wealth problems that require specialized advisory expertise. Jay Chang provides that expertise.
+  Apple&apos;s Mesa operations and Silicon Valley campuses pay their engineers extraordinarily well. But biannual RSU vesting, a systematic withholding gap, and ESPP complexity create tax and wealth problems that require specialized advisory expertise. I provide that expertise.
   </p>
   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
   <Button href="/schedule-consultation" variant="primary">Schedule an Apple Benefits Review</Button>
@@ -116,7 +116,7 @@ export default function AppleFinancialAdvisor() {
    Apple&apos;s RSU vesting creates two large taxable income events per year - spring and fall. Apple withholds 22% federal but your actual marginal rate is 32-37% for $200K-$400K+ total compensation. The result: a large, predictable tax bill every April.
   </p>
   <p className="text-lg text-[#5b6a71] font-sans mb-8 leading-relaxed">
-   Most Apple employees don&apos;t plan for this gap. They discover it in April when their CPA tells them they owe $40,000-$80,000 more than they expected. Jay builds a different path:
+   Most Apple employees don&apos;t plan for this gap. They discover it in April when their CPA tells them they owe $40,000-$80,000 more than they expected. I build a different path:
   </p>
   <ul className="space-y-4 text-lg text-[#5b6a71] font-sans mb-8">
    <li className="flex gap-4">
@@ -174,7 +174,7 @@ export default function AppleFinancialAdvisor() {
    <strong>The math:</strong> A Mesa engineer earning $280,000 with 5+ years of service receives $16,800 in Apple employer match annually. Add mega backdoor Roth capability (up to $72,000 in after-tax 401(k) contributions that convert to Roth tax-free), and you have one of tech&apos;s most powerful retirement savings vehicles.
   </p>
   <p className="text-lg text-[#5b6a71] font-sans">
-   Jay will help you maximize both the company match and after-tax conversion strategy - turning Apple&apos;s match into a meaningful accelerant for tax-free lifetime wealth building.
+   I will help you maximize both the company match and after-tax conversion strategy - turning Apple&apos;s match into a meaningful accelerant for tax-free lifetime wealth building.
   </p>
   </div>
   </section>
@@ -206,7 +206,7 @@ export default function AppleFinancialAdvisor() {
   </div>
 
   <p className="text-lg text-[#5b6a71] font-sans mb-8 leading-relaxed">
-   The critical questions Jay will help you answer:
+   The critical questions I will help you answer:
   </p>
   <ul className="space-y-4 text-lg text-[#5b6a71] font-sans mb-8">
    <li className="flex gap-4">
@@ -224,7 +224,7 @@ export default function AppleFinancialAdvisor() {
   </ul>
 
   <p className="text-lg text-[#5b6a71] font-sans">
-   Jay integrates your ESPP strategy with your total Apple compensation, RSU sales, and diversification roadmap - turning a generous perk into a deliberate wealth-building tool.
+   I integrate your ESPP strategy with your total Apple compensation, RSU sales, and diversification roadmap - turning a generous perk into a deliberate wealth-building tool.
   </p>
   </div>
   </section>
@@ -234,7 +234,7 @@ export default function AppleFinancialAdvisor() {
  <section className="bg-[#1d7682] py-16 px-6">
   <div className="max-w-4xl mx-auto text-center">
   <p className="text-xl text-white font-sans mb-8">
-  Apple&apos;s compensation is built for long-term wealth creation - but only if you plan it strategically. Jay works with Apple employees every week. Schedule a confidential call today.
+  Apple&apos;s compensation is built for long-term wealth creation - but only if you plan it strategically. I work with Apple employees every week. Schedule a confidential call today.
   </p>
   <Button href="/schedule-consultation" variant="primary">Schedule Your Apple Strategy Call</Button>
   </div>
@@ -275,7 +275,7 @@ export default function AppleFinancialAdvisor() {
   </ul>
 
   <p className="text-lg text-[#5b6a71] font-sans">
-   Jay will model the tax and risk scenarios, help you set an appropriate deferral level, and integrate your DCP strategy with your RSU sales, ESPP contributions, and overall financial plan.
+   I will model the tax and risk scenarios, help you set an appropriate deferral level, and integrate your DCP strategy with your RSU sales, ESPP contributions, and overall financial plan.
   </p>
   </div>
   </section>
@@ -334,7 +334,7 @@ export default function AppleFinancialAdvisor() {
    What happens to my Apple RSUs if I leave the company?
    </h3>
    <p className="text-lg text-[#5b6a71] font-sans leading-relaxed">
-   Unvested RSUs are forfeited when you separate from Apple. Only shares that have vested transfer to you. Jay can help you model your vesting schedule, plan the tax implications of your departure, and sequence RSU sales in a tax-efficient order if you leave.
+   Unvested RSUs are forfeited when you separate from Apple. Only shares that have vested transfer to you. I can help you model your vesting schedule, plan the tax implications of your departure, and sequence RSU sales in a tax-efficient order if you leave.
    </p>
    </div>
 
@@ -344,7 +344,7 @@ export default function AppleFinancialAdvisor() {
    Why does Apple withhold only 22% when my tax rate is higher?
    </h3>
    <p className="text-lg text-[#5b6a71] font-sans leading-relaxed">
-   Apple&apos;s 22% withholding is the federal statutory minimum for supplemental income (RSU vesting). If your total marginal federal + state tax rate is 32-37%, you have a withholding gap that creates an April tax surprise. Jay builds a full-year income projection and recommends estimated tax payments to cover the gap proactively.
+   Apple&apos;s 22% withholding is the federal statutory minimum for supplemental income (RSU vesting). If your total marginal federal + state tax rate is 32-37%, you have a withholding gap that creates an April tax surprise. I build a full-year income projection and recommend estimated tax payments to cover the gap proactively.
    </p>
    </div>
 
@@ -354,7 +354,7 @@ export default function AppleFinancialAdvisor() {
    How much of the Apple ESPP discount should I contribute?
    </h3>
    <p className="text-lg text-[#5b6a71] font-sans leading-relaxed">
-   The 15% discount with a 6-month lookback makes Apple&apos;s ESPP one of the best in tech. But your contribution level depends on your total Apple stock concentration (RSUs + DCP + any other company stock), your cash flow needs, and your risk tolerance. If Apple already represents 40%+ of your net worth through RSUs, adding ESPP shares may compound concentration risk. Jay will help you find the right balance.
+   The 15% discount with a 6-month lookback makes Apple&apos;s ESPP one of the best in tech. But your contribution level depends on your total Apple stock concentration (RSUs + DCP + any other company stock), your cash flow needs, and your risk tolerance. If Apple already represents 40%+ of your net worth through RSUs, adding ESPP shares may compound concentration risk. I will help you find the right balance.
    </p>
    </div>
   </div>
@@ -387,7 +387,7 @@ export default function AppleFinancialAdvisor() {
   <div className="max-w-6xl mx-auto">
   <div className="space-y-4 text-center text-sm font-sans text-gray-300">
   <p>
-   <strong className="text-white">Fiduciary advisor</strong> - Jay is legally required to act in your interest, not earn commissions
+   <strong className="text-white">Fiduciary advisor</strong> - I&apos;m legally required to act in your interest, not earn commissions
   </p>
   <p>
    <strong className="text-white">Farther:</strong> $15B+ in assets under management, named Best RIA to Work For 2025

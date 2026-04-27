@@ -51,7 +51,7 @@ export default function AreasWeServe() {
    Where We Work with Clients
   </h1>
   <p className="text-xl text-[#5b6a71] max-w-2xl">
-   Jay is based in Tempe, Arizona, but our team serves clients across the Southwest and beyond. Whether we meet in person or over video, the relationship is the same - personal, hands-on, and built around your life.
+   I&apos;m based in Tempe, Arizona, and our team serves clients across the Southwest and beyond. Whether we meet in person or over video, the relationship is the same - personal, hands-on, and built around your life.
   </p>
   </AnimateOnScroll>
   </div>

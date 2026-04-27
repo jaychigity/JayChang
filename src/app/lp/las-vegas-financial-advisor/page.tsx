@@ -210,7 +210,7 @@ export default function LasVegasFinancialAdvisorLP() {
    VP, Wealth Advisor
   </p>
   <p className="font-sans text-[16px] text-[#5b6a71] leading-relaxed mt-6">
-   Jay works with a select group of families across Arizona, California, and Nevada
+   I work with a select group of families across Arizona, California, and Nevada
    who want a single point of accountability for their entire
    financial life. With deep experience helping California transplants
    establish Nevada residency and optimize their financial position,

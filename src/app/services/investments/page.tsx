@@ -165,7 +165,7 @@ export default function InvestmentsPage() {
    multi-state tax obligations, and retirement timelines that span decades.
    </p>
    <p className="font-sans text-body text-[#5b6a71] mt-4 leading-relaxed">
-   At Jay Chang&apos;s practice, I take a different approach.
+   I take a different approach.
    Every portfolio is constructed from the ground up, reflecting your goals,
    your tax situation, your liquidity needs, and the assets you already hold.
    Whether you are a business owner in{' '}

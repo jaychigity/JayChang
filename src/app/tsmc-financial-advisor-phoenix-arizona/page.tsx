@@ -24,7 +24,7 @@ const faqSchema = {
  name: 'I recently relocated from Taiwan. Do you have experience with cross-border tax issues?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'Jay coordinates closely with international tax specialists for clients with Taiwan-sourced income, FBAR requirements, and foreign financial assets. He does not provide international tax advice directly, but ensures your wealth strategy is fully coordinated with specialists who do.',
+  text: 'I coordinate closely with international tax specialists for clients with Taiwan-sourced income, FBAR requirements, and foreign financial assets. I do not provide international tax advice directly, but ensure your wealth strategy is fully coordinated with specialists who do.',
  },
  },
  {
@@ -32,7 +32,7 @@ const faqSchema = {
  name: 'When is the right time to sell my TSMC RSUs?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'That depends on your total equity exposure, tax situation, financial goals, and views on TSMC&apos;s long-term value. Jay builds a written, rules-based framework so you&apos;re never making emotional decisions at vesting.',
+  text: 'That depends on your total equity exposure, tax situation, financial goals, and views on TSMC&apos;s long-term value. I build a written, rules-based framework so you&apos;re never making emotional decisions at vesting.',
  },
  },
  {
@@ -40,7 +40,7 @@ const faqSchema = {
  name: 'Do you work with TSMC employees who are still on an H-1B visa?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'Yes. Jay works with clients across immigration status categories and coordinates with legal and tax professionals to ensure your plan accounts for immigration-related financial considerations.',
+  text: 'Yes. I work with clients across immigration status categories and coordinate with legal and tax professionals to ensure your plan accounts for immigration-related financial considerations.',
  },
  },
  ],
@@ -127,7 +127,7 @@ export default function TSMCFinancialAdvisor() {
 
   <AnimateOnScroll>
   <p className="text-lg font-sans text-[#5b6a71] leading-relaxed">
-   Jay helps TSMC professionals organize and optimize all of these moving parts into a unified strategy.
+   I help TSMC professionals organize and optimize all of these moving parts into a unified strategy.
   </p>
   </AnimateOnScroll>
   </div>
@@ -145,7 +145,7 @@ export default function TSMCFinancialAdvisor() {
    The timing of your Arizona residency establishment can have profound tax implications. Whether you&apos;re relocating from California, Taiwan, or another state, the first 90 days matter. RSU vesting events that occur before you establish Arizona domicile may be subject to different tax treatment than those after. California-sourced income rules can follow you for years if you don&apos;t properly establish non-residency. And if you have income or accounts in Taiwan or elsewhere, FBAR and FATCA compliance becomes critical.
    </p>
    <p>
-   Jay works with your CPA and tax specialist to ensure your residency strategy is coordinated with your broader financial plan. This includes timing significant equity sales, understanding stock option exercises relative to residency changes, and properly documenting your domicile shift.
+   I work with your CPA and tax specialist to ensure your residency strategy is coordinated with your broader financial plan. This includes timing significant equity sales, understanding stock option exercises relative to residency changes, and properly documenting your domicile shift.
    </p>
   </div>
   </AnimateOnScroll>
@@ -164,7 +164,7 @@ export default function TSMCFinancialAdvisor() {
    Most TSMC professionals have multiple overlapping grant cycles, each with different vesting schedules and tax treatment. Add in the concentration risk of holding too much TSMC stock, the complexity of tax-loss harvesting around vesting events, and the question of whether to participate in the ESPP - and you&apos;ve got a financial puzzle that demands real strategy.
    </p>
    <p>
-   Without a plan, emotion drives decisions. You either hold too long (concentration risk) or sell too early (leaving money on the table). Jay builds a multi-year equity projection that maps every vest, every tax event, and connects them to your financial goals. You&apos;ll have a written, rules-based framework - not guesswork.
+   Without a plan, emotion drives decisions. You either hold too long (concentration risk) or sell too early (leaving money on the table). I build a multi-year equity projection that maps every vest, every tax event, and connects them to your financial goals. You&apos;ll have a written, rules-based framework - not guesswork.
    </p>
   </div>
   </AnimateOnScroll>
@@ -176,7 +176,7 @@ export default function TSMCFinancialAdvisor() {
   <div className="max-w-4xl mx-auto px-6 md:px-8 text-center">
   <AnimateOnScroll>
   <p className="text-lg md:text-xl font-sans text-white mb-6">
-   Sound familiar? You don&apos;t have to figure this out alone. Jay works with TSMC employees every week. Schedule a free, confidential call today.
+   Sound familiar? You don&apos;t have to figure this out alone. I work with TSMC employees every week. Schedule a free, confidential call today.
   </p>
   <Button href="/schedule-consultation" variant="outline">
    Schedule Your Free TSMC Consultation
@@ -194,7 +194,7 @@ export default function TSMCFinancialAdvisor() {
   </h2>
   <div className="space-y-6 font-sans text-[#5b6a71] text-lg leading-relaxed">
    <p>
-   Arizona offers a lower cost of living than many tech hubs, a favorable tax environment, and a growing business ecosystem. But relocation is also a reset - a chance to rethink your entire financial strategy. Beyond equity and taxes, Jay helps TSMC professionals optimize their savings rate, explore real estate strategy in the Phoenix market, plan for family needs, and build a financial foundation that lasts.
+   Arizona offers a lower cost of living than many tech hubs, a favorable tax environment, and a growing business ecosystem. But relocation is also a reset - a chance to rethink your entire financial strategy. Beyond equity and taxes, I help TSMC professionals optimize their savings rate, explore real estate strategy in the Phoenix market, plan for family needs, and build a financial foundation that lasts.
    </p>
    <p>
    This is about more than getting through relocation. It&apos;s about building the wealth you&apos;ve earned.
@@ -220,7 +220,7 @@ export default function TSMCFinancialAdvisor() {
    I recently relocated from Taiwan. Do you have experience with cross-border tax issues?
    </h3>
    <p className="font-sans text-[#5b6a71] text-lg leading-relaxed">
-   Jay coordinates closely with international tax specialists for clients with Taiwan-sourced income, FBAR requirements, and foreign financial assets. He does not provide international tax advice directly, but ensures your wealth strategy is fully coordinated with specialists who do.
+   I coordinate closely with international tax specialists for clients with Taiwan-sourced income, FBAR requirements, and foreign financial assets. I do not provide international tax advice directly, but ensure your wealth strategy is fully coordinated with specialists who do.
    </p>
    </div>
   </AnimateOnScroll>
@@ -231,7 +231,7 @@ export default function TSMCFinancialAdvisor() {
    When is the right time to sell my TSMC RSUs?
    </h3>
    <p className="font-sans text-[#5b6a71] text-lg leading-relaxed">
-   That depends on your total equity exposure, tax situation, financial goals, and views on TSMC&apos;s long-term value. Jay builds a written, rules-based framework so you&apos;re never making emotional decisions at vesting.
+   That depends on your total equity exposure, tax situation, financial goals, and views on TSMC&apos;s long-term value. I build a written, rules-based framework so you&apos;re never making emotional decisions at vesting.
    </p>
    </div>
   </AnimateOnScroll>
@@ -242,7 +242,7 @@ export default function TSMCFinancialAdvisor() {
    Do you work with TSMC employees who are still on an H-1B visa?
    </h3>
    <p className="font-sans text-[#5b6a71] text-lg leading-relaxed">
-   Yes. Jay works with clients across immigration status categories and coordinates with legal and tax professionals to ensure your plan accounts for immigration-related financial considerations.
+   Yes. I work with clients across immigration status categories and coordinate with legal and tax professionals to ensure your plan accounts for immigration-related financial considerations.
    </p>
    </div>
   </AnimateOnScroll>

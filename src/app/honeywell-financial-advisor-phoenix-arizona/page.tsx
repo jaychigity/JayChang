@@ -54,7 +54,7 @@ export default function HoneywellAdvisorPage() {
    Honeywell Professionals: Your 401(k) Match Comes With a Hidden Risk.
    </h1>
    <p className="font-sans text-lg text-[#5b6a71] leading-relaxed mb-8 max-w-2xl mx-auto">
-   Honeywell&apos;s 7% employer match is among the most generous in aerospace. But it arrives as Honeywell stock - and most employees don&apos;t realize how much of their retirement is riding on one company&apos;s performance. Jay Chang helps Honeywell professionals build a complete, diversified plan.
+   Honeywell&apos;s 7% employer match is among the most generous in aerospace. But it arrives as Honeywell stock - and most employees don&apos;t realize how much of their retirement is riding on one company&apos;s performance. I help Honeywell professionals build a complete, diversified plan.
    </p>
    <Button
    href="/schedule-consultation"
@@ -84,7 +84,7 @@ export default function HoneywellAdvisorPage() {
    For long-tenured employees and those who max out their contributions, this creates significant concentration risk. Twenty to forty percent of total 401(k) assets often sit in a single stock. Meanwhile, your individual investments elsewhere may further tilt your portfolio toward Honeywell shares.
    </p>
    <p>
-   Jay&apos;s approach to Honeywell match strategy includes:
+   My approach to Honeywell match strategy includes:
    </p>
    <ul className="list-disc list-inside space-y-2 ml-4">
    <li>Mapping your current Honeywell stock concentration across all accounts</li>
@@ -111,7 +111,7 @@ export default function HoneywellAdvisorPage() {
    If you&apos;re a manager or executive at Honeywell, you may receive restricted stock units on top of base salary. RSUs vest on a schedule - typically 25% at one year, then 1/36th monthly over the remaining three years. Some managers elect RSUs over cash, amplifying Honeywell concentration even further.
    </p>
    <p>
-   Without a written plan, RSU vesting often becomes a surprise tax event or an unmanaged wealth windfall. Jay works with Honeywell leaders to design a comprehensive RSU strategy:
+   Without a written plan, RSU vesting often becomes a surprise tax event or an unmanaged wealth windfall. I work with Honeywell leaders to design a comprehensive RSU strategy:
    </p>
    <ul className="list-disc list-inside space-y-2 ml-4">
    <li>Multi-year RSU modeling and vesting projections</li>
@@ -149,7 +149,7 @@ export default function HoneywellAdvisorPage() {
    <li>How do you build a tax-efficient wealth transfer strategy for heirs?</li>
    </ul>
    <p className="mt-4">
-   Jay builds detailed retirement income projections under multiple scenarios - different retirement ages, market conditions, healthcare costs, and tax regimes. You&apos;ll know exactly how much you can spend, when to claim Social Security, and how to optimize every dollar.
+   I build detailed retirement income projections under multiple scenarios - different retirement ages, market conditions, healthcare costs, and tax regimes. You&apos;ll know exactly how much you can spend, when to claim Social Security, and how to optimize every dollar.
    </p>
    </div>
   </div>

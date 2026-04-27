@@ -104,7 +104,7 @@ export default function MicrochipTechnologyAdvisor() {
    The semiconductor cycle has shifted. Hold and wait for recovery? Sell on vest? Tax-loss harvesting opportunities? Grant renegotiation context?
    </p>
    <p>
-   Jay doesn&apos;t tell you what to believe about Microchip&apos;s future - but makes sure every decision is deliberate, informed, and tax-efficient. Whether equity markets recover or remain volatile, a Microchip employee with a clear, documented strategy is positioned to make decisions aligned with their financial goals, not reactive to market sentiment.
+   I don&apos;t tell you what to believe about Microchip&apos;s future, but I make sure every decision is deliberate, informed, and tax-efficient. Whether equity markets recover or remain volatile, a Microchip employee with a clear, documented strategy is positioned to make decisions aligned with their financial goals, not reactive to market sentiment.
    </p>
    <p>
    That clarity becomes especially valuable when Microchip equity represents a significant portion of your net worth.

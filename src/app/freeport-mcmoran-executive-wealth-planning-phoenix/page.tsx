@@ -146,7 +146,7 @@ export default function FCXExecutiveWealthPage() {
    </div>
 
    <p className="text-lg text-slate-700 leading-relaxed">
-   Jay builds systematic diversification strategies that acknowledge the reality of commodity cycles while decoupling your personal wealth from pure FCX/copper correlation. This isn&apos;t market timing. It&apos;s prudent concentration management for professionals whose income is already commodity-exposed.
+   I build systematic diversification strategies that acknowledge the reality of commodity cycles while decoupling your personal wealth from pure FCX/copper correlation. This isn&apos;t market timing. It&apos;s prudent concentration management for professionals whose income is already commodity-exposed.
    </p>
    </div>
   </div>
@@ -245,7 +245,7 @@ export default function FCXExecutiveWealthPage() {
     </li>
    </ul>
    <p className="text-slate-700 mt-6 pt-6 border-t border-teal-200">
-    Jay coordinates plan design with your corporate counsel, ensuring legal compliance while achieving your diversification goals.
+    I coordinate plan design with your corporate counsel, ensuring legal compliance while achieving your diversification goals.
    </p>
    </div>
    </div>

@@ -198,7 +198,7 @@ export default function SemiconductorProfessionalsLP() {
    VP, Wealth Advisor
   </p>
   <p className="font-sans text-[16px] text-[#5b6a71] leading-relaxed mt-6">
-   Jay and our team work with engineers, executives, and equity holders who want someone in their corner who actually understands concentrated wealth, deferred compensation, and the tax headaches that come with it. As a fiduciary, Jay is legally required to put your interests first - and honestly, he wouldn&apos;t have it any other way.
+   My team and I work with engineers, executives, and equity holders who want someone in their corner who actually understands concentrated wealth, deferred compensation, and the tax headaches that come with it. As a fiduciary, I&apos;m legally required to put your interests first, and honestly, I wouldn&apos;t have it any other way.
   </p>
   </AnimateOnScroll>
   </div>

@@ -202,7 +202,7 @@ export default function ScottsdaleWealthManagementLP() {
    VP, Wealth Advisor
   </p>
   <p className="font-sans text-[16px] text-[#5b6a71] leading-relaxed mt-6">
-   Jay works with a select group of families in Phoenix and Scottsdale
+   I work with a select group of families in Phoenix and Scottsdale
    who want a single point of accountability for their entire
    financial life. As a fiduciary, he is legally obligated to act in
    your best interest - and that is exactly how he approaches

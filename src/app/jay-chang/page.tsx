@@ -7,7 +7,7 @@ import { Lock, BarChart3, Gauge, Target, Layers, TrendingUp, Clock, Award } from
 
 export const metadata: Metadata = {
  title: 'Jay Chang | Vice President, Wealth Advisor | Farther',
- description: 'Meet Jay Chang, a fiduciary wealth advisor at Farther in Tempe, Arizona. Jay specializes in retirement income planning, investment strategy, tax planning, and wealth building for professionals, business owners, and families across all wealth stages.',
+ description: 'Meet Jay Chang, a fiduciary wealth advisor at Farther in Tempe, Arizona. I specialize in retirement income planning, investment strategy, tax planning, and wealth building for professionals, business owners, and families across all wealth stages.',
  alternates: {
  canonical: 'https://www.advisorjay.com/jay-chang',
  },

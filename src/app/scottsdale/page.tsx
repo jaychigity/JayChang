@@ -430,7 +430,7 @@ export default function ScottsdalePage() {
         { title: 'Smart Asset Location', desc: 'We put the right investments in the right accounts so you keep more of your returns.' },
         { title: 'Flexible Investment Approach', desc: 'Your portfolio adapts as your life changes - new job, new baby, new goals. We adjust together.' },
         { title: 'Farther\'s Technology Platform', desc: 'Over $15B in assets managed on one integrated platform, giving our team and you real-time visibility.' },
-        { title: 'We Actually Know Your Name', desc: 'Jay spends 90% of his time working directly with clients. You are never just a number here.' },
+        { title: 'We Actually Know Your Name', desc: 'I spend 90% of my time working directly with clients. You are never just a number here.' },
        ].map((item) => (
         <div key={item.title} className="bg-[#FAFAF8] border border-[#E8E6E1] rounded-[12px] p-8">
          <h3 className="font-serif text-[20px] font-semibold text-[#333333] mb-3">

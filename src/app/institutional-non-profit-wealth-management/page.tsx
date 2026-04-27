@@ -7,7 +7,7 @@ import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
  title: 'Institutional & Non-Profit Wealth Management | Endowments, Foundations & Charitable Portfolios | Advisor Jay, Farther',
- description: 'Fiduciary investment management for endowments, foundation assets, institutional portfolios, and charitable organizations. Jay helps non-profits and institutions align their investments with their mission while maintaining fiduciary accountability.',
+ description: 'Fiduciary investment management for endowments, foundation assets, institutional portfolios, and charitable organizations. I help non-profits and institutions align their investments with their mission while maintaining fiduciary accountability.',
  alternates: {
  canonical: 'https://www.advisorjay.com/institutional-non-profit-wealth-management',
  },

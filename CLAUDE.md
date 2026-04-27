@@ -144,6 +144,30 @@ descriptions, tool descriptions, section text, button labels — follow the rule
 
 - **"I"** for anything involving the personal relationship between Jay and a client:
   listening, advising, knowing clients, recommendations, follow-up, personal background, credentials, philosophy
+
+  **CRITICAL, common mistake:** Body copy describing what Jay does for clients MUST use "I", never third-person "Jay". This applies on every page (industry pages, services pages, tool pages, location pages, FAQ schema, hero sections, mid-page CTA paragraphs). When generating new pages, defaulting to third-person "Jay [verb]" is the single most common voice violation. Always write as if Jay is speaking directly to the reader.
+
+  Wrong → Right:
+  - "Jay helps Apple employees..." → "I help Apple employees..."
+  - "Jay builds a comprehensive plan..." → "I build a comprehensive plan..."
+  - "Jay specializes in..." → "I specialize in..."
+  - "Jay coordinates with your CPA..." → "I coordinate with your CPA..."
+  - "Jay&apos;s approach to..." → "My approach to..."
+  - "Jay is legally required..." → "I&apos;m legally required..."
+  - "Jay will be in touch" (form confirmations) → "I&apos;ll be in touch"
+  - "Jay knows your pension..." (meta descriptions) → "I know your pension..."
+
+  Exceptions where third-person "Jay" stays:
+  - CTAs and buttons: "Schedule a conversation with Jay" ✓
+  - Author bylines: "By Jay Chang, VP, Wealth Advisor at Farther" ✓
+  - Brand name uses: "Advisor Jay" (the brand itself) ✓
+  - Schema.org `name` fields and structured data identifiers ✓
+  - Image alt text and `<img alt="Jay Chang" />` ✓
+  - Direct quotes from clients about Jay (testimonials) ✓
+  - SEO page title fields like "...| Advisor Jay" ✓
+
+  **Before committing copy changes**, run `npm run check-voice` to scan for accidental third-person Jay in body copy.
+
 - **"We"** for Farther's platform, team, or institutional resources:
   technology, AUM, account management, transfers, tax-lot optimization, specialist network
 - **CTAs** must use "Jay" or first person. Never "Contact us", "Get started", or generic corporate phrasing.
