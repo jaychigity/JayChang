@@ -30,7 +30,7 @@ export const metadata: Metadata = {
  openGraph: buildOpenGraph('/', {
  title: 'Advisor Jay - Your Partner in Building Wealth That Lasts',
  description: 'Fiduciary wealth advice for families, professionals, and business owners. I sit on your side of the table.',
- image: '/Photos/Jay-Banner.png',
+ image: '/Photos/Jay-Office-OG.jpg',
  }),
 }
 
