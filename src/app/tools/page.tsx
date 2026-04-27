@@ -14,6 +14,14 @@ export const metadata: Metadata = {
  description:
  'Free financial calculators with instant results. No sign-up required. AT&T pension, PG&E benefits, 401(k) projections, Roth conversions, Social Security, RMDs, and more.',
  url: 'https://www.advisorjay.com/tools',
+ images: [
+  {
+  url: 'https://www.advisorjay.com/Photos/Tools-OG.jpg',
+  width: 1200,
+  height: 630,
+  alt: 'Free Tools by Advisor Jay',
+  },
+ ],
  },
 }
 
