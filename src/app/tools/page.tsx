@@ -289,7 +289,7 @@ export default function ToolsPage() {
   lineHeight: 1.6,
   }}
   >
-  Making smart financial decisions starts with knowing your numbers. These calculators require no sign-up and deliver real answers instantly. Built for corporate employees, utility and energy professionals, aerospace and defense workers, physicians, business owners, and families navigating complex financial situations, exactly the kinds of people I work with every day.
+  Making smart financial decisions starts with knowing your numbers. These calculators require no sign-up and deliver real answers instantly. Nothing you type in is stored or shared. Built for corporate employees, utility and energy professionals, aerospace and defense workers, physicians, business owners, and families navigating complex financial situations, exactly the kinds of people I work with every day.
   </p>
  </section>
 
@@ -327,7 +327,7 @@ export default function ToolsPage() {
   lineHeight: 1.7,
   }}
   >
-  Each calculator is designed around a specific financial question we hear constantly from clients. Start with whichever one is most relevant to your situation right now. If you want help interpreting the results or building a plan around them, Jay offers a conversation, just clarity.
+  Each calculator is designed around a specific financial question I hear constantly from clients. Start with whichever one is most relevant to your situation right now. If you want help interpreting the results or building a plan around them, I offer a conversation, just clarity.
   </p>
   </div>
  </section>
@@ -534,7 +534,7 @@ export default function ToolsPage() {
   marginBottom: 28,
   }}
   >
-  These tools give you a starting point. Jay can help you build a complete plan around what they show. Just a real conversation about your situation.
+  These tools give you a starting point. I can help you build a complete plan around what they show. Just a real conversation about your situation.
   </p>
   <a
   href="/schedule-consultation"
