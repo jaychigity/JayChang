@@ -10,16 +10,16 @@ export const metadata: Metadata = {
  canonical: 'https://www.advisorjay.com/tools',
  },
  openGraph: {
- title: 'Free Financial Calculators & Planning Tools | Advisor Jay',
+ title: 'Financial Calculators & Planning Tools | Advisor Jay',
  description:
- 'Free financial calculators with instant results. No sign-up required. AT&T pension, PG&E benefits, 401(k) projections, Roth conversions, Social Security, RMDs, and more.',
+ 'Run pension lump-sum, Roth conversion, retirement, and tax scenarios. Instant results, no sign-up required. AT&T, PG&E, 401(k), Social Security, RMDs, and more.',
  url: 'https://www.advisorjay.com/tools',
  images: [
   {
   url: 'https://www.advisorjay.com/Photos/Tools-OG.jpg',
   width: 1200,
   height: 630,
-  alt: 'Free Tools by Advisor Jay',
+  alt: 'Stress Test by Advisor Jay',
   },
  ],
  },
