@@ -166,7 +166,19 @@ descriptions, tool descriptions, section text, button labels — follow the rule
   - Direct quotes from clients about Jay (testimonials) ✓
   - SEO page title fields like "...| Advisor Jay" ✓
 
-  **Before committing copy changes**, run `npm run check-voice` to scan for accidental third-person Jay in body copy.
+  **Automatic enforcement is wired up two ways**:
+  1. Claude Code `PostToolUse` hook (`.claude/settings.json` + `scripts/voice-hook.sh`): scans after every Edit/Write to a `.tsx` file in `src/` and flags violations back to the model.
+  2. Git `pre-commit` hook: runs `scripts/check-voice.sh` and blocks the commit if any violation is found.
+
+  The git hook lives at `.git/hooks/pre-commit` and is not committed. To reinstall on a fresh clone:
+  ```bash
+  cp .githooks/pre-commit .git/hooks/pre-commit 2>/dev/null \
+    || (echo '#!/bin/bash' > .git/hooks/pre-commit \
+        && echo 'bash scripts/check-voice.sh' >> .git/hooks/pre-commit \
+        && chmod +x .git/hooks/pre-commit)
+  ```
+
+  To run the check manually: `npm run check-voice`.
 
 - **"We"** for Farther's platform, team, or institutional resources:
   technology, AUM, account management, transfers, tax-lot optimization, specialist network

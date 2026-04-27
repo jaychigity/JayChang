@@ -1,0 +1,12 @@
+#!/bin/bash
+# Block commits that introduce third-person Jay in body copy.
+# Bypass with `git commit --no-verify` if you have a legitimate reason.
+
+if [ -f scripts/check-voice.sh ]; then
+  bash scripts/check-voice.sh
+  exit $?
+fi
+
+# Script missing: don't block, but warn
+echo "WARNING: scripts/check-voice.sh not found, skipping voice check"
+exit 0
