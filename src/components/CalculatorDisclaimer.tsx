@@ -13,7 +13,19 @@ interface CalculatorDisclaimerProps {
    */
   additionalContext?: string
   /**
-   * Visual variant — "default" for light backgrounds, "dark" for dark sections.
+   * Optional one-line summary that interpolates the user's actual results into the CTA framing
+   * (e.g., "Your pension is worth $7,400/month."). Shown above the CTA in bold serif so the user
+   * sees their own numbers reflected back before clicking. Keep under ~100 chars.
+   */
+  resultSummary?: string
+  /**
+   * Optional override for the CTA button label. Use to make the button text reference the
+   * user's specific decision (e.g., "Pressure-test this lump-sum decision with Jay →").
+   * Falls back to the standard "Talk through your {toolName} numbers with Jay →".
+   */
+  ctaLabel?: string
+  /**
+   * Visual variant. "default" for light backgrounds, "dark" for dark sections.
    */
   variant?: 'default' | 'dark'
   /**
@@ -37,6 +49,8 @@ interface CalculatorDisclaimerProps {
 export default function CalculatorDisclaimer({
   toolName,
   additionalContext,
+  resultSummary,
+  ctaLabel,
   variant = 'default',
   ctaHref = '/schedule-consultation',
 }: CalculatorDisclaimerProps) {
@@ -47,13 +61,22 @@ export default function CalculatorDisclaimer({
     : 'bg-[#FAFAF8] border border-[#e0e0e0] text-[#5b6a71]'
 
   const headingClasses = isDark ? 'text-[#F7F4EE]' : 'text-[#333333]'
+  const summaryClasses = isDark ? 'text-[#F7F4EE]' : 'text-[#1d7682]'
 
-  const ctaText = toolName
-    ? `Talk through your ${toolName} numbers with Jay →`
-    : 'Talk through your numbers with Jay →'
+  const ctaText =
+    ctaLabel ??
+    (toolName
+      ? `Talk through your ${toolName} numbers with Jay →`
+      : 'Talk through your numbers with Jay →')
 
   return (
     <div className={`mt-10 rounded-lg p-6 md:p-8 ${containerClasses}`}>
+      {resultSummary && (
+        <p className={`font-serif text-xl md:text-2xl mb-5 leading-snug ${summaryClasses}`}>
+          {resultSummary}
+        </p>
+      )}
+
       <div className="flex items-start gap-3 mb-4">
         <Info className="w-5 h-5 mt-1 flex-shrink-0 text-[#1d7682]" aria-hidden="true" />
         <h3 className={`font-serif text-lg font-semibold ${headingClasses}`}>

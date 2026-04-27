@@ -1,5 +1,6 @@
 
-import type { Metadata } from 'next';
+import type { Metadata } from 'next'
+import Link from 'next/link';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 import ArticleByline from '@/components/ArticleByline';
@@ -81,7 +82,7 @@ export default function RaytheonPensionPage() {
    <ul className="list-disc pl-6 space-y-4 text-[#5b6a71] mb-6">
    <li className="text-lg"><strong>Discount Rate:</strong> The IRS rate used to calculate your lump sum. In 2024-2026, rates have ranged from 4.5% to 5.5%. Higher rates = larger lump sums.</li>
    <li className="text-lg"><strong>Your Pension Benefit Size:</strong> A larger monthly annuity makes the annuity more attractive relative to lump sum.</li>
-   <li className="text-lg"><strong>Your Investment Returns:</strong> If you believe you can earn 6%+ annually on the lump sum, the lump sum looks more attractive. If lower, the annuity&apos;s guaranteed income is more valuable.</li>
+   <li className="text-lg"><strong>Your Investment Returns:</strong> If you believe you can earn 6%+ annually on the lump sum, the lump sum looks more attractive. If lower, the annuity&apos;s guaranteed income is more valuable. Stress-test the math in the <Link href="/tools/monte-carlo-simulator" className="text-[#1d7682] underline hover:text-[#2a9dab]">Monte Carlo simulator</Link> across multiple return scenarios, then compare against an <Link href="/tools/income-annuity" className="text-[#1d7682] underline hover:text-[#2a9dab]">income annuity estimate</Link>.</li>
    </ul>
    <p className="text-lg text-[#5b6a71] leading-relaxed">
    For a $4,000/month pension benefit with a 5% discount rate, break-even is typically in your early-to-mid 80s. If you live longer than that, the annuity wins. If you die before break-even, the lump sum wins (and your estate keeps the remainder).

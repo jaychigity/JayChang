@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
 import Button from '@/components/Button'
 import ArticleByline from '@/components/ArticleByline'
@@ -106,7 +107,7 @@ export default function NeverDonateCashPage() {
               <li>Your cost to give $100,000: $100,000 (cash) + $14,000 (tax paid separately) = $114,000 total economic cost.</li>
             </ul>
             <p>
-              If you donate the stock directly:
+              If you donate the stock directly (you can compare the long-term wealth impact of either choice in the <Link href="/tools/tvm-calculator" className="text-[#1d7682] underline hover:text-[#2a9dab]">TVM calculator</Link>):
             </p>
             <ul>
               <li>Your cost: $100,000 (the value of stock given up).</li>

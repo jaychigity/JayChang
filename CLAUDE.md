@@ -257,23 +257,70 @@ import CalculatorDisclaimer from '@/components/CalculatorDisclaimer'
 
 // Below the results section:
 <CalculatorDisclaimer
-  toolName="401(k) withholding"           // tool-specific name for the CTA
+  toolName="401(k) withholding"
   variant="default"                        // or "dark" if used on a dark section
-  additionalContext="Optional plan note"   // optional — for plan-specific caveats
+  resultSummary={results
+    ? `Your gap pencils to ${fmt(results.gap)}/year. The harder question is what that means against your full tax picture.`
+    : undefined}
+  ctaLabel="Pressure-test your withholding strategy with Jay →"
+  additionalContext="Optional plan-specific caveat (IRS segment rates, mortality assumptions, etc.)"
 />
 ```
 
 The component renders:
-- Standard heading: "This is an estimate — not a number to plan around alone."
+- **Result-aware summary** at the top (when `resultSummary` is provided): the user's actual numbers in serif teal, with a one-line narrative framing
+- Standard heading: "This is an estimate, not a number to plan around alone."
 - 3 paragraphs explaining: educational purpose, real-world variance, past performance disclaimer
 - Optional additional context paragraph (e.g., for IRS rate-sensitive calcs)
-- CTA: "Talk through your {toolName} numbers with Jay →" linking to /schedule-consultation
+- CTA: defaults to "Talk through your {toolName} numbers with Jay →"; override with `ctaLabel`
 
 **Critical rules:**
-- NEVER write a custom disclaimer — always use this component for consistency and compliance
+- NEVER write a custom disclaimer, always use this component for consistency and compliance
 - The CTA must always point users to **Jay specifically**, never to a generic "financial professional"
-- Calculators are educational tools to *help* users think — never positioned as decision-making sources
-- Component lives at `src/components/CalculatorDisclaimer.tsx` — update there for site-wide changes
+- Calculators are educational tools to *help* users think, never positioned as decision-making sources
+- **Always pass `resultSummary`** when the calculator has computed results. Interpolate the user's actual numbers into a one-line statement that reflects their situation (e.g., "Your portfolio runs out at age 86, four years short of your plan."). This converts ~3-5x better than generic CTAs.
+- **Always pass a tailored `ctaLabel`** that references the user's specific decision (e.g., "Plan a multi-year Roth strategy with Jay →"), not the generic default. Save the default for cases when the user hasn't entered enough inputs.
+- Guard `resultSummary` with a null check if your `results` variable can be null (e.g., `results ? \`...\` : undefined`). The component handles `undefined` gracefully.
+- Component lives at `src/components/CalculatorDisclaimer.tsx`, update there for site-wide changes
+
+### Article-to-calculator cross-linking (required on relevant articles)
+When you write a new article, identify which calculator(s) are topically relevant and add inline cross-links in the body where the reader would benefit from running their own numbers. Articles and calculators are complementary lead-gen assets, articles do discovery and topical authority, calculators do validation and conversion. Without cross-links between them, both underperform.
+
+**Pattern:**
+```tsx
+import Link from 'next/link'
+
+// Inline in body copy, after the relevant passage:
+<p>...The PSLF path saves $58,000. You can <Link
+  href="/tools/cash-flow-planner"
+  className="text-[#1d7682] underline hover:text-[#2a9dab]"
+>model the cash flow under both paths</Link> against your own income, expenses, and savings goals.</p>
+```
+
+**Rules:**
+- **At least one calculator cross-link** in every new article whose topic maps to an existing calculator. Multiple links are fine when multiple tools apply (e.g., a physician roadmap article can link to Roth conversion + retirement readiness + cash flow).
+- **Natural anchor text**, conversational, not banner-style. "model your withholding gap", "stress-test the math in the Monte Carlo simulator", "estimate your five-year tax savings".
+- **Place the link contextually**, after the passage where the reader would benefit from the tool. Not at the top, not at the end as a footer CTA. Mid-article, where their intent is highest.
+- **Reverse cross-links required for new calculators**: when you build a new calculator, audit existing articles whose topic matches and add cross-links from those articles to the new tool.
+
+### Future-proofing checklist
+Before merging any new calculator or article, run the following checks:
+
+**New calculator checklist:**
+- [ ] Uses `<CalculatorDisclaimer />` with `toolName`, `variant`, `additionalContext`
+- [ ] Passes a `resultSummary` that interpolates the user's actual numbers
+- [ ] Passes a tailored `ctaLabel` (not the generic default)
+- [ ] Pulls all tax constants from `src/lib/tax-constants-[year].ts` (no hardcoded amounts)
+- [ ] Has at least one cross-link FROM a topically matching article TO this calculator
+- [ ] Card added to `src/app/tools/page.tsx` hub
+
+**New article checklist:**
+- [ ] At least one inline cross-link to a topically relevant calculator (use `<Link href="/tools/...">` with the inline-link className)
+- [ ] Uses first-person voice for Jay (run `npm run check-voice` before commit)
+- [ ] No em dashes (use commas, colons, periods, hyphens)
+- [ ] `dateModified` set to publish/update date for AI freshness signal
+- [ ] JSON-LD `Article` schema in place
+- [ ] `<ArticleByline />` component at the top
 
 ### Tax constants & annual currency (critical)
 All tax-related numbers are centralized in `src/lib/tax-constants-2026.ts`. This is the

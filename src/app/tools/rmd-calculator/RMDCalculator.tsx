@@ -844,6 +844,8 @@ export default function RMDCalculator() {
       <CalculatorDisclaimer
         toolName="RMD"
         variant="default"
+        resultSummary={firstRMDRow ? `Your first RMD is roughly ${fmt(firstRMDRow.rmd)} at age ${firstRMDRow.age}. Layered with Social Security and other income, this is where tax brackets, Roth conversions, and QCDs start to matter.` : undefined}
+        ctaLabel="Map a tax-aware RMD strategy with Jay →"
         additionalContext={`RMD calculations use the ${TAX_YEAR} IRS Uniform Lifetime Table (Table III) or Joint & Last Survivor Table (Table II). Actual RMDs depend on your December 31 prior-year account balance. Tax estimates use ${TAX_YEAR} federal brackets and approximate state rates. IRMAA thresholds are estimates and may differ from actual Medicare determinations.`}
       />
     </div>

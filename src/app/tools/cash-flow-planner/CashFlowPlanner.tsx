@@ -730,7 +730,13 @@ export default function CashFlowPlanner() {
               </div>
             </div>
 
-            <CalculatorDisclaimer toolName="cash flow" />
+            <CalculatorDisclaimer
+              toolName="cash flow"
+              resultSummary={depletionRow
+                ? `Your portfolio runs out at age ${depletionRow.age}, ${inputs.lifeExpectancy - depletionRow.age} years before the end of your plan. Closing that gap is exactly where planning earns its keep.`
+                : `Your portfolio sustains through age ${inputs.lifeExpectancy}, peaking at ${fmtFull(peakPortfolio)}. The next question is whether you can spend more, give more, or retire earlier.`}
+              ctaLabel="Walk through your cash flow plan with Jay →"
+            />
           </div>
         </div>
       </div>

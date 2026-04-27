@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import type { Metadata } from 'next'
+import Link from 'next/link';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 import ArticleByline from '@/components/ArticleByline';
@@ -133,7 +134,7 @@ export default function DoubleConcentrationProblem() {
             </p>
 
             <p className="text-gray-800 mb-6">
-              The concentrated executive accumulates roughly $17 million over 20 years - $4 million less than the diversified peer. And this does not account for the psychological and career stress during the two downturns.
+              The concentrated executive accumulates roughly $17 million over 20 years - $4 million less than the diversified peer. And this does not account for the psychological and career stress during the two downturns. To see where your own concentration leaves you, run your numbers in the <Link href="/tools/retirement-savings-calculator" className="text-[#1d7682] underline hover:text-[#2a9dab]">retirement readiness calculator</Link> against a realistic diversified scenario.
             </p>
 
             <p className="text-gray-800 mb-6">

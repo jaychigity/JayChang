@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import type { Metadata } from 'next'
+import Link from 'next/link';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 import ArticleByline from '@/components/ArticleByline';
@@ -112,7 +113,7 @@ export default function PhysicianFinancialRoadmap() {
             </p>
 
             <p className="text-gray-800 mb-6">
-              By the end of year 2, you should be maxing the 401(k) ($23,500), doing the backdoor Roth ($7,000), and maximizing the HSA ($4,300). Total tax-deferred contributions: $34,800+. At a 37% combined tax rate (federal + state), this saves roughly $12,900 in taxes annually.
+              By the end of year 2, you should be maxing the 401(k) ($23,500), doing the backdoor Roth ($7,000), and maximizing the HSA ($4,300). Total tax-deferred contributions: $34,800+. At a 37% combined tax rate (federal + state), this saves roughly $12,900 in taxes annually. To put real numbers behind the plan, run a <Link href="/tools/roth-conversion-calculator" className="text-[#1d7682] underline hover:text-[#2a9dab]">Roth conversion projection</Link>, check your <Link href="/tools/retirement-savings-calculator" className="text-[#1d7682] underline hover:text-[#2a9dab]">retirement readiness score</Link>, and lay it all out year-by-year in the <Link href="/tools/cash-flow-planner" className="text-[#1d7682] underline hover:text-[#2a9dab]">cash flow planner</Link>.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Year 3: Taxable Investing</h2>

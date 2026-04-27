@@ -1151,7 +1151,12 @@ export default function EstateComplexityAssessment() {
   </div>
 
   {/* Disclaimer */}
-  <CalculatorDisclaimer toolName="estate complexity" variant="default" />
+  <CalculatorDisclaimer
+   toolName="estate complexity"
+   variant="default"
+   resultSummary={results ? `Your estate scored ${results.finalScore}/100, ${results.tierLabel}. The higher the number, the more your plan rewards a coordinated team, attorney, CPA, and advisor working from the same playbook.` : undefined}
+   ctaLabel="Walk through your estate priorities with Jay →"
+  />
  </div>
  )
  }

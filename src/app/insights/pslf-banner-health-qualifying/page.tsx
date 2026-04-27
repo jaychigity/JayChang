@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import type { Metadata } from 'next'
+import Link from 'next/link';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 import ArticleByline from '@/components/ArticleByline';
@@ -144,7 +145,7 @@ export default function PSLFBannerHealth() {
             </ul>
 
             <p className="text-gray-800 mb-6">
-              Under PSLF, you pay $372,000 and the remaining balance is forgiven. Under aggressive payoff, you pay $430,000 and owe nothing. The PSLF path saves $58,000. This is not including opportunity cost - the $4,167 monthly under aggressive payoff could have been invested at 7% returns. Over 10 years, that $4,167 monthly invested would grow to roughly $630,000. The true opportunity cost of aggressive payoff is enormous.
+              Under PSLF, you pay $372,000 and the remaining balance is forgiven. Under aggressive payoff, you pay $430,000 and owe nothing. The PSLF path saves $58,000. You can <Link href="/tools/cash-flow-planner" className="text-[#1d7682] underline hover:text-[#2a9dab]">model the cash flow under both paths</Link> against your own income, expenses, and savings goals. This is not including opportunity cost - the $4,167 monthly under aggressive payoff could have been invested at 7% returns. Over 10 years, that $4,167 monthly invested would grow to roughly $630,000. The true opportunity cost of aggressive payoff is enormous.
             </p>
 
             <p className="text-gray-800 mb-6">

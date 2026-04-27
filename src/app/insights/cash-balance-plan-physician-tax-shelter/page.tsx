@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import type { Metadata } from 'next'
+import Link from 'next/link';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 import ArticleByline from '@/components/ArticleByline';
@@ -146,7 +147,7 @@ export default function CashBalancePlan() {
 
             <ul className="list-disc pl-8 text-gray-800 mb-6">
               <li>Total contributions: $4.78 million</li>
-              <li>Tax savings over 15 years: $2.15 million</li>
+              <li>Tax savings over 15 years: $2.15 million (you can <Link href="/tools/retirement-savings-calculator" className="text-[#1d7682] underline hover:text-[#2a9dab]">model the readiness impact</Link> or test the compounding in the <Link href="/tools/tvm-calculator" className="text-[#1d7682] underline hover:text-[#2a9dab]">time-value-of-money calculator</Link> with your own contribution number)</li>
               <li>Retirement account balance at retirement: $7.8 million</li>
               <li>Total economic benefit (tax savings + growth): $2.15M + $7.8M = $9.95 million</li>
             </ul>

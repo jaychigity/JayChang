@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import type { Metadata } from 'next'
+import Link from 'next/link';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 import ArticleByline from '@/components/ArticleByline';
@@ -192,7 +193,7 @@ export default function ConcentratedStockRiskPage() {
               A diversification plan should address: one, the target level of concentration (10-15% of net worth for NVIDIA). Two, the timeline (how many years to reach the target). Three, the annual selling schedule (how much to sell each year). Four, the tax efficiency strategy (specific lot identification, coordination with tax-loss harvesting, etc.). Five, the account priority (which accounts to sell from first, given tax implications and account type).
             </p>
             <p className="text-[#5b6a71] leading-relaxed mb-6">
-              Example plan: NVIDIA position is currently $800,000 (40% of $2,000,000 net worth). Target is 15% or $300,000. Gap to close: $500,000. Timeline: 5 years. Annual sell target: $100,000. Schedule: sell $100,000 of NVIDIA in March and September each year (twice annually to smooth the tax impact).
+              Example plan: NVIDIA position is currently $800,000 (40% of $2,000,000 net worth). Target is 15% or $300,000. Gap to close: $500,000. Timeline: 5 years. Annual sell target: $100,000. Schedule: sell $100,000 of NVIDIA in March and September each year (twice annually to smooth the tax impact). Stress-test how a diversified path performs across hundreds of market scenarios in the <Link href="/tools/monte-carlo-simulator" className="text-[#1d7682] underline hover:text-[#2a9dab]">Monte Carlo simulator</Link>.
             </p>
             <p className="text-[#5b6a71] leading-relaxed mb-6">
               Tax strategy: use specific lot identification to sell highest-cost-basis shares first. Coordinate with tax-loss harvesting in other accounts to offset gains. If an opportunity arises to harvest losses on NVIDIA itself (temporary decline), execute immediately.

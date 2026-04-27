@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import type { Metadata } from 'next'
+import Link from 'next/link';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 import ArticleByline from '@/components/ArticleByline';
@@ -140,7 +141,7 @@ export default function ArizonaDomicileArticle() {
               <strong>Step 7: Update Your Estate Planning Documents.</strong> Have an Arizona attorney review your will, trust, and other estate documents. Update them to reflect Arizona domicile and Arizona law. The FTB may examine your estate documents as evidence of your stated domicile intent.
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              <strong>Step 8: Document Everything.</strong> Keep contemporaneous records of your relocation. Save emails to your employer, utility connection documents, Arizona lease or deed, driver&apos;s license, voter registration, and any statements you made about your relocation intent. Organize these into a file titled "Domicile Documentation" and keep it for at least 7 years.
+              <strong>Step 8: Document Everything.</strong> Keep contemporaneous records of your relocation. Save emails to your employer, utility connection documents, Arizona lease or deed, driver&apos;s license, voter registration, and any statements you made about your relocation intent. Organize these into a file titled "Domicile Documentation" and keep it for at least 7 years. The work pays for itself: you can <Link href="/tools/ca-nv-tax-savings" className="text-[#1d7682] underline hover:text-[#2a9dab]">estimate your five-year tax savings versus California</Link> on the move.
             </p>
           </AnimateOnScroll>
 

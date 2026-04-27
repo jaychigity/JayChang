@@ -280,7 +280,7 @@ export default function RSUWithholdingGap22PercentPage() {
    </p>
 
    <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
-   This engineer will owe approximately $12,000 when filing their 2026 tax return in April 2027 - unless they proactively fix the withholding before year end.
+   This engineer will owe approximately $12,000 when filing their 2026 tax return in April 2027 - unless they proactively fix the withholding before year end. You can <Link href="/tools/401k-withholding-calculator" className="text-[#1d7682] underline hover:text-[#2a9dab]">model your own withholding gap</Link> against your full salary picture in a few seconds.
    </p>
 
    {/* Section 5 */}

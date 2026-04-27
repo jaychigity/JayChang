@@ -1,4 +1,5 @@
-import type { Metadata } from 'next';
+import type { Metadata } from 'next'
+import Link from 'next/link';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 import ArticleByline from '@/components/ArticleByline';
@@ -135,7 +136,7 @@ export default function NvidiaESPPPage() {
               For an employee earning $250,000 in base income with multiple RSU vests and ESPP purchases, the tax exposure can be substantial. An $80,000 RSU vest creates $80,000 in ordinary income. A disqualifying ESPP sale creating $43,600 in ordinary income brings your total additional ordinary income to $123,600. Your marginal rate is 37% federal, plus state, or roughly 45-46% total. This is expensive.
             </p>
             <p className="text-[#5b6a71] leading-relaxed mb-6">
-              Strategy: stagger RSU and ESPP sales across different quarters or years. If you have an RSU vest in Q1, delay your ESPP sale until Q2 or Q3. Or, if your ESPP purchase is scheduled for December, delay your RSU sales until the following January. This spreads your ordinary income across multiple tax years or quarters, potentially lowering your marginal rate.
+              Strategy: stagger RSU and ESPP sales across different quarters or years. If you have an RSU vest in Q1, delay your ESPP sale until Q2 or Q3. Or, if your ESPP purchase is scheduled for December, delay your RSU sales until the following January. This spreads your ordinary income across multiple tax years or quarters, potentially lowering your marginal rate. To put numbers on it, model the tax impact of your specific vesting schedule in the <Link href="/tools/rsu-equity-compensation-calculator" className="text-[#1d7682] underline hover:text-[#2a9dab]">RSU equity compensation calculator</Link>, then map the year-by-year cash flow in the <Link href="/tools/cash-flow-planner" className="text-[#1d7682] underline hover:text-[#2a9dab]">cash flow planner</Link>.
             </p>
             <p className="text-[#5b6a71] leading-relaxed mb-6">
               More aggressively, coordinate your sales with a low-income year. If you are taking a sabbatical, transitioning jobs, or have a bonus shortfall in a particular year, that may be the ideal year to execute both RSU sales and ESPP sales. Your marginal rate will be lower. The tax hit will be smaller. This requires planning ahead, but it is powerful.
