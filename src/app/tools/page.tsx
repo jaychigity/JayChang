@@ -12,14 +12,14 @@ export const metadata: Metadata = {
  openGraph: {
  title: 'Financial Calculators & Planning Tools | Advisor Jay',
  description:
- 'Run pension lump-sum, Roth conversion, retirement, and tax scenarios. Instant results, no sign-up required. AT&T, PG&E, 401(k), Social Security, RMDs, and more.',
+ 'I built these so you can run your own analysis. Try one.',
  url: 'https://www.advisorjay.com/tools',
  images: [
   {
   url: 'https://www.advisorjay.com/Photos/Tools-OG.jpg',
   width: 1200,
   height: 630,
-  alt: 'Stress Test by Advisor Jay',
+  alt: 'Run the Math by Advisor Jay',
   },
  ],
  },
