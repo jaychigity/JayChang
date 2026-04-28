@@ -5,7 +5,7 @@ import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'How Quarterly RSU Vesting Creates a Year-Round Tax Problem Most Engineers Ignore',
-  description: 'Quarterly RSU vesting leads to 8-12 taxable events per year. Most engineers underpay quarterly taxes by $30K-$50K. Here&apos;s how to fix it.',
+  description: 'Quarterly RSU vesting leads to 8-12 taxable events per year. Most engineers underpay quarterly taxes by $30K-$50K. Here's how to fix it.',
   alternates: {
     canonical: '/insights/quarterly-vesting-tax-problem'
   }
@@ -16,7 +16,7 @@ export default function QuarterlyVestingTaxPage() {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: 'How Quarterly RSU Vesting Creates a Year-Round Tax Problem Most Engineers Ignore',
-    description: 'Quarterly RSU vesting leads to 8-12 taxable events per year. Most engineers underpay quarterly taxes by $30K-$50K. Here&apos;s how to fix it.',
+    description: 'Quarterly RSU vesting leads to 8-12 taxable events per year. Most engineers underpay quarterly taxes by $30K-$50K. Here's how to fix it.',
     author: {
       '@type': 'Organization',
       name: 'Farther'

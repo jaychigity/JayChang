@@ -36,7 +36,7 @@ export default function RaytheonRTXFinancialAdvisor() {
    },
    {
    '@type': 'Question',
-   name: 'What is Raytheon&apos;s Lifetime Income Strategy and should I elect it?',
+   name: 'What is Raytheon's Lifetime Income Strategy and should I elect it?',
    acceptedAnswer: {
    '@type': 'Answer',
    text: 'The LIS option under RAYSIP gradually shifts investments toward guaranteed income starting at age 48, with full conversion to an annuity by age 62. While it locks in guaranteed income, it may preclude Net Unrealized Appreciation treatment and limit flexibility. Jay evaluates the LIS alongside your total retirement income sources, risk tolerance, and alternative strategies.',
@@ -236,7 +236,7 @@ export default function RaytheonRTXFinancialAdvisor() {
    RAYSIP&apos;s LIS Option Locks In Guaranteed Income. But It May Lock Out Better Strategies.
   </h2>
   <p className="text-lg text-[#5b6a71] font-sans mb-8 leading-relaxed">
-   Raytheon&apos;s Lifetime Income Strategy (LIS) is a unique feature of the RAYSIP 401(k) plan. Beginning at age 48, the LIS gradually shifts your account balance from growth investments toward guaranteed income - eventually purchasing an annuity by age 62 that provides lifetime income regardless of market performance.
+   Raytheon's Lifetime Income Strategy (LIS) is a unique feature of the RAYSIP 401(k) plan. Beginning at age 48, the LIS gradually shifts your account balance from growth investments toward guaranteed income - eventually purchasing an annuity by age 62 that provides lifetime income regardless of market performance.
   </p>
   <p className="text-lg text-[#5b6a71] font-sans mb-8 leading-relaxed">
    On the surface, this sounds attractive: guaranteed income, simplified decision-making, protection from market risk. But it also removes flexibility and may preclude strategies like Net Unrealized Appreciation (NUA) on company stock, Roth conversions, or coordinating with other income sources.
@@ -343,7 +343,7 @@ export default function RaytheonRTXFinancialAdvisor() {
    {/* FAQ 2 */}
    <div>
    <h3 className="text-2xl font-serif font-bold text-[#333333] mb-4">
-   What is Raytheon&apos;s Lifetime Income Strategy and should I elect it?
+   What is Raytheon's Lifetime Income Strategy and should I elect it?
    </h3>
    <p className="text-lg text-[#5b6a71] font-sans leading-relaxed">
    The LIS option under RAYSIP gradually shifts investments toward guaranteed income starting at age 48, with full conversion to an annuity by age 62. While it locks in guaranteed income, it may preclude Net Unrealized Appreciation treatment and limit flexibility. Jay evaluates the LIS alongside your total retirement income sources, risk tolerance, and alternative strategies.

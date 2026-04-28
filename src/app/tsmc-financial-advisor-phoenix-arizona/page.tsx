@@ -5,7 +5,7 @@ import Button from '@/components/Button'
 
 export const metadata: Metadata = {
  title: 'TSMC Employee Financial Advisor in North Phoenix | RSU & Relocation Planning | Jay Chang',
- description: 'Wealth planning for TSMC professionals in North Phoenix. Equity planning, Arizona relocation tax strategy, RSU management, and fiduciary advice for semiconductor professionals at TSMC&apos;s Fab 21.',
+ description: 'Wealth planning for TSMC professionals in North Phoenix. Equity planning, Arizona relocation tax strategy, RSU management, and fiduciary advice for semiconductor professionals at TSMC's Fab 21.',
  alternates: {
  canonical: 'https://www.advisorjay.com/tsmc-financial-advisor-phoenix-arizona',
  },
@@ -94,7 +94,7 @@ export default function TSMCFinancialAdvisor() {
    TSMC&apos;s $65 Billion Investment in Phoenix Created Extraordinary Career Opportunity - and Financial Complexity
   </h2>
   <p className="text-lg font-sans text-[#5b6a71] mb-10 leading-relaxed">
-   TSMC&apos;s Fab 21 campus in North Phoenix represents one of the largest foreign direct investments in American history. For the professionals who&apos;ve built careers here - whether relocating from Taiwan, California, or other U.S. states - the financial picture is uniquely complex:
+   TSMC's Fab 21 campus in North Phoenix represents one of the largest foreign direct investments in American history. For the professionals who&apos;ve built careers here - whether relocating from Taiwan, California, or other U.S. states - the financial picture is uniquely complex:
   </p>
   </AnimateOnScroll>
 

@@ -406,7 +406,7 @@ export default function InvestmentPhilosophyPage() {
           desc: 'I like infrastructure for what it is: real assets with returns that tend to keep pace with inflation. It\'s a solid, steady piece of the puzzle.',
          },
          {
-          label: 'Private Equity &amp; Venture Capital',
+          label: 'Private Equity & Venture Capital',
           desc: 'I favor managers who buy through the secondary market, which often means better entry prices and a shorter wait to get your money back.',
          },
         ].map((item) => (

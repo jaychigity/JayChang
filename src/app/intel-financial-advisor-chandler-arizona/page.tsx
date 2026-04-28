@@ -5,7 +5,7 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
  title: 'Intel Employee Financial Planning in Chandler | RSU, SERPLUS & 401(k) Strategy | Jay Chang',
- description: 'Specialized financial planning for Intel professionals in Chandler. SERPLUS guidance, mega backdoor Roth, RSU diversification, and tax strategy from a fiduciary advisor who knows Intel&apos;s benefits inside and out.',
+ description: 'Specialized financial planning for Intel professionals in Chandler. SERPLUS guidance, mega backdoor Roth, RSU diversification, and tax strategy from a fiduciary advisor who knows Intel's benefits inside and out.',
  alternates: {
  canonical: 'https://www.advisorjay.com/intel-financial-advisor-chandler-arizona',
  },
@@ -28,7 +28,7 @@ export default function IntelFinancialAdvisor() {
   mainEntity: [
    {
    '@type': 'Question',
-   name: 'What happens to my SERPLUS if I&apos;m laid off from Intel?',
+   name: 'What happens to my SERPLUS if I'm laid off from Intel?',
    acceptedAnswer: {
    '@type': 'Answer',
    text: 'In most cases, an involuntary termination counts as a separation from service under IRC 409A, which triggers distributions on the schedule you originally elected. Our team can walk you through your specific distribution timing and help you plan for the tax impact before your separation date.',
@@ -300,7 +300,7 @@ export default function IntelFinancialAdvisor() {
    {/* FAQ 1 */}
    <div>
    <h3 className="text-2xl font-serif font-bold text-[#333333] mb-4">
-   What happens to my SERPLUS if I&apos;m laid off from Intel?
+   What happens to my SERPLUS if I'm laid off from Intel?
    </h3>
    <p className="text-lg text-[#5b6a71] font-sans leading-relaxed">
    In most cases, an involuntary termination counts as a separation from service under IRC 409A, which triggers distributions on the schedule you originally elected. We can walk you through your specific timing and help you plan the tax impact before your separation date - ideally before it happens, so you&apos;re not scrambling.

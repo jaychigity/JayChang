@@ -102,7 +102,7 @@ export default function ArizonaHighEarnerTaxReduction2026Page() {
   mainEntity: [
    {
    '@type': 'Question',
-   name: 'What is Arizona&apos;s income tax rate for 2026?',
+   name: 'What is Arizona's income tax rate for 2026?',
    acceptedAnswer: {
    '@type': 'Answer',
    text: 'Arizona has a flat income tax rate of 2.5 percent, one of the lowest in the country. This favorable rate is a significant advantage for high-income earners compared to neighboring California (which tops out at 13.3 percent) and most other states.',

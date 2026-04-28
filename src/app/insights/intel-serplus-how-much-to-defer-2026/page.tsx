@@ -5,7 +5,7 @@ import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'Intel SERPLUS in 2026: How Much Is Too Much to Defer Into an Unsecured Plan?',
-  description: 'Intel SERPLUS is growing, but holds $3.3B in unsecured obligations. Here&apos;s how to evaluate SERPLUS deferrals vs protected 401(k) savings.',
+  description: 'Intel SERPLUS is growing, but holds $3.3B in unsecured obligations. Here's how to evaluate SERPLUS deferrals vs protected 401(k) savings.',
   alternates: {
     canonical: '/insights/intel-serplus-how-much-to-defer-2026'
   }
@@ -16,7 +16,7 @@ export default function IntelSERPLUSPage() {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: 'Intel SERPLUS in 2026: How Much Is Too Much to Defer Into an Unsecured Plan?',
-    description: 'Intel SERPLUS is growing, but holds $3.3B in unsecured obligations. Here&apos;s how to evaluate SERPLUS deferrals vs protected 401(k) savings.',
+    description: 'Intel SERPLUS is growing, but holds $3.3B in unsecured obligations. Here's how to evaluate SERPLUS deferrals vs protected 401(k) savings.',
     author: {
       '@type': 'Organization',
       name: 'Farther'
