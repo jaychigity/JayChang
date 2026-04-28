@@ -9,7 +9,7 @@ import { Calculator, Phone, FileText, Shield, Clock, TrendingUp } from 'lucide-r
 
 export const metadata: Metadata = {
   title: 'Financial Advisor for AT&T Employees | Pension, 401(k) & Deferred Comp | Advisor Jay',
-  description: 'Jay Chang specializes in financial planning for AT&T employees, union and management. Pension lump sum vs. annuity, BCB1/BCB2 cash balance plans, Surplus Savings Plan, DISC deferred comp, and retirement timing.',
+  description: 'I specialize in financial planning for AT&T employees, union and management. Pension lump sum vs. annuity, BCB1/BCB2 cash balance plans, Surplus Savings Plan, DISC deferred comp, and retirement timing.',
   alternates: {
     canonical: 'https://www.advisorjay.com/att-employee-financial-advisor',
   },

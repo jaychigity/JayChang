@@ -8,7 +8,7 @@ import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
  title: 'Telecommunications & Utilities Wealth Management | AT&T, Verizon, T-Mobile, SRP, PG&E | Advisor Jay, Farther',
- description: 'Fiduciary financial planning for telecom and utility professionals at AT&T, Verizon, T-Mobile, SRP, and PG&E. Jay understands your pension, deferred comp, employer stock concentration, union benefits, and retirement timing decisions.',
+ description: 'Fiduciary financial planning for telecom and utility professionals at AT&T, Verizon, T-Mobile, SRP, and PG&E. I understand your pension, deferred comp, employer stock concentration, union benefits, and retirement timing decisions.',
  alternates: {
  canonical: 'https://www.advisorjay.com/telecommunications-utilities-wealth-management',
  },

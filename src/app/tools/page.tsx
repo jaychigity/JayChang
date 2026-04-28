@@ -46,7 +46,7 @@ const tools = [
  href: '/tools/401k-withholding-calculator',
  title: '401(k) Withholding Calculator',
  description:
- 'One of the most common mistakes we see: employees leaving thousands in employer match uncaptured, or hitting tax season with a surprise bill because their RSU withholding was set wrong. This calculator shows you exactly what percentage to set, what it does to your paycheck, and how to catch up if you\'re mid-year.\n\nEspecially useful for: AT&T, PG&E, Raytheon, Honeywell, and Fortune 500 employees with complex compensation packages.',
+ 'One of the most common mistakes I see: employees leaving thousands in employer match uncaptured, or hitting tax season with a surprise bill because their RSU withholding was set wrong. This calculator shows you exactly what percentage to set, what it does to your paycheck, and how to catch up if you\'re mid-year.\n\nEspecially useful for: AT&T, PG&E, Raytheon, Honeywell, and Fortune 500 employees with complex compensation packages.',
  time: 'Instant estimate',
  category: 'Calculator',
  },
@@ -158,7 +158,7 @@ const tools = [
  href: '/tools/monte-carlo-simulator',
  title: 'Monte Carlo Portfolio Simulator',
  description:
- 'Markets don\'t move in straight lines. Run 500 simulations to see the full range of outcomes for your portfolio, from great markets to tough ones. Includes retirement drawdown mode to see what percentage of scenarios keep you funded through your full horizon.\n\nEspecially useful for: anyone stress-testing a retirement plan, evaluating withdrawal rates, or modeling sequence-of-returns risk.',
+ 'Markets don\'t move in straight lines. Run 1,000 simulations to see the full range of outcomes for your portfolio, from great markets to tough ones. Includes retirement drawdown mode to see what percentage of scenarios keep you funded through your full horizon.\n\nEspecially useful for: anyone stress-testing a retirement plan, evaluating withdrawal rates, or modeling sequence-of-returns risk.',
  time: 'Instant results',
  category: 'Simulator',
  },

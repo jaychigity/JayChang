@@ -186,7 +186,7 @@ export default function HoneywellAdvisorPage() {
    Honeywell Rewards Long Careers. Make Sure Your Financial Plan Does Too.
    </h2>
    <p className="font-sans text-lg text-[#5b6a71] leading-relaxed mb-8 max-w-2xl mx-auto">
-   Jay Chang is a fiduciary advisor who specializes in Honeywell employee financial planning. He understands your benefits, your risks, and your opportunities for long-term wealth.
+   I&apos;m a fiduciary advisor who specializes in Honeywell employee financial planning. I understand your benefits, your risks, and your opportunities for long-term wealth.
    </p>
    <Button
    href="/schedule-consultation"

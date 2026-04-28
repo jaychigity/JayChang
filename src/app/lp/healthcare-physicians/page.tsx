@@ -198,7 +198,7 @@ export default function HealthcarePhysiciansLP() {
    VP, Wealth Advisor
   </p>
   <p className="font-sans text-[16px] text-[#5b6a71] leading-relaxed mt-6">
-   Jay and our team work with physicians who&apos;ve spent their careers taking care of others and now want someone genuinely looking out for their financial health. He understands the income patterns, liability concerns, and tax complexity that come with medicine - and he&apos;ll give it to you straight, in plain English.
+   I work with physicians who&apos;ve spent their careers taking care of others and now want someone genuinely looking out for their financial health. I understand the income patterns, liability concerns, and tax complexity that come with medicine, and I&apos;ll give it to you straight, in plain English.
   </p>
   </AnimateOnScroll>
   </div>

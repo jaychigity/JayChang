@@ -53,7 +53,7 @@ export default function MicrochipTechnologyAdvisor() {
    Microchip Engineers: Your Equity Vests Every Quarter. Does Your Financial Plan Update Just as Frequently?
   </h1>
   <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-   Microchip Technology&apos;s broad-based equity program means quarterly vesting for engineers at all levels - not just executives. Jay Chang builds proactive RSU and tax strategies for Microchip professionals in Chandler who need their financial plan to keep pace with their equity.
+   Microchip Technology&apos;s broad-based equity program means quarterly vesting for engineers at all levels - not just executives. I build proactive RSU and tax strategies for Microchip professionals in Chandler who need their financial plan to keep pace with their equity.
   </p>
   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
    <Button

@@ -187,7 +187,7 @@ export default function TechProfessionalsLP() {
    VP, Wealth Advisor
   </p>
   <p className="font-sans text-[16px] text-[#5b6a71] leading-relaxed mt-6">
-   Jay and our team work with tech professionals who know their comp is valuable but want a real partner to help them make the most of it. He genuinely enjoys digging into RSU tax timing, ESPP strategies, and building investment plans that start with your comp package. Think of him as the financially nerdy neighbor you always wished you had.
+   I work with tech professionals who know their comp is valuable but want a real partner to help them make the most of it. I dig into RSU tax timing, ESPP strategies, and building investment plans that start with your comp package. Think of me as the financially nerdy neighbor you always wished you had.
   </p>
   </AnimateOnScroll>
   </div>

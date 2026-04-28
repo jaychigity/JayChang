@@ -132,7 +132,7 @@ export default function AmkorTechnologyPage() {
    You&apos;ve Built a Global Career. Build a Global-Class Financial Plan.
    </h2>
    <p className="text-lg text-[#5b6a71] max-w-2xl mx-auto">
-   Jay Chang specializes in wealth planning for Amkor Technology professionals. Schedule a consultation to discuss your unique financial situation.
+   I specialize in wealth planning for Amkor Technology professionals. Schedule a consultation to discuss your unique financial situation.
    </p>
    <div className="flex justify-center pt-4">
    <Button href="/schedule-consultation" variant="primary">

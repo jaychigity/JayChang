@@ -301,7 +301,7 @@ export default function HowToChooseCFPLasVegasPage() {
    </h2>
 
    <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
-   At Farther, Jay Chang's Arizona practice meets every standard described above. Jay brings over a decade of wealth management experience from Charles Schwab and Vanguard, and his team includes Certified Financial Planner&reg; (CFP&reg;) professionals who deliver comprehensive financial planning alongside Jay's specialized focus in fiduciary investment management, retirement income planning, and wealth building. Farther Finance, Inc. is registered with the SEC as a Registered Investment Adviser (RIA), providing regulatory oversight and transparency. For complete details on our fee structure, please refer to our{' '}
+   At Farther, my Arizona practice meets every standard described above. I bring over a decade of wealth management experience from Charles Schwab and Vanguard, and my team includes Certified Financial Planner&reg; (CFP&reg;) professionals who deliver comprehensive financial planning alongside my specialized focus in fiduciary investment management, retirement income planning, and wealth building. Farther Finance, Inc. is registered with the SEC as a Registered Investment Adviser (RIA), providing regulatory oversight and transparency. For complete details on our fee structure, please refer to our{' '}
    <a href="/documents/FFA-ADV-Packet-2.6.26.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1d7682] underline underline-offset-2 hover:text-[#D4B65A] transition-colors">
    Form ADV Part 2A
    </a>.
@@ -328,7 +328,7 @@ export default function HowToChooseCFPLasVegasPage() {
    </p>
 
    <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
-   If you are evaluating CFP&reg; professionals in Scottsdale, we welcome the opportunity to demonstrate how our approach compares. Just a straightforward conversation about your goals and whether we are the right fit.
+   If you are evaluating CFP&reg; professionals in Scottsdale, I welcome the opportunity to demonstrate my approach. Just a real conversation about your goals and whether we&apos;re a fit.
    </p>
 
    <div className="mt-8">

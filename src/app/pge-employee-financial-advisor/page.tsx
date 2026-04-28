@@ -10,7 +10,7 @@ import { Calculator, FileText, Shield, Clock, TrendingUp, Heart } from 'lucide-r
 export const metadata: Metadata = {
   title: 'Financial Advisor for PG&E Employees | Pension, RMSA & 401(k) | Advisor Jay',
   description:
-    'Jay Chang specializes in financial planning for PG&E employees. Final Pay vs. Cash Balance pension decisions, RMSA planning, 401(k) spillover election, early retirement eligibility, and retirement income coordination for IBEW, ESC, and management professionals.',
+    'I specialize in financial planning for PG&E employees. Final Pay vs. Cash Balance pension decisions, RMSA planning, 401(k) spillover election, early retirement eligibility, and retirement income coordination for IBEW, ESC, and management professionals.',
   alternates: {
     canonical: 'https://www.advisorjay.com/pge-employee-financial-advisor',
   },
@@ -445,7 +445,7 @@ export default function PGEEmployeeFinancialAdvisor() {
                   making the change before your pre-tax contributions hit the IRS annual limit for the year. If you
                   already hit the limit this year without the election, you&apos;ve forfeited match for the rest of this
                   year, but you can set it up now for next year. This is one of the first things we check for every PG&amp;E
-                  employee we work with.
+                  employee I work with.
                 </p>
               </div>
             </AnimateOnScroll>

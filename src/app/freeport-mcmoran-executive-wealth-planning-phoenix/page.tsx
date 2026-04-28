@@ -56,7 +56,7 @@ export default function FCXExecutiveWealthPage() {
    Freeport-McMoRan Professionals: Your Compensation Moves With Copper Prices. Your Wealth Strategy Shouldn&apos;t.
    </h1>
    <p className="text-lg sm:text-xl text-slate-200 leading-relaxed">
-   FCX&apos;s executive pay is tied to commodity cycles - copper prices, production metrics, and global demand. Jay Chang helps Freeport professionals build a financial strategy that creates stability and diversification regardless of where copper trades next quarter.
+   FCX&apos;s executive pay is tied to commodity cycles - copper prices, production metrics, and global demand. I help Freeport professionals build a financial strategy that creates stability and diversification regardless of where copper trades next quarter.
    </p>
    <div className="pt-6 flex flex-col sm:flex-row gap-4">
    <Button

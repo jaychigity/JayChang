@@ -417,7 +417,7 @@ export default function ScottsdalePage() {
      <div className="max-w-[720px] mx-auto mb-12">
       <AnimateOnScroll delay={200}>
        <p className="font-sans text-base text-[#333333] leading-[1.7]">
-        Most firms make you pick: either you get a great advisor who knows your name, or you get fancy technology. At Farther, our team gives you both. Jay Chang brings hands-on experience with the exact financial challenges Arizona&apos;s highest earners face, backed by Farther&apos;s technology platform - the same engine managing over $15 billion in client assets. You get the personal attention and the horsepower.
+        Most firms make you pick: either you get a great advisor who knows your name, or you get fancy technology. At Farther, you get both. I bring hands-on experience with the exact financial challenges Arizona&apos;s highest earners face, backed by Farther&apos;s technology platform - the same engine managing over $15 billion in client assets. You get the personal attention and the horsepower.
        </p>
       </AnimateOnScroll>
      </div>

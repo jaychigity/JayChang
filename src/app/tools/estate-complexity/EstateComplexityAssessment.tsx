@@ -343,7 +343,7 @@ function calculateScore(answers: Record<string, string | string[] | number>): Ca
  tier = 'critical'
  tierLabel = 'Critical Complexity'
  tierColor = '#EF4444'
- tierDescription = `Your estate situation is among the most complex profiles we see. You have ${breakdown.filter((b) => b.points > 0).length} major factors that require coordinated planning across legal, tax, and financial disciplines. The good news: comprehensive planning can dramatically simplify what your family will face.`
+ tierDescription = `Your estate situation is among the most complex profiles I see. You have ${breakdown.filter((b) => b.points > 0).length} major factors that require coordinated planning across legal, tax, and financial disciplines. The good news: comprehensive planning can dramatically simplify what your family will face.`
  }
 
  // Generate flags

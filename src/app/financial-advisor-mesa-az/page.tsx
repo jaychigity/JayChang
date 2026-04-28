@@ -96,7 +96,7 @@ export default function MesaFinancialAdvisor() {
    Apple&apos;s Mesa operations center employs thousands of skilled professionals across engineering, operations, logistics, and management. And Apple does compensation differently. Your RSUs vest twice a year (not quarterly like most tech companies), which means bigger, less frequent taxable events. Your 401(k) match gets better the longer you stay. Your ESPP has specific tax rules depending on how long you hold. And if you&apos;re senior enough, the Deferred Compensation Plan (DCP) adds another layer of decisions.
    </p>
    <p>
-   Here&apos;s the thing - most financial advisors don&apos;t know any of this. They&apos;ll nod along when you mention ESPP and then give you the same generic advice they give everyone. That&apos;s not how we work. Jay Chang and our team at Farther actually understand how Apple compensation is structured, and we build plans around it.
+   Here&apos;s the thing - most financial advisors don&apos;t know any of this. They&apos;ll nod along when you mention ESPP and then give you the same generic advice they give everyone. That&apos;s not how I work. I actually understand how Apple compensation is structured, and I build plans around it.
    </p>
    <p>
    Whether you&apos;re trying to figure out the withholding gap on your RSU vests, wondering if you should max out your ESPP, weighing a DCP election, or just want to know if you&apos;re on track for the retirement you want - we&apos;re here to walk through it with you. Unfiltered, practical guidance from people who get your situation.
@@ -157,7 +157,7 @@ export default function MesaFinancialAdvisor() {
    You&apos;ve Built Something Great - Let&apos;s Make Sure It Works for You
   </h2>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   Jay Chang and our team at Farther work with Apple employees because we genuinely understand your compensation and your world. We&apos;re here to help you keep more, stress less, and build toward the life you want.
+   I work with Apple employees because I understand your compensation and your world. I&apos;m here to help you keep more, stress less, and build toward the life you want.
   </p>
   <Button
    href="/schedule-consultation"

@@ -96,7 +96,7 @@ export default function TempeFinancialAdvisor() {
    Tempe is where Arizona&apos;s tech and innovation scene comes together. Arizona State University keeps bringing in top engineering and computer science talent. Amkor Technology, one of the world&apos;s leading semiconductor assembly and test companies, is headquartered right here - which means Tempe is full of sharp engineers, operations leaders, and professionals building serious wealth.
    </p>
    <p>
-   Jay Chang chose Tempe as his home base for a reason. He works with professionals throughout the East Valley, Phoenix, Chandler, and Scottsdale who are dealing with the same kinds of questions: What do I do with all these RSUs? Am I paying more in taxes than I need to? Is my retirement plan actually going to work? Should I be doing a mega backdoor Roth?
+   I chose Tempe as my home base for a reason. I work with professionals throughout the East Valley, Phoenix, Chandler, and Scottsdale who are dealing with the same kinds of questions: What do I do with all these RSUs? Am I paying more in taxes than I need to? Is my retirement plan actually going to work? Should I be doing a mega backdoor Roth?
    </p>
    <p>
    At Farther, we combine real human advice with a modern technology platform. That means you get Jay and our team thinking about your situation personally, backed by tools that help us model scenarios, optimize taxes, and keep your plan on track. No dusty binders. No once-a-year check-in calls. Just a team that&apos;s genuinely in your corner.
