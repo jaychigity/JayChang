@@ -19,7 +19,7 @@ const OG_IMAGES: Record<string, string> = {
   '/services': '/Photos/Jay-Planning-Couple.png',
   '/tools': '/Photos/Color-Jay-Headshot.png',
   '/insights': '/Photos/Jay-Intel.png',
-  '/investment-philosophy': '/Photos/portfolio.png',
+  '/investment-philosophy': '/Photos/Investment Philosophy.png',
   '/process': '/Photos/Jay-B&W-Team.png',
 }
 
