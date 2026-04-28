@@ -6,7 +6,7 @@ import ArticleByline from '@/components/ArticleByline'
 
 export const metadata: Metadata = {
   title: 'Why You Should Never Donate Cash to Charity If You Own Appreciated Stock',
-  description: 'Donating appreciated stock directly to charity saves thousands in capital gains tax while providing the same charitable benefit. Here's the math.',
+  description: 'Donating appreciated stock directly to charity saves thousands in capital gains tax while providing the same charitable benefit. Here\'s the math.',
   alternates: {
     canonical: '/insights/never-donate-cash-to-charity'
   }

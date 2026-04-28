@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
  title: 'Areas Jay Chang Serves | Arizona, California & Nevada Wealth Management | Farther',
- description: 'Jay Chang serves high-income professionals across Phoenix, Chandler, Scottsdale, Tempe, Mesa, Tucson, the Bay Area, and Nevada. Fiduciary wealth management powered by Farther's $15B+ platform.',
+ description: 'Jay Chang serves high-income professionals across Phoenix, Chandler, Scottsdale, Tempe, Mesa, Tucson, the Bay Area, and Nevada. Fiduciary wealth management powered by Farther\'s $15B+ platform.',
  alternates: {
  canonical: 'https://www.advisorjay.com/areas-we-serve',
  },

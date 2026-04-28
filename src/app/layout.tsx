@@ -80,7 +80,7 @@ export const metadata: Metadata = {
  template: '%s | Advisor Jay',
  },
  description:
- 'Personalized wealth management for families and business owners with $2M-$20M in investable assets. Serving Scottsdale, AZ and clients across Arizona, California, and Nevada. Powered by Farther's Intelligent Wealth Platform.',
+ 'Personalized wealth management for families and business owners with $2M-$20M in investable assets. Serving Scottsdale, AZ and clients across Arizona, California, and Nevada. Powered by Farther\'s Intelligent Wealth Platform.',
  openGraph: {
  type: 'website',
  siteName: 'Advisor Jay',

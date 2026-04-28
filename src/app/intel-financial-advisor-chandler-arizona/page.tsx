@@ -5,7 +5,7 @@ import Button from '@/components/Button';
 
 export const metadata: Metadata = {
  title: 'Intel Employee Financial Planning in Chandler | RSU, SERPLUS & 401(k) Strategy | Jay Chang',
- description: 'Specialized financial planning for Intel professionals in Chandler. SERPLUS guidance, mega backdoor Roth, RSU diversification, and tax strategy from a fiduciary advisor who knows Intel's benefits inside and out.',
+ description: 'Specialized financial planning for Intel professionals in Chandler. SERPLUS guidance, mega backdoor Roth, RSU diversification, and tax strategy from a fiduciary advisor who knows Intel\'s benefits inside and out.',
  alternates: {
  canonical: 'https://www.advisorjay.com/intel-financial-advisor-chandler-arizona',
  },
@@ -28,7 +28,7 @@ export default function IntelFinancialAdvisor() {
   mainEntity: [
    {
    '@type': 'Question',
-   name: 'What happens to my SERPLUS if I'm laid off from Intel?',
+   name: 'What happens to my SERPLUS if I\'m laid off from Intel?',
    acceptedAnswer: {
    '@type': 'Answer',
    text: 'In most cases, an involuntary termination counts as a separation from service under IRC 409A, which triggers distributions on the schedule you originally elected. Our team can walk you through your specific distribution timing and help you plan for the tax impact before your separation date.',
