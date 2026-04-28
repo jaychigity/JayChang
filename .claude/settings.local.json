@@ -220,7 +220,9 @@
       "WebFetch(domain:elitert.com)",
       "WebFetch(domain:www.midstreammarketing.com)",
       "WebFetch(domain:www.kitces.com)",
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "Bash(sed -n '160,200p' /Users/jay/Claude/JayChang-main/src/app/insights/mega-backdoor-roth-2026-guide/page.tsx)",
+      "Bash(sed -n '40,80p' /Users/jay/Claude/JayChang-main/src/app/insights/backdoor-roth-ira-step-by-step/page.tsx)"
     ]
   }
 }
