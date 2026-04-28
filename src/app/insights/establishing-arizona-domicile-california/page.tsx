@@ -34,7 +34,7 @@ export default function ArizonaDomicileArticle() {
       <section className="bg-[#F7F4EE] py-24">
         <div className="max-w-4xl mx-auto px-6">
           <AnimateOnScroll>
-            <h1 className="text-5xl font-bold mb-6 text-[#333333]">
+            <h1 className="font-serif text-5xl font-bold mb-6 text-[#333333]">
               Establishing Arizona Domicile
             </h1>
             <p className="text-2xl text-[#333333] mb-4">
@@ -50,7 +50,7 @@ export default function ArizonaDomicileArticle() {
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-6">
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 text-[#333333]">
               The California Franchise Tax Board&apos;s Aggressive Audit Posture
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -65,7 +65,7 @@ export default function ArizonaDomicileArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               How California Defines "Domicile"
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -77,7 +77,7 @@ export default function ArizonaDomicileArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               The Nine Factors California Examines
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -113,7 +113,7 @@ export default function ArizonaDomicileArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Critical Steps to Establish Arizona Domicile
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -146,7 +146,7 @@ export default function ArizonaDomicileArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               What NOT to Do When Relocating to Arizona
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -164,7 +164,7 @@ export default function ArizonaDomicileArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               The FTB Audit Process for Domicile Disputes
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -179,7 +179,7 @@ export default function ArizonaDomicileArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Burden of Proof and the Importance of Documentation
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -194,7 +194,7 @@ export default function ArizonaDomicileArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Start Your Arizona Domicile Transition Now
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">

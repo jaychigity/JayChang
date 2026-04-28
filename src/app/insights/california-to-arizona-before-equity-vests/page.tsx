@@ -39,7 +39,7 @@ export default function Page() {
       <div className="min-h-screen bg-[#F7F4EE]">
         <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
           <AnimateOnScroll>
-            <h1 className="text-4xl md:text-5xl font-bold text-[#333333] mb-4">
+            <h1 className="font-serif text-4xl md:text-5xl font-bold text-[#333333] mb-4">
               Moving From California to Arizona? Here is What to Do Before Your Equity Vests
             </h1>
             <p className="text-lg text-gray-600 mb-8">
@@ -76,7 +76,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">California&apos;s Source-Based Income Rule</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">California&apos;s Source-Based Income Rule</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 California Revenue and Taxation Code Section 17951 establishes that income from sources within California is taxable by California, period. The state doesn&apos;t care whether you moved to Texas, Arizona, or abroad. If the income is sourced to California, you owe California tax on it.
               </p>
@@ -89,7 +89,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Establishing Arizona Domicile: The Foundation</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Establishing Arizona Domicile: The Foundation</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 California will examine whether you truly abandoned California residency. The state uses a "closer connection" test. If you retain significant ties to California while claiming to be an Arizona resident, the FTB (California Franchise Tax Board) may argue you are still a California resident and owe tax on all your income, not just California-sourced income.
               </p>
@@ -112,7 +112,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">The RSU Allocation Calculation</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">The RSU Allocation Calculation</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Once California confirms that you are truly an Arizona resident, it will allocate your RSU income based on days worked. Let&apos;s walk through a concrete example.
               </p>
@@ -131,7 +131,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">ESPP Enrollment Periods That Span States</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">ESPP Enrollment Periods That Span States</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Employee Stock Purchase Plans add another layer of complexity. If you enroll in an ESPP while in California but the offering period or purchase date falls after your move, you need to track the allocation carefully.
               </p>
@@ -144,7 +144,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">The FTB Audit Risk for High Earners</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">The FTB Audit Risk for High Earners</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 California has a well-known audit rate for high earners who leave the state. The FTB specifically flags individuals earning over $200,000 who claim to have changed residency. The agency wants to ensure they are not losing tax revenue from remote workers or newly relocated executives.
               </p>
@@ -157,7 +157,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Tax Savings: A Real Example</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Tax Savings: A Real Example</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Consider an engineer earning $300,000 in base salary and $120,000 in annual RSU vesting, for a total income of $420,000. This person moves from California to Arizona and executes their residency change correctly.
               </p>
@@ -170,7 +170,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Practical Steps to Take Before Vesting</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Practical Steps to Take Before Vesting</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Here is a checklist of actions to complete before your equity vests:
               </p>
@@ -188,7 +188,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Closing Thoughts</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Closing Thoughts</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Moving from California to Arizona can deliver substantial financial benefits, especially for employees with equity compensation. The state tax differential between California and Arizona is one of the largest in the nation. But the benefit only materializes if you execute the move correctly.
               </p>
@@ -201,7 +201,7 @@ export default function Page() {
             </section>
 
             <section className="bg-[#F7F4EE] rounded-lg p-8 mb-12 mt-16">
-              <h3 className="text-xl font-bold text-[#333333] mb-4">Ready to Optimize Your Relocation?</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-4">Ready to Optimize Your Relocation?</h3>
               <p className="text-gray-700 mb-6">
                 Tax planning for a state move requires precision. We help tech professionals and executives move from California to Arizona with a clear tax strategy.
               </p>

@@ -39,7 +39,7 @@ export default function ConcentratedStockRiskPage() {
       <section className="bg-[#F7F4EE] py-24">
         <div className="max-w-4xl mx-auto px-6">
           <AnimateOnScroll>
-            <h1 className="text-5xl font-bold text-[#333333] mb-6">
+            <h1 className="font-serif text-5xl font-bold text-[#333333] mb-6">
               Concentrated Stock Risk: How Much NVDA, TSMC, or Intel Is Too Much in Your Portfolio?
             </h1>
           </AnimateOnScroll>
@@ -61,7 +61,7 @@ export default function ConcentratedStockRiskPage() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold text-[#333333] mt-12 mb-6">Why Concentration Risk Matters</h2>
+            <h2 className="font-serif text-3xl font-bold text-[#333333] mt-12 mb-6">Why Concentration Risk Matters</h2>
             <p className="text-[#5b6a71] leading-relaxed mb-6">
               A concentrated position in a single stock is not simply a matter of personal preference or market timing bet. It is a systematic risk that portfolio theory and empirical evidence both suggest is unwise.
             </p>
@@ -77,7 +77,7 @@ export default function ConcentratedStockRiskPage() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold text-[#333333] mt-12 mb-6">Why Smart People Hold Concentrated Positions</h2>
+            <h2 className="font-serif text-3xl font-bold text-[#333333] mt-12 mb-6">Why Smart People Hold Concentrated Positions</h2>
             <p className="text-[#5b6a71] leading-relaxed mb-6">
               Understanding the risk of concentration does not explain why so many intelligent, financially literate people still hold concentrated positions. There are several psychological and practical reasons.
             </p>
@@ -99,7 +99,7 @@ export default function ConcentratedStockRiskPage() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold text-[#333333] mt-12 mb-6">Defining a Concentration Threshold</h2>
+            <h2 className="font-serif text-3xl font-bold text-[#333333] mt-12 mb-6">Defining a Concentration Threshold</h2>
             <p className="text-[#5b6a71] leading-relaxed mb-6">
               How much single-stock concentration is acceptable? There is no universally correct answer, but there is a framework.
             </p>
@@ -118,7 +118,7 @@ export default function ConcentratedStockRiskPage() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold text-[#333333] mt-12 mb-6">Diversification Strategies: Systematic Selling</h2>
+            <h2 className="font-serif text-3xl font-bold text-[#333333] mt-12 mb-6">Diversification Strategies: Systematic Selling</h2>
             <p className="text-[#5b6a71] leading-relaxed mb-6">
               The most straightforward diversification strategy is systematic selling. You commit to selling a fixed percentage of your position annually, regardless of the stock price. Examples: sell 10% of your position each year for five years, or 15% per year for three years, or 20% per year for two years.
             </p>
@@ -134,7 +134,7 @@ export default function ConcentratedStockRiskPage() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold text-[#333333] mt-12 mb-6">Tax-Efficient Execution: Specific Lot Identification</h2>
+            <h2 className="font-serif text-3xl font-bold text-[#333333] mt-12 mb-6">Tax-Efficient Execution: Specific Lot Identification</h2>
             <p className="text-[#5b6a71] leading-relaxed mb-6">
               When you sell shares of a concentrated position, always use specific lot identification (allowed under IRC Section 1012). This means you designate exactly which shares you are selling, rather than selling "first-in-first-out" (FIFO) or using an average cost.
             </p>
@@ -150,7 +150,7 @@ export default function ConcentratedStockRiskPage() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold text-[#333333] mt-12 mb-6">Tax-Loss Harvesting Coordination</h2>
+            <h2 className="font-serif text-3xl font-bold text-[#333333] mt-12 mb-6">Tax-Loss Harvesting Coordination</h2>
             <p className="text-[#5b6a71] leading-relaxed mb-6">
               If you are selling concentrated shares with large gains, consider pairing this with tax-loss harvesting elsewhere in your portfolio. Tax-loss harvesting means selling securities that have declined in value to realize losses that offset your gains.
             </p>
@@ -166,7 +166,7 @@ export default function ConcentratedStockRiskPage() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold text-[#333333] mt-12 mb-6">Advanced Diversification Techniques</h2>
+            <h2 className="font-serif text-3xl font-bold text-[#333333] mt-12 mb-6">Advanced Diversification Techniques</h2>
             <p className="text-[#5b6a71] leading-relaxed mb-6">
               Beyond simple selling, several advanced techniques can reduce concentration risk with lower tax friction.
             </p>
@@ -188,7 +188,7 @@ export default function ConcentratedStockRiskPage() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold text-[#333333] mt-12 mb-6">Building a Diversification Plan</h2>
+            <h2 className="font-serif text-3xl font-bold text-[#333333] mt-12 mb-6">Building a Diversification Plan</h2>
             <p className="text-[#5b6a71] leading-relaxed mb-6">
               A diversification plan should address: one, the target level of concentration (10-15% of net worth for NVIDIA). Two, the timeline (how many years to reach the target). Three, the annual selling schedule (how much to sell each year). Four, the tax efficiency strategy (specific lot identification, coordination with tax-loss harvesting, etc.). Five, the account priority (which accounts to sell from first, given tax implications and account type).
             </p>

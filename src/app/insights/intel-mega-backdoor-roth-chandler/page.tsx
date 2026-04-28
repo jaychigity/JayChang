@@ -38,7 +38,7 @@ export default function IntelMegaBackdoorRothPage() {
  <section className="bg-[#F7F4EE] py-24">
   <div className="max-w-4xl mx-auto px-6">
   <AnimateOnScroll>
-  <h1 className="text-5xl font-bold text-[#333333] mb-6">
+  <h1 className="font-serif text-5xl font-bold text-[#333333] mb-6">
    Intel&apos;s Mega Backdoor Roth: The Retirement Strategy Most Chandler Engineers Are Missing
   </h1>
   </AnimateOnScroll>
@@ -60,7 +60,7 @@ export default function IntelMegaBackdoorRothPage() {
   </AnimateOnScroll>
 
   <AnimateOnScroll>
-  <h2 className="text-3xl font-bold text-[#333333] mt-12 mb-6">What Is the Mega Backdoor Roth?</h2>
+  <h2 className="font-serif text-3xl font-bold text-[#333333] mt-12 mb-6">What Is the Mega Backdoor Roth?</h2>
   <p className="text-[#5b6a71] leading-relaxed mb-6">
    The IRS allows total annual contributions to a 401(k) plan up to $72,000 for 2026 (plus an extra $7,500 for catch-up contributions if you&apos;re 50+). Most people know about the $24,500 employee deferral limit - that&apos;s the traditional pre-tax contribution. They know about the employer match. But there&apos;s a third category: after-tax contributions.
   </p>
@@ -73,7 +73,7 @@ export default function IntelMegaBackdoorRothPage() {
   </AnimateOnScroll>
 
   <AnimateOnScroll>
-  <h2 className="text-3xl font-bold text-[#333333] mt-12 mb-6">Why This Matters at Intel&apos;s Income Levels</h2>
+  <h2 className="font-serif text-3xl font-bold text-[#333333] mt-12 mb-6">Why This Matters at Intel&apos;s Income Levels</h2>
   <p className="text-[#5b6a71] leading-relaxed mb-6">
    An Intel engineer earning $250,000 or more annually is in a completely different financial situation than someone earning $120,000. At $250K+, you&apos;re already maximizing your pre-tax 401(k). You likely max out your backdoor Roth IRA ($7,000). You probably have additional savings beyond those accounts.
   </p>
@@ -86,7 +86,7 @@ export default function IntelMegaBackdoorRothPage() {
   </AnimateOnScroll>
 
   <AnimateOnScroll>
-  <h2 className="text-3xl font-bold text-[#333333] mt-12 mb-6">How to Set It Up</h2>
+  <h2 className="font-serif text-3xl font-bold text-[#333333] mt-12 mb-6">How to Set It Up</h2>
   <p className="text-[#5b6a71] leading-relaxed mb-6">
    The process involves four critical steps, and they must be executed in the right order.
   </p>
@@ -105,7 +105,7 @@ export default function IntelMegaBackdoorRothPage() {
   </AnimateOnScroll>
 
   <AnimateOnScroll>
-  <h2 className="text-3xl font-bold text-[#333333] mt-12 mb-6">Coordinating With SERPLUS</h2>
+  <h2 className="font-serif text-3xl font-bold text-[#333333] mt-12 mb-6">Coordinating With SERPLUS</h2>
   <p className="text-[#5b6a71] leading-relaxed mb-6">
    Many Intel engineers also participate in SERPLUS (Strategic Employee Retirement Plan), an unfunded, non-qualified deferred compensation plan. SERPLUS allows executives to defer additional income, reducing current taxes. On the surface, this seems similar to the mega backdoor Roth. But there&apos;s a crucial difference.
   </p>

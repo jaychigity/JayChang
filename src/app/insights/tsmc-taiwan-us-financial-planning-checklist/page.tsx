@@ -38,7 +38,7 @@ export default function Page() {
       <div className="min-h-screen bg-[#F7F4EE]">
         <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
           <AnimateOnScroll>
-            <h1 className="text-4xl md:text-5xl font-bold text-[#333333] mb-4">
+            <h1 className="font-serif text-4xl md:text-5xl font-bold text-[#333333] mb-4">
               TSMC Engineers From Taiwan: A U.S. Financial Planning Checklist
             </h1>
             <p className="text-lg text-gray-600 mb-8">
@@ -67,7 +67,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">FBAR Filing: The Most Important Requirement You Have Never Heard Of</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">FBAR Filing: The Most Important Requirement You Have Never Heard Of</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 If you maintain any financial accounts in Taiwan - a savings account, a brokerage account, or a retirement pension fund - you must file a report to the U.S. Treasury called the FBAR (Report of Foreign Bank and Financial Accounts).
               </p>
@@ -86,7 +86,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">FATCA Form 8938: A Second Layer of Reporting</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">FATCA Form 8938: A Second Layer of Reporting</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 In addition to the FBAR, you may need to file IRS Form 8938 (Statement of Specified Foreign Financial Assets) if your foreign assets exceed certain thresholds.
               </p>
@@ -102,7 +102,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Taiwan Labor Pension: Portability and Taxation</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Taiwan Labor Pension: Portability and Taxation</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 If you have contributions in the Taiwan Labor Pension system (Lao Bao), you need to understand how this will be taxed and whether you can transfer it to the U.S.
               </p>
@@ -118,7 +118,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">U.S. Tax Residency: The Substantial Presence Test</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">U.S. Tax Residency: The Substantial Presence Test</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 The U.S. determines tax residency using two primary tests: the green card test and the substantial presence test. If you have been granted an employment-based green card or L-1A visa, you are likely a U.S. resident for tax purposes.
               </p>
@@ -134,7 +134,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Worldwide Income Reporting</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Worldwide Income Reporting</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 As a U.S. resident for tax purposes, you must report:
               </p>
@@ -156,7 +156,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">The Taiwan - U.S. Tax Treaty: What It Does Not Cover</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">The Taiwan - U.S. Tax Treaty: What It Does Not Cover</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Many people assume that because the U.S. has tax treaties with most countries, there must be one with Taiwan. This is incorrect. The United States does not have a comprehensive income tax treaty with Taiwan.
               </p>
@@ -169,7 +169,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Currency Considerations and Family Obligations</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Currency Considerations and Family Obligations</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Many TSMC engineers who relocate to the U.S. maintain family obligations in Taiwan, including supporting aging parents or other family members. These obligations are often denominated in New Taiwan Dollars (NTD).
               </p>
@@ -185,7 +185,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Social Security: No Totalization Agreement</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Social Security: No Totalization Agreement</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 The United States has Social Security totalization agreements with many countries, which allow workers to credit contributions from multiple countries toward their Social Security benefits. Unfortunately, the U.S. does not have a totalization agreement with Taiwan.
               </p>
@@ -201,7 +201,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Your Financial Planning Checklist</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Your Financial Planning Checklist</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Here is a summary checklist of actions to take as you relocate from Taiwan to the U.S.:
               </p>
@@ -220,7 +220,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Why Professional Help Matters</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Why Professional Help Matters</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 The financial complexity of relocating from Taiwan to the U.S. is significant. Unlike a relocation within the U.S., where the main tax issue is state income tax, relocating from a foreign country involves federal reporting requirements, worldwide income taxation, and potential penalties of $12,900 or more for simple mistakes.
               </p>
@@ -233,7 +233,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Looking Forward</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Looking Forward</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Your relocation to the U.S. is an exciting opportunity. TSMC&apos;s expansion into Arizona is creating world-class engineering jobs and is a significant investment in U.S. semiconductor manufacturing. By taking the time to understand and manage the financial and tax aspects of your relocation, you can focus on your career and your life without worrying about compliance issues down the road.
               </p>
@@ -243,7 +243,7 @@ export default function Page() {
             </section>
 
             <section className="bg-[#F7F4EE] rounded-lg p-8 mb-12 mt-16">
-              <h3 className="text-xl font-bold text-[#333333] mb-4">Ready to Plan Your Relocation?</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-4">Ready to Plan Your Relocation?</h3>
               <p className="text-gray-700 mb-6">
                 We specialize in working with international relocations and understand the unique tax and financial planning needs of TSMC engineers and other tech professionals moving from Taiwan to the U.S.
               </p>

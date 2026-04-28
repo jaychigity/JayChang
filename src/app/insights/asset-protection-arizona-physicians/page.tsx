@@ -33,7 +33,7 @@ export default function AssetProtectionArizonaArticle() {
       <section className="bg-[#F7F4EE] py-24">
         <div className="max-w-4xl mx-auto px-6">
           <AnimateOnScroll>
-            <h1 className="text-5xl font-bold mb-6 text-[#333333]">
+            <h1 className="font-serif text-5xl font-bold mb-6 text-[#333333]">
               Asset Protection for Arizona Physicians
             </h1>
             <p className="text-2xl text-[#333333] mb-4">
@@ -49,7 +49,7 @@ export default function AssetProtectionArizonaArticle() {
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-6">
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 text-[#333333]">
               Arizona&apos;s Asset Protection Framework: Meaningful but Incomplete
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -61,7 +61,7 @@ export default function AssetProtectionArizonaArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               What IS Protected Under Arizona Law
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -85,7 +85,7 @@ export default function AssetProtectionArizonaArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               What Is NOT Protected Under Arizona Law
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -106,7 +106,7 @@ export default function AssetProtectionArizonaArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Critical Limitations and Planning Implications
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -121,7 +121,7 @@ export default function AssetProtectionArizonaArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Practical Asset Protection Strategies for Arizona Physicians
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -145,7 +145,7 @@ export default function AssetProtectionArizonaArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               The Irreplaceable Importance of Timing
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -160,7 +160,7 @@ export default function AssetProtectionArizonaArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Arizona Asset Protection: Sufficient for Planning, But Not Comprehensive
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">

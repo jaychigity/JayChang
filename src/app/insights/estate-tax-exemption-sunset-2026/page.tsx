@@ -38,7 +38,7 @@ export default function Page() {
       <div className="min-h-screen bg-[#F7F4EE]">
         <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
           <AnimateOnScroll>
-            <h1 className="text-4xl md:text-5xl font-bold text-[#333333] mb-4">
+            <h1 className="font-serif text-4xl md:text-5xl font-bold text-[#333333] mb-4">
               The Federal Estate Tax Exemption Is Set to Drop by Half. Here is What to Do Before It Does.
             </h1>
             <p className="text-lg text-gray-600 mb-8">
@@ -70,7 +70,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Understanding the Estate Tax and the Exemption</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Understanding the Estate Tax and the Exemption</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 The federal estate tax is a 40% tax that applies to estates exceeding the exemption threshold. If you die with an estate of $20 million and the exemption is $7 million, the taxable estate is $13 million. The estate tax is $5.2 million - roughly 26% of the gross estate.
               </p>
@@ -86,7 +86,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Who Is Affected: The $7M to $14M Zone</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Who Is Affected: The $7M to $14M Zone</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 If your estate is worth less than $7 million, the sunset is not an immediate concern. You have no estate tax exposure under either the old or new exemption.
               </p>
@@ -102,7 +102,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">The Anti-Clawback Rule: Your Shield</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">The Anti-Clawback Rule: Your Shield</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Before we discuss specific strategies, the most important fact: the IRS has confirmed an "anti-clawback" rule. Treasury Regulation 20.2010-1(c) states that gifts made during the period of the higher exemption will not be clawed back if the exemption drops.
               </p>
@@ -115,7 +115,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Strategy 1: Spousal Lifetime Access Trust (SLAT)</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Strategy 1: Spousal Lifetime Access Trust (SLAT)</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 A Spousal Lifetime Access Trust is an irrevocable trust designed to hold assets you gift during your lifetime. The trust is structured so that your spouse (the "beneficiary") can access funds during the life of the trust if needed. At your death, the trust continues for the benefit of your children or other beneficiaries, outside your taxable estate.
               </p>
@@ -131,7 +131,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Strategy 2: Irrevocable Life Insurance Trust (ILIT)</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Strategy 2: Irrevocable Life Insurance Trust (ILIT)</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 An Irrevocable Life Insurance Trust is a trust that owns a life insurance policy on your life. The policy proceeds, when paid at your death, are owned by the trust and thus outside your taxable estate.
               </p>
@@ -147,7 +147,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Strategy 3: Completed Gifts to Irrevocable Trusts</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Strategy 3: Completed Gifts to Irrevocable Trusts</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 A completed gift is simply making a gift to an irrevocable trust and permanently removing the gifted assets from your control. The gift reduces your taxable estate and uses your exemption.
               </p>
@@ -163,7 +163,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Strategy 4: Dynasty Trust Funding</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Strategy 4: Dynasty Trust Funding</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 A dynasty trust is a long-term trust designed to span multiple generations and benefit descendants for 100+ years. Because the assets are held in trust and not owned by any individual, the trust can avoid repeated estate taxation as assets pass from one generation to the next.
               </p>
@@ -179,16 +179,16 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">The Risks: What to Consider Before Acting</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">The Risks: What to Consider Before Acting</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 All of these strategies require giving up control of assets. Before you make a large irrevocable gift, consider:
               </p>
-              <h3 className="text-xl font-bold text-[#333333] mb-3 mt-6">Loss of Control</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-3 mt-6">Loss of Control</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Once you gift assets to an irrevocable trust, you have no ability to change your mind or reclaim them. If you gift $5 million and your circumstances change - job loss, divorce, unexpected medical needs - the money is gone. You cannot undo the gift.
               </p>
 
-              <h3 className="text-xl font-bold text-[#333333] mb-3 mt-6">Loss of Step-Up in Basis</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-3 mt-6">Loss of Step-Up in Basis</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 When you die, your heirs receive a step-up in basis. This means that if you bought Apple stock for $10,000 and it is worth $100,000 at your death, your heirs inherit it with a basis of $100,000. They can sell it immediately with no capital gains tax.
               </p>
@@ -199,7 +199,7 @@ export default function Page() {
                 This is a significant cost to consider. For appreciated assets, you are trading estate tax savings for capital gains tax. A tax professional should model both scenarios before you decide.
               </p>
 
-              <h3 className="text-xl font-bold text-[#333333] mb-3 mt-6">Longevity Risk</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-3 mt-6">Longevity Risk</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 If you fund a trust in 2025 and live until 2040, you have had 15 years to potentially regret the decision. Life circumstances change. A divorce, a remarriage, financial hardship, or family conflict can make you wish you had kept the assets under your control.
               </p>
@@ -209,7 +209,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">The Time Constraint: Act Now</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">The Time Constraint: Act Now</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 The critical point is timing. If you wait until January 1, 2026, the planning window closes. You will have lost the opportunity to use the higher exemption. At that point, you are locked into the $7 million exemption (per person) for the rest of your life.
               </p>
@@ -228,7 +228,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Congressional Developments</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Congressional Developments</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 As of early 2026, there is no active legislation to extend the higher exemption. Congress could pass such legislation at any time, but it would need to be signed into law before December 31, 2025, to prevent the sunset. At this writing, such passage appears unlikely.
               </p>
@@ -238,7 +238,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Next Steps</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Next Steps</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 If your estate falls in the $7M to $14M zone, here is what to do:
               </p>
@@ -252,7 +252,7 @@ export default function Page() {
             </section>
 
             <section className="bg-[#F7F4EE] rounded-lg p-8 mb-12 mt-16">
-              <h3 className="text-xl font-bold text-[#333333] mb-4">Protect Your Estate Before the Exemption Drops</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-4">Protect Your Estate Before the Exemption Drops</h3>
               <p className="text-gray-700 mb-6">
                 The estate tax exemption sunset is one of the few predictable dates in tax planning. We help families understand their exposure and implement strategies to protect their wealth for future generations.
               </p>

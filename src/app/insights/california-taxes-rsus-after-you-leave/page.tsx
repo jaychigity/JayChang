@@ -38,7 +38,7 @@ export default function Page() {
       <div className="min-h-screen bg-[#F7F4EE]">
         <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
           <AnimateOnScroll>
-            <h1 className="text-4xl md:text-5xl font-bold text-[#333333] mb-4">
+            <h1 className="font-serif text-4xl md:text-5xl font-bold text-[#333333] mb-4">
               How California Taxes Your RSUs Even After You Leave the State
             </h1>
             <p className="text-lg text-gray-600 mb-8">
@@ -67,7 +67,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">The California Source Allocation Formula</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">The California Source Allocation Formula</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 California uses a straightforward allocation formula for equity compensation earned over time. The formula is:
               </p>
@@ -83,7 +83,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">A Detailed Example: The Math</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">A Detailed Example: The Math</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Let&apos;s walk through a specific scenario to see how this works in practice.
               </p>
@@ -111,7 +111,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Why This Matters: The Timing Trap</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Why This Matters: The Timing Trap</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 The critical insight is that the allocation is determined at grant and vest dates, not at move date. This creates a trap for employees who do not plan carefully.
               </p>
@@ -127,7 +127,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Filing Status and Forms</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Filing Status and Forms</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 When you have California-sourced income but live in another state, you file a nonresident or part-year resident return with California. The form is California Form 540NR (Nonresident or Part-Year Resident Income Tax Return).
               </p>
@@ -143,12 +143,12 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Strategies to Reduce Your California RSU Tax</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Strategies to Reduce Your California RSU Tax</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 While you cannot eliminate California tax on California-sourced RSU income, there are a few strategies to consider if you are in the planning stages or if you have discretion over timing.
               </p>
 
-              <h3 className="text-xl font-bold text-[#333333] mb-3 mt-6">Accelerated Vesting Elections</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-3 mt-6">Accelerated Vesting Elections</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Some companies allow employees to elect accelerated vesting in connection with a planned move or sale of the company. If you can negotiate an acceleration of vesting before your move date, you shift the vesting to occur while you are still a California resident. This means all of the gain is California-sourced (and thus California-taxed), but California is also your home state, so the tax differential is not as severe. You avoid the situation where you pay California taxes on income while living in Arizona.
               </p>
@@ -156,12 +156,12 @@ export default function Page() {
                 This is a tax-neutral move in some ways (you still owe California tax, just at the time of vesting rather than after you move), but it can be advantageous if you expect your income to rise after the move and push you into a higher California tax bracket, or if you expect to live in Arizona long enough that paying California tax early is preferable.
               </p>
 
-              <h3 className="text-xl font-bold text-[#333333] mb-3 mt-6">Section 83(b) Elections</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-3 mt-6">Section 83(b) Elections</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 If you hold restricted stock (not RSUs), you can file a Section 83(b) election to recognize income at grant rather than at vest. This strategy can be useful if you expect the stock to appreciate significantly, because you lock in a lower tax basis. However, it also accelerates your California tax obligation. This election requires careful analysis of your company&apos;s specific situation and is most relevant for private company equity.
               </p>
 
-              <h3 className="text-xl font-bold text-[#333333] mb-3 mt-6">Documentation and Tax Planning</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-3 mt-6">Documentation and Tax Planning</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 The most important strategy is documentation. Keep a clear record of your move date, your work location history, and your residency changes. When your RSUs vest, provide your tax professional with the grant date, vest schedule, and the dates you worked in California. This allows them to calculate the exact allocation and ensure you pay the correct amount of tax - no more, no less.
               </p>
@@ -171,7 +171,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">The Bigger Tax Picture</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">The Bigger Tax Picture</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 For a software engineer earning $300,000 in base salary and $120,000 in annual RSU vesting, the California RSU allocation issue can result in $10,000 to $15,000 in additional state taxes per year. Over a four-year vesting cycle with new grants, the cumulative impact can exceed $50,000.
               </p>
@@ -181,7 +181,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Common Mistakes to Avoid</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Common Mistakes to Avoid</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Based on years of working with people in this situation, here are the most frequent errors:
               </p>
@@ -196,7 +196,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Bottom Line</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Bottom Line</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 California&apos;s source allocation rule for RSUs is not a surprise or a loophole - it is explicit law stated in Section 17951 of the Revenue and Taxation Code. The allocation formula is mechanical and predictable. If you worked in California for 50% of your grant-to-vest period, California will claim 50% of your RSU gain. There is no ambiguity once you have the dates.
               </p>
@@ -209,7 +209,7 @@ export default function Page() {
             </section>
 
             <section className="bg-[#F7F4EE] rounded-lg p-8 mb-12 mt-16">
-              <h3 className="text-xl font-bold text-[#333333] mb-4">Do You Have Unvested RSUs and a Relocation Plan?</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-4">Do You Have Unvested RSUs and a Relocation Plan?</h3>
               <p className="text-gray-700 mb-6">
                 We help tech professionals calculate the tax impact of leaving California and file multi-state returns correctly. Our team understands California source allocation and can guide your relocation strategy.
               </p>

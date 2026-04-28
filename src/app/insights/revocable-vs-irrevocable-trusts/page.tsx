@@ -38,7 +38,7 @@ export default function Page() {
       <div className="min-h-screen bg-[#F7F4EE]">
         <div className="max-w-3xl mx-auto px-6 py-16 md:py-24">
           <AnimateOnScroll>
-            <h1 className="text-4xl md:text-5xl font-bold text-[#333333] mb-4">
+            <h1 className="font-serif text-4xl md:text-5xl font-bold text-[#333333] mb-4">
               Revocable vs. Irrevocable Trusts: Which One Do You Actually Need?
             </h1>
             <p className="text-lg text-gray-600 mb-8">
@@ -64,7 +64,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Revocable Living Trusts: Control and Flexibility</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Revocable Living Trusts: Control and Flexibility</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 A revocable living trust is a trust that you create during your lifetime and retain complete control over. You are the grantor (the person who creates it), the trustee (the person who manages it), and the beneficiary (the person who receives income and principal if needed).
               </p>
@@ -75,7 +75,7 @@ export default function Page() {
                 Because you can modify or dissolve the trust at any time, a revocable trust provides maximum flexibility. If your circumstances change - you marry, you divorce, you acquire new assets, you want to change who inherits - you can amend the trust. If you decide the entire trust structure is wrong for your situation, you can dissolve it and move the assets back into your name.
               </p>
 
-              <h3 className="text-xl font-bold text-[#333333] mb-3 mt-6">Benefit 1: Avoiding Probate</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-3 mt-6">Benefit 1: Avoiding Probate</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Assets held in a revocable trust at your death bypass probate. Probate is the court process by which your will is validated and your assets are distributed according to your instructions (or, if you die without a will, according to state law). Probate can be slow, expensive, and public.
               </p>
@@ -86,7 +86,7 @@ export default function Page() {
                 In Arizona, probate is actually relatively efficient. Arizona has a streamlined informal probate procedure, and the state court system moves fairly quickly. The time and cost of Arizona probate are less onerous than in states like California or New York. But even so, for many people, avoiding probate is desirable for privacy and simplicity.
               </p>
 
-              <h3 className="text-xl font-bold text-[#333333] mb-3 mt-6">Benefit 2: Privacy</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-3 mt-6">Benefit 2: Privacy</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Probate is a public record. When you die and your will is admitted to probate, your will becomes a public document that anyone can read. The value of your estate, the list of your assets, and the identities of your beneficiaries are all public information.
               </p>
@@ -97,7 +97,7 @@ export default function Page() {
                 For people who value privacy or who have significant assets and want to minimize public visibility, this is a major advantage.
               </p>
 
-              <h3 className="text-xl font-bold text-[#333333] mb-3 mt-6">Benefit 3: Incapacity Planning</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-3 mt-6">Benefit 3: Incapacity Planning</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 A revocable trust provides continuity if you become incapacitated. You name a successor trustee in the trust document. If you become unable to manage your affairs (due to illness, injury, cognitive decline, or any other reason), your successor trustee can step in and continue managing the trust assets on your behalf.
               </p>
@@ -108,7 +108,7 @@ export default function Page() {
                 With a trust, the transition is immediate and automatic. Your named successor trustee can manage the assets without court involvement.
               </p>
 
-              <h3 className="text-xl font-bold text-[#333333] mb-3 mt-6">Limitation: No Tax Benefit</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-3 mt-6">Limitation: No Tax Benefit</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Because you retain control of a revocable trust, it provides no federal estate tax benefit. The assets in the trust are included in your taxable estate at your death, just as if you had held them in your personal name.
               </p>
@@ -116,7 +116,7 @@ export default function Page() {
                 If your estate exceeds the federal estate tax exemption (approximately $7 million per person in 2026), a revocable trust alone will not reduce the estate tax you owe. You would need an irrevocable trust or other tax planning strategy.
               </p>
 
-              <h3 className="text-xl font-bold text-[#333333] mb-3 mt-6">Limitation: No Creditor Protection</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-3 mt-6">Limitation: No Creditor Protection</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Because you own the assets in a revocable trust, they are exposed to your creditors. If you are sued and a judgment is entered against you, the creditor can potentially attach assets in your revocable trust to satisfy the judgment.
               </p>
@@ -126,7 +126,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Irrevocable Trusts: Tax Benefits and Asset Protection</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Irrevocable Trusts: Tax Benefits and Asset Protection</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 An irrevocable trust is fundamentally different. Once you create an irrevocable trust and transfer assets into it, you have given up control. You cannot modify the trust, you cannot take the assets back, and you cannot dissolve the trust without the consent of the beneficiaries (and sometimes a court order).
               </p>
@@ -134,7 +134,7 @@ export default function Page() {
                 Because you have given up control, the assets in an irrevocable trust are removed from your taxable estate. This is the key tax benefit. If you fund an irrevocable trust with $5 million, that $5 million is no longer part of your estate for federal estate tax purposes.
               </p>
 
-              <h3 className="text-xl font-bold text-[#333333] mb-3 mt-6">Benefit 1: Estate Tax Reduction</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-3 mt-6">Benefit 1: Estate Tax Reduction</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 The primary purpose of an irrevocable trust is to remove assets from your taxable estate. If you are subject to federal estate tax (your estate exceeds the exemption), this can save substantial tax dollars.
               </p>
@@ -145,7 +145,7 @@ export default function Page() {
                 Additionally, any appreciation of the assets in the irrevocable trust after the gift escapes estate tax entirely. If you gift $5 million to an irrevocable trust and the assets grow to $8 million, the additional $3 million in growth is never estate-taxed. This can produce enormous savings over time.
               </p>
 
-              <h3 className="text-xl font-bold text-[#333333] mb-3 mt-6">Benefit 2: Asset Protection</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-3 mt-6">Benefit 2: Asset Protection</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Because assets in an irrevocable trust are no longer owned by you, they are generally protected from your creditors. If you are sued and a judgment is entered, the creditor cannot attach assets in an irrevocable trust because you do not own them.
               </p>
@@ -156,7 +156,7 @@ export default function Page() {
                 Note that there are limitations. If the trust is structured improperly, or if you transfer assets to the trust as a fraudulent conveyance (to avoid creditors you already know about), creditor protections may be weak. A well-drafted irrevocable trust funded appropriately can provide strong protection.
               </p>
 
-              <h3 className="text-xl font-bold text-[#333333] mb-3 mt-6">Limitation: Loss of Control</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-3 mt-6">Limitation: Loss of Control</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 The biggest limitation of an irrevocable trust is that you give up control. Once you transfer assets into the trust, you cannot take them back. You cannot modify the terms of the trust without the agreement of all beneficiaries (and sometimes a court order). You cannot decide later that you made a mistake and dissolve the trust.
               </p>
@@ -167,7 +167,7 @@ export default function Page() {
                 Because of this limitation, irrevocable trusts only work for people with sufficient wealth that they are comfortable permanently giving away a portion of their assets.
               </p>
 
-              <h3 className="text-xl font-bold text-[#333333] mb-3 mt-6">Limitation: Loss of Step-Up in Basis</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-3 mt-6">Limitation: Loss of Step-Up in Basis</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 When you die, your heirs receive a step-up in basis. This means they inherit assets at fair market value as of the date of your death, with no tax on the appreciation during your lifetime.
               </p>
@@ -181,7 +181,7 @@ export default function Page() {
                 This is a significant cost that must be modeled when deciding whether an irrevocable trust makes sense. Sometimes the estate tax savings exceed the capital gains tax cost, and sometimes they do not.
               </p>
 
-              <h3 className="text-xl font-bold text-[#333333] mb-3 mt-6">Limitation: Complexity and Administration</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-3 mt-6">Limitation: Complexity and Administration</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 An irrevocable trust must file its own income tax return and maintain separate accounting. If the trust generates income, you need separate tax identification numbers, separate bank accounts, and separate bookkeeping. This adds cost and complexity.
               </p>
@@ -191,7 +191,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Comparing the Two: A Decision Matrix</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Comparing the Two: A Decision Matrix</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Here is a simple comparison:
               </p>
@@ -251,7 +251,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">When You Need a Revocable Trust</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">When You Need a Revocable Trust</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 A revocable living trust is appropriate if:
               </p>
@@ -266,7 +266,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">When You Need an Irrevocable Trust</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">When You Need an Irrevocable Trust</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 An irrevocable trust is appropriate if:
               </p>
@@ -281,7 +281,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">Arizona-Specific Considerations</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">Arizona-Specific Considerations</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Arizona is a community property state. This means that property acquired during a marriage is presumed to be owned equally by both spouses, regardless of whose name is on the title.
               </p>
@@ -294,7 +294,7 @@ export default function Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">A Hybrid Approach</h2>
+              <h2 className="font-serif text-2xl font-bold text-[#333333] mb-4">A Hybrid Approach</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Many people use a combination of revocable and irrevocable trusts. For example, you might establish a revocable living trust to hold most of your assets and manage them during your lifetime and incapacity, while also funding an irrevocable trust to provide tax benefits for assets above the exemption threshold.
               </p>
@@ -307,7 +307,7 @@ export default function Page() {
             </section>
 
             <section className="bg-[#F7F4EE] rounded-lg p-8 mb-12 mt-16">
-              <h3 className="text-xl font-bold text-[#333333] mb-4">Determine Your Best Trust Strategy</h3>
+              <h3 className="font-serif text-xl font-bold text-[#333333] mb-4">Determine Your Best Trust Strategy</h3>
               <p className="text-gray-700 mb-6">
                 The right trust structure depends on your estate size, your goals, and your risk profile. We help Arizona residents evaluate their options and implement the strategy that fits their circumstances.
               </p>

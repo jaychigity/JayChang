@@ -34,7 +34,7 @@ export default function BackdoorRothArticle() {
       <section className="bg-[#F7F4EE] py-24">
         <div className="max-w-4xl mx-auto px-6">
           <AnimateOnScroll>
-            <h1 className="text-5xl font-bold mb-6 text-[#333333]">
+            <h1 className="font-serif text-5xl font-bold mb-6 text-[#333333]">
               Backdoor Roth IRA: A Step-by-Step Guide for High Earners in 2026
             </h1>
             <div className="mb-8">
@@ -47,7 +47,7 @@ export default function BackdoorRothArticle() {
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-6">
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 text-[#333333]">
               Why the Backdoor Roth Still Works in 2026
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -62,7 +62,7 @@ export default function BackdoorRothArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Step 1: Confirm You Have No Pre-Tax IRA Balances
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -77,7 +77,7 @@ export default function BackdoorRothArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Step 2: Roll Pre-Tax IRA Balances Into Your 401(k)
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -92,7 +92,7 @@ export default function BackdoorRothArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Step 3: Contribute $7,500 to a Traditional IRA
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -118,7 +118,7 @@ export default function BackdoorRothArticle() {
           </AnimateOnScroll>
 
                     <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Step 4: Convert the Full Balance to a Roth IRA
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -133,7 +133,7 @@ export default function BackdoorRothArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Step 5: File Form 8606 With Your Tax Return
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -148,7 +148,7 @@ export default function BackdoorRothArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Common Mistakes That Derail Backdoor Roths
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -166,7 +166,7 @@ export default function BackdoorRothArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               The Backdoor Roth Is Separate From the Mega Backdoor
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -181,7 +181,7 @@ export default function BackdoorRothArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Why This Strategy Still Matters in 2026
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">

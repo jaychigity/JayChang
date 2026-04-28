@@ -424,7 +424,7 @@ export default function FamilyOfficeVsWealthAdvisorPage() {
     key={i}
     className="bg-[#FAFAF8] border border-[#E8E6E1] rounded-[8px] px-6 py-5"
    >
-    <h3 className="font-sans text-[17px] font-semibold text-[#333333] leading-[1.4] mb-2">
+    <h3 className="font-serif font-sans text-[17px] font-semibold text-[#333333] leading-[1.4] mb-2">
     {faq.question}
     </h3>
     <p className="font-sans text-[15px] text-[#5b6a71] leading-[1.7]">

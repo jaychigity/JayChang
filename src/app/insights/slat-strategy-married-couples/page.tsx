@@ -33,7 +33,7 @@ export default function SLATStrategyArticle() {
       <section className="bg-[#F7F4EE] py-24">
         <div className="max-w-4xl mx-auto px-6">
           <AnimateOnScroll>
-            <h1 className="text-5xl font-bold mb-6 text-[#333333]">
+            <h1 className="font-serif text-5xl font-bold mb-6 text-[#333333]">
               The SLAT Strategy
             </h1>
             <p className="text-2xl text-[#333333] mb-4">
@@ -49,7 +49,7 @@ export default function SLATStrategyArticle() {
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-6">
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 text-[#333333]">
               The Exemption Sunset Creates a Planning Urgency
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -64,7 +64,7 @@ export default function SLATStrategyArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               How a SLAT Works: The Basic Structure
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -82,7 +82,7 @@ export default function SLATStrategyArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Why SLATs Are Popular Before the Exemption Sunset
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -100,7 +100,7 @@ export default function SLATStrategyArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               The Reciprocal Trust Doctrine: The Major Limitation
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -127,7 +127,7 @@ export default function SLATStrategyArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Divorce Risk and Trust Permanence
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -142,7 +142,7 @@ export default function SLATStrategyArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Allocating GST Exemption: The Dynasty Opportunity
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -157,7 +157,7 @@ export default function SLATStrategyArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               What Assets Should Fund a SLAT?
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -172,7 +172,7 @@ export default function SLATStrategyArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               The Anti-Clawback Rule and the 2026 Deadline
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -187,7 +187,7 @@ export default function SLATStrategyArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Implementation Timing: Act Before Year-End 2026
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">

@@ -34,7 +34,7 @@ export default function BusinessExitPlanningArticle() {
       <section className="bg-[#F7F4EE] py-24">
         <div className="max-w-4xl mx-auto px-6">
           <AnimateOnScroll>
-            <h1 className="text-5xl font-bold mb-6 text-[#333333]">
+            <h1 className="font-serif text-5xl font-bold mb-6 text-[#333333]">
               Business Exit Planning for Arizona Owners
             </h1>
             <p className="text-2xl text-[#333333] mb-4">
@@ -50,7 +50,7 @@ export default function BusinessExitPlanningArticle() {
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-6">
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 text-[#333333]">
               The Three-Year Window: Why Timing Matters
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -65,7 +65,7 @@ export default function BusinessExitPlanningArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Four Reasons 3 - 5 Year Planning Windows Maximize Value
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -106,7 +106,7 @@ export default function BusinessExitPlanningArticle() {
           </AnimateOnScroll>
 
                     <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Tax at Sale: Stock vs. Asset Sale Matters
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -121,7 +121,7 @@ export default function BusinessExitPlanningArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Qualified Small Business Stock (QSBS) and Arizona Conformity Issues
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -136,7 +136,7 @@ export default function BusinessExitPlanningArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Installment Sales and Spread-Out Taxation
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -151,7 +151,7 @@ export default function BusinessExitPlanningArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Charitable Strategies and Donor-Advised Funds
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -166,7 +166,7 @@ export default function BusinessExitPlanningArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Start Now, Even if Sale Is Years Away
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">

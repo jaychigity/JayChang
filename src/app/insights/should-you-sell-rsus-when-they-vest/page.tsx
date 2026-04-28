@@ -34,7 +34,7 @@ export default function RSUVestingArticle() {
       <section className="bg-[#F7F4EE] py-24">
         <div className="max-w-4xl mx-auto px-6">
           <AnimateOnScroll>
-            <h1 className="text-5xl font-bold mb-6 text-[#333333]">
+            <h1 className="font-serif text-5xl font-bold mb-6 text-[#333333]">
               Should You Always Sell RSUs When They Vest? The Answer Is Usually Yes
             </h1>
             <p className="text-xl text-[#5b6a71] mb-4">
@@ -50,7 +50,7 @@ export default function RSUVestingArticle() {
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-6">
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 text-[#333333]">
               The Default Advice Exists for Good Reasons
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -76,7 +76,7 @@ export default function RSUVestingArticle() {
           </AnimateOnScroll>
 
                     <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Why Selling at Vesting Makes Financial Sense
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -94,7 +94,7 @@ export default function RSUVestingArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               The Arguments for Holding - and Why They Fail
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -109,7 +109,7 @@ export default function RSUVestingArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               The Tax Math on Selling vs. Holding
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -127,7 +127,7 @@ export default function RSUVestingArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               When Selling at Vesting Is Not Appropriate
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
@@ -148,7 +148,7 @@ export default function RSUVestingArticle() {
           </AnimateOnScroll>
 
           <AnimateOnScroll>
-            <h2 className="text-3xl font-bold mb-6 mt-12 text-[#333333]">
+            <h2 className="font-serif text-3xl font-bold mb-6 mt-12 text-[#333333]">
               Building Wealth Through Diversification, Not Conviction
             </h2>
             <p className="text-lg text-[#5b6a71] mb-6">
