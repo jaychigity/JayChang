@@ -107,10 +107,16 @@ export default function PhysicianExecutiveWealthPage() {
  <section className="bg-[#F7F4EE] py-16 lg:py-24">
   <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
   <AnimateOnScroll>
-  <blockquote className="text-xl md:text-2xl leading-relaxed text-[#333333] font-light italic border-l-4 border-[#1d7682] pl-8">
-   <p>
-   I've worked with Banner and Mayo physicians who felt deeply uncomfortable with financial complexity. One Freeport-McMoRan VP with 60% of his net worth in copper-correlated assets didn't need more information about markets. He needed a plan that made sense given his reality. The failures I see aren't failures of intelligence. They're failures of access to advisors who understand physician economics and executive compensation structures well enough to translate your income into a life that actually works for you.
+  <blockquote className="border-l-4 border-[#1d7682] pl-8 py-8 italic text-lg leading-relaxed text-[#333333]">
+   <p className="mb-6">
+   I&apos;ve worked with Banner and Mayo physicians who felt deeply uncomfortable with financial complexity. One Freeport-McMoRan VP with 60% of his net worth in copper-correlated assets didn&apos;t need more information about markets. He needed a plan that made sense given his reality.
    </p>
+   <p>
+   The failures I see aren&apos;t failures of intelligence. They&apos;re failures of access to advisors who understand physician economics and executive compensation structures well enough to translate your income into a life that actually works for you.
+   </p>
+   <footer className="text-base not-italic font-semibold text-[#333333] mt-6">
+   - Jay Chang, Farther
+   </footer>
   </blockquote>
   </AnimateOnScroll>
   </div>
@@ -582,7 +588,7 @@ export default function PhysicianExecutiveWealthPage() {
   <AnimateOnScroll>
   <SectionEyebrow text="CLIENT TESTIMONIALS" />
   <h2 className="font-serif text-[28px] md:text-[36px] font-semibold text-[#333333] mt-4 mb-8">
-   What Clients Say About Working With Jay
+   What Clients Say About Working With Me
   </h2>
   </AnimateOnScroll>
   <TestimonialCarousel testimonials={physicianExecutiveTestimonials} />

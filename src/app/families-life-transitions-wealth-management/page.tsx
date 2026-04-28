@@ -378,7 +378,7 @@ export default function FamiliesLifeTransitionsWealthManagement() {
   <AnimateOnScroll>
   <SectionEyebrow text="CLIENT TESTIMONIALS" />
   <h2 className="font-serif text-[28px] md:text-[36px] font-semibold text-[#333333] mt-4 mb-8">
-   What Clients Say About Working With Jay
+   What Clients Say About Working With Me
   </h2>
   </AnimateOnScroll>
   <TestimonialCarousel testimonials={familiesTestimonials} />
