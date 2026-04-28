@@ -47,7 +47,7 @@ export default function CashBalancePlan() {
 
         {/* Body Content */}
         <section className="w-full bg-white py-16 px-6 md:py-24">
-          <div className="max-w-3xl mx-auto prose prose-lg max-w-none">
+          <div className="max-w-3xl mx-auto prose prose-lg">
             <p className="text-gray-800 mb-6">
               You own a cardiology practice with two other partners. Combined, the practice generates $2.1 million in revenue annually. Your personal income after expenses is $650,000. Your 401(k) can accept $23,500 of pre-tax contributions in 2026. That leaves $626,500 in taxable income.
             </p>

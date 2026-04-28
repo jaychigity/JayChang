@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import typography from '@tailwindcss/typography'
 
 const config: Config = {
   content: [
@@ -122,8 +123,51 @@ const config: Config = {
         'slide-in-right': 'slide-in-right 0.3s ease forwards',
         'ken-burns': 'ken-burns 15s ease-in-out infinite alternate',
       },
+      typography: ({ theme }: { theme: (path: string) => string }) => ({
+        DEFAULT: {
+          css: {
+            maxWidth: 'none',
+            '--tw-prose-body': '#5b6a71',
+            '--tw-prose-headings': '#333333',
+            '--tw-prose-lead': '#5b6a71',
+            '--tw-prose-links': '#1d7682',
+            '--tw-prose-bold': '#333333',
+            '--tw-prose-counters': '#5b6a71',
+            '--tw-prose-bullets': '#1d7682',
+            '--tw-prose-hr': '#e5e5e5',
+            '--tw-prose-quotes': '#333333',
+            '--tw-prose-quote-borders': '#1d7682',
+            '--tw-prose-captions': '#5b6a71',
+            '--tw-prose-code': '#333333',
+            '--tw-prose-pre-code': '#F7F4EE',
+            '--tw-prose-pre-bg': '#333333',
+            '--tw-prose-th-borders': '#e5e5e5',
+            '--tw-prose-td-borders': '#e5e5e5',
+            fontFamily: theme('fontFamily.sans'),
+            lineHeight: '1.75',
+            h1: { fontFamily: theme('fontFamily.serif'), fontWeight: '700' },
+            h2: { fontFamily: theme('fontFamily.serif'), fontWeight: '700', marginTop: '3rem', marginBottom: '1.25rem' },
+            h3: { fontFamily: theme('fontFamily.serif'), fontWeight: '700', marginTop: '2rem', marginBottom: '0.75rem' },
+            h4: { fontFamily: theme('fontFamily.serif'), fontWeight: '600' },
+            p: { marginTop: '0', marginBottom: '1.25rem' },
+            li: { marginTop: '0.5rem', marginBottom: '0.5rem' },
+            'ul > li': { paddingLeft: '0.375rem' },
+            strong: { fontWeight: '600' },
+            a: { fontWeight: '500', textDecoration: 'underline' },
+          },
+        },
+        lg: {
+          css: {
+            fontSize: '1.125rem',
+            lineHeight: '1.8',
+            h2: { fontSize: '1.875rem', marginTop: '3.5rem', marginBottom: '1.5rem' },
+            h3: { fontSize: '1.5rem', marginTop: '2.5rem', marginBottom: '1rem' },
+            p: { marginBottom: '1.5rem' },
+          },
+        },
+      }),
     },
   },
-  plugins: [],
+  plugins: [typography],
 }
 export default config

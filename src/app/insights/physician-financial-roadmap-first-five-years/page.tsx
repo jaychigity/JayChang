@@ -47,7 +47,7 @@ export default function PhysicianFinancialRoadmap() {
 
         {/* Body Content */}
         <section className="w-full bg-white py-16 px-6 md:py-24">
-          <div className="max-w-3xl mx-auto prose prose-lg max-w-none">
+          <div className="max-w-3xl mx-auto prose prose-lg">
             <p className="text-gray-800 mb-6">
               You finish residency or fellowship at age 30 to 35 with a diploma, a job offer at $400,000+ annually, and roughly $200,000 to $400,000 in student loan debt. Your net worth is likely negative or close to zero. Your peers in other professions have spent the last 7 to 10 years accumulating retirement savings, home equity, and investment accounts. You haven&apos;t.
             </p>

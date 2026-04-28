@@ -30,7 +30,7 @@ export default function NeverDonateCashPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <section className="bg-[#F7F4EE] py-20 px-6">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <AnimateOnScroll>
             <h1 className="text-4xl font-bold mb-6 text-gray-900">Why You Should (Almost) Never Donate Cash to Charity If You Own Appreciated Stock</h1>
             <p className="text-xl text-gray-700 mb-4">The capital gains tax you avoid pays for the donation. Use it.</p>
@@ -42,7 +42,7 @@ export default function NeverDonateCashPage() {
       </section>
 
       <section className="bg-white py-16 px-6">
-        <div className="max-w-2xl mx-auto prose prose-lg">
+        <div className="max-w-4xl mx-auto prose prose-lg">
           <AnimateOnScroll>
             <h2>The Core Problem</h2>
             <p>
@@ -210,7 +210,7 @@ export default function NeverDonateCashPage() {
       </section>
 
       <section className="bg-[#333333] py-16 px-6">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           <AnimateOnScroll>
             <h2 className="text-2xl font-bold text-white mb-4">Ready to give smarter?</h2>
             <p className="text-gray-300 mb-8">We help high earners maximize the impact of charitable giving while minimizing tax cost.</p>
@@ -222,7 +222,7 @@ export default function NeverDonateCashPage() {
       </section>
 
       <section className="bg-white py-12 px-6 border-t border-gray-200">
-        <div className="max-w-2xl mx-auto text-sm text-gray-600">
+        <div className="max-w-4xl mx-auto text-sm text-gray-600">
           <p>
             <strong>Disclaimer:</strong> This article is for educational purposes only and should not be construed as financial, tax, or legal advice. Tax laws are complex and individual circumstances vary. The deduction limits, long-term capital gains rates, and state tax treatment described are current as of 2026 but may change. Donations of appreciated securities may trigger additional tax rules, including wash-sale rules, FICA constraints, and other considerations depending on your specific situation. Before donating any appreciated property to charity, consult with a qualified tax advisor or CPA familiar with your complete financial picture. Farther does not provide tax advice and does not have authority to bind tax positions.
           </p>

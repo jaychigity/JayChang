@@ -29,7 +29,7 @@ export default function QuarterlyVestingTaxPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <section className="bg-[#F7F4EE] py-20 px-6">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <AnimateOnScroll>
             <h1 className="text-4xl font-bold mb-6 text-gray-900">How Quarterly RSU Vesting Creates a Year-Round Tax Problem Most Engineers Ignore</h1>
             <p className="text-xl text-gray-700 mb-4">Eight to twelve vesting events per year, each underwitheld at 22%. This becomes a $30K-$50K problem by April.</p>
@@ -41,7 +41,7 @@ export default function QuarterlyVestingTaxPage() {
       </section>
 
       <section className="bg-white py-16 px-6">
-        <div className="max-w-2xl mx-auto prose prose-lg">
+        <div className="max-w-4xl mx-auto prose prose-lg">
           <AnimateOnScroll>
             <h2>The Quarterly Vesting Structure</h2>
             <p>
@@ -265,7 +265,7 @@ export default function QuarterlyVestingTaxPage() {
       </section>
 
       <section className="bg-[#333333] py-16 px-6">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           <AnimateOnScroll>
             <h2 className="text-2xl font-bold text-white mb-4">Tech employees: Let&apos;s plan your equity taxes now.</h2>
             <p className="text-gray-300 mb-8">We help engineers map quarterly vests, optimize withholding, and eliminate tax surprises.</p>
@@ -277,7 +277,7 @@ export default function QuarterlyVestingTaxPage() {
       </section>
 
       <section className="bg-white py-12 px-6 border-t border-gray-200">
-        <div className="max-w-2xl mx-auto text-sm text-gray-600">
+        <div className="max-w-4xl mx-auto text-sm text-gray-600">
           <p>
             <strong>Disclaimer:</strong> This article is for educational purposes only and should not be construed as tax, legal, or financial advice. Tax withholding calculations depend on your specific income level, filing status, state of residence, number of dependents, and other factors not captured in simplified examples. The supplemental withholding rate of 22% is current as of 2026 but may change. Marginal tax rates, FICA thresholds, and tax bracket calculations are complex and vary by individual circumstance. Before adjusting your W-4 or making estimated tax payments, consult with a qualified tax professional or CPA who can analyze your complete compensation package and tax situation. This article does not address alternative minimum tax (AMT), net investment income tax, or other specialized tax rules that may apply. Farther does not provide tax advice and does not have authority to recommend specific withholding strategies.
           </p>

@@ -51,7 +51,7 @@ export default function TSMCRSUPage() {
 
  {/* Article Body */}
  <section className="bg-white py-16 px-6">
-  <div className="max-w-4xl mx-auto prose prose-lg max-w-none">
+  <div className="max-w-4xl mx-auto prose prose-lg">
 
   <AnimateOnScroll>
   <p className="text-[#5b6a71] text-xl leading-relaxed mb-8">

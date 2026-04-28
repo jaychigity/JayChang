@@ -74,7 +74,7 @@ export default function MicrochipTechnologyAdvisor() {
   <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
    RSUs for Engineers, Not Just Executives - and That Creates a Unique Planning Need.
   </h2>
-  <div className="prose prose-lg max-w-none text-gray-600 space-y-6">
+  <div className="prose prose-lg text-gray-600 space-y-6">
    <p>
    Microchip&apos;s &ldquo;evergreen&rdquo; grant program distributes RSUs broadly. This is unusual in semiconductor. Creates:
    </p>
@@ -99,7 +99,7 @@ export default function MicrochipTechnologyAdvisor() {
   <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
    Your Microchip RSUs May Be Worth Less Than You Expected. Here&apos;s How to Navigate That.
   </h2>
-  <div className="prose prose-lg max-w-none text-gray-600 space-y-6">
+  <div className="prose prose-lg text-gray-600 space-y-6">
    <p>
    The semiconductor cycle has shifted. Hold and wait for recovery? Sell on vest? Tax-loss harvesting opportunities? Grant renegotiation context?
    </p>

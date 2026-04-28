@@ -91,7 +91,7 @@ export default function TempeFinancialAdvisor() {
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
    A Neighbor Who Happens to Be a Financial Planner
    </h2>
-   <div className="prose prose-lg max-w-none text-[#5b6a71] font-sans space-y-4">
+   <div className="prose prose-lg text-[#5b6a71] font-sans space-y-4">
    <p>
    Tempe is where Arizona&apos;s tech and innovation scene comes together. Arizona State University keeps bringing in top engineering and computer science talent. Amkor Technology, one of the world&apos;s leading semiconductor assembly and test companies, is headquartered right here - which means Tempe is full of sharp engineers, operations leaders, and professionals building serious wealth.
    </p>

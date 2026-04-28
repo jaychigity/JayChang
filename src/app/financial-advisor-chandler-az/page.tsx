@@ -91,7 +91,7 @@ export default function ChandlerFinancialAdvisor() {
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
    We Speak Intel and Microchip - So You Don&apos;t Have to Explain Everything
    </h2>
-   <div className="prose prose-lg max-w-none text-[#5b6a71] font-sans space-y-4">
+   <div className="prose prose-lg text-[#5b6a71] font-sans space-y-4">
    <p>
    If you work at Intel, you know that SERPLUS isn&apos;t something most financial advisors have heard of. You&apos;ve got multi-year vesting schedules, specific tax planning windows, and a compensation structure that&apos;s genuinely different from other tech companies. Microchip Technology has its own equity plans with unique grant structures and timing considerations.
    </p>

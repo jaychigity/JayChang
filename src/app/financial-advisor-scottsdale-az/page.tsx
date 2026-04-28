@@ -91,7 +91,7 @@ export default function ScottsdaleFinancialAdvisor() {
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
    You&apos;re Great at What You Do - Let Us Handle the Financial Side
    </h2>
-   <div className="prose prose-lg max-w-none text-[#5b6a71] font-sans space-y-4">
+   <div className="prose prose-lg text-[#5b6a71] font-sans space-y-4">
    <p>
    We get it. You spent years in training or climbing the corporate ladder. Now you&apos;re earning really well - professionals at Mayo Clinic, Banner Health, Honor Health, and major Arizona corporations - but your financial plan hasn&apos;t kept up with your income. Maybe you&apos;re still using the same advisor you had when you started out, or maybe you don&apos;t have one at all.
    </p>

@@ -29,7 +29,7 @@ export default function QualifiedCharitableDistributionsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <section className="bg-[#F7F4EE] py-20 px-6">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <AnimateOnScroll>
             <h1 className="text-4xl font-bold mb-6 text-gray-900">Qualified Charitable Distributions: How Retirees Can Give Tax-Free Directly From Their IRA</h1>
             <p className="text-xl text-gray-700 mb-4">At 70.5+, give directly from your IRA to charity, reduce your taxable income, and avoid Medicare surcharges.</p>
@@ -41,7 +41,7 @@ export default function QualifiedCharitableDistributionsPage() {
       </section>
 
       <section className="bg-white py-16 px-6">
-        <div className="max-w-2xl mx-auto prose prose-lg">
+        <div className="max-w-4xl mx-auto prose prose-lg">
           <AnimateOnScroll>
             <h2>The QCD Advantage</h2>
             <p>
@@ -189,7 +189,7 @@ export default function QualifiedCharitableDistributionsPage() {
       </section>
 
       <section className="bg-[#333333] py-16 px-6">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           <AnimateOnScroll>
             <h2 className="text-2xl font-bold text-white mb-4">Retirees: Let&apos;s optimize your IRA strategy.</h2>
             <p className="text-gray-300 mb-8">We help retirees coordinate QCDs, RMDs, and charitable giving to minimize Medicare surcharges and taxes.</p>
@@ -201,7 +201,7 @@ export default function QualifiedCharitableDistributionsPage() {
       </section>
 
       <section className="bg-white py-12 px-6 border-t border-gray-200">
-        <div className="max-w-2xl mx-auto text-sm text-gray-600">
+        <div className="max-w-4xl mx-auto text-sm text-gray-600">
           <p>
             <strong>Disclaimer:</strong> This article is for educational purposes only and should not be construed as tax, legal, or financial advice. Tax laws are complex and individual circumstances vary. The QCD limits, IRMAA thresholds, and other tax rules described are based on 2026 law and may change. Coordination between QCDs, RMDs, Medicare premiums, and Social Security taxation requires careful analysis of your specific situation. Before executing any qualified charitable distribution, consult with a qualified tax professional or CPA familiar with your complete tax picture and IRA situation. The one-time charitable remainder trust provision has specific eligibility and coordination rules that require expert guidance. Farther does not provide tax advice and does not have authority to bind tax positions.
           </p>

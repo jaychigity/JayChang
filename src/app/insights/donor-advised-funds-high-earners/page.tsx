@@ -29,7 +29,7 @@ export default function DonorAdvisedFundsPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <section className="bg-[#F7F4EE] py-20 px-6">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <AnimateOnScroll>
             <h1 className="text-4xl font-bold mb-6 text-gray-900">Donor-Advised Funds: The Smartest Way High Earners Give to Charity</h1>
             <p className="text-xl text-gray-700 mb-4">Take your tax deduction immediately while giving to charities on your timeline.</p>
@@ -41,7 +41,7 @@ export default function DonorAdvisedFundsPage() {
       </section>
 
       <section className="bg-white py-16 px-6">
-        <div className="max-w-2xl mx-auto prose prose-lg">
+        <div className="max-w-4xl mx-auto prose prose-lg">
           <AnimateOnScroll>
             <h2>The Basic Structure</h2>
             <p>
@@ -140,7 +140,7 @@ export default function DonorAdvisedFundsPage() {
       </section>
 
       <section className="bg-[#333333] py-16 px-6">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           <AnimateOnScroll>
             <h2 className="text-2xl font-bold text-white mb-4">Ready to optimize your charitable giving?</h2>
             <p className="text-gray-300 mb-8">We help high earners align their taxes, investments, and giving strategy.</p>
@@ -152,7 +152,7 @@ export default function DonorAdvisedFundsPage() {
       </section>
 
       <section className="bg-white py-12 px-6 border-t border-gray-200">
-        <div className="max-w-2xl mx-auto text-sm text-gray-600">
+        <div className="max-w-4xl mx-auto text-sm text-gray-600">
           <p>
             <strong>Disclaimer:</strong> This article is for educational purposes only and should not be construed as financial, tax, or legal advice. Tax laws are complex and individual circumstances vary. Contributions to donor-advised funds may be subject to deduction limits, carryforward rules, and other restrictions that depend on your specific tax situation, income level, and charitable history. Before making any DAF contribution, consult with a qualified tax advisor or CPA familiar with your complete financial picture. Farther does not provide tax advice and does not have authority to bind tax positions. The strategies described here are for informational purposes and may not be appropriate for all investors.
           </p>

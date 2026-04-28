@@ -41,7 +41,7 @@ export default function ArizonaTaxPlanningPage() {
 
  {/* Article Body */}
  <article className="bg-white py-16 md:py-24">
-  <div className="max-w-4xl mx-auto px-4 md:px-6 prose prose-lg max-w-none">
+  <div className="max-w-4xl mx-auto px-4 md:px-6 prose prose-lg">
   <AnimateOnScroll>
   <section className="mb-12">
    <p className="text-lg text-[#5b6a71] leading-relaxed mb-6">

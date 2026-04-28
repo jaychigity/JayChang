@@ -46,7 +46,7 @@ export default function ExecutiveDeferredCompensation2026() {
 
         {/* Body Content */}
         <section className="w-full bg-white py-16 px-6 md:py-24">
-          <div className="max-w-3xl mx-auto prose prose-lg max-w-none">
+          <div className="max-w-3xl mx-auto prose prose-lg">
             <p className="text-gray-800 mb-6">
               It is May 2026. You work as an M7 executive at Raytheon Technologies (RTX). Your company offers a Compensation Deferral Plan (CDP) and a Performance Share Unit (PSU) deferral option. You earned $200,000 in base salary this year and have been allocated $400,000 in performance-contingent bonuses and PSUs.
             </p>

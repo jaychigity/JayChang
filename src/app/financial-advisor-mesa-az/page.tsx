@@ -91,7 +91,7 @@ export default function MesaFinancialAdvisor() {
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
    We Know Apple Comp - Because We Work with Apple People Every Day
    </h2>
-   <div className="prose prose-lg max-w-none text-[#5b6a71] font-sans space-y-4">
+   <div className="prose prose-lg text-[#5b6a71] font-sans space-y-4">
    <p>
    Apple&apos;s Mesa operations center employs thousands of skilled professionals across engineering, operations, logistics, and management. And Apple does compensation differently. Your RSUs vest twice a year (not quarterly like most tech companies), which means bigger, less frequent taxable events. Your 401(k) match gets better the longer you stay. Your ESPP has specific tax rules depending on how long you hold. And if you&apos;re senior enough, the Deferred Compensation Plan (DCP) adds another layer of decisions.
    </p>

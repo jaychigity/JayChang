@@ -91,7 +91,7 @@ export default function PhoenixFinancialAdvisor() {
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
    We Work with Phoenix Professionals Who Have Outgrown Generic Advice
    </h2>
-   <div className="prose prose-lg max-w-none text-[#5b6a71] font-sans space-y-4">
+   <div className="prose prose-lg text-[#5b6a71] font-sans space-y-4">
    <p>
    Here&apos;s what we see a lot in Phoenix: TSMC professionals with complex equity packages, Honeywell aerospace and defense professionals juggling stock options and relocation benefits, Freeport-McMoRan professionals managing concentrated positions, and Banner Health and Mayo Clinic professionals earning $400K-$800K+ who are too busy to optimize their own finances.
    </p>

@@ -46,7 +46,7 @@ export default function TenB5OnePlans() {
 
         {/* Body Content */}
         <section className="w-full bg-white py-16 px-6 md:py-24">
-          <div className="max-w-3xl mx-auto prose prose-lg max-w-none">
+          <div className="max-w-3xl mx-auto prose prose-lg">
             <p className="text-gray-800 mb-6">
               You are an executive at a major semiconductor company. Your role gives you access to material non-public information (MNPI) about upcoming earnings, product delays, or acquisition rumors. During quarterly blackout windows, you cannot trade company stock. But your compensation is 70% equity. You have $8 million in company stock. You need to diversify. A 10b5-1 plan allows you to do exactly this, legally.
             </p>

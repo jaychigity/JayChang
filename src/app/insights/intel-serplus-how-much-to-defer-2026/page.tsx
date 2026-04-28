@@ -29,7 +29,7 @@ export default function IntelSERPLUSPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <section className="bg-[#F7F4EE] py-20 px-6">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <AnimateOnScroll>
             <h1 className="text-4xl font-bold mb-6 text-gray-900">Intel SERPLUS in 2026: How Much Is Too Much to Defer Into an Unsecured Plan?</h1>
             <p className="text-xl text-gray-700 mb-4">The risk-reward calculus for nonqualified deferred comp has shifted. Here&apos;s how to decide.</p>
@@ -41,7 +41,7 @@ export default function IntelSERPLUSPage() {
       </section>
 
       <section className="bg-white py-16 px-6">
-        <div className="max-w-2xl mx-auto prose prose-lg">
+        <div className="max-w-4xl mx-auto prose prose-lg">
           <AnimateOnScroll>
             <h2>What Is SERPLUS?</h2>
             <p>
@@ -179,7 +179,7 @@ export default function IntelSERPLUSPage() {
       </section>
 
       <section className="bg-[#333333] py-16 px-6">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           <AnimateOnScroll>
             <h2 className="text-2xl font-bold text-white mb-4">Intel employees: Let&apos;s optimize your compensation strategy.</h2>
             <p className="text-gray-300 mb-8">We help Intel workers evaluate SERPLUS, mega backdoor Roth, RSU timing, and total compensation strategy.</p>
@@ -191,7 +191,7 @@ export default function IntelSERPLUSPage() {
       </section>
 
       <section className="bg-white py-12 px-6 border-t border-gray-200">
-        <div className="max-w-2xl mx-auto text-sm text-gray-600">
+        <div className="max-w-4xl mx-auto text-sm text-gray-600">
           <p>
             <strong>Disclaimer:</strong> This article is for educational purposes only and should not be construed as financial, tax, or investment advice. The analysis of Intel&apos;s financial position is based on publicly available information as of March 2026 and is subject to change. SERPLUS is a complex nonqualified deferred compensation plan with significant legal and tax implications that depend on your specific circumstances, vesting schedules, distribution elections, and tax situation. Before making any decision to defer compensation into SERPLUS or to modify existing SERPLUS elections, consult with a qualified tax professional, financial advisor, and possibly an employment law attorney familiar with nonqualified deferred comp plans. Credit risk analysis and company financial assessment requires professional judgment and is not within the scope of this article. Farther does not provide financial advice and does not have authority to recommend specific compensation strategies.
           </p>

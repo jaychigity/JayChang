@@ -47,7 +47,7 @@ export default function PSLFBannerHealth() {
 
         {/* Body Content */}
         <section className="w-full bg-white py-16 px-6 md:py-24">
-          <div className="max-w-3xl mx-auto prose prose-lg max-w-none">
+          <div className="max-w-3xl mx-auto prose prose-lg">
             <p className="text-gray-800 mb-6">
               You finished fellowship and joined Banner Health as an attending. Your student loans total $350,000 at a weighted average interest rate of 5.5%. Your annual salary is $420,000. Every month you make a $2,500 student loan payment from your paycheck. You put your head down and work.
             </p>

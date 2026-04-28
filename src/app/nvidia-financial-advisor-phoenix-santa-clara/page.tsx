@@ -112,7 +112,7 @@ export default function NVIDIAAdvisor() {
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
    You&apos;ve Built Amazing Wealth at NVIDIA. But Most of It Might Be Sitting in One Stock.
    </h2>
-   <div className="prose prose-lg max-w-none text-[#5b6a71] font-sans space-y-4">
+   <div className="prose prose-lg text-[#5b6a71] font-sans space-y-4">
    <p>
    NVIDIA&apos;s equity compensation has been life-changing for thousands of professionals. But here&apos;s the part that keeps us up at night for our clients: that wealth comes with hidden costs - concentration risk and tax complexity that most people don&apos;t fully grasp until they&apos;re staring at a $300K+ tax bill in April.
    </p>
@@ -142,7 +142,7 @@ export default function NVIDIAAdvisor() {
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
    Your ESPP Is Worth Way More Than the 15% Discount. Here&apos;s the Math.
    </h2>
-   <div className="prose prose-lg max-w-none text-[#5b6a71] font-sans space-y-4">
+   <div className="prose prose-lg text-[#5b6a71] font-sans space-y-4">
    <p>
    NVIDIA offers a 15% ESPP discount. That sounds good on its own - a guaranteed 15% gain. But the real magic is something most employees don&apos;t fully appreciate: the <strong>2-year lookback provision</strong>.
    </p>
@@ -172,7 +172,7 @@ export default function NVIDIAAdvisor() {
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
    NVIDIA Stock Has Been Incredible. But Having Everything in One Place? That&apos;s a Risk, Not a Strategy.
    </h2>
-   <div className="prose prose-lg max-w-none text-[#5b6a71] font-sans space-y-4">
+   <div className="prose prose-lg text-[#5b6a71] font-sans space-y-4">
    <p>
    Let&apos;s be real: NVIDIA has been an extraordinary wealth creator. If you&apos;ve held NVIDIA stock for years, congratulations - you made a great career choice. Nobody&apos;s questioning that.
    </p>
@@ -230,7 +230,7 @@ export default function NVIDIAAdvisor() {
    <h2 className="font-serif text-3xl md:text-4xl text-[#333333] mb-6">
    12+ Taxable Events a Year. And Most of Them Are Flying Under the Radar.
    </h2>
-   <div className="prose prose-lg max-w-none text-[#5b6a71] font-sans space-y-4">
+   <div className="prose prose-lg text-[#5b6a71] font-sans space-y-4">
    <p>
    NVIDIA RSUs vest quarterly. For most employees, that&apos;s 3-4 vesting events per year, sometimes more depending on grant schedules and promotions. Throw in ESPP contributions and bonuses, and you&apos;ve got taxable income popping up throughout the year in ways that are easy to lose track of.
    </p>

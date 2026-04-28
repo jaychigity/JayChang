@@ -29,7 +29,7 @@ export default function ArizonaCharitableCreditPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <section className="bg-[#F7F4EE] py-20 px-6">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <AnimateOnScroll>
             <h1 className="text-4xl font-bold mb-6 text-gray-900">The Arizona Charitable Tax Credit Most Residents Miss: $2,300 in Dollar-for-Dollar Credits</h1>
             <p className="text-xl text-gray-700 mb-4">Two state tax credits redirect up to $2,300 from your tax bill to charities and schools.</p>
@@ -41,7 +41,7 @@ export default function ArizonaCharitableCreditPage() {
       </section>
 
       <section className="bg-white py-16 px-6">
-        <div className="max-w-2xl mx-auto prose prose-lg">
+        <div className="max-w-4xl mx-auto prose prose-lg">
           <AnimateOnScroll>
             <h2>Arizona&apos;s Hidden Tax Credits</h2>
             <p>
@@ -164,7 +164,7 @@ export default function ArizonaCharitableCreditPage() {
       </section>
 
       <section className="bg-[#333333] py-16 px-6">
-        <div className="max-w-2xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           <AnimateOnScroll>
             <h2 className="text-2xl font-bold text-white mb-4">Arizona resident? Let&apos;s maximize your credits.</h2>
             <p className="text-gray-300 mb-8">We help Arizona high earners claim every tax benefit available, including these overlooked state credits.</p>
@@ -176,7 +176,7 @@ export default function ArizonaCharitableCreditPage() {
       </section>
 
       <section className="bg-white py-12 px-6 border-t border-gray-200">
-        <div className="max-w-2xl mx-auto text-sm text-gray-600">
+        <div className="max-w-4xl mx-auto text-sm text-gray-600">
           <p>
             <strong>Disclaimer:</strong> This article is for educational purposes only and should not be construed as tax, legal, or financial advice. Arizona tax law is complex and changes frequently. The credit amounts, limits, and eligible organizations described are based on 2026 rules but may change. Coordination between state and federal tax benefits can be intricate and depends on your specific tax situation. Before claiming any Arizona tax credit, verify the current status with the Arizona Department of Revenue or consult with a qualified tax professional. Donations must be made to certified organizations to qualify for credits - always verify certification status at azdor.gov before donating. Farther does not provide tax advice and does not have authority to bind tax positions.
           </p>

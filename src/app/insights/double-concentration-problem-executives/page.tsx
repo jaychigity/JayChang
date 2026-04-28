@@ -47,7 +47,7 @@ export default function DoubleConcentrationProblem() {
 
         {/* Body Content */}
         <section className="w-full bg-white py-16 px-6 md:py-24">
-          <div className="max-w-3xl mx-auto prose prose-lg max-w-none">
+          <div className="max-w-3xl mx-auto prose prose-lg">
             <p className="text-gray-800 mb-6">
               You are a Vice President at Freeport-McMoRan, one of the world&apos;s largest copper miners. Your annual salary is $500,000. Your bonus is typically $400,000 to $600,000, tied directly to copper prices and mine production. Your long-term incentives are another $600,000 to $1 million annually, vested in restricted stock units of FCX.
             </p>
