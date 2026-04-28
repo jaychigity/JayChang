@@ -800,7 +800,7 @@ export default function TaxSavingsCalculator() {
    toolName="CA-to-NV tax savings"
    variant="default"
    resultSummary={`Five-year savings versus California: ${formatCurrencyFull(Math.round(results.cumulative.saveVsAZ))} moving to Arizona, ${formatCurrencyFull(Math.round(results.cumulative.saveVsNV))} moving to Nevada. Establishing domicile cleanly is the part that determines whether the savings actually show up.`}
-   ctaLabel="Plan your relocation tax strategy with Jay →"
+   ctaLabel="Sequence the move"
    additionalContext="California tax calculations use 2026 progressive brackets (1%-13.3%); Arizona uses the current enacted 2.5% flat rate with a 25% long-term capital gains subtraction; Nevada reflects $0 state income tax. California Franchise Tax Board sourcing rules may continue to tax certain income (RSU vesting, deferred comp, CA-sourced business income) even after you establish out-of-state residency. Farther Finance, Inc. does not provide tax or legal advice."
   />
  </div>

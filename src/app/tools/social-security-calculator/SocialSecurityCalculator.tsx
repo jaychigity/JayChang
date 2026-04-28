@@ -1106,7 +1106,7 @@ export default function SocialSecurityCalculator() {
         toolName="Social Security"
         variant="default"
         resultSummary={`Claiming at ${claimAge} pencils to about $${fmt(monthly)}/month${breakEven ? `, with a break-even age near ${Math.round(breakEven)}` : ''}. The right age depends on your other income, your tax picture, and how long you and your spouse expect to live.`}
-        ctaLabel="Run the claiming math with Jay →"
+        ctaLabel="Decide the claiming age"
         additionalContext={`Social Security benefit calculations use SSA formulas and are approximations, and your actual benefit may differ based on your complete earnings history. Lifetime projections assume ${(cola * 100).toFixed(1)}% annual cost-of-living adjustments. IRMAA thresholds and earnings test limits are 2026 estimates. For your official benefit estimate, visit ssa.gov/myaccount.`}
       />
     </div>

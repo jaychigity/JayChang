@@ -279,7 +279,8 @@ The component renders:
 - The CTA must always point users to **Jay specifically**, never to a generic "financial professional"
 - Calculators are educational tools to *help* users think, never positioned as decision-making sources
 - **Always pass `resultSummary`** when the calculator has computed results. Interpolate the user's actual numbers into a one-line statement that reflects their situation (e.g., "Your portfolio runs out at age 86, four years short of your plan."). This converts ~3-5x better than generic CTAs.
-- **Always pass a tailored `ctaLabel`** that references the user's specific decision (e.g., "Plan a multi-year Roth strategy with Jay →"), not the generic default. Save the default for cases when the user hasn't entered enough inputs.
+- **Always pass a tailored `ctaLabel`** that references the user's specific decision (e.g., "Build the conversion ladder", "Sequence the move", "Capture every match dollar"), not the generic default. Save the default for cases when the user hasn't entered enough inputs.
+- **`ctaLabel` must NOT contain "with Jay" or "with me".** The disclaimer paragraph above the CTA already speaks in Jay's first person ("let's talk", "I'll look at your full picture"), so a "with Jay" CTA breaks voice mid-thought. Use a tailored action verb instead. Standalone CTAs that appear outside first-person body copy (header, footer, navigation, end-of-article banners, schedule pages) keep the "Schedule a conversation with Jay" pattern as the brand signature; that exemption does NOT extend to CTAs nested inside Jay-voice paragraphs.
 - Guard `resultSummary` with a null check if your `results` variable can be null (e.g., `results ? \`...\` : undefined`). The component handles `undefined` gracefully.
 - Component lives at `src/components/CalculatorDisclaimer.tsx`, update there for site-wide changes
 

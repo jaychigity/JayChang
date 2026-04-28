@@ -660,7 +660,7 @@ export default function FourOOneKProjectionCalculator() {
         toolName="401(k) projection"
         variant="default"
         resultSummary={results ? `Projected to ${fmt(results.projectedBalance)} by retirement, with about ${fmtMo(results.safeWithdrawalMonthly)}/month at a 4% safe withdrawal rate. Whether that funds the life you want is the harder question.` : undefined}
-        ctaLabel="Pressure-test this projection with Jay →"
+        ctaLabel="Connect this to your full plan"
         additionalContext="Projections assume a constant annual return and do not account for market volatility, fees, or changes in tax law. IRS contribution limits are updated annually. Always verify current limits at irs.gov before making contribution decisions."
       />
     </div>

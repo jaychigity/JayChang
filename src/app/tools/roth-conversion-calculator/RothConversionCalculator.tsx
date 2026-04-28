@@ -601,7 +601,7 @@ export default function RothConversionCalculator() {
         ? `Converting ${formatCurrencyFull(conversion)} costs ${formatCurrencyFull(Math.round(results.taxCost))} in tax now and projects ${formatCurrencyFull(Math.round(results.netBenefit))} more after-tax wealth over ${years} years. The right size of conversion depends on your bracket window.`
         : `Converting ${formatCurrencyFull(conversion)} costs ${formatCurrencyFull(Math.round(results.taxCost))} in tax now but the math runs against you under these assumptions. A smaller, multi-year conversion plan often changes the answer.`)
     : undefined}
-   ctaLabel="Plan a multi-year Roth strategy with Jay →"
+   ctaLabel="Build the conversion ladder"
    additionalContext={`Calculations use ${TAX_YEAR} federal income tax brackets and do not account for state and local taxes, deductions, credits, or other income sources not modeled here. Future tax law changes may significantly affect results. Tax-free Roth IRA withdrawals generally require the account to be open at least 5 years and the holder to be age 59½ or older; early withdrawals may be subject to taxes and a 10% penalty. Farther Finance Inc. is a registered investment adviser with the SEC; registration does not imply a certain level of skill or training. See our Form ADV Part 2A on the disclosures page.`}
   />
  </div>

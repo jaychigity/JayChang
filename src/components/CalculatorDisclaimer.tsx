@@ -63,11 +63,14 @@ export default function CalculatorDisclaimer({
   const headingClasses = isDark ? 'text-[#F7F4EE]' : 'text-[#333333]'
   const summaryClasses = isDark ? 'text-[#F7F4EE]' : 'text-[#1d7682]'
 
+  // Default CTAs deliberately avoid "with Jay" because the disclaimer paragraph
+  // above already speaks in Jay's first person ("let's talk", "I'll look at
+  // your full picture"). Tailored ctaLabels per calculator override this.
   const ctaText =
     ctaLabel ??
     (toolName
-      ? `Talk through your ${toolName} numbers with Jay →`
-      : 'Talk through your numbers with Jay →')
+      ? `Connect these ${toolName} numbers to your full plan →`
+      : 'Connect these numbers to your full plan →')
 
   return (
     <div className={`mt-10 rounded-lg p-6 md:p-8 ${containerClasses}`}>

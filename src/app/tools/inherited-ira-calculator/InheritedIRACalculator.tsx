@@ -982,7 +982,7 @@ export default function InheritedIRACalculator() {
             toolName="inherited IRA"
             variant="default"
             resultSummary={`Over your ${schedule.length}-year distribution window, you're projected to withdraw ${fmt(totalWithdrawn)} and pay ${fmt(totalTax)} in taxes, leaving ${fmt(totalAfterTax)} after tax. The right distribution strategy depends on your bracket, your other income, and what comes after this account.`}
-            ctaLabel="Plan a tax-aware distribution strategy with Jay →"
+            ctaLabel="Optimize the 10-year window"
             additionalContext={`RMD calculations use the ${TAX_YEAR} IRS Single Life Expectancy Table. State tax estimates are approximate.`}
           />
 

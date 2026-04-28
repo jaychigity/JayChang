@@ -1015,7 +1015,7 @@ export default function TVMCalculator() {
           toolName="time value of money"
           variant="default"
           resultSummary={`Your inputs project to ${formatCurrencyFull(Math.round(results.futureValue))} over ${timeHorizon} years. The harder question: what does this mean for your real life, taxes paid, taxes deferred, market volatility, and the goals attached to it.`}
-          ctaLabel="Connect this number to your full plan with Jay →"
+          ctaLabel="Connect this growth to your goals"
           additionalContext="Market correction scenarios are modeled as simplified single-event declines and do not capture duration, volatility, or partial recoveries. This tool does not account for taxes, inflation, investment fees, advisory fees, or other costs that would reduce actual returns. Farther Finance Inc. is a registered investment adviser with the SEC; registration does not imply a certain level of skill or training. See our Form ADV Part 2A on the disclosures page."
         />
       </div>

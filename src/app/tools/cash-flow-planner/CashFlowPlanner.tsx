@@ -735,7 +735,7 @@ export default function CashFlowPlanner() {
               resultSummary={depletionRow
                 ? `Your portfolio runs out at age ${depletionRow.age}, ${inputs.lifeExpectancy - depletionRow.age} years before the end of your plan. Closing that gap is exactly where planning earns its keep.`
                 : `Your portfolio sustains through age ${inputs.lifeExpectancy}, peaking at ${fmtFull(peakPortfolio)}. The next question is whether you can spend more, give more, or retire earlier.`}
-              ctaLabel="Walk through your cash flow plan with Jay →"
+              ctaLabel="Tighten the lifetime plan"
             />
           </div>
         </div>
