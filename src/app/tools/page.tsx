@@ -327,7 +327,7 @@ export default function ToolsPage() {
   lineHeight: 1.7,
   }}
   >
-  Each calculator is designed around a specific financial question I hear constantly from clients. Start with whichever one is most relevant to your situation right now. If you want help interpreting the results or building a plan around them, I offer a conversation, just clarity.
+  Each tool answers a specific question I hear from clients. Pick yours. Run the math. The number is the easy part. How to coordinate it across your accounts, when to act for tax efficiency, and how the next life event reshapes the answer, that&apos;s where I can help.
   </p>
   </div>
  </section>
