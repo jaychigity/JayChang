@@ -44,7 +44,7 @@ const relatedArticles = [
  readTime: '9 min read',
  },
  {
- slug: 'how-to-choose-cfp-las-vegas',
+ slug: 'how-to-choose-cfp-scottsdale',
  category: 'ADVISORY',
  title: 'How to Choose a Certified Financial Planner (CFP®) in Scottsdale',
  excerpt:

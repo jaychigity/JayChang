@@ -208,7 +208,7 @@ export default function InvestmentPhilosophyPage() {
        <div className="relative w-full max-w-md mx-auto lg:ml-auto rounded-lg overflow-hidden shadow-2xl">
         <Image
          src="/Photos/Investment Philosophy.png"
-         alt="Jay Chang, Wealth Advisor at Farther"
+         alt="Jay Chang, fiduciary wealth advisor"
          width={1721}
          height={1721}
          className="w-full h-auto"

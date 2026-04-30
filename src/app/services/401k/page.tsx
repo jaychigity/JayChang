@@ -162,7 +162,7 @@ export default function RetirementPlansPage() {
    <div className="rounded-[16px] aspect-[4/3] overflow-hidden relative">
    <Image
    src="/Photos/couple-planning-office.png"
-   alt="Business owners discussing 401(k) plan design and fiduciary retirement plan management with Farther"
+   alt="Business owners discussing 401(k) plan design and fiduciary retirement plan management"
    fill
    className="object-cover"
    sizes="(min-width: 1024px) 45vw, 100vw"

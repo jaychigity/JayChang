@@ -179,7 +179,7 @@ export default function TaxOptimizationPage() {
    <div className="rounded-[16px] overflow-hidden relative order-2 lg:order-1">
    <Image
    src="/Photos/legacy-portfolio.avif"
-   alt="Tax optimization strategy documents for high-net-worth families at Farther wealth management"
+   alt="Tax optimization strategy documents for high-net-worth families "
    width={1024}
    height={683}
    className="w-full h-auto"

@@ -76,11 +76,11 @@ const fakt = localFont({
 export const metadata: Metadata = {
  metadataBase: new URL('https://www.advisorjay.com'),
  title: {
- default: 'Advisor Jay | Farther | Scottsdale, Arizona Financial Advisor',
+ default: 'Advisor Jay | Scottsdale, Arizona Financial Advisor',
  template: '%s | Advisor Jay',
  },
  description:
- 'Personalized wealth management for families and business owners with $2M-$20M in investable assets. Serving Scottsdale, AZ and clients across Arizona, California, and Nevada. Powered by Farther\'s Intelligent Wealth Platform.',
+ 'Personalized wealth management for families and business owners with $2M-$20M in investable assets. Serving Scottsdale, AZ and clients across Arizona, California, and Nevada.',
  openGraph: {
  type: 'website',
  siteName: 'Advisor Jay',

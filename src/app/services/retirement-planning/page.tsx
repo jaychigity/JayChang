@@ -252,7 +252,7 @@ export default function RetirementPlanningPage() {
    <div className="rounded-[16px] aspect-[4/3] overflow-hidden relative">
    <Image
    src="/Photos/Jay-Planning-Couple.png"
-   alt="Retirement planning documents and tax forms used in Farther's comprehensive financial planning process"
+   alt="Retirement planning documents and tax forms used in a comprehensive financial planning process"
    fill
    className="object-cover"
    sizes="(min-width: 1024px) 45vw, 100vw"

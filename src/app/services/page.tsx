@@ -122,7 +122,7 @@ export default function ServicesPage() {
    <section className="relative bg-[#333333] pt-10 lg:pt-20 pb-16 lg:pb-20 px-4 sm:px-6 lg:px-8">
     <Image
      src="/Photos/Farther-Advisor.avif"
-     alt="Farther financial advisor"
+     alt="Fiduciary financial advisor"
      fill
      className="object-cover opacity-20"
      priority

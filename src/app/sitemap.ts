@@ -38,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Insights / blog
     { url: `${baseUrl}/insights`, lastModified: '2026-03-16', changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: `${baseUrl}/insights/family-office-vs-wealth-advisor`, lastModified: '2026-03-10', changeFrequency: 'monthly' as const, priority: 0.7 },
-    { url: `${baseUrl}/insights/how-to-choose-cfp-las-vegas`, lastModified: '2026-03-10', changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${baseUrl}/insights/how-to-choose-cfp-scottsdale`, lastModified: '2026-03-10', changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${baseUrl}/insights/tax-loss-harvesting-guide`, lastModified: '2026-03-10', changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${baseUrl}/insights/roth-conversion-strategies`, lastModified: '2026-03-10', changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${baseUrl}/insights/estate-planning-essentials`, lastModified: '2026-03-10', changeFrequency: 'monthly' as const, priority: 0.6 },

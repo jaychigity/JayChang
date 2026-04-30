@@ -123,7 +123,7 @@ export default function ContactPage() {
    <div className="w-[220px] h-[220px] rounded-full border-[3px] border-[#1d7682] mx-auto overflow-hidden relative">
    <Image
     src="/Photos/Jay-Office.png"
-    alt="Jay Chang, Senior Wealth Advisor at Farther serving Scottsdale and Arizona"
+    alt="Jay Chang, fiduciary wealth advisor serving Scottsdale and Arizona"
     fill
     className="object-cover object-top scale-125"
     sizes="220px"

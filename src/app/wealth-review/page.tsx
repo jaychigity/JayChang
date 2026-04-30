@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import HideChrome from '@/components/HideChrome'
 import WealthReviewForm from './WealthReviewForm'
 
@@ -25,17 +24,6 @@ export default function WealthReviewPage() {
       {/* Hero */}
       <section className="bg-[#333333] pt-[48px] pb-[48px] px-[20px] md:px-[40px]">
         <div className="max-w-[640px] mx-auto text-center">
-          {/* Farther logo */}
-          <Image
-            src="/Photos/Farther_Wordmark_RGB_Cream.png"
-            alt="Farther"
-            width={120}
-            height={31}
-            className="mx-auto mb-[40px] opacity-60"
-            style={{ objectFit: 'contain' }}
-            priority
-          />
-
           <h1 className="font-serif text-[32px] md:text-[44px] font-bold text-[#F7F4EE] mb-[16px] leading-tight">
             Get a Free Wealth Review from Jay
           </h1>

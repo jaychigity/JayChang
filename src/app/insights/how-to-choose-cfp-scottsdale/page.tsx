@@ -14,7 +14,7 @@ export const metadata: Metadata = {
  'Learn how to evaluate and choose a Certified Financial Planner (CFP®) in Scottsdale. Understand fiduciary standards, fee structures, Arizona-specific planning, and what questions to ask before hiring a CFP.',
  alternates: {
  canonical:
- 'https://www.advisorjay.com/insights/how-to-choose-cfp-las-vegas',
+ 'https://www.advisorjay.com/insights/how-to-choose-cfp-scottsdale',
  },
  openGraph: {
  title:
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
  description:
  'Learn how to evaluate and choose a Certified Financial Planner (CFP®) in Scottsdale. Understand fiduciary standards, fee structures, Arizona-specific planning, and what questions to ask before hiring a CFP.',
  type: 'article',
- url: 'https://www.advisorjay.com/insights/how-to-choose-cfp-las-vegas',
+ url: 'https://www.advisorjay.com/insights/how-to-choose-cfp-scottsdale',
  },
 }
 
@@ -56,7 +56,7 @@ const relatedArticles = [
 export default function HowToChooseCFPLasVegasPage() {
  return (
  <>
- <BreadcrumbSchema items={[{ name: 'Insights', href: '/insights' }, { name: 'How to Choose a CFP in Scottsdale', href: '/insights/how-to-choose-cfp-las-vegas' }]} />
+ <BreadcrumbSchema items={[{ name: 'Insights', href: '/insights' }, { name: 'How to Choose a CFP in Scottsdale', href: '/insights/how-to-choose-cfp-scottsdale' }]} />
  {/* Article JSON-LD */}
  <script
   type="application/ld+json"
@@ -84,7 +84,7 @@ export default function HowToChooseCFPLasVegasPage() {
   dateModified: '2026-03-01',
   mainEntityOfPage: {
    '@type': 'WebPage',
-   '@id': 'https://www.advisorjay.com/insights/how-to-choose-cfp-las-vegas',
+   '@id': 'https://www.advisorjay.com/insights/how-to-choose-cfp-scottsdale',
   },
   description:
    'Learn how to evaluate and choose a Certified Financial Planner (CFP®) in Scottsdale. Understand fiduciary standards, fee structures, Arizona-specific planning, and what questions to ask before hiring a CFP.',

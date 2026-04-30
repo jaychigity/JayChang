@@ -221,7 +221,7 @@ export default function FinancialPlanningPage() {
    <div className="rounded-[16px] aspect-[4/3] overflow-hidden relative">
    <Image
    src="/Photos/home-buying.png"
-   alt="Family celebrating a financial milestone achieved through comprehensive wealth planning at Farther"
+   alt="Family celebrating a financial milestone achieved through comprehensive wealth planning"
    fill
    className="object-cover"
    sizes="(min-width: 1024px) 45vw, 100vw"

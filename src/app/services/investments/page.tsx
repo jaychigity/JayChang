@@ -219,7 +219,7 @@ export default function InvestmentsPage() {
    <div className="relative rounded-[12px] overflow-hidden">
    <Image
    src="/Photos/Investment Mangement.png"
-   alt="Farther advisor reviewing a tax-optimized investment portfolio with a high-net-worth client"
+   alt="Wealth advisor reviewing a tax-optimized investment portfolio with a high-net-worth client"
    width={2518}
    height={1510}
    className="w-full h-auto object-center"

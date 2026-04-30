@@ -231,7 +231,7 @@ export default function TrustEstatePlanningPage() {
    <div className="rounded-[16px] overflow-hidden relative">
    <Image
    src="/Photos/Legacy & Estate Planning for Generational Wealth.png"
-   alt="Farther wealth advisor reviewing trust and estate planning documents for a high-net-worth family"
+   alt="Wealth advisor reviewing trust and estate planning documents for a high-net-worth family"
    width={2752}
    height={1536}
    className="w-full h-auto"

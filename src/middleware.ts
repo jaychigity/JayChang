@@ -10,6 +10,7 @@ const REDIRECTS: Record<string, string> = {
   '/tools/retirement-readiness': '/tools/retirement-savings-calculator',
   '/tools/roth-conversion': '/tools/roth-conversion-calculator',
   '/tools/business-exit-scorecard': '/tools/business-exit-planning-calculator',
+  '/insights/how-to-choose-cfp-las-vegas': '/insights/how-to-choose-cfp-scottsdale',
 }
 
 export function middleware(request: NextRequest) {
@@ -32,5 +33,6 @@ export const config = {
     '/tools/retirement-readiness',
     '/tools/roth-conversion',
     '/tools/business-exit-scorecard',
+    '/insights/how-to-choose-cfp-las-vegas',
   ],
 }

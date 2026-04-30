@@ -26,17 +26,6 @@ export default function FourOneKReviewPage() {
       {/* Hero */}
       <section className="bg-[#333333] pt-[48px] pb-[48px] px-[20px] md:px-[40px]">
         <div className="max-w-[720px] mx-auto text-center">
-          {/* Farther logo */}
-          <Image
-            src="/Photos/Farther_Wordmark_RGB_Cream.png"
-            alt="Farther"
-            width={120}
-            height={31}
-            className="mx-auto mb-[32px] opacity-60"
-            style={{ objectFit: 'contain' }}
-            priority
-          />
-
           <p className="font-sans text-[12px] font-semibold uppercase tracking-[0.15em] text-[#1d7682] mb-4">
             401(k) Planning Tool
           </p>
