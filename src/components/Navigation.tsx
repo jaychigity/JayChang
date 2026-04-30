@@ -4,7 +4,6 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
-import Image from "next/image";
 
 
 type NavItem = {
@@ -362,17 +361,34 @@ export default function Navigation() {
           {/* Logo */}
           <Link
             href="/"
-            style={{ textDecoration: "none", flexShrink: 0, display: "flex", alignItems: "center" }}
-            aria-label="Advisor Jay - Home"
+            style={{ textDecoration: "none", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "flex-start", lineHeight: 1 }}
+            aria-label="Advisor Jay powered by Farther - Home"
           >
-            <Image
-              src="/Photos/Farther Focus light.png"
-              alt="Farther Focus Team"
-              width={140}
-              height={42}
-              style={{ objectFit: "contain" }}
-              priority
-            />
+            <span
+              style={{
+                fontFamily: "var(--font-serif), Georgia, serif",
+                fontSize: 30,
+                fontWeight: 700,
+                color: "#F7F4EE",
+                letterSpacing: "-0.01em",
+                lineHeight: 1,
+              }}
+            >
+              Advisor Jay
+            </span>
+            <span
+              style={{
+                fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif",
+                fontSize: 11,
+                fontWeight: 400,
+                color: "rgba(247, 244, 238, 0.65)",
+                marginTop: 5,
+                letterSpacing: "0.02em",
+              }}
+            >
+              powered by{" "}
+              <span style={{ color: "#1d7682", fontWeight: 600 }}>Farther</span>
+            </span>
           </Link>
 
           {/* Desktop Nav Links */}
@@ -481,17 +497,35 @@ export default function Navigation() {
         >
           <Link
             href="/"
-            style={{ textDecoration: "none", display: "flex", alignItems: "center" }}
+            style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "flex-start", lineHeight: 1 }}
             onClick={() => setMobileMenuOpen(false)}
-            aria-label="Advisor Jay - Home"
+            aria-label="Advisor Jay powered by Farther - Home"
           >
-            <Image
-              src="/Photos/Farther Focus light.png"
-              alt="Farther Focus Team"
-              width={120}
-              height={36}
-              style={{ objectFit: "contain" }}
-            />
+            <span
+              style={{
+                fontFamily: "var(--font-serif), Georgia, serif",
+                fontSize: 26,
+                fontWeight: 700,
+                color: "#F7F4EE",
+                letterSpacing: "-0.01em",
+                lineHeight: 1,
+              }}
+            >
+              Advisor Jay
+            </span>
+            <span
+              style={{
+                fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif",
+                fontSize: 10,
+                fontWeight: 400,
+                color: "rgba(247, 244, 238, 0.65)",
+                marginTop: 4,
+                letterSpacing: "0.02em",
+              }}
+            >
+              powered by{" "}
+              <span style={{ color: "#1d7682", fontWeight: 600 }}>Farther</span>
+            </span>
           </Link>
 
           <button

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -23,14 +22,36 @@ export default function Footer() {
         >
           {/* Column 1: Logo + Mission */}
           <div>
-            <Link href="/" style={{ textDecoration: "none", display: "block", marginLeft: -6 }}>
-              <Image
-                src="/Photos/Farther_Wordmark_RGB_Cream.png"
-                alt="Farther"
-                width={140}
-                height={36}
-                style={{ objectFit: "contain", display: "block" }}
-              />
+            <Link
+              href="/"
+              style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "flex-start", lineHeight: 1 }}
+              aria-label="Advisor Jay powered by Farther - Home"
+            >
+              <span
+                style={{
+                  fontFamily: "var(--font-serif), Georgia, serif",
+                  fontSize: 30,
+                  fontWeight: 700,
+                  color: "#F7F4EE",
+                  letterSpacing: "-0.01em",
+                  lineHeight: 1,
+                }}
+              >
+                Advisor Jay
+              </span>
+              <span
+                style={{
+                  fontFamily: "'Inter', 'Helvetica Neue', Arial, sans-serif",
+                  fontSize: 11,
+                  fontWeight: 400,
+                  color: "rgba(247, 244, 238, 0.65)",
+                  marginTop: 5,
+                  letterSpacing: "0.02em",
+                }}
+              >
+                powered by{" "}
+                <span style={{ color: "#1d7682", fontWeight: 600 }}>Farther</span>
+              </span>
             </Link>
 
             <p
