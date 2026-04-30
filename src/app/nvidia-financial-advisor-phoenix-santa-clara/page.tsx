@@ -20,7 +20,6 @@ export const metadata: Metadata = {
 
 export default function NVIDIAAdvisor() {
  const trustLogos = [
- { name: 'CFP Board', description: 'Certified Financial Planner' },
  { name: 'SEC', description: 'Registered Investment Advisor' },
  { name: 'FINRA', description: 'Member Firm' },
  ];
@@ -283,7 +282,7 @@ export default function NVIDIAAdvisor() {
  <section className="bg-[#F7F4EE] py-12 md:py-16 border-t border-gray-200">
   <div className="max-w-6xl mx-auto px-4 md:px-8">
   <AnimateOnScroll>
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
    {trustLogos.map((item, index) => (
    <div key={index} className="text-center">
    <p className="font-sans font-semibold text-[#333333] text-lg mb-2">
@@ -297,7 +296,7 @@ export default function NVIDIAAdvisor() {
   </div>
   <div className="mt-8 pt-8 border-t border-gray-300 text-center">
    <p className="font-sans text-xs text-[#5b6a71]">
-   Jay Chang is a Certified Financial Planner™ and registered investment advisor fiduciary. This content is educational and not investment advice.
+   Jay Chang is a fiduciary wealth advisor and registered investment advisor representative. This content is educational and not investment advice.
    </p>
   </div>
   </AnimateOnScroll>

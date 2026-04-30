@@ -434,7 +434,7 @@ export default function PhysicianWealthManagementPhoenixScottsdale() {
    Trusted by Physicians
    </p>
    <p className="font-sans text-[#5b6a71]">
-   Jay Chang is a CFP® professional and fiduciary advisor specializing in physician wealth management. Your
+   Jay Chang is a fiduciary wealth advisor specializing in physician wealth management. Your
    financial strategy comes first.
    </p>
   </div>
