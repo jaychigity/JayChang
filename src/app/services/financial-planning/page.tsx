@@ -506,8 +506,11 @@ export default function FinancialPlanningPage() {
   </div>
   </AnimateOnScroll>
   <p className="font-sans text-caption text-[#F7F4EE]/50 italic mt-10">
-  Financial projections are based on assumptions that may not reflect
-  actual future conditions; results may vary.
+  Financial projections shown are illustrative and based on assumptions
+  that may not reflect actual future conditions. They are not guarantees
+  of performance. Market volatility, inflation, tax law changes, and
+  individual circumstances will affect actual results. See our Form
+  ADV Part 2A for full risk disclosures.
   </p>
   </div>
  </section>

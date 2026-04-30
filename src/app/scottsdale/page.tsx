@@ -120,8 +120,7 @@ const faqSchema = {
 
 const stats = [
  { value: '4.2M', description: 'People calling Greater Phoenix home' },
- { value: '$150K-$800K+', description: 'What our clients typically earn in total comp' },
- { value: '15B+', description: 'Assets managed across Farther\'s platform' },
+ { value: '$150K-$800K+', description: 'What my clients typically earn in total comp' },
  { value: '0%', description: 'Arizona state income tax - yes, really' },
 ]
 

@@ -67,7 +67,7 @@ export default function Footer() {
             >
               I help families, professionals, and business owners build
               financial plans that actually make sense for their lives. Jay Chang,
-              VP, Wealth Advisor at Farther Finance, Inc., an independent,
+              VP, Wealth Advisor at Farther Finance Advisors LLC, an independent,
               SEC-registered investment adviser.
             </p>
 
