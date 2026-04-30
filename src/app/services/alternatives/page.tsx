@@ -10,7 +10,7 @@ import { ChevronDown } from 'lucide-react'
 export const metadata: Metadata = {
  title: 'Private Equity & Alternative Investments for High-Net-Worth Families | Advisor Jay',
  description:
- 'Get access to private equity, venture capital, private credit, and hedge fund strategies that used to be reserved for the ultra-wealthy. Advisor Jay Chang at Farther.',
+ 'Get access to private equity, venture capital, private credit, and hedge fund strategies that used to be reserved for the ultra-wealthy.',
  alternates: { canonical: 'https://www.advisorjay.com/services/alternatives' },
  openGraph: {
  title: 'Private Equity & Alternative Investments for High-Net-Worth Families | Advisor Jay',

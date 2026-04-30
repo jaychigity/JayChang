@@ -20,7 +20,7 @@ import Button from '@/components/Button'
 export const metadata: Metadata = {
  title: 'Financial Advisor for Arizona Engineers, Executives & Doctors | Jay Chang',
  description:
-  `Financial planning and wealth management for high-income professionals at TSMC, Intel, Honeywell, Banner Health, and other top Arizona employers. We help people earning $150K-$800K+ keep more of what they earn. Jay Chang at Farther.`,
+  `Financial planning and wealth management for high-income professionals at TSMC, Intel, Honeywell, Banner Health, and other top Arizona employers. I help people earning $150K-$800K+ keep more of what they earn.`,
  alternates: { canonical: 'https://www.advisorjay.com/scottsdale' },
  openGraph: {
   title: `Financial Advisor for Arizona's Top Earners | Jay Chang`,
@@ -270,7 +270,7 @@ export default function ScottsdalePage() {
 
       <AnimateOnScroll delay={200}>
        <p className="font-sans text-[19px] text-[#F7F4EE]/90 mt-5 max-w-[540px] leading-relaxed">
-        You&apos;ve worked hard to get where you are at one of Arizona&apos;s top companies. Now let&apos;s make sure your money is working just as hard. Jay Chang and our team at Farther help high-income professionals across the Valley turn complicated compensation into real, lasting wealth - together.
+        You&apos;ve worked hard to get where you are at one of Arizona&apos;s top companies. Now let&apos;s make sure your money is working just as hard. I help high-income professionals across the Valley turn complicated compensation into real, lasting wealth - together.
        </p>
       </AnimateOnScroll>
 

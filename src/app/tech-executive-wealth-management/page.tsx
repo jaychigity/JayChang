@@ -4,7 +4,7 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 
 export const metadata: Metadata = {
- title: 'Tech Executive Wealth Management | NVIDIA & Apple Equity Planning | Advisor Jay, Farther',
+ title: 'Tech Executive Wealth Management | NVIDIA & Apple Equity Planning | Advisor Jay',
  description: 'Wealth management for NVIDIA and Apple professionals. We help with seven-figure RSU concentration, ESPP optimization, quarterly vesting tax planning, and Deferred Compensation strategy for tech professionals in Arizona and California.',
  alternates: {
  canonical: 'https://www.advisorjay.com/tech-executive-wealth-management',

@@ -14,14 +14,14 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
- title: 'How We Help You With Money, Taxes & Retirement | Jay Chang, Farther',
+ title: 'How We Help You With Money, Taxes & Retirement | Advisor Jay',
  description:
-  'We help engineers, doctors, and executives in Arizona figure out the big financial questions: how to handle stock options, lower your tax bill, plan for retirement, protect your family, and actually enjoy the money you work so hard for. Jay Chang and team at Farther.',
+  'We help engineers, doctors, and executives in Arizona figure out the big financial questions: how to handle stock options, lower your tax bill, plan for retirement, protect your family, and actually enjoy the money you work so hard for. Independent fiduciary advice from Jay Chang.',
  alternates: { canonical: 'https://www.advisorjay.com/services' },
  openGraph: {
-  title: 'How We Help You With Money, Taxes & Retirement | Jay Chang, Farther',
+  title: 'How We Help You With Money, Taxes & Retirement | Advisor Jay',
   description:
-   'We help engineers, doctors, and executives in Arizona figure out the big financial questions, including how to handle stock options, lower your tax bill, plan for retirement, protect your family, and actually enjoy the money you work so hard for. Jay Chang and team at Farther.',
+   'We help engineers, doctors, and executives in Arizona figure out the big financial questions, including how to handle stock options, lower your tax bill, plan for retirement, protect your family, and actually enjoy the money you work so hard for. Independent fiduciary advice from Jay Chang.',
   url: 'https://www.advisorjay.com/services',
  },
 }

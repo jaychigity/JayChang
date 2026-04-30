@@ -7,7 +7,7 @@ import SectionEyebrow from '@/components/SectionEyebrow';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
- title: 'Telecommunications & Utilities Wealth Management | AT&T, Verizon, T-Mobile, SRP, PG&E | Advisor Jay, Farther',
+ title: 'Telecommunications & Utilities Wealth Management | AT&T, Verizon, T-Mobile, SRP, PG&E | Advisor Jay',
  description: 'Fiduciary financial planning for telecom and utility professionals at AT&T, Verizon, T-Mobile, SRP, and PG&E. I understand your pension, deferred comp, employer stock concentration, union benefits, and retirement timing decisions.',
  alternates: {
  canonical: 'https://www.advisorjay.com/telecommunications-utilities-wealth-management',
@@ -86,7 +86,7 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
    <p className="text-lg leading-relaxed text-[#333333]">
    The work is mapping all of that and walking through the decisions in the order they need to be made.
    </p>
-   <p className="mt-6 font-semibold text-[#1d7682]"> - Jay Chang, Farther</p>
+   <p className="mt-6 font-semibold text-[#1d7682]"> - Jay Chang, VP, Wealth Advisor</p>
   </div>
   </AnimateOnScroll>
   </div>

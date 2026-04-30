@@ -3,14 +3,14 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 
 export const metadata: Metadata = {
- title: 'Financial Advisor in Chandler, AZ | Intel & Microchip Employee Specialist | Advisor Jay, Farther',
+ title: 'Financial Advisor in Chandler, AZ | Intel & Microchip Employee Specialist | Advisor Jay',
  description: 'Fiduciary financial advisor serving Intel and Microchip Technology employees in Chandler, Arizona. RSU planning, SERPLUS guidance, mega backdoor Roth, and ESPP strategy for semiconductor professionals.',
  alternates: {
  canonical: 'https://www.advisorjay.com/financial-advisor-chandler-az',
  },
  robots: 'index, follow',
  openGraph: {
- title: 'Financial Advisor in Chandler, AZ | Intel & Microchip Employee Specialist | Advisor Jay, Farther',
+ title: 'Financial Advisor in Chandler, AZ | Intel & Microchip Employee Specialist | Advisor Jay',
  description: 'Fiduciary financial advisor serving Intel and Microchip Technology employees in Chandler, Arizona. RSU planning, SERPLUS guidance, mega backdoor Roth, and ESPP strategy.',
  type: 'website',
  url: 'https://www.advisorjay.com/financial-advisor-chandler-az',
@@ -27,7 +27,7 @@ export default function ChandlerFinancialAdvisor() {
  const localBusinessSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Advisor Jay, Farther',
+ name: 'Advisor Jay',
  description: 'Fiduciary financial advisor serving Intel and Microchip Technology employees in Chandler, Arizona',
  url: 'https://www.advisorjay.com/financial-advisor-chandler-az',
  areaServed: [
@@ -99,7 +99,7 @@ export default function ChandlerFinancialAdvisor() {
    And if you&apos;re one of the many Chandler professionals who relocated from California? There&apos;s a whole layer of capital gains complexity and state tax savings that most people don&apos;t fully capture. We see it all the time - smart people leaving real money on the table simply because nobody showed them what was possible.
    </p>
    <p>
-   Jay Chang and our team at Farther work with Intel and Microchip employees every day. We understand RSU vesting, ESPP optimization, SERPLUS mechanics, mega backdoor Roth strategies, and how to plan tax-efficient relocations. We&apos;re not going to waste your time asking what an RSU is - we&apos;ll jump straight into what matters for your specific situation.
+   I work with Intel and Microchip employees every day. I understand RSU vesting, ESPP optimization, SERPLUS mechanics, mega backdoor Roth strategies, and how to plan tax-efficient relocations. I&apos;m not going to waste your time asking what an RSU is - I&apos;ll jump straight into what matters for your specific situation.
    </p>
    </div>
   </div>
@@ -157,7 +157,7 @@ export default function ChandlerFinancialAdvisor() {
    Your Equity Comp Deserves a Plan That Matches
   </h2>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   Jay Chang and our team at Farther know Intel and Microchip Technology compensation inside and out. We&apos;re here to help you keep more of what you&apos;ve earned and build toward the future you actually want.
+   I know Intel and Microchip Technology compensation inside and out. I&apos;m here to help you keep more of what you&apos;ve earned and build toward the future you actually want.
   </p>
   <Button
    href="/schedule-consultation"

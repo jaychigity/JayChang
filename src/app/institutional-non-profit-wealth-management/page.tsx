@@ -6,7 +6,7 @@ import SectionEyebrow from '@/components/SectionEyebrow';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
- title: 'Institutional & Non-Profit Wealth Management | Endowments, Foundations & Charitable Portfolios | Advisor Jay, Farther',
+ title: 'Institutional & Non-Profit Wealth Management | Endowments, Foundations & Charitable Portfolios | Advisor Jay',
  description: 'Fiduciary investment management for endowments, foundation assets, institutional portfolios, and charitable organizations. I help non-profits and institutions align their investments with their mission while maintaining fiduciary accountability.',
  alternates: {
  canonical: 'https://www.advisorjay.com/institutional-non-profit-wealth-management',
@@ -84,7 +84,7 @@ export default function InstitutionalNonProfitWealthManagement() {
     <p className="text-lg leading-relaxed text-[#333333]">
     Behind the relationship sits Farther&apos;s institutional infrastructure: research, manager access, and operational support. The combination is meant to look more like an outsourced CIO than a model-portfolio account.
     </p>
-    <p className="mt-6 font-semibold text-[#1d7682]"> - Jay Chang, Farther</p>
+    <p className="mt-6 font-semibold text-[#1d7682]"> - Jay Chang, VP, Wealth Advisor</p>
    </div>
    </AnimateOnScroll>
   </div>

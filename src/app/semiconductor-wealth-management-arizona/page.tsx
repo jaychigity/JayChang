@@ -6,7 +6,7 @@ import SectionEyebrow from '@/components/SectionEyebrow';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
- title: 'Semiconductor & Tech Wealth Management in Arizona | RSU, SERPLUS & Equity Planning | Advisor Jay, Farther',
+ title: 'Semiconductor & Tech Wealth Management in Arizona | RSU, SERPLUS & Equity Planning | Advisor Jay',
  description: 'Fiduciary wealth management for semiconductor and tech professionals at TSMC, Intel, NVIDIA, Apple, Microchip, and Amkor in Arizona. I know your benefits, your equity plans, and the financial complexity your career creates.',
  alternates: {
  canonical: 'https://www.advisorjay.com/semiconductor-wealth-management-arizona',
@@ -91,7 +91,7 @@ export default function SemiconductorWealthManagementArizona() {
    The questions that come up most are concentration risk, deferred-comp limits, and the cash-flow reality of holding a single name through a volatile sector. The right answer is different for each person and each balance sheet, and that&apos;s where the work happens.
    </p>
    <footer className="text-base not-italic font-semibold text-[#333333] mt-6">
-   - Jay Chang, Farther
+   - Jay Chang, VP, Wealth Advisor
    </footer>
   </blockquote>
   </div>

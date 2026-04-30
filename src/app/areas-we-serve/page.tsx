@@ -21,7 +21,7 @@ export default function AreasWeServe() {
    '@context': 'https://schema.org',
    '@type': 'FinancialService',
    name: 'Advisor Jay - Areas Served',
-   description: 'Jay Chang serves high-income professionals and families across Phoenix, Chandler, Scottsdale, Tempe, Mesa, Tucson, the Bay Area, and Nevada. Fiduciary wealth management through Farther.',
+   description: 'Jay Chang serves high-income professionals and families across Phoenix, Chandler, Scottsdale, Tempe, Mesa, Tucson, the Bay Area, and Nevada. Fiduciary, fee-only wealth management.',
    url: 'https://www.advisorjay.com/areas-we-serve',
    areaServed: [
    { '@type': 'State', name: 'Arizona' },
@@ -248,7 +248,7 @@ export default function AreasWeServe() {
    We Work with Clients Nationwide, Too
   </h2>
   <p className="text-xl text-[#5b6a71] mb-8">
-   Farther&apos;s platform lets us serve clients anywhere we&apos;re registered. If you&apos;re dealing with complex equity compensation, high income, or benefits that need a careful eye - Jay and our team may be the right fit no matter where you call home.
+   The institutional platform lets me serve clients anywhere I&apos;m registered. If you&apos;re dealing with complex equity compensation, high income, or benefits that need a careful eye - I may be the right fit no matter where you call home.
   </p>
   </AnimateOnScroll>
   </div>

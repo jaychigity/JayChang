@@ -3,15 +3,15 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 
 export const metadata: Metadata = {
- title: 'Financial Advisor in Tempe, AZ | Advisor Jay, Farther | Fiduciary Wealth Management',
- description: 'Jay Chang is a fiduciary financial advisor based in Tempe, Arizona at Farther. Serving engineers, physicians, and executives across the East Valley with comprehensive, technology-powered wealth management.',
+ title: 'Financial Advisor in Tempe, AZ | Advisor Jay | Fiduciary Wealth Management',
+ description: 'Jay Chang is a fiduciary financial advisor based in Tempe, Arizona. Serving engineers, physicians, and executives across the East Valley with comprehensive, technology-powered wealth management.',
  alternates: {
  canonical: 'https://www.advisorjay.com/financial-advisor-tempe-az',
  },
  robots: 'index, follow',
  openGraph: {
- title: 'Financial Advisor in Tempe, AZ | Advisor Jay, Farther | Fiduciary Wealth Management',
- description: 'Jay Chang is a fiduciary financial advisor based in Tempe, Arizona at Farther. Serving engineers, physicians, and executives across the East Valley.',
+ title: 'Financial Advisor in Tempe, AZ | Advisor Jay | Fiduciary Wealth Management',
+ description: 'Jay Chang is a fiduciary financial advisor based in Tempe, Arizona. Serving engineers, physicians, and executives across the East Valley.',
  type: 'website',
  url: 'https://www.advisorjay.com/financial-advisor-tempe-az',
  },
@@ -27,7 +27,7 @@ export default function TempeFinancialAdvisor() {
  const localBusinessSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Advisor Jay, Farther',
+ name: 'Advisor Jay',
  description: 'Fiduciary financial advisor based in Tempe, Arizona serving engineers, physicians, and executives',
  url: 'https://www.advisorjay.com/financial-advisor-tempe-az',
  areaServed: [
@@ -70,7 +70,7 @@ export default function TempeFinancialAdvisor() {
    Your Financial Advisor in Tempe, Arizona
    </h1>
    <p className="font-sans text-lg md:text-xl text-[#5b6a71] mb-8 max-w-3xl mx-auto leading-relaxed">
-   This is home base. Jay lives and works in Tempe, right in the middle of the ASU tech ecosystem and just down the road from Amkor Technology&apos;s headquarters. As VP, Wealth Advisor at Farther, he and our team serve clients from Chandler to Scottsdale to North Phoenix - and we&apos;d love to meet you.
+   This is home base. I live and work in Tempe, right in the middle of the ASU tech ecosystem and just down the road from Amkor Technology&apos;s headquarters. As a fiduciary wealth advisor, I serve clients from Chandler to Scottsdale to North Phoenix - and I&apos;d love to meet you.
    </p>
    <Button
    href="/schedule-consultation"
@@ -157,7 +157,7 @@ export default function TempeFinancialAdvisor() {
    We&apos;re Right Here in Tempe - Let&apos;s Connect
   </h2>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   Working with Jay Chang and our team at Farther means you get a local fiduciary advisor who understands the real challenges East Valley professionals face. We&apos;re your neighbors, and we&apos;re here to help.
+   Working with me means you get a local fiduciary advisor who understands the real challenges East Valley professionals face. I&apos;m your neighbor, and I&apos;m here to help.
   </p>
   <Button
    href="/schedule-consultation"

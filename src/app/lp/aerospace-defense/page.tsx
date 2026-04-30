@@ -198,7 +198,7 @@ export default function AerospaceDefenseLP() {
    VP, Wealth Advisor
   </p>
   <p className="font-sans text-[16px] text-[#5b6a71] leading-relaxed mt-6">
-   Jay and our team work with long-career professionals who need someone to help coordinate pensions, deferred comp, and employer equity into one coherent plan. He genuinely enjoys the puzzle of aerospace and defense benefits - and he&apos;ll make sure your retirement plan reflects the disciplined career you&apos;ve built.
+   I work with long-career professionals who need someone to help coordinate pensions, deferred comp, and employer equity into one coherent plan. I genuinely enjoy the puzzle of aerospace and defense benefits - and I&apos;ll make sure your retirement plan reflects the disciplined career you&apos;ve built.
   </p>
   </AnimateOnScroll>
   </div>

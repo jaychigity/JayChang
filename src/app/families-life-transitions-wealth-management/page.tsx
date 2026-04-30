@@ -6,7 +6,7 @@ import SectionEyebrow from '@/components/SectionEyebrow';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
- title: 'Families & Life Transitions Wealth Management | Divorce, Widowhood, Inheritance & Retirement | Advisor Jay, Farther',
+ title: 'Families & Life Transitions Wealth Management | Divorce, Widowhood, Inheritance & Retirement | Advisor Jay',
  description: 'Compassionate, fiduciary financial planning for families navigating divorce, loss of a spouse, inheritance, retirement transitions, and legacy protection. I help you find clarity when life changes everything.',
  alternates: {
  canonical: 'https://www.advisorjay.com/families-life-transitions-wealth-management',
@@ -84,7 +84,7 @@ export default function FamiliesLifeTransitionsWealthManagement() {
    <p className="text-lg leading-relaxed text-[#333333]">
    My job in these moments is to take the financial pieces off your plate where I can, and to walk through the ones you have to make yourself.
    </p>
-   <p className="mt-6 font-semibold text-[#1d7682]"> - Jay Chang, Farther</p>
+   <p className="mt-6 font-semibold text-[#1d7682]"> - Jay Chang, VP, Wealth Advisor</p>
   </div>
   </AnimateOnScroll>
   </div>

@@ -6,7 +6,7 @@ import SectionEyebrow from '@/components/SectionEyebrow';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
- title: 'Physician & Executive Wealth Management in Phoenix & Scottsdale | Banner Health, Mayo Clinic & Corporate Leaders | Advisor Jay, Farther',
+ title: 'Physician & Executive Wealth Management in Phoenix & Scottsdale | Banner Health, Mayo Clinic & Corporate Leaders | Advisor Jay',
  description: 'Fiduciary wealth planning for healthcare professionals at Banner Health and Mayo Clinic in Phoenix and Scottsdale, and professionals at Freeport-McMoRan and leading Arizona companies. High-income tax strategy, asset protection, retirement acceleration, and legacy planning.',
  alternates: {
  canonical: 'https://www.advisorjay.com/physician-executive-wealth-management-phoenix-scottsdale',
@@ -115,7 +115,7 @@ export default function PhysicianExecutiveWealthPage() {
    The failures I see aren&apos;t failures of intelligence. They&apos;re failures of access to advisors who understand physician economics and executive compensation structures well enough to translate your income into a life that actually works for you.
    </p>
    <footer className="text-base not-italic font-semibold text-[#333333] mt-6">
-   - Jay Chang, Farther
+   - Jay Chang, VP, Wealth Advisor
    </footer>
   </blockquote>
   </AnimateOnScroll>

@@ -195,7 +195,7 @@ export default function PGEEmployeeFinancialAdvisor() {
                 since worked with families at PG&amp;E, AT&amp;T, Chevron, and Northrop. Between us, we know what questions to
                 ask before you sign anything.
               </p>
-              <p className="mt-6 font-semibold text-[#1d7682]">— Jay Chang, Farther</p>
+              <p className="mt-6 font-semibold text-[#1d7682]">— Jay Chang, VP, Wealth Advisor</p>
             </div>
           </AnimateOnScroll>
         </div>

@@ -3,15 +3,15 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 
 export const metadata: Metadata = {
- title: 'Financial Advisor in Phoenix, AZ | Fiduciary Wealth Management | Advisor Jay, Farther',
- description: 'Fiduciary financial advisor in Phoenix, Arizona. Jay Chang at Farther specializes in wealth management for semiconductor engineers, aerospace professionals, physicians, and executives across the Phoenix metro.',
+ title: 'Financial Advisor in Phoenix, AZ | Fiduciary Wealth Management | Advisor Jay',
+ description: 'Fiduciary financial advisor in Phoenix, Arizona. I specialize in wealth management for semiconductor engineers, aerospace professionals, physicians, and executives across the Phoenix metro.',
  alternates: {
  canonical: 'https://www.advisorjay.com/financial-advisor-phoenix-az',
  },
  robots: 'index, follow',
  openGraph: {
- title: 'Financial Advisor in Phoenix, AZ | Fiduciary Wealth Management | Advisor Jay, Farther',
- description: 'Fiduciary financial advisor in Phoenix, Arizona. Jay Chang at Farther specializes in wealth management for semiconductor engineers, aerospace professionals, physicians, and executives.',
+ title: 'Financial Advisor in Phoenix, AZ | Fiduciary Wealth Management | Advisor Jay',
+ description: 'Fiduciary financial advisor in Phoenix, Arizona. I specialize in wealth management for semiconductor engineers, aerospace professionals, physicians, and executives.',
  type: 'website',
  url: 'https://www.advisorjay.com/financial-advisor-phoenix-az',
  },
@@ -27,7 +27,7 @@ export default function PhoenixFinancialAdvisor() {
  const localBusinessSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Advisor Jay, Farther',
+ name: 'Advisor Jay',
  description: 'Fiduciary financial advisor serving professionals in Phoenix, Arizona',
  url: 'https://www.advisorjay.com/financial-advisor-phoenix-az',
  areaServed: [
@@ -99,7 +99,7 @@ export default function PhoenixFinancialAdvisor() {
    The common thread? You&apos;ve done well - really well - but your financial life has gotten complicated. Maybe you relocated from California and aren&apos;t sure if you&apos;re taking full advantage of the tax savings. Maybe your RSUs keep vesting and you&apos;re not sure whether to hold or sell. Maybe you just have a gut feeling that you&apos;re leaving money on the table.
    </p>
    <p>
-   That&apos;s where our team comes in. Jay Chang and the team at Farther sit on the same side of the table as you. We&apos;re fiduciaries - meaning we&apos;re legally obligated to put your interests first. We&apos;ll help you build a plan that actually fits your life, whether that&apos;s managing equity compensation, planning a tax-smart relocation, or mapping out retirement income when you&apos;re earning $150K-$800K+.
+   That&apos;s where I come in. I sit on the same side of the table as you. I&apos;m a fiduciary - meaning I&apos;m legally obligated to put your interests first. I&apos;ll help you build a plan that actually fits your life, whether that&apos;s managing equity compensation, planning a tax-smart relocation, or mapping out retirement income when you&apos;re earning $150K-$800K+.
    </p>
    </div>
   </div>
@@ -157,7 +157,7 @@ export default function PhoenixFinancialAdvisor() {
    Let&apos;s Figure This Out Together
   </h2>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   Working with Jay Chang and our team at Farther means you get a fiduciary advisor who actually understands what Phoenix professionals deal with. We&apos;re not here to sell you products - we&apos;re here to help you make smart decisions.
+   Working with me means you get a fiduciary advisor who actually understands what Phoenix professionals deal with. I&apos;m not here to sell you products - I&apos;m here to help you make smart decisions.
   </p>
   <Button
    href="/schedule-consultation"

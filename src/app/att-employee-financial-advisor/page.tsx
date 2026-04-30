@@ -181,7 +181,7 @@ export default function ATTEmployeeFinancialAdvisor() {
               <p className="text-lg leading-relaxed text-[#333333]">
                 Michael Lee on my team got into this work helping his mother retire from Kaiser Permanente, and has since worked extensively with AT&amp;T, PG&amp;E, Chevron, and Northrop professionals navigating these exact decisions. Between the two of us, and the calculator suite I&apos;ve built specifically for AT&amp;T employees, you won&apos;t have to explain your benefits from scratch.
               </p>
-              <p className="mt-6 font-semibold text-[#1d7682]">— Jay Chang, Farther</p>
+              <p className="mt-6 font-semibold text-[#1d7682]">— Jay Chang, VP, Wealth Advisor</p>
             </div>
           </AnimateOnScroll>
         </div>

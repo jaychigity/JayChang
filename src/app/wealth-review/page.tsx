@@ -6,7 +6,7 @@ import WealthReviewForm from './WealthReviewForm'
 export const metadata: Metadata = {
   title: 'Get a Free Wealth Review from Jay | Advisor Jay',
   description:
-    'Request a free, no-obligation wealth review from Jay Chang, VP and Wealth Advisor at Farther. Confidential conversation about your financial picture: retirement, taxes, investments, and life transitions.',
+    'Request a free, no-obligation wealth review from Jay Chang, fiduciary wealth advisor. Confidential conversation about your financial picture: retirement, taxes, investments, and life transitions.',
   alternates: { canonical: 'https://www.advisorjay.com/wealth-review' },
   openGraph: {
     title: 'Get a Free Wealth Review from Jay | Advisor Jay',

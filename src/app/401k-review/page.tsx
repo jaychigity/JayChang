@@ -7,7 +7,7 @@ import WithholdingCalculator from '../tools/401k-withholding-calculator/Withhold
 export const metadata: Metadata = {
   title: 'Is Your 401(k) Actually Working for You? | Advisor Jay',
   description:
-    'Find out if you are on track to max out your 401(k) this year. No sign-up required. Built by Jay Chang, wealth advisor at Farther.',
+    'Find out if you are on track to max out your 401(k) this year. No sign-up required. Built by Jay Chang, fiduciary wealth advisor.',
   alternates: { canonical: 'https://www.advisorjay.com/401k-review' },
   openGraph: {
     title: 'Is Your 401(k) Actually Working for You? | Advisor Jay',
@@ -74,7 +74,7 @@ export default function FourOneKReviewPage() {
             Fortune 500 employees. If your results raise questions,
             I&rsquo;m happy to walk through them with you.
             <span className="block mt-[4px] text-[#333333] font-medium">
-              — Jay Chang, VP &amp; Wealth Advisor at Farther
+              — Jay Chang, VP, Wealth Advisor
             </span>
           </p>
         </div>

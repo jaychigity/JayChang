@@ -10,7 +10,7 @@ import ConsultationForm from '@/components/ConsultationForm'
 export const metadata: Metadata = {
  title: 'Contact Us | Advisor Jay - Scottsdale, Arizona',
  description:
- 'Reach out to Jay Chang, wealth advisor at Farther. We help families and business owners in Scottsdale, Phoenix, and across Arizona make smarter financial decisions together. A real conversation about what matters to you.',
+ 'Reach out to Jay Chang, fiduciary wealth advisor in Scottsdale. I help families and business owners across Arizona make smarter financial decisions together. A real conversation about what matters to you.',
  alternates: { canonical: 'https://www.advisorjay.com/contact' },
 }
 
@@ -42,7 +42,7 @@ export default function ContactPage() {
     __html: JSON.stringify({
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Advisor Jay | Farther Wealth Management",
+      "name": "Advisor Jay",
       "image": "https://www.advisorjay.com/Photos/Jay-New-Headshot.png",
       "telephone": "(480) 944-0880",
       "email": "jay.chang@farther.com",

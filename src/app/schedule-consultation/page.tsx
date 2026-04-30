@@ -4,12 +4,12 @@ import ConsultationForm from '@/components/ConsultationForm'
 export const metadata: Metadata = {
  title: 'Schedule a Conversation',
  description:
- "Set up a time to talk with Jay Chang, wealth advisor at Farther. We work with families and business owners across Arizona, California, and Nevada, and we'd love to hear what's on your mind.",
+ "Set up a time to talk with Jay Chang, fiduciary wealth advisor. I work with families and business owners across Arizona, California, and Nevada, and I'd love to hear what's on your mind.",
  alternates: { canonical: 'https://www.advisorjay.com/schedule-consultation' },
  openGraph: {
  title: 'Schedule a Conversation | Advisor Jay',
  description:
- 'Set up a time to talk with Jay Chang, wealth advisor at Farther. Serving families and business owners across Arizona, California, and Nevada.',
+ 'Set up a time to talk with Jay Chang, fiduciary wealth advisor. Serving families and business owners across Arizona, California, and Nevada.',
  url: 'https://www.advisorjay.com/schedule-consultation',
  },
 }

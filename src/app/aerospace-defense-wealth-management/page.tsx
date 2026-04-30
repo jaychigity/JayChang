@@ -6,7 +6,7 @@ import SectionEyebrow from '@/components/SectionEyebrow';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
- title: 'Aerospace & Defense Wealth Management in Phoenix & Tucson | Honeywell & Raytheon Benefits | Advisor Jay, Farther',
+ title: 'Aerospace & Defense Wealth Management in Phoenix & Tucson | Honeywell & Raytheon Benefits | Advisor Jay',
  description: 'Fiduciary financial planning for Honeywell and Raytheon/RTX professionals in Phoenix and Tucson. I know your pension, your 401(k) match structure, your deferred comp plans, and what Honeywell\'s spinoff into HONA means for your equity and retirement.',
  alternates: {
  canonical: 'https://www.advisorjay.com/aerospace-defense-wealth-management',
@@ -84,7 +84,7 @@ export default function AerospaceDefenseWealthManagement() {
    <p className="text-lg leading-relaxed text-[#333333]">
    The work is mapping all of that and walking through the decisions in the order they need to be made.
    </p>
-   <p className="mt-6 font-semibold text-[#1d7682]"> - Jay Chang, Farther</p>
+   <p className="mt-6 font-semibold text-[#1d7682]"> - Jay Chang, VP, Wealth Advisor</p>
   </div>
   </AnimateOnScroll>
   </div>

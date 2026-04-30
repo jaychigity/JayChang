@@ -27,7 +27,7 @@ export default function ScottsdaleFinancialAdvisor() {
  const localBusinessSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Advisor Jay, Farther',
+ name: 'Advisor Jay',
  description: 'Fiduciary financial advisor serving physicians and executives in Scottsdale, Arizona',
  url: 'https://www.advisorjay.com/financial-advisor-scottsdale-az',
  areaServed: [
@@ -99,7 +99,7 @@ export default function ScottsdaleFinancialAdvisor() {
    The challenges we hear about most? Taxes taking a bigger bite than they should, not enough asset protection for someone with your liability exposure, retirement savings that feel underwhelming given what you earn, and zero clarity on how to pass wealth to the next generation.
    </p>
    <p>
-   Jay Chang and our team at Farther work alongside Scottsdale physicians and executives as trusted partners - not salespeople. We&apos;re fiduciaries, which means your interests always come first. From tax-efficient retirement planning and asset protection to estate planning and making sure your wealth actually lasts, we bring the expertise so you can focus on what you do best.
+   I work alongside Scottsdale physicians and executives as a trusted partner - not a salesperson. I&apos;m a fiduciary, which means your interests always come first. From tax-efficient retirement planning and asset protection to estate planning and making sure your wealth actually lasts, I bring the expertise so you can focus on what you do best.
    </p>
    </div>
   </div>
@@ -157,7 +157,7 @@ export default function ScottsdaleFinancialAdvisor() {
    Let&apos;s Start the Conversation
   </h2>
   <p className="font-sans text-lg text-[#5b6a71] mb-8">
-   Jay Chang and our team at Farther focus on high-income physicians and executives because we know your world. We&apos;re here to help you protect what you&apos;ve built, grow it wisely, and make sure it&apos;s there for the people who matter most.
+   I focus on high-income physicians and executives because I know your world. I&apos;m here to help you protect what you&apos;ve built, grow it wisely, and make sure it&apos;s there for the people who matter most.
   </p>
   <Button
    href="/schedule-consultation"

@@ -22,8 +22,8 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
- title: 'Jay Chang - Wealth Advisor at Farther | Advisor Jay',
- description: 'Jay Chang is a fiduciary wealth advisor who helps families, professionals, and business owners build real financial plans. Independent advice backed by Farther\'s Intelligent Wealth Platform. Let\'s talk about what matters to you.',
+ title: 'Jay Chang - Fiduciary Wealth Advisor | Advisor Jay',
+ description: 'Jay Chang is a fiduciary wealth advisor who helps families, professionals, and business owners build real financial plans. Independent advice backed by an institutional wealth platform. Let\'s talk about what matters to you.',
  alternates: {
  canonical: 'https://www.advisorjay.com',
  },
