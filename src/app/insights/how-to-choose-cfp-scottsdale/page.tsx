@@ -5,22 +5,20 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 import SectionEyebrow from '@/components/SectionEyebrow'
 import Button from '@/components/Button'
 import ArticleByline from '@/components/ArticleByline'
-import { ArrowLeft, Clock, ChevronRight, ShieldCheck, Search, MessageSquare } from 'lucide-react'
+import { ArrowLeft, Clock, ChevronRight, MessageSquare } from 'lucide-react'
 
 export const metadata: Metadata = {
- title:
- 'How to Choose a Certified Financial Planner (CFP®) in Scottsdale',
+ title: 'How to Choose the Right Wealth Advisor in Scottsdale',
  description:
- 'Learn how to evaluate and choose a Certified Financial Planner (CFP®) in Scottsdale. Understand fiduciary standards, fee structures, Arizona-specific planning, and what questions to ask before hiring a CFP.',
+ 'A practical guide to evaluating wealth advisors in Scottsdale: what the CFP® designation actually signals, why tenure and direct experience often matter more, and the six questions worth asking before you hire.',
  alternates: {
  canonical:
  'https://www.advisorjay.com/insights/how-to-choose-cfp-scottsdale',
  },
  openGraph: {
- title:
- 'How to Choose a Certified Financial Planner (CFP®) in Scottsdale',
+ title: 'How to Choose the Right Wealth Advisor in Scottsdale',
  description:
- 'Learn how to evaluate and choose a Certified Financial Planner (CFP®) in Scottsdale. Understand fiduciary standards, fee structures, Arizona-specific planning, and what questions to ask before hiring a CFP.',
+ 'A practical guide to evaluating wealth advisors in Scottsdale: what the CFP® designation actually signals, why tenure and direct experience often matter more, and the six questions worth asking before you hire.',
  type: 'article',
  url: 'https://www.advisorjay.com/insights/how-to-choose-cfp-scottsdale',
  },
@@ -53,10 +51,10 @@ const relatedArticles = [
  },
 ]
 
-export default function HowToChooseCFPLasVegasPage() {
+export default function HowToChooseWealthAdvisorScottsdalePage() {
  return (
  <>
- <BreadcrumbSchema items={[{ name: 'Insights', href: '/insights' }, { name: 'How to Choose a CFP in Scottsdale', href: '/insights/how-to-choose-cfp-scottsdale' }]} />
+ <BreadcrumbSchema items={[{ name: 'Insights', href: '/insights' }, { name: 'How to Choose the Right Wealth Advisor in Scottsdale', href: '/insights/how-to-choose-cfp-scottsdale' }]} />
  {/* Article JSON-LD */}
  <script
   type="application/ld+json"
@@ -64,8 +62,7 @@ export default function HowToChooseCFPLasVegasPage() {
   __html: JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline:
-   'How to Choose a Certified Financial Planner (CFP®) in Scottsdale',
+  headline: 'How to Choose the Right Wealth Advisor in Scottsdale',
   author: {
    '@type': 'Person',
    name: 'Jay Chang',
@@ -87,7 +84,7 @@ export default function HowToChooseCFPLasVegasPage() {
    '@id': 'https://www.advisorjay.com/insights/how-to-choose-cfp-scottsdale',
   },
   description:
-   'Learn how to evaluate and choose a Certified Financial Planner (CFP®) in Scottsdale. Understand fiduciary standards, fee structures, Arizona-specific planning, and what questions to ask before hiring a CFP.',
+   'A practical guide to evaluating wealth advisors in Scottsdale: what the CFP® designation actually signals, why tenure and direct experience often matter more, and the six questions worth asking before you hire.',
   }),
   }}
  />
@@ -105,15 +102,15 @@ export default function HowToChooseCFPLasVegasPage() {
    name: 'How many CFPs are in Scottsdale?',
    acceptedAnswer: {
    '@type': 'Answer',
-   text: 'There are approximately 200 Certified Financial Planners (CFP® professionals) practicing in the Scottsdale and greater Phoenix metropolitan area. However, only a subset of those operate as true fiduciaries who do not earn commissions, which is the standard we recommend for high-net-worth families.',
+   text: 'There are approximately 200 Certified Financial Planners (CFP® professionals) practicing in the Scottsdale and greater Phoenix metropolitan area. Only a subset operate as full-time fiduciaries without commission incentives, which is the standard worth holding out for if you have meaningful wealth.',
    },
    },
    {
    '@type': 'Question',
-   name: 'What should I look for in a CFP in Scottsdale?',
+   name: 'What should I look for in a wealth advisor in Scottsdale?',
    acceptedAnswer: {
    '@type': 'Answer',
-   text: 'When evaluating a CFP in Scottsdale, focus on five key factors: fiduciary status (are they legally required to act in your best interest at all times?), compensation structure (do they earn commissions or only advisory fees?), experience with Arizona-specific planning, client minimums and capacity, and the technology platform they use for portfolio management and reporting.',
+   text: 'When evaluating a wealth advisor in Scottsdale, focus on six factors: fiduciary status, fee-only compensation (no commissions), tenure and direct experience working with clients in your situation, experience with Arizona-specific planning, client minimums and capacity, and the technology platform behind their planning. Designations like CFP® help filter for baseline competence, but they don\'t replace years actually managing client wealth.',
    },
    },
    {
@@ -121,7 +118,15 @@ export default function HowToChooseCFPLasVegasPage() {
    name: 'Is a CFP the same as a fiduciary financial advisor?',
    acceptedAnswer: {
    '@type': 'Answer',
-   text: 'Not necessarily. While CFP® professionals are required to act as fiduciaries when providing financial planning, some may also hold broker-dealer registrations that allow them to sell commissioned products under a lower suitability standard. The ideal combination is a CFP® who operates as a full-time fiduciary within a Registered Investment Adviser (RIA) firm and does not earn commissions.',
+   text: 'Not necessarily. While CFP® professionals are required to act as fiduciaries when providing financial planning, some also hold broker-dealer registrations that allow them to sell commissioned products under a lower suitability standard. The ideal combination is an advisor who operates as a full-time fiduciary within a Registered Investment Adviser (RIA) firm and does not earn commissions, regardless of whether they personally hold the CFP® designation or work alongside CFP® professionals on their team.',
+   },
+   },
+   {
+   '@type': 'Question',
+   name: 'How important is the CFP® designation when choosing a wealth advisor?',
+   acceptedAnswer: {
+   '@type': 'Answer',
+   text: 'The CFP® designation is meaningful: it confirms an advisor has completed structured education, passed a rigorous exam, and committed to a fiduciary code of ethics. But it is one data point, not the whole picture. A newly minted CFP® with two years of experience is not automatically a better choice than a 15-year wealth advisor without the credential. What predicts whether someone will be a great advisor for you is the depth of their tenure and whether they have direct experience with clients whose situations look like yours - equity compensation, business sales, pension elections, multi-state tax planning. Ask about both.',
    },
    },
   ],
@@ -147,7 +152,7 @@ export default function HowToChooseCFPLasVegasPage() {
   </div>
 
   <h1 className="font-serif text-[42px] max-md:text-[30px] font-bold text-[#F7F4EE] leading-[1.2]">
-  How to Choose a Certified Financial Planner (CFP&reg;) in Scottsdale
+  How to Choose the Right Wealth Advisor in Scottsdale
   </h1>
 
   <div className="flex flex-wrap items-center gap-6 mt-6">
@@ -166,7 +171,7 @@ export default function HowToChooseCFPLasVegasPage() {
   <AnimateOnScroll>
   <div className="prose-farther">
    <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
-   Scottsdale has grown into one of the most dynamic wealth markets in the country. Between the influx of tech professionals, retirees relocating from California, and a thriving local business community, demand for qualified financial guidance has never been higher. But finding the right advisor requires more than a Google search. The Certified Financial Planner (CFP&reg;) designation is a meaningful credential - and understanding what it represents, what it does not guarantee, and how to evaluate a CFP in the Scottsdale market can save you years of frustration and significant money.
+   Scottsdale has grown into one of the most dynamic wealth markets in the country. Between the influx of tech professionals, retirees relocating from California, and a thriving local business community, demand for qualified financial guidance has never been higher. Finding the right wealth advisor takes more than a Google search and a quick credential check. Designations like the Certified Financial Planner (CFP&reg;) help filter for baseline competence - but they don&apos;t tell you whether an advisor will actually be great for your situation. What does: tenure, the kind of clients they&apos;ve worked with, and how they think about your specific decisions. This guide walks through both, so you can evaluate any wealth advisor in Scottsdale with confidence.
    </p>
 
    {/* Section 1 */}
@@ -194,13 +199,38 @@ export default function HowToChooseCFPLasVegasPage() {
    <strong className="text-[#333333]">Ethics and fiduciary obligation.</strong> Since 2019, all CFP&reg; professionals have been required to act as fiduciaries when providing financial advice. They must also adhere to the CFP Board&apos;s Code of Ethics and Standards of Conduct and submit to ongoing continuing-education requirements. This fiduciary obligation is a significant differentiator from advisors who operate under the lesser suitability standard.
    </p>
 
-   {/* Section 2 */}
+   {/* New Section: Tenure & Experience */}
    <h2 className="font-serif text-[28px] max-md:text-[24px] font-semibold text-[#333333] leading-[1.3] mt-12 mb-6">
-   Five Questions to Ask Any CFP&reg; in Scottsdale
+   Why Tenure and Direct Experience Often Matter More Than the Letters After a Name
    </h2>
 
    <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
-   There are approximately 200 CFP&reg; professionals in the Scottsdale and greater Phoenix metro area. That sounds like a reasonable number until you start filtering for the qualities that actually matter. These five questions will help you separate the exceptional from the adequate.
+   The CFP&reg; designation is real, and it screens for something. But it doesn&apos;t answer the question that actually matters to you: <em>will this person make good decisions for my situation?</em> A 25-year-old who passed the exam last year and a 15-year wealth advisor with deep client experience can both put CFP&reg; on a business card. They are not the same advisor.
+   </p>
+
+   <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
+   When you&apos;re evaluating an advisor, look at two things alongside any designation:
+   </p>
+
+   <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
+   <strong className="text-[#333333]">Tenure in the seat.</strong> Years actually managing client wealth - not interning, not selling product, not building a book on commission. The decisions an advisor helps you make now (Roth conversion timing, concentrated stock unwinds, pension lump-sum elections, business sale timing) get sharper with reps. There is no substitute for having watched the same kinds of decisions play out across multiple market cycles, multiple tax-law changes, and multiple client situations.
+   </p>
+
+   <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
+   <strong className="text-[#333333]">Direct experience with people in your situation.</strong> An advisor whose book is mostly Schwab retail customers with $250,000 IRAs is not the right fit for a TSMC director with $4 million in vested RSUs and a deferred-comp election due next month. Ask what percentage of the advisor&apos;s clients look like you - by wealth level, by income source, by life stage. The closer the match, the less you&apos;ll spend educating them on the basics of your situation.
+   </p>
+
+   <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
+   For context on what tenure looks like in practice: before joining Farther, I spent over a decade in wealth management at Charles Schwab and Vanguard, and I personally oversaw more than $1.5 billion in client assets across complex multi-generational portfolios, equity-heavy tech professionals, and pre-retirees navigating pension elections. That history shapes how I work today - and it&apos;s the kind of context worth asking any advisor you&apos;re considering to share with you.
+   </p>
+
+   {/* Section 2 */}
+   <h2 className="font-serif text-[28px] max-md:text-[24px] font-semibold text-[#333333] leading-[1.3] mt-12 mb-6">
+   Six Questions to Ask Any Wealth Advisor in Scottsdale
+   </h2>
+
+   <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
+   There are approximately 200 CFP&reg; professionals in the Scottsdale and greater Phoenix metro area, plus a much larger pool of wealth advisors without that specific designation. That sounds like a reasonable number until you start filtering for the qualities that actually matter. These six questions will help you separate the exceptional from the adequate.
    </p>
 
    <h3 className="font-sans text-[17px] font-bold text-[#333333] leading-[1.8] mt-8 mb-3">
@@ -228,11 +258,11 @@ export default function HowToChooseCFPLasVegasPage() {
    </h3>
 
    <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
-   Scottsdale is not a generic market, and the planning considerations here differ meaningfully from other cities. A qualified CFP in Scottsdale should be able to speak fluently about Arizona flat income tax rate and how it affects Roth conversion strategies, the state&apos;s community property rules and how they interact with estate planning, favorable trust and asset protection statutes, and the planning opportunities for families relocating from{' '}
+   Scottsdale is not a generic market, and the planning considerations here differ meaningfully from other cities. A qualified Scottsdale wealth advisor should be able to speak fluently about Arizona&apos;s flat income tax rate and how it affects Roth conversion strategies, the state&apos;s community property rules and how they interact with estate planning, favorable trust and asset protection statutes, and the planning opportunities for families relocating from{' '}
    <Link href="/scottsdale" className="text-[#1d7682] underline underline-offset-2 hover:text-[#D4B65A] transition-colors">
    higher-tax states like California
    </Link>
-   . If a CFP cannot discuss these topics in detail, they may not have the Arizona-specific depth your situation requires.
+   . If an advisor can&apos;t discuss these topics in detail, they may not have the Arizona-specific depth your situation requires.
    </p>
 
    <h3 className="font-sans text-[17px] font-bold text-[#333333] leading-[1.8] mt-8 mb-3">
@@ -248,12 +278,24 @@ export default function HowToChooseCFPLasVegasPage() {
    </h3>
 
    <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
-   A credible CFP should be able to describe a structured onboarding process. Ask what happens in the first 90 days, how often you will meet (quarterly is typical for high-net-worth clients; annually is insufficient), who else on the team you will interact with, and how the advisor coordinates with your CPA, estate attorney, and insurance professionals. A well-defined process is a signal of professionalism. A vague or improvised answer is a red flag.
+   A credible advisor should be able to describe a structured onboarding process. Ask what happens in the first 90 days, how often you&apos;ll meet (quarterly is typical for high-net-worth clients; annually is insufficient), who you&apos;ll interact with directly, and how the advisor coordinates with your CPA, estate attorney, and insurance professionals. A well-defined process is a signal of professionalism. A vague or improvised answer is a red flag. If you want to see what good planning looks like in practice, you can{' '}
+   <Link href="/tools/cash-flow-planner" className="text-[#1d7682] underline underline-offset-2 hover:text-[#D4B65A] transition-colors">
+   model your own retirement cash flow year by year
+   </Link>
+   {' '}using my free planner - it&apos;s the same kind of analysis a thoughtful advisor would walk you through together.
+   </p>
+
+   <h3 className="font-sans text-[17px] font-bold text-[#333333] leading-[1.8] mt-8 mb-3">
+   6. &ldquo;How long have you been doing this - and with people whose situation looks like mine?&rdquo;
+   </h3>
+
+   <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
+   This is the question most people forget to ask. Years in the industry isn&apos;t the same as years actually managing client wealth. Ask directly: how long have you been advising clients on the kinds of decisions I&apos;m facing? What was your role before this one? What does your typical client look like? An advisor with a decade of relevant tenure - working with people in your wealth band, your income type, your stage of life - will navigate your decisions differently than someone with a fresh credential and a thinly populated book. Tenure and direct experience are not everything, but they&apos;re the strongest predictor that the advice you receive will hold up over time.
    </p>
 
    {/* Section 3 */}
    <h2 className="font-serif text-[28px] max-md:text-[24px] font-semibold text-[#333333] leading-[1.3] mt-12 mb-6">
-   How to Verify a CFP&reg; in Scottsdale
+   How to Verify a Wealth Advisor in Scottsdale
    </h2>
 
    <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
@@ -286,7 +328,7 @@ export default function HowToChooseCFPLasVegasPage() {
    Evaluating advisors in Scottsdale?
    </h3>
    <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3 max-w-[480px] mx-auto">
-   We are happy to discuss what to look for - even if Farther is not the right fit for your family.
+   I&apos;m happy to discuss what to look for - even if I&apos;m not the right fit for your family.
    </p>
    <div className="mt-6">
    <Button href="/schedule-consultation" variant="primary">
@@ -297,38 +339,38 @@ export default function HowToChooseCFPLasVegasPage() {
 
    {/* Section 4 */}
    <h2 className="font-serif text-[28px] max-md:text-[24px] font-semibold text-[#333333] leading-[1.3] mt-12 mb-6">
-   Our Approach
+   My Approach
    </h2>
 
    <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
-   My Arizona practice meets every standard described above. I bring over a decade of wealth management experience from Charles Schwab and Vanguard, and I work alongside Certified Financial Planner&reg; (CFP&reg;) professionals who deliver comprehensive financial planning, complementing my specialized focus in fiduciary investment management, retirement income planning, and wealth building. Farther Finance, Inc. is registered with the SEC as a Registered Investment Adviser (RIA), providing regulatory oversight and transparency. For complete details on our fee structure, please refer to our{' '}
+   My Arizona practice meets every standard described above. I bring over a decade of wealth management experience from Charles Schwab and Vanguard, where I personally oversaw more than $1.5 billion in client assets. I work alongside Certified Financial Planner&reg; (CFP&reg;) professionals who deliver comprehensive financial planning, complementing my focus on fiduciary investment management, retirement income planning, and equity-heavy wealth building. For complete details on fee structure, see the{' '}
    <a href="/documents/FFA-ADV-Packet-2.6.26.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1d7682] underline underline-offset-2 hover:text-[#D4B65A] transition-colors">
    Form ADV Part 2A
    </a>.
    </p>
 
    <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
-   We specialize in serving{' '}
+   I specialize in working with{' '}
    <Link href="/scottsdale" className="text-[#1d7682] underline underline-offset-2 hover:text-[#D4B65A] transition-colors">
    Scottsdale families with $2M-$20M
    </Link>{' '}
-   in investable assets - a segment that is too complex for robo-advisors and too small for the largest private banks, yet perfectly suited for sophisticated, personalized planning. Our advisors maintain intentionally small client rosters so that every family receives the attention and depth of analysis their wealth deserves.
+   in investable assets - a segment that&apos;s too complex for robo-advisors and too small for the largest private banks, yet perfectly suited for sophisticated, personalized planning. I maintain an intentionally small client roster so every family receives the attention and depth of analysis their wealth deserves.
    </p>
 
    <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
-   Every engagement is powered by{' '}
+   Every engagement is supported by{' '}
    <Link href="/services" className="text-[#1d7682] underline underline-offset-2 hover:text-[#D4B65A] transition-colors">
-   Farther&apos;s Intelligent Wealth Platform
+   the Intelligent Wealth Platform
    </Link>
-   , which provides real-time portfolio visibility, continuous tax-loss harvesting, and comprehensive scenario modeling. Our technology does not replace the advisor - it amplifies their ability to make better, faster decisions on your behalf.
+   , which provides real-time portfolio visibility, continuous tax-loss harvesting, and comprehensive scenario modeling. The technology doesn&apos;t replace me - it amplifies my ability to make better, faster decisions on your behalf.
    </p>
 
    <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
-   Our structured planning process begins with a 90-day deep dive into your complete financial picture - investments, tax situation, estate plan, insurance, liabilities, and goals - followed by quarterly strategy reviews and ongoing access to your advisory team. We coordinate directly with your CPA, estate attorney, and other professionals to ensure every element of your plan works together.
+   My structured planning process begins with a 90-day deep dive into your complete financial picture - investments, tax situation, estate plan, insurance, liabilities, and goals - followed by quarterly strategy reviews and ongoing access directly to me. I coordinate with your CPA, estate attorney, and other professionals to ensure every element of your plan works together.
    </p>
 
    <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
-   If you are evaluating CFP&reg; professionals in Scottsdale, I welcome the opportunity to demonstrate my approach. Just a real conversation about your goals and whether we&apos;re a fit.
+   If you&apos;re evaluating wealth advisors in Scottsdale, I&apos;d welcome a real conversation about your goals and whether we&apos;re a fit.
    </p>
 
    <div className="mt-8">
@@ -404,12 +446,10 @@ export default function HowToChooseCFPLasVegasPage() {
  <section className="bg-[#333333] section-padding text-center">
   <div className="max-w-[620px] mx-auto">
   <h2 className="font-serif text-[36px] max-md:text-[28px] font-semibold text-[#F7F4EE] leading-[1.2]">
-  Ready to Work With a CFP&reg; Who Puts You First?
+  Ready to Work With a Wealth Advisor Who Puts You First?
   </h2>
   <p className="font-sans text-[17px] text-[#F7F4EE]/85 leading-relaxed mt-5">
-  Schedule a private conversation with our Scottsdale advisory team to
-  discuss your goals and explore whether Farther is the right fit for
-  your family.
+  Schedule a private conversation with me to discuss your goals and see whether we&apos;re a fit.
   </p>
   <div className="mt-10">
   <Button href="/schedule-consultation" variant="primary">
