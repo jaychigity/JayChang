@@ -82,10 +82,10 @@ export default function SemiconductorProfessionalsLP() {
   <span className="hidden sm:inline text-[#E8E6E1]">|</span>
   <div className="text-center">
   <p className="font-sans text-[14px] font-semibold text-[#333333]">
-   $15B+ AUM
+   Fee-Only
   </p>
   <p className="font-sans text-[13px] text-[#5b6a71]">
-   Assets under management
+   No commissions, no product sales
   </p>
   </div>
   </div>

@@ -362,23 +362,6 @@ export default function Home() {
    </p>
    </div>
 
-   <div className="bg-white/10 backdrop-blur p-8 rounded-lg border border-white/20">
-   <p className="text-5xl font-serif font-bold text-[#1d7682] mb-2">
-   <CountUp end="$15B+" />
-   </p>
-   <p className="text-white text-sm leading-relaxed">
-   Total assets managed across the Farther platform, giving my clients institutional pricing with personal, hands-on relationships.
-   </p>
-   </div>
-
-   <div className="bg-white/10 backdrop-blur p-8 rounded-lg border border-white/20">
-   <p className="text-5xl font-serif font-bold text-[#1d7682] mb-2">
-   <CountUp end="276" />
-   </p>
-   <p className="text-white text-sm leading-relaxed">
-   Advisor partners nationwide at Farther. A full team of specialists behind every decision I make with you.
-   </p>
-   </div>
   </div>
   </AnimateOnScroll>
   </div>

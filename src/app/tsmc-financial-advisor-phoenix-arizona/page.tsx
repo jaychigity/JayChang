@@ -279,11 +279,7 @@ export default function TSMCFinancialAdvisor() {
    </div>
    <div className="flex items-center gap-2">
    <span className="text-[#1d7682] font-bold">✓</span>
-   <p className="font-sans text-sm text-[#5b6a71] font-semibold">$15B+ AUM</p>
-   </div>
-   <div className="flex items-center gap-2">
-   <span className="text-[#1d7682] font-bold">✓</span>
-   <p className="font-sans text-sm text-[#5b6a71] font-semibold">Best RIA 2025</p>
+   <p className="font-sans text-sm text-[#5b6a71] font-semibold">Fee-Only</p>
    </div>
   </div>
   </AnimateOnScroll>

@@ -87,19 +87,15 @@ export default function AppleFinancialAdvisor() {
   <div className="flex flex-wrap justify-center gap-8 text-sm font-sans text-[#5b6a71]">
   <div className="flex items-center gap-2">
    <span className="font-semibold text-[#1d7682]">✓</span>
-   <span>Advisor at Farther | SEC-Registered RIA</span>
+   <span>Fiduciary</span>
   </div>
   <div className="flex items-center gap-2">
    <span className="font-semibold text-[#1d7682]">✓</span>
-   <span>Fiduciary - Your interests come first</span>
+   <span>Fee-Only</span>
   </div>
   <div className="flex items-center gap-2">
    <span className="font-semibold text-[#1d7682]">✓</span>
-   <span>$15B+ AUM</span>
-  </div>
-  <div className="flex items-center gap-2">
-   <span className="font-semibold text-[#1d7682]">✓</span>
-   <span>Best RIA to Work For 2025</span>
+   <span>SEC-Registered</span>
   </div>
   </div>
   </div>
@@ -390,7 +386,7 @@ export default function AppleFinancialAdvisor() {
    <strong className="text-white">Fiduciary advisor</strong> - I&apos;m legally required to act in your interest, not earn commissions
   </p>
   <p>
-   <strong className="text-white">Farther:</strong> $15B+ in assets under management, named Best RIA to Work For 2025
+   <strong className="text-white">Backed by Farther&apos;s institutional platform</strong> for tax-lot optimization, direct indexing, and estate planning resources
   </p>
   <p>
    <strong className="text-white">Serving professionals</strong> in Phoenix, Chandler, Tempe, Mesa, Scottsdale, Tucson, Santa Clara, and beyond

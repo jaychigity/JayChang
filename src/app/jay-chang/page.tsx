@@ -263,20 +263,10 @@ export default function JayChangPage() {
    <Award className="w-6 h-6 text-[#1d7682]" />
    </div>
    <div>
-   <h3 className="font-serif font-bold text-[#333333] mb-2">$15B+ in Client Assets</h3>
-   <p className="text-[#5b6a71] text-sm">That scale means better pricing for you, and a team of specialists behind every recommendation I make.</p>
+   <h3 className="font-serif font-bold text-[#333333] mb-2">$1.5B+ Previously Overseen</h3>
+   <p className="text-[#5b6a71] text-sm">Before joining Farther, I personally oversaw over $1.5B in client assets. The scale changed; the discipline didn&apos;t.</p>
    </div>
    </div>
-  </div>
-
-  {/* Stats */}
-  <div className="text-center text-[#333333]">
-   <p className="text-lg mb-4">
-   Farther surpassed <span className="font-bold">$13B in recruited assets</span> in 2025, growing <span className="font-bold">4x the industry rate</span>.
-   </p>
-   <p className="text-lg font-bold">
-   Inc. 5000 #1 fastest-growing financial services firm in America.
-   </p>
   </div>
   </AnimateOnScroll>
   </div>

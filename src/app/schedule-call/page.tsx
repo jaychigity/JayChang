@@ -144,13 +144,7 @@ export default function ScheduleCall() {
    <li className="flex items-start">
    <span className="text-[#1d7682] font-bold mr-4 text-xl">•</span>
    <span>
-   <strong className="text-[#333333]">Farther's Intelligent Wealth Platform</strong>: $15B+ AUM with automated tax-loss harvesting working behind the scenes
-   </span>
-   </li>
-   <li className="flex items-start">
-   <span className="text-[#1d7682] font-bold mr-4 text-xl">•</span>
-   <span>
-   <strong className="text-[#333333]">Named Best RIA to Work For, 2025</strong>. Good people doing good work.
+   <strong className="text-[#333333]">Institutional platform behind every plan</strong>: automated tax-loss harvesting, direct indexing, and real-time portfolio optimization
    </span>
    </li>
    <li className="flex items-start">

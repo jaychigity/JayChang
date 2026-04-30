@@ -417,7 +417,7 @@ export default function ScottsdalePage() {
      <div className="max-w-[720px] mx-auto mb-12">
       <AnimateOnScroll delay={200}>
        <p className="font-sans text-base text-[#333333] leading-[1.7]">
-        Most firms make you pick: either you get a great advisor who knows your name, or you get fancy technology. At Farther, you get both. I bring hands-on experience with the exact financial challenges Arizona&apos;s highest earners face, backed by Farther&apos;s technology platform - the same engine managing over $15 billion in client assets. You get the personal attention and the horsepower.
+        Most firms make you pick: either you get a great advisor who knows your name, or you get fancy technology. I bring hands-on experience with the exact financial challenges Arizona&apos;s highest earners face, backed by an institutional technology platform. You get the personal attention and the horsepower.
        </p>
       </AnimateOnScroll>
      </div>
@@ -429,7 +429,7 @@ export default function ScottsdalePage() {
         { title: 'Tax-Loss Harvesting, Built In', desc: 'Our platform automatically looks for tax-saving opportunities in your portfolio. You do not have to ask.' },
         { title: 'Smart Asset Location', desc: 'We put the right investments in the right accounts so you keep more of your returns.' },
         { title: 'Flexible Investment Approach', desc: 'Your portfolio adapts as your life changes - new job, new baby, new goals. We adjust together.' },
-        { title: 'Farther\'s Technology Platform', desc: 'Over $15B in assets managed on one integrated platform, giving our team and you real-time visibility.' },
+        { title: 'Institutional Tech Platform', desc: 'One integrated system for portfolio management, tax-loss harvesting, and reporting in real time.' },
         { title: 'We Actually Know Your Name', desc: 'I spend 90% of my time working directly with clients. You are never just a number here.' },
        ].map((item) => (
         <div key={item.title} className="bg-[#FAFAF8] border border-[#E8E6E1] rounded-[12px] p-8">
@@ -694,7 +694,7 @@ export default function ScottsdalePage() {
      <AnimateOnScroll delay={400}>
       <div className="mt-8">
        <p className="font-sans text-sm text-[#F7F4EE]/60 mb-6">
-        SEC-Registered Investment Advisor · Fiduciary Standard · $15B+ AUM · Named a Best RIA to Work For (2025)
+        SEC-Registered Investment Advisor · Fiduciary Standard · Fee-Only
        </p>
        <div className="flex flex-col sm:flex-row justify-center gap-6">
         <Link
