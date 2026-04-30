@@ -5,7 +5,7 @@ import InheritedIRACalculator from './InheritedIRACalculator'
 
 export const metadata: Metadata = {
  title:
-  'Inherited IRA Calculator & RMD Rules Guide | Advisor Jay',
+  'Inherited IRA Calculator & RMD Rules Guide',
  description:
   'Free inherited IRA calculator with 2026 SECURE Act rules. Determine your beneficiary type, required distributions, optimal withdrawal strategy, and tax impact, with year-by-year schedule. Built for spouses, children, and non-spouse beneficiaries.',
  alternates: {

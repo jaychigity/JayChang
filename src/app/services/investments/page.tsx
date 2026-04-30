@@ -9,12 +9,12 @@ import { ChevronDown } from 'lucide-react'
 
 export const metadata: Metadata = {
  title:
- 'Custom Portfolio Management & Tax-Efficient Investing | Advisor Jay',
+ 'Custom Portfolio Management & Tax-Efficient Investing',
  description:
  'Custom investment management for HNW families in Arizona, California, and Nevada. Tax-efficient portfolios, alternative investments, and institutional-grade research.',
  alternates: { canonical: 'https://www.advisorjay.com/services/investments' },
  openGraph: {
- title: 'Custom Portfolio Management & Tax-Efficient Investing | Advisor Jay',
+ title: 'Custom Portfolio Management & Tax-Efficient Investing',
  description:
  'Custom investment management for high-net-worth families and business owners in Scottsdale, AZ and across Arizona, California, and Nevada. Tax-efficient strategies, alternatives access, and consolidated reporting.',
  url: 'https://www.advisorjay.com/services/investments',

@@ -8,12 +8,12 @@ import Button from '@/components/Button'
 import { ChevronDown } from 'lucide-react'
 
 export const metadata: Metadata = {
- title: 'Private Equity & Alternative Investments for High-Net-Worth Families | Advisor Jay',
+ title: 'Private Equity & Alternative Investments for High-Net-Worth Families',
  description:
  'Get access to private equity, venture capital, private credit, and hedge fund strategies that used to be reserved for the ultra-wealthy.',
  alternates: { canonical: 'https://www.advisorjay.com/services/alternatives' },
  openGraph: {
- title: 'Private Equity & Alternative Investments for High-Net-Worth Families | Advisor Jay',
+ title: 'Private Equity & Alternative Investments for High-Net-Worth Families',
  description:
  'Private equity, venture capital, private credit, and real asset access for families with $5M+ -- without the sky-high minimums. Arizona, California & Nevada.',
  url: 'https://www.advisorjay.com/services/alternatives',

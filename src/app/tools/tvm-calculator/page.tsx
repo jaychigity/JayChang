@@ -5,7 +5,7 @@ import TVMCalculator from './TVMCalculator'
 
 export const metadata: Metadata = {
   title:
-    'What Your Money Becomes | Time Value of Money Calculator | Advisor Jay',
+    'What Your Money Becomes | Time Value of Money Calculator',
   description:
     'Free time value of money calculator. See how investments grow with compound interest, dividends, and monthly contributions. Model corrections, explore milestones, and visualize your wealth trajectory.',
   alternates: {

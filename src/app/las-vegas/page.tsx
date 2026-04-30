@@ -23,7 +23,7 @@ export const metadata: Metadata = {
  'Personalized wealth management for Nevada families and business owners with $2M-$20M. Serving Las Vegas, Henderson, Summerlin, and greater Nevada with no state income tax advantages.',
  alternates: { canonical: 'https://www.advisorjay.com/las-vegas' },
  openGraph: {
- title: 'Las Vegas & Nevada Wealth Management | Advisor Jay',
+ title: 'Las Vegas & Nevada Wealth Management',
  description:
  'Financial planning, investment management, and tax strategy for Nevada families - serving Las Vegas, Henderson, Summerlin, and Southern Nevada.',
  url: 'https://www.advisorjay.com/las-vegas',

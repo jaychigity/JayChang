@@ -22,7 +22,7 @@ export const metadata: Metadata = {
  'Personalized wealth management for California families, tech executives, and entrepreneurs with $2M-$20M. Serving Los Angeles, San Francisco, Silicon Valley, and Newport Beach. Advisor Jay.',
  alternates: { canonical: 'https://www.advisorjay.com/california' },
  openGraph: {
- title: 'California Wealth Management | Advisor Jay',
+ title: 'California Wealth Management',
  description:
  'Financial planning, tax optimization, and equity compensation strategy for California tech executives, startup founders, and high-earning professionals with $2M-$20M in investable assets.',
  url: 'https://www.advisorjay.com/california',

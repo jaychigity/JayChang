@@ -9,7 +9,7 @@ import { ArrowLeft, Clock, ChevronRight, ShieldCheck, Search, MessageSquare } fr
 
 export const metadata: Metadata = {
  title:
- 'How to Choose a Certified Financial Planner (CFP®) in Scottsdale | Advisor Jay',
+ 'How to Choose a Certified Financial Planner (CFP®) in Scottsdale',
  description:
  'Learn how to evaluate and choose a Certified Financial Planner (CFP®) in Scottsdale. Understand fiduciary standards, fee structures, Arizona-specific planning, and what questions to ask before hiring a CFP.',
  alternates: {

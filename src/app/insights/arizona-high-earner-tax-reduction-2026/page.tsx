@@ -9,7 +9,7 @@ import { ArrowLeft, Clock, ChevronRight, MessageSquare } from 'lucide-react'
 
 export const metadata: Metadata = {
  title:
- 'Arizona High Earner Tax Reduction 2026: Year-End Tax Planning | Advisor Jay',
+ 'Arizona High Earner Tax Reduction 2026: Year-End Tax Planning',
  description:
  'Year-end tax planning strategies for high earners in Arizona earning $200K-$800K+. Reduce federal and state taxes through 401(k), backdoor Roth, HSA, charitable giving, and Arizona tax credits.',
  alternates: {

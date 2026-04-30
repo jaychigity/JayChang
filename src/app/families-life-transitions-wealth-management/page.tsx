@@ -6,7 +6,7 @@ import SectionEyebrow from '@/components/SectionEyebrow';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
- title: 'Families & Life Transitions Wealth Management | Divorce, Widowhood, Inheritance & Retirement | Advisor Jay',
+ title: 'Families & Life Transitions Wealth Management | Divorce, Widowhood, Inheritance & Retirement',
  description: 'Compassionate, fiduciary financial planning for families navigating divorce, loss of a spouse, inheritance, retirement transitions, and legacy protection. I help you find clarity when life changes everything.',
  alternates: {
  canonical: 'https://www.advisorjay.com/families-life-transitions-wealth-management',

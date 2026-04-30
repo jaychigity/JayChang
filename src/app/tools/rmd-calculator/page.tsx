@@ -5,7 +5,7 @@ import RMDCalculator from './RMDCalculator'
 
 export const metadata: Metadata = {
  title:
-  'RMD Calculator: Required Minimum Distribution for 2026 | Advisor Jay',
+  'RMD Calculator: Required Minimum Distribution for 2026',
  description:
   'Free RMD calculator with 2026 IRS Uniform Lifetime Table. Calculate your required minimum distribution, see the tax impact on your bracket, model QCD savings, and project your IRA balance over 10+ years. Updated for SECURE 2.0.',
  alternates: {

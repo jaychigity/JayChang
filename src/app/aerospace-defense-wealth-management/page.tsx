@@ -6,7 +6,7 @@ import SectionEyebrow from '@/components/SectionEyebrow';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
- title: 'Aerospace & Defense Wealth Management in Phoenix & Tucson | Honeywell & Raytheon Benefits | Advisor Jay',
+ title: 'Aerospace & Defense Wealth Management in Phoenix & Tucson | Honeywell & Raytheon Benefits',
  description: 'Fiduciary financial planning for Honeywell and Raytheon/RTX professionals in Phoenix and Tucson. I know your pension, your 401(k) match structure, your deferred comp plans, and what Honeywell\'s spinoff into HONA means for your equity and retirement.',
  alternates: {
  canonical: 'https://www.advisorjay.com/aerospace-defense-wealth-management',

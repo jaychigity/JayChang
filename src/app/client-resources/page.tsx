@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
- title: "Market Commentary & Insights | Advisor Jay",
+ title: "Market Commentary & Insights",
  description:
  "Stay informed with the latest market commentary, economic outlooks, and financial planning insights I share with clients. Updated regularly with analysis relevant to families, professionals, and business owners.",
  alternates: { canonical: "https://www.advisorjay.com/client-resources" },
  openGraph: {
- title: "Market Commentary & Insights | Advisor Jay",
+ title: "Market Commentary & Insights",
  description:
  "Latest market commentary and financial planning insights I share with clients.",
  url: "https://www.advisorjay.com/client-resources",

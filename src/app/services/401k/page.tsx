@@ -8,12 +8,12 @@ import Button from '@/components/Button'
 import { ChevronDown } from 'lucide-react'
 
 export const metadata: Metadata = {
- title: '401(k) Plan Design & Fiduciary Oversight for Business Owners | Advisor Jay',
+ title: '401(k) Plan Design & Fiduciary Oversight for Business Owners',
  description:
  'Hands-on 401(k) and retirement plan help for business owners in Arizona, California, and Nevada. We handle plan design, compliance, and investment oversight so you can focus on your business.',
  alternates: { canonical: 'https://www.advisorjay.com/services/401k' },
  openGraph: {
- title: '401(k) Plan Design & Fiduciary Oversight for Business Owners | Advisor Jay',
+ title: '401(k) Plan Design & Fiduciary Oversight for Business Owners',
  description:
  'Hands-on 401(k) and retirement plan help for business owners. Plan design, compliance, investment oversight, and employee education -- all in one place.',
  url: 'https://www.advisorjay.com/services/401k',

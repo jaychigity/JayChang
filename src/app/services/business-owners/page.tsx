@@ -9,12 +9,12 @@ import { ChevronDown } from 'lucide-react'
 
 export const metadata: Metadata = {
  title:
- 'Exit Planning & Succession Strategy for Business Owners | Advisor Jay',
+ 'Exit Planning & Succession Strategy for Business Owners',
  description:
  'Exit planning, succession strategy, and post-sale wealth management for business owners in Scottsdale, AZ and across Arizona, California, and Nevada. We help you plan your next chapter.',
  alternates: { canonical: 'https://www.advisorjay.com/services/business-owners' },
  openGraph: {
- title: 'Exit Planning & Succession Strategy for Business Owners | Advisor Jay',
+ title: 'Exit Planning & Succession Strategy for Business Owners',
  description:
  'Exit planning, succession strategy, and post-sale wealth management for business owners in Arizona, California, and Nevada. Your next chapter, planned with care.',
  url: 'https://www.advisorjay.com/services/business-owners',

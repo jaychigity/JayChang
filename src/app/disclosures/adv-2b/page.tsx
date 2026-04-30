@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
- title: 'ADV Part 2B - Jay S. Chang | Advisor Jay',
+ title: 'ADV Part 2B - Jay S. Chang',
  description:
  'Form ADV Part 2B Brochure Supplement for Jay S. Chang, VP, Wealth Advisor at Farther Finance Advisors, LLC.',
  robots: { index: false, follow: true },

@@ -3,14 +3,14 @@ import Link from 'next/link'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
- title: 'Free Financial Calculators & Planning Tools | Advisor Jay',
+ title: 'Free Financial Calculators & Planning Tools',
  description:
  'Free financial calculators for corporate employees, utility professionals, physicians, business owners, and families. Free AT&T pension calculator, free PG&E benefits calculator, 401(k) projections, Roth conversions, and more. No sign-up required, instant results.',
  alternates: {
  canonical: 'https://www.advisorjay.com/tools',
  },
  openGraph: {
- title: 'Financial Calculators & Planning Tools | Advisor Jay',
+ title: 'Financial Calculators & Planning Tools',
  description:
  'I built these so you can run your own analysis. Try one.',
  url: 'https://www.advisorjay.com/tools',

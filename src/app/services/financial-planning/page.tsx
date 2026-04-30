@@ -14,7 +14,7 @@ export const metadata: Metadata = {
  'Comprehensive financial planning for families with $2M-$20M. Retirement projections, cash flow analysis, education funding, and Social Security optimization in Arizona, California, and Nevada.',
  alternates: { canonical: 'https://www.advisorjay.com/services/financial-planning' },
  openGraph: {
- title: 'Financial Planning | Advisor Jay',
+ title: 'Financial Planning',
  description:
  'Scenario-based financial planning for high-net-worth families. Retirement, education funding, insurance, and tax-coordinated strategies.',
  url: 'https://www.advisorjay.com/services/financial-planning',

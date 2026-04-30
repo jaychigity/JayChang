@@ -5,7 +5,7 @@ import ExitScorecard from './ExitScorecard'
 
 export const metadata: Metadata = {
  title:
- 'Business Exit Readiness Scorecard | Advisor Jay',
+ 'Business Exit Readiness Scorecard',
  description:
  'Answer 10 quick questions to assess your readiness for a business exit. Get your personalized score across Financial, Operational, Tax, and Succession dimensions - free and confidential.',
  alternates: {

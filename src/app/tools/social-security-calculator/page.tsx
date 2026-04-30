@@ -5,7 +5,7 @@ import SocialSecurityCalculator from './SocialSecurityCalculator'
 
 export const metadata: Metadata = {
  title:
-  'Social Security Calculator: When Should You Claim? (62–70) | Advisor Jay',
+  'Social Security Calculator: When Should You Claim? (62–70)',
  description:
   "Free Social Security calculator with break-even analysis, spousal benefits, lifetime comparison, and claiming strategy for ages 62-70. See how much you'd collect monthly, annually, and over your lifetime. Myths debunked. Updated for 2026.",
  alternates: {

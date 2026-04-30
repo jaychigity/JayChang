@@ -8,14 +8,14 @@ import TestimonialCarousel from '@/components/TestimonialCarousel'
 import { Calculator, FileText, Shield, Clock, TrendingUp, Heart } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Financial Advisor for PG&E Employees | Pension, RMSA & 401(k) | Advisor Jay',
+  title: 'Financial Advisor for PG&E Employees | Pension, RMSA & 401(k)',
   description:
     'I specialize in financial planning for PG&E employees. Final Pay vs. Cash Balance pension decisions, RMSA planning, 401(k) spillover election, early retirement eligibility, and retirement income coordination for IBEW, ESC, and management professionals.',
   alternates: {
     canonical: 'https://www.advisorjay.com/pge-employee-financial-advisor',
   },
   openGraph: {
-    title: 'Financial Advisor for PG&E Employees | Advisor Jay',
+    title: 'Financial Advisor for PG&E Employees',
     description:
       'Specialized financial planning for PG&E employees. Pension elections, RMSA depletion planning, 401(k) spillover, and retirement timing for IBEW, ESC Local 20, and management professionals.',
     url: 'https://www.advisorjay.com/pge-employee-financial-advisor',

@@ -8,12 +8,12 @@ import Button from '@/components/Button'
 import { ChevronDown } from 'lucide-react'
 
 export const metadata: Metadata = {
- title: 'Outsourced CIO & OCIO Services for Nonprofits & Foundations | Advisor Jay',
+ title: 'Outsourced CIO & OCIO Services for Nonprofits & Foundations',
  description:
  'Outsourced CIO services for nonprofits, endowments, and foundations. Fiduciary investment oversight, policy development, and governance support in Arizona, California, and Nevada.',
  alternates: { canonical: 'https://www.advisorjay.com/services/institutional' },
  openGraph: {
- title: 'Outsourced CIO & OCIO Services for Nonprofits & Foundations | Advisor Jay',
+ title: 'Outsourced CIO & OCIO Services for Nonprofits & Foundations',
  description:
  'Outsourced CIO services for nonprofits, endowments, and foundations. Fiduciary investment oversight, policy development, and governance support.',
  url: 'https://www.advisorjay.com/services/institutional',

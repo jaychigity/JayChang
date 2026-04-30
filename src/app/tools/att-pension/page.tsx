@@ -5,14 +5,14 @@ import ATTPensionCalculator from './ATTPensionCalculator'
 
 export const metadata: Metadata = {
  title:
-  'AT&T Pension & Retirement Calculator | Advisor Jay',
+  'AT&T Pension & Retirement Calculator',
  description:
   'Free AT&T pension calculator for union and management employees. Estimate your cash balance pension, pension band benefit, lump sum vs annuity, early retirement reduction, and 401(k) projections.',
  alternates: {
   canonical: 'https://www.advisorjay.com/tools/att-pension',
  },
  openGraph: {
-  title: 'AT&T Pension & Retirement Calculator | Advisor Jay',
+  title: 'AT&T Pension & Retirement Calculator',
   description:
    'Free AT&T pension calculator for CWA/IBEW union and management employees. Estimate cash balance, pension band, lump sum vs annuity, early retirement, and 401(k) projections.',
   url: 'https://www.advisorjay.com/tools/att-pension',

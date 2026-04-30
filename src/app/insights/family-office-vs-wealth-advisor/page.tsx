@@ -9,7 +9,7 @@ import { ArrowLeft, Clock, ChevronRight, Check, Minus } from 'lucide-react'
 
 export const metadata: Metadata = {
  title:
- 'Do You Need a Family Office - Or a Comprehensive Wealth Advisor? | Advisor Jay',
+ 'Do You Need a Family Office - Or a Comprehensive Wealth Advisor?',
  description:
  'Explore the differences between a family office and a comprehensive wealth advisor. Learn why a family office alternative may deliver the same services at a fraction of the cost for families in Arizona, California, and Nevada.',
  keywords: [

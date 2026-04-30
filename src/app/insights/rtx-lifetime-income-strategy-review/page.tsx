@@ -9,7 +9,7 @@ import { ArrowLeft, Clock, ChevronRight, MessageSquare } from 'lucide-react'
 
 export const metadata: Metadata = {
   title:
-    'RTX Lifetime Income Strategy: Is It Right for You, or Are There Better Options? | Advisor Jay',
+    'RTX Lifetime Income Strategy: Is It Right for You, or Are There Better Options?',
   description:
     'RAYSIP Lifetime Income Strategy (LIS) converts 401(k) to guaranteed annuity income starting age 48. Pros: longevity protection. Cons: reduces NUA strategy, illiquidity. RTX contribution scaling 3% to 7% by age. Compare alternatives.',
   alternates: {

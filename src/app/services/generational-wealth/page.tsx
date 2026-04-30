@@ -8,12 +8,12 @@ import Button from '@/components/Button'
 import { ChevronDown } from 'lucide-react'
 
 export const metadata: Metadata = {
- title: 'Multi-Generational Wealth Planning: Dynasty Trusts & Succession Strategies | Advisor Jay',
+ title: 'Multi-Generational Wealth Planning: Dynasty Trusts & Succession Strategies',
  description:
  'Multi-generational wealth planning for families with $2M-$20M. Family governance, dynasty trusts, succession planning, and values-based philanthropy.',
  alternates: { canonical: 'https://www.advisorjay.com/services/generational-wealth' },
  openGraph: {
- title: 'Multi-Generational Wealth Planning: Dynasty Trusts & Succession Strategies | Advisor Jay',
+ title: 'Multi-Generational Wealth Planning: Dynasty Trusts & Succession Strategies',
  description:
  'Build wealth that endures across generations with multi-generational governance frameworks, dynasty trusts, succession planning, and values-based philanthropy strategies.',
  url: 'https://www.advisorjay.com/services/generational-wealth',

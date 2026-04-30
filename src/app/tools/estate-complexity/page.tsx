@@ -5,14 +5,14 @@ import EstateComplexityAssessment from './EstateComplexityAssessment'
 
 export const metadata: Metadata = {
  title:
- 'Estate Complexity Assessment | Advisor Jay',
+ 'Estate Complexity Assessment',
  description:
  'Discover the hidden complexity of your estate in under 2 minutes. Get a personalized complexity score across 9 risk factors - multi-state property, business succession, blended families, and more.',
  alternates: {
  canonical: 'https://www.advisorjay.com/tools/estate-complexity',
  },
  openGraph: {
- title: 'Estate Complexity Assessment | Advisor Jay',
+ title: 'Estate Complexity Assessment',
  description:
  'How complex is your estate really? 9 questions, under 2 minutes. Uncover hidden risk factors and get a personalized estate readiness report.',
  url: 'https://www.advisorjay.com/tools/estate-complexity',

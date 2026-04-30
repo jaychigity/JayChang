@@ -9,7 +9,7 @@ import { ArrowLeft, Clock, ChevronRight, MessageSquare } from 'lucide-react'
 
 export const metadata: Metadata = {
   title:
-    'Honeywell HONA Spinoff 2026: What to Do With Your 401(k) Before It Closes | Advisor Jay',
+    'Honeywell HONA Spinoff 2026: What to Do With Your 401(k) Before It Closes',
   description:
     'Honeywell Aerospace (HONA) spinoff Q3 2026. Your 401(k) match converts from HON to HON+HONA. Audit exposure, understand RSU conversion, rebalance before spinoff closes. Action timeline for employees.',
   alternates: {

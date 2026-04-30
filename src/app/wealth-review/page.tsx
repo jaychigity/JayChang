@@ -3,12 +3,12 @@ import HideChrome from '@/components/HideChrome'
 import WealthReviewForm from './WealthReviewForm'
 
 export const metadata: Metadata = {
-  title: 'Get a Free Wealth Review from Jay | Advisor Jay',
+  title: 'Get a Free Wealth Review from Jay',
   description:
     'Request a free, no-obligation wealth review from Jay Chang, fiduciary wealth advisor. Confidential conversation about your financial picture: retirement, taxes, investments, and life transitions.',
   alternates: { canonical: 'https://www.advisorjay.com/wealth-review' },
   openGraph: {
-    title: 'Get a Free Wealth Review from Jay | Advisor Jay',
+    title: 'Get a Free Wealth Review from Jay',
     description:
       'Request a free, no-obligation wealth review from Jay Chang. An unfiltered look at where you stand.',
     url: 'https://www.advisorjay.com/wealth-review',

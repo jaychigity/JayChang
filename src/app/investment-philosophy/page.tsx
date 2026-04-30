@@ -21,7 +21,7 @@ import Button from '@/components/Button'
 
 export const metadata: Metadata = {
  title:
-  'How We Invest Your Money | Advisor Jay',
+  'How We Invest Your Money',
  description:
   'A straightforward, tax-smart approach to growing and protecting wealth for families and business owners with $2M-$20M+ in investable assets. Real human advice, backed by great technology.',
  alternates: {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
  },
  openGraph: {
   title:
-   'How We Invest Your Money | Advisor Jay',
+   'How We Invest Your Money',
   description:
    'A straightforward, tax-smart approach to growing and protecting wealth for families and business owners with $2M-$20M+ in investable assets.',
   url: 'https://www.advisorjay.com/investment-philosophy',

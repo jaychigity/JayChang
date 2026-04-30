@@ -3,14 +3,14 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 
 export const metadata: Metadata = {
- title: 'Financial Advisor in Mesa, AZ | Apple Employee Specialist | Advisor Jay',
+ title: 'Financial Advisor in Mesa, AZ | Apple Employee Specialist',
  description: 'Fiduciary financial advisor in Mesa, Arizona specializing in Apple employees at the Mesa operations center. RSU planning, ESPP optimization, and tenure-based 401(k) strategy for Apple professionals.',
  alternates: {
  canonical: 'https://www.advisorjay.com/financial-advisor-mesa-az',
  },
  robots: 'index, follow',
  openGraph: {
- title: 'Financial Advisor in Mesa, AZ | Apple Employee Specialist | Advisor Jay',
+ title: 'Financial Advisor in Mesa, AZ | Apple Employee Specialist',
  description: 'Fiduciary financial advisor in Mesa, Arizona specializing in Apple employees at the Mesa operations center. RSU planning, ESPP optimization, and tenure-based 401(k) strategy.',
  type: 'website',
  url: 'https://www.advisorjay.com/financial-advisor-mesa-az',

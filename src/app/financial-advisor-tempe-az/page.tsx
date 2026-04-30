@@ -3,14 +3,14 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 
 export const metadata: Metadata = {
- title: 'Financial Advisor in Tempe, AZ | Advisor Jay | Fiduciary Wealth Management',
+ title: 'Financial Advisor in Tempe, AZ - Fiduciary Wealth Management',
  description: 'Jay Chang is a fiduciary financial advisor based in Tempe, Arizona. Serving engineers, physicians, and executives across the East Valley with comprehensive, technology-powered wealth management.',
  alternates: {
  canonical: 'https://www.advisorjay.com/financial-advisor-tempe-az',
  },
  robots: 'index, follow',
  openGraph: {
- title: 'Financial Advisor in Tempe, AZ | Advisor Jay | Fiduciary Wealth Management',
+ title: 'Financial Advisor in Tempe, AZ - Fiduciary Wealth Management',
  description: 'Jay Chang is a fiduciary financial advisor based in Tempe, Arizona. Serving engineers, physicians, and executives across the East Valley.',
  type: 'website',
  url: 'https://www.advisorjay.com/financial-advisor-tempe-az',

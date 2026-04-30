@@ -6,7 +6,7 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import USClientMap from '@/components/USClientMap';
 
 export const metadata: Metadata = {
- title: 'About Jay Chang | Your Neighbor Who Happens to Be a Wealth Advisor | Advisor Jay',
+ title: 'About Jay Chang | Your Neighbor Who Happens to Be a Wealth Advisor',
  description: 'Meet Jay Chang, a fiduciary wealth advisor in Tempe, Arizona. I help families with real questions - how to plan for retirement, what to do with RSUs, how to protect your family\'s future - all without the corporate jargon.',
  alternates: {
  canonical: 'https://www.advisorjay.com/about',

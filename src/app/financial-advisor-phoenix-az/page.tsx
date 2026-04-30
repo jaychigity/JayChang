@@ -3,14 +3,14 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 
 export const metadata: Metadata = {
- title: 'Financial Advisor in Phoenix, AZ | Fiduciary Wealth Management | Advisor Jay',
+ title: 'Financial Advisor in Phoenix, AZ | Fiduciary Wealth Management',
  description: 'Fiduciary financial advisor in Phoenix, Arizona. I specialize in wealth management for semiconductor engineers, aerospace professionals, physicians, and executives across the Phoenix metro.',
  alternates: {
  canonical: 'https://www.advisorjay.com/financial-advisor-phoenix-az',
  },
  robots: 'index, follow',
  openGraph: {
- title: 'Financial Advisor in Phoenix, AZ | Fiduciary Wealth Management | Advisor Jay',
+ title: 'Financial Advisor in Phoenix, AZ | Fiduciary Wealth Management',
  description: 'Fiduciary financial advisor in Phoenix, Arizona. I specialize in wealth management for semiconductor engineers, aerospace professionals, physicians, and executives.',
  type: 'website',
  url: 'https://www.advisorjay.com/financial-advisor-phoenix-az',

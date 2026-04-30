@@ -9,7 +9,7 @@ import { ArrowLeft, Clock, ChevronRight, MessageSquare } from 'lucide-react'
 
 export const metadata: Metadata = {
  title:
- 'RSU Withholding Gap: Why 22% Is Not Enough | Tax Planning | Advisor Jay',
+ 'RSU Withholding Gap: Why 22% Is Not Enough | Tax Planning',
  description:
  'Why 22% federal withholding on RSU vesting is rarely sufficient for $200K+ earners. Calculate your withholding gap and fix it with W-4 adjustments or quarterly estimated taxes.',
  alternates: {

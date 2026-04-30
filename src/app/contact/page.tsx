@@ -8,7 +8,7 @@ import Button from '@/components/Button'
 import ConsultationForm from '@/components/ConsultationForm'
 
 export const metadata: Metadata = {
- title: 'Contact Us | Advisor Jay - Scottsdale, Arizona',
+ title: 'Contact - Scottsdale, Arizona',
  description:
  'Reach out to Jay Chang, fiduciary wealth advisor in Scottsdale. I help families and business owners across Arizona make smarter financial decisions together. A real conversation about what matters to you.',
  alternates: { canonical: 'https://www.advisorjay.com/contact' },

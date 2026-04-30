@@ -5,7 +5,7 @@ import IncomeAnnuityEstimator from './IncomeAnnuityEstimator'
 
 export const metadata: Metadata = {
  title:
- 'Income Annuity Estimator | Advisor Jay',
+ 'Income Annuity Estimator',
  description:
  'Free income annuity calculator. See how much guaranteed monthly income your savings could generate. Adjust your lump sum, age, and payout option for instant estimates.',
  alternates: {

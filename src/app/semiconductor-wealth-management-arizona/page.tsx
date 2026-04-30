@@ -6,7 +6,7 @@ import SectionEyebrow from '@/components/SectionEyebrow';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
- title: 'Semiconductor & Tech Wealth Management in Arizona | RSU, SERPLUS & Equity Planning | Advisor Jay',
+ title: 'Semiconductor & Tech Wealth Management in Arizona | RSU, SERPLUS & Equity Planning',
  description: 'Fiduciary wealth management for semiconductor and tech professionals at TSMC, Intel, NVIDIA, Apple, Microchip, and Amkor in Arizona. I know your benefits, your equity plans, and the financial complexity your career creates.',
  alternates: {
  canonical: 'https://www.advisorjay.com/semiconductor-wealth-management-arizona',

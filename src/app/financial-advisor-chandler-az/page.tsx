@@ -3,14 +3,14 @@ import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 
 export const metadata: Metadata = {
- title: 'Financial Advisor in Chandler, AZ | Intel & Microchip Employee Specialist | Advisor Jay',
+ title: 'Financial Advisor in Chandler, AZ | Intel & Microchip Employee Specialist',
  description: 'Fiduciary financial advisor serving Intel and Microchip Technology employees in Chandler, Arizona. RSU planning, SERPLUS guidance, mega backdoor Roth, and ESPP strategy for semiconductor professionals.',
  alternates: {
  canonical: 'https://www.advisorjay.com/financial-advisor-chandler-az',
  },
  robots: 'index, follow',
  openGraph: {
- title: 'Financial Advisor in Chandler, AZ | Intel & Microchip Employee Specialist | Advisor Jay',
+ title: 'Financial Advisor in Chandler, AZ | Intel & Microchip Employee Specialist',
  description: 'Fiduciary financial advisor serving Intel and Microchip Technology employees in Chandler, Arizona. RSU planning, SERPLUS guidance, mega backdoor Roth, and ESPP strategy.',
  type: 'website',
  url: 'https://www.advisorjay.com/financial-advisor-chandler-az',

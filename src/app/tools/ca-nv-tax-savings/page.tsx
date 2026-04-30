@@ -5,7 +5,7 @@ import TaxSavingsCalculator from './TaxSavingsCalculator'
 
 export const metadata: Metadata = {
  title:
- 'California vs. Nevada vs. Arizona Tax Savings Estimator | Advisor Jay',
+ 'California vs. Nevada vs. Arizona Tax Savings Estimator',
  description:
  'Free California to Nevada tax savings calculator. Compare your 5-year state tax bill across CA, NV, and AZ, including income, capital gains, RSU vesting, and real estate gains.',
  alternates: {

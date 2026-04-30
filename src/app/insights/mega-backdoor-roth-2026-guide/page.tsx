@@ -9,7 +9,7 @@ import { ArrowLeft, Clock, ChevronRight, MessageSquare } from 'lucide-react'
 
 export const metadata: Metadata = {
  title:
- 'Mega Backdoor Roth 2026: $72,000 Tax-Free 401(k) Strategy | Advisor Jay',
+ 'Mega Backdoor Roth 2026: $72,000 Tax-Free 401(k) Strategy',
  description:
  'Complete guide to the mega backdoor Roth strategy for 2026. Learn how to contribute up to $72,000 annually through 401(k) after-tax contributions and in-plan conversions. Step-by-step instructions and real examples.',
  alternates: {

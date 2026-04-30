@@ -5,12 +5,12 @@ import HideChrome from '@/components/HideChrome'
 import WithholdingCalculator from '../tools/401k-withholding-calculator/WithholdingCalculator'
 
 export const metadata: Metadata = {
-  title: 'Is Your 401(k) Actually Working for You? | Advisor Jay',
+  title: 'Is Your 401(k) Actually Working for You?',
   description:
     'Find out if you are on track to max out your 401(k) this year. No sign-up required. Built by Jay Chang, fiduciary wealth advisor.',
   alternates: { canonical: 'https://www.advisorjay.com/401k-review' },
   openGraph: {
-    title: 'Is Your 401(k) Actually Working for You? | Advisor Jay',
+    title: 'Is Your 401(k) Actually Working for You?',
     description:
       '401(k) withholding calculator. Find the exact percentage to max out your contributions this year.',
     url: 'https://www.advisorjay.com/401k-review',

@@ -8,13 +8,13 @@ import TestimonialCarousel from '@/components/TestimonialCarousel'
 import { Calculator, Phone, FileText, Shield, Clock, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Financial Advisor for AT&T Employees | Pension, 401(k) & Deferred Comp | Advisor Jay',
+  title: 'Financial Advisor for AT&T Employees | Pension, 401(k) & Deferred Comp',
   description: 'I specialize in financial planning for AT&T employees, union and management. Pension lump sum vs. annuity, BCB1/BCB2 cash balance plans, Surplus Savings Plan, DISC deferred comp, and retirement timing.',
   alternates: {
     canonical: 'https://www.advisorjay.com/att-employee-financial-advisor',
   },
   openGraph: {
-    title: 'Financial Advisor for AT&T Employees | Advisor Jay',
+    title: 'Financial Advisor for AT&T Employees',
     description: 'Specialized financial planning for AT&T employees. Pension elections, cash balance plans, deferred comp coordination, and retirement timing for CWA, IBEW, and management professionals.',
     url: 'https://www.advisorjay.com/att-employee-financial-advisor',
   },

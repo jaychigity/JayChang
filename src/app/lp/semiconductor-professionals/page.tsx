@@ -4,7 +4,7 @@ import AnimateOnScroll from '@/components/AnimateOnScroll'
 import Button from '@/components/Button'
 
 export const metadata: Metadata = {
- title: 'Semiconductor Engineer Wealth Management | Arizona & California | Advisor Jay',
+ title: 'Semiconductor Engineer Wealth Management | Arizona & California',
  description:
  'RSU vesting, concentrated stock, and equity management for semiconductor engineers at Intel, NVIDIA, Apple, and Microchip across Arizona and California. Fiduciary wealth advisor Jay Chang.',
  robots: { index: false, follow: false },

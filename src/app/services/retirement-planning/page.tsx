@@ -9,14 +9,14 @@ import { ChevronDown } from 'lucide-react'
 
 export const metadata: Metadata = {
  title:
- 'Retirement Income Planning: Social Security Optimization & Tax-Smart Distributions | Advisor Jay',
+ 'Retirement Income Planning: Social Security Optimization & Tax-Smart Distributions',
  description:
  'Retirement income planning, distribution sequencing, Social Security optimization, and Roth conversion strategies for families in Arizona, California, and Nevada.',
  alternates: {
  canonical: 'https://www.advisorjay.com/services/retirement-planning',
  },
  openGraph: {
- title: 'Retirement Income Planning: Social Security Optimization & Tax-Smart Distributions | Advisor Jay',
+ title: 'Retirement Income Planning: Social Security Optimization & Tax-Smart Distributions',
  description:
  'Retirement income planning, distribution sequencing, Social Security optimization, and Roth conversion strategies for families with $2M-$20M.',
  url: 'https://www.advisorjay.com/services/retirement-planning',

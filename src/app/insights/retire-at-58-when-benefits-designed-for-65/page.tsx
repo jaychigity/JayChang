@@ -10,7 +10,7 @@ import { ArrowLeft, Clock, ChevronRight, MessageSquare } from 'lucide-react'
 
 export const metadata: Metadata = {
   title:
-    'How to Retire at 58 When Your Benefits Were Designed for 65 | Advisor Jay',
+    'How to Retire at 58 When Your Benefits Were Designed for 65',
   description:
     'Early retirement gap: healthcare, pension reduction, Social Security reduction, 401(k) Rule of 55, taxable account strategy. Bridge 58 to 65 with real example and account sequence.',
   alternates: {

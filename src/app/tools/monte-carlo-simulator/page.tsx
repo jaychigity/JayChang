@@ -4,12 +4,12 @@ import Link from 'next/link'
 import MonteCarloSimulator from './MonteCarloSimulator'
 
 export const metadata: Metadata = {
-  title: 'Free Monte Carlo Portfolio Simulator | Advisor Jay',
+  title: 'Free Monte Carlo Portfolio Simulator',
   description:
     'Free Monte Carlo portfolio simulator. Run 500 simulations to see every possible outcome for your investments, from great markets to tough ones. Includes retirement drawdown mode. No sign-up, instant results.',
   alternates: { canonical: 'https://www.advisorjay.com/tools/monte-carlo-simulator' },
   openGraph: {
-    title: 'Free Monte Carlo Portfolio Simulator | Advisor Jay',
+    title: 'Free Monte Carlo Portfolio Simulator',
     description:
       'See every possible future for your portfolio. Run hundreds of simulations, visualize probability bands, and model retirement survival. Free, no sign-up required.',
     url: 'https://www.advisorjay.com/tools/monte-carlo-simulator',
