@@ -92,7 +92,7 @@ const differentiators = [
  suffix: '',
  label: 'Advisor Time on You',
  description:
- "Farther's technology handles operations so your advisor can focus on what matters - you.",
+ "Institutional technology handles operations so I can focus on what matters - you.",
  },
  {
  stat: 'ADVANCED',

@@ -133,9 +133,9 @@ export default function TrustEstatePlanningPage() {
   <AnimateOnScroll delay={200}>
   <p className="font-sans text-body-lg text-[#5b6a71] max-w-[680px] mx-auto mt-6">
    Most advisors hand you a referral to an outside attorney and move
-   on. At Farther, trust and estate planning is built into the
-   advisory relationship - led by dedicated specialists who
-   work alongside your advisor, your CPA, and your estate attorney to
+   on. In my practice, trust and estate planning is built into the
+   advisory relationship - supported by dedicated specialists who
+   work alongside me, your CPA, and your estate attorney to
    design strategies that protect what you&apos;ve built and transfer
    it on your terms.
   </p>

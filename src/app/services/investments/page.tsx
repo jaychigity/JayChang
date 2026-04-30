@@ -245,11 +245,10 @@ export default function InvestmentsPage() {
   <AnimateOnScroll delay={100}>
    <p className="font-sans text-body text-[#5b6a71] mt-6 leading-relaxed">
    The difference between average and exceptional investment management is not
-   just strategy - it is execution. At Farther, your advisor has access to the
+   just strategy - it is execution. I have access to the
    same caliber of research, analytics, and portfolio construction tools used
-   by the largest institutional investors. Our platform manages over $18 billion
-   in client assets, giving us the scale to negotiate institutional pricing on
-   funds, access private market opportunities, and deploy technology that
+   by the largest institutional investors - giving you institutional pricing on
+   funds, access to private market opportunities, and technology that
    continuously monitors and optimizes your portfolio.
    </p>
   </AnimateOnScroll>

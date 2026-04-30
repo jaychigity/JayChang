@@ -512,7 +512,7 @@ export default function LasVegasNevadaPage() {
    Nevada Dynasty Trust Creation &amp; Strategy
    </h3>
    <p className="font-sans text-body text-[#5b6a71]">
-   Nevada allows perpetual dynasty trusts with no expiration date - meaning you can transfer wealth to your heirs for 1,000+ years completely free of state income tax and transfer taxes. Most states limit dynasty trusts to 21 years. This single feature creates generational wealth-building advantages that can preserve hundreds of millions across your family line. Jay Chang's clients have direct access to Farther's dedicated Trust &amp; Estate Planning team - ensuring your Nevada dynasty strategy is built and maintained by specialists who coordinate directly with your Nevada or California estate attorney to design structures that capture every advantage of Nevada's perpetual trust laws while integrating them into your broader{' '}
+   Nevada allows perpetual dynasty trusts with no expiration date - meaning you can transfer wealth to your heirs for 1,000+ years completely free of state income tax and transfer taxes. Most states limit dynasty trusts to 21 years. This single feature creates generational wealth-building advantages that can preserve hundreds of millions across your family line. My clients have direct access to a dedicated trust and estate planning team - ensuring your Nevada dynasty strategy is built and maintained by specialists who coordinate directly with your Nevada or California estate attorney to design structures that capture every advantage of Nevada's perpetual trust laws while integrating them into your broader{' '}
    <Link
     href="/services"
     className="text-[#1d7682] underline underline-offset-2 hover:text-[#155f69] transition-colors"

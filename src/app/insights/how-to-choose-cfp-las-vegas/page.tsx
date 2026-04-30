@@ -301,7 +301,7 @@ export default function HowToChooseCFPLasVegasPage() {
    </h2>
 
    <p className="font-sans text-[17px] text-[#333333] leading-[1.8] mb-6">
-   At Farther, my Arizona practice meets every standard described above. I bring over a decade of wealth management experience from Charles Schwab and Vanguard, and my team includes Certified Financial Planner&reg; (CFP&reg;) professionals who deliver comprehensive financial planning alongside my specialized focus in fiduciary investment management, retirement income planning, and wealth building. Farther Finance, Inc. is registered with the SEC as a Registered Investment Adviser (RIA), providing regulatory oversight and transparency. For complete details on our fee structure, please refer to our{' '}
+   My Arizona practice meets every standard described above. I bring over a decade of wealth management experience from Charles Schwab and Vanguard, and I work alongside Certified Financial Planner&reg; (CFP&reg;) professionals who deliver comprehensive financial planning, complementing my specialized focus in fiduciary investment management, retirement income planning, and wealth building. Farther Finance, Inc. is registered with the SEC as a Registered Investment Adviser (RIA), providing regulatory oversight and transparency. For complete details on our fee structure, please refer to our{' '}
    <a href="/documents/FFA-ADV-Packet-2.6.26.pdf" target="_blank" rel="noopener noreferrer" className="text-[#1d7682] underline underline-offset-2 hover:text-[#D4B65A] transition-colors">
    Form ADV Part 2A
    </a>.

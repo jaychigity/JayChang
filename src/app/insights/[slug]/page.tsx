@@ -32,7 +32,7 @@ const articles: Record<
  authorRole: 'Wealth Management',
  content: [
  'For high-net-worth investors, tax-loss harvesting is one of the most powerful tools available for improving after-tax returns. Yet most traditional advisors only review portfolios for harvesting opportunities once a year - typically in December, when much of the potential value has already been lost.',
- 'At Farther, our platform monitors portfolios continuously for tax-loss harvesting opportunities. When a position drops below its cost basis by a meaningful threshold, the system flags it for harvesting - regardless of the time of year. This approach has been shown to capture significantly more value than annual-only strategies.',
+ 'The institutional platform behind my practice monitors portfolios continuously for tax-loss harvesting opportunities. When a position drops below its cost basis by a meaningful threshold, the system flags it for harvesting - regardless of the time of year. This approach has been shown to capture significantly more value than annual-only strategies.',
  'The mechanics are straightforward: sell a position at a loss, immediately replace it with a similar (but not substantially identical) investment to maintain market exposure, and use the realized loss to offset capital gains elsewhere in your portfolio. The key is doing this systematically and frequently.',
  'For investors with $2M or more in taxable accounts, continuous tax-loss harvesting can add meaningful basis points to after-tax returns annually. Over a decade, this compounds into a substantial difference in wealth accumulation.',
  'Important considerations include wash sale rules, which prevent you from repurchasing a substantially identical security within 30 days. Our platform tracks this automatically across all your accounts - including IRAs and spouse accounts - to ensure compliance.',
@@ -80,7 +80,7 @@ const articles: Record<
  'Strategies worth considering include irrevocable life insurance trusts (ILITs), grantor retained annuity trusts (GRATs), spousal lifetime access trusts (SLATs), and qualified personal residence trusts (QPRTs). Each serves a different purpose and comes with unique trade-offs.',
  'For business owners, succession planning adds another layer of complexity. Buy-sell agreements, valuation discounts for family limited partnerships, and the timing of ownership transfers all require coordination between your wealth advisor, attorney, and CPA.',
  'In community property states like Arizona and Nevada, the step-up in basis at death applies to both halves of community property - a significant advantage that requires careful title management to preserve.',
- 'At Farther, we coordinate with your estate attorney and CPA to ensure your investment strategy, tax planning, and estate documents all work together. This integrated approach prevents the gaps that commonly arise when each professional operates in isolation.',
+ 'I coordinate with your estate attorney and CPA to ensure your investment strategy, tax planning, and estate documents all work together. This integrated approach prevents the gaps that commonly arise when each professional operates in isolation.',
  ],
  relatedSlugs: [
  'tax-loss-harvesting-guide',
@@ -142,7 +142,7 @@ const articles: Record<
  authorRole: 'Wealth Management',
  content: [
  'When families with $2M or more begin searching for a financial advisor, they typically ask about returns, fees, and credentials. While these matter, they are rarely the factors that determine whether a relationship will be successful long-term.',
- 'The first question to ask is about the advisor\'s fiduciary obligation. A fiduciary is legally required to act in your best interest - not just recommend "suitable" investments. At Farther, every advisor operates under a fiduciary standard, always.',
+ 'The first question to ask is about the advisor\'s fiduciary obligation. A fiduciary is legally required to act in your best interest - not just recommend "suitable" investments. I operate under a fiduciary standard, always.',
  'The second question is about how the advisor is compensated. Fiduciary advisors who charge only a percentage of assets under management have fewer conflicts of interest than commission-based advisors who earn money from product sales. Transparency in fees is non-negotiable.',
  'Third, consider the advisor\'s technology and operational infrastructure. Can you see your portfolio in real time? Does the firm offer automated tax-loss harvesting? Can you message your advisor directly, or do you go through a call center? These operational details directly impact the quality of service you receive.',
  'Fourth, evaluate the advisor\'s capacity. An advisor managing 300+ client relationships cannot provide the same level of attention as one managing 50-75. Ask directly how many clients they serve and how often you can expect proactive outreach.',

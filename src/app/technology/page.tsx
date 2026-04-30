@@ -21,9 +21,9 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'The Farther Platform | Technology-Powered Wealth Management',
+  title: 'The Platform Behind Advisor Jay | Technology-Powered Wealth Management',
   description:
-    `Farther's Intelligent Wealth Platform combines advanced financial planning, real-time portfolio visibility, and institutional-grade investment strategies for families with $2M–$20M.`,
+    `The Intelligent Wealth Platform combines advanced financial planning, real-time portfolio visibility, and institutional-grade investment strategies for families with $2M–$20M.`,
   alternates: {
     canonical: 'https://www.advisorjay.com/technology',
   },
@@ -78,9 +78,9 @@ export default function TechnologyPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'WebPage',
-            name: 'The Farther Platform: Technology-Powered Wealth Management',
+            name: 'The Platform Behind Advisor Jay: Technology-Powered Wealth Management',
             description:
-              `Farther's technology platform combines technology-powered planning with institutional-grade investment strategies.`,
+              `The institutional technology platform combines technology-powered planning with institutional-grade investment strategies.`,
             url: 'https://www.advisorjay.com/technology',
           }),
         }}
@@ -209,7 +209,7 @@ export default function TechnologyPage() {
               <div className="rounded-[8px] overflow-hidden relative">
                 <Image
                   src="/Photos/advisor-couple-meeting.png"
-                  alt="Wealth advisor meeting with clients using Farther's technology-powered financial planning platform"
+                  alt="Jay Chang meeting with clients using a technology-powered financial planning platform"
                   width={1536}
                   height={1024}
                   className="w-full h-auto"

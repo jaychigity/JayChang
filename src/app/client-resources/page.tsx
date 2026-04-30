@@ -4,12 +4,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
  title: "Market Commentary & Insights | Advisor Jay",
  description:
- "Stay informed with the latest market commentary, economic outlooks, and financial planning insights from Farther's research team. Updated regularly with analysis relevant to families, professionals, and business owners.",
+ "Stay informed with the latest market commentary, economic outlooks, and financial planning insights I share with clients. Updated regularly with analysis relevant to families, professionals, and business owners.",
  alternates: { canonical: "https://www.advisorjay.com/client-resources" },
  openGraph: {
  title: "Market Commentary & Insights | Advisor Jay",
  description:
- "Latest market commentary and financial planning insights from Farther's research team.",
+ "Latest market commentary and financial planning insights I share with clients.",
  url: "https://www.advisorjay.com/client-resources",
  },
 };

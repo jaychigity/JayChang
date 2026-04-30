@@ -139,7 +139,7 @@ export default function GenerationalWealthPlanningPage() {
   <p className="font-sans text-body-lg text-[#5b6a71] max-w-[680px] mx-auto mt-6">
    Wealth that lasts is not accidental - it is the product of
    intentional governance, structured planning, and purposeful
-   education. At Farther, we help families build the frameworks,
+   education. I help families build the frameworks,
    strategies, and conversations that ensure their wealth serves not
    just this generation, but the ones that follow.
   </p>

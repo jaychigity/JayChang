@@ -99,7 +99,7 @@ export default function TempeFinancialAdvisor() {
    I chose Tempe as my home base for a reason. I work with professionals throughout the East Valley, Phoenix, Chandler, and Scottsdale who are dealing with the same kinds of questions: What do I do with all these RSUs? Am I paying more in taxes than I need to? Is my retirement plan actually going to work? Should I be doing a mega backdoor Roth?
    </p>
    <p>
-   At Farther, we combine real human advice with a modern technology platform. That means you get Jay and our team thinking about your situation personally, backed by tools that help us model scenarios, optimize taxes, and keep your plan on track. No dusty binders. No once-a-year check-in calls. Just a team that&apos;s genuinely in your corner.
+   I combine real human advice with a modern technology platform. That means I&apos;m thinking about your situation personally, backed by tools that help me model scenarios, optimize taxes, and keep your plan on track. No dusty binders. No once-a-year check-in calls. Just someone who&apos;s genuinely in your corner.
    </p>
    </div>
   </div>

@@ -71,7 +71,7 @@ const principles = [
  {
   icon: Brain,
   title: 'You get a real person making real decisions.',
-  body: 'Technology handles the number crunching and execution. Our team handles the thinking, the listening, and the big-picture strategy. Farther\'s platform makes us faster and sharper - but it doesn\'t replace the human judgment that matters most.',
+  body: 'Technology handles the number crunching and execution. I handle the thinking, the listening, and the big-picture strategy. The institutional platform makes me faster and sharper - but it doesn\'t replace the human judgment that matters most.',
  },
 ]
 
@@ -183,10 +183,10 @@ export default function InvestmentPhilosophyPage() {
         <p className="font-sans text-[17px] md:text-[20px] font-light text-[#b6d0ed] leading-[1.6] max-w-[580px] mt-6">
          You didn't build your wealth by accident - so
          why would you hand it off to a cookie-cutter strategy?
-         Our team combines real human judgment with Farther's
-         Intelligent Wealth Platform to grow what you've
+         I combine real human judgment with an institutional
+         wealth platform to grow what you&apos;ve
          earned, manage risk with intention, and keep more of
-         your money out of Uncle Sam's hands.
+         your money out of Uncle Sam&apos;s hands.
         </p>
        </AnimateOnScroll>
 
@@ -479,8 +479,8 @@ export default function InvestmentPhilosophyPage() {
          and replace it with something very similar. You keep essentially
          the same portfolio exposure, but now you've banked a tax loss
          that offsets gains elsewhere. Studies show this can add 1-2%
-         per year to your after-tax returns. Farther's platform
-         spots these opportunities automatically, and our team confirms
+         per year to your after-tax returns. The platform
+         spots these opportunities automatically, and I confirm
          each one makes sense in the context of your bigger plan.
         </p>
        </div>
@@ -520,12 +520,12 @@ export default function InvestmentPhilosophyPage() {
          Technology That Watches the Tax Details
         </h3>
         <p className="font-sans text-[15px] text-[#5b6a71] leading-relaxed mt-3">
-         Every strategy on Farther's platform benefits from built-in
+         Every strategy on the platform benefits from built-in
          tax intelligence. The system monitors your portfolio around the
          clock for harvesting opportunities, wash-sale rules, and
          whether your accounts have drifted from their ideal tax
-         setup - so our team can act quickly and precisely in ways
-         that just aren't possible doing it all by hand.
+         setup - so I can act quickly and precisely in ways
+         that just aren&apos;t possible doing it all by hand.
         </p>
        </div>
       </AnimateOnScroll>
@@ -561,10 +561,10 @@ export default function InvestmentPhilosophyPage() {
      <AnimateOnScroll delay={200}>
       <p className="font-sans text-body-lg text-[#5b6a71] leading-relaxed mt-6 max-w-[720px]">
        Most places make you choose: get a real advisor or get great
-       technology. At Farther, you get both. The Intelligent Wealth
+       technology. With me, you get both. The Intelligent Wealth
        Platform was built from scratch - not patched onto some
-       outdated system - to make our team better at what we do,
-       not to replace us.
+       outdated system - to make me better at what I do,
+       not to replace me.
       </p>
      </AnimateOnScroll>
 

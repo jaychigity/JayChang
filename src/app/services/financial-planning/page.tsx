@@ -91,7 +91,7 @@ const faqJsonLd = {
  name: 'How is financial planning different from investment management?',
  acceptedAnswer: {
   '@type': 'Answer',
-  text: 'Investment management focuses on building and managing your portfolio. Financial planning is the broader framework - it answers questions like when you can retire, how to fund education, whether your insurance coverage is adequate, and how to sequence withdrawals in retirement. At Farther, both disciplines are fully integrated so every investment decision supports your larger financial plan.',
+  text: 'Investment management focuses on building and managing your portfolio. Financial planning is the broader framework - it answers questions like when you can retire, how to fund education, whether your insurance coverage is adequate, and how to sequence withdrawals in retirement. In my practice, both disciplines are fully integrated so every investment decision supports your larger financial plan.',
  },
  },
  ],
@@ -137,7 +137,7 @@ export default function FinancialPlanningPage() {
   <p className="font-sans text-body-lg text-[#5b6a71] max-w-[680px] mx-auto mt-6 leading-relaxed">
    For families with $2M-$20M in investable assets, financial
    planning should be more than a retirement calculator and a
-   spreadsheet. At Farther, your plan is a living strategy - 
+   spreadsheet. Your plan should be a living strategy -
    stress-tested across market scenarios, coordinated with your tax
    and legal team, and designed to evolve as your life does.
   </p>
@@ -280,10 +280,10 @@ export default function FinancialPlanningPage() {
    <p className="font-sans text-body text-[#5b6a71] leading-relaxed mt-4">
    A financial plan that ignores your tax situation is
    incomplete. A tax strategy that ignores your estate plan is
-   dangerous. At Farther, your financial plan is the central
-   document that connects every professional in your life. We
+   dangerous. Your financial plan should be the central
+   document that connects every professional in your life. I
    work directly with your CPA to align Roth conversion timing,
-   income recognition, and deduction strategies. We coordinate
+   income recognition, and deduction strategies. I coordinate
    with your estate attorney to ensure trust structures,
    beneficiary designations, and gifting programs all support
    your broader goals.
@@ -398,7 +398,7 @@ export default function FinancialPlanningPage() {
    portfolio. Financial planning is the broader framework - 
    it answers questions like when you can retire, how to fund
    education, whether your insurance coverage is adequate, and
-   how to sequence withdrawals in retirement. At Farther, both
+   how to sequence withdrawals in retirement. In my practice, both
    disciplines are fully integrated so every investment decision
    supports your larger financial plan.
    </p>
