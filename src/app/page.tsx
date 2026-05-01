@@ -328,6 +328,24 @@ export default function Home() {
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
    <div className="bg-white/10 backdrop-blur p-8 rounded-lg border border-white/20">
    <p className="text-5xl font-serif font-bold text-[#1d7682] mb-2">
+   <CountUp end="$200K+" />
+   </p>
+   <p className="text-white text-sm leading-relaxed">
+   Typical swing in an AT&amp;T lump-sum pension value when IRS segment rates move just 1%. The timing of your retirement date matters more than most people realize.
+   </p>
+   </div>
+
+   <div className="bg-white/10 backdrop-blur p-8 rounded-lg border border-white/20">
+   <p className="text-5xl font-serif font-bold text-[#1d7682] mb-2">
+   <CountUp end="60 days" />
+   </p>
+   <p className="text-white text-sm leading-relaxed">
+   Most pension elections (PG&amp;E, AT&amp;T, and others) have a hard deadline after your separation date. Once you choose lump-sum or annuity, the decision is irreversible.
+   </p>
+   </div>
+
+   <div className="bg-white/10 backdrop-blur p-8 rounded-lg border border-white/20">
+   <p className="text-5xl font-serif font-bold text-[#1d7682] mb-2">
    <CountUp end="22%" />
    </p>
    <p className="text-white text-sm leading-relaxed">
