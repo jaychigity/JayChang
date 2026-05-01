@@ -80,7 +80,7 @@ function PlanSelectorPanel({ onSelectTab }: { onSelectTab: (t: Tab) => void }) {
         <div className="flex flex-wrap gap-2">
           {([
             { v: 'union', l: 'Union (IBEW / ESC Local 20)' },
-            { v: 'management', l: 'Management / A&T' },
+            { v: 'management', l: 'Management / A&T (Administrative & Technical)' },
             { v: 'unsure', l: "Not sure" },
           ] as { v: EmployeeType; l: string }[]).map(({ v, l }) => (
             <button
@@ -204,7 +204,7 @@ function FinalPayCalculator() {
             <label className={labelCls}>Employee Type</label>
             <select value={empType} onChange={e => setEmpType(e.target.value as 'union' | 'management')} className={inputCls}>
               <option value="union">Union (IBEW / ESC Local 20)</option>
-              <option value="management">Management / A&T</option>
+              <option value="management">Management / A&T (Administrative & Technical)</option>
             </select>
             <p className="font-sans text-[11px] text-[#5b6a71] mt-1">
               {empType === 'union'
@@ -851,7 +851,7 @@ function Match401kCalculator() {
             <div>
               <label className={labelCls}>Employment Type</label>
               <select value={empType} onChange={e => setEmpType(e.target.value as 'union' | 'management')} className={inputCls}>
-                <option value="management">Management / A&T</option>
+                <option value="management">Management / A&T (Administrative & Technical)</option>
                 <option value="union">Union (IBEW / ESC)</option>
               </select>
             </div>
