@@ -140,6 +140,40 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
    </div>
   </AnimateOnScroll>
 
+  {/* PG&E */}
+  <AnimateOnScroll>
+   <div className="bg-[#FAFAF8] border border-[#E8E6E1] rounded-[12px] p-[32px] h-full">
+   <h3 className="text-2xl font-bold text-[#333333] mb-4">
+   PG&amp;E Pension, 401(k) Spillover &amp; Retiree Medical
+   </h3>
+   <div className="space-y-4 text-[#333333]">
+   <div>
+    <p className="font-semibold text-[#1d7682] mb-2">Two Pension Formulas: Which One You&apos;re In Changes Everything</p>
+    <p className="text-base leading-relaxed">
+    PG&amp;E employees hired before 2013 are typically in the Final Pay pension: a traditional defined benefit based on your last 30 days of pay (union) or highest 36-month average (management). Employees hired in 2013 or later are in the Cash Balance plan, which accrues annual pay credits of 5%–10% of salary based on your age-plus-service points, plus quarterly interest credits. The key difference: Final Pay offers no lump sum option and keeps you tied to an annuity for life. Cash Balance can be taken as a lump sum and rolled into an IRA. Early retirement reduction factors for both formulas are tied to a points system (age + years of service), and the difference between retiring at 57 versus 59 can mean a permanent reduction of 10–15% in your monthly benefit, a decision that can&apos;t be undone.
+    </p>
+   </div>
+   <div>
+    <p className="font-semibold text-[#1d7682] mb-2">The 401(k) Spillover Election Most Employees Miss</p>
+    <p className="text-base leading-relaxed">
+    PG&amp;E&apos;s Retirement Savings Plan has a feature almost no one sets up correctly: the after-tax spillover election. If you hit the IRS annual contribution limit early in the year without it, your employer match stops the moment your pre-tax contributions are exhausted. With the spillover in place, contributions automatically continue as after-tax and the company match keeps going, worth up to $1,185 per year in additional employer contributions for Cash Balance participants. Those after-tax contributions are also eligible for rollout to a Roth IRA under the mega backdoor Roth strategy. For IBEW 1245 members, a Roth 401(k) option was added effective January 2026, creating new planning opportunities.
+    </p>
+   </div>
+   <div>
+    <p className="font-semibold text-[#1d7682] mb-2">Retiree Medical Savings Account (RMSA)</p>
+    <p className="text-base leading-relaxed">
+    PG&amp;E funds a Retiree Medical Savings Account on your behalf starting at age 45. The balance grows with interest while you work and is used exclusively to pay PG&amp;E-sponsored retiree medical premiums after you retire. It sounds like a safety net, but it depletes as premiums are drawn, there&apos;s no way to replenish it, and it doesn&apos;t cover out-of-pocket costs or non-PG&amp;E coverage. Understanding how long your RMSA will last, how it interacts with Medicare at 65, and what happens if you retire at 55 with a 10-year bridge gap before Medicare eligibility is one of the most important, and most overlooked, parts of retirement planning for PG&amp;E employees.
+    </p>
+   </div>
+   </div>
+   <div className="mt-6 pt-6 border-t border-[#E8E6E1]">
+   <Link href="/pge-employee-financial-advisor" className="text-[#1d7682] font-semibold hover:underline inline-flex items-center gap-2 text-sm">
+   Full PG&amp;E employee planning guide →
+   </Link>
+   </div>
+   </div>
+  </AnimateOnScroll>
+
   {/* Verizon */}
   <AnimateOnScroll>
    <div className="bg-[#FAFAF8] border border-[#E8E6E1] rounded-[12px] p-[32px] h-full">
@@ -200,7 +234,7 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
 
   {/* SRP / Utility */}
   <AnimateOnScroll>
-   <div className="bg-[#FAFAF8] border border-[#E8E6E1] rounded-[12px] p-[32px] h-full">
+   <div className="bg-[#FAFAF8] border border-[#E8E6E1] rounded-[12px] p-[32px] h-full lg:col-span-2">
    <h3 className="text-2xl font-bold text-[#333333] mb-4">
    SRP &amp; Utility Retirement Systems
    </h3>
@@ -223,40 +257,6 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
     We model your utility pension formula with precision, including early retirement reduction factors and survivor benefit elections. We optimize the sequence of withdrawals from your 457(b), 401(a), and personal savings to minimize taxes and maximize income throughout retirement.
     </p>
    </div>
-   </div>
-   </div>
-  </AnimateOnScroll>
-
-  {/* PG&E */}
-  <AnimateOnScroll>
-   <div className="bg-[#FAFAF8] border border-[#E8E6E1] rounded-[12px] p-[32px] h-full lg:col-span-2">
-   <h3 className="text-2xl font-bold text-[#333333] mb-4">
-   PG&amp;E Pension, 401(k) Spillover &amp; Retiree Medical
-   </h3>
-   <div className="space-y-4 text-[#333333]">
-   <div>
-    <p className="font-semibold text-[#1d7682] mb-2">Two Pension Formulas: Which One You&apos;re In Changes Everything</p>
-    <p className="text-base leading-relaxed">
-    PG&amp;E employees hired before 2013 are typically in the Final Pay pension: a traditional defined benefit based on your last 30 days of pay (union) or highest 36-month average (management). Employees hired in 2013 or later are in the Cash Balance plan, which accrues annual pay credits of 5%–10% of salary based on your age-plus-service points, plus quarterly interest credits. The key difference: Final Pay offers no lump sum option and keeps you tied to an annuity for life. Cash Balance can be taken as a lump sum and rolled into an IRA. Early retirement reduction factors for both formulas are tied to a points system (age + years of service), and the difference between retiring at 57 versus 59 can mean a permanent reduction of 10–15% in your monthly benefit, a decision that can&apos;t be undone.
-    </p>
-   </div>
-   <div>
-    <p className="font-semibold text-[#1d7682] mb-2">The 401(k) Spillover Election Most Employees Miss</p>
-    <p className="text-base leading-relaxed">
-    PG&amp;E&apos;s Retirement Savings Plan has a feature almost no one sets up correctly: the after-tax spillover election. If you hit the IRS annual contribution limit early in the year without it, your employer match stops the moment your pre-tax contributions are exhausted. With the spillover in place, contributions automatically continue as after-tax and the company match keeps going, worth up to $1,185 per year in additional employer contributions for Cash Balance participants. Those after-tax contributions are also eligible for rollout to a Roth IRA under the mega backdoor Roth strategy. For IBEW 1245 members, a Roth 401(k) option was added effective January 2026, creating new planning opportunities.
-    </p>
-   </div>
-   <div>
-    <p className="font-semibold text-[#1d7682] mb-2">Retiree Medical Savings Account (RMSA)</p>
-    <p className="text-base leading-relaxed">
-    PG&amp;E funds a Retiree Medical Savings Account on your behalf starting at age 45. The balance grows with interest while you work and is used exclusively to pay PG&amp;E-sponsored retiree medical premiums after you retire. It sounds like a safety net, but it depletes as premiums are drawn, there&apos;s no way to replenish it, and it doesn&apos;t cover out-of-pocket costs or non-PG&amp;E coverage. Understanding how long your RMSA will last, how it interacts with Medicare at 65, and what happens if you retire at 55 with a 10-year bridge gap before Medicare eligibility is one of the most important, and most overlooked, parts of retirement planning for PG&amp;E employees.
-    </p>
-   </div>
-   </div>
-   <div className="mt-6 pt-6 border-t border-[#E8E6E1]">
-   <Link href="/pge-employee-financial-advisor" className="text-[#1d7682] font-semibold hover:underline inline-flex items-center gap-2 text-sm">
-   Full PG&amp;E employee planning guide →
-   </Link>
    </div>
    </div>
   </AnimateOnScroll>
