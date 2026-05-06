@@ -7,6 +7,7 @@ import { trackFormSubmission } from '@/lib/analytics'
 
 interface FormData {
   firstName: string
+  lastName: string
   email: string
   phone: string
   wasReferred: boolean
@@ -16,7 +17,9 @@ interface FormData {
 
 interface FormErrors {
   firstName?: string
+  lastName?: string
   email?: string
+  phone?: string
 }
 
 function formatPhone(value: string): string {
@@ -36,6 +39,7 @@ const inputError =
 export default function ConsultationForm() {
   const [formData, setFormData] = useState<FormData>({
     firstName: '',
+    lastName: '',
     email: '',
     phone: '',
     wasReferred: false,
@@ -116,10 +120,16 @@ export default function ConsultationForm() {
     if (!formData.firstName.trim()) {
       newErrors.firstName = 'First name is required.'
     }
+    if (!formData.lastName.trim()) {
+      newErrors.lastName = 'Last name is required.'
+    }
     if (!formData.email.trim()) {
       newErrors.email = 'Email address is required.'
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = 'Please enter a valid email address.'
+    }
+    if (!formData.phone.trim() || formData.phone.replace(/\D/g, '').length < 10) {
+      newErrors.phone = 'Phone number is required.'
     }
 
     setErrors(newErrors)
@@ -141,6 +151,7 @@ export default function ConsultationForm() {
     // Merge form data with UTM attribution for lead tracking
     const submissionPayload = {
       firstName: formData.firstName,
+      lastName: formData.lastName,
       email: formData.email,
       phone: formData.phone,
       referredBy: formData.referredBy || '',
@@ -173,12 +184,12 @@ export default function ConsultationForm() {
     setIsSubmitted(true)
   }
 
-  // Scroll to top of post-submit content when form submits or state changes
   useEffect(() => {
     if (isSubmitted && postSubmitRef.current) {
-      postSubmitRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      const top = postSubmitRef.current.getBoundingClientRect().top + window.scrollY - 100
+      window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' })
     }
-  }, [isSubmitted, submitMode, callbackSent, isBooked])
+  }, [isSubmitted, callbackSent, isBooked])
 
   if (isSubmitted) {
     // Final thank-you after booking or callback request
@@ -367,6 +378,33 @@ export default function ConsultationForm() {
           )}
         </div>
 
+        {/* Last Name */}
+        <div className="mb-[24px]">
+          <label
+            htmlFor="lastName"
+            className="font-sans text-[13px] font-medium text-[#333333] tracking-[0.05em] block mb-[8px]"
+          >
+            Last Name <span className="text-[#8B2E2E]">*</span>
+          </label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            required
+            aria-invalid={errors.lastName ? 'true' : undefined}
+            aria-describedby={errors.lastName ? 'lastName-error' : undefined}
+            value={formData.lastName}
+            onChange={handleChange}
+            className={`${inputBase} ${errors.lastName ? inputError : ''}`}
+          />
+          {errors.lastName && (
+            <p id="lastName-error" role="alert" className="font-sans text-xs text-[#8B2E2E] mt-[6px] flex items-center gap-[4px]">
+              <AlertCircle size={12} className="shrink-0" />
+              {errors.lastName}
+            </p>
+          )}
+        </div>
+
         {/* Email */}
         <div className="mb-[24px]">
           <label
@@ -394,27 +432,36 @@ export default function ConsultationForm() {
           )}
         </div>
 
-        {/* Phone (Optional) */}
+        {/* Phone */}
         <div className="mb-[24px]">
           <label
             htmlFor="phone"
-            className="font-sans text-[13px] font-medium text-[#333333] tracking-[0.05em] block mb-[2px]"
+            className="font-sans text-[13px] font-medium text-[#333333] tracking-[0.05em] block mb-[8px]"
           >
-            Phone Number
+            Phone Number <span className="text-[#8B2E2E]">*</span>
           </label>
-          <p className="font-sans text-[11px] text-[#5b6a71] mb-[8px]">Optional</p>
           <input
             type="tel"
             id="phone"
             name="phone"
+            required
             placeholder="(480) 944-0880"
+            aria-invalid={errors.phone ? 'true' : undefined}
+            aria-describedby={errors.phone ? 'phone-error' : undefined}
             value={formData.phone}
             onChange={(e) => {
               const formatted = formatPhone(e.target.value)
               setFormData((prev) => ({ ...prev, phone: formatted }))
+              if (errors.phone) setErrors((prev) => ({ ...prev, phone: undefined }))
             }}
-            className={inputBase}
+            className={`${inputBase} ${errors.phone ? inputError : ''}`}
           />
+          {errors.phone && (
+            <p id="phone-error" role="alert" className="font-sans text-xs text-[#8B2E2E] mt-[6px] flex items-center gap-[4px]">
+              <AlertCircle size={12} className="shrink-0" />
+              {errors.phone}
+            </p>
+          )}
         </div>
 
         {/* Referral Toggle */}

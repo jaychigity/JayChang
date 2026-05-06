@@ -320,6 +320,8 @@ export default function TaxSavingsCalculator() {
  errors.lastName = 'Required'
  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contactInfo.email))
  errors.email = 'Please enter a valid email'
+ if (!contactInfo.phone.trim() || contactInfo.phone.replace(/\D/g, '').length < 10)
+ errors.phone = 'Phone number is required'
  setContactErrors(errors)
  if (Object.keys(errors).length > 0) return
 
@@ -714,7 +716,7 @@ export default function TaxSavingsCalculator() {
     <div>
     <input
     type="tel"
-    placeholder="Phone (optional)"
+    placeholder="Phone Number *"
     value={contactInfo.phone}
     onChange={(e) =>
      setContactInfo((p) => ({
@@ -725,6 +727,9 @@ export default function TaxSavingsCalculator() {
     className="w-full px-4 py-3 border-2 border-[#E2E8F0] rounded-[8px] font-sans text-[15px] text-[#333333] placeholder-[#94A3B8] focus:outline-none focus:border-[#1d7682] transition-colors"
     aria-label="Phone Number"
     />
+    {contactErrors.phone && (
+     <p className="text-[12px] text-[#EF4444] mt-1">{contactErrors.phone}</p>
+    )}
     </div>
     <button
     type="submit"

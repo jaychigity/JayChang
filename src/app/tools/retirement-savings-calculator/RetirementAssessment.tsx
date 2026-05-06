@@ -472,6 +472,8 @@ export default function RetirementAssessment() {
  if (contactInfo.lastName.trim().length < 2) errs.lastName = 'Required'
  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contactInfo.email))
  errs.email = 'Please enter a valid email'
+ if (!contactInfo.phone.trim() || contactInfo.phone.replace(/\D/g, '').length < 10)
+ errs.phone = 'Phone number is required'
  setContactErrors(errs)
  if (Object.keys(errs).length > 0) return
 
@@ -1006,9 +1008,10 @@ export default function RetirementAssessment() {
    {contactErrors.email && (
    <p className="text-[12px] text-[#EF4444] mt-1">{contactErrors.email}</p>
    )}
+   <div>
    <input
    type="tel"
-   placeholder="Phone (optional)"
+   placeholder="Phone Number *"
    value={contactInfo.phone}
    onChange={(e) =>
     setContactInfo((p) => ({ ...p, phone: e.target.value }))
@@ -1016,6 +1019,10 @@ export default function RetirementAssessment() {
    className="w-full px-4 py-3 border-2 border-[#4a4a4a] rounded-[8px] font-sans text-[15px] text-white placeholder-[#8a8a8a] bg-[#2a2a2a] focus:outline-none focus:border-[#1d7682] transition-colors"
    aria-label="Phone Number"
    />
+   {contactErrors.phone && (
+    <p className="text-[12px] text-[#EF4444] mt-1">{contactErrors.phone}</p>
+   )}
+   </div>
    <p className="font-sans text-[11px] text-[#8a8a8a] text-center italic">
    By submitting this form, you consent to being contacted by a Farther wealth
    advisor regarding your retirement planning. You may opt out at any time.

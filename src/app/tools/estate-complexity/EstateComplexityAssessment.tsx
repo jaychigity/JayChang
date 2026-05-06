@@ -560,6 +560,8 @@ export default function EstateComplexityAssessment() {
  if (contactInfo.lastName.trim().length < 2) errs.lastName = 'Required'
  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contactInfo.email))
  errs.email = 'Please enter a valid email'
+ if (!contactInfo.phone.trim() || contactInfo.phone.replace(/\D/g, '').length < 10)
+ errs.phone = 'Phone number is required'
  setContactErrors(errs)
  if (Object.keys(errs).length > 0) return
 
@@ -1081,9 +1083,10 @@ export default function EstateComplexityAssessment() {
     <p className="text-[12px] text-[#EF4444] mt-1">{contactErrors.email}</p>
    )}
    </div>
+   <div>
    <input
    type="tel"
-   placeholder="Phone (optional)"
+   placeholder="Phone Number *"
    value={contactInfo.phone}
    onChange={(e) =>
     setContactInfo((p) => ({ ...p, phone: e.target.value }))
@@ -1091,6 +1094,10 @@ export default function EstateComplexityAssessment() {
    className="w-full px-4 py-3 border-2 border-[#4a4a4a] rounded-[8px] font-sans text-[15px] text-white placeholder-[#8a8a8a] bg-[#2a2a2a] focus:outline-none focus:border-[#1d7682] transition-colors"
    aria-label="Phone Number"
    />
+   {contactErrors.phone && (
+    <p className="text-[12px] text-[#EF4444] mt-1">{contactErrors.phone}</p>
+   )}
+   </div>
    <label className="flex items-center gap-2 cursor-pointer py-1">
    <input
     type="checkbox"

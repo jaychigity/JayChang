@@ -7,6 +7,7 @@ import { trackFormSubmission } from '@/lib/analytics'
 
 interface FormData {
   firstName: string
+  lastName: string
   email: string
   phone: string
   employer: string
@@ -20,7 +21,9 @@ interface FormData {
 
 interface FormErrors {
   firstName?: string
+  lastName?: string
   email?: string
+  phone?: string
 }
 
 function formatPhone(value: string): string {
@@ -42,6 +45,7 @@ const selectBase =
 export default function WealthReviewForm() {
   const [formData, setFormData] = useState<FormData>({
     firstName: '',
+    lastName: '',
     email: '',
     phone: '',
     employer: '',
@@ -77,10 +81,16 @@ export default function WealthReviewForm() {
     if (!formData.firstName.trim()) {
       newErrors.firstName = 'First name is required.'
     }
+    if (!formData.lastName.trim()) {
+      newErrors.lastName = 'Last name is required.'
+    }
     if (!formData.email.trim()) {
       newErrors.email = 'Email address is required.'
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = 'Please enter a valid email address.'
+    }
+    if (!formData.phone.trim() || formData.phone.replace(/\D/g, '').length < 10) {
+      newErrors.phone = 'Phone number is required.'
     }
     setErrors(newErrors)
     return Object.keys(newErrors).length === 0
@@ -105,6 +115,7 @@ export default function WealthReviewForm() {
         body: JSON.stringify({
           source: 'wealth-review',
           firstName: formData.firstName,
+          lastName: formData.lastName,
           email: formData.email,
           phone: formData.phone,
           employer: formData.employer,
@@ -182,6 +193,33 @@ export default function WealthReviewForm() {
           )}
         </div>
 
+        {/* Last Name */}
+        <div className="mb-[20px]">
+          <label
+            htmlFor="lastName"
+            className="font-sans text-[13px] font-medium text-[#333333] tracking-[0.05em] block mb-[8px]"
+          >
+            Last Name <span className="text-[#8B2E2E]">*</span>
+          </label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            required
+            aria-invalid={errors.lastName ? 'true' : undefined}
+            aria-describedby={errors.lastName ? 'lastName-error' : undefined}
+            value={formData.lastName}
+            onChange={handleChange}
+            className={`${inputBase} ${errors.lastName ? inputError : ''}`}
+          />
+          {errors.lastName && (
+            <p id="lastName-error" role="alert" className="font-sans text-xs text-[#8B2E2E] mt-[6px] flex items-center gap-[4px]">
+              <AlertCircle size={12} className="shrink-0" />
+              {errors.lastName}
+            </p>
+          )}
+        </div>
+
         {/* Email */}
         <div className="mb-[20px]">
           <label
@@ -213,23 +251,32 @@ export default function WealthReviewForm() {
         <div className="mb-[20px]">
           <label
             htmlFor="phone"
-            className="font-sans text-[13px] font-medium text-[#333333] tracking-[0.05em] block mb-[2px]"
+            className="font-sans text-[13px] font-medium text-[#333333] tracking-[0.05em] block mb-[8px]"
           >
-            Phone Number
+            Phone Number <span className="text-[#8B2E2E]">*</span>
           </label>
-          <p className="font-sans text-[11px] text-[#5b6a71] mb-[8px]">Optional</p>
           <input
             type="tel"
             id="phone"
             name="phone"
+            required
             placeholder="(480) 944-0880"
+            aria-invalid={errors.phone ? 'true' : undefined}
+            aria-describedby={errors.phone ? 'phone-error' : undefined}
             value={formData.phone}
             onChange={(e) => {
               const formatted = formatPhone(e.target.value)
               setFormData((prev) => ({ ...prev, phone: formatted }))
+              if (errors.phone) setErrors((prev) => ({ ...prev, phone: undefined }))
             }}
-            className={inputBase}
+            className={`${inputBase} ${errors.phone ? inputError : ''}`}
           />
+          {errors.phone && (
+            <p id="phone-error" role="alert" className="font-sans text-xs text-[#8B2E2E] mt-[6px] flex items-center gap-[4px]">
+              <AlertCircle size={12} className="shrink-0" />
+              {errors.phone}
+            </p>
+          )}
         </div>
 
         {/* Who do you work for? */}
