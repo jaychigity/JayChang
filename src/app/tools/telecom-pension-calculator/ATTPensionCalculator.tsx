@@ -303,7 +303,7 @@ function CashBalanceCalc({ onCalculate }: { onCalculate: () => void }) {
           <div className="grid grid-cols-2 gap-[8px]">
             {[
               { val: false, label: 'Traditional Cash Balance' },
-              { val: true, label: 'BCB2 (Union post-2009)' },
+              { val: true, label: 'Union Cash Balance (post-2009)' },
             ].map(opt => (
               <button
                 key={String(opt.val)}
