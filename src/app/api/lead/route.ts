@@ -447,6 +447,118 @@ async function sendViaSendGrid(subject: string, html: string, text: string): Pro
   return res.ok || res.status === 202
 }
 
+// ── HubSpot CRM integration (Forms API, no auth required) ──────────
+
+const HUBSPOT_PORTAL_ID = '6481357'
+const HUBSPOT_FORM_GUID = '67ebdf4e-662a-4d10-b301-0f5cdb925630'
+
+function buildHubSpotMessage(data: LeadPayload): string {
+  const sourceLabel = SOURCE_LABELS[data.source] || data.source || 'Website'
+  const lines: string[] = [`Source: ${sourceLabel}`]
+
+  if (data.page_url) lines.push(`Page: ${data.page_url}`)
+
+  const utm = [data.utm_source, data.utm_medium, data.utm_campaign].filter(Boolean)
+  if (utm.length) lines.push(`UTM: ${utm.join(' / ')}`)
+
+  switch (data.source) {
+    case 'business-exit-scorecard': {
+      const scores = data.scores as { financial: number; operational: number; tax: number; succession: number; total: number } | undefined
+      if (scores) {
+        lines.push(`Exit Readiness: ${Math.round(scores.total)}/100 (${data.tier})`)
+        lines.push(`Financial: ${Math.round(scores.financial)}/25, Operational: ${Math.round(scores.operational)}/25, Tax: ${Math.round(scores.tax)}/25, Succession: ${Math.round(scores.succession)}/25`)
+        if (data.revenue) lines.push(`Revenue: ${data.revenue}`)
+      }
+      break
+    }
+    case 'equity-compensation': {
+      const r = data.results as { totalValue?: number; spread?: number; estimatedTax?: number; potentialSavings?: number; compType?: string; nextDeadline?: string } | null
+      if (r) {
+        lines.push(`Equity: ${r.compType || 'Unknown'} | Value: ${dollars(r.totalValue || 0)}, Spread: ${dollars(r.spread || 0)}, Tax: ${dollars(r.estimatedTax || 0)}, Savings: ${dollars(r.potentialSavings || 0)}`)
+        if (r.nextDeadline) lines.push(`Next Critical Date: ${r.nextDeadline}`)
+      }
+      break
+    }
+    case 'estate-complexity': {
+      lines.push(`Estate Complexity: ${Number(data.score) || 0}/92 (${data.tier})`)
+      const flags = data.flags as string[] | undefined
+      if (flags?.length) lines.push(`Flags: ${flags.join(', ')}`)
+      break
+    }
+    case 'retirement-readiness': {
+      const rr = data.results as { SCORE?: number; TOTAL_PROJECTED?: number; REQUIRED_NEST_EGG?: number; DOLLAR_GAP?: number; YTR?: number; advisor_impact?: number } | undefined
+      const score = Number(data.score) || rr?.SCORE || 0
+      lines.push(`Retirement Readiness: ${Math.round(score)}/100 (${data.status})`)
+      if (rr) {
+        lines.push(`Projected: ${dollars(rr.TOTAL_PROJECTED || 0)}, Required: ${dollars(rr.REQUIRED_NEST_EGG || 0)}, Gap: ${dollars(Math.abs(rr.DOLLAR_GAP || 0))}`)
+        if (rr.YTR) lines.push(`Years to Retirement: ${rr.YTR}`)
+      }
+      break
+    }
+    case 'ca-nv-az-tax-savings': {
+      lines.push(`Tax Savings (5yr vs CA): NV ${dollars(Number(data.cumulativeSavingsNV) || 0)}, AZ ${dollars(Number(data.cumulativeSavingsAZ) || 0)}`)
+      lines.push(`W-2: ${dollars(Number(data.w2) || 0)}, CG: ${dollars(Number(data.cg) || 0)}, RSU: ${dollars(Number(data.rsu) || 0)}`)
+      break
+    }
+    case 'consultation-form':
+    case 'callback-request': {
+      if (data.contactPreference === 'callback' || data.source === 'callback-request') {
+        lines.push(`Callback requested: ${data.callbackTimeOfDay || 'any time'}`)
+        if (data.callbackDays) lines.push(`Days: ${(data.callbackDays as string[]).join(', ')}`)
+      }
+      if (data.referredBy) lines.push(`Referred by: ${data.referredBy}`)
+      break
+    }
+    case 'wealth-review': {
+      if (data.employer) lines.push(`Employer: ${data.employer}`)
+      if (data.compensationType) lines.push(`Compensation: ${data.compensationType}`)
+      if (data.retirementTimeline) lines.push(`Retirement: ${data.retirementTimeline}`)
+      if (data.biggestQuestion) lines.push(`Biggest Question: ${data.biggestQuestion}`)
+      break
+    }
+  }
+
+  return lines.join('\n')
+}
+
+async function syncToHubSpot(data: LeadPayload): Promise<void> {
+  if (!data.email) return
+
+  const fields: Array<{ objectTypeId: string; name: string; value: string }> = [
+    { objectTypeId: '0-1', name: 'email', value: data.email },
+  ]
+
+  if (data.firstName) fields.push({ objectTypeId: '0-1', name: 'firstname', value: data.firstName })
+  if (data.lastName) fields.push({ objectTypeId: '0-1', name: 'lastname', value: data.lastName })
+  if (data.phone) fields.push({ objectTypeId: '0-1', name: 'phone', value: data.phone })
+
+  const message = buildHubSpotMessage(data)
+  fields.push({ objectTypeId: '0-1', name: 'message', value: message })
+
+  const payload: Record<string, unknown> = { fields }
+
+  const context: Record<string, string> = {}
+  if (data.page_url) context.pageUri = String(data.page_url)
+  const sourceLabel = SOURCE_LABELS[data.source] || data.source || 'Website'
+  context.pageName = sourceLabel
+  if (data.hutk) context.hutk = String(data.hutk)
+  payload.context = context
+
+  const res = await fetch(
+    `https://api.hsforms.com/submissions/v3/integration/submit/${HUBSPOT_PORTAL_ID}/${HUBSPOT_FORM_GUID}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    },
+  )
+
+  if (!res.ok) {
+    const errText = await res.text()
+    console.error('HubSpot form submission failed:', res.status, errText)
+  }
+}
+
 // ── API handler ──────────────────────────────────────────────────────
 
 export async function POST(request: NextRequest) {
@@ -464,20 +576,31 @@ export async function POST(request: NextRequest) {
 
     const html = buildEmailHtml(data)
     const text = buildPlainText(data)
-    let sent = false
 
-    if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD) {
-      sent = await sendViaGmail(subject, html, text)
-    } else if (process.env.RESEND_API_KEY) {
-      sent = await sendViaResend(subject, html, text)
-    } else if (process.env.SENDGRID_API_KEY) {
-      sent = await sendViaSendGrid(subject, html, text)
-    } else {
-      console.log('\n========== NEW LEAD ==========')
-      console.log(text)
-      console.log('==============================\n')
-      sent = true
-    }
+    const emailPromise = (async (): Promise<boolean> => {
+      if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD) {
+        return sendViaGmail(subject, html, text)
+      } else if (process.env.RESEND_API_KEY) {
+        return sendViaResend(subject, html, text)
+      } else if (process.env.SENDGRID_API_KEY) {
+        return sendViaSendGrid(subject, html, text)
+      } else {
+        console.log('\n========== NEW LEAD ==========')
+        console.log(text)
+        console.log('==============================\n')
+        return true
+      }
+    })()
+
+    const cookieHeader = request.headers.get('cookie') || ''
+    const hutkMatch = cookieHeader.match(/hubspotutk=([^;]+)/)
+    if (hutkMatch) data.hutk = hutkMatch[1]
+
+    const hubspotPromise = syncToHubSpot(data).catch((err) => {
+      console.error('HubSpot sync failed:', err)
+    })
+
+    const [sent] = await Promise.all([emailPromise, hubspotPromise])
 
     if (!sent) console.error('Failed to send lead notification email')
     return NextResponse.json({ ok: true })
