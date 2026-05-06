@@ -11,6 +11,8 @@ const REDIRECTS: Record<string, string> = {
   '/tools/roth-conversion': '/tools/roth-conversion-calculator',
   '/tools/business-exit-scorecard': '/tools/business-exit-planning-calculator',
   '/insights/how-to-choose-cfp-las-vegas': '/insights/how-to-choose-cfp-scottsdale',
+  '/tools/att-pension': '/tools/telecom-pension-calculator',
+  '/tools/pge-pension': '/tools/utility-pension-calculator',
 }
 
 // Paths that stay reachable even when MAINTENANCE_MODE is on

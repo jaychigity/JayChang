@@ -34,12 +34,12 @@ interface PlanRecommendation {
 }
 
 function getRecommendation(employeeType: EmployeeType, hireEra: HireEra): PlanRecommendation {
-  // Default fallback — Cash Balance is the most common modern AT&T plan
+  // Default fallback — Cash Balance is the most common modern telecom plan
   const defaultRec: PlanRecommendation = {
     planName: 'Cash Balance (default)',
     tabId: 'cashBalance',
     description:
-      "Cash Balance is the most common AT&T pension plan. We'll start here. It works as a reasonable estimate while you confirm your specific plan with NetBenefits.",
+      "Cash Balance is the most common pension plan for telecom employees. We'll start here. It works as a reasonable estimate while you confirm your specific plan with NetBenefits.",
     confidence: 'low',
   }
 
@@ -125,7 +125,7 @@ export default function PlanSelector({ onSelectTab }: PlanSelectorProps) {
           <HelpCircle className="w-5 h-5 text-[#1d7682] flex-shrink-0" aria-hidden="true" />
           <div>
             <p className="font-sans text-[14px] md:text-[15px] font-semibold text-[#333333]">
-              Not sure which AT&amp;T pension plan you&apos;re in?
+              Not sure which pension plan you&apos;re in?
             </p>
             <p className="font-sans text-[12px] md:text-[13px] text-[#5b6a71] mt-[2px]">
               {isOpen ? 'Tap to close' : "Answer 2 quick questions and I'll point you to the right calculator."}
@@ -149,7 +149,7 @@ export default function PlanSelector({ onSelectTab }: PlanSelectorProps) {
             </p>
             <div className="flex flex-wrap gap-[8px]">
               {[
-                { value: 'union' as const, label: 'Union (CWA / IBEW)' },
+                { value: 'union' as const, label: 'Union' },
                 { value: 'management' as const, label: 'Management' },
                 { value: 'unsure' as const, label: 'Not sure' },
               ].map((opt) => (
@@ -172,7 +172,7 @@ export default function PlanSelector({ onSelectTab }: PlanSelectorProps) {
           {employeeType && employeeType !== 'unsure' && (
             <div className="mb-[20px]">
               <p className="font-sans text-[13px] font-medium text-[#333333] mb-[10px]">
-                2. When were you hired by AT&amp;T (or a legacy company that became AT&amp;T)?
+                2. When were you hired by your employer (or a legacy company)?
               </p>
               <div className="flex flex-wrap gap-[8px]">
                 {[

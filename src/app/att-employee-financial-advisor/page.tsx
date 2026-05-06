@@ -146,7 +146,7 @@ export default function ATTEmployeeFinancialAdvisor() {
                 <Button href="/schedule-consultation" variant="primary">
                   Schedule Your AT&amp;T Benefits Review
                 </Button>
-                <Button href="/tools/att-pension" variant="ghost">
+                <Button href="/tools/telecom-pension-calculator" variant="ghost">
                   Try the Pension Calculator →
                 </Button>
               </div>
@@ -331,8 +331,8 @@ export default function ATTEmployeeFinancialAdvisor() {
             <p className="text-lg text-white/80 mb-8 leading-relaxed max-w-2xl mx-auto">
               The AT&amp;T Pension Suite covers cash balance projections, pension band estimates, lump sum vs. annuity comparisons, early retirement modeling, income gap analysis, and 401(k) projections, all in one place. No sign-up required.
             </p>
-            <Button href="/tools/att-pension" variant="primary">
-              Open the AT&amp;T Pension Suite →
+            <Button href="/tools/telecom-pension-calculator" variant="primary">
+              Open the Telecom Pension Suite →
             </Button>
           </AnimateOnScroll>
         </div>

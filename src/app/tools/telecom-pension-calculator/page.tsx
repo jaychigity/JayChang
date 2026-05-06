@@ -5,38 +5,38 @@ import ATTPensionCalculator from './ATTPensionCalculator'
 
 export const metadata: Metadata = {
  title:
-  'AT&T Pension & Retirement Calculator',
+  'Telecom Pension & Retirement Calculator',
  description:
-  'Free AT&T pension calculator for union and management employees. Estimate your cash balance pension, pension band benefit, lump sum vs annuity, early retirement reduction, and 401(k) projections.',
+  'Free pension calculator for telecom union and management employees. Estimate your cash balance pension, pension band benefit, lump sum vs annuity, early retirement reduction, and 401(k) projections.',
  alternates: {
-  canonical: 'https://www.advisorjay.com/tools/att-pension',
+  canonical: 'https://www.advisorjay.com/tools/telecom-pension-calculator',
  },
  openGraph: {
-  title: 'AT&T Pension & Retirement Calculator',
+  title: 'Telecom Pension & Retirement Calculator',
   description:
-   'Free AT&T pension calculator for CWA/IBEW union and management employees. Estimate cash balance, pension band, lump sum vs annuity, early retirement, and 401(k) projections.',
-  url: 'https://www.advisorjay.com/tools/att-pension',
+   'Free pension calculator for telecom union and management employees. Estimate cash balance, pension band, lump sum vs annuity, early retirement, and 401(k) projections.',
+  url: 'https://www.advisorjay.com/tools/telecom-pension-calculator',
  },
 }
 
-export default function ATTPensionPage() {
+export default function TelecomPensionPage() {
  return (
   <>
-   <BreadcrumbSchema items={[{ name: 'Tools', href: '/tools' }, { name: 'AT&T Pension Calculator', href: '/tools/att-pension' }]} />
+   <BreadcrumbSchema items={[{ name: 'Tools', href: '/tools' }, { name: 'Telecom Pension Calculator', href: '/tools/telecom-pension-calculator' }]} />
    {/* Hero Banner */}
    <section className="bg-[#333333] pt-[100px] pb-[48px] px-[20px] md:px-[40px] lg:px-[80px]">
     <div className="max-w-[960px] mx-auto text-center">
      <p className="font-sans text-[12px] font-semibold uppercase tracking-[0.15em] text-[#1d7682] mb-4">
-      AT&amp;T Pension &amp; Retirement Suite
+      Telecom Pension &amp; Retirement Suite
      </p>
      <h1 className="font-serif text-[32px] md:text-[48px] font-light text-[#F7F4EE] leading-tight">
-      Know What Your AT&amp;T Benefits Are Worth
+      Know What Your Telecom Benefits Are Worth
      </h1>
      <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[640px] mx-auto leading-relaxed">
-      Six calculators built for AT&amp;T employees, union and management. Estimate your pension, compare lump sum vs annuity, model early retirement, and project your 401(k).
+      Six calculators built for telecom employees, union and management. Estimate your pension, compare lump sum vs annuity, model early retirement, and project your 401(k).
      </p>
      <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[600px] mx-auto leading-relaxed">
-      I&apos;ve worked with hundreds of AT&amp;T employees, CWA, IBEW, and management, navigating these exact decisions.
+      I&apos;ve worked with hundreds of telecom employees, union and management, navigating these exact decisions.
      </p>
      <p
       className="font-sans"
@@ -63,14 +63,14 @@ export default function ATTPensionPage() {
     <ATTPensionCalculator />
    </section>
 
-   {/* AT&T Planning CTA */}
+   {/* Planning CTA */}
    <section style={{ backgroundColor: '#1d7682', padding: '48px 40px' }}>
     <div style={{ maxWidth: 760, margin: '0 auto', textAlign: 'center' }}>
      <p className="font-sans" style={{ fontSize: 13, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(247,244,238,0.6)', marginBottom: 12 }}>
       WANT HELP MAKING SENSE OF THESE NUMBERS?
      </p>
      <h3 className="font-serif" style={{ fontSize: 28, fontWeight: 600, color: '#F7F4EE', marginBottom: 12, lineHeight: 1.3 }}>
-      I work with AT&amp;T employees on exactly these decisions: pension elections, DISC distributions, Rule of 75 timing, and retirement coordination.
+      I work with telecom employees on exactly these decisions: pension elections, DISC distributions, Rule of 75 timing, and retirement coordination.
      </h3>
      <p className="font-sans" style={{ fontSize: 15, color: 'rgba(247,244,238,0.75)', marginBottom: 24, lineHeight: 1.6 }}>
       The calculator gives you the numbers. A plan gives you clarity on what to actually do with them.
@@ -90,7 +90,7 @@ export default function ATTPensionPage() {
         textDecoration: 'none',
        }}
       >
-       See how I help AT&amp;T employees →
+       See how I help telecom employees &rarr;
       </Link>
       <Link
        href="/schedule-consultation"

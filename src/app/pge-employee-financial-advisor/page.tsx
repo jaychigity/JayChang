@@ -155,7 +155,7 @@ export default function PGEEmployeeFinancialAdvisor() {
                 <Button href="/schedule-consultation" variant="primary">
                   Schedule Your PG&amp;E Benefits Review
                 </Button>
-                <Button href="/tools/pge-pension" variant="ghost">
+                <Button href="/tools/utility-pension-calculator" variant="ghost">
                   Try the Pension Calculator →
                 </Button>
               </div>
@@ -386,8 +386,8 @@ export default function PGEEmployeeFinancialAdvisor() {
               The PG&amp;E Pension Suite covers Final Pay estimates, Cash Balance projections, early retirement eligibility,
               RMSA depletion modeling, and 401(k) match optimization. No sign-up required.
             </p>
-            <Button href="/tools/pge-pension" variant="primary">
-              Open the PG&amp;E Pension Suite →
+            <Button href="/tools/utility-pension-calculator" variant="primary">
+              Open the Utility Pension Suite →
             </Button>
           </AnimateOnScroll>
         </div>

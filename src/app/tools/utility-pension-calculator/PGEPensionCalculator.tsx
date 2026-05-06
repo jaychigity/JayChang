@@ -46,7 +46,7 @@ function PlanSelectorPanel({ onSelectTab }: { onSelectTab: (t: Tab) => void }) {
             tab: 'finalPay',
             label: 'Final Pay Pension',
             description:
-              'Employees hired before January 1, 2013 are typically in the Final Pay plan: a traditional defined benefit formula based on your years of service and final pay. If you made an irrevocable election in 2013 to switch to Cash Balance, use the Cash Balance tab instead. You can verify your plan at mypgebenefits.com or by calling 1-800-700-0057.',
+              'Employees hired before January 1, 2013 are typically in the Final Pay plan: a traditional defined benefit formula based on your years of service and final pay. If you made an irrevocable election in 2013 to switch to Cash Balance, use the Cash Balance tab instead. You can verify your plan at your benefits portal or by calling the pension center.',
           }
         : {
             tab: 'cashBalance',
@@ -59,7 +59,7 @@ function PlanSelectorPanel({ onSelectTab }: { onSelectTab: (t: Tab) => void }) {
           tab: 'cashBalance',
           label: 'Cash Balance (default)',
           description:
-            'Not sure? The Cash Balance plan is the most common plan for current PG&E employees. Start here and verify your plan type at mypgebenefits.com.',
+            'Not sure? The Cash Balance plan is the most common plan for current utility employees. Start here and verify your plan type at your benefits portal.',
         }
       : null
 
@@ -67,7 +67,7 @@ function PlanSelectorPanel({ onSelectTab }: { onSelectTab: (t: Tab) => void }) {
     <div className="max-w-[720px] mx-auto">
       <div className={noteBoxCls}>
         <p className="font-sans text-[13px] text-[#5b6a71] leading-relaxed">
-          PG&amp;E has two pension formulas. Which one you&apos;re in depends primarily on your hire date and whether you
+          Your employer has two pension formulas. Which one you&apos;re in depends primarily on your hire date and whether you
           made an election in 2013. Answer two questions below and we&apos;ll point you to the right calculator.
         </p>
       </div>
@@ -79,8 +79,8 @@ function PlanSelectorPanel({ onSelectTab }: { onSelectTab: (t: Tab) => void }) {
         </p>
         <div className="flex flex-wrap gap-2">
           {([
-            { v: 'union', l: 'Union (IBEW / ESC Local 20)' },
-            { v: 'management', l: 'Management / A&T (Administrative & Technical)' },
+            { v: 'union', l: 'Union' },
+            { v: 'management', l: 'Management / Administrative & Technical' },
             { v: 'unsure', l: "Not sure" },
           ] as { v: EmployeeType; l: string }[]).map(({ v, l }) => (
             <button
@@ -102,7 +102,7 @@ function PlanSelectorPanel({ onSelectTab }: { onSelectTab: (t: Tab) => void }) {
       {empType && empType !== 'unsure' && (
         <div className={sectionCls}>
           <p className="font-sans text-[13px] font-semibold text-[#333333] mb-3">
-            2. When were you hired by PG&amp;E?
+            2. When were you hired?
           </p>
           <div className="flex flex-wrap gap-2">
             {([
@@ -190,10 +190,10 @@ function FinalPayCalculator() {
     <div className="max-w-[720px] mx-auto">
       <div className={noteBoxCls}>
         <p className="font-sans text-[13px] text-[#5b6a71] leading-relaxed">
-          <strong className="text-[#333333]">Important:</strong> PG&amp;E does not publicly disclose the exact pension multiplier.
+          <strong className="text-[#333333]">Important:</strong> Your employer does not publicly disclose the exact pension multiplier.
           This calculator uses an estimated default of 1.6% per year of service, typical for large utility DB plans.{' '}
           <strong className="text-[#333333]">Verify your actual rate</strong> by reviewing your Benefits Statement at{' '}
-          <span className="text-[#1d7682]">mypgebenefits.com</span> or calling PG&amp;E&apos;s pension center at{' '}
+          <span className="text-[#1d7682]">your benefits portal</span> or calling the pension center at{' '}
           <span className="text-[#1d7682]">1-800-700-0057</span>.
         </p>
       </div>
@@ -203,8 +203,8 @@ function FinalPayCalculator() {
           <div>
             <label className={labelCls}>Employee Type</label>
             <select value={empType} onChange={e => setEmpType(e.target.value as 'union' | 'management')} className={inputCls}>
-              <option value="union">Union (IBEW / ESC Local 20)</option>
-              <option value="management">Management / A&T (Administrative & Technical)</option>
+              <option value="union">Union</option>
+              <option value="management">Management / Administrative & Technical</option>
             </select>
             <p className="font-sans text-[11px] text-[#5b6a71] mt-1">
               {empType === 'union'
@@ -267,7 +267,7 @@ function FinalPayCalculator() {
         <div className="bg-amber-50 border border-amber-200 rounded-[10px] p-5 mb-4">
           <p className="font-sans text-[14px] font-semibold text-amber-800 mb-1">Not Yet Eligible for Early Retirement</p>
           <p className="font-sans text-[13px] text-amber-700">
-            PG&amp;E&apos;s minimum early retirement age is 55. Increase the retirement age to 55 or higher to see an estimate.
+            The minimum early retirement age is 55. Increase the retirement age to 55 or higher to see an estimate.
           </p>
         </div>
       ) : (
@@ -407,7 +407,7 @@ function CashBalanceCalculator() {
               onChange={e => setCurrentAge(parseInt(e.target.value) || 45)} className={inputCls} />
           </div>
           <div>
-            <label className={labelCls}>Years of PG&amp;E Service</label>
+            <label className={labelCls}>Years of Service</label>
             <input type="number" value={yearsService} min={0} max={42}
               onChange={e => setYearsService(parseInt(e.target.value) || 0)} className={inputCls} />
             <p className="font-sans text-[11px] text-[#5b6a71] mt-1">
@@ -558,7 +558,7 @@ function EarlyRetirementCalculator() {
     <div className="max-w-[720px] mx-auto">
       <div className={noteBoxCls}>
         <p className="font-sans text-[13px] text-[#5b6a71] leading-relaxed">
-          PG&amp;E&apos;s minimum early retirement age is <strong className="text-[#333333]">55</strong>.
+          The minimum early retirement age is <strong className="text-[#333333]">55</strong>.
           The reduction for retiring before age 62 phases down linearly, reaching 0% at age 62 or when you complete{' '}
           <strong className="text-[#333333]">30 years of credited service</strong>, whichever comes first.
         </p>
@@ -572,7 +572,7 @@ function EarlyRetirementCalculator() {
               onChange={e => setCurrentAge(parseInt(e.target.value) || 50)} className={inputCls} />
           </div>
           <div>
-            <label className={labelCls}>Years of PG&amp;E Service</label>
+            <label className={labelCls}>Years of Service</label>
             <input type="number" value={yearsService} min={0} max={45}
               onChange={e => setYearsService(parseInt(e.target.value) || 0)} className={inputCls} />
           </div>
@@ -703,7 +703,7 @@ function RMSAEstimator() {
           <strong>Estimated figures only.</strong> RMSA contribution amounts ($7,500/$10,000 tiers) and the 8%
           pre-retirement crediting rate are based on publicly available 2009 union contract proposal documents.
           Your actual plan terms may differ. Verify your RMSA balance and contribution schedule at{' '}
-          <span className="font-semibold">mypgebenefits.com</span>.
+          <span className="font-semibold">your benefits portal</span>.
         </p>
       </div>
 
@@ -723,7 +723,7 @@ function RMSAEstimator() {
               onChange={e => setCurrentAge(parseInt(e.target.value) || 48)} className={inputCls} />
           </div>
           <div>
-            <label className={labelCls}>Years of PG&amp;E Service</label>
+            <label className={labelCls}>Years of Service</label>
             <input type="number" value={yearsService} min={0} max={45}
               onChange={e => setYearsService(parseInt(e.target.value) || 0)} className={inputCls} />
           </div>
@@ -736,7 +736,7 @@ function RMSAEstimator() {
             <label className={labelCls}>Estimated Monthly Premium at Retirement ($)</label>
             <input type="number" value={monthlyPremium} min={100} step={50}
               onChange={e => setMonthlyPremium(parseInt(e.target.value) || 800)} className={inputCls} />
-            <p className="font-sans text-[11px] text-[#5b6a71] mt-1">Your share of PG&amp;E retiree medical premium</p>
+            <p className="font-sans text-[11px] text-[#5b6a71] mt-1">Your share of retiree medical premium</p>
           </div>
           <div>
             <label className={labelCls}>Annual Premium Inflation (%)</label>
@@ -785,11 +785,11 @@ function RMSAEstimator() {
       <div className={sectionCls}>
         <p className="font-sans text-[13px] font-semibold text-[#333333] mb-2">How the RMSA works</p>
         <div className="space-y-2 text-[#5b6a71] font-sans text-[13px] leading-relaxed">
-          <p>• PG&amp;E starts contributing to your RMSA when you turn <strong className="text-[#333333]">45</strong>.</p>
+          <p>• Your employer starts contributing to your RMSA when you turn <strong className="text-[#333333]">45</strong>.</p>
           <p>• Annual contributions increase once you reach <strong className="text-[#333333]">20 years of service</strong>.</p>
           <p>• The account earns interest while you work (estimated at ~8%).</p>
           <p>• You can access it at retirement at age 55+ with 10+ years of service.</p>
-          <p>• It can only be used for <strong className="text-[#333333]">PG&amp;E-sponsored retiree medical premiums</strong>, not out-of-pocket costs or non-PG&amp;E coverage.</p>
+          <p>• It can only be used for <strong className="text-[#333333]">employer-sponsored retiree medical premiums</strong>, not out-of-pocket costs or non-employer coverage.</p>
           <p>• Once depleted, it&apos;s gone. There&apos;s no way to add more.</p>
         </div>
       </div>
@@ -831,7 +831,7 @@ function Match401kCalculator() {
     <div className="max-w-[720px] mx-auto">
       <div className={noteBoxCls}>
         <p className="font-sans text-[13px] text-[#5b6a71] leading-relaxed">
-          PG&amp;E&apos;s match structure differs by pension plan type and employment category. Cash Balance participants
+          Your employer&apos;s match structure differs by pension plan type and employment category. Cash Balance participants
           get a higher match cap <em>and</em> an additional 2.4% employer contribution on top. Many employees leave significant
           match dollars behind by not contributing up to the cap or by missing the{' '}
           <strong className="text-[#333333]">spillover election</strong>.
@@ -852,7 +852,7 @@ function Match401kCalculator() {
               <label className={labelCls}>Employment Type</label>
               <select value={empType} onChange={e => setEmpType(e.target.value as 'union' | 'management')} className={inputCls}>
                 <option value="management">Management / A&T (Administrative & Technical)</option>
-                <option value="union">Union (IBEW / ESC)</option>
+                <option value="union">Union</option>
               </select>
             </div>
           )}
@@ -873,10 +873,10 @@ function Match401kCalculator() {
       <div className={sectionCls + ' bg-[#F0F7F8]'}>
         <p className="font-sans text-[13px] font-semibold text-[#1d7682] mb-2">Your match structure</p>
         <p className="font-sans text-[13px] text-[#333333]">
-          PG&amp;E matches <strong>{(matchRate * 100).toFixed(0)}%</strong> of your contributions up to{' '}
+          Your employer matches <strong>{(matchRate * 100).toFixed(0)}%</strong> of your contributions up to{' '}
           <strong>{(matchCap * 100).toFixed(0)}%</strong> of salary.
           {pensionPlan === 'cashBalance' && (
-            <> PG&amp;E also contributes an additional <strong>2.4%</strong> of your salary regardless of your contribution rate.</>
+            <> Your employer also contributes an additional <strong>2.4%</strong> of your salary regardless of your contribution rate.</>
           )}
         </p>
         <p className="font-sans text-[13px] text-[#5b6a71] mt-1">
@@ -918,13 +918,13 @@ function Match401kCalculator() {
         <p className="font-sans text-[13px] text-[#5b6a71] leading-relaxed mb-3">
           If your pre-tax contributions hit the IRS annual limit ({fmtDollar(irsLimit)} in 2026) mid-year, your employer
           match stops unless you&apos;ve set up the <strong className="text-[#333333]">after-tax spillover election</strong>.
-          With the spillover in place, your contributions automatically continue as after-tax contributions, and PG&amp;E keeps
+          With the spillover in place, your contributions automatically continue as after-tax contributions, and your employer keeps
           matching. Without it, you forfeit the rest of the year&apos;s match.
         </p>
         <p className="font-sans text-[13px] text-[#5b6a71] leading-relaxed">
           After-tax spillover contributions may also be eligible for rollout to a Roth IRA under the{' '}
           <strong className="text-[#333333]">mega backdoor Roth strategy</strong>, one of the most powerful but underused
-          savings tools available to PG&amp;E employees.
+          savings tools available to utility employees.
         </p>
       </div>
     </div>
@@ -977,8 +977,8 @@ export default function PGEPensionCalculator() {
       {/* Disclaimer */}
       <div className="mt-10">
         <CalculatorDisclaimer
-          toolName="PG&E pension and benefits"
-          additionalContext="The Final Pay pension multiplier is not publicly disclosed by PG&E. This calculator defaults to an estimated 1.6% per year of service. Verify your actual rate at mypgebenefits.com or by calling 1-800-700-0057. RMSA contribution amounts and crediting rates are estimated from publicly available sources; actual plan terms may differ."
+          toolName="utility pension and benefits"
+          additionalContext="The Final Pay pension multiplier is not publicly disclosed by your employer. This calculator defaults to an estimated 1.6% per year of service. Verify your actual rate at your benefits portal or by calling the pension center. RMSA contribution amounts and crediting rates are estimated from publicly available sources; actual plan terms may differ."
         />
       </div>
     </div>

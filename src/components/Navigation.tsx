@@ -53,8 +53,8 @@ const navItems: NavItem[] = [
     label: "Tools & Calculators",
     href: "/tools",
     children: [
-      { label: "AT&T Pension Suite", href: "/tools/att-pension" },
-      { label: "PG&E Pension Suite", href: "/tools/pge-pension" },
+      { label: "Telecom Pension Suite", href: "/tools/telecom-pension-calculator" },
+      { label: "Utility Pension Suite", href: "/tools/utility-pension-calculator" },
       { label: "Cash Flow Planner", href: "/tools/cash-flow-planner" },
       { label: "Monte Carlo Simulator", href: "/tools/monte-carlo-simulator" },
       { label: "Roth Conversion", href: "/tools/roth-conversion-calculator" },

@@ -152,11 +152,11 @@ export default function FourOOneKProjectionPage() {
             <a href="/tools/retirement-savings-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>
               Retirement Readiness Calculator
             </a>
-            <a href="/tools/att-pension" style={{ color: '#1d7682', textDecoration: 'underline' }}>
-              AT&amp;T Pension Suite
+            <a href="/tools/telecom-pension-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>
+              Telecom Pension Suite
             </a>
-            <a href="/tools/pge-pension" style={{ color: '#1d7682', textDecoration: 'underline' }}>
-              PG&amp;E Pension Suite
+            <a href="/tools/utility-pension-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>
+              Utility Pension Suite
             </a>
           </div>
         </div>

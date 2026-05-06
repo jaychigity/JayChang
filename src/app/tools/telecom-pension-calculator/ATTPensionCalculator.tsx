@@ -17,17 +17,17 @@ import {
 } from '@/lib/tax-constants-2026'
 
 /* ================================================================
-   AT&T Pension & Retirement Calculator Suite
-   Six calculators for union (CWA/IBEW) and management employees:
+   Telecom Pension & Retirement Calculator Suite
+   Six calculators for union and management employees:
    1. Cash Balance Pension Estimator
    2. Union Pension Band Calculator
    3. Lump Sum vs Annuity Comparison
    4. Early Retirement Reduction Calculator
-   5. AT&T 401(k) Projection
+   5. 401(k) Projection
    6. Retirement Income Gap Analysis
    ================================================================ */
 
-// ── AT&T Plan-Specific Constants ─────────────────────────────────
+// ── Plan-Specific Constants ─────────────────────────────────
 
 const CASH_BALANCE_PAY_CREDITS: { minAge: number; maxAge: number; basic: number; supplemental: number }[] = [
   { minAge: 0, maxAge: 29, basic: 0.03, supplemental: 0.06 },
@@ -220,9 +220,9 @@ export default function ATTPensionCalculator() {
 
       {/* Suite-level disclaimer — applies to all 6 calculator tabs */}
       <CalculatorDisclaimer
-        toolName="AT&T pension"
+        toolName="telecom pension"
         variant="default"
-        additionalContext="IRS segment rates and mortality assumptions update monthly. Lump sum projections are sensitive to small rate changes — a value calculated today may differ meaningfully from your actual lump sum at retirement. Pension band amounts are approximate and vary by job title and contract year. Always verify with NetBenefits or AT&T HR before making decisions."
+        additionalContext="IRS segment rates and mortality assumptions update monthly. Lump sum projections are sensitive to small rate changes, a value calculated today may differ meaningfully from your actual lump sum at retirement. Pension band amounts are approximate and vary by job title and contract year. Always verify with NetBenefits or your HR department before making decisions."
       />
     </div>
   )
@@ -292,7 +292,7 @@ function CashBalanceCalc({ onCalculate }: { onCalculate: () => void }) {
       <div className="mb-[24px]">
         <h2 className="font-serif text-[24px] md:text-[28px] text-[#333333] font-normal">Cash Balance Pension Estimator</h2>
         <p className="font-sans text-[14px] text-[#5b6a71] mt-[4px]">
-          Project your AT&amp;T cash balance account growth using age-based pay credits and interest credits.
+          Project your cash balance account growth using age-based pay credits and interest credits.
         </p>
       </div>
 
@@ -417,7 +417,7 @@ function CashBalanceCalc({ onCalculate }: { onCalculate: () => void }) {
 
           {/* Pay Credit Schedule */}
           <div className={resultCardClass}>
-            <h3 className="font-sans text-[14px] font-semibold text-[#333333] mb-[12px] uppercase tracking-[0.05em]">AT&amp;T Pay Credit Schedule Applied</h3>
+            <h3 className="font-sans text-[14px] font-semibold text-[#333333] mb-[12px] uppercase tracking-[0.05em]">Pay Credit Schedule Applied</h3>
             <div className="overflow-x-auto">
               <table className="w-full text-[13px] font-sans">
                 <thead>
@@ -508,7 +508,7 @@ function PensionBandCalc({ onCalculate }: { onCalculate: () => void }) {
       <div className="mb-[24px]">
         <h2 className="font-serif text-[24px] md:text-[28px] text-[#333333] font-normal">Union Pension Band Calculator</h2>
         <p className="font-sans text-[14px] text-[#5b6a71] mt-[4px]">
-          CWA/IBEW craft employees: estimate your monthly pension based on your pension band and years of net credited service.
+          Union craft employees: estimate your monthly pension based on your pension band and years of net credited service.
         </p>
       </div>
 
@@ -675,7 +675,7 @@ function LumpVsAnnuityCalc({ onCalculate }: { onCalculate: () => void }) {
       <div className="mb-[24px]">
         <h2 className="font-serif text-[24px] md:text-[28px] text-[#333333] font-normal">Lump Sum vs Annuity Comparison</h2>
         <p className="font-sans text-[14px] text-[#5b6a71] mt-[4px]">
-          Compare taking your AT&amp;T pension as a lump sum (IRA rollover) versus a monthly annuity. Uses current IRS segment rates.
+          Compare taking your pension as a lump sum (IRA rollover) versus a monthly annuity. Uses current IRS segment rates.
         </p>
       </div>
 
@@ -830,7 +830,7 @@ function EarlyRetirementCalc({ onCalculate }: { onCalculate: () => void }) {
       <div className="mb-[24px]">
         <h2 className="font-serif text-[24px] md:text-[28px] text-[#333333] font-normal">Early Retirement Reduction Calculator</h2>
         <p className="font-sans text-[14px] text-[#5b6a71] mt-[4px]">
-          See how retiring early affects your AT&amp;T pension. Includes Modified Rule of 75 eligibility and reduction factors for union and management.
+          See how retiring early affects your pension. Includes Modified Rule of 75 eligibility and reduction factors for union and management.
         </p>
       </div>
 
@@ -839,7 +839,7 @@ function EarlyRetirementCalc({ onCalculate }: { onCalculate: () => void }) {
           <p className={labelClass}>Employee Type</p>
           <div className="grid grid-cols-2 gap-[8px]">
             <button onClick={() => setInputs(p => ({ ...p, employeeType: 'union' }))} className={`py-[10px] px-[12px] rounded-[8px] border-2 font-sans text-[13px] font-medium transition-all ${inputs.employeeType === 'union' ? 'border-[#1d7682] bg-[#1d7682]/5 text-[#1d7682]' : 'border-[#E2E8F0] text-[#5b6a71] hover:border-[#1d7682]/40'}`}>
-              Union (CWA / IBEW)
+              Union
             </button>
             <button onClick={() => setInputs(p => ({ ...p, employeeType: 'management' }))} className={`py-[10px] px-[12px] rounded-[8px] border-2 font-sans text-[13px] font-medium transition-all ${inputs.employeeType === 'management' ? 'border-[#1d7682] bg-[#1d7682]/5 text-[#1d7682]' : 'border-[#E2E8F0] text-[#5b6a71] hover:border-[#1d7682]/40'}`}>
               Management (Non-Union)
@@ -916,7 +916,7 @@ function EarlyRetirementCalc({ onCalculate }: { onCalculate: () => void }) {
               <li>• <strong>Age 55 or older</strong> with Rule of 75: no reduction to your benefit.</li>
               <li>• <strong>Under age 55</strong>: 6% per year reduction for each year before 55, even with Rule of 75 eligibility. Retiring at 52 = 18% permanent reduction.</li>
               {inputs.employeeType === 'union' && (
-                <li>• <strong>Union (CWA/IBEW) with 30+ years of service</strong>: exempt from the age penalty, full service pension at any age.</li>
+                <li>• <strong>Union with 30+ years of service</strong>: exempt from the age penalty, full service pension at any age.</li>
               )}
             </ul>
             <p className="font-sans text-[12px] text-amber-800 mt-[8px] italic">
@@ -1021,7 +1021,7 @@ function FourO1kLineChart({
         </div>
         <div className="flex items-center gap-1.5">
           <svg width="24" height="8"><line x1="0" y1="4" x2="24" y2="4" stroke="#9CA3AF" strokeWidth="1.5" strokeDasharray="4 3" /></svg>
-          Total contributed + AT&amp;T match
+          Total contributed + employer match
         </div>
       </div>
 
@@ -1066,7 +1066,7 @@ function FourO1kLineChart({
 }
 
 // ═══════════════════════════════════════════════════════════════════
-// 5. AT&T 401(k) PROJECTION
+// 5. 401(k) PROJECTION
 // ═══════════════════════════════════════════════════════════════════
 
 function FourO1kCalc({ onCalculate }: { onCalculate: () => void }) {
@@ -1138,9 +1138,9 @@ function FourO1kCalc({ onCalculate }: { onCalculate: () => void }) {
   return (
     <div>
       <div className="mb-[24px]">
-        <h2 className="font-serif text-[24px] md:text-[28px] text-[#333333] font-normal">AT&amp;T 401(k) Projection</h2>
+        <h2 className="font-serif text-[24px] md:text-[28px] text-[#333333] font-normal">401(k) Projection</h2>
         <p className="font-sans text-[14px] text-[#5b6a71] mt-[4px]">
-          Project your AT&amp;T 401(k) savings with the 80% employer match on basic contributions. Includes catch-up and super catch-up provisions.
+          Project your 401(k) savings with the 80% employer match on basic contributions. Includes catch-up and super catch-up provisions.
         </p>
       </div>
 
@@ -1152,7 +1152,7 @@ function FourO1kCalc({ onCalculate }: { onCalculate: () => void }) {
               Management
             </button>
             <button onClick={() => setInputs(p => ({ ...p, employeeType: 'union' }))} className={`py-[10px] px-[12px] rounded-[8px] border-2 font-sans text-[13px] font-medium transition-all ${inputs.employeeType === 'union' ? 'border-[#1d7682] bg-[#1d7682]/5 text-[#1d7682]' : 'border-[#E2E8F0] text-[#5b6a71] hover:border-[#1d7682]/40'}`}>
-              Union (CWA / IBEW)
+              Union
             </button>
           </div>
         </div>
@@ -1206,7 +1206,7 @@ function FourO1kCalc({ onCalculate }: { onCalculate: () => void }) {
             <div className={resultCardClass}>
               <div className={metricClass}>
                 <p className={`${metricValue} text-[#2E5D4B]`}>{fmt(results.totalMatch)}</p>
-                <p className={metricLabel}>Total AT&amp;T Match</p>
+                <p className={metricLabel}>Total Employer Match</p>
               </div>
             </div>
             <div className={resultCardClass}>
@@ -1235,7 +1235,7 @@ function FourO1kCalc({ onCalculate }: { onCalculate: () => void }) {
           {/* Match Info */}
           <div className={`${resultCardClass} bg-[#1d7682]/5`}>
             <p className="font-sans text-[14px] text-[#333333]">
-              <strong>AT&amp;T Match:</strong> 80% of your basic contribution (first 6% of salary). Match is invested in AT&amp;T shares regardless of your investment selections.
+              <strong>Employer Match:</strong> 80% of your basic contribution (first 6% of salary). Match is invested in company stock regardless of your investment selections.
               {inputs.currentAge >= 50 && <><br /><strong>Catch-Up Eligible:</strong> Age 50+ allows an additional $8,000/year. Ages 60-63 qualify for the super catch-up of $11,250/year.</>}
             </p>
           </div>
@@ -1249,7 +1249,7 @@ function FourO1kCalc({ onCalculate }: { onCalculate: () => void }) {
                   <tr className="text-left text-[#5b6a71] border-b border-[#E2E8F0]">
                     <th className="py-[8px] pr-[12px]">Age</th>
                     <th className="py-[8px] pr-[12px]">Your Contribution</th>
-                    <th className="py-[8px] pr-[12px]">AT&amp;T Match</th>
+                    <th className="py-[8px] pr-[12px]">Employer Match</th>
                     <th className="py-[8px]">Balance</th>
                   </tr>
                 </thead>
@@ -1314,7 +1314,7 @@ function IncomeGapCalc({ onCalculate }: { onCalculate: () => void }) {
       <div className="mb-[24px]">
         <h2 className="font-serif text-[24px] md:text-[28px] text-[#333333] font-normal">Retirement Income Gap Analysis</h2>
         <p className="font-sans text-[14px] text-[#5b6a71] mt-[4px]">
-          See if your AT&amp;T pension, 401(k), and Social Security cover the retirement income you need.
+          See if your pension, 401(k), and Social Security cover the retirement income you need.
         </p>
       </div>
 
@@ -1332,7 +1332,7 @@ function IncomeGapCalc({ onCalculate }: { onCalculate: () => void }) {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[16px] mb-[16px]">
           <div>
-            <label className={labelClass}>Monthly AT&amp;T Pension</label>
+            <label className={labelClass}>Monthly Pension</label>
             <input type="number" min={0} value={inputs.monthlyPension} onChange={e => setInputs(p => ({ ...p, monthlyPension: +e.target.value }))} className={inputBase} />
           </div>
           <div>
@@ -1405,7 +1405,7 @@ function IncomeGapCalc({ onCalculate }: { onCalculate: () => void }) {
           <div className={resultCardClass}>
             <h3 className="font-sans text-[14px] font-semibold text-[#333333] mb-[16px] uppercase tracking-[0.05em]">Income Sources</h3>
             {[
-              { label: 'AT&T Pension', value: inputs.monthlyPension, color: '#1d7682' },
+              { label: 'Pension', value: inputs.monthlyPension, color: '#1d7682' },
               { label: 'Social Security', value: inputs.monthlySocialSecurity, color: '#2E5D4B' },
               { label: 'Savings Withdrawals', value: results.savingsIncome, color: '#b8860b' },
               ...(inputs.monthlyOtherIncome > 0 ? [{ label: 'Other Income', value: inputs.monthlyOtherIncome, color: '#5b6a71' }] : []),
@@ -1506,7 +1506,7 @@ function Mod75Calc({ onCalculate }: { onCalculate: () => void }) {
       <div className="mb-[24px]">
         <h2 className="font-serif text-[24px] md:text-[28px] text-[#333333] font-normal">Modified Rule of 75: Am I Eligible?</h2>
         <p className="font-sans text-[14px] text-[#5b6a71] mt-[4px]">
-          Enter your current age and years of credited service to find out if you qualify for an AT&amp;T service pension, and exactly how close you are to each breakpoint.
+          Enter your current age and years of credited service to find out if you qualify for a service pension, and exactly how close you are to each breakpoint.
         </p>
       </div>
 
@@ -1531,7 +1531,7 @@ function Mod75Calc({ onCalculate }: { onCalculate: () => void }) {
                     : 'border-[#E2E8F0] text-[#5b6a71] hover:border-[#1d7682]/40'
                 }`}
               >
-                {type === 'union' ? 'Union (CWA / IBEW)' : 'Management'}
+                {type === 'union' ? 'Union' : 'Management'}
               </button>
             ))}
           </div>
@@ -1648,7 +1648,7 @@ function Mod75Calc({ onCalculate }: { onCalculate: () => void }) {
                 at age <strong>{results.nextTarget.ageAt}</strong> with <strong>{results.nextTarget.serviceAt} years</strong> of service.
               </p>
               {results.nextTarget.yearsNeeded === 0 && (
-                <p className="font-sans text-[13px] text-[#1d7682] mt-[6px] font-medium">You are right at the threshold. Verify your exact credited service date with AT&amp;T HR or NetBenefits.</p>
+                <p className="font-sans text-[13px] text-[#1d7682] mt-[6px] font-medium">You are right at the threshold. Verify your exact credited service date with your HR department or NetBenefits.</p>
               )}
             </div>
           )}
@@ -1741,12 +1741,12 @@ function Mod75Calc({ onCalculate }: { onCalculate: () => void }) {
               <div className="bg-[#8B2E2E]/5 rounded-[8px] p-[14px]">
                 <p className="font-sans text-[13px] font-semibold text-[#8B2E2E] mb-[6px]">Vested Pension</p>
                 <p className="font-sans text-[12px] text-[#333333] leading-relaxed">
-                  You left AT&amp;T before hitting any Mod 75 breakpoint. Benefits are severely reduced. You cannot &ldquo;age into&rdquo; service pension eligibility after separating.
+                  You left your employer before hitting any Mod 75 breakpoint. Benefits are severely reduced. You cannot &ldquo;age into&rdquo; service pension eligibility after separating.
                 </p>
               </div>
             </div>
             <p className="font-sans text-[12px] text-[#5b6a71] leading-relaxed">
-              <strong>Critical:</strong> Leaving AT&amp;T even one month before you hit a breakpoint locks you into the vested pension calculation permanently, regardless of how old you become afterward. This is one of the most expensive timing mistakes AT&amp;T employees make near retirement.
+              <strong>Critical:</strong> Leaving your employer even one month before you hit a breakpoint locks you into the vested pension calculation permanently, regardless of how old you become afterward. This is one of the most expensive timing mistakes telecom employees make near retirement.
             </p>
           </div>
 

@@ -4,27 +4,27 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 import PGEPensionCalculator from './PGEPensionCalculator'
 
 export const metadata: Metadata = {
-  title: 'PG&E Pension & Benefits Calculator Suite',
+  title: 'Utility Pension & Benefits Calculator Suite',
   description:
-    'Free PG&E pension calculator for union and management employees. Estimate your Final Pay or Cash Balance pension, model early retirement, project RMSA balance, and optimize your 401(k) match.',
+    'Free pension calculator for utility union and management employees. Estimate your Final Pay or Cash Balance pension, model early retirement, project RMSA balance, and optimize your 401(k) match.',
   alternates: {
-    canonical: 'https://www.advisorjay.com/tools/pge-pension',
+    canonical: 'https://www.advisorjay.com/tools/utility-pension-calculator',
   },
   openGraph: {
-    title: 'PG&E Pension & Benefits Calculator Suite',
+    title: 'Utility Pension & Benefits Calculator Suite',
     description:
-      'Free PG&E pension calculator suite: Final Pay pension, Cash Balance projections, early retirement eligibility, RMSA depletion estimator, and 401(k) match optimizer.',
-    url: 'https://www.advisorjay.com/tools/pge-pension',
+      'Free pension calculator suite for utility employees: Final Pay pension, Cash Balance projections, early retirement eligibility, RMSA depletion estimator, and 401(k) match optimizer.',
+    url: 'https://www.advisorjay.com/tools/utility-pension-calculator',
   },
 }
 
-export default function PGEPensionPage() {
+export default function UtilityPensionPage() {
   return (
     <>
       <BreadcrumbSchema
         items={[
           { name: 'Tools', href: '/tools' },
-          { name: 'PG&E Pension Suite', href: '/tools/pge-pension' },
+          { name: 'Utility Pension Suite', href: '/tools/utility-pension-calculator' },
         ]}
       />
 
@@ -32,17 +32,17 @@ export default function PGEPensionPage() {
       <section className="bg-[#333333] pt-[100px] pb-[48px] px-[20px] md:px-[40px] lg:px-[80px]">
         <div className="max-w-[960px] mx-auto text-center">
           <p className="font-sans text-[12px] font-semibold uppercase tracking-[0.15em] text-[#1d7682] mb-4">
-            PG&amp;E Pension &amp; Benefits Suite
+            Utility Pension &amp; Benefits Suite
           </p>
           <h1 className="font-serif text-[32px] md:text-[48px] font-light text-[#F7F4EE] leading-tight">
-            Know What Your PG&amp;E Benefits Are Worth
+            Know What Your Utility Benefits Are Worth
           </h1>
           <p className="font-sans text-[16px] md:text-[18px] text-[#F7F4EE]/70 mt-4 max-w-[640px] mx-auto leading-relaxed">
-            Six calculators built for PG&amp;E employees, union and management. Estimate your Final Pay or Cash Balance pension,
+            Six calculators built for utility employees, union and management. Estimate your Final Pay or Cash Balance pension,
             model early retirement eligibility, project your RMSA, and optimize your 401(k) match.
           </p>
           <p className="font-sans text-[14px] md:text-[15px] text-[#F7F4EE]/50 mt-3 max-w-[600px] mx-auto leading-relaxed">
-            I&apos;ve worked with PG&amp;E employees navigating pension elections, RMSA planning, and the Final Pay vs.
+            I&apos;ve worked with utility employees navigating pension elections, RMSA planning, and the Final Pay vs.
             Cash Balance decision. These calculators reflect the questions I get most often.
           </p>
           <p
@@ -75,7 +75,7 @@ export default function PGEPensionPage() {
         <PGEPensionCalculator />
       </section>
 
-      {/* PG&E Planning CTA */}
+      {/* Planning CTA */}
       <section style={{ backgroundColor: '#1d7682', padding: '48px 40px' }}>
         <div style={{ maxWidth: 760, margin: '0 auto', textAlign: 'center' }}>
           <p
@@ -101,7 +101,7 @@ export default function PGEPensionPage() {
             className="font-sans"
             style={{ fontSize: 15, color: 'rgba(247,244,238,0.75)', marginBottom: 24, lineHeight: 1.6 }}
           >
-            I work with PG&amp;E employees on pension elections, RMSA planning, the 401(k) spillover election, and
+            I work with utility employees on pension elections, RMSA planning, the 401(k) spillover election, and
             retirement timing, all the decisions that interact in ways a single calculator can&apos;t fully capture.
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, justifyContent: 'center' }}>
@@ -119,7 +119,7 @@ export default function PGEPensionPage() {
                 textDecoration: 'none',
               }}
             >
-              See how I help PG&amp;E employees →
+              See how I help utility employees &rarr;
             </Link>
             <Link
               href="/schedule-consultation"
@@ -173,8 +173,8 @@ export default function PGEPensionPage() {
             <a href="/tools/social-security-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>
               Social Security Calculator
             </a>
-            <a href="/tools/att-pension" style={{ color: '#1d7682', textDecoration: 'underline' }}>
-              AT&amp;T Pension Suite
+            <a href="/tools/telecom-pension-calculator" style={{ color: '#1d7682', textDecoration: 'underline' }}>
+              Telecom Pension Suite
             </a>
           </div>
         </div>

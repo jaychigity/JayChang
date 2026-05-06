@@ -5,7 +5,7 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 export const metadata: Metadata = {
  title: 'Free Financial Calculators & Planning Tools',
  description:
- 'Free financial calculators for corporate employees, utility professionals, physicians, business owners, and families. Free AT&T pension calculator, free PG&E benefits calculator, 401(k) projections, Roth conversions, and more. No sign-up required, instant results.',
+ 'Free financial calculators for corporate employees, telecom and utility professionals, physicians, business owners, and families. Free telecom pension calculator, free utility benefits calculator, 401(k) projections, Roth conversions, and more. No sign-up required, instant results.',
  alternates: {
  canonical: 'https://www.advisorjay.com/tools',
  },
@@ -27,18 +27,18 @@ export const metadata: Metadata = {
 
 const tools = [
  {
- href: '/tools/att-pension',
- title: 'AT&T Pension Suite',
+ href: '/tools/telecom-pension-calculator',
+ title: 'Telecom Pension Suite',
  description:
- 'AT&T\'s pension, deferred compensation, and benefits package is one of the most complex in the industry. This suite of calculators helps you model pension vs. lump sum decisions, deferred comp risk, and how your benefits fit into your overall retirement picture.\n\nEspecially useful for: current and former AT&T employees approaching retirement decisions.',
+ 'Telecom pension, deferred compensation, and benefits packages are among the most complex in the industry. This suite of calculators helps you model pension vs. lump sum decisions, deferred comp risk, and how your benefits fit into your overall retirement picture.\n\nEspecially useful for: current and former telecom employees approaching retirement decisions.',
  time: 'Instant analysis',
  category: 'Calculator Suite',
  },
  {
- href: '/tools/pge-pension',
- title: 'PG&E Pension & Benefits Suite',
+ href: '/tools/utility-pension-calculator',
+ title: 'Utility Pension & Benefits Suite',
  description:
- 'Six calculators built around the decisions PG&E employees actually face: estimate your Final Pay or Cash Balance pension, model early retirement reduction factors, project how long your RMSA will last, and find the 401(k) spillover election that captures your full match.\n\nEspecially useful for: PG&E employees in the Final Pay or Cash Balance plan navigating retirement timing and benefits elections.',
+ 'Six calculators built around the decisions utility employees actually face: estimate your Final Pay or Cash Balance pension, model early retirement reduction factors, project how long your RMSA will last, and find the 401(k) spillover election that captures your full match.\n\nEspecially useful for: utility employees in the Final Pay or Cash Balance plan navigating retirement timing and benefits elections.',
  time: 'Instant analysis',
  category: 'Calculator Suite',
  },
@@ -46,7 +46,7 @@ const tools = [
  href: '/tools/401k-withholding-calculator',
  title: '401(k) Withholding Calculator',
  description:
- 'One of the most common mistakes I see: employees leaving thousands in employer match uncaptured, or hitting tax season with a surprise bill because their RSU withholding was set wrong. This calculator shows you exactly what percentage to set, what it does to your paycheck, and how to catch up if you\'re mid-year.\n\nEspecially useful for: AT&T, PG&E, Raytheon, Honeywell, and Fortune 500 employees with complex compensation packages.',
+ 'One of the most common mistakes I see: employees leaving thousands in employer match uncaptured, or hitting tax season with a surprise bill because their RSU withholding was set wrong. This calculator shows you exactly what percentage to set, what it does to your paycheck, and how to catch up if you\'re mid-year.\n\nEspecially useful for: telecom, utility, Raytheon, Honeywell, and Fortune 500 employees with complex compensation packages.',
  time: 'Instant estimate',
  category: 'Calculator',
  },
@@ -191,18 +191,18 @@ export default function ToolsPage() {
    },
    {
     '@type': 'Question',
-    name: 'Is the AT&T pension calculator free?',
+    name: 'Is the telecom pension calculator free?',
     acceptedAnswer: {
     '@type': 'Answer',
-    text: 'Yes. The AT&T Pension Suite is free to use with no login required. It includes free calculators for pension vs. lump sum decisions, Mod 75 eligibility, early retirement reduction factors, and 401(k) match optimization, all built specifically for current and former AT&T employees.',
+    text: 'Yes. The Telecom Pension Suite is free to use with no login required. It includes free calculators for pension vs. lump sum decisions, Rule of 75 eligibility, early retirement reduction factors, and 401(k) match optimization, all built specifically for current and former telecom employees.',
     },
    },
    {
     '@type': 'Question',
-    name: 'Is the PG&E pension calculator free?',
+    name: 'Is the utility pension calculator free?',
     acceptedAnswer: {
     '@type': 'Answer',
-    text: 'Yes. The PG&E Pension & Benefits Suite is free with no sign-up needed. It covers free calculators for Final Pay and Cash Balance pension estimates, RMSA projections, early retirement reduction factors, and 401(k) spillover elections, built for PG&E employees navigating retirement decisions.',
+    text: 'Yes. The Utility Pension & Benefits Suite is free with no sign-up needed. It covers free calculators for Final Pay and Cash Balance pension estimates, RMSA projections, early retirement reduction factors, and 401(k) spillover elections, built for utility employees navigating retirement decisions.',
     },
    },
    {
@@ -484,7 +484,7 @@ export default function ToolsPage() {
   marginBottom: 16,
   }}
   >
-  If you&rsquo;re a corporate or Fortune 500 employee trying to maximize your 401(k), start with the withholding calculator. If you have RSUs or stock options vesting this year, the equity compensation calculator is your first stop. Physicians and high-income earners often find the Roth conversion tool most valuable. Business owners planning an exit should start with the scorecard. And if you&rsquo;re an AT&amp;T or PG&amp;E employee with pension decisions ahead, the AT&amp;T Pension Suite and PG&amp;E Pension Suite were built specifically for you.
+  If you&rsquo;re a corporate or Fortune 500 employee trying to maximize your 401(k), start with the withholding calculator. If you have RSUs or stock options vesting this year, the equity compensation calculator is your first stop. Physicians and high-income earners often find the Roth conversion tool most valuable. Business owners planning an exit should start with the scorecard. And if you&rsquo;re a telecom or utility employee with pension decisions ahead, the Telecom Pension Suite and Utility Pension Suite were built specifically for you.
   </p>
   <p
   className="font-sans"
