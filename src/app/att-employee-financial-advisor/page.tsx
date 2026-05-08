@@ -154,13 +154,12 @@ export default function ATTEmployeeFinancialAdvisor() {
                 Confidential · Available nationwide
               </p>
             </div>
-            <div className="relative">
+            <div className="relative aspect-[3/4] sm:aspect-square lg:aspect-[3/4] overflow-hidden rounded-lg">
               <Image
                 src="/Photos/att.webp"
                 alt="AT&T employee financial planning"
-                width={1536}
-                height={1024}
-                className="w-full h-auto rounded-lg"
+                fill
+                className="object-cover"
               />
             </div>
           </div>
