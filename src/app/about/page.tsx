@@ -28,7 +28,7 @@ export default function AboutPage() {
  },
  {
  name: 'Dr. Daniel R. Gilham',
- title: 'CFP® • CEPA • Managing Director of Advisor Strategy, Farther',
+ title: 'Managing Director of Advisor Strategy, Farther • CFP® • CEPA',
  photo: '/Photos/Daniel-Gilham-color.avif',
  photoWidth: 722,
  photoHeight: 800,
