@@ -17,7 +17,7 @@ export default function AboutPage() {
  const teamMembers = [
  {
  name: 'Michael Lee',
- title: 'Principal, Wealth Advisor & Focus Team Lead, Farther',
+ title: 'Principal, Wealth Advisor & Focus Team Lead',
  photo: '/Photos/Michael-Lee-color.avif',
  photoWidth: 722,
  photoHeight: 800,
@@ -28,7 +28,7 @@ export default function AboutPage() {
  },
  {
  name: 'Dr. Daniel R. Gilham',
- title: 'Managing Director of Advisor Strategy, Farther • CFP® • CEPA',
+ title: 'Managing Director of Advisor Strategy • CFP® • CEPA',
  photo: '/Photos/Daniel-Gilham-color.avif',
  photoWidth: 722,
  photoHeight: 800,
@@ -39,7 +39,7 @@ export default function AboutPage() {
  },
  {
  name: 'Sutanto Widjaja',
- title: 'Chief Investment Officer, Farther Institutional, Nonprofits, Endowments & Foundations',
+ title: 'Chief Investment Officer, Nonprofits, Endowments & Foundations',
  photo: '/Photos/Sutanto-color.avif',
  photoWidth: 1160,
  photoHeight: 1200,
@@ -51,7 +51,7 @@ export default function AboutPage() {
  },
  {
  name: 'Ashton Hayes',
- title: 'JD, LL.M. in Taxation • Trust Services Associate, Farther',
+ title: 'Trust Services Associate • JD, LL.M. in Taxation',
  photo: '/Photos/Ashton-Hayes-color.png',
  photoWidth: 2115,
  photoHeight: 1848,
@@ -62,7 +62,7 @@ export default function AboutPage() {
  },
  {
  name: 'Stacey Kirkpatrick',
- title: 'CFP® • Financial Planning Specialist, Farther',
+ title: 'Financial Planning Specialist • CFP®',
  photo: '/Photos/Stacey-Kirkpatrick-color.png',
  photoWidth: 2460,
  photoHeight: 1528,
@@ -73,18 +73,18 @@ export default function AboutPage() {
  },
  {
  name: 'Alex Paul',
- title: 'Farther Advisory Team',
+ title: 'Director of Investment Strategy • CFA',
  photo: '/Photos/Alex-Paul-color.png',
  photoWidth: 2040,
  photoHeight: 1879,
  bio: [
-  `Alex is a key member of our team supporting Jay's practice day-to-day. He brings sharp analytical thinking and a genuine care for doing right by every client.`,
-  'From onboarding to implementation, Alex helps make sure the whole planning process runs smoothly so nothing gets missed.',
+  'Alex leads investment strategy across the platform, building and implementing approaches that align with each client's goals. With over a decade of experience in portfolio management and investment analysis, he's managed complex portfolios as both a Chief Investment Officer and Due Diligence Officer.',
+  'His expertise spans stocks, bonds, and alternative investments. He stays close to market trends and regulatory shifts so the advice our clients receive is always current and informed.',
  ],
  },
  {
  name: 'Aaron Sheklin',
- title: 'JD • Director of Institutional Sales, Farther',
+ title: 'Director of Institutional Sales • JD',
  photo: '/Photos/Aaron-Sheklin.avif',
  photoWidth: 1160,
  photoHeight: 1200,
