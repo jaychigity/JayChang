@@ -78,7 +78,7 @@ export default function AboutPage() {
  photoWidth: 2040,
  photoHeight: 1879,
  bio: [
-  'Alex leads investment strategy across the platform, building and implementing approaches that align with each client's goals. With over a decade of experience in portfolio management and investment analysis, he's managed complex portfolios as both a Chief Investment Officer and Due Diligence Officer.',
+  'Alex leads investment strategy across the platform, building and implementing approaches that align with each client\'s goals. With over a decade of experience in portfolio management and investment analysis, he\'s managed complex portfolios as both a Chief Investment Officer and Due Diligence Officer.',
   'His expertise spans stocks, bonds, and alternative investments. He stays close to market trends and regulatory shifts so the advice our clients receive is always current and informed.',
  ],
  },
