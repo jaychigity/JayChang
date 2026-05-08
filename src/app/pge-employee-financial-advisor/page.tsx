@@ -171,6 +171,9 @@ export default function PGEEmployeeFinancialAdvisor() {
               />
             </div>
           </div>
+          <p className="text-[11px] text-gray-500 mt-6 text-center leading-snug">
+            Advisor Jay / Farther Finance is not affiliated with, endorsed by, or sponsored by Pacific Gas and Electric Company (PG&amp;E) or any of its subsidiaries. All company names and trademarks are the property of their respective owners.
+          </p>
         </div>
       </section>
 

@@ -164,6 +164,9 @@ export default function ATTEmployeeFinancialAdvisor() {
               />
             </div>
           </div>
+          <p className="text-[11px] text-gray-500 mt-6 text-center leading-snug">
+            Advisor Jay / Farther Finance is not affiliated with, endorsed by, or sponsored by AT&amp;T Inc. or any of its subsidiaries. All company names and trademarks are the property of their respective owners.
+          </p>
         </div>
       </section>
 
