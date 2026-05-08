@@ -39,14 +39,14 @@ export default function AboutPage() {
  },
  {
  name: 'Sutanto Widjaja',
- title: 'Chief Investment Officer, Farther Institutional',
+ title: 'Chief Investment Officer, Farther Institutional, Nonprofits, Endowments & Foundations',
  photo: '/Photos/Sutanto-color.avif',
  photoWidth: 1160,
  photoHeight: 1200,
  bio: [
-  'Sutanto has 20+ years in asset management. He was Co-Portfolio Manager at TIAA-Nuveen running institutional portfolios, and co-founded IndiCo Capital.',
-  'MBA from Stanford, BS from UC Berkeley. He serves on the Investment Committees of the University of Hawaii Foundation and the Honolulu Museum of Art.',
+  'Sutanto has 20+ years in asset management. He was Co-Portfolio Manager at TIAA-Nuveen running institutional portfolios, and co-founded IndiCo Capital. MBA from Stanford, BS from UC Berkeley.',
   'His focus: smart asset allocation, alternatives, and building portfolios that actually manage risk instead of just talking about it.',
+  'Dedicated to giving back, he currently sits on the Investment Committees of the University of Hawaii Foundation and the Honolulu Museum of Art, where he advises on endowment portfolios.',
  ],
  },
  {
