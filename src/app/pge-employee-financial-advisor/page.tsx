@@ -151,7 +151,7 @@ export default function PGEEmployeeFinancialAdvisor() {
                 spillover election most employees never set up. These aren&apos;t generic retirement questions. They&apos;re
                 PG&amp;E-specific decisions that require someone who knows how the pieces fit together.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <Button href="/schedule-consultation" variant="primary">
                   Schedule Your PG&amp;E Benefits Review
                 </Button>
@@ -170,7 +170,7 @@ export default function PGEEmployeeFinancialAdvisor() {
               />
             </div>
           </div>
-          <p className="text-[11px] text-gray-500 mt-6 text-center leading-snug">
+          <p className="text-[13px] text-gray-300 mt-8 text-center leading-relaxed border border-gray-600 rounded-md px-4 py-3">
             Advisor Jay / Farther Finance is not affiliated with, endorsed by, or sponsored by Pacific Gas and Electric Company (PG&amp;E) or any of its subsidiaries. All company names and trademarks are the property of their respective owners.
           </p>
         </div>

@@ -142,7 +142,7 @@ export default function ATTEmployeeFinancialAdvisor() {
               <p className="text-lg text-gray-300 mb-6 leading-relaxed">
                 Four different pension plan types. A Surplus Savings Plan most people underuse. Deferred comp that has to be structured years in advance. A retirement timing decision that involves your pension, your Rule of 75 eligibility, and your healthcare bridge all at once. I&apos;ve worked through these decisions with AT&amp;T employees across union and management roles, and I built a calculator suite specifically for you.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <Button href="/schedule-consultation" variant="primary">
                   Schedule Your AT&amp;T Benefits Review
                 </Button>
@@ -163,7 +163,7 @@ export default function ATTEmployeeFinancialAdvisor() {
               />
             </div>
           </div>
-          <p className="text-[11px] text-gray-500 mt-6 text-center leading-snug">
+          <p className="text-[13px] text-gray-300 mt-8 text-center leading-relaxed border border-gray-600 rounded-md px-4 py-3">
             Advisor Jay / Farther Finance is not affiliated with, endorsed by, or sponsored by AT&amp;T Inc. or any of its subsidiaries. All company names and trademarks are the property of their respective owners.
           </p>
         </div>
