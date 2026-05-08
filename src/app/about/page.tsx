@@ -28,13 +28,13 @@ export default function AboutPage() {
  },
  {
  name: 'Dr. Daniel R. Gilham',
- title: 'CFP® • Managing Director of Advisor Strategy, Farther',
+ title: 'CFP® • CEPA • Managing Director of Advisor Strategy, Farther',
  photo: '/Photos/Daniel-Gilham-color.avif',
  photoWidth: 722,
  photoHeight: 800,
  bio: [
-  'Daniel is a CFP with 15 years of experience, a former systems engineer at AOL, and a doctoral candidate at the University of South Florida. He spent nearly a decade at Wells Fargo before that.',
-  `He co-hosts The Horse's Mouth podcast, sits on the Advisory Board for GrowFL, was named Jacksonville 40 Under 40, and gives his time to Ho'ola Na Pua in Hawaii.`,
+  'Nearly two decades bridging strategy, innovation, and leadership. Daniel is the Managing Director of Advisor Strategy at Farther, the 2025 Inc. 5000 fastest-growing fintech firm redefining wealth management by pairing advanced technology with real-world human expertise.',
+  'A frequent conference speaker and guest lecturer, Daniel is known for making complex financial and technological trends accessible, translating fintech and AI disruption into actionable strategy for leaders in business, nonprofit, and advisory sectors.',
  ],
  },
  {
