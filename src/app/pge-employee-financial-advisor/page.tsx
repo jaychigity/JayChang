@@ -161,13 +161,12 @@ export default function PGEEmployeeFinancialAdvisor() {
               </div>
               <p className="text-sm text-gray-400 mt-4">Confidential · Available nationwide</p>
             </div>
-            <div className="relative">
+            <div className="relative aspect-[3/4] sm:aspect-square lg:aspect-[3/4] overflow-hidden rounded-lg">
               <Image
-                src="/Photos/att.webp"
+                src="/Photos/pge.webp"
                 alt="PG&E employee financial planning"
-                width={1536}
-                height={1024}
-                className="w-full h-auto rounded-lg"
+                fill
+                className="object-cover"
               />
             </div>
           </div>
