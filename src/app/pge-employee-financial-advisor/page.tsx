@@ -151,7 +151,7 @@ export default function PGEEmployeeFinancialAdvisor() {
                 spillover election most employees never set up. These aren&apos;t generic retirement questions. They&apos;re
                 PG&amp;E-specific decisions that require someone who knows how the pieces fit together.
               </p>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4 mt-2">
                 <Button href="/schedule-consultation" variant="primary">
                   Schedule Your PG&amp;E Benefits Review
                 </Button>
@@ -159,7 +159,7 @@ export default function PGEEmployeeFinancialAdvisor() {
                   Try the Pension Calculator →
                 </Button>
               </div>
-              <p className="text-sm text-gray-400 mt-4">Confidential · Available nationwide</p>
+              <p className="text-xs text-gray-500 mt-2">Confidential · Available nationwide</p>
             </div>
             <div className="relative aspect-[3/4] sm:aspect-square lg:aspect-[3/4] overflow-hidden rounded-lg">
               <Image

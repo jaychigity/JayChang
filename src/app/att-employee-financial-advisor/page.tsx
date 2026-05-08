@@ -142,7 +142,7 @@ export default function ATTEmployeeFinancialAdvisor() {
               <p className="text-lg text-gray-300 mb-6 leading-relaxed">
                 Four different pension plan types. A Surplus Savings Plan most people underuse. Deferred comp that has to be structured years in advance. A retirement timing decision that involves your pension, your Rule of 75 eligibility, and your healthcare bridge all at once. I&apos;ve worked through these decisions with AT&amp;T employees across union and management roles, and I built a calculator suite specifically for you.
               </p>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4 mt-2">
                 <Button href="/schedule-consultation" variant="primary">
                   Schedule Your AT&amp;T Benefits Review
                 </Button>
@@ -150,7 +150,7 @@ export default function ATTEmployeeFinancialAdvisor() {
                   Try the Pension Calculator →
                 </Button>
               </div>
-              <p className="text-sm text-gray-400 mt-4">
+              <p className="text-xs text-gray-500 mt-2">
                 Confidential · Available nationwide
               </p>
             </div>
