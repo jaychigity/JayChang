@@ -382,10 +382,10 @@ export default function PGEEmployeeFinancialAdvisor() {
           <AnimateOnScroll>
             <Calculator className="w-10 h-10 text-white/70 mx-auto mb-4" />
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Six Calculators Built Specifically for PG&amp;E Employees
+              Six Calculators Built for Utility Employees
             </h2>
             <p className="text-lg text-white/80 mb-8 leading-relaxed max-w-2xl mx-auto">
-              The PG&amp;E Pension Suite covers Final Pay estimates, Cash Balance projections, early retirement eligibility,
+              The Utility Pension Suite covers Final Pay estimates, Cash Balance projections, early retirement eligibility,
               RMSA depletion modeling, and 401(k) match optimization. No sign-up required.
             </p>
             <Button href="/tools/utility-pension-calculator" variant="primary">

@@ -328,10 +328,10 @@ export default function ATTEmployeeFinancialAdvisor() {
           <AnimateOnScroll>
             <Calculator className="w-10 h-10 text-white/70 mx-auto mb-4" />
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Six Calculators Built Specifically for AT&amp;T Employees
+              Six Calculators Built for Telecom Employees
             </h2>
             <p className="text-lg text-white/80 mb-8 leading-relaxed max-w-2xl mx-auto">
-              The AT&amp;T Pension Suite covers cash balance projections, pension band estimates, lump sum vs. annuity comparisons, early retirement modeling, income gap analysis, and 401(k) projections, all in one place. No sign-up required.
+              The Telecom Pension Suite covers cash balance projections, pension band estimates, lump sum vs. annuity comparisons, early retirement modeling, income gap analysis, and 401(k) projections, all in one place. No sign-up required.
             </p>
             <Button href="/tools/telecom-pension-calculator" variant="primary">
               Open the Telecom Pension Suite →
