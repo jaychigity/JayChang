@@ -102,6 +102,10 @@ export default function CalculatorDisclaimer({
           interact. Past performance does not guarantee future results.
         </p>
 
+        <p>
+          This tool does not collect, store, or transmit any financial data.
+        </p>
+
         {additionalContext && (
           <p className="italic opacity-90">{additionalContext}</p>
         )}
