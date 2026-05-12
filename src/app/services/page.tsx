@@ -71,27 +71,6 @@ const services = [
  },
 ]
 
-const testimonialsList = [
- {
-  quote:
-   'I didn&apos;t think I needed a financial advisor at 31, but Jay showed me how to maximize my mega backdoor Roth and coordinate my equity grants. I&apos;ll have $200K more by the time I&apos;m 45 just from these moves.',
-  name: 'Intel Early Career Engineer',
-  descriptor: 'Equity & tax optimization',
- },
- {
-  quote:
-   'When I was invited into Apple&apos;s Deferred Compensation Plan, I had no idea what to do. Jay modeled 3 completely different scenarios in 48 hours so I could make an informed decision.',
-  name: 'Apple Senior Manager',
-  descriptor: 'Executive compensation',
- },
- {
-  quote:
-   'The pension-vs.-lump-sum decision was keeping me up at night. Jay did a full break-even analysis and helped me understand the real implications of each choice.',
-  name: 'RTX Senior Systems Engineer',
-  descriptor: 'Pension strategy',
- },
-]
-
 export default function ServicesPage() {
  return (
   <>
@@ -177,36 +156,6 @@ export default function ServicesPage() {
     </div>
    </section>
 
-   {/* ─── SECTION: TESTIMONIALS ─── */}
-   <section className="bg-[#F7F4EE] py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
-    <div className="max-w-7xl mx-auto">
-     <AnimateOnScroll className="mb-16">
-      <h2 className="font-serif text-[28px] md:text-[36px] font-semibold text-[#333333]">
-       Hear It From People Like You
-      </h2>
-     </AnimateOnScroll>
-
-     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-[1000px]">
-      {testimonialsList.map((testimonial, idx) => (
-       <AnimateOnScroll key={testimonial.name} delay={idx * 100}>
-        <div className="flex flex-col">
-         <p className="font-sans text-[15px] text-[#333333] leading-[1.7] italic mb-6">
-          &ldquo;{testimonial.quote}&rdquo;
-         </p>
-         <div className="pt-6 border-t border-[#E8E6E1]">
-          <p className="font-sans text-[15px] font-semibold text-[#333333]">
-           {testimonial.name}
-          </p>
-          <p className="font-sans text-[13px] text-[#5b6a71]">
-           {testimonial.descriptor}
-          </p>
-         </div>
-        </div>
-       </AnimateOnScroll>
-      ))}
-     </div>
-    </div>
-   </section>
 
    {/* ─── SECTION: FINAL CTA ─── */}
    <section className="bg-[#333333] py-20 lg:py-32 px-4 sm:px-6 lg:px-8">

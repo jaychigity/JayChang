@@ -4,7 +4,6 @@ import Image from 'next/image'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
 import Button from '@/components/Button'
 import SectionEyebrow from '@/components/SectionEyebrow'
-import TestimonialCarousel from '@/components/TestimonialCarousel'
 import { Calculator, Phone, FileText, Shield, Clock, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -19,33 +18,6 @@ export const metadata: Metadata = {
     url: 'https://www.advisorjay.com/att-employee-financial-advisor',
   },
 }
-
-const attTestimonials = [
-  {
-    quote: "I had 30 years at AT&T and couldn't figure out how my pension, 401(k), and deferred comp all fit together. Jay built a single retirement income timeline and showed me I could retire two years earlier than I thought.",
-    name: 'AT&T Network Engineering Manager',
-    location: 'Phoenix, AZ',
-    detail: 'Retirement orchestration',
-  },
-  {
-    quote: "I didn't know which pension plan I was in until Jay walked me through it. Turns out I was BCB1 and my lump sum option was worth modeling against the annuity. We ran the numbers and I made a decision I actually understood.",
-    name: 'AT&T Field Operations Supervisor',
-    location: 'Chandler, AZ',
-    detail: 'Pension plan election',
-  },
-  {
-    quote: "My DISC balance had grown to a level I wasn't expecting. Jay helped me structure the distribution schedule to avoid a massive tax hit in a single year. That planning alone was worth more than years of advisory fees.",
-    name: 'AT&T Senior Director',
-    location: 'Dallas, TX',
-    detail: 'Deferred comp planning',
-  },
-  {
-    quote: "I was within two years of retirement and had no idea the Modified Rule of 75 even existed. Jay showed me I qualified and helped me lock in my healthcare bridge before I left. That changed everything about my timeline.",
-    name: 'AT&T CWA-represented Technician',
-    location: 'Phoenix, AZ',
-    detail: 'Early retirement eligibility',
-  },
-]
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -494,18 +466,6 @@ export default function ATTEmployeeFinancialAdvisor() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="bg-[#F7F4EE] py-[80px] px-[80px] lg:px-[80px] md:px-[40px] max-md:px-[20px]">
-        <div className="max-w-container mx-auto text-center">
-          <AnimateOnScroll>
-            <SectionEyebrow text="WHAT AT&T EMPLOYEES SAY" />
-            <h2 className="font-serif text-[28px] md:text-[36px] font-semibold text-[#333333] mt-4 mb-8">
-              What Clients Say About Working With Me
-            </h2>
-          </AnimateOnScroll>
-          <TestimonialCarousel testimonials={attTestimonials} />
-        </div>
-      </section>
 
       {/* Back to Telecom Hub */}
       <section className="bg-white py-10">

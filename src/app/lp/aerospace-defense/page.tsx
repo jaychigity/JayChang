@@ -164,23 +164,6 @@ export default function AerospaceDefenseLP() {
   </div>
  </section>
 
- {/* ================================================================
-  TESTIMONIAL
-  ================================================================ */}
- <section className="bg-[#F7F4EE] py-[60px] px-[20px] md:px-[40px] lg:px-[80px]">
-  <div className="max-w-[700px] mx-auto text-center">
-  <AnimateOnScroll>
-  <div className="border-l-4 border-[#1d7682] pl-6 text-left">
-   <p className="font-serif text-[20px] md:text-[24px] text-[#333333] leading-relaxed italic">
-   &ldquo;After 20 years with Honeywell, I had a pension, deferred comp, employer stock, and honestly no clear picture of what any of it meant for retirement. Jay sat down with me and laid it all out - when to take deferred comp distributions, how to sequence my pension, how it all fits with my investments. For the first time, I actually feel confident about what&apos;s ahead.&rdquo;
-   </p>
-   <p className="font-sans text-[15px] text-[#5b6a71] mt-4">
-   - Aerospace professional, client since 2023
-   </p>
-  </div>
-  </AnimateOnScroll>
-  </div>
- </section>
 
  {/* ================================================================
   ABOUT JAY

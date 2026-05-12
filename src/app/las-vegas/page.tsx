@@ -647,27 +647,6 @@ export default function LasVegasNevadaPage() {
   </div>
  </section>
 
- {/* ─── SECTION 7: TESTIMONIAL ─── */}
- <section className="bg-[#F7F4EE] py-xl md:py-2xl">
-  <div className="mx-auto max-w-container px-sm md:px-lg text-center">
-  <AnimateOnScroll>
-  <div className="max-w-[800px] mx-auto">
-   <p className="font-serif text-[22px] md:text-[28px] leading-[1.5] text-[#333333] italic">
-   &ldquo;We left Silicon Valley with a liquidity event and needed to completely rethink our wealth strategy. Tax was one thing - but they structured dynasty trusts that will benefit our grandkids and great-grandkids for centuries. Nevada changed our picture, and they showed us how to actually use it.&rdquo;
-   </p>
-   <p className="mt-lg font-sans text-body font-semibold text-[#333333]">
-   - James &amp; Elena T., Summerlin, NV
-   </p>
-   <p className="mt-[4px] font-sans text-body-sm text-[#5b6a71]">
-   Recently relocated from California, clients since 2024
-   </p>
-   <p className="mt-lg font-sans text-[11px] text-[#5b6a71] max-w-[600px] mx-auto">
-   This testimonial reflects the individual experience of a current advisory client of Jay Chang at Farther Finance, Inc. It was provided voluntarily and without compensation. This client's experience may not be representative of other clients' experiences, and the testimonial does not constitute a guarantee of future performance or results. Individual outcomes depend on each client's specific financial circumstances, goals, and market conditions.
-   </p>
-  </div>
-  </AnimateOnScroll>
-  </div>
- </section>
 
  {/* ─── SECTION 8: FAQ ─── */}
  <section className="bg-[#F7F4EE] py-xl md:py-2xl">

@@ -3,7 +3,6 @@ import Image from 'next/image';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 import SectionEyebrow from '@/components/SectionEyebrow';
-import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
  title: 'Aerospace & Defense Wealth Management in Phoenix & Tucson | Honeywell & Raytheon Benefits',
@@ -12,14 +11,6 @@ export const metadata: Metadata = {
  canonical: 'https://www.advisorjay.com/aerospace-defense-wealth-management',
  },
 };
-
-const aerospaceTestimonials = [
- { quote: "The pension-vs.-lump-sum decision was keeping me up at night. Jay did a full break-even analysis and helped me understand the real implications of each choice.", name: "RTX Professional", location: "Tucson, AZ", detail: "Pension strategy" },
- { quote: "I had 34% of my 401(k) in Honeywell stock and didn't put it there on purpose. Jay built a reallocation plan that brought it to an intentional level without triggering any tax event.", name: "Honeywell Professional", location: "Phoenix, AZ", detail: "401(k) rebalancing" },
- { quote: "When I was considering early retirement at 58, Jay mapped my RTX pension, 401(k), deferred comp, and Social Security into one timeline. For the first time, I could see exactly how it all fit.", name: "RTX Professional", location: "Tucson, AZ", detail: "Retirement orchestration" },
- { quote: "The Honeywell spinoff has me worried about my equity. Jay is already walking me through what HONA means for my RSUs, my 401(k) match fund, and my overall portfolio.", name: "Honeywell Professional", location: "Phoenix, AZ", detail: "Spinoff planning" },
- { quote: "I enrolled in RTX's Lifetime Income Strategy years ago without understanding the trade-offs. Jay reviewed what I had, showed me what NUA could have done, and adjusted my remaining 401(k) to compensate.", name: "Raytheon Professional", location: "Green Valley, AZ", detail: "LIS & NUA review" },
-];
 
 export default function AerospaceDefenseWealthManagement() {
  return (
@@ -580,18 +571,6 @@ export default function AerospaceDefenseWealthManagement() {
   </div>
  </section>
 
- {/* Testimonials */}
- <section className="bg-[#F7F4EE] py-[80px] px-[80px] lg:px-[80px] md:px-[40px] max-md:px-[20px]">
-  <div className="max-w-container mx-auto text-center">
-  <AnimateOnScroll>
-  <SectionEyebrow text="CLIENT TESTIMONIALS" />
-  <h2 className="font-serif text-[28px] md:text-[36px] font-semibold text-[#333333] mt-4 mb-8">
-   What Clients Say About Working With Me
-  </h2>
-  </AnimateOnScroll>
-  <TestimonialCarousel testimonials={aerospaceTestimonials} />
-  </div>
- </section>
 
  {/* Final CTA */}
  <section className="bg-[#333333] text-white py-16 lg:py-24">

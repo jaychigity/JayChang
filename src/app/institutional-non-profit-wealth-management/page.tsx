@@ -3,7 +3,6 @@ import Image from 'next/image';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 import SectionEyebrow from '@/components/SectionEyebrow';
-import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
  title: 'Institutional & Non-Profit Wealth Management | Endowments, Foundations & Charitable Portfolios',
@@ -12,14 +11,6 @@ export const metadata: Metadata = {
  canonical: 'https://www.advisorjay.com/institutional-non-profit-wealth-management',
  },
 };
-
-const institutionalTestimonials = [
- { quote: "Our foundation had been invested in a generic target-date fund for years. Jay built a custom portfolio that reflects our grant-making timeline and risk tolerance. For the first time, our investment strategy actually matches our mission.", name: "Executive Director", location: "Phoenix, AZ", detail: "Private Foundation" },
- { quote: "Jay helped our board understand the difference between spending policy and investment policy. That single conversation changed how we think about our endowment and gave us confidence to plan five years out instead of one.", name: "Board Treasurer", location: "Scottsdale, AZ", detail: "Community Non-Profit" },
- { quote: "We were paying 1.4% in hidden fees across three different accounts with no coordination. Jay consolidated everything under one fiduciary relationship and cut our costs by more than half. That savings goes directly back to our programs.", name: "Finance Committee Chair", location: "Tempe, AZ", detail: "Educational Endowment" },
- { quote: "Our religious institution needed someone who understood both the fiduciary requirements and the values-based investing our congregation expects. Jay took the time to learn what mattered to us and built a portfolio we can stand behind.", name: "Board of Trustees Member", location: "Mesa, AZ", detail: "Religious Institution" },
- { quote: "As a donor-advised fund holder, I wanted to maximize the impact of my charitable giving. Jay helped me think about asset location, appreciated stock donations, and timing distributions for maximum tax efficiency and charitable impact.", name: "DAF Holder & Philanthropist", location: "Paradise Valley, AZ", detail: "Donor-Advised Fund" },
-];
 
 export default function InstitutionalNonProfitWealthManagement() {
  return (
@@ -364,18 +355,6 @@ export default function InstitutionalNonProfitWealthManagement() {
   </div>
   </section>
 
-  {/* Testimonials */}
-  <section className="bg-[#F7F4EE] py-[80px] px-[80px] lg:px-[80px] md:px-[40px] max-md:px-[20px]">
-  <div className="max-w-container mx-auto text-center">
-   <AnimateOnScroll>
-   <SectionEyebrow text="CLIENT TESTIMONIALS" />
-   <h2 className="font-serif text-[28px] md:text-[36px] font-semibold text-[#333333] mt-4 mb-8">
-    What Clients Say About Working With Me
-   </h2>
-   </AnimateOnScroll>
-   <TestimonialCarousel testimonials={institutionalTestimonials} />
-  </div>
-  </section>
 
   {/* Final CTA */}
   <section className="bg-[#333333] text-white py-16 lg:py-24">

@@ -3,7 +3,6 @@ import Image from 'next/image';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 import SectionEyebrow from '@/components/SectionEyebrow';
-import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
  title: 'Physician & Executive Wealth Management in Phoenix & Scottsdale | Banner Health, Mayo Clinic & Corporate Leaders',
@@ -12,14 +11,6 @@ export const metadata: Metadata = {
  canonical: 'https://www.advisorjay.com/physician-executive-wealth-management-phoenix-scottsdale',
  },
 };
-
-const physicianExecutiveTestimonials = [
- { quote: "Jay helped me set up a cash balance plan that reduced my effective tax rate by 8 percentage points. Game-changing strategy.", name: "Banner Health Cardiologist", location: "Scottsdale, AZ", detail: "Tax optimization" },
- { quote: "I spent fifteen years focused on medicine and almost no time on my money. Jay built a strategy around my deferred comp, practice income, and real estate goals that finally made everything work together.", name: "Dr. Anish R.", location: "Scottsdale, AZ", detail: "Physician, Client Since 2019" },
- { quote: "Selling a medical practice is nothing like selling a normal business. Jay understood the regulatory nuances, the receivables timeline, and the tax complexity from day one.", name: "Dr. Michelle F.", location: "Phoenix, AZ", detail: "Practice sale, Client Since 2016" },
- { quote: "My FCX equity was 60% of my net worth and I had no diversification plan. Jay built a 10b5-1 schedule and systematic selling framework that brought it to a manageable level over 18 months.", name: "Freeport-McMoRan VP", location: "Phoenix, AZ", detail: "Executive equity planning" },
- { quote: "As a surgeon earning $750K with no will, no trust, and wrong beneficiaries on my 401(k), I felt embarrassed to ask for help. Jay made the process simple and judgment-free.", name: "Banner Health Surgeon", location: "Mesa, AZ", detail: "Estate & retirement planning" },
-];
 
 export default function PhysicianExecutiveWealthPage() {
  return (
@@ -582,18 +573,6 @@ export default function PhysicianExecutiveWealthPage() {
   </div>
  </section>
 
- {/* Testimonials */}
- <section className="bg-[#F7F4EE] py-[80px] px-[80px] lg:px-[80px] md:px-[40px] max-md:px-[20px]">
-  <div className="max-w-container mx-auto text-center">
-  <AnimateOnScroll>
-  <SectionEyebrow text="CLIENT TESTIMONIALS" />
-  <h2 className="font-serif text-[28px] md:text-[36px] font-semibold text-[#333333] mt-4 mb-8">
-   What Clients Say About Working With Me
-  </h2>
-  </AnimateOnScroll>
-  <TestimonialCarousel testimonials={physicianExecutiveTestimonials} />
-  </div>
- </section>
 
  {/* Final CTA Section */}
  <section className="bg-[#333333] text-white py-20 lg:py-32">

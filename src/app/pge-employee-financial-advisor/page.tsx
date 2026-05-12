@@ -4,7 +4,6 @@ import Image from 'next/image'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
 import Button from '@/components/Button'
 import SectionEyebrow from '@/components/SectionEyebrow'
-import TestimonialCarousel from '@/components/TestimonialCarousel'
 import { Calculator, FileText, Shield, Clock, TrendingUp, Heart } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -21,37 +20,6 @@ export const metadata: Metadata = {
     url: 'https://www.advisorjay.com/pge-employee-financial-advisor',
   },
 }
-
-const pgeTestimonials = [
-  {
-    quote:
-      "After PG&E came out of bankruptcy, I didn't know how to think about my deferred comp balance or whether my pension was actually safe. Jay walked me through exactly where the risks were and helped me build a plan that didn't rely on the company being perfect.",
-    name: 'PG&E Operations Manager',
-    location: 'Northern California',
-    detail: 'Post-bankruptcy planning',
-  },
-  {
-    quote:
-      "I had no idea the RMSA had a depletion risk until Jay showed me the numbers. I was planning to retire at 57 and my account would have run out three years before Medicare. We adjusted the plan and I retire at 59 with full coverage to 65.",
-    name: 'PG&E Senior Engineer',
-    location: 'Bay Area, CA',
-    detail: 'RMSA & retirement timing',
-  },
-  {
-    quote:
-      "I was contributing 6% to my 401(k) and had no idea I was leaving $2,400 a year in employer match on the table because I'm in the Cash Balance plan and the cap is 8%, not 6%. The spillover election alone was worth the conversation.",
-    name: 'PG&E Project Manager',
-    location: 'Sacramento, CA',
-    detail: '401(k) match optimization',
-  },
-  {
-    quote:
-      "I'm IBEW 1245 and had been in the Final Pay plan for 22 years. Jay modeled what my pension actually looks like at 55, 58, and 62 — and helped me understand that two more years meaningfully changes the reduction. That's the kind of detail I needed.",
-    name: 'PG&E Lineman, IBEW Local 1245',
-    location: 'Fresno, CA',
-    detail: 'Early retirement planning',
-  },
-]
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -587,18 +555,6 @@ export default function PGEEmployeeFinancialAdvisor() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="bg-[#F7F4EE] py-[80px] px-[80px] lg:px-[80px] md:px-[40px] max-md:px-[20px]">
-        <div className="max-w-container mx-auto text-center">
-          <AnimateOnScroll>
-            <SectionEyebrow text="WHAT PG&E EMPLOYEES SAY" />
-            <h2 className="font-serif text-[28px] md:text-[36px] font-semibold text-[#333333] mt-4 mb-8">
-              What Clients Say About Working With Me
-            </h2>
-          </AnimateOnScroll>
-          <TestimonialCarousel testimonials={pgeTestimonials} />
-        </div>
-      </section>
 
       {/* Back to Telecom Hub */}
       <section className="bg-white py-10">

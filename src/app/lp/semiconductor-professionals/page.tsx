@@ -164,23 +164,6 @@ export default function SemiconductorProfessionalsLP() {
   </div>
  </section>
 
- {/* ================================================================
-  TESTIMONIAL
-  ================================================================ */}
- <section className="bg-[#F7F4EE] py-[60px] px-[20px] md:px-[40px] lg:px-[80px]">
-  <div className="max-w-[700px] mx-auto text-center">
-  <AnimateOnScroll>
-  <div className="border-l-4 border-[#1d7682] pl-6 text-left">
-   <p className="font-serif text-[20px] md:text-[24px] text-[#333333] leading-relaxed italic">
-   &ldquo;Every quarter I was vesting equity and had no clue what my tax bill would look like. Jay sat down with me, mapped out exactly when I&apos;d hit each bracket, coordinated my RSU sales, and set up a mega backdoor Roth that saved me over $50K in taxes the first year. I actually understand my compensation now - and that feels really good.&rdquo;
-   </p>
-   <p className="font-sans text-[15px] text-[#5b6a71] mt-4">
-   - Semiconductor engineer, client since 2023
-   </p>
-  </div>
-  </AnimateOnScroll>
-  </div>
- </section>
 
  {/* ================================================================
   ABOUT JAY

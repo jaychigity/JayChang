@@ -446,50 +446,6 @@ export default function CaliforniaPage() {
   </div>
  </section>
 
- {/* ─── SECTION 6: TESTIMONIAL ─── */}
- <section className="bg-[#FAFAF8] section-padding text-center">
-  <div className="max-w-[900px] mx-auto">
-  <AnimateOnScroll>
-  <SectionEyebrow text="CLIENT PERSPECTIVE" />
-  </AnimateOnScroll>
-
-  <AnimateOnScroll delay={100}>
-  <div className="font-serif text-[120px] text-[#1d7682]/15 leading-none mt-4">
-   &ldquo;
-  </div>
-  </AnimateOnScroll>
-
-  <AnimateOnScroll delay={200}>
-  <blockquote className="font-serif text-[24px] font-normal italic text-[#333333] leading-relaxed max-w-[760px] mx-auto -mt-12">
-   I had significant RSU holdings at a major tech company and was paying astronomical taxes
-   without any real plan. They didn't just optimize my diversification strategy - they
-   helped me understand how to navigate California's tax system while building real
-   wealth. The combination of tax planning and investment management actually made a difference
-   to my bottom line.
-  </blockquote>
-  </AnimateOnScroll>
-
-  <AnimateOnScroll delay={300}>
-  <p className="font-sans text-sm font-medium text-[#5b6a71] mt-8">
-   - Michael T., Palo Alto, CA
-  </p>
-  <p className="font-sans text-caption text-[#5b6a71] mt-1">
-   Tech executive, client since 2025
-  </p>
-  </AnimateOnScroll>
-
-  <AnimateOnScroll delay={400}>
-  <p className="font-sans text-legal text-[#5b6a71]/60 mt-4 max-w-[600px] mx-auto">
-   This testimonial reflects the individual experience of a current advisory client of
-   Jay Chang at Farther Finance, Inc. It was provided voluntarily and without
-   compensation. This client's experience may not be representative of other
-   clients' experiences, and the testimonial does not constitute a guarantee of
-   future performance or results. Individual outcomes depend on each client's
-   specific financial circumstances, goals, and market conditions.
-  </p>
-  </AnimateOnScroll>
-  </div>
- </section>
 
  {/* ─── SECTION 7: FAQ ─── */}
  <section className="bg-[#F7F4EE] section-padding">

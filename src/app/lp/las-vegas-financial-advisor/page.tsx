@@ -170,29 +170,6 @@ export default function LasVegasFinancialAdvisorLP() {
   </div>
  </section>
 
- {/* ================================================================
-  TESTIMONIAL
-  ================================================================ */}
- <section className="bg-[#F7F4EE] py-[60px] px-[20px] md:px-[40px] lg:px-[80px]">
-  <div className="max-w-[700px] mx-auto text-center">
-  <AnimateOnScroll>
-  <div className="border-l-4 border-[#1d7682] pl-6 text-left">
-   <p className="font-serif text-[20px] md:text-[24px] text-[#333333] leading-relaxed italic">
-   &ldquo;When we moved from California to Henderson, we had no
-   idea how many financial decisions were involved - 
-   residency, trust restructuring, Roth conversions, the whole
-   picture. Jay walked us through every step and made sure we
-   captured every tax advantage Nevada offers. We should have made
-   this move years ago.&rdquo;
-   </p>
-   <p className="font-sans text-[15px] text-[#5b6a71] mt-4">
-   - Henderson family, California-to-Nevada relocation,
-   clients since 2022
-   </p>
-  </div>
-  </AnimateOnScroll>
-  </div>
- </section>
 
  {/* ================================================================
   ABOUT ROB

@@ -164,27 +164,6 @@ export default function ScottsdaleWealthManagementLP() {
   </div>
  </section>
 
- {/* ================================================================
-  TESTIMONIAL
-  ================================================================ */}
- <section className="bg-[#F7F4EE] py-[60px] px-[20px] md:px-[40px] lg:px-[80px]">
-  <div className="max-w-[700px] mx-auto text-center">
-  <AnimateOnScroll>
-  <div className="border-l-4 border-[#1d7682] pl-6 text-left">
-   <p className="font-serif text-[20px] md:text-[24px] text-[#333333] leading-relaxed italic">
-   &ldquo;Jay brought clarity to our entire financial picture.
-   Between the kids&apos; education planning, our investment
-   portfolio, and coordinating with our CPA here in Scottsdale, he made
-   it all feel manageable. For the first time, we have a real plan
-   - not just a collection of accounts.&rdquo;
-   </p>
-   <p className="font-sans text-[15px] text-[#5b6a71] mt-4">
-   - Scottsdale family, clients since 2023
-   </p>
-  </div>
-  </AnimateOnScroll>
-  </div>
- </section>
 
  {/* ================================================================
   ABOUT ROB

@@ -153,23 +153,6 @@ export default function TechProfessionalsLP() {
   </div>
  </section>
 
- {/* ================================================================
-  TESTIMONIAL
-  ================================================================ */}
- <section className="bg-[#F7F4EE] py-[60px] px-[20px] md:px-[40px] lg:px-[80px]">
-  <div className="max-w-[700px] mx-auto text-center">
-  <AnimateOnScroll>
-  <div className="border-l-4 border-[#1d7682] pl-6 text-left">
-   <p className="font-serif text-[20px] md:text-[24px] text-[#333333] leading-relaxed italic">
-   &ldquo;Honestly, I was just watching stock pile up in my account every quarter with zero plan. Jay sat down with me, showed me exactly when to sell my ESPP shares for the best tax outcome, mapped out my next three years of vesting, and tied it all into a real investment strategy. For the first time, I feel like I&apos;m actually using my comp to build something.&rdquo;
-   </p>
-   <p className="font-sans text-[15px] text-[#5b6a71] mt-4">
-   - Tech professional, NVIDIA, client since 2023
-   </p>
-  </div>
-  </AnimateOnScroll>
-  </div>
- </section>
 
  {/* ================================================================
   ABOUT JAY

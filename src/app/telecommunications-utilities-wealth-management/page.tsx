@@ -4,7 +4,6 @@ import Image from 'next/image';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 import SectionEyebrow from '@/components/SectionEyebrow';
-import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
  title: 'Telecommunications & Utilities Wealth Management | AT&T, Verizon, T-Mobile, SRP, PG&E',
@@ -13,15 +12,6 @@ export const metadata: Metadata = {
  canonical: 'https://www.advisorjay.com/telecommunications-utilities-wealth-management',
  },
 };
-
-const telecomTestimonials = [
- { quote: "I had 30 years at AT&T and couldn't figure out how my pension, 401(k), and deferred comp all fit together. Jay built a single retirement income timeline and showed me I could retire two years earlier than I thought.", name: "AT&T Network Engineering Manager", location: "Phoenix, AZ", detail: "Retirement orchestration" },
- { quote: "After the T-Mobile/Sprint merger, my RSU grants got complicated. Jay walked me through the vesting schedule changes, the tax hit at each tranche, and when to sell versus hold. I finally have a plan instead of guessing.", name: "T-Mobile Senior Product Manager", location: "Scottsdale, AZ", detail: "RSU strategy" },
- { quote: "My Verizon deferred comp balance had grown to a level I didn't expect. Jay helped me structure the distribution so I wouldn't get crushed by taxes in a single year. That coordination saved me tens of thousands.", name: "Verizon Director of Operations", location: "Chandler, AZ", detail: "Deferred comp planning" },
- { quote: "As an SRP employee with a defined benefit pension, I needed someone who actually understood public utility retirement systems. Jay knew the details of the plan before I finished explaining them.", name: "SRP Senior Engineer", location: "Tempe, AZ", detail: "Public utility pension" },
- { quote: "After PG&E came out of bankruptcy, I didn't know how to think about my deferred comp balance or whether my pension was actually safe. Jay walked me through exactly where the risks were and helped me build a plan that didn't rely on the company being perfect.", name: "PG&E Operations Manager", location: "Northern California", detail: "Post-bankruptcy planning" },
- { quote: "I was holding way too much Verizon stock across my 401(k) and personal accounts without realizing it. Jay calculated the total concentration and built a two-year diversification plan that kept my tax bill manageable.", name: "Verizon Field Operations Supervisor", location: "Mesa, AZ", detail: "Stock diversification" },
-];
 
 export default function TelecommunicationsUtilitiesWealthManagement() {
  return (
@@ -418,18 +408,6 @@ export default function TelecommunicationsUtilitiesWealthManagement() {
   </div>
  </section>
 
- {/* Testimonials */}
- <section className="bg-[#F7F4EE] py-[80px] px-[80px] lg:px-[80px] md:px-[40px] max-md:px-[20px]">
-  <div className="max-w-container mx-auto text-center">
-  <AnimateOnScroll>
-  <SectionEyebrow text="CLIENT TESTIMONIALS" />
-  <h2 className="font-serif text-[28px] md:text-[36px] font-semibold text-[#333333] mt-4 mb-8">
-   What Clients Say About Working With Me
-  </h2>
-  </AnimateOnScroll>
-  <TestimonialCarousel testimonials={telecomTestimonials} />
-  </div>
- </section>
 
  {/* Final CTA */}
  <section className="bg-[#333333] text-white py-16 lg:py-24">

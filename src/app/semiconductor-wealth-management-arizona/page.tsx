@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Button from '@/components/Button';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import SectionEyebrow from '@/components/SectionEyebrow';
-import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
  title: 'Semiconductor & Tech Wealth Management in Arizona | RSU, SERPLUS & Equity Planning',
@@ -12,15 +11,6 @@ export const metadata: Metadata = {
  canonical: 'https://www.advisorjay.com/semiconductor-wealth-management-arizona',
  },
 };
-
-const semiconductorTestimonials = [
- { quote: "When I moved from Oregon to Chandler, the tax implications were staggering. Jay coordinated a relocation strategy that saved over $30K in year one alone.", name: "Intel Director", location: "Portland → Chandler", detail: "Tax & relocation planning" },
- { quote: "I had over $2 million in NVDA stock concentrated in my portfolio. Jay built a rules-based diversification plan that freed up $600K to invest strategically.", name: "NVIDIA Principal Engineer", location: "Tempe, AZ", detail: "Stock diversification" },
- { quote: "I didn't think I needed a financial advisor at 31, but Jay showed me how to maximize my mega backdoor Roth and coordinate my equity grants. I'll have $200K more by the time I'm 45 just from these moves.", name: "Intel Early Career Engineer", location: "Chandler, AZ", detail: "Equity & tax optimization" },
- { quote: "I had RSUs vesting across multiple schedules and no strategy for any of it. Jay built an exercise and diversification timeline that aligned every decision with my tax bracket and retirement goals.", name: "Sarah K.", location: "Tempe, AZ", detail: "TSMC Engineer, Client Since 2022" },
- { quote: "Moving from Taiwan, I had no idea how U.S. taxes worked with my TSMC equity. Jay connected me with the right specialists and built a plan that accounts for everything - both countries.", name: "TSMC Process Engineer", location: "North Phoenix, AZ", detail: "Cross-border planning" },
- { quote: "Microchip's evergreen RSU grants hit my account every quarter with no plan. Jay gave me a written framework for every single vest. No more guessing.", name: "Microchip Senior Engineer", location: "Chandler, AZ", detail: "RSU management" },
-];
 
 export default function SemiconductorWealthManagementArizona() {
  const schemaData = {
@@ -509,18 +499,6 @@ export default function SemiconductorWealthManagementArizona() {
   </AnimateOnScroll>
  </section>
 
- {/* Testimonials */}
- <section className="bg-[#F7F4EE] py-[80px] px-[80px] lg:px-[80px] md:px-[40px] max-md:px-[20px]">
-  <div className="max-w-container mx-auto text-center">
-  <AnimateOnScroll>
-  <SectionEyebrow text="CLIENT TESTIMONIALS" />
-  <h2 className="font-serif text-[28px] md:text-[36px] font-semibold text-[#333333] mt-4 mb-8">
-   What Clients Say About Working With Me
-  </h2>
-  </AnimateOnScroll>
-  <TestimonialCarousel testimonials={semiconductorTestimonials} />
-  </div>
- </section>
 
  {/* Final CTA Section */}
  <section className="bg-[#333333] text-white py-20 px-4 md:px-12">

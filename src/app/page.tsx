@@ -575,20 +575,6 @@ export default function Home() {
   </div>
  </section>
 
- {/* SECTION 8: WHAT CLIENTS SAY */}
- <section className="bg-[#F7F4EE] py-20 lg:py-32">
-  <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-  <AnimateOnScroll>
-  <SectionEyebrow text="WHAT MY CLIENTS SAY" />
-  <h2 className="font-serif text-4xl lg:text-5xl font-bold text-[#333333] mt-6 mb-6 leading-tight">
-   The Best Compliment I Get? &ldquo;I Finally Feel Like Someone&apos;s in My Corner.&rdquo;
-  </h2>
-  <p className="text-lg text-[#5b6a71] leading-relaxed max-w-3xl">
-   I work with families, professionals, and business owners who were looking for something different: an advisor who actually listens, explains things clearly, and treats their money like it matters. Because it does.
-  </p>
-  </AnimateOnScroll>
-  </div>
- </section>
 
  {/* SECTION 9: FINAL CTA */}
  <section className="bg-[#333333] py-20 lg:py-32">

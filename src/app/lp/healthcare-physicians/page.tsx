@@ -164,23 +164,6 @@ export default function HealthcarePhysiciansLP() {
   </div>
  </section>
 
- {/* ================================================================
-  TESTIMONIAL
-  ================================================================ */}
- <section className="bg-[#F7F4EE] py-[60px] px-[20px] md:px-[40px] lg:px-[80px]">
-  <div className="max-w-[700px] mx-auto text-center">
-  <AnimateOnScroll>
-  <div className="border-l-4 border-[#1d7682] pl-6 text-left">
-   <p className="font-serif text-[20px] md:text-[24px] text-[#333333] leading-relaxed italic">
-   &ldquo;The last thing I wanted after a 14-hour day was to think about money. Jay got that right away. He showed us how to cut our tax bill by over $80K a year, set up real asset protection, and built a retirement plan that accounts for our loans and real estate. I finally feel like someone actually has our back on the financial side.&rdquo;
-   </p>
-   <p className="font-sans text-[15px] text-[#5b6a71] mt-4">
-   - Physician, Banner Health, client since 2023
-   </p>
-  </div>
-  </AnimateOnScroll>
-  </div>
- </section>
 
  {/* ================================================================
   ABOUT JAY

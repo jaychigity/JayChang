@@ -3,7 +3,6 @@ import Image from 'next/image';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import Button from '@/components/Button';
 import SectionEyebrow from '@/components/SectionEyebrow';
-import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 export const metadata: Metadata = {
  title: 'Families & Life Transitions Wealth Management | Divorce, Widowhood, Inheritance & Retirement',
@@ -12,14 +11,6 @@ export const metadata: Metadata = {
  canonical: 'https://www.advisorjay.com/families-life-transitions-wealth-management',
  },
 };
-
-const familiesTestimonials = [
- { quote: "After my divorce was finalized, I had no idea where I stood financially. Jay sat with me, untangled everything, and built a plan that gave me confidence I could take care of my kids and myself. He never made me feel rushed or judged.", name: "Recently Divorced Parent", location: "Scottsdale, AZ", detail: "Post-divorce planning" },
- { quote: "When my husband passed, the financial details were overwhelming. Jay handled everything with patience — the survivor benefits, the account transfers, the tax implications. He gave me space to grieve while making sure nothing fell through the cracks.", name: "Surviving Spouse", location: "Phoenix, AZ", detail: "Widow transition planning" },
- { quote: "I inherited more money than I ever expected, and I was terrified of making a mistake. Jay helped me slow down, understand the tax picture, and invest in a way that honors what my parents built. No pressure, no sales pitch — just good guidance.", name: "Inheritance Recipient", location: "Chandler, AZ", detail: "Inheritance planning" },
- { quote: "Retiring after 32 years felt like jumping off a cliff. Jay mapped out my pension, Social Security, and savings into a single timeline. For the first time, I could see that I was going to be okay. That peace of mind is priceless.", name: "Recent Retiree", location: "Mesa, AZ", detail: "Retirement transition" },
- { quote: "My parents asked me to help coordinate their estate plan with their financial advisor. Jay made the whole family feel included. He explained everything clearly and helped us set up a structure that protects their legacy and avoids conflict.", name: "Adult Child & Caregiver", location: "Tempe, AZ", detail: "Generational wealth planning" },
-];
 
 export default function FamiliesLifeTransitionsWealthManagement() {
  return (
@@ -372,18 +363,6 @@ export default function FamiliesLifeTransitionsWealthManagement() {
   </div>
  </section>
 
- {/* Testimonials */}
- <section className="bg-[#F7F4EE] py-[80px] px-[80px] lg:px-[80px] md:px-[40px] max-md:px-[20px]">
-  <div className="max-w-container mx-auto text-center">
-  <AnimateOnScroll>
-  <SectionEyebrow text="CLIENT TESTIMONIALS" />
-  <h2 className="font-serif text-[28px] md:text-[36px] font-semibold text-[#333333] mt-4 mb-8">
-   What Clients Say About Working With Me
-  </h2>
-  </AnimateOnScroll>
-  <TestimonialCarousel testimonials={familiesTestimonials} />
-  </div>
- </section>
 
  {/* Final CTA */}
  <section className="bg-[#333333] text-white py-16 lg:py-24">
