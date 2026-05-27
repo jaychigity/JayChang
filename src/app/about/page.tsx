@@ -14,85 +14,14 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
- const teamMembers = [
- {
- name: 'Michael Lee',
- title: 'Principal, Wealth Advisor & Focus Team Lead',
- photo: '/Photos/Michael-Lee-color.avif',
- photoWidth: 722,
- photoHeight: 800,
- bio: [
-  'Michael got into this work translating for his mother when she retired from Kaiser Permanente. That experience shaped everything. He\'s since helped professionals at PG&E, AT&T, Kaiser, Chevron, Northrop Grumman, Boeing, and Raytheon.',
-  'InvestmentNews Rising Star 2025, AdvisorHub 250 Advisors to Watch 2025, Hot List 2024, Founders Club 2025.',
- ],
- },
- {
- name: 'Dr. Daniel R. Gilham',
- title: 'Managing Director of Advisor Strategy • CFP® • CEPA',
- photo: '/Photos/Daniel-Gilham-color.avif',
- photoWidth: 722,
- photoHeight: 800,
- bio: [
-  'Nearly two decades bridging strategy, innovation, and leadership. Daniel is the Managing Director of Advisor Strategy at Farther, the 2025 Inc. 5000 fastest-growing fintech firm redefining wealth management by pairing advanced technology with real-world human expertise.',
-  'A frequent conference speaker and guest lecturer, Daniel is known for making complex financial and technological trends accessible, translating fintech and AI disruption into actionable strategy for leaders in business, nonprofit, and advisory sectors.',
- ],
- },
- {
- name: 'Sutanto Widjaja',
- title: 'Chief Investment Officer, Nonprofits, Endowments & Foundations',
- photo: '/Photos/Sutanto-color.avif',
- photoWidth: 1160,
- photoHeight: 1200,
- bio: [
-  'Sutanto has 20+ years in asset management. He was Co-Portfolio Manager at TIAA-Nuveen running institutional portfolios, and co-founded IndiCo Capital. MBA from Stanford, BS from UC Berkeley.',
-  'His focus: smart asset allocation, alternatives, and building portfolios that actually manage risk instead of just talking about it.',
-  'Dedicated to giving back, he currently sits on the Investment Committees of the University of Hawaii Foundation and the Honolulu Museum of Art, where he advises on endowment portfolios.',
- ],
- },
- {
- name: 'Ashton Hayes',
- title: 'Trust Services Associate • JD, LL.M. in Taxation',
- photo: '/Photos/Ashton-Hayes-color.png',
- photoWidth: 2115,
- photoHeight: 1848,
- bio: [
-  'Ashton holds a JD and Master of Laws in Taxation from the University of Alabama. When you have questions about trusts, estates, or how to protect what you\'ve built for your family, she\'s the one who digs into the details.',
-  'She handles trust structuring, complex beneficiary planning, and grantor trust strategies - the stuff that keeps your wealth where it belongs.',
- ],
- },
- {
- name: 'Stacey Kirkpatrick',
- title: 'Financial Planning Specialist • CFP®',
- photo: '/Photos/Stacey-Kirkpatrick-color.png',
- photoWidth: 2460,
- photoHeight: 1528,
- bio: [
-  'Stacey has 15+ years of experience, holds a CFP with Series 7, 63, and 65 licenses, and is the kind of person who makes sure nothing falls through the cracks.',
-  'She\'s the one making sure your plan is built right, every document is in order, and every step actually gets done. The behind-the-scenes person you\'ll be glad is on your team.',
- ],
- },
- {
- name: 'Alex Paul',
- title: 'Director of Investment Strategy • CFA',
- photo: '/Photos/Alex-Paul-color.png',
- photoWidth: 2040,
- photoHeight: 1879,
- bio: [
-  'Alex leads investment strategy across the platform, building and implementing approaches that align with each client\'s goals. With over a decade of experience in portfolio management and investment analysis, he\'s managed complex portfolios as both a Chief Investment Officer and Due Diligence Officer.',
-  'His expertise spans stocks, bonds, and alternative investments. He stays close to market trends and regulatory shifts so the advice our clients receive is always current and informed.',
- ],
- },
- {
- name: 'Aaron Sheklin',
- title: 'Director of Institutional Sales • JD',
- photo: '/Photos/Aaron-Sheklin.avif',
- photoWidth: 1160,
- photoHeight: 1200,
- bio: [
-  'Aaron is a licensed attorney (Florida and New York Bar) with a JD from Florida State and over 15 years advising organizations on strategic financial planning, investment guidance, and fiduciary stewardship.',
-  'He co-founded ClickPay, which became the largest payment processor in real estate before its 2019 acquisition by RealPage. He also serves on the board of the Planned Giving Council of Northeast Florida.',
- ],
- },
+ const teamPhotos = [
+ { photo: '/Photos/Michael-Lee-color.avif', width: 722, height: 800 },
+ { photo: '/Photos/Sutanto-color.avif', width: 1160, height: 1200 },
+ { photo: '/Photos/Alex-Paul-color.png', width: 2040, height: 1879 },
+ { photo: '/Photos/Daniel-Gilham-color.avif', width: 722, height: 800 },
+ { photo: '/Photos/Ashton-Hayes-color.png', width: 2115, height: 1848 },
+ { photo: '/Photos/Aaron-Sheklin.avif', width: 1160, height: 1200 },
+ { photo: '/Photos/Stacey-Kirkpatrick-color.png', width: 2460, height: 1528 },
  ];
 
  return (
@@ -130,48 +59,86 @@ export default function AboutPage() {
  <section className="bg-white py-20 lg:py-32">
   <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
   <AnimateOnScroll>
-  <h2 className="text-3xl md:text-4xl font-bold text-[#333333] text-center mb-6">
-   Meet The Team
+  <h2 className="font-serif text-4xl lg:text-5xl font-bold text-[#333333] text-center mb-6 leading-tight">
+   The Team Behind the Work
   </h2>
-  <p className="text-lg text-[#333333] leading-relaxed mb-6 text-center">
-   I&apos;m a VP, Wealth Advisor with Farther Finance Advisors LLC. When you work with me, you don&apos;t just get me. You get the broader Farther team that supports my practice: real specialists in trust law, tax strategy, investment management, and planning who are all pulling in the same direction for you.
-  </p>
-  <p className="text-lg text-[#5b6a71] leading-relaxed mb-12 text-center">
-   Every client situation is different, which is why this team brings deep specializations. Here is who handles what.
+  <p className="text-lg text-[#333333] leading-relaxed mb-12 text-center max-w-3xl mx-auto">
+   When you work with me, you&apos;re not getting a solo advisor. You&apos;re getting a team built for complex, high-stakes planning.
   </p>
   </AnimateOnScroll>
 
-  {/* Team Grid */}
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-  {teamMembers.map((member, index) => (
-   <AnimateOnScroll key={member.name} delay={index * 0.08}>
-   <div className={`bg-[#FAFAF8] border border-[#E8E6E1] rounded-[12px] p-[32px] h-full`}>
-   <div className="relative w-full h-[320px] mb-6 rounded-lg overflow-hidden">
+  {/* Headshot Row */}
+  <AnimateOnScroll>
+  <div className="flex justify-center items-center gap-4 md:gap-6 mb-16 flex-wrap">
+   {teamPhotos.map((member, index) => (
+   <div
+    key={index}
+    className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#E8E6E1]"
+   >
     <Image
     src={member.photo}
-    alt={member.name}
-    width={member.photoWidth}
-    height={member.photoHeight}
+    alt="Team member"
+    width={member.width}
+    height={member.height}
     className="w-full h-full object-cover object-top"
     />
    </div>
-   <h4 className="text-lg font-bold text-[#333333] mb-1">
-    {member.name}
-   </h4>
-   <p className="text-sm text-[#1d7682] font-semibold mb-4">
-    {member.title}
-   </p>
-   <div className="space-y-3">
-    {member.bio.map((paragraph, idx) => (
-    <p key={idx} className="text-[#5b6a71] text-sm leading-relaxed">
-    {paragraph}
-    </p>
-    ))}
-   </div>
-   </div>
-   </AnimateOnScroll>
-  ))}
+   ))}
   </div>
+  </AnimateOnScroll>
+
+  {/* Capability Descriptions */}
+  <AnimateOnScroll>
+  <div className="max-w-3xl mx-auto space-y-8">
+   <div>
+    <h3 className="font-serif text-xl font-semibold text-[#333333] mb-2">Practice Leadership</h3>
+    <p className="text-[#5b6a71] leading-relaxed">
+    Led by a Principal who&apos;s spent his career working with utility, telecom, and aerospace employees at companies like PG&amp;E, AT&amp;T, Kaiser, Chevron, and Boeing. InvestmentNews Rising Star 2025, AdvisorHub 250 Advisors to Watch 2025.
+    </p>
+   </div>
+
+   <div>
+    <h3 className="font-serif text-xl font-semibold text-[#333333] mb-2">Investment Strategy</h3>
+    <p className="text-[#5b6a71] leading-relaxed">
+    A CFA-credentialed strategist with over a decade managing complex portfolios as both a CIO and Due Diligence Officer, spanning equities, fixed income, and alternatives.
+    </p>
+   </div>
+
+   <div>
+    <h3 className="font-serif text-xl font-semibold text-[#333333] mb-2">Institutional &amp; Nonprofit</h3>
+    <p className="text-[#5b6a71] leading-relaxed">
+    A former TIAA-Nuveen Co-Portfolio Manager with 20+ years in asset management and a Stanford MBA. Currently sits on the investment committees of the University of Hawaii Foundation and the Honolulu Museum of Art.
+    </p>
+   </div>
+
+   <div>
+    <h3 className="font-serif text-xl font-semibold text-[#333333] mb-2">Trust &amp; Estate Planning</h3>
+    <p className="text-[#5b6a71] leading-relaxed">
+    A JD with a Master of Laws in Taxation handling trust structuring, complex beneficiary planning, and grantor trust strategies.
+    </p>
+   </div>
+
+   <div>
+    <h3 className="font-serif text-xl font-semibold text-[#333333] mb-2">Advisor Strategy</h3>
+    <p className="text-[#5b6a71] leading-relaxed">
+    A CFP and CEPA with nearly two decades bridging fintech innovation and real-world planning. Frequent conference speaker translating regulatory and market shifts into actionable strategy.
+    </p>
+   </div>
+
+   <div>
+    <h3 className="font-serif text-xl font-semibold text-[#333333] mb-2">Institutional Sales</h3>
+    <p className="text-[#5b6a71] leading-relaxed">
+    A licensed attorney (FL and NY Bar) who co-founded a fintech platform acquired in 2019, with 15+ years advising organizations on fiduciary stewardship.
+    </p>
+   </div>
+
+   <div className="border-t border-[#E8E6E1] pt-8">
+    <p className="text-[#5b6a71] leading-relaxed">
+    Behind them, a full operations and planning team manages the daily flow: account transfers, paperwork, scheduling, and follow-through so nothing falls through the cracks.
+    </p>
+   </div>
+  </div>
+  </AnimateOnScroll>
   </div>
  </section>
 
