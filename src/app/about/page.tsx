@@ -96,7 +96,7 @@ export default function AboutPage() {
    </div>
 
    <div className="border-t border-[#E8E6E1] pt-8">
-    <p className="text-[#5b6a71] leading-relaxed">
+    <p className="text-[#333333] text-lg font-semibold leading-relaxed">
     Behind them, a full operations and planning team manages the daily flow: account transfers, paperwork, scheduling, and follow-through so nothing falls through the cracks.
     </p>
    </div>
