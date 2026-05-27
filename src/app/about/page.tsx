@@ -73,7 +73,7 @@ export default function AboutPage() {
    {teamPhotos.map((member, index) => (
    <div
     key={index}
-    className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#E8E6E1]"
+    className="w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#E8E6E1]"
    >
     <Image
     src={member.photo}
