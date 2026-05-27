@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import Button from '@/components/Button';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
@@ -14,16 +13,6 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
- const teamPhotos = [
- { photo: '/Photos/Michael-Lee-color.avif', width: 722, height: 800 },
- { photo: '/Photos/Sutanto-color.avif', width: 1160, height: 1200 },
- { photo: '/Photos/Alex-Paul-color.png', width: 2040, height: 1879 },
- { photo: '/Photos/Daniel-Gilham-color.avif', width: 722, height: 800 },
- { photo: '/Photos/Ashton-Hayes-color.png', width: 2115, height: 1848 },
- { photo: '/Photos/Aaron-Sheklin.avif', width: 1160, height: 1200 },
- { photo: '/Photos/Stacey-Kirkpatrick-color.png', width: 2460, height: 1528 },
- ];
-
  return (
  <main>
  {/* JSON-LD Person Schema */}
@@ -67,26 +56,6 @@ export default function AboutPage() {
   </p>
   </AnimateOnScroll>
 
-  {/* Headshot Row */}
-  <AnimateOnScroll>
-  <div className="flex justify-center items-center gap-4 md:gap-6 mb-16 flex-wrap">
-   {teamPhotos.map((member, index) => (
-   <div
-    key={index}
-    className="w-20 h-20 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#E8E6E1]"
-   >
-    <Image
-    src={member.photo}
-    alt="Team member"
-    width={member.width}
-    height={member.height}
-    className="w-full h-full object-cover object-top"
-    />
-   </div>
-   ))}
-  </div>
-  </AnimateOnScroll>
-
   {/* Capability Descriptions */}
   <AnimateOnScroll>
   <div className="max-w-3xl mx-auto space-y-8">
@@ -106,9 +75,10 @@ export default function AboutPage() {
 
    <div>
     <h3 className="font-serif text-xl font-semibold text-[#333333] mb-2">Institutional &amp; Nonprofit</h3>
-    <p className="text-[#5b6a71] leading-relaxed">
-    A former TIAA-Nuveen Co-Portfolio Manager with 20+ years in asset management and a Stanford MBA. Currently sits on the investment committees of the University of Hawaii Foundation and the Honolulu Museum of Art.
-    </p>
+    <ul className="text-[#5b6a71] leading-relaxed space-y-3 list-disc pl-5">
+    <li>Former TIAA-Nuveen Co-Portfolio Manager, 20+ years in asset management, Stanford MBA. Sits on the investment committees of the University of Hawaii Foundation and the Honolulu Museum of Art.</li>
+    <li>Licensed attorney (FL and NY Bar), co-founded a fintech platform acquired in 2019. 15+ years advising organizations on fiduciary stewardship.</li>
+    </ul>
    </div>
 
    <div>
@@ -122,13 +92,6 @@ export default function AboutPage() {
     <h3 className="font-serif text-xl font-semibold text-[#333333] mb-2">Advisor Strategy</h3>
     <p className="text-[#5b6a71] leading-relaxed">
     A CFP and CEPA with nearly two decades bridging fintech innovation and real-world planning. Frequent conference speaker translating regulatory and market shifts into actionable strategy.
-    </p>
-   </div>
-
-   <div>
-    <h3 className="font-serif text-xl font-semibold text-[#333333] mb-2">Institutional Sales</h3>
-    <p className="text-[#5b6a71] leading-relaxed">
-    A licensed attorney (FL and NY Bar) who co-founded a fintech platform acquired in 2019, with 15+ years advising organizations on fiduciary stewardship.
     </p>
    </div>
 
