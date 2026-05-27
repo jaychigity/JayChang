@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   url: 'https://www.advisorjay.com/Photos/Tools-OG.jpg',
   width: 1200,
   height: 630,
-  alt: 'Run the Math by Advisor Jay',
+  alt: 'Run the Math by Jay Chang',
   },
  ],
  },

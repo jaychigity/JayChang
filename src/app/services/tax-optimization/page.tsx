@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Tax Optimization & Estate Strategy - Advisor Jay',
+ name: 'Tax Optimization & Estate Strategy - Jay Chang',
  description:
  'Proactive tax planning, Roth conversion laddering, charitable giving strategies, estate planning, and generational wealth transfer for HNW families in Scottsdale, AZ and across Arizona, California, and Nevada.',
  url: 'https://www.advisorjay.com/services/tax-optimization',

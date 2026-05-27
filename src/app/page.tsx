@@ -28,7 +28,7 @@ export const metadata: Metadata = {
  canonical: 'https://www.advisorjay.com',
  },
  openGraph: buildOpenGraph('/', {
- title: 'Advisor Jay - Your Partner in Building Wealth That Lasts',
+ title: 'Jay Chang - Your Partner in Building Wealth That Lasts',
  description: 'Fiduciary wealth advice for families, professionals, and business owners. I sit on your side of the table.',
  image: '/Photos/Jay-Office-OG.jpg',
  }),
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 const jsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Advisor Jay',
+ name: 'Jay Chang',
  description: 'Fiduciary wealth management for families, professionals, and business owners. Independent advice backed by Farther\'s Intelligent Wealth Platform.',
  url: 'https://www.advisorjay.com',
  telephone: '+1-480-944-0880',

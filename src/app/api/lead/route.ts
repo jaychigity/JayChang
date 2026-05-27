@@ -355,7 +355,7 @@ function buildEmailHtml(data: LeadPayload): string {
   <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.08);">
 
     <div style="background:${S.teal};color:${S.cream};padding:24px 28px;">
-      <h1 style="margin:0;font-size:22px;font-weight:600;">New Lead from Advisor Jay</h1>
+      <h1 style="margin:0;font-size:22px;font-weight:600;">New Lead from Jay Chang</h1>
       <p style="margin:8px 0 0;font-size:14px;opacity:0.85;">Source: ${sourceLabel}</p>
     </div>
 
@@ -415,7 +415,7 @@ async function sendViaGmail(subject: string, html: string, text: string): Promis
     auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_APP_PASSWORD },
   })
   const result = await transporter.sendMail({
-    from: `"Advisor Jay Leads" <${process.env.GMAIL_USER}>`,
+    from: `"Jay Chang Leads" <${process.env.GMAIL_USER}>`,
     to: NOTIFY_EMAIL,
     subject,
     text,

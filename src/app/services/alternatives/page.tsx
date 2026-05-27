@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Alternative Investments - Advisor Jay',
+ name: 'Alternative Investments - Jay Chang',
  description:
  'Access to private equity, venture capital, private credit, and hedge fund strategies via institutional-quality vehicles for families with $5M+ in investable assets.',
  url: 'https://www.advisorjay.com/services/alternatives',

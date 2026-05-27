@@ -80,7 +80,7 @@ export default function ServicesPage() {
      __html: JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
-      name: 'Wealth Management Services - Advisor Jay',
+      name: 'Wealth Management Services - Jay Chang',
       description: 'Equity compensation planning, investment management, income tax planning, retirement income planning, asset protection, estate and legacy planning, and life-transition planning for high-income professionals, business owners, and families.',
       url: 'https://www.advisorjay.com/services',
       provider: {

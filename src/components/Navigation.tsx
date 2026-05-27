@@ -362,7 +362,7 @@ export default function Navigation() {
           <Link
             href="/"
             style={{ textDecoration: "none", flexShrink: 0, display: "flex", flexDirection: "column", alignItems: "flex-start", lineHeight: 1 }}
-            aria-label="Advisor Jay powered by Farther - Home"
+            aria-label="Jay Chang powered by Farther - Home"
           >
             <span
               style={{
@@ -374,7 +374,7 @@ export default function Navigation() {
                 lineHeight: 1,
               }}
             >
-              Advisor Jay
+              Jay Chang
             </span>
             <span
               style={{
@@ -499,7 +499,7 @@ export default function Navigation() {
             href="/"
             style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "flex-start", lineHeight: 1 }}
             onClick={() => setMobileMenuOpen(false)}
-            aria-label="Advisor Jay powered by Farther - Home"
+            aria-label="Jay Chang powered by Farther - Home"
           >
             <span
               style={{
@@ -511,7 +511,7 @@ export default function Navigation() {
                 lineHeight: 1,
               }}
             >
-              Advisor Jay
+              Jay Chang
             </span>
             <span
               style={{

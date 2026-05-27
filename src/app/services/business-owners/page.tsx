@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Business Owner Services - Advisor Jay',
+ name: 'Business Owner Services - Jay Chang',
  description:
  'Exit planning, succession strategy, entity structuring, equity compensation planning, and post-exit wealth management for business owners with $2M-$20M in investable assets.',
  url: 'https://www.advisorjay.com/services/business-owners',

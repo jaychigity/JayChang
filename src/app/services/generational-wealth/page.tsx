@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Generational Wealth Planning - Advisor Jay',
+ name: 'Generational Wealth Planning - Jay Chang',
  description:
  'Multi-generational wealth planning for families with $2M-$20M in investable assets in Scottsdale, AZ and across Arizona, California, and Nevada. Family governance, dynasty trusts, business succession planning, and values-based philanthropy.',
  url: 'https://www.advisorjay.com/services/generational-wealth',

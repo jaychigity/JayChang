@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 const financialServiceSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Advisor Jay - Scottsdale',
+ name: 'Jay Chang - Scottsdale',
  description:
   `Wealth management and equity compensation planning for high-income professionals earning $150K-$800K+ at Arizona top employers including TSMC, Intel, Honeywell, Raytheon, Banner Health, Mayo Clinic, and Freeport-McMoRan.`,
  url: 'https://www.advisorjay.com/scottsdale',
@@ -248,7 +248,7 @@ export default function ScottsdalePage() {
     <Image
      src="/Photos/scottsdale-professional.png"
      alt="Scottsdale skyline - wealth management for Arizona top engineers, executives, and physicians"
-     title="Scottsdale, AZ - Advisor Jay"
+     title="Scottsdale, AZ - Jay Chang"
      fill
      className="object-cover opacity-20"
      priority
@@ -629,7 +629,7 @@ export default function ScottsdalePage() {
          allowFullScreen
          loading="lazy"
          referrerPolicy="no-referrer-when-downgrade"
-         title="Advisor Jay - Scottsdale, AZ office location"
+         title="Jay Chang - Scottsdale, AZ office location"
         />
        </div>
       </AnimateOnScroll>

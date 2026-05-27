@@ -117,7 +117,7 @@ export default function FourOneKReviewPage() {
             Advisor affiliated with Farther Finance Advisors LLC.
           </p>
           <p className="font-sans text-[11px] text-[#b6d0ed]/40 mt-[12px] text-center">
-            &copy; 2026 Advisor Jay. All rights reserved.
+            &copy; 2026 Jay Chang. All rights reserved.
           </p>
         </div>
       </div>

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Retirement Planning - Advisor Jay',
+ name: 'Retirement Planning - Jay Chang',
  description:
  'Retirement income planning, distribution sequencing, Social Security optimization, and Roth conversion strategies for families with $2M-$20M in Arizona, California, and Nevada.',
  url: 'https://www.advisorjay.com/services/retirement-planning',

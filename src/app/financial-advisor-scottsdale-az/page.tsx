@@ -26,7 +26,7 @@ export default function ScottsdaleFinancialAdvisor() {
  const localBusinessSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Advisor Jay',
+ name: 'Jay Chang',
  description: 'Fiduciary financial advisor serving physicians and executives in Scottsdale, Arizona',
  url: 'https://www.advisorjay.com/financial-advisor-scottsdale-az',
  areaServed: [

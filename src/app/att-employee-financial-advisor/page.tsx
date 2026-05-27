@@ -87,7 +87,7 @@ export default function ATTEmployeeFinancialAdvisor() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'FinancialService',
-            name: 'Advisor Jay: AT&T Employee Financial Planning',
+            name: 'Jay Chang: AT&T Employee Financial Planning',
             description:
               'Specialized financial planning for AT&T employees. Pension elections, cash balance plans, deferred comp coordination, and retirement timing for CWA, IBEW, and management professionals.',
             url: 'https://www.advisorjay.com/att-employee-financial-advisor',
@@ -136,7 +136,7 @@ export default function ATTEmployeeFinancialAdvisor() {
             </div>
           </div>
           <p className="text-[13px] text-gray-300 mt-8 text-center leading-relaxed border border-gray-600 rounded-md px-4 py-3">
-            Advisor Jay / Farther Finance is not affiliated with, endorsed by, or sponsored by AT&amp;T Inc. or any of its subsidiaries. All company names and trademarks are the property of their respective owners.
+            Jay Chang / Farther Finance is not affiliated with, endorsed by, or sponsored by AT&amp;T Inc. or any of its subsidiaries. All company names and trademarks are the property of their respective owners.
           </p>
         </div>
       </section>

@@ -25,7 +25,7 @@ export default function Footer() {
             <Link
               href="/"
               style={{ textDecoration: "none", display: "flex", flexDirection: "column", alignItems: "flex-start", lineHeight: 1 }}
-              aria-label="Advisor Jay powered by Farther - Home"
+              aria-label="Jay Chang powered by Farther - Home"
             >
               <span
                 style={{
@@ -37,7 +37,7 @@ export default function Footer() {
                   lineHeight: 1,
                 }}
               >
-                Advisor Jay
+                Jay Chang
               </span>
               <span
                 style={{
@@ -344,7 +344,7 @@ export default function Footer() {
                 margin: 0,
               }}
             >
-              &copy; 2026 Advisor Jay. All rights
+              &copy; 2026 Jay Chang. All rights
               reserved.
             </p>
 

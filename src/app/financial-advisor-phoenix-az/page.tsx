@@ -26,7 +26,7 @@ export default function PhoenixFinancialAdvisor() {
  const localBusinessSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Advisor Jay',
+ name: 'Jay Chang',
  description: 'Fiduciary financial advisor serving professionals in Phoenix, Arizona',
  url: 'https://www.advisorjay.com/financial-advisor-phoenix-az',
  areaServed: [

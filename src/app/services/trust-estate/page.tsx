@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Trust & Estate Planning - Advisor Jay',
+ name: 'Trust & Estate Planning - Jay Chang',
  description:
  'Dedicated trust and estate planning specialists for families with $2M-$20M in investable assets in Scottsdale, AZ and across Arizona, California, and Nevada. Revocable and irrevocable trust design, Nevada dynasty trusts, and wealth transfer strategies.',
  url: 'https://www.advisorjay.com/services/trust-estate',

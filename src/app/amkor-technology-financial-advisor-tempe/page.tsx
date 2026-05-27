@@ -20,7 +20,7 @@ export default function AmkorTechnologyPage() {
   __html: JSON.stringify({
    '@context': 'https://schema.org',
    '@type': 'FinancialService',
-   name: 'Advisor Jay - Amkor Technology Financial Planning',
+   name: 'Jay Chang - Amkor Technology Financial Planning',
    description: 'Fiduciary wealth planning for Amkor Technology engineers and leaders in Tempe and Chandler. RSU planning, international relocation strategy, and equity compensation guidance.',
    areaServed: ['Tempe, Arizona', 'Chandler, Arizona', 'Phoenix, Arizona'],
    serviceType: ['Wealth Management', 'Equity Compensation Planning', 'Relocation Tax Planning'],

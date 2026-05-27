@@ -76,21 +76,21 @@ const fakt = localFont({
 export const metadata: Metadata = {
  metadataBase: new URL('https://www.advisorjay.com'),
  title: {
- default: 'Advisor Jay | Scottsdale, Arizona Financial Advisor',
- template: '%s | Advisor Jay',
+ default: 'Jay Chang | Scottsdale, Arizona Financial Advisor',
+ template: '%s | Jay Chang',
  },
  description:
  'Personalized wealth management for families and business owners with $2M-$20M in investable assets. Serving Scottsdale, AZ and clients across Arizona, California, and Nevada.',
  openGraph: {
  type: 'website',
- siteName: 'Advisor Jay',
+ siteName: 'Jay Chang',
  locale: 'en_US',
  images: [
  {
   url: '/Photos/Color-Jay-Headshot.png',
   width: 1200,
   height: 630,
-  alt: 'Advisor Jay - Farther Wealth Management',
+  alt: 'Jay Chang - Farther Wealth Management',
  },
  ],
  },
@@ -107,7 +107,7 @@ const organizationJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'Organization',
  name: 'Farther Finance Advisors LLC',
- alternateName: 'Advisor Jay',
+ alternateName: 'Jay Chang',
  url: 'https://www.advisorjay.com',
  logo: 'https://www.advisorjay.com/farther-logo.png',
  description:

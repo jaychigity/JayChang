@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
  title: 'Disclosures & Legal',
  description:
- 'Important disclosures, regulatory information, and legal notices for Advisor Jay. SEC-registered investment adviser.',
+ 'Important disclosures, regulatory information, and legal notices for Jay Chang. SEC-registered investment adviser.',
  robots: { index: false, follow: true },
  alternates: {
  canonical: 'https://www.advisorjay.com/disclosures',

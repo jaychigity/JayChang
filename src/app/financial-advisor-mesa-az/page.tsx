@@ -26,7 +26,7 @@ export default function MesaFinancialAdvisor() {
  const localBusinessSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Advisor Jay',
+ name: 'Jay Chang',
  description: 'Fiduciary financial advisor serving Apple employees in Mesa, Arizona',
  url: 'https://www.advisorjay.com/financial-advisor-mesa-az',
  areaServed: [

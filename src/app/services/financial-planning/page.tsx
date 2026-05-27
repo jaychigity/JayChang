@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Advisor Jay - Financial Planning',
+ name: 'Jay Chang - Financial Planning',
  description:
  'Comprehensive financial planning services for families with $2M-$20M in investable assets, including retirement projections, cash flow analysis, education funding, and Social Security optimization.',
  url: 'https://www.advisorjay.com/services/financial-planning',

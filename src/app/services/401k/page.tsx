@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Advisor Jay - 401(k) & Qualified Retirement Plans',
+ name: 'Jay Chang - 401(k) & Qualified Retirement Plans',
  description:
  'Institutional-quality 401(k) and qualified retirement plan services for business owners in Scottsdale, AZ and across Arizona, California, and Nevada. Plan design, fiduciary risk management, investment oversight, and participant education.',
  url: 'https://www.advisorjay.com/services/401k',

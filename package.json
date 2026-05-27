@@ -1,7 +1,7 @@
 {
   "name": "advisor-jay",
   "version": "1.0.0",
-  "description": "Advisor Jay — HNW advisor website for Arizona, California & Nevada",
+  "description": "Jay Chang — HNW advisor website for Arizona, California & Nevada",
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -166,7 +166,7 @@ export default function InsightsPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'CollectionPage',
-            name: 'Insights - Advisor Jay',
+            name: 'Insights - Jay Chang',
             description: 'Expert insights on equity compensation, tax strategy, retirement planning, and wealth preservation for high-income professionals.',
             url: 'https://www.advisorjay.com/insights',
           }),

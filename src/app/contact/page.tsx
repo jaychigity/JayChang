@@ -42,7 +42,7 @@ export default function ContactPage() {
     __html: JSON.stringify({
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Advisor Jay",
+      "name": "Jay Chang",
       "image": "https://www.advisorjay.com/Photos/Jay-New-Headshot.png",
       "telephone": "(480) 944-0880",
       "email": "jay.chang@farther.com",

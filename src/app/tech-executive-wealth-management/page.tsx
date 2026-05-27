@@ -20,7 +20,7 @@ export default function TechExecutivePage() {
   __html: JSON.stringify({
    '@context': 'https://schema.org',
    '@type': 'FinancialService',
-   name: 'Advisor Jay - Tech Executive Wealth Management',
+   name: 'Jay Chang - Tech Executive Wealth Management',
    description: 'Fiduciary wealth management for NVIDIA, Apple, and tech executives. Seven-figure RSU concentration, ESPP optimization, quarterly vesting tax planning, and deferred compensation strategy.',
    areaServed: ['Arizona', 'California', 'Silicon Valley, California'],
    serviceType: ['Wealth Management', 'Executive Compensation Planning', 'Equity Compensation Planning'],

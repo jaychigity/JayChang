@@ -77,7 +77,7 @@ export default function RSUWithholdingGap22PercentPage() {
   },
   publisher: {
    '@type': 'Organization',
-   name: 'Advisor Jay',
+   name: 'Jay Chang',
    url: 'https://www.advisorjay.com',
   },
   datePublished: '2026-03-18',

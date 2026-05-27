@@ -26,7 +26,7 @@ export default function ChandlerFinancialAdvisor() {
  const localBusinessSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Advisor Jay',
+ name: 'Jay Chang',
  description: 'Fiduciary financial advisor serving Intel and Microchip Technology employees in Chandler, Arizona',
  url: 'https://www.advisorjay.com/financial-advisor-chandler-az',
  areaServed: [

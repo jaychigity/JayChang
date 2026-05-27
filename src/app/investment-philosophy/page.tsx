@@ -130,7 +130,7 @@ export default function InvestmentPhilosophyPage() {
      __html: JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'WebPage',
-      name: 'Investment Philosophy - Advisor Jay',
+      name: 'Investment Philosophy - Jay Chang',
       description: 'A straightforward, tax-smart approach to growing and protecting wealth for families and business owners with $2M-$20M+ in investable assets. Direct indexing, tax-loss harvesting, asset location, and institutional-quality strategies through Farther Asset Management.',
       url: 'https://www.advisorjay.com/investment-philosophy',
       author: {
@@ -144,7 +144,7 @@ export default function InvestmentPhilosophyPage() {
       },
       publisher: {
        '@type': 'Organization',
-       name: 'Advisor Jay',
+       name: 'Jay Chang',
        url: 'https://www.advisorjay.com',
       },
      }),

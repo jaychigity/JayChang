@@ -47,7 +47,7 @@ export default function WealthReviewPage() {
           constitute an offer or solicitation.
         </p>
         <p className="font-sans text-[11px] text-[#b6d0ed]/60 mt-[12px]">
-          &copy; 2026 Advisor Jay. All rights reserved.
+          &copy; 2026 Jay Chang. All rights reserved.
         </p>
       </div>
     </>

@@ -20,7 +20,7 @@ export default function AreasWeServe() {
   __html: JSON.stringify({
    '@context': 'https://schema.org',
    '@type': 'FinancialService',
-   name: 'Advisor Jay - Areas Served',
+   name: 'Jay Chang - Areas Served',
    description: 'Jay Chang serves high-income professionals and families across Phoenix, Chandler, Scottsdale, Tempe, Mesa, Tucson, the Bay Area, and Nevada. Fiduciary, fee-only wealth management.',
    url: 'https://www.advisorjay.com/areas-we-serve',
    areaServed: [

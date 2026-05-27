@@ -21,7 +21,7 @@ export default function MicrochipTechnologyAdvisor() {
   __html: JSON.stringify({
    '@context': 'https://schema.org',
    '@type': 'FinancialService',
-   name: 'Advisor Jay - Microchip Technology Financial Planning',
+   name: 'Jay Chang - Microchip Technology Financial Planning',
    description: 'Fiduciary financial planning for Microchip Technology engineers and executives in Chandler. Quarterly RSU vesting, ESPP strategy, and concentration risk management for semiconductor professionals.',
    areaServed: ['Chandler, Arizona', 'Tempe, Arizona', 'Phoenix, Arizona'],
    serviceType: ['Wealth Management', 'Equity Compensation Planning', 'Retirement Planning'],

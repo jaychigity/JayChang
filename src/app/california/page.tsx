@@ -19,7 +19,7 @@ import Button from '@/components/Button'
 export const metadata: Metadata = {
  title: 'Wealth Management in California | Financial Advisor for Tech Executives & Entrepreneurs',
  description:
- 'Personalized wealth management for California families, tech executives, and entrepreneurs with $2M-$20M. Serving Los Angeles, San Francisco, Silicon Valley, and Newport Beach. Advisor Jay.',
+ 'Personalized wealth management for California families, tech executives, and entrepreneurs with $2M-$20M. Serving Los Angeles, San Francisco, Silicon Valley, and Newport Beach. Jay Chang.',
  alternates: { canonical: 'https://www.advisorjay.com/california' },
  openGraph: {
  title: 'California Wealth Management',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const financialServiceSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Advisor Jay - California',
+ name: 'Jay Chang - California',
  description:
  'Personalized wealth management for California families and professionals with $2M-$20M in investable assets. Financial planning, investment management, tax strategy, equity compensation planning, and business exit strategy.',
  url: 'https://www.advisorjay.com/california',
@@ -209,7 +209,7 @@ export default function CaliforniaPage() {
   <Image
   src="/Photos/california-professional.png"
   alt="California landscape - wealth management for Los Angeles, Silicon Valley, and San Francisco families"
-  title="California - Advisor Jay"
+  title="California - Jay Chang"
   fill
   className="object-cover opacity-20"
   priority

@@ -21,7 +21,7 @@ export default function HoneywellAdvisorPage() {
   __html: JSON.stringify({
    '@context': 'https://schema.org',
    '@type': 'FinancialService',
-   name: 'Advisor Jay - Honeywell Employee Financial Planning',
+   name: 'Jay Chang - Honeywell Employee Financial Planning',
    description: 'Fiduciary wealth planning for Honeywell professionals in Phoenix, Arizona. 401(k) match concentration, RSU strategy, deferred comp coordination, and retirement income planning.',
    areaServed: ['Phoenix, Arizona', 'Tempe, Arizona', 'Scottsdale, Arizona'],
    serviceType: ['Wealth Management', 'Equity Compensation Planning', 'Retirement Planning'],

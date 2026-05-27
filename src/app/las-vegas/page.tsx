@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 const financialServiceSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Advisor Jay - Las Vegas & Nevada',
+ name: 'Jay Chang - Las Vegas & Nevada',
  description:
  'Personalized wealth management for Nevada families and business owners. Serving Las Vegas, Henderson, Summerlin, and greater Nevada with no state income tax benefits.',
  url: 'https://www.advisorjay.com/las-vegas',
@@ -156,7 +156,7 @@ export default function LasVegasNevadaPage() {
   <Image
   src="/Photos/las-vegas-couple-sunset.avif"
   alt="Nevada desert landscape - wealth management for Las Vegas, Henderson, and Summerlin families"
-  title="Las Vegas & Nevada - Advisor Jay"
+  title="Las Vegas & Nevada - Jay Chang"
   fill
   className="object-cover opacity-15"
   priority

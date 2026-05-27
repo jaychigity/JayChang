@@ -23,7 +23,7 @@ export default function FCXExecutiveWealthPage() {
   __html: JSON.stringify({
    '@context': 'https://schema.org',
    '@type': 'FinancialService',
-   name: 'Advisor Jay - Freeport-McMoRan Executive Wealth Planning',
+   name: 'Jay Chang - Freeport-McMoRan Executive Wealth Planning',
    description: 'Fiduciary wealth management for Freeport-McMoRan professionals in Phoenix. Commodity-linked equity, RSU diversification, profit sharing, and executive compensation planning.',
    areaServed: ['Phoenix, Arizona', 'Scottsdale, Arizona'],
    serviceType: ['Wealth Management', 'Executive Compensation Planning', 'Concentrated Stock Strategy'],

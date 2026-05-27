@@ -26,7 +26,7 @@ export default function TempeFinancialAdvisor() {
  const localBusinessSchema = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Advisor Jay',
+ name: 'Jay Chang',
  description: 'Fiduciary financial advisor based in Tempe, Arizona serving engineers, physicians, and executives',
  url: 'https://www.advisorjay.com/financial-advisor-tempe-az',
  areaServed: [

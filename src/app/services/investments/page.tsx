@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
  '@context': 'https://schema.org',
  '@type': 'FinancialService',
- name: 'Investment Management - Advisor Jay',
+ name: 'Investment Management - Jay Chang',
  description:
  'Custom investment management for high-net-worth families and business owners in Scottsdale, AZ and across Arizona, California, and Nevada. Tax-efficient portfolio construction, alternative investments, and institutional-grade research.',
  url: 'https://www.advisorjay.com/services/investments',

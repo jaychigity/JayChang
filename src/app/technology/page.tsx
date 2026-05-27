@@ -21,7 +21,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'The Platform Behind Advisor Jay | Technology-Powered Wealth Management',
+  title: 'The Platform Behind Jay Chang | Technology-Powered Wealth Management',
   description:
     `The Intelligent Wealth Platform combines advanced financial planning, real-time portfolio visibility, and institutional-grade investment strategies for families with $2M–$20M.`,
   alternates: {
@@ -78,7 +78,7 @@ export default function TechnologyPage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'WebPage',
-            name: 'The Platform Behind Advisor Jay: Technology-Powered Wealth Management',
+            name: 'The Platform Behind Jay Chang: Technology-Powered Wealth Management',
             description:
               `The institutional technology platform combines technology-powered planning with institutional-grade investment strategies.`,
             url: 'https://www.advisorjay.com/technology',

@@ -74,7 +74,7 @@ export default function HowToChooseWealthAdvisorScottsdalePage() {
   },
   publisher: {
    '@type': 'Organization',
-   name: 'Advisor Jay',
+   name: 'Jay Chang',
    url: 'https://www.advisorjay.com',
   },
   datePublished: '2026-01-15',

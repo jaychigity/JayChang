@@ -4,7 +4,7 @@ import HideChrome from '@/components/HideChrome'
 export const metadata: Metadata = {
   title: 'Site Updates In Progress',
   description:
-    'The Advisor Jay site is briefly offline for updates. Email jay.chang@farther.com to reach Jay directly.',
+    'The Jay Chang site is briefly offline for updates. Email jay.chang@farther.com to reach Jay directly.',
   robots: { index: false, follow: false },
 }
 
@@ -88,7 +88,7 @@ export default function MaintenancePage() {
       <HideChrome />
       <div style={{ maxWidth: 560, textAlign: 'center' }}>
         <div style={lockupStyle}>
-          <span style={brandTextStyle}>Advisor Jay</span>
+          <span style={brandTextStyle}>Jay Chang</span>
           <span style={taglineStyle}>
             powered by{' '}
             <span style={{ color: '#1d7682', fontWeight: 600 }}>Farther</span>
